@@ -19,10 +19,11 @@ Inter-process Communication (IPC) Framework handles the safe, secure and perform
 
 The IPC framework is independent of the application context it is used in.
 
-There are two fundamental information exchange concepts defined
+There are three fundamental information exchange concepts defined
 
-* Topics: A topic is a data entity identifyed by a name, being structured by a *data type* and containing zero to multiple instances of that type (a *value*).
-* Remote Procedures: A remote procedure is an invocable entity identifyed by a name, being structured by parameters of a *data type* and being activated by an invokation passing arguments, i.e. a value for each parameter.
+* **Topics**: A topic is a data entity identifyed by a name, being structured by a *data type* and containing zero to multiple instances of that type (a *value*).
+* **Remote Procedures**: A remote procedure is an invocable entity identifyed by a name, being structured by parameters of a *data type* and being activated by an invokation passing arguments, i.e. a value for each parameter.
+* **Events**: An event signals the change of the state of something. An event carries no data, only the information "the related state change occurred".
 
 Data Types
 ----------
@@ -172,6 +173,14 @@ Remote Procedures
 * Discovery
 * Invocation
 * Sync/Async
+
+Events
+------
+
+* Name
+* Publisher
+* Subscriber
+* Chains / Buffering
 
 
 Zero Copy
