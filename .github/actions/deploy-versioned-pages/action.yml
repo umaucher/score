@@ -1,0 +1,79 @@
+# *******************************************************************************
+# Copyright (c) 2024 Contributors to the Eclipse Foundation
+#
+# See the NOTICE file(s) distributed with this work for additional
+# information regarding copyright ownership.
+#
+# This program and the accompanying materials are made available under the
+# terms of the Apache License Version 2.0 which is available at
+# https://www.apache.org/licenses/LICENSE-2.0
+#
+# SPDX-License-Identifier: Apache-2.0
+# *******************************************************************************
+
+name: Deploy Versioned Pages
+description: Will push the documentation to the gh-pages branch, possibly with a versioned URL. When the PR is closed, the documentation will be deleted.
+# Note: this has some shortcomings, like race conditions when multiple PRs are opened at the same time,
+# problems with overwriting existing files, not deleting deleted files, etc.
+# We'll address these when we transform this action into a truly reusable independent action.
+# But for now, let's get it working!
+inputs:
+  source_folder:
+    description: "Path to the html files to deploy in current working directory"
+    required: true
+  versions_file:
+    description: "Path to the versions file on gh-pages branch"
+    default: "versions"
+  create_comment:
+    description: "Create a comment on the PR with the URL to the documentation" # in case of PR
+    default: "true"
+outputs:
+  target_folder:
+    description: "The target folder for the documentation"
+    value: ${{ steps.calc.outputs.target_folder }}
+runs:
+  using: "composite"
+  steps:
+    - name: Determine target_folder
+      id: calc
+      shell: bash
+      run: |
+        if [[ ${{github.event_name}} == 'pull_request' ]]; then
+          echo "target_folder=pr-${{github.event.pull_request.number}}" >> $GITHUB_OUTPUT
+        elif [[ ${{github.ref_name}} != 'main' ]]; then
+          echo "target_folder=${{github.ref_name}}" >> $GITHUB_OUTPUT
+        else
+          echo "target_folder=/" >> $GITHUB_OUTPUT
+        fi
+    - name: Prepare
+      shell: bash
+      run: |
+        # Prepare the deploy folder
+        mkdir -p deploy_root/${{ steps.calc.outputs.target_folder }}
+        # Move the files to the deploy folder
+        mv ${{ inputs.source_folder }}/* deploy_root/${{ steps.calc.outputs.target_folder }}
+        # Ensure that the folder is not treated as a Jekyll site
+        touch deploy_root/.nojekyll
+
+        # Add the target folder to the versions file
+        git fetch origin gh-pages --depth 1
+        git checkout origin/gh-pages -- "${{ inputs.versions_file }}"
+        if ! grep -qx "${{ steps.calc.outputs.target_folder }}" "${{ inputs.versions_file }}"; then
+          echo "${{ steps.calc.outputs.target_folder }}" >> "${{ inputs.versions_file }}"
+        fi
+        mv "${{ inputs.versions_file }}" deploy_root/
+        ls -al .
+        ls -al deploy_root
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        folder: deploy_root
+        clean: false
+    - name: Comment on PR with docs URL
+      if: ${{ github.event_name == 'pull_request' && inputs.create_comment == 'true' }}
+      uses: peter-evans/create-or-update-comment@v4
+      with:
+        issue-number: ${{github.event.pull_request.number}}
+        body: |
+          The created documentation from the pull request is available at: [docu-html](https://eclipse-score.github.io/score/${{steps.calc.outputs.target_folder}})
+        reactions: rocket

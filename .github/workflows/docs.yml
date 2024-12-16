@@ -11,17 +11,16 @@
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
 
-name: Documentation build
+name: Documentation
 on:
   pull_request:
     types: [opened, reopened, synchronize]
   push:
-    branches:
-      - main
   merge_group:
     types: [checks_requested]
 jobs:
   docs-build:
+    name: Build documentation
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -33,41 +32,44 @@ jobs:
       - name: Build documentation
         run: |
           bazel build //docs:github-pages && cp bazel-bin/docs/github-pages.tar .
-      - name: Upload artifact for deployment
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: actions/upload-artifact@v4.4.0
-        with:
-          name: github-pages
-          path: ${{ github.workspace }}/github-pages.tar
-          retention-days: 1
-          if-no-files-found: error
-      - name: Upload artifact for pull request link
+      - name: Upload artifact for job analysis
         if: github.event_name == 'pull_request'
-        id: upload-artifact-pr
         uses: actions/upload-artifact@v4.4.0
         with:
           name: github-pages-${{ github.sha }}
-          path: ${{ github.workspace }}/github-pages.tar
+          path: github-pages.tar
           retention-days: 1
           if-no-files-found: error
-      - name: Comment artifact URL
-        if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.fork == false
-        run: |
-          gh pr comment ${{ github.event.pull_request.number }} \
-            --body "Documentation artifact: ${{ steps.upload-artifact-pr.outputs.artifact-url }}"
-        env:
-          GH_TOKEN: ${{ github.token }}
   docs-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    name: Deploy documentation to GitHub Pages
     permissions:
       pages: write
       id-token: write
+      contents: write
+    concurrency:
+      group: gh-pages
+      cancel-in-progress: false
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: docs-build
     steps:
-      - name: Deploy to GitHub Pages
+      # Checkout is required to get the local actions.
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+      - name: Download documentation artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: github-pages-${{ github.sha }}
+      - name: Untar documentation artifact
+        run: mkdir -p extracted_docs && tar -xf github-pages.tar -C extracted_docs
+      - name: Deploy 🚀
+        id: pages-deployment
+        continue-on-error: true
+        uses: ./.github/actions/deploy-versioned-pages
+        with:
+          source_folder: extracted_docs
+      - name: Deploy (fallback) 🚀
         id: deployment
+        # If the new deployment from gh-pages branch fails, at least deploy the current version.
+        # This is only a short-term solution, until we can change the repository settings.
+        if: ${{ steps.pages-deployment.outcome == 'failure' && github.event_name == 'push' && github.ref_name == 'main' }}
         uses: actions/deploy-pages@v4.0.5
