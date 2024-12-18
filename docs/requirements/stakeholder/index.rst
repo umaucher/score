@@ -41,7 +41,7 @@ Overall goals
     :rationale: To enable cooperation with other cooperation partners.
     :status: valid
 
-    The software platform shall be based on open and/or standardized APIs.
+    The software platform shall where possible be based on existing standards (e.g. network protocols).
 
 .. stkh_req:: Variant management
     :id: STKH_REQ__60
