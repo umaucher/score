@@ -31,6 +31,7 @@ release = "0.1"
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    "sphinx_design",
     "sphinx_needs",
 ]
 
@@ -49,18 +50,12 @@ html_static_path = ["_assets"]
 html_css_files = [
     "css/score.css",
     "css/score_needs.css",
+    "css/score_design.css",
 ]
 
 html_theme_options = {
     "navbar_align": "content",
-    "header_links_before_dropdown": 3,
-    "external_links": [
-        {"name": "SCORE", "url": "https://eclipse-score.github.io"},
-        {
-            "name": "Eclipse",
-            "url": "https://projects.eclipse.org/projects/automotive.score",
-        },
-    ],
+    "header_links_before_dropdown": 5,
     "icon_links": [
         {
             "name": "GitHub",
