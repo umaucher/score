@@ -34,4 +34,5 @@ that are used for development.
    :titlesonly:
    :maxdepth: 1
 
+   bazel_registry.rst
    config_as_code.rst
