@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _project_management_plan:
+
 Project management plan
 #######################
 
