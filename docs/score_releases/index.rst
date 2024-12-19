@@ -48,28 +48,28 @@ SW Module List
      - Repo
      - GitHub Discussions
    * - IPC
-     - Holger Grandy, Gerd Schaeffer, Nico Hartmann, Sven Kappel, Thilo Schmitt
+     - Holger Grandy, Gerd Schäfer, Nico Hartmann, Sven Kappel, Thilo Schmitt
      - v0.5
      - Q4
      - _
      - `inc_mw_com <https://github.com/eclipse-score/inc_mw_com>`_
      - `Communication CTF <https://github.com/orgs/eclipse-score/discussions/categories/communication-cft>`_
    * - Fixed Execution Order Framework (incl. Orchestrator)
-     - Holger Grandy, Gerd Schaeffer, Nico Hartmann, Sven Kappel, Thilo Schmitt
+     - Holger Grandy, Gerd Schäfer, Nico Hartmann, Sven Kappel, Thilo Schmitt
      - v0.5
      - Q4
      - _
      - `inc_feo <https://github.com/eclipse-score/inc_feo>`_
      - `FEO CTF <https://github.com/orgs/eclipse-score/discussions/categories/feo-cft>`_
    * - Logging
-     - Holger Grandy, Gerd Schaeffer, Nico Hartmann
+     - Holger Grandy, Gerd Schäfer, Nico Hartmann
      - v0.5
      - Q4
      - _
      - `inc_mw_log <https://github.com/eclipse-score/inc_mw_log>`_
      - `Logging CTF <https://github.com/orgs/eclipse-score/discussions/categories/logging-cft>`_
    * - Persistency
-     - Gerd Schaeffer, Nico Hartmann, Sven Kappel
+     - Gerd Schäfer, Nico Hartmann, Sven Kappel
      - v0.5
      - Q4
      - _
