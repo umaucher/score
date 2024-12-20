@@ -13,7 +13,7 @@
    # *******************************************************************************
    #
    # Authors
-   # @hartmannnico, 
+   # @hartmannnico,
 
 
 Communication Framework
@@ -21,7 +21,8 @@ Communication Framework
 
 The Communication Framework handles the safe, secure and performant exchange of information between software and/or hardware components of the Score stack.
 
-Communiction covers information exchange between endpoints residing in
+Communication covers information exchange between endpoints residing in
+
 * the same or different process, running on
 * the same or different operating systems, deployed on
 * the same or different compute devices, built into
@@ -75,13 +76,13 @@ The entirety of connected nodes within a mesh we call *fabric*.
 
 **Design Note**
 
-From a perspective of safety, a node also encapsulates a single safety domain. Links provide the means for separating safety domains and thus allow for mixed criticality applications. 
+From a perspective of safety, a node also encapsulates a single safety domain. Links provide the means for separating safety domains and thus allow for mixed criticality applications.
 
 
 Names
 -----
 
-A name is an UTF-8 tag of an element. The underlying Unicode standard is release 16.0.0 https://www.unicode.org/versions/Unicode16.0.0/. 
+A name is an UTF-8 tag of an element. The underlying Unicode standard is release 16.0.0 https://www.unicode.org/versions/Unicode16.0.0/.
 
 All codepoints are valid in a name with the exception of the following codepoints:
 
@@ -91,7 +92,7 @@ All codepoints are valid in a name with the exception of the following codepoint
 * the *wildcard* marker, codepoint ``ASTERISK``: ``*`` ``&#002A``
 * the *any* marker, codepoint ``QUESTION MARK``: ``?`` ``&#003F``
 
-Forbidden as first character in a name is 
+Forbidden as first character in a name is
 
 * the *reference* marker codepoint ``AMPERSAND``: ``&`` ``&#0026``. It's use is discouraged in names in general.
 
@@ -101,8 +102,8 @@ Element names prefixed with an underscore ``LOW LINE``: ``_`` ``&#005F`` are reg
 
 **Design Note**
 
-A name is not a property of an element itself. 
-Instead, a name acts as an *alias* to obtain an element *reference*. 
+A name is not a property of an element itself.
+Instead, a name acts as an *alias* to obtain an element *reference*.
 See _`References`.
 
 
@@ -113,7 +114,7 @@ A namespace is a named scope in which the definition of the elements topic, remo
 
 General rules of names apply to namespace names.
 
-Namespaces can be nested. 
+Namespaces can be nested.
 The path separator between the names is the unicode codepoint ``SOLIDUS``: ``/`` ``&#002F``.
 
 ::
@@ -121,7 +122,7 @@ The path separator between the names is the unicode codepoint ``SOLIDUS``: ``/``
    This/is/a/nested/namespace
 
 
-The namespace name ``/`` is reserved and refers to the global namespace. 
+The namespace name ``/`` is reserved and refers to the global namespace.
 *Global* here means visible with respect to a certain realm that is not further defined. A realm can be a vehicle with it's attached cloud environment or just an application context. It is up to deployment to define the scope of the global namespace.
 
 The namespace name ``super`` is reserved and refers to the parent namespace of the namespace where ``super`` is used. The use of ``super`` in the global namespace is an error.
@@ -206,9 +207,9 @@ Within a namespace elements from another namespace are visible without an explic
 Handles
 -------
 
-A handle is a numeric value that uniquely refers to an individual element in the communication system. 
+A handle is a numeric value that uniquely refers to an individual element in the communication system.
 
-A specific element in the communication system 
+A specific element in the communication system
 
 Data Types
 ----------
@@ -236,7 +237,7 @@ Float64   Floating   ``f64``   ``double``, ``float64_t``  8      An IEEE 756 64 
 BFloat16  Floating   ``bf16``  ``bfloat16_t``             2      A Google brain float 16 floating point
 Char      String     ``char``  ``char32_t``               4      A unicode codepoint (32 bit)
 String    String     ``str``   -                          n/a    A UTF-8 encoded text
-Handle    Reference  -         -                          8      A 64 bit unsigned integer handle  
+Handle    Reference  -         -                          8      A 64 bit unsigned integer handle
 ========= ========== ========= ========================== ====== ============================
 
 The type ``Byte`` may be used as alias for ``UInt8``.
@@ -311,57 +312,51 @@ A HashMap is an unordered collection of data element of the same type with varia
 Pointers
 ````````
 
-There are no data types defined for pointers to other data.
+There are no data types defined for pointers to data types.
 
 References
 ``````````
 
-| Generic references are not allowed as data types. Instead, there are distinct reference types defined:
+The communication framework allows for three potential classes of references:
 
-* Topic References
-* Remote Procedure References
-* Event References
+* References to data types
+   There are no data types defined for references to data types.
 
-The reference marker to an element shall be `AMPERSAND`: `&` `&#0026`.
+* References to information elements
 
-Values of reference
+   * Topic References, data type ``TopicRef``
+   * Remote Procedure References, data type ``FnRef``
+   * Event References, data type ``EventRef``
 
+* References to infrastructure elements
+   Currently we do not define references to infrastructure elements.
+   However, for conceptual symmetry reasons and application value they
+   might come up in future versions.
 
+The `AMPERSAND`: `&` `&#0026` as first character in a path is defined as the marker for references to information elements.
 
-Topic Reference
-```````````````
-
-A topic reference is a data type that provides a resolvable reference to a Topic.
-
-::
-
-   TopicRef
-
-The underlying implementation shall not use more than 64 bits for the representation of TopicRef.
-
-All properties of the referenced topics shall be retrievable through the TopicRef.
-
-Data access to the content of the Topic shall be possible through the TopicRef.
-
-
-RP Reference
-`````````````
-
-An RP Reference is a data type that provides a resolvable reference to a Remote Procedure.
+In names and paths the reference marker to an information element of a path.
 
 ::
 
-   RPRef
+   &/Body/Doors/Windows/LeftFront/Position
 
-The underlying implementation shall not use more than 64 bits for the representation of RPRef.
+References the topic of the top left windows's position.
 
-All properties of the referenced Remote Procedure shall be retrievable through the RPRef.
+A Reference shall have a corresponding unique handle. The communication framework shall be able to dispatch handles of references like any other value of a data type. The underlying value type for handles should be ``UInt64`` and must have lockfree atomic read and write operations available.
 
-Invocation of the referenced Remote Procedure shall be possible through the RPRef.
+The application should not have access to handles directly, but only to the references themselves. We call the conversion of a handle into a reference “resolution of the handle”.
+
+The operations granted through a reference to an information item shall be identical to the operations of the information item itself.
 
 
-Namespaces
-----------
+**Implementation Note**
+
+Internally, the communication framework may actually only pass TopicRef’s to the application. From a semantic view it makes no difference to hold a TopicRef or a Topic directly.
+
+**Implementation Note**
+
+A ``TopicRef`` is *not* the same as ``&Topic`` as it may require additional validity checks.
 
 
 Topics
@@ -405,3 +400,4 @@ Zero Copy
 
 Safety
 ------
+
