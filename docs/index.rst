@@ -86,9 +86,9 @@ Project structure and processes
 
       Process
       ^^^
-      Understand how we work, by reading our :ref:`Process guide <process_description>`.
-      And receive tips & tricks for our used tool stack by reading the pages :ref:`Templates <stakeholder_requirements_template>` and
-      :ref:`Tools <configuration_tool_guidelines>`.
+      Understand how we work, by reading our :ref:`Process description <process_description>`.
+      And receive tips & tricks for our used tool stack by reading the
+      :ref:`Guidance <process_guidance>`.
 
    .. grid-item-card::
 
