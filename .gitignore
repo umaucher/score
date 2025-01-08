@@ -5,6 +5,9 @@ MODULE.bazel.lock
 # Ruff
 .ruff_cache
 
+# docs:incremental and docs:ide_support build artifacts
+/_build
+
 # Python
 .venv
 
