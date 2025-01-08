@@ -12,16 +12,18 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _safety_management:
+.. _process_guidance:
 
-Safety management
-------------------------
+#########
+ Guidance
+#########
 
-Purpose
-+++++++
+.. toctree::
+   :maxdepth: 1
+   :glob:
 
-Objectives and scope
-++++++++++++++++++++
-
-Approach
-++++++++
+   git/index.rst
+   branch/index.rst
+   general/index.rst
+   contribution_request/index.rst
+   requirements/index.rst

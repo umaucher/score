@@ -7,3 +7,13 @@ MODULE.bazel.lock
 
 # docs:incremental and docs:ide_support build artifacts
 /_build
+
+# Python
+.venv
+
+# Vale - editorial style guide
+.vale.ini
+styles/
+
+# direnv - folder-specific bash configuration
+.envrc

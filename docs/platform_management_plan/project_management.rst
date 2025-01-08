@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _project_management_plan:
+
 Project management plan
 #######################
 
@@ -141,7 +143,7 @@ Platform consists of multiple repositories. The main repository, *SCORE*,
 is the integration repository, where everything comes together. It contains:
 
 * :ref:`stakeholder requirements <Stakeholder_Requirements>`
-* documentation of all :ref:`platform features <Platform_Features>` and features flags,
+* documentation of all :ref:`platform features <features>` and features flags,
   feature requirements and architecture
 * build system including *SCORE* specific *macros* and *rules*
 * integration rules for software modules.

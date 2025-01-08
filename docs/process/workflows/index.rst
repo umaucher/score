@@ -12,16 +12,18 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _safety_management:
+Workflows
+=========
 
-Safety management
-------------------------
+.. toctree::
+   :maxdepth: 1
+   :caption: Contents:
 
-Purpose
-+++++++
-
-Objectives and scope
-++++++++++++++++++++
-
-Approach
-++++++++
+   process_management
+   platform_management
+   safety_management
+   change_management
+   quality_management
+   requirements_management
+   architecture_design
+   safety_analysis

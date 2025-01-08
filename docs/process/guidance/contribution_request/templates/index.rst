@@ -12,16 +12,14 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _safety_management:
+.. _contribution_templates:
 
-Safety management
-------------------------
+#######################
+ Contribution Templates
+#######################
 
-Purpose
-+++++++
+.. toctree::
+   :maxdepth: 1
+   :glob:
 
-Objectives and scope
-++++++++++++++++++++
-
-Approach
-++++++++
+   feature_request_template.rst

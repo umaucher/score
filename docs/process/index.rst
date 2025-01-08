@@ -12,32 +12,30 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _Process_description:
+.. _process_description:
 
 Process
 =======
 
 Processes are the basis to describe the way of working within the SCORE project.
 
-Guidelines
-----------
-
-The guidelines for the SCORE project can be found here:
+Introduction
+------------
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   guidelines/index.rst
+   introduction/index.rst
 
-Roles
------
-Persons are assigned to roles and these describe the person's activities within a workflow.
-Especially if the role is responsible for performing, approving or supporting a workflow.
-This is realized by the respective links between role and workflow.
 
-Role definition
-~~~~~~~~~~~~~~~
+Process Model
+-------------
+The SCORE process model is described by workflows, executed by roles and is creating work products.
+Workflow activities are supported by guidances.
+
+Process Role definition
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
@@ -45,15 +43,31 @@ Role definition
 
    roles/index.rst
 
-Requirements engineering
-------------------------
-A key process is the Requirements engineering, which is for defining, documenting, and maintaining requirements within our SCORE project.
-
-Requirements templates
-~~~~~~~~~~~~~~~~~~~~~~
+Workproducts
+~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
    :glob:
 
-   templates/index.rst
+   workproducts/index.rst
+
+Workflows
+~~~~~~~~~
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   workflows/index.rst
+
+Process Guidances
+-----------------
+
+The guidance for the SCORE project (e.g. templates, guidelines, checklists) can be found here:
+
+.. toctree::
+   :maxdepth: 1
+   :glob:
+
+   guidance/index.rst
