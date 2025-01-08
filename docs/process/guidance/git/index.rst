@@ -107,28 +107,24 @@ If feasible, the commit message body should be extended with quoted
 material such as compiler warnings, debugger stack traces or measurement
 data for performance optimizations.
 
+The description may mention issues and link to them. A detailed description
+of linking commits to issues is available on `GitHub
+<https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue>`__.
+Be aware that keywords like (close | fix | resolve) will also close the
+referenced issue if the pull request is merged.
+
+Git commits are not required to mention issues. It is sufficient if the PR
+links to any relevant issues.
+
 Footer
 ======
 
-At the end of the commit message a footer shall be specified
+At the end of the commit message a footer may be specified
 in the following format:
 
 .. code-block::
 
    Also-by: Some Bodyelse <somebodyelse@nowhere.com>
-   Issue-ref: <Keyword> #<IssueNr>
-
-<Keyword> is specified by:
-
-- see
-- close / closes / closed
-- fix / fixes / fixed
-- resolve / resolves / resolved
-
-The Reference can contain links to multiple tickets. A detailed
-description of linking issues to code is available on `GitHub
-<https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue>`__.
-Be aware that keywords like (close | fix | resolve) will also close the referenced issue if the pull request is merged.
 
 An additional check is implemented to suppress false positives: if a
 commit message has revert/merge in the first line, the linting rules
@@ -166,5 +162,4 @@ Example
     Notes about dependencies to other tools or commits in other
     repositories.
 
-    Also-by: Some Bodyelse <somebodyelse@nowhere.com> |br|
-    Issue-Ref: <closes #xxx>, <fixes #xxy>, ...
+    Also-by: Some Bodyelse <somebodyelse@nowhere.com>
