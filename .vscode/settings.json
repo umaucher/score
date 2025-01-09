@@ -49,7 +49,9 @@
         "docs",
         "_build",
         "--jobs",
-        "auto"
+        "auto",
+        "--conf-dir",
+        "docs"
     ],
     // default is "error", which doesn't show anything.
     "esbonio.logging.level": "warning"
