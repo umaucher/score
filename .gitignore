@@ -17,3 +17,6 @@ styles/
 
 # direnv - folder-specific bash configuration
 .envrc
+
+# Python
+__pycache__/

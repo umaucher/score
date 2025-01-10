@@ -47,7 +47,7 @@ load("@rules_python//sphinxdocs:sphinx.bzl", "sphinx_build_binary", "sphinx_docs
 
 # all_requirements include esbonio which we don't need most of the time.
 # Hint: the names are e.g. "@@rules_python~~pip~pip_sphinx//esbonio:pkg"
-sphinx_requirements = [name for name in all_requirements if not "esbonio" in name] + [":extensions"]
+sphinx_requirements = [name for name in all_requirements if not "esbonio" in name]
 
 sphinx_docs(
     name = "docs",
@@ -74,15 +74,16 @@ sphinx_docs(
 
 sphinx_build_binary(
     name = "sphinx_build",
-    deps = sphinx_requirements,
+    deps = sphinx_requirements + [":extensions"],
 )
 
 py_library(
     name = "extensions",
-    srcs = [
-        "_extensions/layouts.py",
-        "_extensions/metamodel.py",
-    ],
+    srcs =
+        glob([
+            "_tooling/conf_extras/*.py",
+            "_tooling/extensions/*.py",
+        ]),
     imports = ["."],
 )
 
@@ -93,8 +94,8 @@ py_library(
 # `bazel run //docs:requirements -- --upgrade`.
 compile_pip_requirements(
     name = "requirements",
-    src = "requirements.txt",
-    requirements_txt = "requirements_lock.txt",
+    src = "_tooling/requirements.txt",
+    requirements_txt = "_tooling/requirements_lock.txt",
     tags = [
         "manual",
     ],
@@ -120,7 +121,7 @@ pkg_tar(
 # Run-time build of documentation, incl. incremental build support.
 py_binary(
     name = "incremental",
-    srcs = ["incremental.py"],
+    srcs = ["_tooling/incremental.py"],
     deps = sphinx_requirements,
 )
 

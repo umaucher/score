@@ -16,9 +16,12 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# from process.process_model_configuration import *
-from _extensions import metamodel, layouts
+import sys
 
+# sys.path extension for local files is needed, because the conf.py file is not
+# executed, but imported by Sphinx
+sys.path.insert(0, ".")
+from _tooling.conf_extras import layouts, metamodel
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

@@ -42,7 +42,7 @@ pip = use_extension("@rules_python//python/extensions:pip.bzl", "pip")
 pip.parse(
     hub_name = "pip_sphinx",
     python_version = PYTHON_VERSION,
-    requirements_lock = "//docs:requirements_lock.txt",
+    requirements_lock = "//docs:_tooling/requirements_lock.txt",
 )
 use_repo(pip, "pip_sphinx")
 
