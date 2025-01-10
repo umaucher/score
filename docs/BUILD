@@ -80,7 +80,8 @@ sphinx_build_binary(
 py_library(
     name = "extensions",
     srcs =
-        glob(["_tooling/conf_extras/*.py"]) + glob([
+        glob([
+            "_tooling/conf_extras/*.py",
             "_tooling/extensions/*.py",
         ]),
     imports = ["."],
