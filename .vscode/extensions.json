@@ -1,2 +1,12 @@
 {
+    "recommendations": [
+        // Editing *.drawio.svg files directly in VS Code
+        "hediet.vscode-drawio",
+
+        // Some convenient extensions for editing reStructuredText files
+        "lextudio.restructuredtext",
+
+        // Linting and live preview for score docs
+        "swyddfa.esbonio"
+    ]
 }
