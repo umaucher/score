@@ -47,7 +47,7 @@ numfig = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"  #  "alabaster"
-html_static_path = ["_assets"]
+html_static_path = ["_tooling/assets"]
 html_css_files = [
     "css/score.css",
     "css/score_needs.css",
