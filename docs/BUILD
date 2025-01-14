@@ -60,7 +60,6 @@ sphinx_docs(
     ]),
     config = ":conf.py",
     extra_opts = [
-        "-W",
         "--keep-going",
     ],
     formats = [
@@ -74,7 +73,10 @@ sphinx_docs(
 
 sphinx_build_binary(
     name = "sphinx_build",
-    deps = sphinx_requirements + [":extensions"],
+    deps = sphinx_requirements + [
+        ":extensions",
+        "//docs/_tooling/sphinx_extensions",
+    ],
 )
 
 py_library(
@@ -122,7 +124,10 @@ pkg_tar(
 py_binary(
     name = "incremental",
     srcs = ["_tooling/incremental.py"],
-    deps = sphinx_requirements,
+    deps = sphinx_requirements + [
+        ":extensions",
+        "//docs/_tooling/sphinx_extensions",
+    ],
 )
 
 # Virtual python environment for working on the documentation (esbonio).
