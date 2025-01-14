@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,10 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
@@ -46,10 +46,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7fdb06ad" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../../../_static/jquery.js?v=5d32c60e"></script>
     <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -180,7 +180,9 @@
 </li>
 
             <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
@@ -412,9 +414,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -465,7 +472,7 @@
                   
   <section id="contribution-request-guideline">
 <h1>Contribution Request Guideline<a class="headerlink" href="#contribution-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9a26bd6d">
+<div class="need_container docutils container" id="SNCB-1bd85710">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Contr_Request_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -529,7 +536,7 @@
 <p>For all possibilites the project contains simple templates (provided by committers (<a class="reference internal" href="../../roles/index.html#RL_committer" title="RL_committer"><em class="xref need">Committer (RL_committer)</em></a>)), in particular please use <a class="reference internal" href="templates/feature_request_template.html#feature-request-template"><span class="std std-ref">Feature Request Template</span></a> to request a new feature or changes to the existing one.</p>
 <section id="what-is-a-pull-request-pr">
 <h2>What is a Pull Request (PR)?<a class="headerlink" href="#what-is-a-pull-request-pr" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-14e4b9fa">
+<div class="need_container docutils container" id="SNCB-78318484">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Pull_Request_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -581,7 +588,8 @@
 <li><p>If the content fullfils the review and acceptance criteria, a committer (<a class="reference internal" href="../../roles/index.html#RL_committer" title="RL_committer"><em class="xref need">Committer (RL_committer)</em></a>) will approve the <em>PR</em> and thus it can be merged.</p></li>
 </ul>
 <figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="../../../_images/score_contribution_request_simple.drawio.svg"><img alt="Simple *PR* based contribution request workflow overview" src="../../../_images/score_contribution_request_simple.drawio.svg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/score_contribution_request_simple.drawio.svg"><img alt="Simple *PR* based contribution request workflow overview" src="../../../_images/score_contribution_request_simple.drawio.svg" style="width: 600px;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 3 </span><span class="caption-text">Simple <em>PR</em> based contribution request workflow overview</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
@@ -596,7 +604,8 @@
 <p>This chapter is only for optional read to understand the details for the Pull Request workflow defined in <em>SCORE</em>.</p>
 <p>The figure below gives an overview about all the possible steps for a <em>PR</em> until it is either accepted or rejected.</p>
 <figure class="align-center" id="id2">
-<a class="reference internal image-reference" href="../../../_images/score_contribution_request_standard.drawio.svg"><img alt="Detailed *SCORE* Pull request workflow overview" src="../../../_images/score_contribution_request_standard.drawio.svg" style="width: 100%;" /></a>
+<a class="reference internal image-reference" href="../../../_images/score_contribution_request_standard.drawio.svg"><img alt="Detailed *SCORE* Pull request workflow overview" src="../../../_images/score_contribution_request_standard.drawio.svg" style="width: 100%;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 4 </span><span class="caption-text">Detailed <em>SCORE</em> Pull request workflow overview</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
@@ -617,7 +626,7 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
 </section>
 <section id="what-is-a-github-issue">
 <h3>What is a GitHub Issue?<a class="headerlink" href="#what-is-a-github-issue" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-ad29e6f1">
+<div class="need_container docutils container" id="SNCB-ce4ed8e2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Issue_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -667,7 +676,8 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
 <p>It can also be used to collect community input and for planning and tracking activities.</p>
 <p>The figure below shows options to report something.</p>
 <figure class="align-center" id="id3">
-<a class="reference internal image-reference" href="../../../_images/score_discussion_request_options.drawio.svg"><img alt="Reporting options overview" src="../../../_images/score_discussion_request_options.drawio.svg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="../../../_images/score_discussion_request_options.drawio.svg"><img alt="Reporting options overview" src="../../../_images/score_discussion_request_options.drawio.svg" style="width: 400px;" />
+</a>
 <figcaption>
 <p><span class="caption-number">Fig. 5 </span><span class="caption-text">Reporting options overview</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 <div class="legend">
@@ -757,13 +767,13 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
 </div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../../_sources/process/guidance/contribution_request/index.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/process/guidance/contribution_request/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -778,8 +788,8 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -802,7 +812,8 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>

@@ -16,8 +16,8 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!-- 
-    this give us a css class that will be invisible only if js is disabled 
+  <!--
+    this give us a css class that will be invisible only if js is disabled
   -->
   <noscript>
     <style>
@@ -27,10 +27,10 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
@@ -46,10 +46,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=7fdb06ad" />
   
   <!-- So that users can add custom icons -->
-  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
     <script src="../_static/jquery.js?v=5d32c60e"></script>
     <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
@@ -180,7 +180,9 @@
 </li>
 
             <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
@@ -404,9 +406,14 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
   </div>
-  
-  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -590,7 +597,8 @@ feature requirements and architecture</p></li>
 software modules or toolchains are defined. This results in the following <a class="reference internal" href="../process/guidance/general/index.html#platform-folder-structure"><span class="std std-ref">Folder Structure of Platform Repository</span></a>. Every software module has its own repository, that contains multiple components, their requirements, architecture, implementation and tests.
 A software module and its repository can be part of the main SCORE <em>Eclipse Project</em> and corresponding <em>GitHub organization</em> or can be moved to a standalone <em>Eclipse child project</em>, if necessary.</p>
 <blockquote>
-<div><a class="reference internal image-reference" href="../_images/project_organization.svg"><img alt="Infrastructure overview" class="align-center" src="../_images/project_organization.svg" style="width: 900px;" /></a>
+<div><a class="reference internal image-reference" href="../_images/project_organization.svg"><img alt="Infrastructure overview" class="align-center" src="../_images/project_organization.svg" style="width: 900px;" />
+</a>
 </div></blockquote>
 </section>
 <section id="platform-organization">
@@ -648,7 +656,8 @@ for <em>Tooling/Infrastructure Community</em></p></li>
 for <em>Software Architecture community</em></p></li>
 <li><p><em>software_development_process</em>  label is used to identify <em>PRs</em> and <em>GitHub Issues</em> that are
 relevant for <em>Software Development Process Community</em></p>
-<a class="reference internal image-reference" href="../_images/contribution_request_label.png"><img alt="Infrastructure overview" class="align-center" src="../_images/contribution_request_label.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="../_images/contribution_request_label.png"><img alt="Infrastructure overview" class="align-center" src="../_images/contribution_request_label.png" style="width: 800px;" />
+</a>
 </li>
 </ul>
 <p>Additionally, in the main <em>SCORE</em> repository there should exist a label for every
@@ -663,7 +672,8 @@ for specific areas that may encompass multiple features.</p>
 <p>For better structuring of the tickets following <em>GitHub Issue</em> types are introduced
 in the main <em>SCORE</em> repository. It is recommended for all <em>child projects</em> to
 introduce the same types.</p>
-<a class="reference internal image-reference" href="../_images/issue_types.png"><img alt="Issue types overview" class="align-center" src="../_images/issue_types.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/issue_types.png"><img alt="Issue types overview" class="align-center" src="../_images/issue_types.png" style="width: 600px;" />
+</a>
 <ul class="simple">
 <li><p><em>Saga</em> <em>GitHub Issue</em> of type <em>Saga</em> is the highest level hierarchy and can not
 be a sub-issue of another ticket. If you want to group <em>Sagas</em> together, you will
@@ -689,7 +699,8 @@ that should be officially released in the beginning of 2025.
 <em>Sub-issue feature</em> allows to create a “parent-child” relationship between <em>GitHub Issues</em>.
 That allows better structuring of the project and helps to keep <em>GitHub Issues</em>, that
 are related to the same topic, together.</p>
-<a class="reference internal image-reference" href="../_images/sub_issues.png"><img alt="Sub issues overview" class="align-center" src="../_images/sub_issues.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/sub_issues.png"><img alt="Sub issues overview" class="align-center" src="../_images/sub_issues.png" style="width: 600px;" />
+</a>
 <section id="traceability">
 <h4>Traceability<a class="headerlink" href="#traceability" title="Link to this heading">#</a></h4>
 <p>To achieve a better traceability it is highly recommended to link all <em>PRs</em> to the corresponding
@@ -697,7 +708,8 @@ are related to the same topic, together.</p>
 all relevant source code changes. Normally <em>PRs</em> reference <em>GitHub issues</em> of type <em>Story</em>
 or of type <em>Bug</em>. How to link <em>PRs</em> to <em>GitHub Issues</em> is described in more details in this
 <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue">guide</a>.</p>
-<a class="reference internal image-reference" href="../_images/traceability.png"><img alt="Traceability overview" class="align-center" src="../_images/traceability.png" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../_images/traceability.png"><img alt="Traceability overview" class="align-center" src="../_images/traceability.png" style="width: 300px;" />
+</a>
 </section>
 <section id="github-projects">
 <h4>GitHub Projects<a class="headerlink" href="#github-projects" title="Link to this heading">#</a></h4>
@@ -733,7 +745,8 @@ Additionally, the main <em>SCORE</em> repository defines project wide milestones
 that are visible in the roadmap as well.</p>
 </li>
 </ul>
-<a class="reference internal image-reference" href="../_images/roadmap_example.png"><img alt="Roadmap example" class="align-center" src="../_images/roadmap_example.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="../_images/roadmap_example.png"><img alt="Roadmap example" class="align-center" src="../_images/roadmap_example.png" style="width: 600px;" />
+</a>
 </section>
 <section id="releases-and-milestones">
 <h4>Releases and milestones<a class="headerlink" href="#releases-and-milestones" title="Link to this heading">#</a></h4>
@@ -767,7 +780,8 @@ project leads and community leads in the “Committer circle” they go through 
 <p>As soon as the saga was planned for implementation, its state is changed to <em>“Open”</em>.
 As next step, a <em>GitHub Issue</em> of type <em>epic</em> is created as sub-issue of the saga
 and gets assigned to one of the <em>Communities</em> for refinement. The state of the saga changes from “Open” to “In Specification”.</p>
-<a class="reference internal image-reference" href="../_images/saga_status_workflow.svg"><img alt="Planning workflow" class="align-center" src="../_images/saga_status_workflow.svg" style="width: 900px;" /></a>
+<a class="reference internal image-reference" href="../_images/saga_status_workflow.svg"><img alt="Planning workflow" class="align-center" src="../_images/saga_status_workflow.svg" style="width: 900px;" />
+</a>
 <p>The members of the <em>Responsible Community</em> define or refine feature, process or tool requirements. They may also create feature architecture and high level component requirements for every involved software component. Depending on the feature scope, one of the cross-functional team can be requested to make a POC in the <a class="reference external" href="https://eclipse-score.github.io/score/features/integration/index.html#incubation-repositories">incubation repository</a>. Finally, <em>Responsible Community</em> does the break down of the corresponding <em>saga</em> to the tickets that can be assigned to the individual software modules or <em>communities</em>.
 As most of the software modules will have their own separate repository,
 then the detailed tracking of their work will also happen inside of that repository.
@@ -880,13 +894,13 @@ is changed from “experimental” to “official”.</p>
 </div>
 
   <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/platform_management_plan/project_management.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/platform_management_plan/project_management.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
 
 </div></div>
               
@@ -901,8 +915,8 @@ is changed from “experimental” to “official”.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
-<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -925,7 +939,8 @@ is changed from “experimental” to “official”.</p>
       
         <div class="footer-item">
 <p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.0.
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
