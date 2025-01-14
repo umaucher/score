@@ -114,5 +114,6 @@ needs_global_options = needs_global_options | layouts.needs_global_options
 needs_id_required = True
 needs_id_regex = "^[A-Za-z0-9_-]{6,}"
 
+
 def setup(app: Sphinx):
     checks.add_warnings(app)
