@@ -209,7 +209,7 @@ Handles
 
 A handle is a numeric value that uniquely refers to an individual element in the communication system.
 
-A specific element in the communication system
+The numeric value can safely be transported through the communication system and shall be resolvable into a reference of the original element.
 
 Data Types
 ----------
@@ -538,6 +538,6 @@ The communication framework shall support the following principal security capab
 - Authenticaion: Unambigous identification of the communication elements, especially producers and consumers of data.
 - Authorization: A set of rules granting or denying access to communication operations based on the Authentication of participants in the communication framework.
 - Protection: Means to protect the integrity of data received by consumers.
-- Encryption: Means to protext the content of data in transit.
+- Encryption: Means to protect the content of data in transit.
 
 The definition of requirements for appropriate cryptographic hashing and encryption algorithms is not part of this document.
