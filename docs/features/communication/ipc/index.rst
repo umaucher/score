@@ -235,6 +235,7 @@ Float16   Floating   ``f16``   ``float16_t``              2      An IEEE 756 32 
 Float32   Floating   ``f32``   ``float``, ``float32_t``   4      An IEEE 756 32 bit floating point
 Float64   Floating   ``f64``   ``double``, ``float64_t``  8      An IEEE 756 64 bit floating point
 BFloat16  Floating   ``bf16``  ``bfloat16_t``             2      A Google brain float 16 floating point
+TFloat32  Floating   ``tf32``  ``tfloat32_t``             2      An NVIDIA tensor float 32 floating point
 Char      String     ``char``  ``char32_t``               4      A unicode codepoint (32 bit)
 String    String     ``str``   -                          n/a    A UTF-8 encoded text
 Handle    Reference  -         -                          8      A 64 bit unsigned integer handle
