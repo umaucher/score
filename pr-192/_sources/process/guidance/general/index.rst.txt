@@ -29,6 +29,7 @@ The following shows the folder structure of the platform repository (ordered alp
 can be in a different order.
 
 .. code-block:: text
+
    @eclise-score/score/                                -> Central repository for the platform
        docs/                                           -> Global documentation of the platform.
            concepts/                                   -> Description of overall concepts.
