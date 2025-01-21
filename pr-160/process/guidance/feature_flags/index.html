@@ -496,6 +496,8 @@ configuration settings in the application or by querying an external service
 for configuration.</p></li>
 </ul>
 <p>This guidance will focus on the former.</p>
+<p>Also, do not confuse feature flags with platforms. Feature flags are independent from
+the platform. A platform is for example QNX on an ARM architecture.</p>
 </section>
 <section id="example-for-a-feature-flag">
 <h3>Example for a feature flag<a class="headerlink" href="#example-for-a-feature-flag" title="Link to this heading">#</a></h3>
@@ -533,84 +535,22 @@ disable features for builds and tests.</p>
 values for a set of feature flags.</p>
 <div class="literal-block-wrapper docutils container" id="id3">
 <div class="code-block-caption"><span class="caption-number">Listing 2 </span><span class="caption-text">.bazelrc</span><a class="headerlink" href="#id3" title="Link to this code">#</a></div>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>build:feature_flag_values_non_default<span class="w"> </span>--//some_module:some_feature<span class="o">=</span>False<span class="w"> </span>--//yet_another_module:some_other_feature<span class="o">=</span>False
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>build:no_rear_doors<span class="w"> </span>--//rear_doors:left_door<span class="o">=</span>False<span class="w"> </span>--//rear_doors:right_door<span class="o">=</span>False
 </pre></div>
 </div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>build<span class="w"> </span><span class="se">\</span>
 --platforms<span class="o">=</span>//platform:some_platform<span class="w"> </span><span class="se">\ </span><span class="c1"># TODO: To be defined with overall integration</span>
---config<span class="o">=</span>feature_flag_values_non_default<span class="w"> </span><span class="se">\</span>
+--config<span class="o">=</span>no_rear_doors<span class="w"> </span><span class="se">\</span>
 --extra_toolchains<span class="o">=</span>//toolchains:some_compiler<span class="w"> </span>//some_module:some_target
 </pre></div>
 </div>
 <p>Note that these are mere user conveniences and combinatorial scenarios will not
 be allowed in CI testing.</p>
 </section>
-<section id="bazel-configuration-items">
-<h3>Bazel configuration items<a class="headerlink" href="#bazel-configuration-items" title="Link to this heading">#</a></h3>
-<p>Bazel has two fundamental building blocks for specifying configuration:</p>
-<ul class="simple">
-<li><p><strong>Build settings</strong>: A build setting is a single piece of configuration
-information. Configuration information can be modeled as key/value map, where
-one build setting could assume multiple values. Build settings generally
-affect the target application build graph (via select()). Build settings must
-have default values and can be overwritten using <strong>build flags</strong>.</p></li>
-<li><p><strong>Platforms</strong>: A platform is a concrete definition within dimensions that can
-vary across target environments. Platforms in Bazel are defined by
-specifying the concrete values (constraint_value) within a varying dimension
-(constraint_setting), similar to the key/value map. For example, the
-fundamental dimensions for processor systems are typically defined by the CPU
-architecture (ISA on a high-level, but could be specialized to a
-micro architecture) and the Operating System. Platforms in Bazel are designed
-for configuration of host/build tools, e.g. select the appropriate compiler
-when building for x86 vs. ARM.</p></li>
-</ul>
-<p>Since this guidance is meant to address feature configuration, we will only
-focus on <strong>Build settings</strong></p>
-<p>For further details on the implementation of build settings, check out the
-<a class="reference external" href="https://bazel.build/extending/config#user-defined-build-settings">Bazel documentation</a>.</p>
-<p>When a user is building/testing, the configuration is set via a combination of
-information passed from the user, via command line, and the default values
-configured in the build settings. Bazel also provides convenient indirections
-that abstract a collection of flags, namely
-<a class="reference external" href="https://bazel.build/docs/user-manual#config">–config</a>.</p>
 </section>
-<section id="bazel-transitions">
-<h3>Bazel transitions<a class="headerlink" href="#bazel-transitions" title="Link to this heading">#</a></h3>
-<p>As aforementioned, configuration of a build/test is typically set by the user
-via command-line. <strong>Transitions</strong> break this pattern in order to support
-multi-configuration builds/tests in one go. This is accomplished by creating an
-entry point for the build that automatically configures its graph, ignoring the
-configuration set by the user.</p>
-<p>Transitions have drawbacks though:</p>
-<p>Let’s imagine a scenario where we have a test depending on an application that
-depends on a library, represented by <cite>Test -&gt; Application -&gt; Library</cite>. Let’s
-also assume that our flag/configuration affects the <cite>Application</cite> but not the
-<cite>Library</cite>. If one runs both versions of the test, with the feature
-enabled/disabled, one would assume the <cite>Library</cite> is reused and only the
-<cite>Application</cite> and <cite>Test</cite> would have to be re-built.</p>
-<p>Unfortunately, this is not the case, with transitions the entire build tree
-would be duplicated. This happens because Bazel has a core assumption for
-correctness: Isolation between different actions/configurations, i.e. no shared
-actions. A more detailed explanation can be found
-<a class="reference external" href="https://github.com/bazelbuild/bazel/issues/14236#issuecomment-1332896717">here</a>.</p>
-<p>The Bazel maintainers and community have mitigated this issue, by accomplishing
-this de-duplication via the cache (but not on the build system itself!).
-Several efforts have been done over the years which finally converging in
-<a class="reference external" href="https://github.com/bazelbuild/bazel/discussions/22658">Path Mapping</a>.
-It was confirmed using a Java example, which is the language with most advanced
-support, this is behaving as desired.</p>
-<p>Path mapping for C++ is <a class="reference external" href="https://github.com/bazelbuild/bazel/pull/22876">supported</a>
-since Bazel version 7.3.0. Any internal custom rules in SCORE must also support this.</p>
-<p>Besides the functional issues, transitions also have a slight user experience
-issue. Since they are applied via entry point which recursively configures it’s
-tree, users must be aware that building any dependency referenced by the
-transition will lose the configuration set by the transition itself (instead,
-the configuration will be taken from the user’s command).</p>
-</section>
-</section>
-<section id="design">
-<h2>Design<a class="headerlink" href="#design" title="Link to this heading">#</a></h2>
+<section id="design-guidance-of-feature-flags-in-score">
+<h2>Design Guidance of feature flags in SCORE<a class="headerlink" href="#design-guidance-of-feature-flags-in-score" title="Link to this heading">#</a></h2>
 <section id="goals">
 <h3>Goals<a class="headerlink" href="#goals" title="Link to this heading">#</a></h3>
 <ol class="arabic">
@@ -676,13 +616,12 @@ practice but responsibility for maintenance must remain with the area.</p></li>
 <p>Below, we list the four categories of feature flags and provide additional information and constraints for each.</p>
 <section id="enabling-a-feature">
 <h3>Enabling a feature<a class="headerlink" href="#enabling-a-feature" title="Link to this heading">#</a></h3>
-<p>This feature flag is unique per feature in the feature tree and mentioned in the feature description at the top of the
-document.</p>
+<p>For each feature there is exactly one flag that enables it.
+It is mentioned in the feature description at the top of the feature documentation found in <a class="reference internal" href="../../../features/index.html#features"><span class="std std-ref">Features</span></a>.</p>
 <p>The name of the flag is defined as <cite>&lt;feature_name&gt;</cite>, where <cite>&lt;feature_name&gt;</cite> corresponds to the name of
 the feature in <cite>snake_case</cite>.</p>
 <p>The feature flag must be of type <cite>bool_flag</cite>.</p>
-<p>Feature flags of this category reside in
-<a class="reference external" href="&lt;https://github.com/eclipse-score/reference_integration/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
+<p>Feature flags of this category reside in <a class="reference external" href="&lt;https://github.com/eclipse-score/score/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
 </section>
 <section id="selection-of-the-implementation-for-an-enabled-feature">
 <h3>Selection of the implementation for an enabled feature<a class="headerlink" href="#selection-of-the-implementation-for-an-enabled-feature" title="Link to this heading">#</a></h3>
@@ -690,9 +629,10 @@ the feature in <cite>snake_case</cite>.</p>
 a feature flag.</p>
 <p>The name of the flag is defined as <cite>&lt;feature_name&gt;_implementation</cite>, where <cite>&lt;feature_name&gt;</cite> corresponds to the name of
 the feature in <cite>snake_case</cite>.</p>
-<p>The feature flag must be of type <cite>string_list_flag</cite> and shall only allow single values.</p>
-<p>Feature flags of this category reside in
-<a class="reference external" href="&lt;https://github.com/eclipse-score/reference_integration/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
+<p>The feature flag is a string.
+In Starlark it is represented by a <cite>string_list_flag</cite> which is configured to only allow a single value.
+Each value must be encoded in <cite>snake_case</cite>.</p>
+<p>Feature flags of this category reside in <a class="reference external" href="&lt;https://github.com/eclipse-score/score/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
 </section>
 <section id="configuration-of-a-feature">
 <h3>Configuration of a feature<a class="headerlink" href="#configuration-of-a-feature" title="Link to this heading">#</a></h3>
@@ -703,8 +643,7 @@ are of this category.</p>
 <li><p><cite>&lt;feature_name&gt;</cite> corresponds to the name of the feature in <cite>snake_case</cite></p></li>
 <li><p><cite>&lt;configuration&gt;</cite> corresponds to the name of the configuration in <cite>snake_case</cite></p></li>
 </ul>
-<p>Feature flags of this category reside in
-<a class="reference external" href="&lt;https://github.com/eclipse-score/reference_integration/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
+<p>Feature flags of this category reside in <a class="reference external" href="&lt;https://github.com/eclipse-score/score/tree/main/flags&gt;">eclipse-score/score:flags</a>.</p>
 </section>
 <section id="implementation-specific-configuration">
 <h3>Implementation specific configuration<a class="headerlink" href="#implementation-specific-configuration" title="Link to this heading">#</a></h3>
@@ -759,43 +698,28 @@ It will not work, since <cite>select()</cite> cannot be combined with <cite>visi
 </section>
 <section id="c">
 <h3>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h3>
-<p>The selection which tests shall be executed depending on a feature values shall
-be done via preprocessor macros in the test.cpp</p>
-<p>The activation/deactivation of features is propagated via <cite>local_defines</cite>.</p>
-<div class="literal-block-wrapper docutils container" id="id6">
-<div class="code-block-caption"><span class="caption-number">Listing 5 </span><span class="caption-text">some_module/test.cpp</span><a class="headerlink" href="#id6" title="Link to this code">#</a></div>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#if defined(SOME_FEATURE)</span>
-<span class="w">    </span><span class="n">EXPECT_CALL</span><span class="p">(...)</span>
-<span class="cp">#else</span>
-<span class="w">    </span><span class="n">EXPECT_CALL</span><span class="p">(...)</span>
-</pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The preferred way is to be discussed in the score-cpp-community.</p>
 </div>
-</div>
-<div class="literal-block-wrapper docutils container" id="id7">
-<div class="code-block-caption"><span class="caption-number">Listing 6 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
-<div class="highlight-bazel notranslate"><div class="highlight"><pre><span></span><span class="n">cc_library</span><span class="p">(</span>
-    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;lib&quot;</span><span class="p">,</span>
-    <span class="n">local_defines</span> <span class="o">=</span> <span class="n">select</span><span class="p">({</span>
-        <span class="s2">&quot;:config_some_feature&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;SOME_FEATURE&quot;</span><span class="p">],</span>
-        <span class="s2">&quot;//conditions:default&quot;</span><span class="p">:</span> <span class="p">[],</span>
-    <span class="p">}),</span>
-    <span class="c1"># ...</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p>Possible options are:</p>
+<ul class="simple">
+<li><p>select for tag local_defines in Bazel rule &amp; preprocessor</p></li>
+<li><p>templated config file with constexpr flags</p></li>
+<li><p>select() for tag srcs in Bazel rule to choose specific source files</p></li>
+</ul>
 </section>
 <section id="python">
 <h3>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h3>
 <p>We recommend to propagate features via command line arguments. e.g.</p>
-<div class="literal-block-wrapper docutils container" id="id8">
-<div class="code-block-caption"><span class="caption-number">Listing 7 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id8" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-number">Listing 5 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id6" title="Link to this code">#</a></div>
 <div class="highlight-bazel notranslate"><div class="highlight"><pre><span></span><span class="n">py_binary</span><span class="p">(</span>
   <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;foo.py&quot;</span><span class="p">,</span>
   <span class="n">srcs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;test.cpp&quot;</span><span class="p">],</span>
   <span class="n">deps</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;:lib&quot;</span><span class="p">],</span>
   <span class="n">args</span> <span class="o">=</span> <span class="n">select</span><span class="p">({</span>
-    <span class="s2">&quot;:config_some_feature&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;SOME_FEATURE&quot;</span><span class="p">],</span>
+    <span class="s2">&quot;:config_some_feature&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;--some_feature&quot;</span><span class="p">],</span>
     <span class="s2">&quot;//conditions:default&quot;</span><span class="p">:</span> <span class="p">[],</span>
   <span class="p">}),</span>
 <span class="p">)</span>
@@ -807,16 +731,16 @@ be done via preprocessor macros in the test.cpp</p>
 <h3>Config Files<a class="headerlink" href="#config-files" title="Link to this heading">#</a></h3>
 <p>Feature flags can be used in config files via bazel template expansion.
 E.g.:</p>
-<div class="literal-block-wrapper docutils container" id="id9">
-<div class="code-block-caption"><span class="caption-number">Listing 8 </span><span class="caption-text">some_module/config.json.tmpl</span><a class="headerlink" href="#id9" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-number">Listing 6 </span><span class="caption-text">some_module/config.json.tmpl</span><a class="headerlink" href="#id7" title="Link to this code">#</a></div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;some_key&quot;</span><span class="p">:</span> <span class="nd">@SOME_FEATURE</span><span class="o">@</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
-<div class="literal-block-wrapper docutils container" id="id10">
-<div class="code-block-caption"><span class="caption-number">Listing 9 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id10" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-number">Listing 7 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id8" title="Link to this code">#</a></div>
 <div class="highlight-bazel notranslate"><div class="highlight"><pre><span></span><span class="n">expand_template</span><span class="p">(</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;config&quot;</span><span class="p">,</span>
     <span class="n">out</span> <span class="o">=</span> <span class="s2">&quot;config.json&quot;</span><span class="p">,</span>
@@ -857,11 +781,15 @@ generally recommended anyways.</p></li>
 <section id="unit-tests">
 <h3>Unit tests<a class="headerlink" href="#unit-tests" title="Link to this heading">#</a></h3>
 <p>A unit test shall never test more than one single feature.</p>
-<p>The selection which tests shall be executed depending on a feature values shall
-be done via preprocessor macros in the test.cpp</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The preferred way is to be discussed in the score-cpp-community.</p>
+</div>
+<p>The selection which tests shall be executed depending on a feature flag shall
+be done via preprocessor macros in the test.cpp.</p>
 <p>The activation/deactivation of features is propagated via <cite>local_defines</cite>.</p>
-<div class="literal-block-wrapper docutils container" id="id11">
-<div class="code-block-caption"><span class="caption-number">Listing 10 </span><span class="caption-text">some_module/test.cpp</span><a class="headerlink" href="#id11" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-number">Listing 8 </span><span class="caption-text">some_module/test.cpp</span><a class="headerlink" href="#id9" title="Link to this code">#</a></div>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cp">#if defined(SOME_FEATURE)</span>
 <span class="w">    </span><span class="n">EXPECT_CALL</span><span class="p">(...)</span>
 <span class="cp">#else</span>
@@ -869,8 +797,8 @@ be done via preprocessor macros in the test.cpp</p>
 </pre></div>
 </div>
 </div>
-<div class="literal-block-wrapper docutils container" id="id12">
-<div class="code-block-caption"><span class="caption-number">Listing 11 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id12" title="Link to this code">#</a></div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-number">Listing 9 </span><span class="caption-text">some_module/BUILD</span><a class="headerlink" href="#id10" title="Link to this code">#</a></div>
 <div class="highlight-bazel notranslate"><div class="highlight"><pre><span></span><span class="n">cc_test</span><span class="p">(</span>
     <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
     <span class="n">srcs</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;test.cpp&quot;</span><span class="p">],</span>
@@ -911,10 +839,45 @@ be done via preprocessor macros in the test.cpp</p>
 <span class="s2">  )&quot;</span><span class="w"> </span>--output<span class="w"> </span>label_kind<span class="w"> </span><span class="p">|</span><span class="w"> </span>sort
 </pre></div>
 </div>
-<p>Example output</p>
+<p>Example output:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>//some_module:some_feature
+//some_other_module:some_feature
 </pre></div>
 </div>
+</section>
+<section id="information-for-bazel-power-users">
+<h2>Information for Bazel Power Users<a class="headerlink" href="#information-for-bazel-power-users" title="Link to this heading">#</a></h2>
+<p>In the following sections we provide some additional background.
+This is quite technical and not required by standard users.</p>
+<section id="custom-rules-must-be-compatible-with-path-mapping">
+<h3>Custom rules must be compatible with Path Mapping<a class="headerlink" href="#custom-rules-must-be-compatible-with-path-mapping" title="Link to this heading">#</a></h3>
+<p>As aforementioned, configuration of a build/test is typically set by the user
+via command-line. <strong>Transitions</strong> break this pattern in order to support
+multi-configuration builds/tests in one go. This is accomplished by creating an
+entry point for the build that automatically configures its graph, ignoring the
+configuration set by the user.</p>
+<p>Let’s imagine a scenario where we have a test depending on an application that
+depends on a library, represented by <cite>Test -&gt; Application -&gt; Library</cite>. Let’s
+also assume that our flag/configuration affects the <cite>Application</cite> but not the
+<cite>Library</cite>. If one runs both versions of the test, with the feature
+enabled/disabled, one would assume the <cite>Library</cite> is reused and only the
+<cite>Application</cite> and <cite>Test</cite> would have to be re-built.</p>
+<p>This deduplication is accomplished via the cache (but not on the build system itself!).
+Several efforts have been done over the years which finally converge in
+<a class="reference external" href="https://github.com/bazelbuild/bazel/discussions/22658">Path Mapping</a>.
+It was confirmed using a Java example, which is the language with most advanced
+support, this is behaving as desired.</p>
+<p>Path mapping for C++ is <a class="reference external" href="https://github.com/bazelbuild/bazel/pull/22876">supported</a>
+since Bazel version 7.3.0. Any internal custom rules in SCORE must also support this.
+A starting point for requirements based on the rules can be found
+<a class="reference external" href="https://github.com/bazelbuild/bazel/discussions/22658">here</a>.
+Please be advised, that this may be incomplete. Please refer to Bazel documentation.</p>
+<p>Transitions have a slight user experience issue.
+Since they are applied via entry point which recursively configures it’s
+tree, users must be aware that building any dependency referenced by the
+transition will lose the configuration set by the transition itself (instead,
+the configuration will be taken from the user’s command).</p>
+</section>
 </section>
 </section>
 
@@ -969,11 +932,9 @@ be done via preprocessor macros in the test.cpp</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Feature flags</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-for-a-feature-flag">Example for a feature flag</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#defining-convenient-combinations-of-feature-flags">Defining convenient combinations of feature flags</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bazel-configuration-items">Bazel configuration items</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bazel-transitions">Bazel transitions</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design">Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design-guidance-of-feature-flags-in-score">Design Guidance of feature flags in SCORE</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#goals">Goals</a></li>
 </ul>
 </li>
@@ -996,6 +957,10 @@ be done via preprocessor macros in the test.cpp</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-flag-discovery">Feature flag discovery</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#information-for-bazel-power-users">Information for Bazel Power Users</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#custom-rules-must-be-compatible-with-path-mapping">Custom rules must be compatible with Path Mapping</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
