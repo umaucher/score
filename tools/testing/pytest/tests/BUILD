@@ -1,5 +1,5 @@
 # *******************************************************************************
-# Copyright (c) 2024 Contributors to the Eclipse Foundation
+# Copyright (c) 2025 Contributors to the Eclipse Foundation
 #
 # See the NOTICE file(s) distributed with this work for additional
 # information regarding copyright ownership.
@@ -13,13 +13,9 @@
 load("//tools/testing/pytest:defs.bzl", "score_py_pytest")
 
 score_py_pytest(
-    name = "test",
-    size = "small",
+    name = "test_rules_are_working_correctly",
     srcs = [
-        "check_options_test.py",
-    ],
-    visibility = ["//visibility:public"],
-    deps = [
-        "//docs/_tooling/sphinx_extensions",
+        "conftest.py",
+        "test_rules_are_working_correctly.py",
     ],
 )
