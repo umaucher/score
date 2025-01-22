@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Score 0.1 documentation</title>
+    <title>Logging &#8212; Score 0.1 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/analysis-infra/logging/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features/analysis-infra/logging/mw-fr_logging';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Logging" href="mw-fr_logging.html" />
-    <link rel="prev" title="Analysis Infrastructure" href="../index.html" />
+    <link rel="next" title="&lt;no title&gt;" href="../tracing/index.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -383,10 +383,14 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../integration/index.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../index.html">Analysis Infrastructure</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Analysis Infrastructure</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Logging</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tracing/mw-fr_tracing.html">Tracing</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../communication/index.html">Communication</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../persistency/index.html">Persistency</a></li>
@@ -436,7 +440,10 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Analysis Infrastructure</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">&lt;no title&gt;</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">&lt;no title&gt;</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Logging</span></li>
   </ul>
 </nav>
 </div>
@@ -453,11 +460,203 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="mw-fr_logging.html">Logging</a></li>
-</ul>
+  <section id="logging">
+<h1>Logging<a class="headerlink" href="#logging" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-6c866331">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC_Logging">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Logging</span></span></span></div>
 </div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
+<div class="line"><span>security: </span><strong><span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span><span class="needs_safety"><span class="needs_data">ASIL_D</span></span></span></strong></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">feature_request</span></span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#DOC_Logging" title="DOC_Logging">DOC_Logging</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="feature-flag">
+<h2>Feature flag<a class="headerlink" href="#feature-flag" title="Link to this heading">#</a></h2>
+<p>To activate this feature, use the following feature flag:</p>
+<p><code class="docutils literal notranslate"><span class="pre">experimental_Logging</span></code></p>
+</section>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h2>
+<p>This feature request proposes the development of a safe, efficient and robust logging framework for embedded systems.</p>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>currently no solution availible in the score platform</p></li>
+</ul>
+</section>
+<section id="rationale">
+<h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
+<p>Logging provides the possibility to understand the running system by capturing detailed information about system events.</p>
+</section>
+<section id="specification">
+<h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
+<p>[Describe the requirements, architecture of any new feature.] [or]
+[Describe the change to requirements, architecture, implementation, process, documentation, infrastructure of any change request.]</p>
+<blockquote>
+<div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A Feature Request shall specify the stakeholder requirements as part of our platform/project.
+Thereby the <a class="reference internal" href="../../../process/roles/index.html#RL_technical_lead" title="RL_technical_lead"><em class="xref need">Technical Lead (RL_technical_lead)</em></a> will approve these requirements as part of accepting the Feature Request (e.g. merging the PR with the Feature Request).</p>
+</div>
+</div></blockquote>
+<section id="functionality">
+<h3>Functionality<a class="headerlink" href="#functionality" title="Link to this heading">#</a></h3>
+<p>Logging has to support the following features:
+- Timestamping
+- Log/serverity levels
+- Log priorisation in case of ressource conflicts
+- logging of early startup envents
+- log filtering
+- message loss detection
+- Component specific log level activation ???</p>
+</section>
+<section id="log-sources">
+<h3>Log Sources<a class="headerlink" href="#log-sources" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>raw sensor data e.g. video streams</p></li>
+<li><p>user application</p></li>
+<li><p>component features &amp; platform</p></li>
+</ul>
+</section>
+<section id="log-sinks">
+<h3>Log Sinks<a class="headerlink" href="#log-sinks" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>console</p></li>
+<li><p>File system
+– local
+– external mounted PCIe Drive
+– Cloud native drive via network</p></li>
+<li><p>Network (incl. second dedicated Ethernet Channel)</p></li>
+<li><p>Logs shall appear on stdout when running unit tests</p></li>
+</ul>
+</section>
+<section id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Log level</p></li>
+<li><p>Log Sinks</p></li>
+<li><p>Buffer size</p></li>
+<li><p>Storage size</p></li>
+<li><p>Permission settings</p></li>
+<li><p>log filter</p></li>
+<li></li>
+</ul>
+</section>
+<section id="error-handling">
+<h3>Error handling<a class="headerlink" href="#error-handling" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>reboot/reset</p></li>
+<li><p>On logging errors, the framework should continue if recoverable; otherwise, deactivate silently and set an error state reported on shutdown.</p></li>
+<li><p>The user application should not be affected by logging framework errors.</p></li>
+</ul>
+</section>
+<section id="context">
+<h3>Context<a class="headerlink" href="#context" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Supported operating system: QNX, Linux (encapsulation via OSAL)</p></li>
+<li><p>Supported programming languages: C++, Rust, Python (e.g. for tests)</p></li>
+</ul>
+</section>
+<section id="ressource-consumtion">
+<h3>Ressource consumtion<a class="headerlink" href="#ressource-consumtion" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Storage</p></li>
+<li><p>Communication Channel</p></li>
+<li><p>Runtime ressources</p></li>
+<li><p>Low impact on overall performance —&gt; QoS for handling overflows/dropping log messages</p></li>
+</ul>
+</section>
+<section id="norms-standards">
+<h3>Norms/Standards<a class="headerlink" href="#norms-standards" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="backwards-compatibility">
+<h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
+<p>-</p>
+</section>
+<section id="security-impact">
+<h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>only authorized users should be able to access the log files</p></li>
+</ul>
+</section>
+<section id="safety-impact">
+<h2>Safety Impact<a class="headerlink" href="#safety-impact" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The interface should support the ASIL level of the user function.</p></li>
+<li><p>Dependent on the Safety concept of the over all system, the logging should be classified accordingly.
+That could be the case if the logging informations are part of the verification strategy..</p></li>
+</ul>
+</section>
+<section id="license-impact">
+<h2>License Impact<a class="headerlink" href="#license-impact" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>not kwown</p></li>
+</ul>
+</section>
+<section id="how-to-teach-this">
+<h2>How to Teach This<a class="headerlink" href="#how-to-teach-this" title="Link to this heading">#</a></h2>
+<p>How to Use: Logging Guideline</p>
+</section>
+<section id="definitions">
+<h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
+<section id="id1">
+<h3>Logging<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Write out some message
+General progress description (incl. Context)
+- state changes
+- Infos
+- errors</p>
+<p>When logging from a library, it shall be possible to easily associate the logs to the library. A solution could be to provide contexts.</p>
+</section>
+<section id="tracing">
+<h3>Tracing<a class="headerlink" href="#tracing" title="Link to this heading">#</a></h3>
+<p>Example - User need to correlate kernel traces to user traces for debugging , analysing etc
+Follow the control flow (on function call basis)of the application.</p>
+</section>
+<section id="recompute">
+<h3>Recompute<a class="headerlink" href="#recompute" title="Link to this heading">#</a></h3>
+<p>All data to recompute a module (Input, Output, States)</p>
+</section>
+</section>
+</section>
 
 
                 </article>
@@ -470,20 +669,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Analysis Infrastructure</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
     <a class="right-next"
-       href="mw-fr_logging.html"
+       href="../tracing/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logging</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -499,10 +698,47 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-flag">Feature flag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale">Rationale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#functionality">Functionality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#log-sources">Log Sources</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#log-sinks">Log Sinks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration">Configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#error-handling">Error handling</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#context">Context</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ressource-consumtion">Ressource consumtion</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#norms-standards">Norms/Standards</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backwards-compatibility">Backwards Compatibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-impact">Security Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-impact">Safety Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license-impact">License Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-teach-this">How to Teach This</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Logging</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tracing">Tracing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recompute">Recompute</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/analysis-infra/logging/index.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/analysis-infra/logging/mw-fr_logging.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -518,7 +754,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/features/analysis-infra/logging/index.rst.txt"
+      <li><a href="../../../_sources/features/analysis-infra/logging/mw-fr_logging.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
