@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Features &#8212; Score 0.1 documentation</title>
+    <title>Guidance: Docs-As-Code &#8212; Score 0.1 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'guidance/docs-as-code';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Analysis Infrastructure" href="analysis-infra/index.html" />
-    <link rel="prev" title="Tool Requirements" href="../requirements/tool/index.html" />
+    <link rel="next" title="SCORE Releases Overview" href="../score_releases/index.html" />
+    <link rel="prev" title="Guidance" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -152,15 +152,15 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
     Features
   </a>
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../guidance/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
     Guidance
   </a>
 </li>
@@ -306,15 +306,15 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="#">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
     Features
   </a>
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../guidance/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
     Guidance
   </a>
 </li>
@@ -397,13 +397,8 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="communication/index.html">Communication</a></li>
-<li class="toctree-l1"><a class="reference internal" href="frameworks/index.html">Frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infrastructure/index.html">Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="integration/index.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="persistency/index.html">Persistency</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Guidance: Docs-As-Code</a></li>
 </ul>
 </div>
 </nav></div>
@@ -444,7 +439,10 @@
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Features</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Guidance</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Guidance: Docs-As-Code</span></li>
   </ul>
 </nav>
 </div>
@@ -461,18 +459,58 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="features">
-<span id="id1"></span><h1>Features<a class="headerlink" href="#features" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="communication/index.html">Communication</a></li>
-<li class="toctree-l1"><a class="reference internal" href="frameworks/index.html">Frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="infrastructure/index.html">Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="integration/index.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="persistency/index.html">Persistency</a></li>
-</ul>
+  <section id="guidance-docs-as-code">
+<h1>Guidance: Docs-As-Code<a class="headerlink" href="#guidance-docs-as-code" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>This document describes how to write and publish documentation using the SCORE Docs-As-Code approach.</p>
+</section>
+<section id="diagrams">
+<h2>Diagrams<a class="headerlink" href="#diagrams" title="Link to this heading">#</a></h2>
+<p>The SCORE Docs-As-Code solution supports several ways to create diagrams.
+Each has its own strengths and weaknesses.</p>
+<section id="draw-io">
+<h3>Draw.io<a class="headerlink" href="#draw-io" title="Link to this heading">#</a></h3>
+<p>Draw.io can be used to create diagrams in a graphical editor.</p>
+<p>The easiest way to use Draw.io is to create a new file in VS Code and use the Draw.io extension.
+The new file must be named with the <cite>.drawio.svg</cite> extension.
+When you click on the file, the Draw.io editor will open within VS Code:</p>
+<a class="reference internal image-reference" href="../_images/drawio-editing.png"><img alt="Draw.io Editor in VS Code" src="../_images/drawio-editing.png" style="width: 209.20000000000002px; height: 132.8px;" />
+</a>
+<p>Then you can embed the image in .rST files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> assets/docs-as-code/example.drawio.svg
+   <span class="nc">:alt:</span> Example Diagram
+</pre></div>
 </div>
+<p>Which will render like this:</p>
+<img alt="Example Diagram" src="../_images/example.drawio.svg" />
+</section>
+<section id="plantuml">
+<h3>PlantUML<a class="headerlink" href="#plantuml" title="Link to this heading">#</a></h3>
+<p>PlantUML can be used to create diagrams in a text-based format.
+The diagrams are rendered as images in the documentation.</p>
+<p>You can use them inline in markdown files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">uml</span><span class="p">::</span>
+
+   @startuml
+   Alice -&gt; Bob: Authentication Request
+   Bob --&gt; Alice: Authentication Response
+   @enduml
+</pre></div>
+</div>
+<p>Which will render like this:</p>
+<p class="plantuml">
+<object data="../_images/plantuml-4a7f1089072e51f30982913982706a8eb1985a78.svg" type="image/svg+xml" style="width:241px;height:149px;background:#FFFFFF;"></object></p>
+<p>Alternatively you can include them as .puml files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">uml</span><span class="p">::</span> assets/docs-as-code/example.puml
+   <span class="nc">:alt:</span> Example Diagram
+</pre></div>
+</div>
+<p>Which will render like this:</p>
+<p class="plantuml">
+<object data="../_images/plantuml-7a7e8979f822256299e5488225a669a57c47d706.svg" type="image/svg+xml" style="width:241px;height:149px;background:#FFFFFF;"></object></p>
+</section>
+</section>
 </section>
 
 
@@ -486,20 +524,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../requirements/tool/index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Tool Requirements</p>
+        <p class="prev-next-title">Guidance</p>
       </div>
     </a>
     <a class="right-next"
-       href="analysis-infra/index.html"
+       href="../score_releases/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Analysis Infrastructure</p>
+        <p class="prev-next-title">SCORE Releases Overview</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -515,10 +553,27 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrams">Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#draw-io">Draw.io</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plantuml">PlantUML</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/index.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/guidance/docs-as-code.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -534,7 +589,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/features/index.rst.txt"
+      <li><a href="../_sources/guidance/docs-as-code.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
