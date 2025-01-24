@@ -19,7 +19,7 @@
 Communication Framework
 #######################
 
-The Communication Framework handles the safe, secure and performant exchange of information between software and/or hardware components of the Score stack.
+The Communication Framework handles the safe, secure and performant exchange of information between software and/or hardware components of the S-CORE stack.
 
 Communication covers information exchange between endpoints residing in
 
@@ -28,7 +28,7 @@ Communication covers information exchange between endpoints residing in
 * the same or different compute devices, built into
 * the same or different devices.
 
-In current communication designs (SomeIP, Protobuf, Zenoh) communication on networks is at the centerpoint of considerations. We believe this to be the wrong approach for software defined machines. Network based communication circles around protocols based on a wire based communication paradigm, requiring serialization and segmentation of data.
+In current communication designs (SOME/IP, Protobuf, zenoh) communication on networks is at the centerpoint of considerations. We believe this to be the wrong approach for software defined machines. Network based communication circles around protocols based on a wire based communication paradigm, requiring serialization and segmentation of data.
 
 Instead, we promote a memory centered core paradigm and put Inter-Process Communication (IPC) into our conceptional focus. This allows for true zero copy design, does not segment or serialize data and fosters significantly higher performance in algorithms. As a bonus, it provides easy gateway mechanisms into serial communication like Ethernet and CAN.
 
@@ -42,15 +42,15 @@ The communication framework defines two central groups of elements:
 * Information Elements
 * Infrastructure Elements
 
-While the former carry the information exchanged the latter provide the means through which the information is exchanged.
+While the former carry the information exchanged, the latter provide the means through which the information is exchanged.
 
 Information Elements
 ````````````````````
 
 There are three fundamental concepts of information exchange defined. One communication element represents each concept:
 
-* **Topics**: A topic is the information carrier for **data**. A unique Id identifies a topic while a *data type* defines it's memory layout. The topic carries zero or multiple *values*. A value represents a single instances of the data type. See _`Topics`, _`Names`, _`Data Types`.
-* **Remote Procedures**: A remote procedure is the information carrier for **execution** progress. A Id handle identifies the remote procedure together with an ordered set of named *parameters*. Each parameter defined by a data type. A caller of a remote procedure can cause it's activation by invoking the remote procedure with passed *arguments*. An argument is a single value instance for a parameter. See _`Remote Procedures`, _`Names`, _`Data Types`.
+* **Topics**: A topic is the information carrier for **data**. A unique Id identifies a topic while a *data type* defines its memory layout. The topic carries zero or multiple *values*. A value represents a single instances of the data type. See _`Topics`, _`Names`, _`Data Types`.
+* **Remote Procedures**: A remote procedure is the information carrier for **execution** progress. An Id handle identifies the remote procedure together with an ordered set of named *parameters*. Each parameter defined by a data type. A caller of a remote procedure can cause its activation by invoking the remote procedure with passed *arguments*. An argument is a single value instance for a parameter. See _`Remote Procedures`, _`Names`, _`Data Types`.
 * **Events**: An event is the information carrier for runtime **synchronization**. A unique Id identifies the event. It signals the change of state. There is no data conveyed with the event. See _`Events`, _`Names`.
 
 While the Id uniquely identifies an information element within the communication framework, it can also have a *name* as alias to conveniently identify the element. While the Id may not be publicly known, the *name* allows for public lookup.
@@ -62,7 +62,7 @@ Infrastructure Elements
 Infrastructure elements provide the means through which the information exchange executes.
 We define three fundamental building elements:
 
-* **Endpoints**: Endpoints are both the source and the target of every information exchange in teh communication framework. An endpoint providing information is consequently called a *provider*. With the same logic a *consumer* is an endpoint consuming information. Endpoints have an *Id* that uniquely identifies the endpoint within a node.
+* **Endpoints**: Endpoints are both the source and the target of every information exchange in the communication framework. An endpoint providing information is consequently called a *provider*. With the same logic a *consumer* is an endpoint consuming information. Endpoints have an *Id* that uniquely identifies the endpoint with regard to the node it is attached to.
 * **Nodes**: A node is an entity in the communication system that hosts several endpoints. It is the central element of the communication fabric by connecting endpoints and routing data. Nodes have an *Id* that uniquely identifies the node within a fabric. A node itself is also an endpoint.
 * **Links**: A link is the fundamental abstraction of a connection between any two nodes. A link conveys information between nodes.
 
@@ -70,7 +70,7 @@ The combination of NodeId and EndpointId we also refer to as *address*. As nodes
 
 Nodes and endpoints may also be identified by a *name* that resolves into references to these elements. See _`Names`, _`References`.
 
-Connecting nodes though links creates a mesh of nodes that can mutually exchange information utilizing the above concepts. The boundary of the mesh is at the sole discretion of the deployment and may span from a single application into a connected cloud environment.
+Connecting nodes through links creates a mesh of nodes that can mutually exchange information utilizing the above concepts. The boundary of the mesh is at the sole discretion of the deployment and may span from a single application into a connected cloud environment.
 
 The entirety of connected nodes within a mesh we call *fabric*.
 
@@ -98,7 +98,7 @@ Forbidden as first character in a name is
 
 Further discouraged is the use of the *whitespace* codepoint ``SPACE``: `` `` ``&#0020``.
 
-Element names prefixed with an underscore ``LOW LINE``: ``_`` ``&#005F`` are regarded to have *private* visibility within the scope they are defined in. While references to private elements are possible, name resolution ony works from within the namespace they are defined in.
+Element names prefixed with an underS-CORE ``LOW LINE``: ``_`` ``&#005F`` are regarded to have *private* visibility within the scope they are defined in. While references to private elements are possible, name resolution ony works from within the namespace they are defined in.
 
 **Design Note**
 
@@ -192,7 +192,7 @@ A ``use`` clause may end with the wildcard ``ASTERISK``: ``*`` ``&#002A``. This 
          access Two  // valid, Two is visible in B
 
 
-Within a namespace elements from another namespace are visible without an explicit use when a resolving path is given.
+Within a namespace, elements from another namespace are visible without an explicit use when a resolving path is given.
 
 ::
 
