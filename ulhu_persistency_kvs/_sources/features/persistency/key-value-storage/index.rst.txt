@@ -15,15 +15,15 @@
 Key-value Storage
 #################
 
--	Key-Value Storage is needed because there are (legacy) applications which require a KVS
--	There are multiple Key-Value Storages allowed per application
--	There must be an update mechanism from different versions of a KVS to another version
--	When are modifications persisted? Configurable?
--	The same KVS should be read/writeable from C++ & Rust.
--	Supported Datatypes: Primitive Datatypes & Non-Primitive Datatypes; To be coordinated with IPC/Communication CTF, to use the same datatypes
--	Tooling to modify/access content of KVS "from the outside"
--	KVS should store default values
--	Integrity of the KVS should be checked
+- Key-Value Storage is needed because there are (legacy) applications which require a KVS
+- There are multiple Key-Value Storages allowed per application
+- There must be an update mechanism from different versions of a KVS to another version
+- When are modifications persisted? Configurable?
+- The same KVS should be read/writeable from C++ & Rust.
+- Supported Datatypes: Primitive Datatypes & Non-Primitive Datatypes; To be coordinated with IPC/Communication CTF, to use the same datatypes
+- Tooling to modify/access content of KVS "from the outside"
+- KVS should store default values
+- Integrity of the KVS should be checked
 
 .. document:: [Your Feature Name]
    :id: DOC__Your_Feature_Name
