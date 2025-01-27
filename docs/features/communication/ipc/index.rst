@@ -389,7 +389,7 @@ A topic stores it's values in a queue with a given depth. The queue has a policy
 
 - Ignore: New data is ignored.
 - Overwrite oldest: New data overwrites the oldest element. This makes the topic a ring buffer.
-- Replace latest: New data replaces the latest element. This makes the latest update always available.
+- Replace latest: New data replaces the latest element, ensuring that the most recent update is always available. A typical use case is when you need to have the newest value at all times while still keeping track of the oldest value that has not been processed.
 - Error: Writing new data to the topic raises an error at the subscriber (and potentially in the topic)
 
 Namespace and Name
