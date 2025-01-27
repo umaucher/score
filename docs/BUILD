@@ -43,6 +43,7 @@ load("@rules_pkg//pkg:mappings.bzl", "pkg_files")
 load("@rules_pkg//pkg:tar.bzl", "pkg_tar")
 load("@rules_python//python:pip.bzl", "compile_pip_requirements")
 load("@rules_python//sphinxdocs:sphinx.bzl", "sphinx_build_binary", "sphinx_docs")
+load("//tools/testing/pytest:defs.bzl", "score_py_pytest")
 
 sphinx_requirements = all_requirements + [
     "@rules_python//python/runfiles",
@@ -151,4 +152,22 @@ py_library(
     data = [
         ":plantuml",
     ],
+)
+
+# Dedicated metamodel target only for pytest.
+# It's required to define the imports for bazel pytest, so that python/pytest can
+# import "from score_metamodel" without issues.
+py_library(
+    name = "score_metamodel",
+    srcs = glob(["_tooling/extensions/score_metamodel/**/*.py"]),
+    imports = ["_tooling/extensions"],
+    visibility = ["//visibility:public"],
+)
+
+score_py_pytest(
+    name = "score_metamodel_test",
+    size = "small",
+    srcs = glob(["_tooling/extensions/score_metamodel/tests/**/*.py"]),
+    visibility = ["//visibility:public"],
+    deps = [":score_metamodel"],
 )
