@@ -65,7 +65,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'process/guidance/contribution_request/index';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Contribution Templates" href="templates/index.html" />
+    <link rel="next" title="Feature Request Template" href="templates/feature_request_template.html" />
     <link rel="prev" title="General" href="../general/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -413,8 +413,10 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../git/index.html">Git Guidelines</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../branch/index.html">Branches</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../feature_flags/index.html">Feature Flags</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../general/index.html">General</a></li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Contribution Request Guideline</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="templates/feature_request_template.html">Feature Request Template</a></li>
 <li class="toctree-l3"><a class="reference internal" href="templates/index.html">Contribution Templates</a></li>
 </ul>
 </details></li>
@@ -486,7 +488,7 @@
                   
   <section id="contribution-request-guideline">
 <h1>Contribution Request Guideline<a class="headerlink" href="#contribution-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-11a31304">
+<div class="need_container docutils container" id="SNCB-de3de309">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Contr_Request_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -533,7 +535,19 @@
 <p>Contributions to the <em>SCORE</em> project are the key to grow the content including the code. Contributions may cover simple improvement proposals, bug or problem reports, but also more complex scope changes of features up to new feature requests. Depending on the contribution scope, several steps may be required to finally merge it within the <em>SCORE</em> repository.</p>
 <p>This guidline shall help the contributor (<a class="reference internal" href="../../roles/index.html#RL_contributor" title="RL_contributor"><em class="xref need">Contributor (RL_contributor)</em></a>) to find the right path for his contribution.</p>
 <p>For simple contributions, like fixing bugs or improvements, just creating a <em>PR</em> is sufficient.</p>
-<p>For more complex contributions, like adding a new feature, where it’s unfitting to just open a PR, open an <em>GitHub Issue</em> to discuss with the community before starting work on it, would be the preferred way.</p>
+<p>For more complex contributions, like adding a new feature:</p>
+<ul class="simple">
+<li><p>open a <em>GitHub Issue</em> (<a class="reference internal" href="#GD_GUIDL__Issue_Guideline" title="GD_GUIDL__Issue_Guideline"><em class="xref need">Issue Guideline (GD_GUIDL__Issue_Guideline)</em></a>)</p></li>
+<li><p>create a PR</p></li>
+<li><p>add the PR to that <em>GitHub Issue</em></p></li>
+</ul>
+<p>For a feature request, use the template provided below and add it to the appropriate section under docs/features.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="templates/feature_request_template.html">Feature Request Template</a></li>
+</ul>
+</div>
+<p>If possible, the reviewer should use the suggestion functionality to suggest a change that the author of the pull request can click to commit if they agree with your suggestion.</p>
 <p>You can also join our <a class="reference external" href="https://sdvworkinggroup.slack.com/archives/C083Z4VL90B">Slack</a> for real-time discussions.</p>
 <p>The <em>SCORE</em> project defines a Contribution Request (<strong>COR</strong>) as any defined and allowed trigger to start the active contribution to the <em>SCORE</em> project. That means obviously that a <em>PR</em> is a Contribution Request.</p>
 <p>Summary:</p>
@@ -550,7 +564,7 @@
 <p>For all possibilites the project contains simple templates (provided by committers (<a class="reference internal" href="../../roles/index.html#RL_committer" title="RL_committer"><em class="xref need">Committer (RL_committer)</em></a>)), in particular please use <a class="reference internal" href="templates/feature_request_template.html#feature-request-template"><span class="std std-ref">Feature Request Template</span></a> to request a new feature or changes to the existing one.</p>
 <section id="what-is-a-pull-request-pr">
 <h2>What is a Pull Request (PR)?<a class="headerlink" href="#what-is-a-pull-request-pr" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-6c4b4a37">
+<div class="need_container docutils container" id="SNCB-657936c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Pull_Request_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -640,7 +654,7 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
 </section>
 <section id="what-is-a-github-issue">
 <h3>What is a GitHub Issue?<a class="headerlink" href="#what-is-a-github-issue" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-dd29ed68">
+<div class="need_container docutils container" id="SNCB-41f579e6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="GD_GUIDL__Issue_Guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -727,11 +741,11 @@ Further the contributor (<a class="reference internal" href="../../roles/index.h
       </div>
     </a>
     <a class="right-next"
-       href="templates/index.html"
+       href="templates/feature_request_template.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Contribution Templates</p>
+        <p class="prev-next-title">Feature Request Template</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
