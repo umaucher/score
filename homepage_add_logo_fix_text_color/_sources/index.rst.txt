@@ -29,8 +29,7 @@ Documentation
    <div id="videowrapper">
       <div id="fullScreenDiv">
          <div id="score-title">
-               Eclipse SCORE
-               <span id="score-subtitle">Eclipse Safe Open Vehicle Core</span>
+               <img class="logo_center" src="_static/S-CORE_Logo_RGB.svg" width="600px"/>
                <span id="score-phrase">Software Documentation</span>
          </div>
       </div>
