@@ -18,152 +18,6 @@ Requirements
 High cohesion and loose coupling
 ================================
 
-.. feat_req:: Standardized service contract
-   :id: FEAT_REQ__ipc__standardized_service_contract
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The communication framework shall provide the means to define service interfaces in a reusable manner.
-
-.. feat_req:: Service reference autonomy
-   :id: FEAT_REQ__ipc__service_reference_autonomy
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   Service discovery solely requires an identifier to find appropriate services.
-   Any deployment information is only supplied in a configuration file read at runtime.
-   Note: If deployment information is missing, this may have impact on the service discovery.
-
-.. feat_req:: Service location transparency
-   :id: FEAT_REQ__ipc__service_location_transparency
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The interface to access services is agnostic to the binding used to communicate with the service.
-   Note: Deployment information may require manual changes based on where the service is located.
-
-.. feat_req:: Service abstraction
-   :id: FEAT_REQ__ipc__service_abstraction
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   Communication with a service shall only happen via the interface of the service. A communication partner shall
-   not require knowledge about internals of the service to interact with it.
-
-.. feat_req:: Service autonomy
-   :id: FEAT_REQ__ipc__service_autonomy
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The communication framework shall provide the means to define independent communication interfaces.
-
-.. feat_req:: Service statelessness
-   :id: FEAT_REQ__ipc__service_statelessness
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The communication framework shall support stateless communication.
-   Note:
-   - In case of events, the producer is not aware of its consumers.
-   - In case of RPC, the skeleton is not aware of the proxy, this request originated from.
-
-.. feat_req:: Service granularity
-   :id: FEAT_REQ__ipc__service_granularity
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The communication framework shall allow multiple services per SW component.
-
-.. feat_req:: Service discovery
-   :id: FEAT_REQ__ipc__service_discovery
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2
-   :status: valid
-
-   The communication framework shall provide service discovery to find available services during runtime.
-   Note: The service discovery may be restricted/impacted by availability of deployment information.
-
-.. feat_req:: Service interface elements
-   :id: FEAT_REQ__ipc__service_interface_elements
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2,STKH_REQ__282,STKH_REQ__283
-   :status: valid
-
-   A service interface consists of a combination of any number of the following elements:
-   - Events
-   - Methods
-
-.. feat_req:: Event
-   :id: FEAT_REQ__ipc__event
-   :reqtype: Functional
-   :security: NO
-   :safety: QM
-   :satisfies: STKH_REQ__2,STKH_REQ__282
-   :status: valid
-
-   An event in a service interface is an element that has:
-
-   - a name
-   - a type
-
-   The service offering the event can assign a value to it.
-   Consumers can subscribe to changes to the value of the element or poll unseen, cached values.
-
-.. feat_req:: Method
-   :id: FEAT_REQ__ipc__method
-   :reqtype: Functional
-   :security: NO
-   :safety: QM
-   :satisfies: STKH_REQ__2,STKH_REQ__283
-   :status: valid
-
-   A method in a service interface is an element that has:
-
-   - a name
-   - a specified application routine with a given set of parameters and a return type
-
-   When a communication partner issues a call to the method with the required parameters:
-
-   1. it shall invoke the application routine with the provided parameters, and
-   2. return its result to the communication partner
-
-   A method call shall be possible both synchronously and asynchronously.
-
-.. feat_req:: Producer-Consumer Pattern
-   :id: FEAT_REQ__ipc__producer_consumer
-   :reqtype: Functional
-   :security: NO
-   :safety: ASIL_B
-   :satisfies: STKH_REQ__2,STKH_REQ__281
-   :status: valid
-
-   Communication shall be cached based on the producer-consumer pattern.
-
 .. feat_req:: Support for Time-based Architecture
    :id: FEAT_REQ__ipc__time_based_arch
    :reqtype: Functional
@@ -193,6 +47,178 @@ High cohesion and loose coupling
    :status: valid
 
    The communication framework shall provide API to support a request-driven architecture.
+
+.. feat_req:: Communication Interfaces
+   :id: FEAT_REQ__ipc__interfaces
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2,STKH_REQ__282,STKH_REQ__283
+   :status: valid
+
+   A communication interface consists of a combination of any number of the following elements:
+
+   - Event-Types
+   - Methods
+   - Signals
+
+.. feat_req:: Event Type
+   :id: FEAT_REQ__ipc__event_type
+   :reqtype: Functional
+   :security: NO
+   :safety: QM
+   :satisfies: STKH_REQ__2,STKH_REQ__282
+   :status: valid
+
+   An event-type is part of a communication interface and has:
+
+   - a name
+   - a data type
+
+   The producer can assign a value to it.
+   Consumers can subscribe to value-changed events of the element or poll unseen, cached events.
+
+.. feat_req:: Method
+   :id: FEAT_REQ__ipc__method
+   :reqtype: Functional
+   :security: NO
+   :safety: QM
+   :satisfies: STKH_REQ__2,STKH_REQ__283
+   :status: valid
+
+   A method is part of a communication interface and has:
+
+   - a name
+   - a specified application routine with a given set of parameters and a return type
+
+   When a communication partner issues a call to the method with the required parameters:
+
+   1. it shall invoke the application routine with the provided parameters, and
+   2. return its result to the communication partner
+
+   A method call shall be possible both synchronously and asynchronously.
+
+.. feat_req:: Signal
+   :id: FEAT_REQ__ipc__signal
+   :reqtype: Functional
+   :security: NO
+   :safety: QM
+   :satisfies: STKH_REQ__2,STKH_REQ__281
+   :status: valid
+
+   A signal is part of a communication interface and has:
+
+   - a name
+
+   A client can trigger the signal.
+   The service instance offering the trigger can:
+
+   - wait for the signal to be triggered
+   - check if the signal was triggered
+
+   Note: Signals can not transport data. They are meant to be fast synchronization mechanism with low setup cost.
+   Thus, depending on the location of the communication partners primitives like Linux Signals or QNX Pulses or
+   Hypervisor Signalling APIs may be chosen.
+
+.. feat_req:: Producer-Consumer Pattern
+   :id: FEAT_REQ__ipc__producer_consumer
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2,STKH_REQ__281
+   :status: valid
+
+   Communication shall be cached based on the producer-consumer pattern.
+
+.. feat_req:: Service Instance
+   :id: FEAT_REQ__ipc__service_instance
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   A communication interface that is offered to consumers is called a service instance.
+
+   Multiple service instances shall be able to offer the same interface.
+
+.. feat_req:: Service Instance Names
+   :id: FEAT_REQ__ipc__service_instance_names
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   A service instance is offered under one or more unique names by which it can be discovered.
+   Names follow a POSIX path style.
+
+   Note: The resolution from a service instance name to the protocol-specific identifier is handled by the service
+   discovery.
+
+
+.. feat_req:: Versioning
+   :id: FEAT_REQ__ipc__versioning
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   The communication framework shall support versioning of service instances.
+   Version information of a service instance is binding-specific.
+   Version information is provided in the deployment configuration.
+
+   Note:
+   Multiple service instances can have the same interface and version.
+
+.. feat_req:: Service location transparency
+   :id: FEAT_REQ__ipc__service_location_transparency
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   The interface to access service instances is agnostic to the binding used to communicate with the service.
+   Note: Deployment information may require manual changes based on where the service is located.
+
+.. feat_req:: Stateless communication
+   :id: FEAT_REQ__ipc__stateless_communication
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   The communication framework shall support stateless communication.
+   Note:
+   - In case of events, the producer is not aware of its consumers.
+   - In case of RPC, the skeleton is not aware of the proxy, this request originated from.
+
+.. feat_req:: Service instance_granularity
+   :id: FEAT_REQ__ipc__service_instance_granularity
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   The communication framework shall support multiple service instances per software architecture element.
+   Note: A software architecture element is for example an application, activity, proces, ...
+
+.. feat_req:: Service discovery
+   :id: FEAT_REQ__ipc__service_discovery
+   :reqtype: Functional
+   :security: NO
+   :safety: ASIL_B
+   :satisfies: STKH_REQ__2
+   :status: valid
+
+   The communication framework shall provide service discovery to find available services during runtime.
+   Service discovery shall consider version compatibility.
+   Service discovery shall be handled implicitly (where possible).
+   Note: The service discovery may be restricted/impacted by availability of deployment information.
 
 Mixed-Criticality safety systems
 ================================
@@ -262,7 +288,7 @@ Performance
    :satisfies: STKH_REQ__2,STKH_REQ__282
    :status: valid
 
-   IPC communication shall be possible without copying to be transferred data.
+   IPC communication shall be possible without copying to-be-transferred data.
 
 User friendly API for information exchange
 ==========================================
@@ -297,6 +323,8 @@ User friendly API for information exchange
 
    Each public API shall use core infrastructure of its programming language and accompanying standard libraries,
    whenever possible and meaningful.
+
+   Note: This includes error handling.
 
 Full testability for the user facing API
 ========================================
@@ -334,6 +362,10 @@ Multi-binding support
 
    The communication framework shall support multiple bindings.
 
+   Note:
+   A binding performs the conversion of user communication to the respective communication protocol.
+   It does this either directly or via a gateway approach.
+
 .. feat_req:: Binding-agnostic public API
    :id: FEAT_REQ__ipc__binding_agnostic_api
    :reqtype: Functional
@@ -343,6 +375,10 @@ Multi-binding support
    :status: valid
 
    The public API of the communication framework shall be binding-agnostic.
+
+   Note:
+   Binding-agnostic in this context means, that the public API is independent of the binding underneath. E.g., if the
+   binding is exchanged, the public API remains syntactically and semantically unchanged.
 
 .. feat_req:: Multi-binding deployment configuration
    :id: FEAT_REQ__ipc__multi_binding_depl
@@ -365,7 +401,7 @@ Dynamic deployment at runtime
    :satisfies: STKH_REQ__2
    :status: valid
 
-   Deployment configuration shall be read from a configuration file at runtime.
+   Deployment configuration shall be read from an integrity-checked configuration file at runtime.
 
 Tracing
 =======
@@ -378,7 +414,7 @@ Tracing
    :satisfies: STKH_REQ__242
    :status: valid
 
-   The communication framework shall provide infrastructure to enable binding-agnostic zero-copy tracing of
+   The communication framework shall provide infrastructure to enable binding-agnostic, zero-copy, read-only tracing of
    communication.
 
 Security Impact
