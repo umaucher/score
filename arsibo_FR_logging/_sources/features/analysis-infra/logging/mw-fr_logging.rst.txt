@@ -60,9 +60,9 @@ Functionality
 
 Logging has to support the following features:
 - Timestamping
-- Log/serverity levels
+- Log severity levels
 - Log priorisation in case of ressource conflicts
-- logging of early startup envents
+- logging of early startup events
 - log filtering
   - Support application and context identifier like in DLT
   - Filtering by log levels for components and application level
@@ -70,7 +70,7 @@ Logging has to support the following features:
 - message loss detection
   - optional functionality for logging. Important for tracing.
   - would become mandatory in case verification is done via logging feature (not recommended)
-- Component specific log level activation ???
+- Context specific log level activation at runtime
 
 Log Sources
 -----------
@@ -145,7 +145,7 @@ Safety Impact
 License Impact
 ==============
 
-- not kwown
+- not known
 
 How to Teach This
 =================
