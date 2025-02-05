@@ -128,7 +128,7 @@ SCORE development roles
 SCORE cross functional teams
 ----------------------------
 
-.. team:: Platform Team
+.. role:: Platform Team
    :id: TE_platform_team
    :status: valid
    :security: yes
@@ -138,7 +138,7 @@ SCORE cross functional teams
 
    The platform team is responsible for all artefacts within the platform SEooC. Additionally it is also responsible for the overall process including its support by tooling.
 
-.. team:: Module Team
+.. role:: Module Team
    :id: TE_module_team
    :status: valid
    :security: yes
