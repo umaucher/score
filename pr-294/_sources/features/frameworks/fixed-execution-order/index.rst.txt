@@ -54,6 +54,7 @@ applications where the execution order of tasks is crucial for the correct
 operation of the system. ( see also :need:`STKH_REQ__282` and :need:`STKH_REQ__281`)
 
 Key aspects of S-CORE and FEO framework are:
+
 - a framework for applications (not for platform services)
 - for data-driven and time-driven applications (mainly in the ADAS domain)
 - support fixed execution order
