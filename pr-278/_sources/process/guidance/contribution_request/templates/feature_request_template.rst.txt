@@ -32,8 +32,8 @@ Feature Request Template
 
    .. document:: [Your Feature Name]
       :id: DOC__Your_Feature_Name
-      :status: draft
-      :safety: ASIL_D
+      :status: Your_Status
+      :safety: Your_ASIL
       :tags: contribution_request, feature_request
 
 .. attention::
