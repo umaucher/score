@@ -20,7 +20,7 @@ Definitions
 ===========
 
 .. feat_req:: Definition: Application
-    :id: FEAT_REQ__71edebab
+    :id: FEAT_REQ__feo__application
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -37,7 +37,7 @@ Definitions
     Each process contains one ore more operating system threads.
 
 .. feat_req:: Definition: Activity
-    :id: FEAT_REQ__06d32b40
+    :id: FEAT_REQ__feo__activity
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -54,7 +54,7 @@ Definitions
     The mapping is done in a configuration file and cannot be changed at runtime.
 
 .. feat_req:: Definition: Task Chain
-    :id: FEAT_REQ__767a19cd
+    :id: FEAT_REQ__feo__task_chain
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -73,7 +73,7 @@ Definitions
     The purpose of the sender activity is to collect signals produced by activities within the task chain and send them to external entities.
 
 .. feat_req:: Definition: Service Activity
-    :id: FEAT_REQ__b3f3e6d1
+    :id: FEAT_REQ__feo__service_activity
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -86,7 +86,7 @@ Definitions
       (e.g. networking APIs, reading from external sensor devices, writing HW I/O, etc.)
 
   .. feat_req:: Definition: Agent
-    :id: FEAT_REQ__3f18f2ba
+    :id: FEAT_REQ__feo_agent
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -107,7 +107,7 @@ Dynamic Architecture
 ====================
 
 .. feat_req:: The lifecycle of an `Application` consists of 3 phases: Init, Run and Shutdown.
-    :id: FEAT_REQ__54dbf92c
+    :id: FEAT_REQ__application_lifecycle
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -117,7 +117,7 @@ Dynamic Architecture
     The Application Lifecycle consists of 3 phases: Init, Run and Shutdown.
 
 .. feat_req:: Initialization of activities
-    :id: FEAT_REQ__30a20d36
+    :id: FEAT_REQ__feo__activity_init
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -132,7 +132,7 @@ Dynamic Architecture
     Note that `init`, `step` and `shutdown` functions will be run in the same thread.
 
 .. feat_req:: Stepping of activities
-    :id: FEAT_REQ__1cded54b
+    :id: FEAT_REQ__feo__activitiy_step
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -144,7 +144,7 @@ Dynamic Architecture
     Stepping is shall be done by a call to an activity's `step` function.
 
 .. feat_req:: Shutdown of activities
-    :id: FEAT_REQ__6bdddd0b
+    :id: FEAT_REQ__feo__activity_shutdown
     :reqtype: Functional
     :security: NO
     :safety: QM
@@ -161,7 +161,7 @@ Supervsion
 ==========
 
 .. feat_req:: Alive Supervision
-    :id: FEAT_REQ__91fb18c0
+    :id: FEAT_REQ__feo__alive_supervision
     :reqtype: Functional
     :security: NO
     :safety: ASIL_D
@@ -172,7 +172,7 @@ Supervsion
     Alive Supervision checkpoint to the Platform Health Management
 
 .. feat_req:: Support of deadline supervision checkpoints
-    :id: FEAT_REQ__db8f596c
+    :id: FEAT_REQ__feo__deadline_supervision
     :reqtype: Functional
     :security: NO
     :safety: ASIL_D
@@ -182,7 +182,7 @@ Supervsion
     The framework shall provide the functionality to enable the reporting of Deadline Supervision checkpoints to the Platform Health Management
 
 .. feat_req:: Support of logical supervision
-    :id: FEAT_REQ__cf3c815e
+    :id: FEAT_REQ__feo__logical_supervision
     :reqtype: Functional
     :security: NO
     :safety: ASIL_D
@@ -192,7 +192,7 @@ Supervsion
     The framework shall provide the functionality to enable the reporting of Logical Supervision checkpoints to the Platform Health Management
 
 .. feat_req:: Trustable computation
-    :id: FEAT_REQ__39f80e3b
+    :id: FEAT_REQ__dlt__trustable_computation
     :reqtype: Functional
     :security: NO
     :safety: QM
