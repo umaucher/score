@@ -226,7 +226,7 @@ Activity Init:
 Activity Shutdown:
 * At the beginning of the shutdown phase, the framework will invoke the shutdown() 
   entry point of each application
-* The shutdown() entry point will be invoked in the thread the activity is mapped to
+* The shutdown() method will run in the thread assigned to the activity.
 * The order of invoking the shutdown() entry points across activities is not defined,
   invocation may happen in parallel or sequentially
 
