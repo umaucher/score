@@ -25,7 +25,7 @@ Definitions
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     An application consists of one or more activities.
 
@@ -42,7 +42,7 @@ Definitions
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     Activities are mapped to threads within primary or secondary processes.
     Each activity is mapped to exactly one thread and provides the following functions:
@@ -59,7 +59,7 @@ Definitions
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     All activities within an application are arranged within a `Task Chain`.
     There is exactly one task chain per application.
@@ -78,7 +78,7 @@ Definitions
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     * Service activities are a means to interact with the outside world, e.g. via
       network communication, direct sensor input or direct actuator output
@@ -91,7 +91,7 @@ Definitions
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     In order to execute activities in secondary processes, the executor makes use of an `Agent` for each secondary process.
     The agent receives commands from the executor, invokes actions on activities within its process and reports back to the executor.
@@ -112,7 +112,7 @@ Dynamic Architecture
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     The Application Lifecycle consists of 3 phases: Init, Run and Shutdown.
 
@@ -122,7 +122,7 @@ Dynamic Architecture
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     Initialization of activities is done during application initialization.
 
@@ -137,7 +137,7 @@ Dynamic Architecture
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     Each activity is stepped once within each execution of the task chain they belong to.
 
@@ -149,7 +149,7 @@ Dynamic Architecture
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     Shutdown of activities is done during application shutdown.
 
@@ -166,7 +166,7 @@ Supervsion
     :security: NO
     :safety: ASIL_D
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     The framework shall provide the functionality to enable the reporting of 
     Alive Supervision checkpoint to the Platform Health Management
@@ -177,7 +177,7 @@ Supervsion
     :security: NO
     :safety: ASIL_D
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     The framework shall provide the functionality to enable the reporting of Deadline Supervision checkpoints to the Platform Health Management
 
@@ -187,17 +187,17 @@ Supervsion
     :security: NO
     :safety: ASIL_D
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     The framework shall provide the functionality to enable the reporting of Logical Supervision checkpoints to the Platform Health Management
 
 .. feat_req:: Trustable computation
-    :id: FEAT_REQ__dlt__trustable_computation
+    :id: FEAT_REQ__feo__trustable_computation
     :reqtype: Functional
     :security: NO
     :safety: QM
     :satisfies: STKH_REQ__282
-    :status: invalid
+    :status: valid
 
     The framework shall provide mechanisms to check after the computation of an Activity if the result is trustable.
     This can be done e.g. via evaluation of floating point exceptions, checking of hardware registers or status information of the

@@ -475,7 +475,7 @@
                   
   <section id="fixed-execution-order-framework">
 <h1>Fixed execution order framework<a class="headerlink" href="#fixed-execution-order-framework" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-71ec833f">
+<div class="need_container docutils container" id="SNCB-39abafe6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC__FEO">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -510,7 +510,7 @@
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Document</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -555,7 +555,7 @@ these aspects can be implemented.</p>
 <h2>Applications<a class="headerlink" href="#applications" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>The framework is used to build applications</p></li>
-<li><p>Multiple  applications based on
+<li><p>Multiple applications based on
 the framework can run in parallel on the same host machine</p></li>
 <li><p>Applications based on the framework can run in parallel with other
 applications not based on the framework</p></li>
@@ -579,6 +579,10 @@ see below)</p></li>
 <li><p>There are two types of activities:
 - Application activities
 - Service activities</p></li>
+</ul>
+<blockquote>
+<div></div></blockquote>
+<ul class="simple">
 <li><p>Application activities must only use APIs provided by the framework as defined above</p></li>
 <li><p>Application activities are single threaded, they can not run outside of their entry points,
 they must not spawn other threads or processs</p></li>
@@ -617,7 +621,7 @@ the same application and using the provided communication API</p></li>
 relies on the message itself independent of the source of the message</p></li>
 <li><p>There can only be one sender per topic but multiple receivers</p></li>
 <li><p>Optional: there can be multiple senders per topic</p></li>
-<li><p>There is no publish/subscribe mechanism acessible to activities, instead
+<li><p>There is no publish/subscribe mechanism accessible to activities, instead
 the set of known communication topics and the assignment of which activity
 sends and receives to/from which topic is “runtime static”</p></li>
 <li><p>“runtime static” means “static after the startup phase”, i.e. during startup, the
@@ -652,7 +656,7 @@ for example by using read-only types or by configuring memory protect of the OS<
 queue by a receiver doesn’t change the queue, i.e. doesn’t remove it from the queue.
 instead all receiver will always see the last N elements</p></li>
 <li><p>Optional: a queue pointer to the element last read is maintained per receiver.
-however, the queue with its buffers still only exists once per topic. if one receiver
+However, the queue with its buffers still only exists once per topic. If one receiver
 receives an element from the queue, its queue pointer is incremented so that next
 time it reads the next element, this does not affect the queue pointers of other receivers</p></li>
 <li><p>Queue enable and queue length are “runtime static” configuration settings</p></li>
