@@ -122,5 +122,9 @@
   {
     "version": "masc2023_update_process_image",
     "url": "https://eclipse-score.github.io/score/masc2023_update_process_image/"
+  },
+  {
+    "version": "pr-302",
+    "url": "https://eclipse-score.github.io/score/pr-302/"
   }
 ]
