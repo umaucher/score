@@ -251,7 +251,7 @@ Scheduling
   independent of the thread/process the activity is mapped to
 * While the order is guaranteed, there is no guarantee that an activity is
   run immediately after all its dependencies have finished.
-  for example if two activities mapped to the same thread are ready to run
+  For example if two activities mapped to the same thread are ready to run
   at the same time, they can still only run one after the other
 * Note however, that for a particular (static) setup of threads, processes
   and activity mapping, the invocation delay is deterministic
