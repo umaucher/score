@@ -160,7 +160,7 @@ Dynamic Architecture
 Supervsion
 ==========
 
-.. feat_req:: Alive Supervision
+.. feat_req:: Alive supervision
     :id: FEAT_REQ__feo__alive_supervision
     :reqtype: Functional
     :security: NO
