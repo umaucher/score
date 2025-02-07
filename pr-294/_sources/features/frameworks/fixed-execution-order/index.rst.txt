@@ -220,9 +220,8 @@ Lifecycle
 Activity Init:
 * At the end of the startup phase, the framework will invoke the init() entry point 
   of each activity
-* The init() entry point will be invoked in the thread the activity is mapped to
-* The order of invoking the init() entry points across activities is not defined,
-  invocation may happen in parallel or sequentially
+* The init() method will run in the thread assigned to the activity.
+* The order in which init() is called for different activities is arbitrary—it may happen in parallel or sequentially.
 
 Activity Shutdown:
 * At the beginning of the shutdown phase, the framework will invoke the shutdown() 

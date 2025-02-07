@@ -506,7 +506,7 @@
                   
   <section id="fixed-execution-order-framework">
 <h1>Fixed execution order framework<a class="headerlink" href="#fixed-execution-order-framework" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c844c650">
+<div class="need_container docutils container" id="SNCB-cbf1ae4c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC__FEO">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -749,9 +749,8 @@ or by detecting connection loss to the primary process)</p></li>
 <div><p>of each activity</p>
 </div></blockquote>
 <ul class="simple">
-<li><p>The init() entry point will be invoked in the thread the activity is mapped to</p></li>
-<li><p>The order of invoking the init() entry points across activities is not defined,
-invocation may happen in parallel or sequentially</p></li>
+<li><p>The init() method will run in the thread assigned to the activity.</p></li>
+<li><p>The order in which init() is called for different activities is arbitrary—it may happen in parallel or sequentially.</p></li>
 </ul>
 <p>Activity Shutdown:
 * At the beginning of the shutdown phase, the framework will invoke the shutdown()</p>
