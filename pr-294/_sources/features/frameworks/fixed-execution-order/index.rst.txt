@@ -256,8 +256,7 @@ Scheduling
 * Note however, that for a particular (static) setup of threads, processes
   and activity mapping, the invocation delay is deterministic
   (apart from differences in the activity execution times)
-* The execution order and the exact point in time when an activity is run
-  is independent of any communication an activity might do
+* The execution order and timing of an activity are independent of any communication that activity may perform.
 * The dependencies should be defined by the application developer in a way so that 
   processing results passed via communication are available when they are needed
   (if an activity needs an output of another activity it sets that other
