@@ -187,7 +187,7 @@ Process/Thread Mapping
 * Each executable contains part of this framework as well as the activities mapped to the
   corresponding process
 * It is assumed that an external entity starts all the executables belonging to the 
-  same application. the reason for this is that for security reasons, only very
+  same application. The reason for this is, that for security reasons, only very
   specific entities should have the ability to create processes
 * The executables belonging to an application are grouped (e.g. in the filesystem) so that
   it's clear that they belong together
