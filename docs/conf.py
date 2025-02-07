@@ -81,6 +81,14 @@ html_css_files = [
     "css/score_design.css",
 ]
 
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "eclipse-score",
+    "github_repo": "score",
+    "github_version": "main",
+    "doc_path": "docs",
+}
+
 html_logo = "_assets/S-CORE_Logo_white.svg"
 
 html_theme_options = {
@@ -97,6 +105,15 @@ html_theme_options = {
     # https://pydata-sphinx-theme.readthedocs.io/en/stable/user_guide/source-buttons.html#add-an-edit-button
     "use_edit_page_button": True,
     "collapse_navigation": True,
+    "logo": {
+        "text": "Eclipse SCORE Docs",
+    },
+    # Enable version switcher
+    "switcher": {
+        "json_url": f"https://{html_context['github_user']}.github.io/{html_context['github_repo']}/versions.json",  # URL to JSON file, hardcoded for now
+        "version_match": release,
+    },
+    "navbar_end": ["version-switcher", "navbar-icon-links"],
 }
 
 html_context = {
