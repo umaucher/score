@@ -41,9 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=dbf7d94f" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=60b43b4f" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=7fdb06ad" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -63,6 +63,13 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'features/communication/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Inter-process Communication" href="ipc/index.html" />
@@ -129,6 +136,14 @@
   
   
   
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">Eclipse SCORE Docs</p>
@@ -230,12 +245,24 @@
       
       
         <div class="navbar-item">
-
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -365,12 +392,24 @@
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
-
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -401,6 +440,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../analysis-infra/index.html">Analysis Infrastructure</a></li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Communication</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="ipc/index.html">Inter-process Communication</a></li>
+
+
+
+
+
+
+
+
+
+
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
@@ -472,6 +521,34 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ipc/index.html">Inter-process Communication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#feature-flag">Feature flag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#abstract">Abstract</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#motivation">Motivation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#high-cohesion-and-loose-coupling">High cohesion and loose coupling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#mixed-criticality-safety-systems">Mixed-Criticality safety systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#performance">Performance</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#rationale">Rationale</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#specification">Specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#id3">High cohesion and loose coupling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#spec-mixed-criticality">Mixed-Criticality safety systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#id5">Performance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#user-friendly-api-for-information-exchange">User friendly API for information exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#full-testability-for-the-user-facing-api">Full testability for the user facing API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#multi-binding-support">Multi-binding support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#dynamic-deployment-at-runtime">Dynamic deployment at runtime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#tracing">Tracing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#backwards-compatibility">Backwards Compatibility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#security-impact">Security Impact</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ipc/index.html#ipc-security-goals">IPC Security Goals</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#safety-impact">Safety Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#license-impact">License Impact</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ipc/index.html#how-to-teach-this">How to Teach This</a></li>
 </ul>
 </div>
 </section>

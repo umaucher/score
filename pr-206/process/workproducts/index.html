@@ -41,9 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=dbf7d94f" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=60b43b4f" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=7fdb06ad" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -63,6 +63,13 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process/workproducts/index';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Workflows" href="../workflows/index.html" />
@@ -129,6 +136,14 @@
   
   
   
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-light" alt=""/>
+    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">Eclipse SCORE Docs</p>
@@ -230,12 +245,24 @@
       
       
         <div class="navbar-item">
-
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
       
         <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -365,12 +392,24 @@
       <div class="sidebar-header-items__end">
         
           <div class="navbar-item">
-
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button></div>
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
         
           <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
@@ -411,6 +450,9 @@
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../guidance/index.html">Guidance</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../standards/index.html">Standards</a></li>
 </ul>
 </div>
 </nav></div>
@@ -484,7 +526,7 @@
 <h2>Platform management<a class="headerlink" href="#platform-management" title="Link to this heading">#</a></h2>
 <section id="general">
 <h3>General<a class="headerlink" href="#general" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-d7465ef6">
+<div class="need_container docutils container" id="SNCB-62439e22">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_POLICIES">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -528,7 +570,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-129f0806">
+<div class="need_container docutils container" id="SNCB-0bd68075">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_TRAINING_PATH">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -573,7 +615,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-00b1bdb0">
+<div class="need_container docutils container" id="SNCB-98319ec2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_QMS">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -618,7 +660,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bcd6c2b8">
+<div class="need_container docutils container" id="SNCB-6e9e193d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_QMS_REPORT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -671,7 +713,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c8cd8db3">
+<div class="need_container docutils container" id="SNCB-93148efc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_ISSUE_TRACK_SYSTEM">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -693,8 +735,8 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">requirements_management</span><span class="needs_spacer">, </span><span class="needs_data">safety_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workflows/architecture_design.html#WF_CR_MT_FeatArch" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_FeatArch</a>, <a class="reference internal" href="../workflows/architecture_design.html#WF_CR_MT_CompArch" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_CompArch</a>, <a class="reference internal" href="../workflows/change_management.html#WF_CR_DC_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_DC_ChangeRequest</a>, <a class="reference internal" href="../workflows/change_management.html#WF_RV_AP_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_RV_AP_ChangeRequest</a>, <a class="reference internal" href="../workflows/platform_management.html#WF_CR_MT_PLATFORM_MNGMT_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_PLATFORM_MNGMT_PLAN</a>, <a class="reference internal" href="../workflows/process_management.html#WF_CR_MT_PROC_MGT_STRATEGY" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_PROC_MGT_STRATEGY</a>, <a class="reference internal" href="../workflows/process_management.html#WF_DEF_APP_PROCESS_DEFINTION" title="WP_ISSUE_TRACK_SYSTEM">WF_DEF_APP_PROCESS_DEFINTION</a>, <a class="reference internal" href="../workflows/quality_management.html#WF_CR_MT_QLM_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_QLM_PLAN</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_stakeholder_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_stakeholder_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_feature_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_feature_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_component_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_component_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_tool_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_tool_requirements</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_ANALYSE_FeatArch" title="WP_ISSUE_TRACK_SYSTEM">WF_ANALYSE_FeatArch</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_ANALYSE_CompArch" title="WP_ISSUE_TRACK_SYSTEM">WF_ANALYSE_CompArch</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_SAFETY_PLAN</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_CASE" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_SAFETY_CASE</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workflows/architecture_design.html#WF_MR_VY_Arch" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_Arch</a>, <a class="reference internal" href="../workflows/change_management.html#WF_CR_DC_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_DC_ChangeRequest</a>, <a class="reference internal" href="../workflows/change_management.html#WF_RV_AP_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_RV_AP_ChangeRequest</a>, <a class="reference internal" href="../workflows/platform_management.html#WF_MR_VY_PLATFORM_MNGMT_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_PLATFORM_MNGMT_PLAN</a>, <a class="reference internal" href="../workflows/quality_management.html#WF_MR_IMP_QLM_PLAN_PROCESSES" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_IMP_QLM_PLAN_PROCESSES</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_monitor_verify_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_monitor_verify_requirements</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_MR_VY_SAF_ANALYSES_DFA" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_SAF_ANALYSES_DFA</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_MR_VY_Safety" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_Safety</a></span></span></div>
+<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_SAFETY_PLAN</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_CASE" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_SAFETY_CASE</a>, <a class="reference internal" href="../workflows/architecture_design.html#WF_CR_MT_FeatArch" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_FeatArch</a>, <a class="reference internal" href="../workflows/architecture_design.html#WF_CR_MT_CompArch" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_CompArch</a>, <a class="reference internal" href="../workflows/change_management.html#WF_CR_DC_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_DC_ChangeRequest</a>, <a class="reference internal" href="../workflows/change_management.html#WF_RV_AP_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_RV_AP_ChangeRequest</a>, <a class="reference internal" href="../workflows/platform_management.html#WF_CR_MT_PLATFORM_MNGMT_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_PLATFORM_MNGMT_PLAN</a>, <a class="reference internal" href="../workflows/process_management.html#WF_CR_MT_PROC_MGT_STRATEGY" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_PROC_MGT_STRATEGY</a>, <a class="reference internal" href="../workflows/process_management.html#WF_DEF_APP_PROCESS_DEFINTION" title="WP_ISSUE_TRACK_SYSTEM">WF_DEF_APP_PROCESS_DEFINTION</a>, <a class="reference internal" href="../workflows/quality_management.html#WF_CR_MT_QLM_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_MT_QLM_PLAN</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_stakeholder_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_stakeholder_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_feature_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_feature_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_component_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_component_requirements</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_create_maintain_tool_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_create_maintain_tool_requirements</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_ANALYSE_FeatArch" title="WP_ISSUE_TRACK_SYSTEM">WF_ANALYSE_FeatArch</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_ANALYSE_CompArch" title="WP_ISSUE_TRACK_SYSTEM">WF_ANALYSE_CompArch</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workflows/safety_management.html#WF_MR_VY_Safety" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_Safety</a>, <a class="reference internal" href="../workflows/architecture_design.html#WF_MR_VY_Arch" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_Arch</a>, <a class="reference internal" href="../workflows/change_management.html#WF_CR_DC_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_CR_DC_ChangeRequest</a>, <a class="reference internal" href="../workflows/change_management.html#WF_RV_AP_ChangeRequest" title="WP_ISSUE_TRACK_SYSTEM">WF_RV_AP_ChangeRequest</a>, <a class="reference internal" href="../workflows/platform_management.html#WF_MR_VY_PLATFORM_MNGMT_PLAN" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_PLATFORM_MNGMT_PLAN</a>, <a class="reference internal" href="../workflows/quality_management.html#WF_MR_IMP_QLM_PLAN_PROCESSES" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_IMP_QLM_PLAN_PROCESSES</a>, <a class="reference internal" href="../workflows/requirements_management.html#WF_monitor_verify_requirements" title="WP_ISSUE_TRACK_SYSTEM">WF_monitor_verify_requirements</a>, <a class="reference internal" href="../workflows/safety_analysis.html#WF_MR_VY_SAF_ANALYSES_DFA" title="WP_ISSUE_TRACK_SYSTEM">WF_MR_VY_SAF_ANALYSES_DFA</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -726,7 +768,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-cb7f7e0c">
+<div class="need_container docutils container" id="SNCB-75d702b8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEAT_REQUEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -775,7 +817,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a9d29893">
+<div class="need_container docutils container" id="SNCB-09c45b0c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_MGMT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -797,7 +839,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workflows/platform_management.html#WF_MR_VY_PLATFORM_MNGMT_PLAN" title="WP_PLATFORM_MGMT">WF_MR_VY_PLATFORM_MNGMT_PLAN</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_PLAN" title="WP_PLATFORM_MGMT">WF_CR_MT_SAFETY_PLAN</a></span></span></div>
+<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workflows/safety_management.html#WF_CR_MT_SAFETY_PLAN" title="WP_PLATFORM_MGMT">WF_CR_MT_SAFETY_PLAN</a>, <a class="reference internal" href="../workflows/platform_management.html#WF_MR_VY_PLATFORM_MNGMT_PLAN" title="WP_PLATFORM_MGMT">WF_MR_VY_PLATFORM_MNGMT_PLAN</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workflows/platform_management.html#WF_CR_MT_PLATFORM_MNGMT_PLAN" title="WP_PLATFORM_MGMT">WF_CR_MT_PLATFORM_MNGMT_PLAN</a></span></span></div>
 </span></div>
 </div>
@@ -825,7 +867,7 @@ Documentation guideline requirements must be defined for each WP. Each work prod
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-eed0e625">
+<div class="need_container docutils container" id="SNCB-11ac0668">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_DEV_PLAN">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -883,7 +925,7 @@ Documentation guideline requirements must be defined for each WP. Each work prod
 </section>
 <section id="process">
 <h3>Process<a class="headerlink" href="#process" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-18f9c3b4">
+<div class="need_container docutils container" id="SNCB-dc983ba4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PROCESS_DEFINITION">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -928,7 +970,7 @@ Documentation guideline requirements must be defined for each WP. Each work prod
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3d2ca38f">
+<div class="need_container docutils container" id="SNCB-7680b733">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PROCESS_IMPR_REPORT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -973,7 +1015,7 @@ Documentation guideline requirements must be defined for each WP. Each work prod
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8f0ae99d">
+<div class="need_container docutils container" id="SNCB-1d56821f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PROCESS_PLAN">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1021,7 +1063,7 @@ Documentation guideline requirements must be defined for each WP. Each work prod
 </section>
 <section id="safety">
 <h3>Safety<a class="headerlink" href="#safety" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-54f4c8e8">
+<div class="need_container docutils container" id="SNCB-5e2a1c41">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SAFETY_PLAN">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1069,7 +1111,7 @@ This is on following level:
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6f941e07">
+<div class="need_container docutils container" id="SNCB-7b5f3ead">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SAFETY_PLAN">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1118,7 +1160,7 @@ This is on following level:
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3d21ce07">
+<div class="need_container docutils container" id="SNCB-41a482e1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SAFETY_CASE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1163,7 +1205,7 @@ This is on following level:
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fe81cf5a">
+<div class="need_container docutils container" id="SNCB-7ccbc52b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SAFETY_CASE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1208,7 +1250,7 @@ This is on following level:
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-603034ed">
+<div class="need_container docutils container" id="SNCB-f6caa773">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_CMR_REPORTS">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1254,7 +1296,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-470c5838">
+<div class="need_container docutils container" id="SNCB-eeba326b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_ASSESSMENT_REPORT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1305,7 +1347,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 <h2>Product development<a class="headerlink" href="#product-development" title="Link to this heading">#</a></h2>
 <section id="platform-development">
 <h3>Platform development<a class="headerlink" href="#platform-development" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-702ed080">
+<div class="need_container docutils container" id="SNCB-46fcf536">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_STAKEHOLDER_REQ">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1350,7 +1392,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d0909643">
+<div class="need_container docutils container" id="SNCB-c5d73abe">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_TOOL_REQ">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1395,7 +1437,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-91e96074">
+<div class="need_container docutils container" id="SNCB-de9ac1c3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_REQ">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1440,7 +1482,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fcd96c36">
+<div class="need_container docutils container" id="SNCB-c3ae3d18">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_AOU">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1485,7 +1527,7 @@ Will contain confirmation review report for Safety Plan, Safety Case, Safety Ana
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3ce9d982">
+<div class="need_container docutils container" id="SNCB-6db8c9e8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SW_SAFETY_MANUAL">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1537,7 +1579,7 @@ This is on platform level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-11659638">
+<div class="need_container docutils container" id="SNCB-ce0517e9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_ARCHITECTURE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1586,7 +1628,7 @@ This is on platform level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e80b6542">
+<div class="need_container docutils container" id="SNCB-016cb554">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_SAFETY_ANALYSES">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1632,7 +1674,7 @@ This is on platform level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-df805542">
+<div class="need_container docutils container" id="SNCB-2d5d307b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_DFA">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1679,7 +1721,7 @@ Perform analysis on interactions between safety related and non-safety related m
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e342e1cf">
+<div class="need_container docutils container" id="SNCB-64bab026">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SW_BUILD_CONFIG">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1723,7 +1765,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-0f8dc41b">
+<div class="need_container docutils container" id="SNCB-ef48fa52">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_FEATURE_INTEGRATION_TEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1770,7 +1812,7 @@ on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a329bb4a">
+<div class="need_container docutils container" id="SNCB-113f5986">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_TEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1813,7 +1855,7 @@ on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5d5a3225">
+<div class="need_container docutils container" id="SNCB-d6d931bc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SW_VERIFICATION_REPORT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1862,7 +1904,7 @@ on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-10b531c9">
+<div class="need_container docutils container" id="SNCB-17ceaf3f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_PLATFORM_SW_RELEASE_NOTE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1885,7 +1927,7 @@ on reference HW</p></td>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_management</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workflows/quality_management.html#WF_MR_IMP_QLM_PLAN_PROCESSES" title="WP_PLATFORM_SW_RELEASE_NOTE">WF_MR_IMP_QLM_PLAN_PROCESSES</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workflows/quality_management.html#WF_VY_AP_PltRelease" title="WP_PLATFORM_SW_RELEASE_NOTE">WF_VY_AP_PltRelease</a>, <a class="reference internal" href="../workflows/safety_management.html#WF_MR_VY_Safety" title="WP_PLATFORM_SW_RELEASE_NOTE">WF_MR_VY_Safety</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workflows/safety_management.html#WF_MR_VY_Safety" title="WP_PLATFORM_SW_RELEASE_NOTE">WF_MR_VY_Safety</a>, <a class="reference internal" href="../workflows/quality_management.html#WF_VY_AP_PltRelease" title="WP_PLATFORM_SW_RELEASE_NOTE">WF_VY_AP_PltRelease</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1910,7 +1952,7 @@ on reference HW</p></td>
 </section>
 <section id="component-development">
 <h3>Component development<a class="headerlink" href="#component-development" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-ee35dac9">
+<div class="need_container docutils container" id="SNCB-8fcb5077">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_REQ">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1958,7 +2000,7 @@ on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d4361804">
+<div class="need_container docutils container" id="SNCB-386cf4b8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_AOU">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2003,7 +2045,7 @@ on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d751fd7c">
+<div class="need_container docutils container" id="SNCB-ac438559">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SW_SAFETY_MANUAL">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2055,7 +2097,7 @@ This is on module level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6ac2375e">
+<div class="need_container docutils container" id="SNCB-99aa5466">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_HSI">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2102,7 +2144,7 @@ This is on module level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-85871dac">
+<div class="need_container docutils container" id="SNCB-10545882">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_REQ_INSPECT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2152,7 +2194,7 @@ This is on module level.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-11614c53">
+<div class="need_container docutils container" id="SNCB-09a7574b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_ARCHITECTURE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2200,7 +2242,7 @@ Note: In case no sub-components exist, this can be covered by Detailed Design (i
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c07466b0">
+<div class="need_container docutils container" id="SNCB-01dcd2e1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_SAFETY_ANALYSES">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2246,7 +2288,7 @@ Note: In case no sub-components exist, this can be covered by Detailed Design (i
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-276af2f8">
+<div class="need_container docutils container" id="SNCB-78a1078c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_DFA">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2294,7 +2336,7 @@ Perform analysis on interactions between safety related and non-safety related s
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8dad2741">
+<div class="need_container docutils container" id="SNCB-544b0305">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_ARCH_VERIFICATION">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2339,7 +2381,7 @@ May include several methods like inspection, modelling … Which are selected in
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-846d9075">
+<div class="need_container docutils container" id="SNCB-48b1e583">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_IMPLEMENTATION">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2383,7 +2425,7 @@ The “how to” is described in the SW Development Plan guidelines</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f3c23694">
+<div class="need_container docutils container" id="SNCB-aa9d7652">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_UNIT_TEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2426,7 +2468,7 @@ The “how to” is described in the SW Development Plan guidelines</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ecc457eb">
+<div class="need_container docutils container" id="SNCB-5ad9f694">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_CODE_INSPECT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2469,7 +2511,7 @@ The “how to” is described in the SW Development Plan guidelines</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-75488f92">
+<div class="need_container docutils container" id="SNCB-66537063">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SW_VERIFICATION_REPORT">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2520,7 +2562,7 @@ The “how to” is described in the SW Development Plan guidelines</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ebef65af">
+<div class="need_container docutils container" id="SNCB-45ac3a01">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_INTEGRATION_TEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2566,7 +2608,7 @@ performance: i.e. RAM and processor usage on reference HW</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-0bbd7a99">
+<div class="need_container docutils container" id="SNCB-78d2fb95">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SW_BUILD_CONFIG">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2610,7 +2652,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9a79fd6f">
+<div class="need_container docutils container" id="SNCB-ccfa319e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_MODULE_SW_RELEASE_NOTE">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2655,7 +2697,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-57de3d60">
+<div class="need_container docutils container" id="SNCB-340cf303">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_TEST">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2698,7 +2740,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6fa1b41a">
+<div class="need_container docutils container" id="SNCB-4cc29ce0">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_SW_COMPONENT_CLASS">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2750,7 +2792,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </section>
 <section id="supporting-activities">
 <h2>Supporting activities<a class="headerlink" href="#supporting-activities" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-b894ad70">
+<div class="need_container docutils container" id="SNCB-210b7039">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_VERIFICATION_PLAN">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2793,7 +2835,7 @@ Note: Embedded software in the sense of the Iso (i.e. deployed on the production
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ff70b451">
+<div class="need_container docutils container" id="SNCB-65a04c7b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_VERIFICATION_SPEC">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2837,7 +2879,7 @@ Test cases, test data, and test objects are part of the respective test WPs.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-74fb7275">
+<div class="need_container docutils container" id="SNCB-213c6d26">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_TOOL_EVAL">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -2883,7 +2925,7 @@ Test cases, test data, and test objects are part of the respective test WPs.</p>
 </section>
 <section id="tailoring">
 <h2>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-a51a0225">
+<div class="need_container docutils container" id="SNCB-8fddeca6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="WP_TAILORING">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
