@@ -74,7 +74,7 @@ numfig = True
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
 html_theme = "pydata_sphinx_theme"  # "alabaster"
-html_static_path = ["_tooling/assets"]
+html_static_path = ["_tooling/assets", "_assets"]
 html_css_files = [
     "css/score.css",
     "css/score_needs.css",
@@ -88,6 +88,8 @@ html_context = {
     "github_version": "main",
     "doc_path": "docs",
 }
+
+html_logo = "_assets/S-CORE_Logo_white.svg"
 
 html_theme_options = {
     "navbar_align": "content",
@@ -112,6 +114,14 @@ html_theme_options = {
         "version_match": release,
     },
     "navbar_end": ["version-switcher", "navbar-icon-links"],
+}
+
+html_context = {
+    # "github_url": "https://github.com", # or your GitHub Enterprise site
+    "github_user": "eclipse-score",
+    "github_repo": "score",
+    "github_version": "main",
+    "doc_path": "docs",
 }
 
 # -- sphinx-needs configuration --------------------------------------------
