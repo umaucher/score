@@ -150,5 +150,9 @@
   {
     "version": "masc2023_create_general_concepts",
     "url": "https://eclipse-score.github.io/score/masc2023_create_general_concepts/"
+  },
+  {
+    "version": "hoe_jo_bugfix_metamodell_std_req_wp",
+    "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_metamodell_std_req_wp/"
   }
 ]
