@@ -146,5 +146,9 @@
   {
     "version": "pr-329",
     "url": "https://eclipse-score.github.io/score/pr-329/"
+  },
+  {
+    "version": "masc2023_create_general_concepts",
+    "url": "https://eclipse-score.github.io/score/masc2023_create_general_concepts/"
   }
 ]
