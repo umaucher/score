@@ -154,5 +154,9 @@
   {
     "version": "hoe_jo_bugfix_metamodell_std_req_wp",
     "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_metamodell_std_req_wp/"
+  },
+  {
+    "version": "pr-334",
+    "url": "https://eclipse-score.github.io/score/pr-334/"
   }
 ]
