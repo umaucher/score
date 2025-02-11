@@ -92,6 +92,7 @@ Activities
   - Log (feo::log)
   - Configuration parameters (feo::param)
   - Persistency (feo::pers)
+  - Tracing (feo::tracing)
 
 * There are two types of activities:
 
@@ -116,16 +117,16 @@ Service Activities
 * Service activities may also use APIs external to the framework
   (e.g. networking APIs, reading from external sensor devices, writing HW I/O, etc.)
 * Service activities run at the beginning ("input service activity") and at the end 
-  ("output service activity") of a tash chain (see below)
+  ("output service activity") of a task chain (see below)
 * Input service activities provide the input values to the application activities 
   within the task chain, by means of communication
 * All input service activities must finish execution before the first application activity
-  is run. this can be achieved by proper setup of the chain dependencies (see below)
+  is run. This can be achieved by proper setup of the chain dependencies (see below)
 * There must be at least one input service activity
 * Output service activities consume output values from the application activities
   calculated within the task chain an provide them to the outside world
 * All output service activities must run after all application service activities have
-  finished execution. this is achieved by proper setup of the chain dependencies (see below)
+  finished execution. This is achieved by proper setup of the chain dependencies (see below)
 * There must be at least one output service activity
 
 
