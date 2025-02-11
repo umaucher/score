@@ -41,9 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=fb25e2c8" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=60b43b4f" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7fdb06ad" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -136,6 +136,14 @@
   
   
   
+  
+    
+    
+      
+    
+    
+    <img src="../../../../_static/S-CORE_Logo_white.svg" class="logo__image only-light" alt=""/>
+    <img src="../../../../_static/S-CORE_Logo_white.svg" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">Eclipse SCORE Docs</p>
@@ -511,7 +519,7 @@
 <h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h1>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-cd6b9eba">
+<div class="need_container docutils container" id="SNCB-e5eba65b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__application">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -564,7 +572,7 @@ Each process contains one ore more operating system threads.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-22fc6927">
+<div class="need_container docutils container" id="SNCB-5c34183c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__activity">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -618,7 +626,7 @@ Each activity is mapped to exactly one thread and provides the following functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-543371dd">
+<div class="need_container docutils container" id="SNCB-0fae915d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__task_chain">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -675,7 +683,7 @@ The purpose of the sender activity is to collect signals produced by activities 
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-341f0f37">
+<div class="need_container docutils container" id="SNCB-f9bebcbc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__application_lifecycle">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -721,7 +729,7 @@ The purpose of the sender activity is to collect signals produced by activities 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-662af896">
+<div class="need_container docutils container" id="SNCB-727e5371">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__activity_init">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -771,7 +779,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fca4486f">
+<div class="need_container docutils container" id="SNCB-dc0c4fc1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__activitiy_step">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -802,7 +810,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>Each activity is stepped once within each execution of the task chain they belong to.</p>
-<p>Stepping is shall be done by a call to an activity’s <cite>step</cite> function.</p>
+<p>Stepping is done by a call to an activity’s <cite>step</cite> function.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -819,7 +827,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ec7c4509">
+<div class="need_container docutils container" id="SNCB-d774c8c1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__activity_shutdown">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -869,9 +877,9 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </div>
 </div>
 </section>
-<section id="supervsion">
-<h2>Supervsion<a class="headerlink" href="#supervsion" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-0a762fa5">
+<section id="supervision">
+<h2>Supervision<a class="headerlink" href="#supervision" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-b275a793">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__alive_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -902,7 +910,8 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide the functionality to enable the reporting of
-Alive Supervision checkpoint to the Platform Health Management</p></td>
+alive supervision checkpoint to an external health management system
+(e.g. watchdog)</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#FEAT_REQ__feo__alive_supervision" title="FEAT_REQ__feo__alive_supervision">FEAT_REQ__feo__alive_supervision</a></span></span></div>
@@ -918,7 +927,7 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-df741724">
+<div class="need_container docutils container" id="SNCB-93b4ad27">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__deadline_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -948,7 +957,9 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide the functionality to enable the reporting of Deadline Supervision checkpoints to the Platform Health Management</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide the functionality to enable the reporting of
+deadline supervision checkpoints to an external health management system
+(e.g. watchdog)</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#FEAT_REQ__feo__deadline_supervision" title="FEAT_REQ__feo__deadline_supervision">FEAT_REQ__feo__deadline_supervision</a></span></span></div>
@@ -964,7 +975,7 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ed536426">
+<div class="need_container docutils container" id="SNCB-0b70c57e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__logical_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -994,7 +1005,9 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide the functionality to enable the reporting of Logical Supervision checkpoints to the Platform Health Management</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide the functionality to enable the reporting of
+logical supervision checkpoints to an external health management system
+(e.g. watchdog)</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#FEAT_REQ__feo__logical_supervision" title="FEAT_REQ__feo__logical_supervision">FEAT_REQ__feo__logical_supervision</a></span></span></div>
@@ -1010,7 +1023,7 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-73df9987">
+<div class="need_container docutils container" id="SNCB-c748bb8b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="FEAT_REQ__feo__trustable_computation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1040,8 +1053,10 @@ Alive Supervision checkpoint to the Platform Health Management</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide mechanisms to check after the computation of an Activity if the result is trustable.
-This can be done e.g. via evaluation of floating point exceptions, checking of hardware registers or status information of the
+<tr class="content row-odd"><td class="content" colspan="6"><p>The framework shall provide mechanisms to check after the computation of
+an Activity if the result is trustable.
+This can be done e.g. via evaluation of floating point exceptions,
+checking of hardware registers or status information of the
 software platform.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1110,7 +1125,7 @@ software platform.</p></td>
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions">Definitions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-architecture">Dynamic Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervsion">Supervsion</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#supervision">Supervision</a></li>
 </ul>
   </nav></div>
 

@@ -41,9 +41,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=fb25e2c8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=60b43b4f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7fdb06ad" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -136,6 +136,14 @@
   
   
   
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/S-CORE_Logo_white.svg" class="logo__image only-light" alt=""/>
+    <img src="../../../_static/S-CORE_Logo_white.svg" class="logo__image only-dark pst-js-only" alt=""/>
   
   
     <p class="title logo__title">Eclipse SCORE Docs</p>
@@ -506,7 +514,7 @@
                   
   <section id="fixed-execution-order-framework">
 <h1>Fixed execution order framework<a class="headerlink" href="#fixed-execution-order-framework" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-77b9f1cf">
+<div class="need_container docutils container" id="SNCB-04b17de3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC__FEO">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -610,6 +618,7 @@ see below)</p></li>
 <li><p>Log (feo::log)</p></li>
 <li><p>Configuration parameters (feo::param)</p></li>
 <li><p>Persistency (feo::pers)</p></li>
+<li><p>Tracing (feo::tracing)</p></li>
 </ul>
 </li>
 <li><p>There are two types of activities:</p>
@@ -638,16 +647,16 @@ network communication, direct sensor input or direct actuator output</p></li>
 <li><p>Service activities may also use APIs external to the framework
 (e.g. networking APIs, reading from external sensor devices, writing HW I/O, etc.)</p></li>
 <li><p>Service activities run at the beginning (“input service activity”) and at the end
-(“output service activity”) of a tash chain (see below)</p></li>
+(“output service activity”) of a task chain (see below)</p></li>
 <li><p>Input service activities provide the input values to the application activities
 within the task chain, by means of communication</p></li>
 <li><p>All input service activities must finish execution before the first application activity
-is run. this can be achieved by proper setup of the chain dependencies (see below)</p></li>
+is run. This can be achieved by proper setup of the chain dependencies (see below)</p></li>
 <li><p>There must be at least one input service activity</p></li>
 <li><p>Output service activities consume output values from the application activities
 calculated within the task chain an provide them to the outside world</p></li>
 <li><p>All output service activities must run after all application service activities have
-finished execution. this is achieved by proper setup of the chain dependencies (see below)</p></li>
+finished execution. This is achieved by proper setup of the chain dependencies (see below)</p></li>
 <li><p>There must be at least one output service activity</p></li>
 </ul>
 </section>

@@ -93,15 +93,17 @@ Definitions
     :satisfies: STKH_REQ__282
     :status: valid
 
-    In order to execute activities in secondary processes, the executor makes use of an `Agent` for each secondary process.
-    The agent receives commands from the executor, invokes actions on activities within its process and reports back to the executor.
+    In order to execute activities in secondary processes, the executor makes 
+    use of an `Agent` for each secondary process.
+    The agent receives commands from the executor, invokes actions on 
+    activities within its process and reports back to the executor.
 
-    TODO: One Agent per secondary process or per activity?
-
-    Each Activity that is part of the User Space Scheduling has a corresponding Agent\, which
-    takes over the task to wait for a trigger from its corresponding Executor.
-    When the Agent gets a step request from the Executor\, it calls the Step function of the Activity
-    There is exactly one agent for each secondary process.
+    Each Activity that is part of the task chain is associated with an
+    Agent, which takes over the task to wait for a trigger from its 
+    corresponding Executor. When the Agent gets a step request from the 
+    Executor, it calls the Step function of the Activity There is exactly 
+    one agent for each secondary process.The primary can but doesn't have to be 
+    associated with an agent.
 
 Dynamic Architecture
 ====================
@@ -141,7 +143,7 @@ Dynamic Architecture
 
     Each activity is stepped once within each execution of the task chain they belong to.
 
-    Stepping is shall be done by a call to an activity's `step` function.
+    Stepping is done by a call to an activity's `step` function.
 
 .. feat_req:: Shutdown of activities
     :id: FEAT_REQ__feo__activity_shutdown
@@ -157,8 +159,8 @@ Dynamic Architecture
 
     The `shutdown` function will be invoked in the thread to which the activity is mapped.
 
-Supervsion
-==========
+Supervision
+===========
 
 .. feat_req:: Alive supervision
     :id: FEAT_REQ__feo__alive_supervision
@@ -169,7 +171,8 @@ Supervsion
     :status: valid
 
     The framework shall provide the functionality to enable the reporting of 
-    Alive Supervision checkpoint to the Platform Health Management
+    alive supervision checkpoint to an external health management system 
+    (e.g. watchdog) 
 
 .. feat_req:: Support of deadline supervision checkpoints
     :id: FEAT_REQ__feo__deadline_supervision
@@ -179,7 +182,9 @@ Supervsion
     :satisfies: STKH_REQ__282
     :status: valid
 
-    The framework shall provide the functionality to enable the reporting of Deadline Supervision checkpoints to the Platform Health Management
+    The framework shall provide the functionality to enable the reporting of 
+    deadline supervision checkpoints to an external health management system 
+    (e.g. watchdog) 
 
 .. feat_req:: Support of logical supervision
     :id: FEAT_REQ__feo__logical_supervision
@@ -189,7 +194,9 @@ Supervsion
     :satisfies: STKH_REQ__282
     :status: valid
 
-    The framework shall provide the functionality to enable the reporting of Logical Supervision checkpoints to the Platform Health Management
+    The framework shall provide the functionality to enable the reporting of 
+    logical supervision checkpoints to an external health management system 
+    (e.g. watchdog) 
 
 .. feat_req:: Trustable computation
     :id: FEAT_REQ__feo__trustable_computation
@@ -199,7 +206,9 @@ Supervsion
     :satisfies: STKH_REQ__282
     :status: valid
 
-    The framework shall provide mechanisms to check after the computation of an Activity if the result is trustable.
-    This can be done e.g. via evaluation of floating point exceptions, checking of hardware registers or status information of the
+    The framework shall provide mechanisms to check after the computation of 
+    an Activity if the result is trustable.
+    This can be done e.g. via evaluation of floating point exceptions, 
+    checking of hardware registers or status information of the
     software platform.
 
