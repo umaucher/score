@@ -138,5 +138,9 @@
   {
     "version": "hoe_jo_enable_plantuml_error_image",
     "url": "https://eclipse-score.github.io/score/hoe_jo_enable_plantuml_error_image/"
+  },
+  {
+    "version": "pr-328",
+    "url": "https://eclipse-score.github.io/score/pr-328/"
   }
 ]
