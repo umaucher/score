@@ -138,5 +138,9 @@
   {
     "version": "pr-361",
     "url": "https://eclipse-score.github.io/score/pr-361/"
+  },
+  {
+    "version": "hoe_jo_create_naming_convention_needs",
+    "url": "https://eclipse-score.github.io/score/hoe_jo_create_naming_convention_needs/"
   }
 ]
