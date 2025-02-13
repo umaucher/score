@@ -35,11 +35,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=dbf7d94f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=60b43b4f" />
@@ -473,28 +473,17 @@
                   
   <section id="key-value-storage">
 <h1>Key-value Storage<a class="headerlink" href="#key-value-storage" title="Link to this heading">#</a></h1>
-<ul class="simple">
-<li><p>Key-Value Storage is needed because there are (legacy) applications which require a KVS</p></li>
-<li><p>There are multiple Key-Value Storages allowed per application</p></li>
-<li><p>There must be an update mechanism from different versions of a KVS to another version</p></li>
-<li><p>When are modifications persisted? Configurable?</p></li>
-<li><p>The same KVS should be read/writeable from C++ &amp; Rust.</p></li>
-<li><p>Supported Datatypes: Primitive Datatypes &amp; Non-Primitive Datatypes; To be coordinated with IPC/Communication CTF, to use the same datatypes</p></li>
-<li><p>Tooling to modify/access content of KVS “from the outside”</p></li>
-<li><p>KVS should store default values</p></li>
-<li><p>Integrity of the KVS should be checked</p></li>
-</ul>
-<div class="need_container docutils container" id="SNCB-ca94c891">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC__Your_Feature_Name">
+<div class="need_container docutils container" id="SNCB-dc07b984">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="DOC__KVS">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">[Your Feature Name]</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Key-Value Storage</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
 <div class="line"><span>security: </span><strong><span></span></strong></div>
-<div class="line"><span>safety: </span><strong><span><span class="needs_safety"><span class="needs_data">ASIL_D</span></span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span><span class="needs_safety"><span class="needs_data">ASIL_B</span></span></span></strong></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -505,7 +494,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">contribution_request</span><span class="needs_spacer">, </span><span class="needs_data">feature_request</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -515,7 +504,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#DOC__Your_Feature_Name" title="DOC__Your_Feature_Name">DOC__Your_Feature_Name</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#DOC__KVS" title="DOC__KVS">DOC__KVS</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -528,66 +517,28 @@
 </table>
 </div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your Feature.</p>
-<ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">name</span></code> to be your Feature Name</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Feature Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">DOC_</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">asil</span></code> according to your needs</p></li>
-<li><p>Extend <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs, but please keep two default tags there</p></li>
-</ul>
-</div>
 <section id="feature-flag">
 <h2>Feature flag<a class="headerlink" href="#feature-flag" title="Link to this heading">#</a></h2>
 <p>To activate this feature, use the following feature flag:</p>
-<p><code class="docutils literal notranslate"><span class="pre">experimental_[your_feature_name]</span></code></p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The feature flag must reflect the feature name in snake_case. Further, it is prepended with <code class="docutils literal notranslate"><span class="pre">experimental_</span></code>, as
-long as the feature is not yet stable.</p>
-</div>
-</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">experimental_kvs</span></code></p>
 </section>
 <section id="abstract">
 <h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h2>
-<p>[A short (~200 word) description of the contribution being addressed.]</p>
+<p>This feature describes a key-value storage to be used within applications of the Eclipse S-CORE project,
+independent of the used application framework. It shall enable applications to access and store persistent
+data (primitive &amp; non-primitive datatypes) associated with an unique key.</p>
 </section>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>[Clearly explain why the existing platform/project solution is inadequate to address the topic that the Feature Request solves.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The motivation is critical for Feature Requests that want to change the existing features or infrastructure.
-It should clearly explain why the existing solution is inadequate to address the topic that the Feature Request solves.
-Feature Request submissions without sufficient motivation may be rejected.</p>
-</div>
-</div></blockquote>
+<p>A key-value storage is used within many applications to store e.g. configuration data and is therefore
+seen crucial for the Eclipse S-CORE platform.</p>
 </section>
 <section id="rationale">
 <h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
-<p>[Describe why particular design decisions were made.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.</p>
-</div>
-</div></blockquote>
+<p>n/a</p>
 </section>
 <section id="specification">
 <h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
-<p>[Describe the requirements, architecture of any new feature.] or
-[Describe the change to requirements, architecture, implementation, process, documentation, infrastructure of any change request.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A Feature Request shall specify the stakeholder requirements as part of our platform/project.
-Thereby the <a class="reference internal" href="../../../process/roles/index.html#RL_technical_lead" title="RL_technical_lead"><em class="xref need">Technical Lead (RL_technical_lead)</em></a> will approve these requirements as part of accepting the Feature Request (e.g. merging the PR with the Feature Request).</p>
-</div>
-</div></blockquote>
 </section>
 <section id="backwards-compatibility">
 <h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
@@ -605,6 +556,12 @@ Thereby the <a class="reference internal" href="../../../process/roles/index.htm
 </section>
 <section id="safety-impact">
 <h2>Safety Impact<a class="headerlink" href="#safety-impact" title="Link to this heading">#</a></h2>
+<dl class="simple">
+<dt>Notes:</dt><dd><ul class="simple">
+<li><p>One key-value storage should not be used within different processes (freedom from interference) -&gt; To be added to AoUs?</p></li>
+</ul>
+</dd>
+</dl>
 <p>[How could the safety be impacted by the new feature?]</p>
 <blockquote>
 <div><div class="admonition note">
