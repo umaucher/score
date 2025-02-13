@@ -41,7 +41,7 @@ Process Description
    :maxdepth: 1
    :glob:
 
-   safety_management/index.rst
+   process_areas/safety_management/index.rst
 
 Process Role definition
 ~~~~~~~~~~~~~~~~~~~~~~~
