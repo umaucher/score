@@ -142,5 +142,9 @@
   {
     "version": "main",
     "url": "https://eclipse-score.github.io/score/main/"
+  },
+  {
+    "version": "pr-295",
+    "url": "https://eclipse-score.github.io/score/pr-295/"
   }
 ]
