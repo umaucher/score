@@ -82,5 +82,9 @@
   {
     "version": "masc2023_add_aspice_standard",
     "url": "https://eclipse-score.github.io/score/masc2023_add_aspice_standard/"
+  },
+  {
+    "version": "pr-372",
+    "url": "https://eclipse-score.github.io/score/pr-372/"
   }
 ]
