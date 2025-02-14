@@ -68,7 +68,7 @@ Workflows
    :has: DOC_CONCEPT__safety_management
 
    | The external auditor is reponsible to perform a safety audit.
-   | The Safety Team shall support the external auditor during this.
+   | The Safety Manager shall support the external auditor during this.
    | The Project Manager and and the Safety Manager shall approve the audit report.
 
 .. workflow:: Perform Confirmation Reviews

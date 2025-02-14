@@ -45,7 +45,8 @@ Stakeholders
 
 #. :need:`Safety Manager <RL__safety_manager>`
 
-   * he is the main responsible for the safety management work products. See his role definition.
+   * he is the main responsible for the safety management work products (as in :doc:`workproducts`).
+     See also his role definition in :doc:`roles`.
 
 #. :need:`External Auditor <RL__external_auditor>`
 
