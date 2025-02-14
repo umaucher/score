@@ -68,7 +68,8 @@ Work products
 
    Confirmation that a work product provides sufficient and convincing evidence of their contribution to the achievement of functional safety considering the corresponding objectives and requirements of ISO 26262.
 
-   Will contain confirmation review report for Safety Plan, Safety Analyses and Dependent Failure Analyses (DFA)
+   Will contain confirmation review report for Safety Plan, Safety Case, Safety Analyses and Dependent Failure Analyses (DFA)
+   Note that the Safety Case confirmation review will always be incomplete because the safety argument is planned to be missing in the safety case.
 
 .. workproduct:: Functional Safety Audit Report
    :id: WP__audit_report

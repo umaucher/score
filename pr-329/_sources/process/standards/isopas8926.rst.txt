@@ -150,39 +150,39 @@ ISO PAS 8926
 
 * Workproducts:
     .. std_wp:: Pas1
-       :id: STD_ẂP_ISOPAS8926__1
+       :id: STD_WP_ISOPAS8926__1
        :status: valid
 
     .. std_wp:: Pas2
-       :id: STD_ẂP_ISOPAS8926__2
+       :id: STD_WP_ISOPAS8926__2
        :status: valid
 
     .. std_wp:: Pas3
-       :id: STD_ẂP_ISOPAS8926__3
+       :id: STD_WP_ISOPAS8926__3
        :status: valid
 
     .. std_wp:: Pas4
-       :id: STD_ẂP_ISOPAS8926__4
+       :id: STD_WP_ISOPAS8926__4
        :status: valid
 
     .. std_wp:: Pas5
-       :id: STD_ẂP_ISOPAS8926__5
+       :id: STD_WP_ISOPAS8926__5
        :status: valid
 
     .. std_wp:: Pas6
-       :id: STD_ẂP_ISOPAS8926__6
+       :id: STD_WP_ISOPAS8926__6
        :status: valid
 
     .. std_wp:: Pas7
-       :id: STD_ẂP_ISOPAS8926__7
+       :id: STD_WP_ISOPAS8926__7
        :status: valid
 
-    .. std_wp:: Ppas8
-       :id: STD_ẂP_ISOPAS8926__8
+    .. std_wp:: Pas8
+       :id: STD_WP_ISOPAS8926__8
        :status: valid
 
     .. std_wp:: Pas9
-       :id: STD_ẂP_ISOPAS8926__9
+       :id: STD_WP_ISOPAS8926__9
        :status: valid
 
 

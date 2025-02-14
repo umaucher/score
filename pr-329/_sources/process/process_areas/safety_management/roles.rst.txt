@@ -64,4 +64,4 @@ Roles
    Responsibility
 
    * Performing and reporting of safety audit
-   * Performing of confirmation reviews on safety plans and safety analysis (incl. DFA)
+   * Performing of confirmation reviews on safety plans, safety case and safety analysis (incl. DFA)
