@@ -110,5 +110,9 @@
   {
     "version": "pr-378",
     "url": "https://eclipse-score.github.io/score/pr-378/"
+  },
+  {
+    "version": "remove_logo",
+    "url": "https://eclipse-score.github.io/score/remove_logo/"
   }
 ]
