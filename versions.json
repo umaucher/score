@@ -114,5 +114,9 @@
   {
     "version": "remove_logo",
     "url": "https://eclipse-score.github.io/score/remove_logo/"
+  },
+  {
+    "version": "pr-382",
+    "url": "https://eclipse-score.github.io/score/pr-382/"
   }
 ]
