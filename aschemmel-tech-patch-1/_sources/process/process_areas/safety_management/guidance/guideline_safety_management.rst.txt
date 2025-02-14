@@ -87,6 +87,10 @@ Safety Management Guideline
    | Tool Management planning is part of the :need:`WP_PLATFORM_MGMT`. The respective work product to be planned as an issue of the generic safety plan is the :need:`WP_TOOL_EVAL`, which contains tool evaluation and if applicable qualification of the SW platform toolchain.
    | Components developed in C++ and Rust will have different toolchains. Both will be qualified once for the SW platform. Tool requirements will be documented in :need:`WP_TOOL_REQ`
    |
+   | **(OSS) Component qualification planning:**
+   | Based on the component classification as described in :need:`GD_GUIDL__component_classification`,
+   | the qualification of the component is planned as part of the :need:`GD_TEMP__module_safety_plan`.
+   | The template contains guidance how to do this and to document in the "OSS (sub-)component <name> Workproducts" list.
 
 .. gd_guidl:: Safety manual generation
    :id: GD_GUIDL__saf_man
