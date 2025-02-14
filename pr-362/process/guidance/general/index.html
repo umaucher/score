@@ -546,31 +546,31 @@
 <span id="naming-convention-files"></span><h2>Naming Conventions of Files<a class="headerlink" href="#naming-conventions-of-files" title="Link to this heading">#</a></h2>
 <p>The overall naming convention is to use snake case for all files and folders (all files are named lowercase and spaces are replaced by underscores).</p>
 </section>
-<section id="naming-convention-for-sphinx-needs">
-<span id="naming-convention-needs"></span><h2>Naming Convention for Sphinx Needs<a class="headerlink" href="#naming-convention-for-sphinx-needs" title="Link to this heading">#</a></h2>
-<p>The naming convention for the ID of all <em>needs</em> shall be defined as follows:</p>
-<p>It shall</p>
+<section id="naming-convention-for-uids">
+<span id="naming-convention-needs"></span><h2>Naming Convention for UIDs<a class="headerlink" href="#naming-convention-for-uids" title="Link to this heading">#</a></h2>
+<p>The naming convention for the UIDs of all elements shall be defined as follows:</p>
 <ul class="simple">
-<li><p>not exceed 30 characters</p></li>
-<li><p>show a meaningful name</p></li>
+<li><p>It should not exceed 30 characters</p></li>
+<li><p>It shall show a meaningful name</p></li>
 <li><dl class="simple">
-<dt>consist of 3 parts separated by double underscore</dt><dd><ul>
-<li><p>prefix (uppercase)</p></li>
-<li><p>structural element (lowercase)</p></li>
-<li><p>keyword (lowercase)</p></li>
+<dt>It shall consist of 3 parts separated by double underscore</dt><dd><ul>
+<li><p>prefix</p></li>
+<li><p>structural element</p></li>
+<li><p>keyword</p></li>
 </ul>
 </dd>
 </dl>
 </li>
+<li><p>It shall only consist of lowercase, digits and underscores</p></li>
 </ul>
-<p>The prefixes are defined in the <a class="reference external" href="https://github.com/eclipse-score/score/blob/main/docs/_tooling/extensions/score_metamodel/metamodel.py">metamodel</a></p>
-<p>Structural elements depend on the type of the need for requirements it could be an abbreviation for the feature / subfeature. For processes it could be the process the need is related to.</p>
+<p>The prefixes are defined in the metamodel.</p>
+<p>Structural elements depend on the type of the need for requirements it could be an abbreviation for the feature / subfeature.</p>
 <p>The keyword shall indicate the content of the requirement.</p>
 <p>As examples:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>FEAT_REQ__ipc__e2e_protection</p></li>
-<li><p>GD_TEMP__requirement__feat_req</p></li>
+<li><p>feat_req__ipc__e2e_protection</p></li>
+<li><p>comp_req__kvs__storage</p></li>
 </ul>
 </div></blockquote>
 </section>
@@ -708,7 +708,7 @@ README.md                                       -&gt; Entrypoint of the reposito
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-conventions-of-files">Naming Conventions of Files</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-convention-for-sphinx-needs">Naming Convention for Sphinx Needs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#naming-convention-for-uids">Naming Convention for UIDs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#folder-structure-of-platform-repository">Folder Structure of Platform Repository</a></li>
 </ul>
   </nav></div>
