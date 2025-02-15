@@ -16,6 +16,14 @@
     "url": "https://eclipse-score.github.io/score/hoe_jo_create_naming_convention_needs/"
   },
   {
+    "version": "hoe_jo_initial_draft_requirement_guidance",
+    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_requirement_guidance/"
+  },
+  {
+    "version": "masc2023_add_aspice_standard",
+    "url": "https://eclipse-score.github.io/score/masc2023_add_aspice_standard/"
+  },
+  {
     "version": "masc2023_create_general_concepts",
     "url": "https://eclipse-score.github.io/score/masc2023_create_general_concepts/"
   },
@@ -60,12 +68,36 @@
     "url": "https://eclipse-score.github.io/score/pr-362/"
   },
   {
-    "version": "pr-369",
-    "url": "https://eclipse-score.github.io/score/pr-369/"
-  },
-  {
     "version": "pr-371",
     "url": "https://eclipse-score.github.io/score/pr-371/"
+  },
+  {
+    "version": "pr-372",
+    "url": "https://eclipse-score.github.io/score/pr-372/"
+  },
+  {
+    "version": "pr-374",
+    "url": "https://eclipse-score.github.io/score/pr-374/"
+  },
+  {
+    "version": "pr-377",
+    "url": "https://eclipse-score.github.io/score/pr-377/"
+  },
+  {
+    "version": "pr-378",
+    "url": "https://eclipse-score.github.io/score/pr-378/"
+  },
+  {
+    "version": "pr-382",
+    "url": "https://eclipse-score.github.io/score/pr-382/"
+  },
+  {
+    "version": "remove_logo",
+    "url": "https://eclipse-score.github.io/score/remove_logo/"
+  },
+  {
+    "version": "ulhu_lola_hla",
+    "url": "https://eclipse-score.github.io/score/ulhu_lola_hla/"
   },
   {
     "version": "ulhu_persistency_file_access",
@@ -78,49 +110,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "masc2023_add_aspice_standard",
-    "url": "https://eclipse-score.github.io/score/masc2023_add_aspice_standard/"
-  },
-  {
-    "version": "pr-372",
-    "url": "https://eclipse-score.github.io/score/pr-372/"
-  },
-  {
-    "version": "pr-373",
-    "url": "https://eclipse-score.github.io/score/pr-373/"
-  },
-  {
-    "version": "ulhu_lola_hla",
-    "url": "https://eclipse-score.github.io/score/ulhu_lola_hla/"
-  },
-  {
-    "version": "pr-374",
-    "url": "https://eclipse-score.github.io/score/pr-374/"
-  },
-  {
-    "version": "hoe_jo_initial_draft_requirement_guidance",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_requirement_guidance/"
-  },
-  {
-    "version": "pr-377",
-    "url": "https://eclipse-score.github.io/score/pr-377/"
-  },
-  {
-    "version": "pr-378",
-    "url": "https://eclipse-score.github.io/score/pr-378/"
-  },
-  {
-    "version": "remove_logo",
-    "url": "https://eclipse-score.github.io/score/remove_logo/"
-  },
-  {
-    "version": "pr-382",
-    "url": "https://eclipse-score.github.io/score/pr-382/"
-  },
-  {
-    "version": "pr-384",
-    "url": "https://eclipse-score.github.io/score/pr-384/"
   }
 ]
