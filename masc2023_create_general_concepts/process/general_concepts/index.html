@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Persistency &#8212; Score 0.1 documentation</title>
+    <title>General concepts &#8212; Score 0.1 documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/persistency/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process/general_concepts/index';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="File Access" href="file-access/index.html" />
-    <link rel="prev" title="Integration" href="../integration/index.html" />
+    <link rel="next" title="Traceability concept" href="score_traceability_concept.html" />
+    <link rel="prev" title="Introduction" href="../introduction/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -167,8 +167,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../features/index.html">
     Features
   </a>
 </li>
@@ -188,8 +188,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../process/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
     Process
   </a>
 </li>
@@ -333,8 +333,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../features/index.html">
     Features
   </a>
 </li>
@@ -354,8 +354,8 @@
 </li>
 
 
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../process/index.html">
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../index.html">
     Process
   </a>
 </li>
@@ -436,17 +436,31 @@
 <nav class="bd-docs-nav bd-links"
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../communication/index.html">Communication</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../frameworks/index.html">Frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../infrastructure/index.html">Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../integration/index.html">Integration</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Persistency</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="file-access/index.html">File Access</a></li>
-<li class="toctree-l2"><a class="reference internal" href="key-value-storage/index.html">Key-value Storage</a></li>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">General concepts</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="score_traceability_concept.html">Traceability concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="score_tool_eval_qual_concept.html">Tool evaluation concept</a></li>
+
 </ul>
 </details></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../roles/index.html">Roles</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workproducts/index.html">Workproducts</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workflows/index.html">Workflows</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../guidance/index.html">Guidance</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../standards/index.html">Standards</a></li>
 </ul>
 </div>
 </nav></div>
@@ -488,9 +502,9 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Features</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Process</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Persistency</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">General concepts</span></li>
   </ul>
 </nav>
 </div>
@@ -507,12 +521,17 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="persistency">
-<h1>Persistency<a class="headerlink" href="#persistency" title="Link to this heading">#</a></h1>
+  <section id="general-concepts">
+<span id="process-general-concepts"></span><h1>General concepts<a class="headerlink" href="#general-concepts" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="file-access/index.html">File Access</a></li>
-<li class="toctree-l1"><a class="reference internal" href="key-value-storage/index.html">Key-value Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="score_traceability_concept.html">Traceability concept</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="score_traceability_concept.html#high-level-traceability-overview">High level traceability overview</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="score_tool_eval_qual_concept.html">Tool evaluation concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="score_tool_eval_qual_concept.html#tool-qualification-concept">Tool qualification concept</a></li>
 </ul>
 </div>
 </section>
@@ -528,20 +547,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../integration/index.html"
+       href="../introduction/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Integration</p>
+        <p class="prev-next-title">Introduction</p>
       </div>
     </a>
     <a class="right-next"
-       href="file-access/index.html"
+       href="score_traceability_concept.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">File Access</p>
+        <p class="prev-next-title">Traceability concept</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -560,7 +579,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/persistency/index.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/process/general_concepts/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -576,7 +595,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/features/persistency/index.rst.txt"
+      <li><a href="../../_sources/process/general_concepts/index.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
