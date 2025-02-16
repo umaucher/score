@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 10-xx
 ~~~~~
 
-.. req:: 10-00 Process description
-   :id: R_ASPICE-40_IIC-10-00
+.. std_req:: 10-00 Process description
+   :id: STD_BP_ASPICE-40__IIC-10-00
    :status: valid
 
    Process description may have the following characteristics:
@@ -16,8 +30,8 @@
        - templates
        - specific methods/work instructions
 
-.. req:: 10-50 Role description
-   :id: R_ASPICE-40_IIC-10-50
+.. std_req:: 10-50 Role description
+   :id: STD_BP_ASPICE-40__IIC-10-50
    :status: valid
 
    Role description may have the following characteristics:
@@ -27,8 +41,8 @@
    - Responsibilities and authorities
    - Required competencies, skills, and experience
 
-.. req:: 10-51 Qualification method description
-   :id: R_ASPICE-40_IIC-10-51
+.. std_req:: 10-51 Qualification method description
+   :id: STD_BP_ASPICE-40__IIC-10-51
    :status: valid
 
    Qualification method description may have the following characteristics:
@@ -38,8 +52,8 @@
    - Mentoring/coaching concepts
    - Self-learning material
 
-.. req:: 10-52 Process resource and infrastructure description
-   :id: R_ASPICE-40_IIC-10-52
+.. std_req:: 10-52 Process resource and infrastructure description
+   :id: STD_BP_ASPICE-40__IIC-10-52
    :status: valid
 
    Process resource and infrastructure description may have the following characteristics:

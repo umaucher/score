@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 01-xx
 ~~~~~
 
-.. req:: 01-03 Software Component
-   :id: R_ASPICE-40_IIC-01-03
+.. std_req:: 01-03 Software Component
+   :id: STD_BP_ASPICE-40__IIC-01-03
    :status: valid
 
    Software Component may have the following characteristics:
@@ -13,8 +27,8 @@
      libs or scripts and a configuration description, if applicable.
 
 
-.. req:: 01-50 Integrated Software
-   :id: R_ASPICE-40_IIC-01-50
+.. std_req:: 01-50 Integrated Software
+   :id: STD_BP_ASPICE-40__IIC-01-50
    :status: valid
 
    Integrated Software may have the following characteristics:
@@ -25,8 +39,8 @@
      - application parameter files (being a technical implementation solution for configurability-oriented requirements)
      - all configured software elements
 
-.. req:: 01-52 Configuration item list
-   :id: R_ASPICE-40_IIC-01-52
+.. std_req:: 01-52 Configuration item list
+   :id: STD_BP_ASPICE-40__IIC-01-52
    :status: valid
 
    Configuration item list may have the following characteristics:

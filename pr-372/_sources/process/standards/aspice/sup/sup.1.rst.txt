@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 SUP.1 Quality Assurance
 -----------------------
 
@@ -18,10 +32,10 @@ Process outcomes
 Base practices
 ~~~~~~~~~~~~~~
 
-.. req:: SUP.1.BP1: Ensure independence of quality assurance
-   :id: R_ASPICE-40_SUP-1-BP1
+.. std_req:: SUP.1.BP1: Ensure independence of quality assurance
+   :id: STD_BP_ASPICE-40__SUP-1-BP1
    :status: valid
-   :links: R_ASPICE-40_IIC-16-50
+   :links: STD_BP_ASPICE-40__IIC-16-50
 
    Ensure that quality assurance is performed independently and objectively without conflicts of interest.
 
@@ -30,10 +44,10 @@ Base practices
       Possible inputs for evaluating the independence may be assignment to financial and/or organizational
       structure as well as responsibility for processes that are subject to quality assurance (no self-monitoring).
 
-.. req:: SUP.1.BP2: Define criteria for quality assurance
-   :id: R_ASPICE-40_SUP-1-BP2
+.. std_req:: SUP.1.BP2: Define criteria for quality assurance
+   :id: STD_BP_ASPICE-40__SUP-1-BP2
    :status: valid
-   :links: R_ASPICE-40_IIC-18-07
+   :links: STD_BP_ASPICE-40__IIC-18-07
 
    Define quality criteria for work products as well as for process tasks and their performance.
 
@@ -41,10 +55,10 @@ Base practices
 
       Quality criteria may consider internal and external inputs such as customer requirements, standards, milestones, etc.
 
-.. req:: SUP.1.BP3: Assure quality of work products
-   :id: R_ASPICE-40_SUP-1-BP3
+.. std_req:: SUP.1.BP3: Assure quality of work products
+   :id: STD_BP_ASPICE-40__SUP-1-BP3
    :status: valid
-   :links: R_ASPICE-40_IIC-18-07, R_ASPICE-40_IIC-13-52, R_ASPICE-40_IIC-13-18, R_ASPICE-40_IIC-13-19, R_ASPICE-40_IIC-14-02
+   :links: STD_BP_ASPICE-40__IIC-18-07, STD_BP_ASPICE-40__IIC-13-52, STD_BP_ASPICE-40__IIC-13-18, STD_BP_ASPICE-40__IIC-13-19, STD_BP_ASPICE-40__IIC-14-02
 
    Identify work products subject to quality assurance according to the quality criteria.
    Perform appropriate activities to evaluate the work products against the defined quality criteria and document the results.
@@ -54,10 +68,10 @@ Base practices
       Quality assurance activities may include reviews, problem analysis and
       lessons learned that improve the work products for further use.
 
-.. req:: SUP.1.BP4: Assure quality of process activities
-   :id: R_ASPICE-40_SUP-1-BP4
+.. std_req:: SUP.1.BP4: Assure quality of process activities
+   :id: STD_BP_ASPICE-40__SUP-1-BP4
    :status: valid
-   :links: R_ASPICE-40_IIC-18-07, R_ASPICE-40_IIC-13-52, R_ASPICE-40_IIC-13-18, R_ASPICE-40_IIC-13-19, R_ASPICE-40_IIC-14-02
+   :links: STD_BP_ASPICE-40__IIC-18-07, STD_BP_ASPICE-40__IIC-13-52, STD_BP_ASPICE-40__IIC-13-18, STD_BP_ASPICE-40__IIC-13-19, STD_BP_ASPICE-40__IIC-14-02
 
    Identify processes subject to quality assurance according to the quality criteria.
    Perform appropriate activities to evaluate the processes against their defined quality criteria and
@@ -68,17 +82,17 @@ Base practices
       Quality assurance activities may include process assessments, problem analysis, regular check of methods, tools, and
       the adherence to defined processes, and consideration of lessons learned.
 
-.. req:: SUP.1.BP5: Summarize and communicate quality assurance activities and results
-   :id: R_ASPICE-40_SUP-1-BP5
+.. std_req:: SUP.1.BP5: Summarize and communicate quality assurance activities and results
+   :id: STD_BP_ASPICE-40__SUP-1-BP5
    :status: valid
-   :links: R_ASPICE-40_IIC-16-50, R_ASPICE-40_IIC-18-52, R_ASPICE-40_IIC-18-07, R_ASPICE-40_IIC-13-52, R_ASPICE-40_IIC-13-18, R_ASPICE-40_IIC-13-19, R_ASPICE-40_IIC-14-02
+   :links: STD_BP_ASPICE-40__IIC-16-50, STD_BP_ASPICE-40__IIC-18-52, STD_BP_ASPICE-40__IIC-18-07, STD_BP_ASPICE-40__IIC-13-52, STD_BP_ASPICE-40__IIC-13-18, STD_BP_ASPICE-40__IIC-13-19, STD_BP_ASPICE-40__IIC-14-02
 
    Regularly report performance, non-conformances, and trends of quality assurance activities to all affected parties.
 
-.. req:: SUP.1.BP6: Ensure resolution of non-conformances
-   :id: R_ASPICE-40_SUP-1-BP6
+.. std_req:: SUP.1.BP6: Ensure resolution of non-conformances
+   :id: STD_BP_ASPICE-40__SUP-1-BP6
    :status: valid
-   :links: R_ASPICE-40_IIC-18-52, R_ASPICE-40_IIC-18-07, R_ASPICE-40_IIC-13-52, R_ASPICE-40_IIC-13-18, R_ASPICE-40_IIC-13-19, R_ASPICE-40_IIC-14-02
+   :links: STD_BP_ASPICE-40__IIC-18-52, STD_BP_ASPICE-40__IIC-18-07, STD_BP_ASPICE-40__IIC-13-52, STD_BP_ASPICE-40__IIC-13-18, STD_BP_ASPICE-40__IIC-13-19, STD_BP_ASPICE-40__IIC-14-02
 
    Analyze, track, correct, resolve, and further prevent non-conformances found in quality assurance activities.
 
@@ -90,10 +104,10 @@ Base practices
 
       Non-conformances detected in the process definition or implementation may be entered into a process improvement process (PIM.3).
 
-.. req:: SUP.1.BP7: Escalate non-conformances
-   :id: R_ASPICE-40_SUP-1-BP7
+.. std_req:: SUP.1.BP7: Escalate non-conformances
+   :id: STD_BP_ASPICE-40__SUP-1-BP7
    :status: valid
-   :links: R_ASPICE-40_IIC-16-50, R_ASPICE-40_IIC-18-52, R_ASPICE-40_IIC-13-52, R_ASPICE-40_IIC-14-02
+   :links: STD_BP_ASPICE-40__IIC-16-50, STD_BP_ASPICE-40__IIC-18-52, STD_BP_ASPICE-40__IIC-13-52, STD_BP_ASPICE-40__IIC-14-02
 
    Escalate relevant non-conformances to appropriate levels of management and other relevant stakeholders to facilitate their resolution.
 

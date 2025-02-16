@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 SPL.2 Product Release
 ---------------------
 
@@ -15,10 +29,10 @@ Process outcomes
 Base practices
 ~~~~~~~~~~~~~~
 
-.. req:: SPL.2.BP1: Define the functional content of releases
-   :id: R_ASPICE-40_SPL-2-BP1
+.. std_req:: SPL.2.BP1: Define the functional content of releases
+   :id: STD_BP_ASPICE-40__SPL-2-BP1
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-18-06
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-18-06
 
    Define the functionality to be included and the release criteria for each release.
 
@@ -27,10 +41,10 @@ Base practices
       This may include the hardware elements, software elements, and extra application parameter files
       (influencing the identified system functionality) that are needed for the release.
 
-.. req:: SPL.2.BP2: Define release package
-   :id: R_ASPICE-40_SPL-2-BP2
+.. std_req:: SPL.2.BP2: Define release package
+   :id: STD_BP_ASPICE-40__SPL-2-BP2
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-18-06
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-18-06
 
    Define the release as well as supporting tools and information.
 
@@ -38,10 +52,10 @@ Base practices
 
       The release package may include also programming tools.
 
-.. req:: SPL.2.BP3: Ensure unique identification of releases
-   :id: R_ASPICE-40_SPL-2-BP3
+.. std_req:: SPL.2.BP3: Ensure unique identification of releases
+   :id: STD_BP_ASPICE-40__SPL-2-BP3
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-11-04, R_ASPICE-40_IIC-13-06
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-11-04, STD_BP_ASPICE-40__IIC-13-06
 
    Ensure a unique identification of the release based upon the intended purpose and expectations of the release.
 
@@ -49,10 +63,10 @@ Base practices
 
       Unique identification may be realized by a classification and numbering scheme for product releases.
 
-.. req:: SPL.2.BP4: Build the release from items under configuration control
-   :id: R_ASPICE-40_SPL-2-BP4
+.. std_req:: SPL.2.BP4: Build the release from items under configuration control
+   :id: STD_BP_ASPICE-40__SPL-2-BP4
    :status: valid
-   :links: R_ASPICE-40_IIC-11-04, R_ASPICE-40_IIC-18-06
+   :links: STD_BP_ASPICE-40__IIC-11-04, STD_BP_ASPICE-40__IIC-18-06
 
    Build the release from items under configuration control to ensure integrity.
 
@@ -60,17 +74,17 @@ Base practices
 
       This practice may be supported by the SUP.8 Configuration Management Process.
 
-.. req:: SPL.2.BP5: Ensure release approval before delivery
-   :id: R_ASPICE-40_SPL-2-BP5
+.. std_req:: SPL.2.BP5: Ensure release approval before delivery
+   :id: STD_BP_ASPICE-40__SPL-2-BP5
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-13-13, R_ASPICE-40_IIC-18-06
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-13-13, STD_BP_ASPICE-40__IIC-18-06
 
    Criteria for the release are satisfied before delivery takes place.
 
-.. req:: SPL.2.BP6: Provide a release note
-   :id: R_ASPICE-40_SPL-2-BP6
+.. std_req:: SPL.2.BP6: Provide a release note
+   :id: STD_BP_ASPICE-40__SPL-2-BP6
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-11-04, R_ASPICE-40_IIC-13-06, R_ASPICE-40_IIC-13-13
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-11-04, STD_BP_ASPICE-40__IIC-13-06, STD_BP_ASPICE-40__IIC-13-13
 
    A release is accompanied by information detailing key characteristics of the release.
 
@@ -79,17 +93,17 @@ Base practices
       The release note may include information about legal aspects like relevant target markets,
       legislation that is considered etc. See also VAL.1 Validation.
 
-.. req:: SPL.2.BP7: Communicate the type, service level and duration of support for a release
-   :id: R_ASPICE-40_SPL-2-BP7
+.. std_req:: SPL.2.BP7: Communicate the type, service level and duration of support for a release
+   :id: STD_BP_ASPICE-40__SPL-2-BP7
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-11-04, R_ASPICE-40_IIC-13-06, R_ASPICE-40_IIC-13-13
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-11-04, STD_BP_ASPICE-40__IIC-13-06, STD_BP_ASPICE-40__IIC-13-13
 
    Identify and communicate the type, service level and duration of support for a release.
 
-.. req:: SPL.2.BP8: Deliver the release package to the intended customer
-   :id: R_ASPICE-40_SPL-2-BP8
+.. std_req:: SPL.2.BP8: Deliver the release package to the intended customer
+   :id: STD_BP_ASPICE-40__SPL-2-BP8
    :status: valid
-   :links: R_ASPICE-40_IIC-11-03, R_ASPICE-40_IIC-13-06, R_ASPICE-40_IIC-13-13
+   :links: STD_BP_ASPICE-40__IIC-11-03, STD_BP_ASPICE-40__IIC-13-06, STD_BP_ASPICE-40__IIC-13-13
 
    Deliver the release package to the intended customer.
 

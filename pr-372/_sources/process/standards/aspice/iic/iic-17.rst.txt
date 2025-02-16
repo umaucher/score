@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 17-xx
 ~~~~~
 
-.. req:: 17-00 Requirement
-   :id: R_ASPICE-40_IIC-17-00
+.. std_req:: 17-00 Requirement
+   :id: STD_BP_ASPICE-40__IIC-17-00
    :status: valid
 
    Requirements may have the following characteristics:
@@ -51,8 +65,8 @@
      - safety related requirements derived from the technical safety
        concept
 
-.. req:: 17-05 Requirements for work products
-   :id: R_ASPICE-40_IIC-17-05
+.. std_req:: 17-05 Requirements for work products
+   :id: STD_BP_ASPICE-40__IIC-17-05
    :status: valid
 
    Requirements for work products may have the following characteristics:
@@ -69,8 +83,8 @@
        - Maintenance and disposal of the documents
        - May be specific for certain types of documents
 
-.. req:: 17-54 Requirement Attribute
-   :id: R_ASPICE-40_IIC-17-54
+.. std_req:: 17-54 Requirement Attribute
+   :id: STD_BP_ASPICE-40__IIC-17-54
    :status: valid
 
    Requirement Attributes may have the following characteristics:
@@ -84,8 +98,8 @@
       usage of requirements attributes may further support analysis of
       requirements.
 
-.. req:: 17-55 Resource needs
-   :id: R_ASPICE-40_IIC-17-55
+.. std_req:: 17-55 Resource needs
+   :id: STD_BP_ASPICE-40__IIC-17-55
    :status: valid
 
    Resource needs may have the following characteristics:

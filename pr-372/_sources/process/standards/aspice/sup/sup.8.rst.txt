@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 SUP.8 Configuration Management
 ------------------------------
 
@@ -20,10 +34,10 @@ Process outcomes
 Base practices
 ~~~~~~~~~~~~~~
 
-.. req:: SUP.8.BP1: Identify configuration items
-   :id: R_ASPICE-40_SUP-8-BP1
+.. std_req:: SUP.8.BP1: Identify configuration items
+   :id: STD_BP_ASPICE-40__SUP-8-BP1
    :status: valid
-   :links: R_ASPICE-40_IIC-18-53, R_ASPICE-40_IIC-01-52
+   :links: STD_BP_ASPICE-40__IIC-18-53, STD_BP_ASPICE-40__IIC-01-52
 
    Define selection criteria for identifying relevant work products to be subject to configuration management.
    Identify and document configuration items according to the defined selection criteria.
@@ -42,10 +56,10 @@ Base practices
 
       The selection criteria may be applied to single work products or a group of work products.
 
-.. req:: SUP.8.BP2: Define configuration item properties
-   :id: R_ASPICE-40_SUP-8-BP2
+.. std_req:: SUP.8.BP2: Define configuration item properties
+   :id: STD_BP_ASPICE-40__SUP-8-BP2
    :status: valid
-   :links: R_ASPICE-40_IIC-01-52
+   :links: STD_BP_ASPICE-40__IIC-01-52
 
    Define the necessary properties needed for the modification and control of configuration items.
 
@@ -61,10 +75,10 @@ Base practices
 
       The application of properties may be implemented by attributes of configuration items.
 
-.. req:: SUP.8.BP3: Establish configuration management
-   :id: R_ASPICE-40_SUP-8-BP3
+.. std_req:: SUP.8.BP3: Establish configuration management
+   :id: STD_BP_ASPICE-40__SUP-8-BP3
    :status: valid
-   :links: R_ASPICE-40_IIC-16-03, R_ASPICE-40_IIC-14-01
+   :links: STD_BP_ASPICE-40__IIC-16-03, STD_BP_ASPICE-40__IIC-14-01
 
    Establish configuration management mechanisms for control of identified configuration items including the configuration item properties,
    including mechanisms for controlling parallel modifications of configuration items.
@@ -73,10 +87,10 @@ Base practices
 
       This may include specific mechanisms for different configuration item types, such as branch and merge management, or checkout control.
 
-.. req:: SUP.8.BP4: Control modifications
-   :id: R_ASPICE-40_SUP-8-BP4
+.. std_req:: SUP.8.BP4: Control modifications
+   :id: STD_BP_ASPICE-40__SUP-8-BP4
    :status: valid
-   :links: R_ASPICE-40_IIC-16-03, R_ASPICE-40_IIC-14-01
+   :links: STD_BP_ASPICE-40__IIC-16-03, STD_BP_ASPICE-40__IIC-14-01
 
    Control modifications using the configuration management mechanisms.
 
@@ -84,17 +98,17 @@ Base practices
 
       This may include the application of a defined status model for configuration items.
 
-.. req:: SUP.8.BP5: Establish baselines
-   :id: R_ASPICE-40_SUP-8-BP5
+.. std_req:: SUP.8.BP5: Establish baselines
+   :id: STD_BP_ASPICE-40__SUP-8-BP5
    :status: valid
-   :links: R_ASPICE-40_IIC-16-03, R_ASPICE-40_IIC-13-08
+   :links: STD_BP_ASPICE-40__IIC-16-03, STD_BP_ASPICE-40__IIC-13-08
 
    Define and establish baselines for internal purposes, and for external product delivery, for all relevant configuration items.
 
-.. req:: SUP.8.BP6: Summarize and communicate configuration status
-   :id: R_ASPICE-40_SUP-8-BP6
+.. std_req:: SUP.8.BP6: Summarize and communicate configuration status
+   :id: STD_BP_ASPICE-40__SUP-8-BP6
    :status: valid
-   :links: R_ASPICE-40_IIC-14-01, R_ASPICE-40_IIC-15-56
+   :links: STD_BP_ASPICE-40__IIC-14-01, STD_BP_ASPICE-40__IIC-15-56
 
    Record, summarize, and communicate the status of configuration items and established baselines
    to affected parties in order to support the monitoring of progress and status.
@@ -104,10 +118,10 @@ Base practices
       Regular communication of the configuration status, e.g., based on a defined status model supports
       project management, quality activities, and dedicated project phases such as software integration.
 
-.. req:: SUP.8.BP7: Ensure completeness and consistency
-   :id: R_ASPICE-40_SUP-8-BP7
+.. std_req:: SUP.8.BP7: Ensure completeness and consistency
+   :id: STD_BP_ASPICE-40__SUP-8-BP7
    :status: valid
-   :links: R_ASPICE-40_IIC-01-52, R_ASPICE-40_IIC-13-08, R_ASPICE-40_IIC-13-51
+   :links: STD_BP_ASPICE-40__IIC-01-52, STD_BP_ASPICE-40__IIC-13-08, STD_BP_ASPICE-40__IIC-13-51
 
    Ensure that the information about configuration items is correct and complete including configuration item properties.
    Ensure the completeness and consistency of baselines.
@@ -117,10 +131,10 @@ Base practices
       Completeness and consistency of a baseline means that all required configuration items are included and consistent,
       and have the required status. This can be used to support e.g., project gate approval.
 
-.. req:: SUP.8.BP8: Verify backup and recovery mechanisms availability.
-   :id: R_ASPICE-40_SUP-8-BP8
+.. std_req:: SUP.8.BP8: Verify backup and recovery mechanisms availability.
+   :id: STD_BP_ASPICE-40__SUP-8-BP8
    :status: valid
-   :links: R_ASPICE-40_IIC-06-52
+   :links: STD_BP_ASPICE-40__IIC-06-52
 
    Verify the availability of appropriate backup and recovery mechanisms for the configuration management including
    the controlled configuration items. Initiate measures in case of insufficient backup and recovery mechanisms.

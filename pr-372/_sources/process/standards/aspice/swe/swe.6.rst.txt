@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 SWE.6 Software Verification
 ---------------------------
 
@@ -26,10 +40,10 @@ Process outcomes
 Base practices
 ~~~~~~~~~~~~~~
 
-.. req:: SWE.6.BP1: Specify verification measures for software verification
-   :id: R_ASPICE-40_SWE-6-BP1
+.. std_req:: SWE.6.BP1: Specify verification measures for software verification
+   :id: STD_BP_ASPICE-40__SWE-6-BP1
    :status: valid
-   :links: R_ASPICE-40_IIC-08-60
+   :links: STD_BP_ASPICE-40__IIC-08-60
 
    Specify the verification
    measures for software verification suitable to provide evidence for compliance of the integrated
@@ -49,10 +63,10 @@ Base practices
       injection), or on requirements-based testing vs. “error guessing based on knowledge or experience”.
 
 
-.. req:: SWE.6.BP2: Select verification measures
-   :id: R_ASPICE-40_SWE-6-BP2
+.. std_req:: SWE.6.BP2: Select verification measures
+   :id: STD_BP_ASPICE-40__SWE-6-BP2
    :status: valid
-   :links: R_ASPICE-40_IIC-08-58
+   :links: STD_BP_ASPICE-40__IIC-08-58
 
    Document the selection of verification measures
    considering selection criteria including criteria for regression verification. The documented
@@ -66,10 +80,10 @@ Base practices
       road etc.)
 
 
-.. req:: SWE.6.BP3: Verify the integrated software
-   :id: R_ASPICE-40_SWE-6-BP3
+.. std_req:: SWE.6.BP3: Verify the integrated software
+   :id: STD_BP_ASPICE-40__SWE-6-BP3
    :status: valid
-   :links: R_ASPICE-40_IIC-03-50; R_ASPICE-40_IIC-15-52
+   :links: STD_BP_ASPICE-40__IIC-03-50; STD_BP_ASPICE-40__IIC-15-52
 
    Perform the verification of the integrated software
    using the selected verification measures. Record the verification results including pass/fail status
@@ -80,10 +94,10 @@ Base practices
       See SUP.9 for handling verification results that deviate from expected results.
 
 
-.. req:: SWE.6.BP4: Ensure consistency and establish bidirectional traceability
-   :id: R_ASPICE-40_SWE-6-BP4
+.. std_req:: SWE.6.BP4: Ensure consistency and establish bidirectional traceability
+   :id: STD_BP_ASPICE-40__SWE-6-BP4
    :status: valid
-   :links: R_ASPICE-40_IIC-13-51
+   :links: STD_BP_ASPICE-40__IIC-13-51
 
    Ensure
    consistency and establish bidirectional traceability between verification measures and software
@@ -97,10 +111,10 @@ Base practices
       does not necessarily mean that the information is consistent with each other.
 
 
-.. req:: SWE.6.BP5: Summarize and communicate results
-   :id: R_ASPICE-40_SWE-6-BP5
+.. std_req:: SWE.6.BP5: Summarize and communicate results
+   :id: STD_BP_ASPICE-40__SWE-6-BP5
    :status: valid
-   :links: R_ASPICE-40_IIC-13-52
+   :links: STD_BP_ASPICE-40__IIC-13-52
 
    Summarize the software verification
    results and communicate them to all affected parties.
