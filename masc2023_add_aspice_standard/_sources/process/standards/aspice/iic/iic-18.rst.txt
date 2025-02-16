@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 18-xx
 ~~~~~
 
-.. req:: 18-00 Standard
-   :id: R_ASPICE-40_IIC-18-00
+.. std_req:: 18-00 Standard
+   :id: STD_BP_ASPICE-40__IIC-18-00
    :status: valid
 
    Standard may have the following characteristics:
@@ -12,8 +26,8 @@
    - Conformance to requirements can be demonstrated
    - Provisions for tailoring or exception to the requirements are included
 
-.. req:: 18-06 Product release criteria
-   :id: R_ASPICE-40_IIC-18-06
+.. std_req:: 18-06 Product release criteria
+   :id: STD_BP_ASPICE-40__IIC-18-06
    :status: valid
 
    Product release criteria may have the following characteristics:
@@ -26,8 +40,8 @@
        - limit for open defects
        - change control status
 
-.. req:: 18-07 Quality criteria
-   :id: R_ASPICE-40_IIC-18-07
+.. std_req:: 18-07 Quality criteria
+   :id: STD_BP_ASPICE-40__IIC-18-07
    :status: valid
 
    Quality criteria may have the following characteristics:
@@ -39,8 +53,8 @@
    - Defines what constitutes the performance of the defined tasks
    - Establishes expected performance attributes
 
-.. req:: 18-52 Escalation path
-   :id: R_ASPICE-40_IIC-18-52
+.. std_req:: 18-52 Escalation path
+   :id: STD_BP_ASPICE-40__IIC-18-52
    :status: valid
 
    Escalation path may have the following characteristics:
@@ -49,16 +63,16 @@
    - Identifies stakeholders to be included in the escalation path
    - Identifies levels of escalation
 
-.. req:: 18-53 Configuration item selection criteria
-   :id: R_ASPICE-40_IIC-18-53
+.. std_req:: 18-53 Configuration item selection criteria
+   :id: STD_BP_ASPICE-40__IIC-18-53
    :status: valid
 
    Configuration item selection criteria may have the following characteristics:
 
    - Identify types of work products to be subject to configuration control
 
-.. req:: 18-57 Change analysis criteria
-   :id: R_ASPICE-40_IIC-18-57
+.. std_req:: 18-57 Change analysis criteria
+   :id: STD_BP_ASPICE-40__IIC-18-57
    :status: valid
 
    Change analysis criteria may have the following characteristics:
@@ -69,8 +83,8 @@
        - risks
        - benefits
 
-.. req:: 18-58 Process performance objectives
-   :id: R_ASPICE-40_IIC-18-58
+.. std_req:: 18-58 Process performance objectives
+   :id: STD_BP_ASPICE-40__IIC-18-58
    :status: valid
 
    Process performance objectives may have the following characteristics:
@@ -83,8 +97,8 @@
        - Process-specific deadlines in line with milestones, or frequency of activities (o e.g., dates for deliveries to the customer, quality gates)
        - Metrics (e.g., max. number of open change requests per release, max. ratio of configuration items in status “in work” at certain milestones before next delivery / release date)
 
-.. req:: 18-59 Review and approval criteria for work products
-   :id: R_ASPICE-40_IIC-18-59
+.. std_req:: 18-59 Review and approval criteria for work products
+   :id: STD_BP_ASPICE-40__IIC-18-59
    :status: valid
 
    Process performance objectives may have the following characteristics:
@@ -96,8 +110,8 @@
       - Review method(s) to be used
       - Criteria for approval
 
-.. req:: 18-70 Business goals
-   :id: R_ASPICE-40_IIC-18-70
+.. std_req:: 18-70 Business goals
+   :id: STD_BP_ASPICE-40__IIC-18-70
    :status: valid
 
    Business goals may have the following characteristics:
@@ -110,8 +124,8 @@
    - Timeframe for achievement
    - Authorization at the highest level
 
-.. req:: 18-80 Improvement opportunity
-   :id: R_ASPICE-40_IIC-18-80
+.. std_req:: 18-80 Improvement opportunity
+   :id: STD_BP_ASPICE-40__IIC-18-80
    :status: valid
 
    Improvement opportunity may have the following characteristics:
@@ -125,8 +139,8 @@
    - Activities to be performed to keep all those affected by the improvement informed
    - Priorities
 
-.. req:: 18-81 Improvement evaluation results
-   :id: R_ASPICE-40_IIC-18-81
+.. std_req:: 18-81 Improvement evaluation results
+   :id: STD_BP_ASPICE-40__IIC-18-81
    :status: valid
 
    Improvement evaluation results may have the following characteristics:

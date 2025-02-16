@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 11-xx
 ~~~~~
 
-.. req:: 11-03 Release note
-   :id: R_ASPICE-40_IIC-11-03
+.. std_req:: 11-03 Release note
+   :id: STD_BP_ASPICE-40__IIC-11-03
    :status: valid
 
    Release note may have the following characteristics:
@@ -29,8 +43,8 @@
    - The release note may include an introduction, the environmental requirements, installation procedures, product invocation,
      new feature identification and a list of defect resolutions, known defects and workarounds
 
-.. req:: 11-04 Product release package
-   :id: R_ASPICE-40_IIC-11-04
+.. std_req:: 11-04 Product release package
+   :id: STD_BP_ASPICE-40__IIC-11-04
    :status: valid
 
    Product release package may have the following characteristics:
@@ -44,8 +58,8 @@
        - installation instructions
        - release letter
 
-.. req:: 11-05 Software Unit
-   :id: R_ASPICE-40_IIC-11-05
+.. std_req:: 11-05 Software Unit
+   :id: STD_BP_ASPICE-40__IIC-11-05
    :status: valid
 
    Software Unit may have the following characteristics:

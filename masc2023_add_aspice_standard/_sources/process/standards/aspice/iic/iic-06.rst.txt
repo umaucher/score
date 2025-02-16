@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 06-xx
 ~~~~~
 
-.. req:: 06-04 Training material
-   :id: R_ASPICE-40_IIC-06-04
+.. std_req:: 06-04 Training material
+   :id: STD_BP_ASPICE-40__IIC-06-04
    :status: valid
 
    Training material may have the following characteristics:
@@ -11,8 +25,8 @@
    - Coverage of system, application, operations, maintenance as appropriate to the application
    - Course listings and availability
 
-.. req:: 06-50 Integration Sequence Instruction
-   :id: R_ASPICE-40_IIC-06-50
+.. std_req:: 06-50 Integration Sequence Instruction
+   :id: STD_BP_ASPICE-40__IIC-06-50
    :status: valid
 
    Integration Sequence Instruction may have the following characteristics:
@@ -24,8 +38,8 @@
    - necessary sequence or ordering of integration
    - preconditions for starting system integration
 
-.. req:: 06-51 Tailoring guideline
-   :id: R_ASPICE-40_IIC-06-51
+.. std_req:: 06-51 Tailoring guideline
+   :id: STD_BP_ASPICE-40__IIC-06-51
    :status: valid
 
    Tailoring guideline may have the following characteristics:
@@ -36,8 +50,8 @@
    - Requirements for the defined process to ensure integrity and consistency of the defined process
    - Subset of process assets that is essential for the defined process
 
-.. req:: 06-52 Backup and recovery mechanism information
-   :id: R_ASPICE-40_IIC-06-52
+.. std_req:: 06-52 Backup and recovery mechanism information
+   :id: STD_BP_ASPICE-40__IIC-06-52
    :status: valid
 
    Backup and recovery mechanism information may have the following characteristics:

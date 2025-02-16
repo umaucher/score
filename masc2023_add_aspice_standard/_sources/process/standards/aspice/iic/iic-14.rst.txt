@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 14-xx
 ~~~~~
 
-.. req:: 14-01 Change history
-   :id: R_ASPICE-40_IIC-14-01
+.. std_req:: 14-01 Change history
+   :id: STD_BP_ASPICE-40__IIC-14-01
    :status: valid
 
    Change history may have the following characteristics:
@@ -14,8 +28,8 @@
        - change requester information
        - change control record information
 
-.. req:: 14-02 Corrective action
-   :id: R_ASPICE-40_IIC-14-02
+.. std_req:: 14-02 Corrective action
+   :id: STD_BP_ASPICE-40__IIC-14-02
    :status: valid
 
    Corrective action may have the following characteristics:
@@ -27,8 +41,8 @@
    - Contains a status indicator
    - Indicates follow up audit actions
 
-.. req:: 14-10 Work package
-   :id: R_ASPICE-40_IIC-14-10
+.. std_req:: 14-10 Work package
+   :id: STD_BP_ASPICE-40__IIC-14-10
    :status: valid
 
    Work package may have the following characteristics:
@@ -45,8 +59,8 @@
 
       The work package descriptions may be integrated into the/be a part of a schedule, see 08-56
 
-.. req:: 14-50 Stakeholder groups list
-   :id: R_ASPICE-40_IIC-14-50
+.. std_req:: 14-50 Stakeholder groups list
+   :id: STD_BP_ASPICE-40__IIC-14-50
    :status: valid
 
    Stakeholder groups list may have the following characteristics:
@@ -57,8 +71,8 @@
    - representative(s) for each stakeholder group
    - information needs of each stakeholder group
 
-.. req:: 14-53 Role Assignment
-   :id: R_ASPICE-40_IIC-14-53
+.. std_req:: 14-53 Role Assignment
+   :id: STD_BP_ASPICE-40__IIC-14-53
    :status: valid
 
    Role Assignment may have the following characteristics:
@@ -68,8 +82,8 @@
        - required skills vs existing skills
        - required experience and trainings based on identified competencies / skills gap
 
-.. req:: 14-55 Software Bill of materials
-   :id: R_ASPICE-40_IIC-14-55
+.. std_req:: 14-55 Software Bill of materials
+   :id: STD_BP_ASPICE-40__IIC-14-55
    :status: valid
 
    Software Bill of materials may have the following characteristics:

@@ -1,14 +1,28 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 04-xx
 ~~~~~
 
-.. req:: 04-02 Domain architecture
-   :id: R_ASPICE-40_IIC-04-02
+.. std_req:: 04-02 Domain architecture
+   :id: STD_BP_ASPICE-40__IIC-04-02
    :status: draft
 
    Definition not available yet in PAM4.0 document.
 
-.. req:: 04-04 Software Architecture
-   :id: R_ASPICE-40_IIC-04-04
+.. std_req:: 04-04 Software Architecture
+   :id: STD_BP_ASPICE-40__IIC-04-04
    :status: draft
 
    Software Architecture may have the following characteristics:
@@ -40,8 +54,8 @@
    - Explanatory annotations, e.g, with natural language, for single elements
      or entire diagrams/models.
 
-.. req:: 04-05 Software detailed design
-   :id: R_ASPICE-40_IIC-04-05
+.. std_req:: 04-05 Software detailed design
+   :id: STD_BP_ASPICE-40__IIC-04-05
    :status: draft
 
    Software detailed design may have the following characteristics:

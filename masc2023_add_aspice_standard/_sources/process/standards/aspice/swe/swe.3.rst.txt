@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 SWE.3 Software Detailed Design and Unit Construction
 ----------------------------------------------------
 
@@ -26,10 +40,10 @@ Process outcomes
 Base practices
 ~~~~~~~~~~~~~~
 
-.. req:: SWE.3.BP1: Specify the static aspects of the detailed design
-   :id: R_ASPICE-40_SWE-3-BP1
+.. std_req:: SWE.3.BP1: Specify the static aspects of the detailed design
+   :id: STD_BP_ASPICE-40__SWE-3-BP1
    :status: valid
-   :links: R_ASPICE-40_IIC-04-05; R_ASPICE-40_IIC-11-05
+   :links: STD_BP_ASPICE-40__IIC-04-05; STD_BP_ASPICE-40__IIC-11-05
 
    For each software component
    specify the behavior of its software units, their static structure and relationships, their interfaces
@@ -52,7 +66,7 @@ Base practices
       Examples of valid data value ranges with applicable physical units from the application
       domain perspective are ‘0..200 [m/s]’, ‘0..3.8 [A]’ or ‘1..100 [N]’. For mapping such application
       domain value ranges to programming language-level data types (such as unsigned Integer with a
-      value range of 0..65535) refer to {need}`R_ASPICE-40_SWE-3-BP2`.
+      value range of 0..65535) refer to {need}`STD_BP_ASPICE-40__SWE-3-BP2`.
 
    .. note::
 
@@ -69,10 +83,10 @@ Base practices
       refore is an aspect of system design (SYS.3).
 
 
-.. req:: SWE.3.BP2: Specify dynamic aspects of the detailed design
-   :id: R_ASPICE-40_SWE-3-BP2
+.. std_req:: SWE.3.BP2: Specify dynamic aspects of the detailed design
+   :id: STD_BP_ASPICE-40__SWE-3-BP2
    :status: valid
-   :links: R_ASPICE-40_IIC-04-05; R_ASPICE-40_IIC-11-05
+   :links: STD_BP_ASPICE-40__IIC-04-05; STD_BP_ASPICE-40__IIC-11-05
 
    Specify and document the
    dynamic aspects of the detailed design with respect to the software architecture, including the
@@ -84,10 +98,10 @@ Base practices
       SysML, UML).
 
 
-.. req:: SWE.3.BP3: Develop software units
-   :id: R_ASPICE-40_SWE-3-BP3
+.. std_req:: SWE.3.BP3: Develop software units
+   :id: STD_BP_ASPICE-40__SWE-3-BP3
    :status: valid
-   :links: R_ASPICE-40_IIC-11-05
+   :links: STD_BP_ASPICE-40__IIC-11-05
 
    Develop and document the software units consistent
    with the detailed design, and according to coding principles.
@@ -99,10 +113,10 @@ Base practices
       programming). Further examples see e.g, ISO 26262-6 clause 8.4.5 together with table 6.
 
 
-.. req:: SWE.3.BP4: Ensure consistency and establish bidirectional traceability
-   :id: R_ASPICE-40_SWE-3-BP4
+.. std_req:: SWE.3.BP4: Ensure consistency and establish bidirectional traceability
+   :id: STD_BP_ASPICE-40__SWE-3-BP4
    :status: valid
-   :links: R_ASPICE-40_IIC-13-51
+   :links: STD_BP_ASPICE-40__IIC-13-51
 
    Ensure
    consistency and establish bidirectional traceability between the software detailed design and the
@@ -127,10 +141,10 @@ Base practices
       does not necessarily mean that the information is consistent with each other.
 
 
-.. req:: SWE.3.BP5: Communicate agreed software detailed design and developed software units
-   :id: R_ASPICE-40_SWE-3-BP5
+.. std_req:: SWE.3.BP5: Communicate agreed software detailed design and developed software units
+   :id: STD_BP_ASPICE-40__SWE-3-BP5
    :status: valid
-   :links: R_ASPICE-40_IIC-13-52
+   :links: STD_BP_ASPICE-40__IIC-13-52
 
    Communicate the agreed software detailed design and developed software units to all
    affected parties.

@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 07-xx
 ~~~~~
 
-.. req:: 07-04 Process metric
-   :id: R_ASPICE-40_IIC-07-04
+.. std_req:: 07-04 Process metric
+   :id: STD_BP_ASPICE-40__IIC-07-04
    :status: valid
 
    Process metric may have the following characteristics:
@@ -15,8 +29,8 @@
    - Measures the impact of process change
    - Measures the efficiency of the process
 
-.. req:: 07-05 Project metric
-   :id: R_ASPICE-40_IIC-07-05
+.. std_req:: 07-05 Project metric
+   :id: STD_BP_ASPICE-40__IIC-07-05
    :status: valid
 
    Project metric may have the following characteristics:
@@ -33,8 +47,8 @@
        - product's development is within the resource commitments allocated
    - References any goals established
 
-.. req:: 07-06 Quality metric
-   :id: R_ASPICE-40_IIC-07-06
+.. std_req:: 07-06 Quality metric
+   :id: STD_BP_ASPICE-40__IIC-07-06
    :status: valid
 
    Quality metric may have the following characteristics:
@@ -52,8 +66,8 @@
 
       Refer ISO/IEC 25010 for detailed information on measurement of product quality.
 
-.. req:: 07-08 Service level metric
-   :id: R_ASPICE-40_IIC-07-08
+.. std_req:: 07-08 Service level metric
+   :id: STD_BP_ASPICE-40__IIC-07-08
    :status: valid
 
    Service level metric may have the following characteristics:
@@ -68,8 +82,8 @@
        - up time
        - job run time
 
-.. req:: 07-51 Measurement result
-   :id: R_ASPICE-40_IIC-07-51
+.. std_req:: 07-51 Measurement result
+   :id: STD_BP_ASPICE-40__IIC-07-51
    :status: valid
 
    Measurement result may have the following characteristics:
@@ -107,8 +121,8 @@
    - Benchmarking data
    - Customer satisfaction survey
 
-.. req:: 07-61 Quantitative process metric
-   :id: R_ASPICE-40_IIC-07-61
+.. std_req:: 07-61 Quantitative process metric
+   :id: STD_BP_ASPICE-40__IIC-07-61
    :status: valid
 
    Quantitative process metric may have the following characteristics:
@@ -119,8 +133,8 @@
    - Process measurement metrics for the calculation of the quantitatively measurable indicators,
      sbased on data from related process elements, repositories, or tools
 
-.. req:: 07-62 Process analysis technique
-   :id: R_ASPICE-40_IIC-07-62
+.. std_req:: 07-62 Process analysis technique
+   :id: STD_BP_ASPICE-40__IIC-07-62
    :status: valid
 
    Process analysis technique may have the following characteristics:
@@ -128,16 +142,16 @@
    - Methods for statistical analysis of process data
    - Frequency of data collection.
 
-.. req:: 07-63 Process control limits
-   :id: R_ASPICE-40_IIC-07-63
+.. std_req:: 07-63 Process control limits
+   :id: STD_BP_ASPICE-40__IIC-07-63
    :status: valid
 
    Process control limits may have the following characteristics:
 
    - Quantitative control limits for the quantitative process metrics
 
-.. req:: 07-64 Process measurement data
-   :id: R_ASPICE-40_IIC-07-64
+.. std_req:: 07-64 Process measurement data
+   :id: STD_BP_ASPICE-40__IIC-07-64
    :status: valid
 
    Process measurement data may have the following characteristics:

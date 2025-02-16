@@ -1,8 +1,22 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 13-xx
 ~~~~~
 
-.. req:: 13-06 Delivery evidence
-   :id: R_ASPICE-40_IIC-13-06
+.. std_req:: 13-06 Delivery evidence
+   :id: STD_BP_ASPICE-40__IIC-13-06
    :status: valid
 
    Delivery evidence may have the following characteristics:
@@ -14,8 +28,8 @@
        - delivery date
        - receipt of delivered product
 
-.. req:: 13-07 Problem
-   :id: R_ASPICE-40_IIC-13-07
+.. std_req:: 13-07 Problem
+   :id: STD_BP_ASPICE-40__IIC-13-07
    :status: valid
 
    Problem may have the following characteristics:
@@ -29,8 +43,8 @@
      - Transitions between states with conditions and authorities
    - Identifies the expected closure date
 
-.. req:: 13-08 Baseline
-   :id: R_ASPICE-40_IIC-13-08
+.. std_req:: 13-08 Baseline
+   :id: STD_BP_ASPICE-40__IIC-13-08
    :status: valid
 
    Baseline may have the following characteristics:
@@ -43,8 +57,8 @@
 
       This should be established before a release to identify consistent and complete delivery
 
-.. req:: 13-09 Meeting support evidence
-   :id: R_ASPICE-40_IIC-13-09
+.. std_req:: 13-09 Meeting support evidence
+   :id: STD_BP_ASPICE-40__IIC-13-09
    :status: valid
 
    Meeting support evidence may have the following characteristics:
@@ -59,8 +73,8 @@
        - any open issues
        - next meeting if any
 
-.. req:: 13-13 Product release approval
-   :id: R_ASPICE-40_IIC-13-13
+.. std_req:: 13-13 Product release approval
+   :id: STD_BP_ASPICE-40__IIC-13-13
    :status: valid
 
    Product release approval support evidence may have the following characteristics:
@@ -72,8 +86,8 @@
        - the date released
        - Evidence of supplier approval
 
-.. req:: 13-14 Progress status
-   :id: R_ASPICE-40_IIC-13-14
+.. std_req:: 13-14 Progress status
+   :id: STD_BP_ASPICE-40__IIC-13-14
    :status: valid
 
    Progress status may have the following characteristics:
@@ -87,8 +101,8 @@
    - status of actual quality against planned quality
    Record of any deviations from planned activities and reason why
 
-.. req:: 13-16 Change request
-   :id: R_ASPICE-40_IIC-13-16
+.. std_req:: 13-16 Change request
+   :id: STD_BP_ASPICE-40__IIC-13-16
    :status: valid
 
    Change request may have the following characteristics:
@@ -105,8 +119,8 @@
        - person who changed a status
        - rationale for changing a status
 
-.. req:: 13-18 Quality conformance evidence
-   :id: R_ASPICE-40_IIC-13-18
+.. std_req:: 13-18 Quality conformance evidence
+   :id: STD_BP_ASPICE-40__IIC-13-18
    :status: valid
 
    Quality conformance evidence may have the following characteristics:
@@ -117,8 +131,8 @@
    - Identifies the associated quality criteria
    - Identifies any associated measurements using the information
 
-.. req:: 13-19 Review evidence
-   :id: R_ASPICE-40_IIC-13-19
+.. std_req:: 13-19 Review evidence
+   :id: STD_BP_ASPICE-40__IIC-13-19
    :status: valid
 
    Review evidence may have the following characteristics:
@@ -139,8 +153,8 @@
          - non-conformances
          - improvement suggestions
 
-.. req:: 13-25 Verification results
-   :id: R_ASPICE-40_IIC-13-25
+.. std_req:: 13-25 Verification results
+   :id: STD_BP_ASPICE-40__IIC-13-25
    :status: valid
 
    Verification results may have the following characteristics:
@@ -152,8 +166,8 @@
    - Information about the verification execution (date, “object-under-verification”, etc.)
    - Abstraction or summary of verification results
 
-.. req:: 13-51 Consistency Evidence
-   :id: R_ASPICE-40_IIC-13-51
+.. std_req:: 13-51 Consistency Evidence
+   :id: STD_BP_ASPICE-40__IIC-13-51
    :status: valid
 
    Consistency Evidence may have the following characteristics:
@@ -180,8 +194,8 @@
       This evidence can be accompanied by e.g., Definition of Done
       (DoD) approaches.
 
-.. req:: 13-52 Communication Evidence
-   :id: R_ASPICE-40_IIC-13-52
+.. std_req:: 13-52 Communication Evidence
+   :id: STD_BP_ASPICE-40__IIC-13-52
    :status: valid
 
    Communication Evidence may have the following characteristics:
@@ -199,14 +213,14 @@
      - wikis
      - photo protocol
 
-.. req:: 13-53 Qualification evidence
-   :id: R_ASPICE-40_IIC-13-53
+.. std_req:: 13-53 Qualification evidence
+   :id: STD_BP_ASPICE-40__IIC-13-53
    :status: valid
 
    Definition not available yet in PAM4.0 document.
 
-.. req:: 13-55 Process resource and infrastructure documentation
-   :id: R_ASPICE-40_IIC-13-55
+.. std_req:: 13-55 Process resource and infrastructure documentation
+   :id: STD_BP_ASPICE-40__IIC-13-55
    :status: valid
 
    Process resource and infrastructure documentation may have the following characteristics:

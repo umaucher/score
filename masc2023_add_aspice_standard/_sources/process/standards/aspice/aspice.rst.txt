@@ -1,3 +1,17 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
 ASPICE 4.0
 ==========
 
@@ -81,10 +95,10 @@ Process attribute achievements
 Generic practices
 ~~~~~~~~~~~~~~~~~
 
-.. req:: GP2.1.1: Identify the objectives and define a strategy for the performance of the process.
-   :id: R_ASPICE-40_GP-211
+.. std_req:: GP2.1.1: Identify the objectives and define a strategy for the performance of the process.
+   :id: STD_GP_ASPICE-40__GP-211
    :status: valid
-   :links: R_ASPICE-40_IIC-19-01
+   :links: STD_BP_ASPICE-40__IIC-19-01
 
    The scope of the process activities including the management of process performance and the management of work products are determined.
    Corresponding results to be achieved are determined.
@@ -108,10 +122,10 @@ Generic practices
       Elements applicable for multiple processes may be documented jointly,
       e.g, as part of a common project handbook or in a joint test strategy.
 
-.. req:: GP2.1.2: Plan the performance of the process.
-   :id: R_ASPICE-40_GP-212
+.. std_req:: GP2.1.2: Plan the performance of the process.
+   :id: STD_GP_ASPICE-40__GP-212
    :status: valid
-   :links: R_ASPICE-40_IIC-08-56, R_ASPICE-40_IIC-14-10
+   :links: STD_BP_ASPICE-40__IIC-08-56, STD_BP_ASPICE-40__IIC-14-10
 
    The planning for the performance of the process is established according to the defined objectives, criteria, and strategy.
    Process activities and work packages are defined.
@@ -121,10 +135,10 @@ Generic practices
 
       Schedule and milestones are defined.
 
-.. req:: GP2.1.3: Determine resource needs.
-   :id: R_ASPICE-40_GP-213
+.. std_req:: GP2.1.3: Determine resource needs.
+   :id: STD_GP_ASPICE-40__GP-213
    :status: valid
-   :links: R_ASPICE-40_IIC-17-55
+   :links: STD_BP_ASPICE-40__IIC-17-55
 
    The required amount of human resources, and experience, knowledge and skill needs for the for process performance are determined based on the planning.
    The needs for physical and material resources are determined based on the planning.
@@ -139,10 +153,10 @@ Generic practices
 
       The definition of responsibilities and authorities does not necessarily require formal role descriptions.
 
-.. req:: GP2.1.4: Identify and make available resources.
-   :id: R_ASPICE-40_GP-214
+.. std_req:: GP2.1.4: Identify and make available resources.
+   :id: STD_GP_ASPICE-40__GP-214
    :status: valid
-   :links: R_ASPICE-40_IIC-08-61
+   :links: STD_BP_ASPICE-40__IIC-08-61
 
    The individuals performing and managing the process are identified and allocated according to the determined needs.
    The individuals performing and managing the process are being qualified to execute their responsibilities.
@@ -153,19 +167,19 @@ Generic practices
 
    The other resources, necessary for performing the process are identified, made available, allocated and used according to the determined needs.
 
-.. req:: GP2.1.5: Monitor and adjust the performance of the process.
-   :id: R_ASPICE-40_GP-215
+.. std_req:: GP2.1.5: Monitor and adjust the performance of the process.
+   :id: STD_GP_ASPICE-40__GP-215
    :status: valid
-   :links: R_ASPICE-40_IIC-08-56, R_ASPICE-40_IIC-13-14
+   :links: STD_BP_ASPICE-40__IIC-08-56, STD_BP_ASPICE-40__IIC-13-14
 
    Process performance is monitored to identify deviations from the planning.
    Appropriate actions in case of deviations from the planning are taken.
    The planning is adjusted as necessary.
 
-.. req:: GP2.1.6: Manage the interfaces between involved parties.
-   :id: R_ASPICE-40_GP-216
+.. std_req:: GP2.1.6: Manage the interfaces between involved parties.
+   :id: STD_GP_ASPICE-40__GP-216
    :status: valid
-   :links: R_ASPICE-40_IIC-08-62, R_ASPICE-40_IIC-13-52
+   :links: STD_BP_ASPICE-40__IIC-08-62, STD_BP_ASPICE-40__IIC-13-52
 
    The individuals and groups including required external parties involved in the process performance are determined.
    Responsibilities are assigned to the relevant individuals or parties.
@@ -191,10 +205,10 @@ Process attribute achievements
 Generic practices
 ~~~~~~~~~~~~~~~~~
 
-.. req:: GP2.2.1: Define the requirements for the work products.
-   :id: R_ASPICE-40_GP-221
+.. std_req:: GP2.2.1: Define the requirements for the work products.
+   :id: STD_GP_ASPICE-40__GP-221
    :status: valid
-   :links: R_ASPICE-40_IIC-17-05, R_ASPICE-40_IIC-18-07, R_ASPICE-40_IIC-18-59
+   :links: STD_BP_ASPICE-40__IIC-17-05, STD_BP_ASPICE-40__IIC-18-07, STD_BP_ASPICE-40__IIC-18-59
 
    The requirements for the content and structure of the work products to be produced are defined.
    Quality criteria for the work products are identified.
@@ -211,10 +225,10 @@ Generic practices
       There may be types of work products for which no review or approval
       is required, thus then there would be no need to define the corresponding criteria.
 
-.. req:: GP2.2.2: Define the requirements for storage and control of the work products.
-   :id: R_ASPICE-40_GP-222
+.. std_req:: GP2.2.2: Define the requirements for storage and control of the work products.
+   :id: STD_GP_ASPICE-40__GP-222
    :status: valid
-   :links: R_ASPICE-40_IIC-17-05
+   :links: STD_BP_ASPICE-40__IIC-17-05
 
    Requirements for the storage and control of the work products are defined, including their identification and distribution.
 
@@ -230,10 +244,10 @@ Generic practices
 
       Where status of a work product is required in base practices, this should be managed via a defined status model.
 
-.. req:: GP2.2.3: Identify, store and control the work products.
-   :id: R_ASPICE-40_GP-223
+.. std_req:: GP2.2.3: Identify, store and control the work products.
+   :id: STD_GP_ASPICE-40__GP-223
    :status: valid
-   :links: R_ASPICE-40_IIC-13-08, R_ASPICE-40_IIC-16-00
+   :links: STD_BP_ASPICE-40__IIC-13-08, STD_BP_ASPICE-40__IIC-16-00
 
    The work products to be controlled are identified.
    The work products are stored and controlled in accordance with the requirements.
@@ -241,10 +255,10 @@ Generic practices
    Versioning and baselining of the work products is performed in accordance with the requirements for storage and control of the work products.
    The work products including the revision status are made available through appropriate mechanisms.
 
-.. req:: GP2.2.4: Review and adjust work products.
-   :id: R_ASPICE-40_GP-224
+.. std_req:: GP2.2.4: Review and adjust work products.
+   :id: STD_GP_ASPICE-40__GP-224
    :status: valid
-   :links: R_ASPICE-40_IIC-13-19
+   :links: STD_BP_ASPICE-40__IIC-13-19
 
    The work products are reviewed against the defined requirements and criteria.
    Resolution of issues arising from work products reviews is ensured.
@@ -270,10 +284,10 @@ Process attribute achievements
 Generic practices
 ~~~~~~~~~~~~~~~~~
 
-.. req:: GP3.1.1: Establish and maintain the standard process.
+.. std_req:: GP3.1.1: Establish and maintain the standard process.
    :id: R_ASPICE-40_GP-311
    :status: valid
-   :links: R_ASPICE-40_IIC-06-51, R_ASPICE-40_IIC-10-00, R_ASPICE-40_IIC-10-50, R_ASPICE-40_IIC-10-51
+   :links: STD_BP_ASPICE-40__IIC-06-51, STD_BP_ASPICE-40__IIC-10-00, STD_BP_ASPICE-40__IIC-10-50, STD_BP_ASPICE-40__IIC-10-51
 
    A suitable standard process is developed including required activities and their interactions.
    Inputs and outputs of the standard process are defined including the corresponding entry and
@@ -297,10 +311,10 @@ Generic practices
 
       For guidance on how to perform process improvements see the Process Improvement process (PIM.3).
 
-.. req:: GP3.1.2: Determine the required competencies.
+.. std_req:: GP3.1.2: Determine the required competencies.
    :id: R_ASPICE-40_GP-312
    :status: valid
-   :links: R_ASPICE-40_IIC-10-50, R_ASPICE-40_IIC-10-51
+   :links: STD_BP_ASPICE-40__IIC-10-50, STD_BP_ASPICE-40__IIC-10-51
 
    Required competencies, skills, and experience for performing the standard process are determined for the identified roles.
    Appropriate qualification methods to acquire the necessary competencies and skills are determined, maintained, and made available for the identified roles.
@@ -313,10 +327,10 @@ Generic practices
 
       Preparation includes e.g., identification or definition of trainings, mentoring concepts, self-learning material.
 
-.. req:: GP3.1.3: Determine the required resources.
+.. std_req:: GP3.1.3: Determine the required resources.
    :id: R_ASPICE-40_GP-313
    :status: valid
-   :links: R_ASPICE-40_IIC-10-52
+   :links: STD_BP_ASPICE-40__IIC-10-52
 
    Required physical and material resources and process infrastructure needs for performing the standard process are determined.
 
@@ -324,10 +338,10 @@ Generic practices
 
       This may include e.g., facilities, tools, licenses, networks, services, and samples supporting the establishment of the required work environment.
 
-.. req:: GP3.1.4: Determine suitable methods to monitor the standard process.
+.. std_req:: GP3.1.4: Determine suitable methods to monitor the standard process.
    :id: R_ASPICE-40_GP-314
    :status: valid
-   :links: R_ASPICE-40_IIC-08-63
+   :links: STD_BP_ASPICE-40__IIC-08-63
 
    Methods and required activities for monitoring the effectiveness and adequacy of the standard process are determined.
 
@@ -361,10 +375,10 @@ Process attribute achievements
 Generic practices
 ~~~~~~~~~~~~~~~~~
 
-.. req:: GP3.2.1: Deploy a defined process that satisfies the context specific requirements of the use of the standard process.
+.. std_req:: GP3.2.1: Deploy a defined process that satisfies the context specific requirements of the use of the standard process.
    :id: R_ASPICE-40_GP-321
    :status: valid
-   :links: R_ASPICE-40_IIC-10-00, R_ASPICE-40_IIC-15-54
+   :links: STD_BP_ASPICE-40__IIC-10-00, STD_BP_ASPICE-40__IIC-15-54
 
    The defined process is appropriately selected and/or tailored from the standard process.
    Conformance of defined process with standard process requirements and tailoring criteria is verified.
@@ -374,29 +388,29 @@ Generic practices
 
       Changes in the standard process may require updates of the defined process.
 
-.. req:: GP3.2.2: Ensure required competencies for the defined roles.
+.. std_req:: GP3.2.2: Ensure required competencies for the defined roles.
    :id: R_ASPICE-40_GP-322
    :status: valid
-   :links: R_ASPICE-40_IIC-14-53
+   :links: STD_BP_ASPICE-40__IIC-14-53
 
    Human resources are allocated to the defined roles according to the required competencies and skills.
    Assignment of persons to roles and corresponding responsibilities and authorities for performing the defined process are communicated.
    Gaps in competencies and skills are identified, and corresponding qualification measures are initiated and monitored.
    Availability and usage of the project staff are measured and monitored.
 
-.. req:: GP3.2.3: Ensure required resources to support the performance of the defined process.
+.. std_req:: GP3.2.3: Ensure required resources to support the performance of the defined process.
    :id: R_ASPICE-40_GP-323
    :status: valid
-   :links: R_ASPICE-40_IIC-13-55
+   :links: STD_BP_ASPICE-40__IIC-13-55
 
    Required information to perform the defined process is made available, allocated and used.
    Required physical and material resources, process infrastructure and work environment are made available, allocated and used.
    Availability and usage of resources are measured and monitored.
 
-.. req:: GP3.2.4: Monitor the performance of the defined process.
+.. std_req:: GP3.2.4: Monitor the performance of the defined process.
    :id: R_ASPICE-40_GP-324
    :status: valid
-   :links: R_ASPICE-40_IIC-03-06
+   :links: STD_BP_ASPICE-40__IIC-03-06
 
    Information is collected and analyzed according to the determined process monitoring methods to understand the effectiveness and adequacy of the defined process.
    Results of the analysis are made available to all effected parties and used to identify where continual improvement of the standard and/or defined process can be made.
