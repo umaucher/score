@@ -18,9 +18,7 @@ Traceability concept
 --------------------
 
 Traceability is the key to ensure consistency between work products.
-Further traceability supports impact analysis or in general analysis of any dependencies
-and determining of coverage for requirements and verifcation as well as tracking of
-implementation status.
+Furthermore, traceability supports impact analysis, dependency analysis, coverage determination for requirements and verification, and tracking of implementation status.
 
 Therefore S-CORE requires at least for safety-relevant work products single requirements
 granularity of traceability.
