@@ -110,7 +110,7 @@ html_theme_options = {
     },
     "navbar_end": ["theme-switcher", "navbar-icon-links", "version-switcher"],
     "logo": {
-        "text": "Eclipse SCORE",
+        "text": "Eclipse S-CORE",
     },
 }
 
