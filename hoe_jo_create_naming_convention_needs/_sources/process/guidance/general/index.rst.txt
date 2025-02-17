@@ -40,15 +40,15 @@ For the naming of the UIDs also following convention shall be applied:
      | (defined in the Metamodel)
    * | structural element
      | (e.g. abbreviation for the feature / subfeature)
-   * | keyword
-     | (keyword describing the content of the element)
+   * | keyword (s)
+     | (keyword(s) referring the the description, separated by underscore)
 
 As examples:
 
 * feat_req__ipc__e2e_protection
 * comp_req__kvs__storage
 
-Only for **process UIDs** the structural element shall only be optional:
+Only for **process UIDs** the structural element is optional:
 
 * gd_temp__review
 * gd_req__req__structure
