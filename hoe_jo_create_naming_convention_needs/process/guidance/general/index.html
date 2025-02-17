@@ -548,31 +548,46 @@
 </section>
 <section id="naming-convention-for-uids">
 <span id="naming-convention-needs"></span><h2>Naming Convention for UIDs<a class="headerlink" href="#naming-convention-for-uids" title="Link to this heading">#</a></h2>
-<p>The naming convention for the UIDs of all elements shall be defined as follows:</p>
+<p>The naming convention for the UIDs of <strong>all</strong> elements shall be defined as follows:</p>
 <ul class="simple">
 <li><p>It should not exceed 30 characters</p></li>
 <li><p>It shall show a meaningful name</p></li>
-<li><dl class="simple">
+<li><p>It shall only consist of lowercase, digits and underscores</p></li>
+</ul>
+<p>For the naming of the UIDs also following convention shall be applied:</p>
+<ul>
+<li><dl>
 <dt>It shall consist of 3 parts separated by double underscore</dt><dd><ul>
-<li><p>prefix</p></li>
-<li><p>structural element</p></li>
-<li><p>keyword</p></li>
+<li><div class="line-block">
+<div class="line">prefix</div>
+<div class="line">(defined in the Metamodel)</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">structural element</div>
+<div class="line">(e.g. abbreviation for the feature / subfeature)</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">keyword</div>
+<div class="line">(keyword describing the content of the element)</div>
+</div>
+</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p>It shall only consist of lowercase, digits and underscores</p></li>
 </ul>
-<p>The prefixes are defined in the metamodel.</p>
-<p>Structural elements depend on the type of the need for requirements it could be an abbreviation for the feature / subfeature.</p>
-<p>The keyword shall indicate the content of the requirement.</p>
 <p>As examples:</p>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
 <li><p>feat_req__ipc__e2e_protection</p></li>
 <li><p>comp_req__kvs__storage</p></li>
 </ul>
-</div></blockquote>
+<p>Only for <strong>process UIDs</strong> the structural element shall only be optional:</p>
+<ul class="simple">
+<li><p>gd_temp__review</p></li>
+<li><p>gd_req__req__structure</p></li>
+</ul>
 </section>
 <section id="folder-structure-of-platform-repository">
 <span id="platform-folder-structure"></span><h2>Folder Structure of Platform Repository<a class="headerlink" href="#folder-structure-of-platform-repository" title="Link to this heading">#</a></h2>
