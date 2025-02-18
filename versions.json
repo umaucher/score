@@ -126,5 +126,9 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
+  },
+  {
+    "version": "pr-411",
+    "url": "https://eclipse-score.github.io/score/pr-411/"
   }
 ]
