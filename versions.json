@@ -12,8 +12,8 @@
     "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-1/"
   },
   {
-    "version": "hoe_jo_create_naming_convention_needs",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_create_naming_convention_needs/"
+    "version": "aschemmel-tech-patch-2",
+    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-2/"
   },
   {
     "version": "hoe_jo_initial_draft_requirement_guidance",
@@ -64,10 +64,6 @@
     "url": "https://eclipse-score.github.io/score/pr-343/"
   },
   {
-    "version": "pr-362",
-    "url": "https://eclipse-score.github.io/score/pr-362/"
-  },
-  {
     "version": "pr-371",
     "url": "https://eclipse-score.github.io/score/pr-371/"
   },
@@ -92,6 +88,26 @@
     "url": "https://eclipse-score.github.io/score/pr-382/"
   },
   {
+    "version": "pr-394",
+    "url": "https://eclipse-score.github.io/score/pr-394/"
+  },
+  {
+    "version": "pr-398",
+    "url": "https://eclipse-score.github.io/score/pr-398/"
+  },
+  {
+    "version": "pr-399",
+    "url": "https://eclipse-score.github.io/score/pr-399/"
+  },
+  {
+    "version": "pr-401",
+    "url": "https://eclipse-score.github.io/score/pr-401/"
+  },
+  {
+    "version": "pr-405",
+    "url": "https://eclipse-score.github.io/score/pr-405/"
+  },
+  {
     "version": "remove_logo",
     "url": "https://eclipse-score.github.io/score/remove_logo/"
   },
@@ -110,41 +126,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-389",
-    "url": "https://eclipse-score.github.io/score/pr-389/"
-  },
-  {
-    "version": "pr-394",
-    "url": "https://eclipse-score.github.io/score/pr-394/"
-  },
-  {
-    "version": "pr-395",
-    "url": "https://eclipse-score.github.io/score/pr-395/"
-  },
-  {
-    "version": "pr-397",
-    "url": "https://eclipse-score.github.io/score/pr-397/"
-  },
-  {
-    "version": "aschemmel-tech-patch-2",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-2/"
-  },
-  {
-    "version": "pr-398",
-    "url": "https://eclipse-score.github.io/score/pr-398/"
-  },
-  {
-    "version": "pr-399",
-    "url": "https://eclipse-score.github.io/score/pr-399/"
-  },
-  {
-    "version": "pr-401",
-    "url": "https://eclipse-score.github.io/score/pr-401/"
-  },
-  {
-    "version": "pr-405",
-    "url": "https://eclipse-score.github.io/score/pr-405/"
   }
 ]
