@@ -67,8 +67,8 @@ Workflows
    :contains: GD_GUIDL__saf_plan_definitions
    :has: DOC_CONCEPT__safety_management
 
-   | The external auditor is reponsible to perform a safety audit.
-   | The Safety Manager shall support the external auditor during this.
+   | The external auditor is responsible to perform a safety audit.
+   | The Safety Manager and the process community shall support the external auditor during this.
    | The Project Manager and and the Safety Manager shall approve the audit report.
 
 .. workflow:: Perform Confirmation Reviews
@@ -82,7 +82,7 @@ Workflows
    :has: DOC_CONCEPT__safety_management
 
    | The external auditor is responsible to perform the confirmation reviews on Safety plan and Safety Analysis.
-   | The Safety Team shall support the external auditor during the reviews.
+   | The Safety Manager shall support the external auditor during the reviews.
    | The Project Manager and and the Safety Manager shall approve the confirmation reports.
    | Therefore a checklists exist to guide the creator of the relevant safety documents.
 

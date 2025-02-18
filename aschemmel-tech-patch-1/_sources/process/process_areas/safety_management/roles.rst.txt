@@ -56,7 +56,7 @@ Roles
 
    Authority
 
-   * Escalation of planning topics
+   * Escalation of planning topics to the project manager defined in the safety plan
    * Initiate the publication of a safety anomaly
    * Recommend the Release of a SW platform or a module
    * Refusing the approval of work products as defined in the workflows
