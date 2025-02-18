@@ -134,5 +134,9 @@
   {
     "version": "pahmann_verification_incubator",
     "url": "https://eclipse-score.github.io/score/pahmann_verification_incubator/"
+  },
+  {
+    "version": "pr-413",
+    "url": "https://eclipse-score.github.io/score/pr-413/"
   }
 ]
