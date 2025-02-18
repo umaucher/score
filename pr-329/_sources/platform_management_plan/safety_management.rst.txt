@@ -40,6 +40,14 @@ Because these are in responsibility of the system integrator: :need:`STD_WP_ISO2
 :need:`STD_WP_ISO26262__system_8`, :need:`STD_WP_ISO26262__system_9`, :need:`STD_WP_ISO26262__system_10`,
 :need:`STD_WP_ISO26262__system_11`
 
+Note that stakeholder requirements (:need:`STD_WP_ISO26262__system_1`) are in scope of the project,
+to be able to cover System and HW related failures which are usually covered by SW (e.g. end to end protection for ECU external communication).
+But those are the "Assumed Technical Safety Requirements" of the SW platform SEooC and do not need to be tested by SEooC supplier.
+I.e. the system testing is out of scope.
+There will be HW/SW integration tests of feature requirements, as required by ISO 26262 part 6.
+These may be reused by the user on his HW platform also to cover his Technical Safety Requirements towards the SW platform.
+But this is the decision of the user.
+
 Because there is no calibration used for the SCORE SW platform components, only configuration: :need:`STD_WP_ISO26262__software_19`,
 :need:`STD_WP_ISO26262__software_21`, :need:`STD_WP_ISO26262__software_24`
 

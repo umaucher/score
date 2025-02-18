@@ -243,7 +243,7 @@ This document implements <add "need" link>
 |    - component, then the below table shall match the above, adding the reasoning for tailoring of work products according to the OSS component classification.
 |    - sub-component, then no workproducts additional to the component’s will be planned and activities below are part of the component’s issues.
 
-.. list-table:: OSS (sub-)omponent <name> Workproducts
+.. list-table:: OSS (sub-)component <name> Workproducts
         :header-rows: 1
 
         * - Workproduct Id

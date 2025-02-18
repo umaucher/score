@@ -19,23 +19,63 @@ SCORE Management Roles
 ----------------------
 
 .. role:: Project Lead
-   :id: RL_project_lead
+   :id: RL__project_lead
    :status: valid
-   :security: yes
-   :safety: yes
-   :tags: project_management
 
    The Project Leads decide about strategy, addition of modules and election of all other roles.
+
+   Required skills
+
+   * Degree: Master's degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
+   * Solid understanding of project management
+   * Technical know-how of embedded systems
+   * Preferred training: Basic and Management specific safety and security trainings
+
+   Experience
+
+   * 3 years of experience in project or line management
+
+   Responsibility
+
+   * Decisions about strategical topics
+   * Filling the Project Lead role according to the `Eclipse Foundation Project Handbook <https://www.eclipse.org/projects/handbook>`_
+   * Election of all roles in the S-CORE project, including the :need:`Safety Manager <RL__safety_manager>` on SW platform and module level
+
+   Authority
+
+   * Ultimate decisions on escalated topics
+   * Election and replacement of all role's personnel
+   * Decide on addition/removal of modules repositories or split-off of projects
 
 .. role:: Technical Lead
    :id: RL_technical_lead
    :status: valid
-   :security: yes
-   :safety: yes
-   :tags: project_management
-   :contains: RL_committer
 
-   The Technical Leads approve feature requests and perform the project management on SCORE platform level.
+   The Technical Leads approve feature requests and perform the project management of the SCORE platform.
+
+   Required skills
+
+   * Degree: Master's degree in electrical engineering/computer science/mathematics, or similar degree, or comparable work experience
+   * Know-How of project management
+   * Technical know-how of embedded systems
+   * Preferred training: Basic and Management specific safety and security trainings
+
+   Experience
+
+   * 2 years of experience in project management or similar position
+
+   Responsibility
+
+   * Review and approval of contributions, e.g. Feature Requests, which add or modify SCORE platform features
+   * Project management of the platform development - i.e. filling the project management role as defined by ISO26262
+   * High-level project control and coordination between multiple software modules
+   * Escalation instance for software module project leads (external to S-CORE), safety managers and committers
+   * Planning the releases of the S-CORE SW platform and modules
+
+   Authority
+
+   * Decisions in the technical lead circle
+   * Approving the releases of the S-CORE SW platform and modules
 
 .. role:: Quality Manager
    :id: RL_quality_manager

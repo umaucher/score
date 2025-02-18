@@ -32,6 +32,12 @@ Safety Management Guideline
    | Quality Management:
    | ASPICE standard is selected for quality management. Processes will always link to the :ref:`standard_iso26262` standard and to the ASPICE (todo, add link) standard.
    |
+   | Competence management:
+   | The :need:`RL__safety_manager` on SW platform level is responsible to define a competence management for the whole platform.
+   | Expectation is that the safety competence of the persons nominated for the roles is already given and only has to be checked.
+   | The exception from this are the committers, for these no safety competence needs to be enforced.
+   | So the module safety managers shall consult the :ref:`safety_management` and perform accordingly in their module project.
+   |
    | Communication:
    | Development teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication (as defined in :ref:`project_management_plan`). Another main communication means are the Pull Request reviews.
    | Also the standard Eclipse Foundation communication strategies are used (e.g. mailing lists)
@@ -87,6 +93,10 @@ Safety Management Guideline
    | Tool Management planning is part of the :need:`WP_PLATFORM_MGMT`. The respective work product to be planned as an issue of the generic safety plan is the :need:`WP_TOOL_EVAL`, which contains tool evaluation and if applicable qualification of the SW platform toolchain.
    | Components developed in C++ and Rust will have different toolchains. Both will be qualified once for the SW platform. Tool requirements will be documented in :need:`WP_TOOL_REQ`
    |
+   | **(OSS) Component qualification planning:**
+   | Based on the component classification as described in :need:`GD_GUIDL__component_classification`,
+   | the qualification of the component is planned as part of the :need:`GD_TEMP__module_safety_plan`.
+   | The template contains guidance how to do this and to document in the "OSS (sub-)component <name> Workproducts" list.
 
 .. gd_guidl:: Safety manual generation
    :id: GD_GUIDL__saf_man
