@@ -126,5 +126,9 @@
   {
     "version": "johannes-esr_git_guidelines",
     "url": "https://eclipse-score.github.io/score/johannes-esr_git_guidelines/"
+  },
+  {
+    "version": "pr-424",
+    "url": "https://eclipse-score.github.io/score/pr-424/"
   }
 ]
