@@ -1,0 +1,95 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+Safety Management
+=================
+
+
+Workflows
+---------
+
+todo: need to add guidance and standard links
+
+.. workflow:: Create/Maintain Safety Plan
+   :id: wf_cr_mt_safety_plan
+   :status: draft
+   :tags: safety_management
+   :responsible: rl_safety_manager
+   :approved_by: rl_technical_lead
+   :supported_by: rl_quality_manager
+   :input: wp_platform_mgmt, wp_issue_track_system
+   :output: wp_module_safety_plan, wp_platform_safety_plan
+
+   | The Safety Manager is responsible for the planning and coordination of the safety activities for the platform.
+   | The Safety Manager creates and maintains the safety plan.
+   | For this a template exists to guide the creator of the safety plan (compare here: need link to GD_Saf_Plan_Definitions need link to GD_Saf_Plan_Template)
+
+.. workflow:: Create/Maintain Safety Case
+   :id: wf_cr_mt_safety_case
+   :status: draft
+   :tags: safety_management
+   :responsible: rl_safety_manager
+   :approved_by: rl_technical_lead
+   :supported_by: rl_quality_manager
+   :input: wp_module_safety_plan, wp_platform_safety_plan, wp_issue_track_system
+   :output: wp_module_safety_case, wp_platform_safety_case
+
+   | The Safety Manager is responsible to provide the argument for the achievement of functional safety.
+   | The Safety Manager creates and maintains therefore the safety case.
+   | The generation and the maintainance of the safety case shall be automtated as much as possible.
+   | Therefore a template exists to guide the creator of the safety case (compare here: need link to GD_Saf_Case need link to GD_Saf_Case_Report_Template)
+
+.. workflow:: Perform Safety Audit/Assessment
+   :id: wf_p_fs_audit_assessment
+   :status: draft
+   :tags: safety_management
+   :responsible: rl_external_assessor
+   :approved_by: rl_safety_manager
+   :supported_by: rl_technical_lead
+   :input: wp_module_safety_plan, wp_platform_safety_plan, wp_module_safety_case, wp_platform_safety_case
+   :output: wp_assessment_report
+
+   | The external assessor is reponsible to perform a safety audit and a safety assessment.
+   | The Safety Team shall support the external assessor during the audit.
+   | The Project Manager and and the Safety Manager shall approve the audit and assessment reports.
+
+.. workflow:: Perform Confirmation Reviews
+   :id: wf_p_confirm_rv
+   :status: draft
+   :tags: safety_management
+   :responsible: rl_external_assessor
+   :approved_by: rl_safety_manager
+   :supported_by: rl_technical_lead
+   :input: wp_module_safety_plan, wp_platform_safety_plan, wp_module_safety_case, wp_platform_safety_case, wp_assessment_report
+   :output: wp_cmr_reports
+
+   | The external assessor is responsible to perform the confirmation reviews.
+   | The Safety Team shall support the external assessor during the reviews.
+   | The Project Manager and and the Safety Manager shall approve the confirmation reports.
+   | Therefore a checklists exist to guide the creator of the relevant saftey documents.
+   | (compare here: need link to GD_Saf_Plan_Confirmation_Review_Checklist_Template, need link to GD_Saf_Case_Confirmation_Review_Checklist_Template)
+
+.. workflow:: Monitor/Verify Safety
+   :id: wf_mr_vy_safety
+   :status: draft
+   :tags: safety_management
+   :responsible: rl_safety_manager
+   :approved_by: rl_technical_lead
+   :supported_by: rl_quality_manager
+   :input: wp_module_safety_plan, wp_platform_safety_plan, wp_module_safety_case, wp_platform_safety_case, wp_assessment_report, wp_cmr_reports
+   :output: wp_issue_track_system, wp_module_sw_release_note, wp_platform_sw_release_note
+
+   | The Safety Manager is responsible for the monitoring of the safety activities against the safety plan.
+   | The Safety Manager is responsible to verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled.
+   | The Safety Manager is responsible to verify the correctness, completeness and consistency of the release notes.
