@@ -51,17 +51,24 @@ of use. For convenience also the traceability to upper and lower lever requireme
 
   High level traceability overview for S-CORE feature work products
 
-The next figure sets the focus on the component level and adds the traceability from the
+The next figures sets the focus on the component level and adds the traceability from the
 Component Requirements to the Component Architecture, Component Safety Analysis
 and the Component Assumption of use. Further the traceability to Component Assumptions of use
 from external Components are included.
 Components Architecture may composed of Sub-components, then the traceability may in addition
 also needed to their Sub-component architecture.
 
-.. figure:: _assets/score_traceability_model_cmp_overview.svg
+.. figure:: _assets/score_traceability_model_cmp_overview_1.svg
   :width: 100%
   :align: center
   :alt: High level traceability overview for S-CORE component work products
 
   High level traceability overview for S-CORE component work products
 
+
+.. figure:: _assets/score_traceability_model_cmp_overview_2.svg
+  :width: 100%
+  :align: center
+  :alt: High level traceability overview for S-CORE component work products including sub-components
+
+  High level traceability overview for S-CORE component work products including sub-components
