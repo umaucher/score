@@ -126,5 +126,9 @@
   {
     "version": "aschemmel-tech-patch-3",
     "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-3/"
+  },
+  {
+    "version": "pr-432",
+    "url": "https://eclipse-score.github.io/score/pr-432/"
   }
 ]
