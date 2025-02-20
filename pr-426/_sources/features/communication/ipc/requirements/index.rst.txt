@@ -196,7 +196,7 @@ High cohesion and loose coupling
    - In case of events, the producer is not aware of its consumers.
    - In case of RPC, the skeleton is not aware of the proxy, this request originated from.
 
-.. feat_req:: service instance_granularity
+.. feat_req:: Service instance_granularity
    :id: feat_req__ipc__service_instance_granularity
    :reqtype: Functional
    :security: NO
