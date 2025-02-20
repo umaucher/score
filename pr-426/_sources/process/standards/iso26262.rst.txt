@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _standard_iso26262:
+
 ISO 26262
 ---------
 
@@ -1596,7 +1598,7 @@ Part 9: Automotive safety integrity level (ASIL)-oriented and safety-oriented an
 
 
     .. std_wp:: analysis_7
-       :id: std_ẃp__iso26262_analysis_7
+       :id: std_wp_iso26262__analysis_7
        :status: valid
 
 
