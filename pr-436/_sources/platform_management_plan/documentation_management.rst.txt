@@ -41,7 +41,7 @@ Approach
 .. gd_guidl:: Documentation
    :id: gd_guidl__documentation
    :status: valid
-   :complies: std_req_iso26262__support_39, std_req_iso26262__support_40, std_req_iso26262__support_41, std_req_iso26262__support_42, std_req_iso26262__support_43, std_req_iso26262__support_44
+   :complies: std_req__iso26262__support_39, std_req__iso26262__support_40, std_req__iso26262__support_41, std_req__iso26262__support_42, std_req__iso26262__support_43, std_req__iso26262__support_44
 
 Some of the work products of the S-CORE project are modelled specifically
 (e.g. the requirements and architecture have a specific set of attributes)
@@ -55,7 +55,8 @@ This plan deals with these documents, which have the following manually set attr
 * Status: describing where in the lifecycle of the document it currently is (mandatory)
 * Tags: can be used to group documents for subsequent filtering (optional)
 
-Also the "Documentation Management" is a document, so an example for the document definition is provided in the header section above.
+Also the "Documentation Management" is a document, so an example for a correct document definition
+can be seen in the header section above, see :need:`doc__documentation_mgt_plan`.
 
 The following additional attributes of the document are generated automatically during the documentation build:
 
