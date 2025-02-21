@@ -152,9 +152,9 @@ As part of the development of the product:
 #. :need:`wp__verification__module_ver_report`
 #. :need:`wp__verification__component_test`
 #. :need:`wp__verification__sw_unit_test`
-#. :need:`WP_SW_REQ_INSPECT`
-#. :need:`WP_SW_ARCH_VERIFICATION`
-#. :need:`WP_SW_CODE_INSPECT`
+#. :need:`wp__sw_req_inspect`
+#. :need:`wp__sw_arch_verification`
+#. :need:`wp__sw_code_inspect`
 
 
 As part of supporting activities:
