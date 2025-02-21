@@ -130,5 +130,9 @@
   {
     "version": "masc2023_add_changemgt",
     "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
+  },
+  {
+    "version": "pr-441",
+    "url": "https://eclipse-score.github.io/score/pr-441/"
   }
 ]
