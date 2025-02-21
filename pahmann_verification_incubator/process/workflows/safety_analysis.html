@@ -137,14 +137,8 @@
   
   
   
-    
-    
-      
-    
-    
-    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-light" alt="Score 0.1 documentation - Home"/>
-    <img src="../../_static/S-CORE_Logo_white.svg" class="logo__image only-dark pst-js-only" alt="Score 0.1 documentation - Home"/>
   
+    <p class="title logo__title">Eclipse S-CORE</p>
   
 </a></div>
     
@@ -454,7 +448,9 @@
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 </ul>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../process_areas/requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../process_areas/safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../process_areas/verification/index.html">Verification</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../roles/index.html">Roles</a></li>
@@ -468,7 +464,6 @@
 <li class="toctree-l2"><a class="reference internal" href="platform_management.html">Platform Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="change_management.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="quality_management.html">Quality Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="requirements_management.html">Requirements Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="architecture_design.html">Architecture Design</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Safety Analysis</a></li>
 </ul>
@@ -547,8 +542,8 @@
 <section id="workflows">
 <h2>Workflows<a class="headerlink" href="#workflows" title="Link to this heading">#</a></h2>
 <p>todo: need to add guidance and standard links</p>
-<div class="need_container docutils container" id="SNCB-7bdd5c9d">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_ANALYSE_FeatArch">
+<div class="need_container docutils container" id="SNCB-633081cb">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__analyse_featarch">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Analyse Feature Architecture</span></span></span></div>
@@ -569,11 +564,11 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_REQ" title="WF_ANALYSE_FeatArch">WP_FEATURE_REQ</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_ARCHITECTURE" title="WF_ANALYSE_FeatArch">WP_FEATURE_ARCHITECTURE</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_ANALYSE_FeatArch">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_SAFETY_ANALYSES" title="WF_ANALYSE_FeatArch">WP_FEATURE_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_DFA" title="WF_ANALYSE_FeatArch">WP_FEATURE_DFA</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><span class="needs_dead_link forbidden">RL_committer</span></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><span class="needs_dead_link forbidden">RL_safety_manager</span></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><span class="needs_dead_link forbidden">RL_technical_lead</span>, <span class="needs_dead_link forbidden">RL_security_manager</span></span></span></div>
+<div class="line"><span><div class="line">needs input: <span class="input"><span><span class="needs_dead_link forbidden">wp__feature_req</span>, <a class="reference internal" href="../workproducts/index.html#wp__feature_architecture" title="wf__analyse_featarch">wp__feature_architecture</a>, <a class="reference internal" href="../workproducts/index.html#wp__issue_track_system" title="wf__analyse_featarch">wp__issue_track_system</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#wp__feature_safety_analyses" title="wf__analyse_featarch">wp__feature_safety_analyses</a>, <a class="reference internal" href="../workproducts/index.html#wp__feature_dfa" title="wf__analyse_featarch">wp__feature_dfa</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#rl__committer" title="wf__analyse_featarch">rl__committer</a></span></span></div>
+<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../process_areas/safety_management/roles.html#rl__safety_manager" title="wf__analyse_featarch">rl__safety_manager</a></span></span></div>
+<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#rl__technical_lead" title="wf__analyse_featarch">rl__technical_lead</a>, <a class="reference internal" href="../roles/index.html#rl__security_manager" title="wf__analyse_featarch">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -585,7 +580,7 @@
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_ANALYSE_FeatArch" title="WF_ANALYSE_FeatArch">WF_ANALYSE_FeatArch</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__analyse_featarch" title="wf__analyse_featarch">wf__analyse_featarch</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -598,8 +593,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c1cb0f8f">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_ANALYSE_CompArch">
+<div class="need_container docutils container" id="SNCB-e52c7add">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__analyse_comparch">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Analyse Component Architecture</span></span></span></div>
@@ -620,11 +615,11 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_REQ" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_REQ</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_ARCHITECTURE" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_ARCHITECTURE</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_ANALYSE_CompArch">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_SAFETY_ANALYSES" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_DFA" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_DFA</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><span class="needs_dead_link forbidden">RL_committer</span></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><span class="needs_dead_link forbidden">RL_safety_manager</span></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><span class="needs_dead_link forbidden">RL_module_lead</span>, <span class="needs_dead_link forbidden">RL_security_manager</span></span></span></div>
+<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#wp__sw_component_req" title="wf__analyse_comparch">wp__sw_component_req</a>, <a class="reference internal" href="../workproducts/index.html#wp__sw_component_architecture" title="wf__analyse_comparch">wp__sw_component_architecture</a>, <a class="reference internal" href="../workproducts/index.html#wp__issue_track_system" title="wf__analyse_comparch">wp__issue_track_system</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#wp__sw_component_safety_analyses" title="wf__analyse_comparch">wp__sw_component_safety_analyses</a>, <a class="reference internal" href="../workproducts/index.html#wp__sw_component_dfa" title="wf__analyse_comparch">wp__sw_component_dfa</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#rl__committer" title="wf__analyse_comparch">rl__committer</a></span></span></div>
+<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../process_areas/safety_management/roles.html#rl__safety_manager" title="wf__analyse_comparch">rl__safety_manager</a></span></span></div>
+<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#rl__module_lead" title="wf__analyse_comparch">rl__module_lead</a>, <a class="reference internal" href="../roles/index.html#rl__security_manager" title="wf__analyse_comparch">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -636,7 +631,7 @@
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_ANALYSE_CompArch" title="WF_ANALYSE_CompArch">WF_ANALYSE_CompArch</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__analyse_comparch" title="wf__analyse_comparch">wf__analyse_comparch</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -649,8 +644,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-07d222f5">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_MR_VY_SAF_ANALYSES_DFA">
+<div class="need_container docutils container" id="SNCB-9c992aa4">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__mr_vy_saf_analyses_dfa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Monitor/Verify Safety Analyses and DFA</span></span></span></div>
@@ -671,11 +666,11 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_SAFETY_ANALYSES" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_FEATURE_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_FEATURE_DFA</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_SAFETY_ANALYSES" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_COMPONENT_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_COMPONENT_DFA</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_ARCH_VERIFICATION" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_ARCH_VERIFICATION</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><span class="needs_dead_link forbidden">RL_committer</span></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><span class="needs_dead_link forbidden">RL_safety_manager</span></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><span class="needs_dead_link forbidden">RL_technical_lead</span>, <span class="needs_dead_link forbidden">RL_module_lead</span>, <span class="needs_dead_link forbidden">RL_security_manager</span></span></span></div>
+<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#wp__feature_safety_analyses" title="wf__mr_vy_saf_analyses_dfa">wp__feature_safety_analyses</a>, <a class="reference internal" href="../workproducts/index.html#wp__feature_dfa" title="wf__mr_vy_saf_analyses_dfa">wp__feature_dfa</a>, <a class="reference internal" href="../workproducts/index.html#wp__sw_component_safety_analyses" title="wf__mr_vy_saf_analyses_dfa">wp__sw_component_safety_analyses</a>, <a class="reference internal" href="../workproducts/index.html#wp__sw_component_dfa" title="wf__mr_vy_saf_analyses_dfa">wp__sw_component_dfa</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#wp__sw_arch_verification" title="wf__mr_vy_saf_analyses_dfa">wp__sw_arch_verification</a>, <a class="reference internal" href="../workproducts/index.html#wp__issue_track_system" title="wf__mr_vy_saf_analyses_dfa">wp__issue_track_system</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#rl__committer" title="wf__mr_vy_saf_analyses_dfa">rl__committer</a></span></span></div>
+<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../process_areas/safety_management/roles.html#rl__safety_manager" title="wf__mr_vy_saf_analyses_dfa">rl__safety_manager</a></span></span></div>
+<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#rl__technical_lead" title="wf__mr_vy_saf_analyses_dfa">rl__technical_lead</a>, <a class="reference internal" href="../roles/index.html#rl__module_lead" title="wf__mr_vy_saf_analyses_dfa">rl__module_lead</a>, <a class="reference internal" href="../roles/index.html#rl__security_manager" title="wf__mr_vy_saf_analyses_dfa">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -688,7 +683,7 @@
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_MR_VY_SAF_ANALYSES_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WF_MR_VY_SAF_ANALYSES_DFA</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__mr_vy_saf_analyses_dfa" title="wf__mr_vy_saf_analyses_dfa">wf__mr_vy_saf_analyses_dfa</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
