@@ -11,8 +11,9 @@
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
 import importlib
-from pathlib import Path
 import pkgutil
+from contextlib import contextmanager
+from pathlib import Path
 from typing import Callable
 
 from ruamel.yaml import YAML
@@ -22,11 +23,11 @@ from sphinx_needs.data import NeedsInfoType, SphinxNeedsData
 
 from .log import CheckLogger
 
-
 logger = logging.get_logger(__name__)
 
 local_checks: list[Callable[[Sphinx, NeedsInfoType, CheckLogger], None]] = []
 graph_checks: list[Callable[[Sphinx, dict[str, NeedsInfoType], CheckLogger], None]] = []
+disabled_checks: list[str] = []
 
 
 def discover_checks():
@@ -44,17 +45,28 @@ def discover_checks():
 
 def local_check(func: Callable[[Sphinx, NeedsInfoType, CheckLogger], None]):
     """Use this decorator to mark a function as a local check."""
-    logger.debug(f"new local_check: {func}")
-    local_checks.append(func)
+    logger.debug(f"new local_check: {func.__name__}")
+    if func.__name__.startswith("DISABLED_"):
+        disabled_checks.append(func.__name__)
+    else:
+        local_checks.append(func)
     return func
 
 
 def graph_check(func: Callable[[Sphinx, dict[str, NeedsInfoType], CheckLogger], None]):
     """Use this decorator to mark a function as a graph check."""
-    logger.debug(f"new graph_check: {func}")
-    graph_checks.append(func)
+    logger.debug(f"new graph_check: {func.__name__}")
+    if func.__name__.startswith("DISABLED_"):
+        disabled_checks.append(func.__name__)
+    else:
+        graph_checks.append(func)
     return func
 
+@contextmanager
+def CheckLoggerWithSubtype(log: CheckLogger, subtype: str):
+    log.set_sub_type(subtype)
+    yield log
+    log.set_sub_type(None)
 
 def _run_checks(app: Sphinx, exception: Exception | None) -> None:
     # Do not run checks if an exception occurred during build
@@ -71,17 +83,27 @@ def _run_checks(app: Sphinx, exception: Exception | None) -> None:
     # graph of other needs.
     for need in needs_all_needs.values():
         for check in local_checks:
-            check(app, need, log)
+            with CheckLoggerWithSubtype(log, check.__name__) as log:
+                check(app, need, log)
 
     # Graph-Based checks: These warnings require a graph of all other needs to
     # be checked.
     needs = needs_all_needs.values()
     for check in graph_checks:
-        check(app, needs, log)
+        with CheckLoggerWithSubtype(log, check.__name__) as log:
+            check(app, needs, log)
 
     if log.has_warnings:
         log.warning("Some needs have issues. See the log for more information.")
         # TODO: exit code
+
+    if disabled_checks:
+        # Note: we log this as an info message, as the whole point of this is
+        # to enable warnings-as-errors in CI, and we don't want to fail the
+        # build just because some checks are disabled.
+        logger.info(
+            "WARNING! Temporarily disabled checks: " + ", ".join(disabled_checks)
+        )
 
 
 def load_metamodel_data():

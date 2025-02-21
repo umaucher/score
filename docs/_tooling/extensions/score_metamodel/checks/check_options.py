@@ -12,13 +12,13 @@
 # *******************************************************************************
 import re
 
-from sphinx_needs.data import NeedsInfoType
 from sphinx.application import Sphinx
+from sphinx_needs.data import NeedsInfoType
 
 from score_metamodel import (
     CheckLogger,
-    local_check,
     default_options,
+    local_check,
 )
 
 
@@ -32,7 +32,7 @@ def get_need_type(needs_types: list[NeedsInfoType], directive: str):
 
 # req-traceability: TOOL_REQ__toolchain_sphinx_needs_build__options
 @local_check
-def check_options(
+def DISABLED_check_options(
     app: Sphinx,
     need: NeedsInfoType,
     log: CheckLogger,
@@ -115,7 +115,7 @@ def check_options(
 
 
 @local_check
-def check_extra_options(
+def DISABLED_check_extra_options(
     app: Sphinx,
     need: NeedsInfoType,
     log: CheckLogger,

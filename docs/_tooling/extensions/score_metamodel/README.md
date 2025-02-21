@@ -23,6 +23,11 @@ You need to use @local_check or @graph_check decorators to mark your function
 accordingly.
 Have a look at a simple example like `id_contains_feature`.
 
+## Disabling checks
+
+Similar to google test, you can disable checks by prefixing the check name with
+`DISABLED_`. This will prevent the check from being executed.
+
 ## Usage
 
 Add score_metamodel to your extensions in `conf.py`:

@@ -18,6 +18,7 @@ class CheckLogger:
     def __init__(self, log: SphinxLoggerAdapter):
         self._log = log
         self._count = 0
+        self._sub_type = None
 
     @staticmethod
     def _location(need: NeedsInfoType):
@@ -40,8 +41,12 @@ class CheckLogger:
         self.warning(f"{need['id']}: " + msg, location=CheckLogger._location(need))
 
     def warning(self, msg: str, location=None):
-        self._log.warning(msg, type="score_metamodel", location=location)
+        type_str = f"score_metamodel.{self._sub_type}" if self._sub_type else "score_metamodel"
+        self._log.warning(msg, type=type_str, location=location)
         self._count += 1
+
+    def set_sub_type(self, sub_type: str | None):
+        self._sub_type = sub_type
 
     @property
     def has_warnings(self):
