@@ -126,5 +126,9 @@
   {
     "version": "pr-438",
     "url": "https://eclipse-score.github.io/score/pr-438/"
+  },
+  {
+    "version": "masc2023_add_changemgt",
+    "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
   }
 ]
