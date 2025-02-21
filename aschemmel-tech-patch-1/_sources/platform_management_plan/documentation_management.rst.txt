@@ -18,8 +18,8 @@
    :safety: ASIL_B
    :tags: platform_management
 
-Documentation Management
-------------------------
+Documentation Management Plan
+-----------------------------
 
 Purpose
 +++++++
