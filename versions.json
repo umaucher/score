@@ -8,20 +8,12 @@
     "url": "https://eclipse-score.github.io/score/arsibo_FR_logging/"
   },
   {
-    "version": "aschemmel-tech-patch-1",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-1/"
-  },
-  {
-    "version": "aschemmel-tech-patch-2",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-2/"
+    "version": "aschemmel-tech-patch-3",
+    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-3/"
   },
   {
     "version": "hoe_jo_initial_draft_requirement_guidance",
     "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_requirement_guidance/"
-  },
-  {
-    "version": "masc2023_add_aspice_standard",
-    "url": "https://eclipse-score.github.io/score/masc2023_add_aspice_standard/"
   },
   {
     "version": "masc2023_create_general_concepts",
@@ -60,16 +52,8 @@
     "url": "https://eclipse-score.github.io/score/pr-294/"
   },
   {
-    "version": "pr-329",
-    "url": "https://eclipse-score.github.io/score/pr-329/"
-  },
-  {
     "version": "pr-343",
     "url": "https://eclipse-score.github.io/score/pr-343/"
-  },
-  {
-    "version": "pr-372",
-    "url": "https://eclipse-score.github.io/score/pr-372/"
   },
   {
     "version": "pr-374",
@@ -88,20 +72,16 @@
     "url": "https://eclipse-score.github.io/score/pr-398/"
   },
   {
-    "version": "pr-399",
-    "url": "https://eclipse-score.github.io/score/pr-399/"
-  },
-  {
     "version": "pr-414",
     "url": "https://eclipse-score.github.io/score/pr-414/"
   },
   {
-    "version": "pr-426",
-    "url": "https://eclipse-score.github.io/score/pr-426/"
-  },
-  {
     "version": "pr-427",
     "url": "https://eclipse-score.github.io/score/pr-427/"
+  },
+  {
+    "version": "pr-432",
+    "url": "https://eclipse-score.github.io/score/pr-432/"
   },
   {
     "version": "remove_logo",
@@ -122,13 +102,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "aschemmel-tech-patch-3",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-3/"
-  },
-  {
-    "version": "pr-432",
-    "url": "https://eclipse-score.github.io/score/pr-432/"
   }
 ]
