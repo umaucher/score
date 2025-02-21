@@ -114,9 +114,9 @@ Because in the SCORE SW platform integration of safety-related systems not devel
 
 Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp__iso26262__analysis_1`, :need:`std_wp__iso26262__analysis_2`
 
-Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp_iso26262__support_27`
+Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp__iso26262__support_27`
 
-Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp_iso26262__analysis_1`, :need:`std_wp_iso26262__analysis_2`
+Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp__iso26262__analysis_1`, :need:`std_wp__iso26262__analysis_2`
 
 Approach
 ++++++++
