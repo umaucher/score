@@ -138,5 +138,9 @@
   {
     "version": "disable_tests",
     "url": "https://eclipse-score.github.io/score/disable_tests/"
+  },
+  {
+    "version": "pr-442",
+    "url": "https://eclipse-score.github.io/score/pr-442/"
   }
 ]
