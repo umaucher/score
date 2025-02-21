@@ -703,7 +703,7 @@ Developer experience
    :status: valid
 
    The platform shall support implementation of applications in the following
-   programming languages up to the highest ASIL level as defined in :need:`STKH_REQ__70`:
+   programming languages up to the highest ASIL level as defined in :need:`stkh_req__70`:
 
    * C
    * C++
