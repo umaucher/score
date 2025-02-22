@@ -8,12 +8,20 @@
     "url": "https://eclipse-score.github.io/score/arsibo_FR_logging/"
   },
   {
+    "version": "aschemmel-tech-patch-1",
+    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-1/"
+  },
+  {
     "version": "aschemmel-tech-patch-3",
     "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-3/"
   },
   {
-    "version": "hoe_jo_initial_draft_requirement_guidance",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_requirement_guidance/"
+    "version": "disable_tests",
+    "url": "https://eclipse-score.github.io/score/disable_tests/"
+  },
+  {
+    "version": "masc2023_add_changemgt",
+    "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
   },
   {
     "version": "masc2023_create_general_concepts",
@@ -60,20 +68,8 @@
     "url": "https://eclipse-score.github.io/score/pr-374/"
   },
   {
-    "version": "pr-377",
-    "url": "https://eclipse-score.github.io/score/pr-377/"
-  },
-  {
-    "version": "pr-394",
-    "url": "https://eclipse-score.github.io/score/pr-394/"
-  },
-  {
     "version": "pr-398",
     "url": "https://eclipse-score.github.io/score/pr-398/"
-  },
-  {
-    "version": "pr-414",
-    "url": "https://eclipse-score.github.io/score/pr-414/"
   },
   {
     "version": "pr-427",
@@ -84,8 +80,16 @@
     "url": "https://eclipse-score.github.io/score/pr-432/"
   },
   {
-    "version": "remove_logo",
-    "url": "https://eclipse-score.github.io/score/remove_logo/"
+    "version": "pr-436",
+    "url": "https://eclipse-score.github.io/score/pr-436/"
+  },
+  {
+    "version": "pr-441",
+    "url": "https://eclipse-score.github.io/score/pr-441/"
+  },
+  {
+    "version": "pr-442",
+    "url": "https://eclipse-score.github.io/score/pr-442/"
   },
   {
     "version": "ulhu_lola_hla",
@@ -102,45 +106,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "aschemmel-tech-patch-1",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-1/"
-  },
-  {
-    "version": "pr-436",
-    "url": "https://eclipse-score.github.io/score/pr-436/"
-  },
-  {
-    "version": "pr-287",
-    "url": "https://eclipse-score.github.io/score/pr-287/"
-  },
-  {
-    "version": "pr-437",
-    "url": "https://eclipse-score.github.io/score/pr-437/"
-  },
-  {
-    "version": "hoe_jo_bugfix_uids_metamodel",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_uids_metamodel/"
-  },
-  {
-    "version": "pr-438",
-    "url": "https://eclipse-score.github.io/score/pr-438/"
-  },
-  {
-    "version": "masc2023_add_changemgt",
-    "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
-  },
-  {
-    "version": "pr-441",
-    "url": "https://eclipse-score.github.io/score/pr-441/"
-  },
-  {
-    "version": "disable_tests",
-    "url": "https://eclipse-score.github.io/score/disable_tests/"
-  },
-  {
-    "version": "pr-442",
-    "url": "https://eclipse-score.github.io/score/pr-442/"
   }
 ]
