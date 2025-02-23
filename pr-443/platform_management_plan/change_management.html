@@ -1,0 +1,998 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Change management / Change Management Plan &#8212; Score 0.1 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=7199c97b" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'platform_management_plan/change_management';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner =
+            false;
+        </script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Requirements management" href="requirements_management.html" />
+    <link rel="prev" title="Problem Resolution" href="problem_resolution.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Eclipse S-CORE</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../requirements/index.html">
+    Requirements
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
+    Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../guidance/index.html">
+    Guidance
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../score_releases/index.html">
+    Releases
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../process/index.html">
+    Process
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="index.html">
+    PMP
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://eclipse-score.github.io">
+    SCORE
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://projects.eclipse.org/projects/automotive.score">
+    Eclipse
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+        <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-2"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-2"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-2"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-2">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../requirements/index.html">
+    Requirements
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../features/index.html">
+    Features
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../guidance/index.html">
+    Guidance
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../score_releases/index.html">
+    Releases
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../process/index.html">
+    Process
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    PMP
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://eclipse-score.github.io">
+    SCORE
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://projects.eclipse.org/projects/automotive.score">
+    Eclipse
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/eclipse-score" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+          <div class="navbar-item">
+<div class="version-switcher__container dropdown pst-js-only">
+  <button id="pst-version-switcher-button-3"
+    type="button"
+    class="version-switcher__button btn btn-sm dropdown-toggle"
+    data-bs-toggle="dropdown"
+    aria-haspopup="listbox"
+    aria-controls="pst-version-switcher-list-3"
+    aria-label="Version switcher list"
+  >
+    Choose version  <!-- this text may get changed later by javascript -->
+    <span class="caret"></span>
+  </button>
+  <div id="pst-version-switcher-list-3"
+    class="version-switcher__menu dropdown-menu list-group-flush py-0"
+    role="listbox" aria-labelledby="pst-version-switcher-button-3">
+    <!-- dropdown will be populated by javascript on page load -->
+  </div>
+</div></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">Content</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project_management.html">Project management plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stakeholder_management.html">Stakeholder Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="safety_management.html">Safety management / Platform Safety Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="risk_management.html">Risk management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quality_management.html">Quality management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config_management.html">Config management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tool_management.html">Tool Management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release_management.html">Release management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problem_resolution.html">Problem Resolution</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Change management / Change Management Plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="requirements_management.html">Requirements management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_verification.html">Software Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation_management.html">Documentation management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_development.html">Software Development</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Platform Management Plan</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Change management / Change Management Plan</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <div class="need_container docutils container" id="SNCB-8b1a6429">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_change_management_plan">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Change Management Plan</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
+<div class="line"><span>security: </span><strong><span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span><span class="needs_safety"><span class="needs_data">ASIL_B</span></span></span></strong></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">platform_management</span></span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__platform_change_management_plan" title="doc__platform_change_management_plan">doc__platform_change_management_plan</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="change-management-change-management-plan">
+<h1>Change management / Change Management Plan<a class="headerlink" href="#change-management-change-management-plan" title="Link to this heading">#</a></h1>
+<p>This document implements parts of the <a class="reference internal" href="../process/workproducts/index.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>.</p>
+<section id="purpose">
+<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
+<p>The purpose of the Change Management Plan is to guide the execution of the
+change requests of a project including their anlysis, evaluation, tracking, approval,
+implementation, verification and reporting.</p>
+</section>
+<section id="objectives-and-scope">
+<h2>Objectives and Scope<a class="headerlink" href="#objectives-and-scope" title="Link to this heading">#</a></h2>
+<section id="change-management-goals">
+<h3>Change Management Goals<a class="headerlink" href="#change-management-goals" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Requests for changes are recorded and identified.</p></li>
+<li><p>Change requests are analyzed, dependencies and relationships to other change requests are
+identified, and the impact is estimated.</p></li>
+<li><p>Change requests are approved before implementation and prioritized accordingly.</p></li>
+<li><p>Bidirectional traceability is established between change requests and affected work products.</p></li>
+<li><p>Implementation of change requests is confirmed.</p></li>
+<li><p>Change requests are tracked to closure and status of change requests is communicated to
+affected parties.</p></li>
+<li><p>Requests for changes are properly documented.</p></li>
+</ul>
+</section>
+</section>
+<section id="approach">
+<h2>Approach<a class="headerlink" href="#approach" title="Link to this heading">#</a></h2>
+<section id="change-request-execution">
+<h3>Change Request Execution<a class="headerlink" href="#change-request-execution" title="Link to this heading">#</a></h3>
+<p>Contributions to the <strong>S-CORE</strong> project are the key to grow the content including the code.
+Contributions may cover simple improvement proposals, bug or problem reports, but also more complex
+scope changes of features up to new feature requests. Depending on the contribution scope,
+several steps may be required to finally merge it within the <strong>S-CORE</strong> repository.</p>
+<p>A change request is the <strong>ONLY</strong> way to contribute <strong>CODE</strong> to the <strong>S-CORE</strong> project.</p>
+<p>As the <strong>S-CORE</strong> project defines a Change Requests as the defined and only allowed trigger to start
+the active contribution to the <strong>S-CORE</strong> project. That means obviously that a
+<a class="reference internal" href="#gd_guidl__chm__pull_request" title="gd_guidl__chm__pull_request"><em class="xref need">PR (Pull Request) (gd_guidl__chm__pull_request)</em></a> is a Change Request.</p>
+<p>For simple contributions, like fixing bugs or improvements, just creating a PR is sufficient.</p>
+<p>For more complex contributions, like adding a new feature, where it’s unfitting to just open a PR,
+open a (<a class="reference internal" href="#gd_guidl__chm__issue" title="gd_guidl__chm__issue"><em class="xref need">GitHub Issue (ISSUE) (gd_guidl__chm__issue)</em></a>) to discuss with the community before
+starting work on it, would be the preferred way.</p>
+<p>You can also join our Slack for real-time discussions.</p>
+<p>Summary:</p>
+<ul class="simple">
+<li><p>You want to report something (like a bug) or start a discussion where you do not know the code
+solution yet, open a ISSUE.</p></li>
+<li><p>You want to manage complex coordination problems (planning activities) that require collaboration
+across multiple stakeholders, open a ISSUE.</p></li>
+<li><p>You want to propose a scope change of a feature or a new feature, open an ISSUE and add required
+PRs to that ISSUE.</p></li>
+<li><p>You want to report a bug or problem including a code solution? Start with a PR.</p></li>
+<li><p>You want to propose an improvement (also to a process or other work products) including a code
+solution? Start with a PR.</p></li>
+</ul>
+<p>Whenever your PR gets too big or involves committs of several contributors , we strongly encourage
+to open and link a ISSUE, so this can get better planned.</p>
+<p>For a PR to be merged, in any case an approval of a committer is needed. If the committer decides,
+that only a PR is not sufficient and a ISSUE is needed, then the contributor shall also create a
+corresponding ISSUE.</p>
+<p>ISSUEs are categorized using various types. For categorizing of PRs using of labels, e.g. bug or
+improvement, is mandatory (compare <a class="reference internal" href="index.html#pmp"><span class="std std-ref">Platform Management Plan</span></a>).</p>
+<p>For all possibilites the project contains simple templates (provided by committers
+(<a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a>)).</p>
+<p>Available templates:
+Feature request: <a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_templates.html#gd_temp__chm__feature_request" title="gd_temp__chm__feature_request"><em class="xref need">Feature Request Template (gd_temp__chm__feature_request)</em></a></p>
+<div class="need_container docutils container" id="SNCB-0882f8a0">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__chm__pull_request">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Pull Request Guideline</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">valid</span></span></span></strong></div>
+<div class="line"><span>security: </span><strong><span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span></span></strong></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__chm__pull_request" title="gd_guidl__chm__pull_request">gd_guidl__chm__pull_request</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<section id="what-is-a-pull-request-pr">
+<h4>What is a Pull Request (PR)?<a class="headerlink" href="#what-is-a-pull-request-pr" title="Link to this heading">#</a></h4>
+<p>A Pull Request (<strong>PR</strong>) is the <strong>ONLY</strong> way to contribute <strong>CODE</strong> to the <strong>S-CORE</strong> project.</p>
+<p>The figure below shows a simplified workflow for a PR.</p>
+<ul class="simple">
+<li><p>The contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) starts by creating a PR:
+<a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">Creating a Pull Request (Github Docs)</a>.</p></li>
+<li><p>Required reviewers will be automatically assigned based on the contributed content
+(via CODEOWNERS).</p></li>
+<li><p>If the content fullfils the review and acceptance criteria, a
+committer (<a class="reference internal" href="#Unknown need" title="RL_committer?"><em class="xref need">Committer</em></a>) will approve the PR and thus it can be merged.</p></li>
+</ul>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/score_contribution_request_simple.drawio1.svg"><img alt="Simple PR based contribution request workflow overview" src="../_images/score_contribution_request_simple.drawio1.svg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">Simple PR based contribution request workflow overview</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Content in general may contain features, requirements, architectural designs, modules, components,
+detailed designs, implementations and source code, tests, process descriptions, any documentations,
+guidelines, tutorials, tools, or infrastructure topics and more of the <strong>S-CORE</strong> project.
+In case of doubt or for any other input we strongly encourage to open a ISSUE first.</p>
+<p>The PR should provide all required information of the new or changed content. Therefore the
+<strong>S-CORE</strong> project provides content specific templates, which the
+contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) must use for his PR
+(ToDo link here to the templates overview). Templates may PR templates, ISSUE templates and also
+additional document or work product templates.</p>
+<p>The content of any PR is the commit content and the description as well as the comments given in
+GitHub and is kept in a versioned repository, their revision history is the historical record
+of the PR.</p>
+<p>This historical record is available by the normal git commands for retrieving older revisions,
+and can also be browsed on GitHub.</p>
+</section>
+<section id="detailed-s-core-pull-request-workflow">
+<h4>Detailed <strong>S-CORE</strong> Pull Request Workflow<a class="headerlink" href="#detailed-s-core-pull-request-workflow" title="Link to this heading">#</a></h4>
+<p>This chapter is only for optional read to understand the details for the Pull Request workflow
+defined in <strong>S-CORE</strong>.</p>
+<p>The figure below gives an overview about all the possible steps for a PR until it is either
+accepted or rejected.</p>
+<figure class="align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/score_contribution_request_standard.drawio1.svg"><img alt="Detailed **S-CORE** Pull request workflow overview" src="../_images/score_contribution_request_standard.drawio1.svg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Detailed <strong>S-CORE</strong> Pull request workflow overview</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="create-a-pr">
+<h4>Create a PR<a class="headerlink" href="#create-a-pr" title="Link to this heading">#</a></h4>
+<p>The contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) creates a PR.</p>
+<p>Reviewers will be automatically assigned (<a class="reference internal" href="#Unknown need" title="RL_committer?"><em class="xref need">Committer</em></a>) based on the
+contributed content (ruleset as defined by the committers). In addition several checks for the
+contributed content (ToDo: Link to the description of the checks) will be started.</p>
+</section>
+<section id="review-and-merge-a-pr">
+<h4>Review and merge a PR<a class="headerlink" href="#review-and-merge-a-pr" title="Link to this heading">#</a></h4>
+<p>A PR is reviewed with all content that adds/modifies it. As long as a PR requires further work by
+the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>), the PR is not approved and thus not merged
+and further changes are requested. Once the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>)
+considers all review comments as resolved, <a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a> can re-request a
+review. The committer (<a class="reference internal" href="#Unknown need" title="RL_committer?"><em class="xref need">Committer</em></a>) reviews the PR content according the
+<strong>S-CORE</strong> review and acceptance criteria (ToDo link here to the criteria).
+Further the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) must resolve found issues from the
+automated checks, if they do not pass.</p>
+<p>As long as the PR does not meet the defined criteria and the checks does not pass, it will not be
+approved. If it does not follow the required templates, based on the provided content or the
+templates are not filled out properly, the committer as reviewer (<a class="reference internal" href="#Unknown need" title="RL_committer?"><em class="xref need">Committer</em></a>)
+will place the PR to the “Draft” state.</p>
+<p>It is then the responsibility of the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) to add the
+missing information and to re-start the contribution by placing the PR back for review.</p>
+<p>To change from “Draft” to “Open” see <a class="reference external" href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request">Changing the stage of a pull request (Github Docs)</a>.</p>
+<p>At any point the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) may decide not to continue
+with the PR, then the contributor (<a class="reference internal" href="#Unknown need" title="RL_contributor?"><em class="xref need">Contributor</em></a>) just closes the PR.</p>
+<div class="need_container docutils container" id="SNCB-c0b9a8e5">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__chm__issue">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Issue Guideline</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">valid</span></span></span></strong></div>
+<div class="line"><span>security: </span><strong><span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span></span></strong></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__chm__issue" title="gd_guidl__chm__issue">gd_guidl__chm__issue</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="what-is-a-github-issue-issue">
+<h4>What is a GitHub Issue (ISSUE)?<a class="headerlink" href="#what-is-a-github-issue-issue" title="Link to this heading">#</a></h4>
+<p>A ISSUE is the way to report bugs or propose improvements without knowing the solution and to
+request features (incl. scope changes).</p>
+<p>For creating GitHub Issue compare here:  <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue">Creating a GitHub Issue (Github Docs)</a>.</p>
+<p>Create an ISSUE to collect feedback, before investing too much effort into a PR. ISSUEs may be
+accompanied by draft PRs if code is to be shown.</p>
+<p>It can also be used to collect community input and for planning and tracking activities.</p>
+<p>The figure below shows options to report something.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/score_discussion_request_options.drawio1.svg"><img alt="Reporting options overview" src="../_images/score_discussion_request_options.drawio1.svg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Reporting options overview</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="change-management-sw-platform-work-products">
+<h3>Change Management SW Platform Work Products<a class="headerlink" href="#change-management-sw-platform-work-products" title="Link to this heading">#</a></h3>
+<div class="pst-scrollable-table-container"><table class="table" id="id4">
+<caption><span class="caption-number">Table 23 </span><span class="caption-text">SW Platform work products</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>work product Id</p></th>
+<th class="head"><p>Link to process</p></th>
+<th class="head"><p>Process status</p></th>
+<th class="head"><p>Link to issue</p></th>
+<th class="head"><p>Link to WP</p></th>
+<th class="head"><p>WP status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="../process/workproducts/index.html#wp__policies" title="wp__policies"><em class="xref need">Policies (wp__policies)</em></a></p></td>
+<td><p>n/a (comes from outside the project)</p></td>
+<td><p>n/a</p></td>
+<td><p>n/a</p></td>
+<td><p><a class="reference external" href="https://www.eclipse.org/projects/handbook/">Eclipse Foundation Project Handbook:</a></p></td>
+<td><p>RELEASED</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../process/process_areas/change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a></p></td>
+<td><p><a class="reference internal" href="index.html"><span class="doc">Platform Management Plan</span></a></p></td>
+<td><p>??</p></td>
+<td><p>n/a</p></td>
+<td><p><a class="reference external" href="https://github.com/eclipse-score/score/issues">Project issues</a></p></td>
+<td><p>established</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="../process/workproducts/index.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a></p></td>
+<td><p><a class="reference internal" href="../process/workflows/platform_management.html#wf__cr_mt_platform_mngmt_plan" title="wf__cr_mt_platform_mngmt_plan"><em class="xref need">Create/Maintain Platform Ma... (wf__cr_mt_platform_mngmt_plan)</em></a></p></td>
+<td><p>draft</p></td>
+<td><p>&lt;Link to issue&gt;</p></td>
+<td><p>this document</p></td>
+<td><p>see above</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="../process/workproducts/index.html#wp__process_definition" title="wp__process_definition"><em class="xref need">Process Definition (wp__process_definition)</em></a></p></td>
+<td><p><a class="reference internal" href="#Unknown need" title="wf__def_app_process_definition?"><em class="xref need">wf__def_app_process_definition</em></a></p></td>
+<td><p>??</p></td>
+<td><p><a class="reference external" href="https://github.com/orgs/eclipse-score/projects/7">Process community issues</a></p></td>
+<td><p><a class="reference internal" href="../process/index.html#process-description"><span class="std std-ref">Process</span></a></p></td>
+<td><p>&lt;automated&gt;</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="problem_resolution.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Problem Resolution</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="requirements_management.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Requirements management</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-and-scope">Objectives and Scope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-management-goals">Change Management Goals</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach">Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-request-execution">Change Request Execution</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-pull-request-pr">What is a Pull Request (PR)?</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#detailed-s-core-pull-request-workflow">Detailed <strong>S-CORE</strong> Pull Request Workflow</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#create-a-pr">Create a PR</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-merge-a-pr">Review and merge a PR</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-github-issue-issue">What is a GitHub Issue (ISSUE)?</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#change-management-sw-platform-work-products">Change Management SW Platform Work Products</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/platform_management_plan/change_management.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/platform_management_plan/change_management.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
