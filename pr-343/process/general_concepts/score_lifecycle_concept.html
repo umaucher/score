@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Safety Analysis &#8212; Score 0.1 documentation</title>
+    <title>Lifecylce concept &#8212; Score 0.1 documentation</title>
   
   
   
@@ -62,7 +62,7 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'process/workflows/safety_analysis';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process/general_concepts/score_lifecycle_concept';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Guidance" href="../guidance/index.html" />
-    <link rel="prev" title="Architecture Design" href="architecture_design.html" />
+    <link rel="next" title="Building blocks concept" href="score_building_blocks_concept.html" />
+    <link rel="prev" title="General concepts" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -453,8 +453,15 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../general_concepts/index.html">General concepts</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">General concepts</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Lifecylce concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="score_building_blocks_concept.html">Building blocks concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="score_traceability_concept.html">Traceability concept</a></li>
+<li class="toctree-l2"><a class="reference internal" href="score_tool_eval_qual_concept.html">Tool evaluation concept</a></li>
+
+</ul>
+</details></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../roles/index.html">Roles</a></li>
@@ -462,18 +469,8 @@
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../workproducts/index.html">Workproducts</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Workflows</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="process_management.html">Process Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="platform_management.html">Platform Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="safety_management.html">Safety Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="change_management.html">Change Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="quality_management.html">Quality Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="requirements_management.html">Requirements Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="architecture_design.html">Architecture Design</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Safety Analysis</a></li>
-</ul>
-</details></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../workflows/index.html">Workflows</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../guidance/index.html">Guidance</a></li>
@@ -524,9 +521,9 @@
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Process</a></li>
     
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Workflows</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">General concepts</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Safety Analysis</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Lifecylce concept</span></li>
   </ul>
 </nav>
 </div>
@@ -543,166 +540,24 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="safety-analysis">
-<h1>Safety Analysis<a class="headerlink" href="#safety-analysis" title="Link to this heading">#</a></h1>
-<section id="workflows">
-<h2>Workflows<a class="headerlink" href="#workflows" title="Link to this heading">#</a></h2>
-<p>todo: need to add guidance and standard links</p>
-<div class="need_container docutils container" id="SNCB-47e81028">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_ANALYSE_FeatArch">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Analyse Feature Architecture</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
-<div class="line"><span>security: </span><strong><span></span></strong></div>
-<div class="line"><span>safety: </span><strong><span></span></strong></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_REQ" title="WF_ANALYSE_FeatArch">WP_FEATURE_REQ</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_ARCHITECTURE" title="WF_ANALYSE_FeatArch">WP_FEATURE_ARCHITECTURE</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_ANALYSE_FeatArch">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">is output from: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_SAFETY_ANALYSES" title="WF_ANALYSE_FeatArch">WP_FEATURE_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_DFA" title="WF_ANALYSE_FeatArch">WP_FEATURE_DFA</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#RL_committer" title="WF_ANALYSE_FeatArch">RL_committer</a></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#RL_safety_manager" title="WF_ANALYSE_FeatArch">RL_safety_manager</a></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#RL_technical_lead" title="WF_ANALYSE_FeatArch">RL_technical_lead</a>, <a class="reference internal" href="../roles/index.html#RL_security_manager" title="WF_ANALYSE_FeatArch">RL_security_manager</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The safety analysis and DFA for the feature is executed.</div>
-</div>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_ANALYSE_FeatArch" title="WF_ANALYSE_FeatArch">WF_ANALYSE_FeatArch</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-8f5bf033">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_ANALYSE_CompArch">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Analyse Component Architecture</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
-<div class="line"><span>security: </span><strong><span></span></strong></div>
-<div class="line"><span>safety: </span><strong><span></span></strong></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_REQ" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_REQ</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_ARCHITECTURE" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_ARCHITECTURE</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_ANALYSE_CompArch">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">is output from: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_SAFETY_ANALYSES" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_DFA" title="WF_ANALYSE_CompArch">WP_SW_COMPONENT_DFA</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#RL_committer" title="WF_ANALYSE_CompArch">RL_committer</a></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#RL_safety_manager" title="WF_ANALYSE_CompArch">RL_safety_manager</a></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#RL_module_lead" title="WF_ANALYSE_CompArch">RL_module_lead</a>, <a class="reference internal" href="../roles/index.html#RL_security_manager" title="WF_ANALYSE_CompArch">RL_security_manager</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The safety analysis and DFA for the component is executed.</div>
-</div>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_ANALYSE_CompArch" title="WF_ANALYSE_CompArch">WF_ANALYSE_CompArch</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-fc64e1cb">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="WF_MR_VY_SAF_ANALYSES_DFA">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Monitor/Verify Safety Analyses and DFA</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
-<div class="line"><span>security: </span><strong><span></span></strong></div>
-<div class="line"><span>safety: </span><strong><span></span></strong></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="../workproducts/index.html#WP_FEATURE_SAFETY_ANALYSES" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_FEATURE_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_FEATURE_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_FEATURE_DFA</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_SAFETY_ANALYSES" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_COMPONENT_SAFETY_ANALYSES</a>, <a class="reference internal" href="../workproducts/index.html#WP_SW_COMPONENT_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_COMPONENT_DFA</a></span></span></div>
-<div class="line">is output from: <span class="output"><span><a class="reference internal" href="../workproducts/index.html#WP_SW_ARCH_VERIFICATION" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_SW_ARCH_VERIFICATION</a>, <a class="reference internal" href="../workproducts/index.html#WP_ISSUE_TRACK_SYSTEM" title="WF_MR_VY_SAF_ANALYSES_DFA">WP_ISSUE_TRACK_SYSTEM</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../roles/index.html#RL_committer" title="WF_MR_VY_SAF_ANALYSES_DFA">RL_committer</a></span></span></div>
-<div class="line">approves: <span class="approved_by"><span><a class="reference internal" href="../roles/index.html#RL_safety_manager" title="WF_MR_VY_SAF_ANALYSES_DFA">RL_safety_manager</a></span></span></div>
-<div class="line">supports: <span class="supported_by"><span><a class="reference internal" href="../roles/index.html#RL_technical_lead" title="WF_MR_VY_SAF_ANALYSES_DFA">RL_technical_lead</a>, <a class="reference internal" href="../roles/index.html#RL_module_lead" title="WF_MR_VY_SAF_ANALYSES_DFA">RL_module_lead</a>, <a class="reference internal" href="../roles/index.html#RL_security_manager" title="WF_MR_VY_SAF_ANALYSES_DFA">RL_security_manager</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The safety analyses and DFA are monitored and verified.</div>
-<div class="line">The inspection shall be implemented as integral part of the review tool.</div>
-</div>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#WF_MR_VY_SAF_ANALYSES_DFA" title="WF_MR_VY_SAF_ANALYSES_DFA">WF_MR_VY_SAF_ANALYSES_DFA</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
+  <section id="lifecylce-concept">
+<span id="general-concepts-lifecycle"></span><h1>Lifecylce concept<a class="headerlink" href="#lifecylce-concept" title="Link to this heading">#</a></h1>
+<p>Contributions to the <strong>S-CORE</strong> project are driven by Change Requests.</p>
+<p>As features are the main structuring element of the platform, new features are requested by
+a change request from type feature. The request may be supported by source code.
+A new feature request happens in the <strong>Concept Phase</strong>.</p>
+<p>During the <strong>Development Phase</strong> features are implemented and verified. The Development
+is planned, checked and adjusted to meet the requirements. Planning is also required from
+several standards espeically to achieve functional safety.</p>
+<p>Features are improved during the <strong>Maintenance Phase</strong>. In case bug are found, they are also
+fixed during this phase.</p>
+<figure class="align-center" id="id1">
+<a class="reference internal image-reference" href="../../_images/score_lifecycle_model.svg"><img alt="Lifecycle model for S-CORE" src="../../_images/score_lifecycle_model.svg" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Lifecycle model for S-CORE</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
 </section>
 
 
@@ -716,20 +571,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="architecture_design.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Architecture Design</p>
+        <p class="prev-next-title">General concepts</p>
       </div>
     </a>
     <a class="right-next"
-       href="../guidance/index.html"
+       href="score_building_blocks_concept.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guidance</p>
+        <p class="prev-next-title">Building blocks concept</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -745,22 +600,10 @@
 
 
   <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflows">Workflows</a></li>
-</ul>
-  </nav></div>
-
-  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/process/workflows/safety_analysis.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/process/general_concepts/score_lifecycle_concept.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -776,7 +619,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/process/workflows/safety_analysis.rst.txt"
+      <li><a href="../../_sources/process/general_concepts/score_lifecycle_concept.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
