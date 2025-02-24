@@ -25,9 +25,9 @@ A new feature request happens in the **Concept Phase**.
 
 During the **Development Phase** features are implemented and verified. The Development
 is planned, checked and adjusted to meet the requirements. Planning is also required from
-several standards espeically to achieve functional safety.
+several standards especically to achieve functional safety.
 
-Features are improved during the **Maintenance Phase**. In case bug are found, they are also
+Features are improved during the **Maintenance Phase**. In case bugs are found, they are also
 fixed during this phase.
 
 .. figure:: _assets/score_lifecycle_model.svg
