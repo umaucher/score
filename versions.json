@@ -114,5 +114,9 @@
   {
     "version": "hoe_jo_modify_metamodel",
     "url": "https://eclipse-score.github.io/score/hoe_jo_modify_metamodel/"
+  },
+  {
+    "version": "pr-444",
+    "url": "https://eclipse-score.github.io/score/pr-444/"
   }
 ]
