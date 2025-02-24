@@ -142,5 +142,9 @@
   {
     "version": "hoe_jo_python_debugger_draft",
     "url": "https://eclipse-score.github.io/score/hoe_jo_python_debugger_draft/"
+  },
+  {
+    "version": "pr-449",
+    "url": "https://eclipse-score.github.io/score/pr-449/"
   }
 ]
