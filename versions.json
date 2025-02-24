@@ -130,5 +130,9 @@
   {
     "version": "pr-447",
     "url": "https://eclipse-score.github.io/score/pr-447/"
+  },
+  {
+    "version": "aschemmel-tech-patch-warn",
+    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-warn/"
   }
 ]
