@@ -134,5 +134,9 @@
   {
     "version": "aschemmel-tech-patch-warn",
     "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-warn/"
+  },
+  {
+    "version": "pr-448",
+    "url": "https://eclipse-score.github.io/score/pr-448/"
   }
 ]
