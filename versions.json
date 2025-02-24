@@ -122,5 +122,9 @@
   {
     "version": "hoe_jo_bugfix_uids_metamodel_2",
     "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_uids_metamodel_2/"
+  },
+  {
+    "version": "pr-446",
+    "url": "https://eclipse-score.github.io/score/pr-446/"
   }
 ]
