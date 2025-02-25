@@ -88,12 +88,16 @@
     "url": "https://eclipse-score.github.io/score/pr-441/"
   },
   {
-    "version": "pr-442",
-    "url": "https://eclipse-score.github.io/score/pr-442/"
-  },
-  {
     "version": "pr-443",
     "url": "https://eclipse-score.github.io/score/pr-443/"
+  },
+  {
+    "version": "pr-447",
+    "url": "https://eclipse-score.github.io/score/pr-447/"
+  },
+  {
+    "version": "pr-474",
+    "url": "https://eclipse-score.github.io/score/pr-474/"
   },
   {
     "version": "ulhu_lola_hla",
@@ -110,45 +114,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "hoe_jo_modify_metamodel",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_modify_metamodel/"
-  },
-  {
-    "version": "pr-444",
-    "url": "https://eclipse-score.github.io/score/pr-444/"
-  },
-  {
-    "version": "hoe_jo_bugfix_uids_metamodel_2",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_uids_metamodel_2/"
-  },
-  {
-    "version": "pr-446",
-    "url": "https://eclipse-score.github.io/score/pr-446/"
-  },
-  {
-    "version": "pr-447",
-    "url": "https://eclipse-score.github.io/score/pr-447/"
-  },
-  {
-    "version": "aschemmel-tech-patch-warn",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-warn/"
-  },
-  {
-    "version": "pr-448",
-    "url": "https://eclipse-score.github.io/score/pr-448/"
-  },
-  {
-    "version": "hoe_jo_python_debugger_draft",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_python_debugger_draft/"
-  },
-  {
-    "version": "pr-449",
-    "url": "https://eclipse-score.github.io/score/pr-449/"
-  },
-  {
-    "version": "pr-474",
-    "url": "https://eclipse-score.github.io/score/pr-474/"
   }
 ]
