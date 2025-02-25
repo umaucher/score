@@ -12,37 +12,21 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _sw_verification:
+.. document:: Software Verification Plan
+   :id: doc__verification_plan
+   :status: draft
+   :safety: ASIL_B
+   :tags: platform_management
 
 Software verification
 ---------------------
 
 This document implements :need:`wp__verification__plan`.
 
-+---------------------------+------------------------------------+
-| DOCUMENT IDENTIFICATION   |                                    |
-+===========================+====================================+
-| Document Type             | Plan                               |
-+---------------------------+------------------------------------+
-| Document ID               | PLATFORM-VERIFICATION-PLAN         |
-+---------------------------+------------------------------------+
-| Project Name              | Score                              |
-+---------------------------+------------------------------------+
-| ASIL                      | B                                  |
-+---------------------------+------------------------------------+
-| AUTHOR                    | Julian Schneider                   |
-+---------------------------+------------------------------------+
-| Reviewer                  | Markus Schu and Alexander Schemmel |
-+---------------------------+------------------------------------+
-| Approver                  | <Project Lead>                     |
-+---------------------------+------------------------------------+
-| Status                    | DRAFT                              |
-+---------------------------+------------------------------------+
-
 Purpose
 +++++++
 
-The present document describes the concept for software integration and verification of the project. It intends to give
+The present document describes the plan for software integration and verification of the project. It intends to give
 an overview by linking to other relevant sources and provide further information about the verification and testing
 activities.
 
@@ -125,7 +109,8 @@ Levels of integration and verification
 There are the following different levels of integration (2, 3) and verification (1, 2, 3) defined:
 
 1. Software unit verification to verify software detailed design
-2. Software component verification to verify the integration of units to a component based on
+2. Software component verification to verify the integration of units to a component and also
+   the integration of smaller component(s) to a componant based on
 
    #. component architecture and
    #. component requirements
@@ -152,7 +137,7 @@ As part of the development of the product:
 #. :need:`wp__verification__module_ver_report`
 #. :need:`wp__verification__component_test`
 #. :need:`wp__verification__sw_unit_test`
-#. :need:`wp__sw_req_inspect`
+#. :need:`wp__requirements__inspect`
 #. :need:`wp__sw_arch_verification`
 #. :need:`wp__sw_code_inspect`
 
