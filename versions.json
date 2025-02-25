@@ -130,5 +130,9 @@
   {
     "version": "hoe_jo_bugfix_layout_needs",
     "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_layout_needs/"
+  },
+  {
+    "version": "pr-483",
+    "url": "https://eclipse-score.github.io/score/pr-483/"
   }
 ]
