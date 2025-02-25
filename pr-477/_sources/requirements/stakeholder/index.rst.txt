@@ -153,7 +153,7 @@ Functional requirements
    The platform shall support operating systems compliant with IEEE Std 1003.1 (2004 Edition or newer)
 
 .. stkh_req:: Video subsystem
-   :id: stkh_req__functiona_req__video_subsystem
+   :id: stkh_req__functional_req__video_subsystem
    :reqtype: Functional
    :security: NO
    :safety: QM
@@ -172,7 +172,7 @@ Functional requirements
 
 
 .. stkh_req:: Compute subsystem
-   :id: stkh_req__functiona_req__compute_subsystem
+   :id: stkh_req__functional_req__comp_subsystem
    :reqtype: Functional
    :security: NO
    :safety: QM
@@ -194,7 +194,7 @@ Functional requirements
      * GSML serialized data
 
 .. stkh_req:: Communication with external MCUs/standby controllers
-   :id: stkh_req__functiona_req__comm_with_control
+   :id: stkh_req__functional_req__comm_with_control
    :reqtype: Functional
    :security: NO
    :safety: QM
