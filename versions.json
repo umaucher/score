@@ -122,5 +122,9 @@
   {
     "version": "hoe_jo_adapt_docu_structuring",
     "url": "https://eclipse-score.github.io/score/hoe_jo_adapt_docu_structuring/"
+  },
+  {
+    "version": "pr-481",
+    "url": "https://eclipse-score.github.io/score/pr-481/"
   }
 ]
