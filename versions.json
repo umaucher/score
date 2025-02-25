@@ -146,5 +146,9 @@
   {
     "version": "pr-477",
     "url": "https://eclipse-score.github.io/score/pr-477/"
+  },
+  {
+    "version": "pr-502",
+    "url": "https://eclipse-score.github.io/score/pr-502/"
   }
 ]
