@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Test Linking to Requirements" href="verification_process_toolreqs.html" />
-    <link rel="prev" title="Work products" href="../workproducts.html" />
+    <link rel="next" title="Verification Templates" href="verification_templates.html" />
+    <link rel="prev" title="Verification" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -451,11 +451,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Verification</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../workproducts.html">Work products</a></li>
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Verification Guidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="verification_templates.html">Verification Templates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="verification_process_toolreqs.html">Test Linking to Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="verification_report_template.html">Verification Report Templates</a></li>
-<li class="toctree-l2"><a class="reference internal" href="verification_templates.html">Verification Templates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../workproducts.html">Work products</a></li>
 </ul>
 </details></li>
 </ul>
@@ -539,7 +539,7 @@
   <section id="verification-guidance">
 <h1>Verification Guidance<a class="headerlink" href="#verification-guidance" title="Link to this heading">#</a></h1>
 <p>This guideline outlines the responsibilities and procedures for developers performing verification activities (test
-case creation, inspection, and review) for S-Core documentation, Rust and C/C++ projects of the platform.
+case creation, inspection, and review) for documentation, Rust and C/C++ elements of the platform and its tooling.
 Rust, python and gTest are used for test case creation.</p>
 <section id="general-principles">
 <h2>General Principles<a class="headerlink" href="#general-principles" title="Link to this heading">#</a></h2>
@@ -552,8 +552,8 @@ not just at the end. This includes unit tests, integration tests, code reviews, 
 <li><p><strong>Independence:</strong> Where possible, verification activities should be performed by someone other than the original author of the code or documentation.</p></li>
 <li><p><strong>Documentation:</strong> All verification activities and their results must be documented appropriately.</p></li>
 </ul>
-<p>More details on the test strategy and execution can be found in the <a class="reference internal" href="#Unknown need" title="wp__verification_plan?"><em class="xref need">wp__verification_plan</em></a> implemented by
-<a class="reference internal" href="../../../../platform_management_plan/software_verification.html#sw-verification"><span class="std std-ref">Software verification</span></a>.</p>
+<p>More details on the test strategy and execution can be found in the <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> implemented by
+<a class="reference internal" href="../../../../platform_management_plan/software_verification.html#doc__verification_plan" title="doc__verification_plan"><em class="xref need">Software Verification Plan (doc__verification_plan)</em></a>.</p>
 </section>
 <section id="test-case-development">
 <h2>Test Case Development<a class="headerlink" href="#test-case-development" title="Link to this heading">#</a></h2>
@@ -572,9 +572,11 @@ positive, negative, and boundary conditions. Specific attention should be given 
 </li>
 <li><p><strong>Integration Testing:</strong> Verify the interaction between different components or modules.</p></li>
 <li><p><strong>Platform Testing:</strong> Test the platform with configured features as a whole.</p></li>
-<li><p><strong>Regression Testing:</strong> Ensure that changes do not introduce new defects. Automate regression tests where possible.</p></li>
+<li><p><strong>Regression Testing:</strong> Ensure that changes do not introduce new defects.
+Automate regression tests where possible and execute them as part of CI execution.</p></li>
 <li><p><strong>Performance Testing (when applicable):</strong> Evaluate the performance characteristics of the code, such as execution
 time, memory usage, and resource utilization.</p></li>
+<li><p><strong>Tool Qualification Testing:</strong> Test the platform tools based on their tool requirements to achive tool qualification.</p></li>
 </ul>
 </section>
 <section id="test-specification">
@@ -635,7 +637,7 @@ what is being tested and how.</p>
 </ul>
 </dd>
 </dl>
-<p>Further recommendation can be found in the verification templates <span class="xref std std-doc">./templates/index</span></p>
+<p>Further recommendation can be found in the verification templates <a class="reference internal" href="verification_templates.html"><span class="doc">Verification Templates</span></a></p>
 <section id="structuring-of-the-test-case">
 <h3>Structuring of the Test Case<a class="headerlink" href="#structuring-of-the-test-case" title="Link to this heading">#</a></h3>
 <p>To fulfil the requirements for the workproduct <em>Software Verification Specification</em> the test case shall be structured using the Given-When-Then pattern:</p>
@@ -733,20 +735,20 @@ generated including:</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../workproducts.html"
+       href="../index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Work products</p>
+        <p class="prev-next-title">Verification</p>
       </div>
     </a>
     <a class="right-next"
-       href="verification_process_toolreqs.html"
+       href="verification_templates.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Test Linking to Requirements</p>
+        <p class="prev-next-title">Verification Templates</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
