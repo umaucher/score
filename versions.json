@@ -20,6 +20,10 @@
     "url": "https://eclipse-score.github.io/score/disable_tests/"
   },
   {
+    "version": "hoe_jo_initial_draft_architecture_process",
+    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_architecture_process/"
+  },
+  {
     "version": "masc2023_add_changemgt",
     "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
   },
@@ -100,6 +104,18 @@
     "url": "https://eclipse-score.github.io/score/pr-474/"
   },
   {
+    "version": "pr-477",
+    "url": "https://eclipse-score.github.io/score/pr-477/"
+  },
+  {
+    "version": "pr-500",
+    "url": "https://eclipse-score.github.io/score/pr-500/"
+  },
+  {
+    "version": "pr-502",
+    "url": "https://eclipse-score.github.io/score/pr-502/"
+  },
+  {
     "version": "ulhu_lola_hla",
     "url": "https://eclipse-score.github.io/score/ulhu_lola_hla/"
   },
@@ -114,41 +130,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-479",
-    "url": "https://eclipse-score.github.io/score/pr-479/"
-  },
-  {
-    "version": "hoe_jo_adapt_docu_structuring",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_adapt_docu_structuring/"
-  },
-  {
-    "version": "pr-481",
-    "url": "https://eclipse-score.github.io/score/pr-481/"
-  },
-  {
-    "version": "hoe_jo_bugfix_layout_needs",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_bugfix_layout_needs/"
-  },
-  {
-    "version": "pr-483",
-    "url": "https://eclipse-score.github.io/score/pr-483/"
-  },
-  {
-    "version": "hoe_jo_initial_draft_architecture_process",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_architecture_process/"
-  },
-  {
-    "version": "pr-500",
-    "url": "https://eclipse-score.github.io/score/pr-500/"
-  },
-  {
-    "version": "pr-477",
-    "url": "https://eclipse-score.github.io/score/pr-477/"
-  },
-  {
-    "version": "pr-502",
-    "url": "https://eclipse-score.github.io/score/pr-502/"
   }
 ]
