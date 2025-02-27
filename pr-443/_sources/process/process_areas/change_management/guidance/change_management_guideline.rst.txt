@@ -16,10 +16,10 @@ Guidelines
 ##########
 
 .. gd_guidl:: Change Request Guideline
-   :id: gd_guidl__chm__change_request
+   :id: gd_guidl__change__change_request
    :status: valid
 
-This document describes the general guidances for change management based on the concept which is defined :need:`[[title]]<doc_concept__chm__process>`.
+This document describes the general guidances for change management based on the concept which is defined :need:`[[title]]<doc_concept__change__process>`.
 
 General Hints
 =============
@@ -37,7 +37,7 @@ change request type.
    * - Change Request Type
      - Template
    * - Feature
-     - :need:`[[title]] <gd_temp__chm__feature_request>`
+     - :need:`[[title]] <gd_temp__change__feature_request>`
 
 Attributes
 ----------
@@ -56,7 +56,7 @@ For all change requet following mandatory attributes need to be defined:
 * For the remaining attributes only predefined values can be used. A more detailed description can
   be found here: :ref:`chm_attributes`
 
-.. _workflow_requirements:
+.. _workflow_chm_requirements:
 
 Workflow for Creating a Change Request
 ======================================
@@ -76,7 +76,7 @@ This section describes in detail which steps need to be performed to create a ch
    * - :ref:`2. <chm_analyse_change_request>`
      - Analyse Change Request
      - :need:`[[title]] <rl__committer>`
-   * - :ref:`3. <evaluate_change_request>`
+   * - :ref:`3. <chm_evaluate_change_request>`
      - Evaluate Change Request
      - :need:`[[title]] <rl__committer>`
    * - :ref:`4. <chm_verify_change_request>`
@@ -85,7 +85,7 @@ This section describes in detail which steps need to be performed to create a ch
    * - :ref:`5. <chm_verify_change_request>`
      - Verify Change Request
      - :need:`[[title]] <rl__committer>`
-   * - :ref:`6. <report_change_request>`
+   * - :ref:`6. <chm_report_change_request>`
      - Report Change Request
      - :need:`[[title]] <rl__committer>`
    * - :ref:`7. <chm_link_change_request>`

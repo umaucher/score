@@ -18,7 +18,7 @@ Templates
 =========
 
 .. gd_temp:: Feature Request Template
-   :id: gd_temp__chm__feature_request
+   :id: gd_temp__change__feature_request
    :status: valid
    :complies:
 
@@ -28,12 +28,13 @@ Templates
 [Your Feature Name]
 -------------------
 
+.. note:: Document header
+
 .. document:: [Your Feature Name]
-   :id: DOC__Your_Feature_Name
+   :id: doc__change__feature_name
    :status: draft
-   :safety: QM
-   :tags: contribution_management
-   :compliance-gd: GD_Feat_Request_Template
+   :safety: ASIL_B
+   :tags: platform_management
 
 .. attention::
     The above directive must be updated according to your Feature.
@@ -90,7 +91,7 @@ Specification
 
    .. note::
       A CR shall specify the stakeholder requirements as part of our platform/project.
-      Thereby the :need:`RL_technical_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
+      Thereby the :need:`rl__technical_lead` will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).
 
 
 
@@ -123,7 +124,7 @@ Safety Impact
 [What is the expected classification of the contribution?]
 
    .. note::
-      Use the component classification method here to classfiy your component, if it shall to be used in a safety context: :need:`GD_Component_Classification`.
+      Use the component classification method here to classfiy your component, if it shall to be used in a safety context: :need:`gd_temp__component_classification`.
 
 
 

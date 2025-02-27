@@ -61,12 +61,12 @@ A change request is the **ONLY** way to contribute **CODE** to the **S-CORE** pr
 
 As the **S-CORE** project defines a Change Requests as the defined and only allowed trigger to start
 the active contribution to the **S-CORE** project. That means obviously that a
-:need:`PR (Pull Request) <gd_guidl__chm__pull_request>` is a Change Request.
+:need:`PR (Pull Request) <gd_guidl__platform__pull_request>` is a Change Request.
 
 For simple contributions, like fixing bugs or improvements, just creating a PR is sufficient.
 
 For more complex contributions, like adding a new feature, where it's unfitting to just open a PR,
-open a (:need:`GitHub Issue (ISSUE) <gd_guidl__chm__issue>`) to discuss with the community before
+open a (:need:`GitHub Issue (ISSUE) <gd_guidl__platform__issue>`) to discuss with the community before
 starting work on it, would be the preferred way.
 
 You can also join our Slack for real-time discussions.
@@ -97,11 +97,11 @@ For all possibilites the project contains simple templates (provided by committe
 (:need:`Committer <rl__committer>`)).
 
 Available templates:
-Feature request: :need:`gd_temp__chm__feature_request`
+Feature request: :need:`gd_temp__change__feature_request`
 
 
 .. gd_guidl:: Pull Request Guideline
-   :id: gd_guidl__chm__pull_request
+   :id: gd_guidl__platform__pull_request
    :status: valid
 
 What is a Pull Request (PR)?
@@ -110,12 +110,12 @@ A Pull Request (**PR**) is the **ONLY** way to contribute **CODE** to the **S-CO
 
 The figure below shows a simplified workflow for a PR.
 
-* The contributor (:need:`Contributor <RL_contributor>`) starts by creating a PR:
+* The contributor (:need:`Contributor <rl__contributor>`) starts by creating a PR:
   `Creating a Pull Request (Github Docs) <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_.
 * Required reviewers will be automatically assigned based on the contributed content
   (via CODEOWNERS).
 * If the content fullfils the review and acceptance criteria, a
-  committer (:need:`Committer <RL_committer>`) will approve the PR and thus it can be merged.
+  committer (:need:`Committer <rl__committer>`) will approve the PR and thus it can be merged.
 
 .. figure:: _assets/score_contribution_request_simple.drawio.svg
   :width: 100%
@@ -131,7 +131,7 @@ In case of doubt or for any other input we strongly encourage to open a ISSUE fi
 
 The PR should provide all required information of the new or changed content. Therefore the
 **S-CORE** project provides content specific templates, which the
-contributor (:need:`Contributor <RL_contributor>`) must use for his PR
+contributor (:need:`Contributor <rl__contributor>`) must use for his PR
 (ToDo link here to the templates overview). Templates may PR templates, ISSUE templates and also
 additional document or work product templates.
 
@@ -160,39 +160,39 @@ accepted or rejected.
 
 Create a PR
 """""""""""
-The contributor (:need:`Contributor <RL_contributor>`) creates a PR.
+The contributor (:need:`Contributor <rl__contributor>`) creates a PR.
 
-Reviewers will be automatically assigned (:need:`Committer <RL_committer>`) based on the
+Reviewers will be automatically assigned (:need:`Committer <rl__committer>`) based on the
 contributed content (ruleset as defined by the committers). In addition several checks for the
 contributed content (ToDo: Link to the description of the checks) will be started.
 
 Review and merge a PR
 """""""""""""""""""""
 A PR is reviewed with all content that adds/modifies it. As long as a PR requires further work by
-the contributor (:need:`Contributor <RL_contributor>`), the PR is not approved and thus not merged
-and further changes are requested. Once the contributor (:need:`Contributor <RL_contributor>`)
-considers all review comments as resolved, :need:`Contributor <RL_contributor>` can re-request a
-review. The committer (:need:`Committer <RL_committer>`) reviews the PR content according the
+the contributor (:need:`Contributor <rl__contributor>`), the PR is not approved and thus not merged
+and further changes are requested. Once the contributor (:need:`Contributor <rl__contributor>`)
+considers all review comments as resolved, :need:`Contributor <rl__contributor>` can re-request a
+review. The committer (:need:`Committer <rl__committer>`) reviews the PR content according the
 **S-CORE** review and acceptance criteria (ToDo link here to the criteria).
-Further the contributor (:need:`Contributor <RL_contributor>`) must resolve found issues from the
+Further the contributor (:need:`Contributor <rl__contributor>`) must resolve found issues from the
 automated checks, if they do not pass.
 
 As long as the PR does not meet the defined criteria and the checks does not pass, it will not be
 approved. If it does not follow the required templates, based on the provided content or the
-templates are not filled out properly, the committer as reviewer (:need:`Committer <RL_committer>`)
+templates are not filled out properly, the committer as reviewer (:need:`Committer <rl__committer>`)
 will place the PR to the "Draft" state.
 
-It is then the responsibility of the contributor (:need:`Contributor <RL_contributor>`) to add the
+It is then the responsibility of the contributor (:need:`Contributor <rl__contributor>`) to add the
 missing information and to re-start the contribution by placing the PR back for review.
 
 To change from "Draft" to "Open" see `Changing the stage of a pull request (Github Docs) <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request>`_.
 
-At any point the contributor (:need:`Contributor <RL_contributor>`) may decide not to continue
-with the PR, then the contributor (:need:`Contributor <RL_contributor>`) just closes the PR.
+At any point the contributor (:need:`Contributor <rl__contributor>`) may decide not to continue
+with the PR, then the contributor (:need:`Contributor <rl__contributor>`) just closes the PR.
 
 
 .. gd_guidl:: Issue Guideline
-   :id: gd_guidl__chm__issue
+   :id: gd_guidl__platform__issue
    :status: valid
 
 
@@ -239,14 +239,14 @@ Change Management SW Platform Work Products
 
     * - :need:`wp__issue_track_system`
       - :doc:`index`
-      - :ndf:`copy('status', need_id='doc__platform_management_plan')`
+      - n/a
       - n/a
       - `Project issues <https://github.com/eclipse-score/score/issues>`_
       - established
 
     * - :need:`wp__platform_mgmt`
       - :need:`wf__cr_mt_platform_mngmt_plan`
-      - :ndf:`copy('status', need_id='wf__cr_mt_platform_mngmt_plan')`
+      - n/a
       - <Link to issue>
       - this document
       - see above

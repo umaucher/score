@@ -16,7 +16,7 @@ Concept Description
 ###################
 
 .. doc_concept:: Concept Description
-   :id: doc_concept__chm__process
+   :id: doc_concept__change__process
    :status: valid
    :tags: change_management
 
@@ -68,7 +68,7 @@ Feature
 =======
 
 This change requests describes a potential new feature for the platform
-(Feature request: :ref:`change_management_templates`).
+(Feature request: :ref:`chm_templates`).
 
 Improvement
 ===========
@@ -132,7 +132,7 @@ by authorized persons.
 
 Authorized person includes
 #. :need:`Technical Lead <rl__technical_lead>`
-#. :need:`Module Lead <rl__module_lead`
+#. :need:`Module Lead <rl__module_lead>`
 #. :need:`Committer <rl__committer>`
 #. :need:`Safety Manager <rl__safety_manager>`
 #. :need:`Security Manager <rl__security_manager>`
@@ -161,7 +161,7 @@ The defined verification measure must be use to confirm the implementation.
 Reporting of the Change Request
 *******************************
 The status of the Change Request must be communicated by the
-:need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead` until
+:need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead>` until
 the implementation is completed and confirmed.
 
 

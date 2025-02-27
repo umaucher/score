@@ -17,26 +17,25 @@ Workproducts Change Management
 
 .. workproduct:: Issue tracking system
    :id: wp__issue_track_system
-   :status: valid
-   :complies: std_wp__iso26262__system_1, std_wp__iso26262__software_2
+   :status: draft
+   :tags: change_management
 
    | - Identified safety anomaly reports
-   | - Change requests (e.g. Feature Request)
+   | - Change requests (= Contribution Request)
    | - Impact analysis
-   | - Change request plan
+   | - change request plan
    | - Change report
    |
    | Safety anomaly: Conditions that deviate from expectations and that can lead to harm.
-   | The documentation of a change shall contain the list of changed work products,
-     the details of the change and the planned date of deployment of the change.
+   | The documentation of a change shall contain the list of changed work products, the details of the change and the planned date of deployment of the change.
 
 .. workproduct:: Feature Request
    :id: wp__feat_request
-   :status: valid
+   :status: draft
    :tags: change_management
 
-   | - Change request for Features
    | - Feature request
+   | - Change request
 
 
 .. needextend:: "docs/process/change_management" in docname

@@ -16,14 +16,14 @@ Getting Started
 ###############
 
 .. doc_getstrt:: Getting Started on Change Management
-   :id: doc_getstrt__chm__process
+   :id: doc_getstrt__change__process
    :status: valid
    :tags: change_management
 
 In case you want to contribute to **S-CORE** consider to:
 
-* Contact the :need:`Technical Lead <RL__technical_lead>` for your contribution to establish planning and reporting
-* Create your change requests according to :need:`wf__chm__cr_dc_change_request`
+* Contact the :need:`Technical Lead <rl__technical_lead>` for your contribution to establish planning and reporting
+* Create your change requests according to :need:`wf__change__cr_dc_change_request`
 * Make familiar with the development and supporting process descriptions in :ref:`process_description`
 * Make familiar with the relevant sections of the :ref:`Platform Management Plan <pmp>`, here especially with :need:`Change Management Plan <doc__platform_change_management_plan>`
 

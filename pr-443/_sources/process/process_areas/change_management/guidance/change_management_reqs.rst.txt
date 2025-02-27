@@ -23,10 +23,10 @@ Change Request Attributes
 -------------------------
 
 .. gd_req:: Change Request attribute: UID
-   :id: gd_req__chm__attr_uid
+   :id: gd_req__change__attr_uid
    :status: valid
    :tags: attribute,mandatory
-   :satisfies: wf__chm__cr_dc_change_request, wf__chm__rv_ap_change_request
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Each change request shall have a unique ID. It shall be in a format which is also human
@@ -38,10 +38,10 @@ Change Request Attributes
    The naming convention is defined here: :ref:`naming_convention_needs`
 
 .. gd_req:: Requirement attribute: status
-   :id: gd_req__req__attr_status
+   :id: gd_req__change__attr_status
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__chm__cr_dc_change_request, wf__chm__rv_ap_change_request
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Each change request shall have a status:
@@ -52,28 +52,28 @@ Change Request Attributes
       * rejected
 
 .. gd_req:: Change Request attribute: title
-   :id: gd_req__chm_attr_title
+   :id: gd_req__change__attr_title
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Reason for the change request
 
 .. gd_req:: Change Request attribute: description
-   :id: gd_req__chm_attr_description
+   :id: gd_req__change__attr_description
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Exact description of the change request
 
 .. gd_req:: Change Request attribute: safety
-   :id: gd_req__req__attr_safety
+   :id: gd_req__change__attr_safety
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Each change request shall have a automotive safety integrity level (ASIL) identifier:
@@ -83,10 +83,10 @@ Change Request Attributes
       * ASIL_D
 
 .. gd_req:: Change Request attribute: security
-   :id: gd_req__requirements_attr_security
+   :id: gd_req__change__attr_security
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__req__stkh_req, wf__req__feat_req, wf__req__comp_req
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Each change request shall have a security relevance identifier:
@@ -94,22 +94,22 @@ Change Request Attributes
       * Yes
       * No
 
-.. gd_req:: Change Request Types
-   :id: gd_req__chm__types
+.. gd_req:: Change Request: Types
+   :id: gd_req__change__types
    :status: valid
    :tags: structure
-   :satisfies: wf__chm__cr_dc_change_request, wf__chm__rv_ap_change_request
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
       * Feature
       * Improvement
       * Bugfix
 
-.. gd_req:: Change Request attribute: Affected Work Products
-   :id: gd_req__req__attr_rationale
+.. gd_req:: Change Request attribute Affected Work Products
+   :id: gd_req__change__attr_rationale
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__chm__cr_dc_change_request, wf__chm__rv_ap_change_request
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    Links to the work producs affected by the change request
@@ -120,10 +120,10 @@ Change Request Checks
 '''''''''''''''''''''
 
 .. gd_req:: Change Requests mandatory attributes provided
-   :id: gd_req__chm__attr_mandatory
+   :id: gd_req__change_attr_mandatory
    :status: valid
    :tags: attribute, check
-   :satisfies: wf__chm__cr_dc_change_request, wf__chm__rv_ap_change_request
+   :satisfies: wf__change__cr_dc_change_request, wf__change__rv_ap_change_request
    :complies:
 
    It shall be checked if all mandatory attributes for each change request

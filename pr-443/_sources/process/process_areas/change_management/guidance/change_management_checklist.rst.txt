@@ -18,7 +18,7 @@ Checklists
 ##########
 
 .. gd_chklst:: Feature Request Review Checklist
-   :id: gd_chklst__chm__review
+   :id: gd_chklst__change__review
    :status: valid
    :tags: change_management
 
@@ -31,7 +31,7 @@ Checklists
 
    .. list-table:: Requirement Inspection Checklist
       :header-rows: 1
-      :widths: 10,30,50,6,6,8
+      :widths: 10,30,50,6
 
       * - Id
         - Topic
