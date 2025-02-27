@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>CI &#8212; Score 0.1 documentation</title>
+    <title>Docs-As-Code &#8212; Score 0.1 documentation</title>
   
   
   
@@ -35,11 +35,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
@@ -62,7 +62,7 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/ci/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contribute/documentation/docs-as-code';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Pushing to GitHub Pages from a Forked Pull Request" href="publishing-gh-pages.html" />
-    <link rel="prev" title="Development" href="../development/index.html" />
+    <link rel="next" title="Development" href="../development/index.html" />
+    <link rel="prev" title="Documentation" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -342,7 +342,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -447,12 +447,12 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../general/index.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contribution_request/index.html">Contribution Request</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../documentation/index.html">Documentation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Development</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">CI</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="publishing-gh-pages.html">Pushing to GitHub Pages from a Forked Pull Request</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Documentation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Docs-As-Code</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../development/index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ci/index.html">CI</a></li>
 </ul>
 </div>
 </nav></div>
@@ -494,9 +494,12 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Contribute</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">CI</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Documentation</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Docs-As-Code</span></li>
   </ul>
 </nav>
 </div>
@@ -513,13 +516,58 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="ci">
-<h1>CI<a class="headerlink" href="#ci" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="publishing-gh-pages.html">Pushing to GitHub Pages from a Forked Pull Request</a></li>
-</ul>
+  <section id="docs-as-code">
+<h1>Docs-As-Code<a class="headerlink" href="#docs-as-code" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>This document describes how to write and publish documentation using the SCORE Docs-As-Code approach.</p>
+</section>
+<section id="diagrams">
+<h2>Diagrams<a class="headerlink" href="#diagrams" title="Link to this heading">#</a></h2>
+<p>The SCORE Docs-As-Code solution supports several ways to create diagrams.
+Each has its own strengths and weaknesses.</p>
+<section id="draw-io">
+<h3>Draw.io<a class="headerlink" href="#draw-io" title="Link to this heading">#</a></h3>
+<p>Draw.io can be used to create diagrams in a graphical editor.</p>
+<p>The easiest way to use Draw.io is to create a new file in VS Code and use the Draw.io extension.
+The new file must be named with the <cite>.drawio.svg</cite> extension.
+When you click on the file, the Draw.io editor will open within VS Code:</p>
+<a class="reference internal image-reference" href="../../_images/drawio-editing.png"><img alt="Draw.io Editor in VS Code" src="../../_images/drawio-editing.png" style="width: 209.20000000000002px; height: 132.8px;" />
+</a>
+<p>Then you can embed the image in .rST files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">image</span><span class="p">::</span> assets/docs-as-code/example.drawio.svg
+   <span class="nc">:alt:</span> Example Diagram
+</pre></div>
 </div>
+<p>Which will render like this:</p>
+<img alt="Example Diagram" src="../../_images/example.drawio.svg" />
+</section>
+<section id="plantuml">
+<h3>PlantUML<a class="headerlink" href="#plantuml" title="Link to this heading">#</a></h3>
+<p>PlantUML can be used to create diagrams in a text-based format.
+The diagrams are rendered as images in the documentation.</p>
+<p>You can use them inline in markdown files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">uml</span><span class="p">::</span>
+
+   @startuml
+   Alice -&gt; Bob: Authentication Request
+   Bob --&gt; Alice: Authentication Response
+   @enduml
+</pre></div>
+</div>
+<p>Which will render like this:</p>
+<p class="plantuml">
+<object data="../../_images/plantuml-f49f73883975b5fb251855d765743c7ceb47d38b.svg" type="image/svg+xml" style="width:241px;height:149px;background:#FFFFFF;"></object></p>
+<p>Alternatively you can include them as .puml files like this:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">uml</span><span class="p">::</span> assets/docs-as-code/example.puml
+   <span class="nc">:alt:</span> Example Diagram
+</pre></div>
+</div>
+<p>Which will render like this:</p>
+<p class="plantuml">
+<object data="../../_images/plantuml-ebd8adcb30ac0dfa644e619afe3f2508d90823b5.svg" type="image/svg+xml" style="width:241px;height:149px;background:#FFFFFF;"></object></p>
+</section>
+</section>
 </section>
 
 
@@ -533,20 +581,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../development/index.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Development</p>
+        <p class="prev-next-title">Documentation</p>
       </div>
     </a>
     <a class="right-next"
-       href="publishing-gh-pages.html"
+       href="../development/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pushing to GitHub Pages from a Forked Pull Request</p>
+        <p class="prev-next-title">Development</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -562,10 +610,27 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diagrams">Diagrams</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#draw-io">Draw.io</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plantuml">PlantUML</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/tutorials/ci/index.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/contribute/documentation/docs-as-code.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -581,7 +646,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/tutorials/ci/index.rst.txt"
+      <li><a href="../../_sources/contribute/documentation/docs-as-code.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

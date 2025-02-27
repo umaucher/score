@@ -70,12 +70,12 @@ Workflows
 
    workflows/index.rst
 
-Guidances and HowTos
---------------------
+How To Contribute
+-----------------
 
-General info for the SCORE project (e.g. templates, naming convention, folder structure, IDE setup) can be found here:
+How to contribute to the SCORE project (e.g. naming convention, folder structure, IDE setup) can be found here:
 
-:ref:`tutorials`
+:ref:`contribute`
 
 Standards
 ---------

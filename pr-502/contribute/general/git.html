@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Folder Structure of Platform Repository &#8212; Score 0.1 documentation</title>
+    <title>Git Guidelines &#8212; Score 0.1 documentation</title>
   
   
   
@@ -35,11 +35,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
@@ -62,7 +62,7 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/general/folder';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contribute/general/git';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Feature Flags" href="feature_flags.html" />
-    <link rel="prev" title="Git Guidelines" href="git.html" />
+    <link rel="next" title="Folder Structure of Platform Repository" href="folder.html" />
+    <link rel="prev" title="Naming Conventions" href="naming.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -342,7 +342,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -447,8 +447,8 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">General</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="naming.html">Naming Conventions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="git.html">Git Guidelines</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Folder Structure of Platform Repository</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Git Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="folder.html">Folder Structure of Platform Repository</a></li>
 <li class="toctree-l2"><a class="reference internal" href="feature_flags.html">Feature Flags</a></li>
 </ul>
 </details></li>
@@ -497,12 +497,12 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Contribute</a></li>
     
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">General</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Folder Structure of Platform Repository</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Git Guidelines</span></li>
   </ul>
 </nav>
 </div>
@@ -519,87 +519,138 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="folder-structure-of-platform-repository">
-<span id="platform-folder-structure"></span><h1>Folder Structure of Platform Repository<a class="headerlink" href="#folder-structure-of-platform-repository" title="Link to this heading">#</a></h1>
-<p>The following shows the folder structure of the platform repository (ordered alphabetically). The ordering of the documentation in the rendered documentation
-can be in a different order.</p>
-<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>docs/                                           -&gt; Global documentation of the platform.
-    concepts/                                   -&gt; Description of overall concepts.
-    glossary/                                   -&gt; Glossary of abbreviations used in the platform context.
-    manual/                                     -&gt; user and integration manual(s)
-    overview/                                   -&gt; Introduction and high-level description of the platform features.
-    platform_management_plan/                   -&gt; Overall Platform Management Plan  [wp__platform_mgmt], consisting of ...
-        project_management.rst                  -&gt; ... Project Management.
-        stakeholder_management.rst              -&gt; ... Stakeholder Management.
-        safety_management.rst                   -&gt; ... Safety Management incl. platform safety plan [wp__platform_safety_plan]
-        risk_management.rst                     -&gt; ... Risk Management.
-        quality_management.rst                  -&gt; ... Quality Management [wp__qms].
-        config_management.rst                   -&gt; ... Configuration Management.
-        tool_management.rst                     -&gt; ... Tool Management.
-        release_management.rst                  -&gt; ... Release Management.
-        problem_resolution.rst                  -&gt; ... Problem Management.
-        change_management.rst                   -&gt; ... Change Management.
-        requirements_management.rst             -&gt; ... Requirements Management.
-        software_development.rst                -&gt; ... Development [wp__sw_dev_plan].
-        software_verification.rst               -&gt; ... Verification [wp__verification_plan].
-        documentation_management.rst            -&gt; ... Documentation Management.
-        security_management.rst                 -&gt; ... Security Management.
-    release/                                    -&gt; [wp__platform_sw_release_note]
-    safety/                                     -&gt; safety documentation on platform level (SEooC): [wp__feature_dfa], [wp__platform_sw_safety_manual], [wp__platform_safety_case], [wp__cmr_reports], [wp__assessment_report]
-    security/                                   -&gt; security documentation on platform level
-    requirements/                               -&gt; requirements on platform level ...
-        stakeholder/                            -&gt; ... Stakeholder requirements [wp__stakeholder_req].
-        tool/                                   -&gt; ... Tool requirements [wp__tool_req]
-    tutorials/                                  -&gt; General tutorials.
-
-examples/                                       -&gt; examples how a C++, Rust, Python module can be set up
-
-features/                                       -&gt; All features of the platform.
-    &lt;feature_name&gt;/                             -&gt; Folder containing all sub-folders corresponding to one feature and the contribution request [wp__cont_request]
-        docs/                                   -&gt; Documentation of the feature consisting of ...
-            architecture/                       -&gt; ... Feature architecture [WP_FEATURE_ARCHITECTURE].
-            requirements/                       -&gt; ... Feature requirements [wp__requirements__feat].
-            safety_analysis/                    -&gt; ... Safety analysis on feature level [WP_FEATURE_SAFETY_ANALYSES]
-            safety_planning/                    -&gt; ... the feature specific safety workproducts planning
-            verification/                       -&gt; ... Feature verification report (reporting all feature verifications) [wp__platform_sw_verification_report]
-        tests/                                  -&gt; Feature tests, consisting of ...
-            integration-tests/                  -&gt; ... integration tests [wp__feature_integration_test].
-    toolchain/                                  -&gt; Definition of toolchain
-
-modules/                                        -&gt; Modules of the SW platform.
-    &lt;module_name&gt;/                              -&gt; Folder containing all artifacts corresponding to one module.
-        docs/                                   -&gt; Documentation of the module consisting of ...
-            manual/                             -&gt; ... Module manual, e.g. integration manual, assumptions of use and safety manual [wp__sw_component_aou], [wp__module_sw_safety_manual].
-            release/                            -&gt; ... Module release note [wp__module_sw_release_note] plus safety assessment [wp__assessment_report]
-            safety_plan/                        -&gt; ... Module safety plan [wp__module_safety_plan], module safety case [wp__module_safety_case] and their conformance reviews [wp__cmr_reports]
-            safety_analysis/                    -&gt; ... Safety analysis on module level [wp__sw_component_dfa]
-            verification/                       -&gt; ... Module verification report (reporting all module&#39;s components verifications) [wp__module_sw_verification_report] plus safety analysis conformance reviews [wp__cmr_reports]
-
-        components/                             -&gt; Components of the module.
-            &lt;component_name&gt;/                   -&gt; Folder containing all artifacts corresponding to one component.
-                docs/                           -&gt; Documentation of the component consisting of ...
-                    architecture/               -&gt; ... Component architecture (only if sub-components exist) [wp__sw_component_architecture].
-                    requirements/               -&gt; ... Component requirements [wp__sw_component_req] and HSI (if relevant) [wp__hsi].
-                    safety_analysis/            -&gt; ... Safety analysis on component level [wp__sw_component_safety_analyses]
-                    verification/               -&gt; ... Architecture review [wp__sw_arch_verification], code inspection [wp__sw_code_inspect]
-                src/                            -&gt; Source files of the component (incl. detailed design) [wp__sw_implementation].
-                include/                        -&gt; Include files of the component
-                tests/                          -&gt; Component tests, consisting of ...
-                    unit/                       -&gt; ... unit tests [wp__sw_unit_test] (for lowest level of components).
-                    integration/                -&gt; ... integration tests [wp__sw_component_integration_test].
-                    verification/               -&gt; ... verification tests [wp__sw_component_test].
-                &lt;sub_component_name&gt;/           -&gt; Sub-Component of the Component.
-                     copy the relevant folders below &lt;component-name&gt; if applicable (example: no code inspection needed for sub-components from the Open Source)
-
-platform_integration_tests/                     -&gt; Integration tests on reference hardware.
-
-process/                                        -&gt; process definition including workflows, workproducts, roles, guidance [wp__process_definition]
-
-registry/                                       -&gt; infrastructure configuration
-
-README.md                                       -&gt; Entrypoint of the repository.
+  <section id="git-guidelines">
+<span id="id1"></span><h1>Git Guidelines<a class="headerlink" href="#git-guidelines" title="Link to this heading">#</a></h1>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>The commit history and especially the commit messages are part of a
+project’s documentation. Therefore, the same rules that are valid for
+documentation are also valid for commits and commit messages. A commit
+message is written once, but read many times (especially when hunting
+bugs). Git supports powerful tools to find out which commit introduced a
+bug (e.g., git bisect, git blame). Their level of usefulness depends on
+the quality of the commits and their respective commit messages.</p>
+</section>
+<section id="git-configuration">
+<h2>Git Configuration<a class="headerlink" href="#git-configuration" title="Link to this heading">#</a></h2>
+<p>Since name and e-mail address are part of the commit (and thus be part
+of the commit history) they shall be specified via the .gitconfig file.
+So this file must at least include the following lines:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">user</span><span class="p">]</span>
+<span class="n">email</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">email</span><span class="o">-</span><span class="n">address</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="nb">max</span><span class="o">.</span><span class="n">mustermann</span><span class="nd">@something</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
+<span class="n">name</span> <span class="o">=</span> <span class="n">Max</span> <span class="n">Mustermann</span>
 </pre></div>
 </div>
+</section>
+<section id="commit-history">
+<h2>Commit History<a class="headerlink" href="#commit-history" title="Link to this heading">#</a></h2>
+<p>Before merging a PR all commits shall be squashed into few (desired only
+one) logical commits.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Keep in mind that upon merge the commit history of your branch will
+be preserved in the main branch of the repo as well.</p>
+</div>
+</section>
+<section id="commit-message-format">
+<h2>Commit Message Format<a class="headerlink" href="#commit-message-format" title="Link to this heading">#</a></h2>
+<p>In Score it is checked if git commit messages are written according
+to guidelines. However, it cannot enforce the meaningfulness of the
+message (and its parts).</p>
+<p>The tool <code class="docutils literal notranslate"><span class="pre">gitlint</span></code> is used to check the compliance with the rules described below. Please check our
+<a class="reference external" href="https://github.com/eclipse-score/score/blob/main/.gitlint">gitlint configuration</a>
+for an overview of the rules we use.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that this information is shown in git log and other tools.</p>
+</div>
+<section id="wording">
+<h3>Wording<a class="headerlink" href="#wording" title="Link to this heading">#</a></h3>
+<p>Proper English language and full sentences are to be used in the commit
+message. For both the subject and the body a singular imperative form is
+required. E.g. <strong>“Add unit test for class XY”</strong> and not “I added unit
+tests”, “Adding unit tests” or “Various minor changes”.</p>
+<p>Additionally, the following specification for the content shall apply for
+commit messages (according to [Eclipse Git Commit Records](<a class="reference external" href="https://www.eclipse.org/projects/handbook/#resources-commit">https://www.eclipse.org/projects/handbook/#resources-commit</a>)):</p>
+</section>
+<section id="summary">
+<h3>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">prefix_name</span><span class="o">&gt;</span><span class="p">:</span> <span class="n">Summary</span>
+</pre></div>
+</div>
+<p>The Subject shall describe what was changed in a single line max 72
+characters long. It shall include a prefix for the module, component or
+feature which was changed e.g. “doc:” or “bazel:” It shall start with a
+capital letter and should not be ended by a trailing period in the
+subject line.</p>
+<p>Good and bad examples for a subject are:</p>
+<ul class="simple">
+<li><p><strong>mw: Show colorful output</strong> not Add file</p></li>
+<li><p><strong>bazel: Test Requirement SWS_CM_00001</strong> not Add test</p></li>
+<li><p><strong>osal: Split responsibilities of job handling and execution</strong> not Refactor code</p></li>
+</ul>
+</section>
+<section id="description">
+<h3>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h3>
+<p>The description must contain a brief summary of the content of the
+commit and why this is necessary. Furthermore it must be consistent and
+logically complete.</p>
+<p>If feasible, the commit message body should be extended with quoted
+material such as compiler warnings, debugger stack traces or measurement
+data for performance optimizations.</p>
+<p>The description may mention issues and link to them. A detailed description
+of linking commits to issues is available on <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">GitHub</a>.
+Be aware that keywords like (close | fix | resolve) will also close the
+referenced issue if the pull request is merged.</p>
+<p>Git commits are not required to mention issues. It is sufficient if the PR
+links to any relevant issues.</p>
+</section>
+<section id="footer">
+<h3>Footer<a class="headerlink" href="#footer" title="Link to this heading">#</a></h3>
+<p>At the end of the commit message a footer may be specified
+in the following format:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Also</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Some</span> <span class="n">Bodyelse</span> <span class="o">&lt;</span><span class="n">somebodyelse</span><span class="nd">@nowhere</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>An additional check is implemented to suppress false positives: if a
+commit message has revert/merge in the first line, the linting rules
+will not be applied to it. Thereby headaches when performing reverts or
+merges are reduced.</p>
+</section>
+<section id="layout-summary">
+<h3>Layout Summary<a class="headerlink" href="#layout-summary" title="Link to this heading">#</a></h3>
+<p>In short the commit message shall consist of:</p>
+<ul class="simple">
+<li><p>Summary</p></li>
+<li><p>Empty line</p></li>
+<li><p>Description</p></li>
+<li><p>Empty line</p></li>
+<li><p>Footer</p></li>
+</ul>
+</section>
+<section id="example">
+<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">component</span><span class="p">:</span> <span class="n">Short</span> <span class="n">one</span> <span class="n">line</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">change</span>
+
+<span class="n">More</span> <span class="n">detailed</span> <span class="n">explanatory</span> <span class="n">text</span><span class="p">,</span> <span class="n">mandatory</span><span class="o">.</span> <span class="n">Wrap</span> <span class="n">it</span> <span class="n">to</span> <span class="n">about</span> <span class="mi">72</span>
+<span class="n">characters</span> <span class="ow">or</span> <span class="n">less</span><span class="o">.</span> <span class="n">The</span> <span class="n">first</span> <span class="n">line</span> <span class="ow">is</span> <span class="n">treated</span> <span class="k">as</span> <span class="n">the</span> <span class="n">subject</span> <span class="ow">and</span> <span class="n">the</span>
+<span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">text</span> <span class="k">as</span> <span class="n">the</span> <span class="n">body</span><span class="o">.</span> <span class="n">The</span> <span class="n">blank</span> <span class="n">line</span> <span class="n">separating</span> <span class="n">the</span> <span class="n">summary</span> <span class="kn">from</span>
+<span class="nn">the</span> <span class="n">body</span> <span class="ow">is</span> <span class="n">critical</span> <span class="p">(</span><span class="n">unless</span> <span class="n">you</span> <span class="n">omit</span> <span class="n">the</span> <span class="n">body</span> <span class="n">entirely</span><span class="p">);</span>
+
+<span class="o">-</span>  <span class="n">Bullet</span> <span class="n">points</span> <span class="n">are</span> <span class="n">okay</span><span class="p">,</span> <span class="n">too</span>
+<span class="o">-</span>  <span class="n">Typically</span> <span class="n">a</span> <span class="n">hyphen</span> <span class="ow">or</span> <span class="n">asterisk</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">for</span> <span class="n">the</span> <span class="n">bullet</span><span class="p">,</span> <span class="n">followed</span> <span class="n">by</span> <span class="n">a</span>
+   <span class="n">space</span><span class="p">,</span> <span class="n">using</span> <span class="n">a</span> <span class="n">hanging</span> <span class="n">indent</span>
+
+<span class="n">Comment</span> <span class="n">how</span> <span class="n">the</span> <span class="n">change</span> <span class="n">was</span> <span class="n">tested</span><span class="o">.</span>
+
+<span class="n">Notes</span> <span class="n">about</span> <span class="n">dependencies</span> <span class="n">to</span> <span class="n">other</span> <span class="n">tools</span> <span class="ow">or</span> <span class="n">commits</span> <span class="ow">in</span> <span class="n">other</span>
+<span class="n">repositories</span><span class="o">.</span>
+
+<span class="n">Also</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Some</span> <span class="n">Bodyelse</span> <span class="o">&lt;</span><span class="n">somebodyelse</span><span class="nd">@nowhere</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
 
@@ -613,20 +664,20 @@ README.md                                       -&gt; Entrypoint of the reposito
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="git.html"
+       href="naming.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Git Guidelines</p>
+        <p class="prev-next-title">Naming Conventions</p>
       </div>
     </a>
     <a class="right-next"
-       href="feature_flags.html"
+       href="folder.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Feature Flags</p>
+        <p class="prev-next-title">Folder Structure of Platform Repository</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -642,10 +693,33 @@ README.md                                       -&gt; Entrypoint of the reposito
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-configuration">Git Configuration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-history">Commit History</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-message-format">Commit Message Format</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wording">Wording</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#footer">Footer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layout-summary">Layout Summary</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/tutorials/general/folder.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/contribute/general/git.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -661,7 +735,7 @@ README.md                                       -&gt; Entrypoint of the reposito
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/tutorials/general/folder.rst.txt"
+      <li><a href="../../_sources/contribute/general/git.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

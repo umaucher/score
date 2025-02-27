@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Git Guidelines &#8212; Score 0.1 documentation</title>
+    <title>Pushing to GitHub Pages from a Forked Pull Request &#8212; Score 0.1 documentation</title>
   
   
   
@@ -35,11 +35,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
@@ -62,7 +62,7 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tutorials/general/git';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'contribute/ci/publishing-gh-pages';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Folder Structure of Platform Repository" href="folder.html" />
-    <link rel="prev" title="Naming Conventions" href="naming.html" />
+    <link rel="next" title="SCORE Releases Overview" href="../../score_releases/index.html" />
+    <link rel="prev" title="CI" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,7 +168,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -342,7 +342,7 @@
 
 <li class="nav-item current active">
   <a class="nav-link nav-internal" href="../index.html">
-    Tutorials
+    Contribute
   </a>
 </li>
 
@@ -445,17 +445,14 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">General</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="naming.html">Naming Conventions</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Git Guidelines</a></li>
-<li class="toctree-l2"><a class="reference internal" href="folder.html">Folder Structure of Platform Repository</a></li>
-<li class="toctree-l2"><a class="reference internal" href="feature_flags.html">Feature Flags</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/index.html">General</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contribution_request/index.html">Contribution Request</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../documentation/index.html">Documentation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development/index.html">Development</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../ci/index.html">CI</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">CI</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Pushing to GitHub Pages from a Forked Pull Request</a></li>
+</ul>
+</details></li>
 </ul>
 </div>
 </nav></div>
@@ -497,12 +494,12 @@
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Tutorials</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Contribute</a></li>
     
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">General</a></li>
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">CI</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Git Guidelines</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Pushing to GitHub Pages from a Forked Pull Request</span></li>
   </ul>
 </nav>
 </div>
@@ -519,137 +516,121 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="git-guidelines">
-<span id="id1"></span><h1>Git Guidelines<a class="headerlink" href="#git-guidelines" title="Link to this heading">#</a></h1>
-<section id="motivation">
-<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>The commit history and especially the commit messages are part of a
-project’s documentation. Therefore, the same rules that are valid for
-documentation are also valid for commits and commit messages. A commit
-message is written once, but read many times (especially when hunting
-bugs). Git supports powerful tools to find out which commit introduced a
-bug (e.g., git bisect, git blame). Their level of usefulness depends on
-the quality of the commits and their respective commit messages.</p>
+  <section id="pushing-to-github-pages-from-a-forked-pull-request">
+<h1>Pushing to GitHub Pages from a Forked Pull Request<a class="headerlink" href="#pushing-to-github-pages-from-a-forked-pull-request" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>When working with GitHub Pages in repositories where contributors submit changes via forks,
+special considerations must be taken due to security restrictions imposed by GitHub Actions.
+This document covers how to safely publish content to GitHub Pages from a pull request originating
+from a fork, based on previous research and trial runs on dummy repositories.</p>
 </section>
-<section id="git-configuration">
-<h2>Git Configuration<a class="headerlink" href="#git-configuration" title="Link to this heading">#</a></h2>
-<p>Since name and e-mail address are part of the commit (and thus be part
-of the commit history) they shall be specified via the .gitconfig file.
-So this file must at least include the following lines:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">user</span><span class="p">]</span>
-<span class="n">email</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">your</span><span class="o">-</span><span class="n">email</span><span class="o">-</span><span class="n">address</span><span class="o">&gt;</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="nb">max</span><span class="o">.</span><span class="n">mustermann</span><span class="nd">@something</span><span class="o">.</span><span class="n">com</span><span class="p">)</span>
-<span class="n">name</span> <span class="o">=</span> <span class="n">Max</span> <span class="n">Mustermann</span>
+<section id="why-use-pull-request-target-instead-of-pull-request">
+<h2>Why Use <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> Instead of <code class="docutils literal notranslate"><span class="pre">pull_request</span></code>?<a class="headerlink" href="#why-use-pull-request-target-instead-of-pull-request" title="Link to this heading">#</a></h2>
+<p>By default, GitHub Actions run with minimal permissions when triggered by a <code class="docutils literal notranslate"><span class="pre">pull_request</span></code> event
+from a fork. This means that workflows cannot access repository secrets, preventing them from
+deploying changes to GitHub Pages.</p>
+<p>To overcome this, we can use <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> instead of <code class="docutils literal notranslate"><span class="pre">pull_request</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> event runs workflows in the context of the base repository rather than
+the fork, allowing access to repository secrets. However, since this introduces potential security
+risks (such as arbitrary code execution with write access), additional safeguards must be implemented.</p>
+</section>
+<section id="implementing-security-measures">
+<h2>Implementing Security Measures<a class="headerlink" href="#implementing-security-measures" title="Link to this heading">#</a></h2>
+<p>To safely allow a workflow to push to GitHub Pages, the following measures should be taken:</p>
+<section id="require-maintainer-approval-before-running-workflows">
+<h3>Require Maintainer Approval Before Running Workflows<a class="headerlink" href="#require-maintainer-approval-before-running-workflows" title="Link to this heading">#</a></h3>
+<p>To prevent unauthorized code execution, an environment with required approvals is being used.
+This ensures that workflows triggered by <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> do not automatically execute until
+approved by a maintainer.</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">jobs</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">deploy</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">runs-on</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ubuntu-latest</span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">github-pages</span>
+<span class="w">    </span><span class="nt">steps</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout repository (Handle all events)</span>
+<span class="w">        </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4.2.2</span>
+<span class="w">        </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">          </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.head_ref || github.event.pull_request.head.ref || github.ref }}</span>
+<span class="w">          </span><span class="nt">repository</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event.pull_request.head.repo.full_name || github.repository }}</span>
 </pre></div>
 </div>
+<p>With this setup, GitHub will pause execution of the workflow until a maintainer approves it.</p>
+<p><strong>This method is disabled at the moment.</strong></p>
 </section>
-<section id="commit-history">
-<h2>Commit History<a class="headerlink" href="#commit-history" title="Link to this heading">#</a></h2>
-<p>Before merging a PR all commits shall be squashed into few (desired only
-one) logical commits.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Keep in mind that upon merge the commit history of your branch will
-be preserved in the main branch of the repo as well.</p>
-</div>
-</section>
-<section id="commit-message-format">
-<h2>Commit Message Format<a class="headerlink" href="#commit-message-format" title="Link to this heading">#</a></h2>
-<p>In Score it is checked if git commit messages are written according
-to guidelines. However, it cannot enforce the meaningfulness of the
-message (and its parts).</p>
-<p>The tool <code class="docutils literal notranslate"><span class="pre">gitlint</span></code> is used to check the compliance with the rules described below. Please check our
-<a class="reference external" href="https://github.com/eclipse-score/score/blob/main/.gitlint">gitlint configuration</a>
-for an overview of the rules we use.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Remember that this information is shown in git log and other tools.</p>
-</div>
-<section id="wording">
-<h3>Wording<a class="headerlink" href="#wording" title="Link to this heading">#</a></h3>
-<p>Proper English language and full sentences are to be used in the commit
-message. For both the subject and the body a singular imperative form is
-required. E.g. <strong>“Add unit test for class XY”</strong> and not “I added unit
-tests”, “Adding unit tests” or “Various minor changes”.</p>
-<p>Additionally, the following specification for the content shall apply for
-commit messages (according to [Eclipse Git Commit Records](<a class="reference external" href="https://www.eclipse.org/projects/handbook/#resources-commit">https://www.eclipse.org/projects/handbook/#resources-commit</a>)):</p>
-</section>
-<section id="summary">
-<h3>Summary<a class="headerlink" href="#summary" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">prefix_name</span><span class="o">&gt;</span><span class="p">:</span> <span class="n">Summary</span>
+<section id="handling-pull-request-target-workflow-adaptations">
+<h3>Handling <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> Workflow Adaptations<a class="headerlink" href="#handling-pull-request-target-workflow-adaptations" title="Link to this heading">#</a></h3>
+<p>Since <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> runs workflows in the context of the base repository rather than the
+source fork, special considerations must be taken when checking out the repository. The following
+checkout step ensures that the workflow correctly fetches the pull request source:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Checkout repository (Handle all events)</span>
+<span class="w">  </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">actions/checkout@v4.2.2</span>
+<span class="w">  </span><span class="nt">with</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">ref</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.head_ref || github.event.pull_request.head.ref || github.ref }}</span>
+<span class="w">    </span><span class="nt">repository</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event.pull_request.head.repo.full_name || github.repository }}</span>
 </pre></div>
 </div>
-<p>The Subject shall describe what was changed in a single line max 72
-characters long. It shall include a prefix for the module, component or
-feature which was changed e.g. “doc:” or “bazel:” It shall start with a
-capital letter and should not be ended by a trailing period in the
-subject line.</p>
-<p>Good and bad examples for a subject are:</p>
-<ul class="simple">
-<li><p><strong>mw: Show colorful output</strong> not Add file</p></li>
-<li><p><strong>bazel: Test Requirement SWS_CM_00001</strong> not Add test</p></li>
-<li><p><strong>osal: Split responsibilities of job handling and execution</strong> not Refactor code</p></li>
-</ul>
+<p>When checking out code in GitHub Actions, special considerations must be taken to ensure that the
+correct branch and repository are selected, depending on the event type. Below are the rules for
+safely handling checkouts.</p>
 </section>
-<section id="description">
-<h3>Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h3>
-<p>The description must contain a brief summary of the content of the
-commit and why this is necessary. Furthermore it must be consistent and
-logically complete.</p>
-<p>If feasible, the commit message body should be extended with quoted
-material such as compiler warnings, debugger stack traces or measurement
-data for performance optimizations.</p>
-<p>The description may mention issues and link to them. A detailed description
-of linking commits to issues is available on <a class="reference external" href="https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue">GitHub</a>.
-Be aware that keywords like (close | fix | resolve) will also close the
-referenced issue if the pull request is merged.</p>
-<p>Git commits are not required to mention issues. It is sufficient if the PR
-links to any relevant issues.</p>
-</section>
-<section id="footer">
-<h3>Footer<a class="headerlink" href="#footer" title="Link to this heading">#</a></h3>
-<p>At the end of the commit message a footer may be specified
-in the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Also</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Some</span> <span class="n">Bodyelse</span> <span class="o">&lt;</span><span class="n">somebodyelse</span><span class="nd">@nowhere</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
-</pre></div>
-</div>
-<p>An additional check is implemented to suppress false positives: if a
-commit message has revert/merge in the first line, the linting rules
-will not be applied to it. Thereby headaches when performing reverts or
-merges are reduced.</p>
-</section>
-<section id="layout-summary">
-<h3>Layout Summary<a class="headerlink" href="#layout-summary" title="Link to this heading">#</a></h3>
-<p>In short the commit message shall consist of:</p>
-<ul class="simple">
-<li><p>Summary</p></li>
-<li><p>Empty line</p></li>
-<li><p>Description</p></li>
-<li><p>Empty line</p></li>
-<li><p>Footer</p></li>
-</ul>
-</section>
-<section id="example">
-<h3>Example<a class="headerlink" href="#example" title="Link to this heading">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">component</span><span class="p">:</span> <span class="n">Short</span> <span class="n">one</span> <span class="n">line</span> <span class="n">summary</span> <span class="n">of</span> <span class="n">change</span>
-
-<span class="n">More</span> <span class="n">detailed</span> <span class="n">explanatory</span> <span class="n">text</span><span class="p">,</span> <span class="n">mandatory</span><span class="o">.</span> <span class="n">Wrap</span> <span class="n">it</span> <span class="n">to</span> <span class="n">about</span> <span class="mi">72</span>
-<span class="n">characters</span> <span class="ow">or</span> <span class="n">less</span><span class="o">.</span> <span class="n">The</span> <span class="n">first</span> <span class="n">line</span> <span class="ow">is</span> <span class="n">treated</span> <span class="k">as</span> <span class="n">the</span> <span class="n">subject</span> <span class="ow">and</span> <span class="n">the</span>
-<span class="n">rest</span> <span class="n">of</span> <span class="n">the</span> <span class="n">text</span> <span class="k">as</span> <span class="n">the</span> <span class="n">body</span><span class="o">.</span> <span class="n">The</span> <span class="n">blank</span> <span class="n">line</span> <span class="n">separating</span> <span class="n">the</span> <span class="n">summary</span> <span class="kn">from</span>
-<span class="nn">the</span> <span class="n">body</span> <span class="ow">is</span> <span class="n">critical</span> <span class="p">(</span><span class="n">unless</span> <span class="n">you</span> <span class="n">omit</span> <span class="n">the</span> <span class="n">body</span> <span class="n">entirely</span><span class="p">);</span>
-
-<span class="o">-</span>  <span class="n">Bullet</span> <span class="n">points</span> <span class="n">are</span> <span class="n">okay</span><span class="p">,</span> <span class="n">too</span>
-<span class="o">-</span>  <span class="n">Typically</span> <span class="n">a</span> <span class="n">hyphen</span> <span class="ow">or</span> <span class="n">asterisk</span> <span class="ow">is</span> <span class="n">used</span> <span class="k">for</span> <span class="n">the</span> <span class="n">bullet</span><span class="p">,</span> <span class="n">followed</span> <span class="n">by</span> <span class="n">a</span>
-   <span class="n">space</span><span class="p">,</span> <span class="n">using</span> <span class="n">a</span> <span class="n">hanging</span> <span class="n">indent</span>
-
-<span class="n">Comment</span> <span class="n">how</span> <span class="n">the</span> <span class="n">change</span> <span class="n">was</span> <span class="n">tested</span><span class="o">.</span>
-
-<span class="n">Notes</span> <span class="n">about</span> <span class="n">dependencies</span> <span class="n">to</span> <span class="n">other</span> <span class="n">tools</span> <span class="ow">or</span> <span class="n">commits</span> <span class="ow">in</span> <span class="n">other</span>
-<span class="n">repositories</span><span class="o">.</span>
-
-<span class="n">Also</span><span class="o">-</span><span class="n">by</span><span class="p">:</span> <span class="n">Some</span> <span class="n">Bodyelse</span> <span class="o">&lt;</span><span class="n">somebodyelse</span><span class="nd">@nowhere</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span>
-</pre></div>
+<section id="checking-out-the-correct-branch">
+<h3>Checking Out the Correct Branch<a class="headerlink" href="#checking-out-the-correct-branch" title="Link to this heading">#</a></h3>
+<p>The following table outlines how branches are checked out based on different event types:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<caption><span class="caption-number">Table 1 </span><span class="caption-text">Branch Checkout Rules</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Condition</p></th>
+<th class="head"><p>Event Type</p></th>
+<th class="head"><p>Checked Out Branch</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">github.head_ref</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code></p></td>
+<td><p>PR branch (source branch)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">github.event.pull_request.head.ref</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pull_request</span></code></p></td>
+<td><p>PR branch (source branch)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">github.ref</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">push,</span> <span class="pre">merge_group</span></code></p></td>
+<td><p>The branch being pushed/merged</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </section>
+<section id="checking-out-the-correct-repository">
+<h3>Checking Out the Correct Repository<a class="headerlink" href="#checking-out-the-correct-repository" title="Link to this heading">#</a></h3>
+<p>The following table describes how repositories are selected for checkout:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id2">
+<caption><span class="caption-number">Table 2 </span><span class="caption-text">Repository Checkout Rules</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Condition</p></th>
+<th class="head"><p>Event Type</p></th>
+<th class="head"><p>Checked Out Repository</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">github.event.pull_request.head.repo.full_name</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">pull_request</span></code></p></td>
+<td><p>Forked repository (if PR is from a fork)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">github.repository</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">push,</span> <span class="pre">merge_group</span></code></p></td>
+<td><p>Default repository (same repo PRs, merges, pushes)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</section>
+<section id="conclusion">
+<h2>Conclusion<a class="headerlink" href="#conclusion" title="Link to this heading">#</a></h2>
+<p>By implementing these best practices, we can safely enable contributors to publish changes to
+GitHub Pages while maintaining security within our <code class="docutils literal notranslate"><span class="pre">score</span></code> repository.</p>
 </section>
 </section>
 
@@ -664,20 +645,20 @@ merges are reduced.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="naming.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Naming Conventions</p>
+        <p class="prev-next-title">CI</p>
       </div>
     </a>
     <a class="right-next"
-       href="folder.html"
+       href="../../score_releases/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Folder Structure of Platform Repository</p>
+        <p class="prev-next-title">SCORE Releases Overview</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -700,18 +681,16 @@ merges are reduced.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#git-configuration">Git Configuration</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-history">Commit History</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#commit-message-format">Commit Message Format</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#wording">Wording</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#description">Description</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#footer">Footer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#layout-summary">Layout Summary</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example">Example</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-use-pull-request-target-instead-of-pull-request">Why Use <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> Instead of <code class="docutils literal notranslate"><span class="pre">pull_request</span></code>?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementing-security-measures">Implementing Security Measures</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#require-maintainer-approval-before-running-workflows">Require Maintainer Approval Before Running Workflows</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-pull-request-target-workflow-adaptations">Handling <code class="docutils literal notranslate"><span class="pre">pull_request_target</span></code> Workflow Adaptations</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-out-the-correct-branch">Checking Out the Correct Branch</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checking-out-the-correct-repository">Checking Out the Correct Repository</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusion">Conclusion</a></li>
 </ul>
   </nav></div>
 
@@ -719,7 +698,7 @@ merges are reduced.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/tutorials/general/git.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/contribute/ci/publishing-gh-pages.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -735,7 +714,7 @@ merges are reduced.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../_sources/tutorials/general/git.rst.txt"
+      <li><a href="../../_sources/contribute/ci/publishing-gh-pages.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>

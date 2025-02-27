@@ -12,10 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _tutorials:
+.. _contribute:
 
-Tutorials
-#########
+Contribute
+##########
 
 .. toctree::
    :maxdepth: 2
