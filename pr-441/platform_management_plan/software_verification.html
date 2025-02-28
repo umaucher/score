@@ -72,7 +72,7 @@
         </script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Documentation management" href="documentation_management.html" />
+    <link rel="next" title="Documentation Management Plan" href="documentation_management.html" />
     <link rel="prev" title="Requirements management" href="requirements_management.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -167,8 +167,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../guidance/index.html">
-    Guidance
+  <a class="nav-link nav-internal" href="../contribute/index.html">
+    Contribute
   </a>
 </li>
 
@@ -341,8 +341,8 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../guidance/index.html">
-    Guidance
+  <a class="nav-link nav-internal" href="../contribute/index.html">
+    Contribute
   </a>
 </li>
 
@@ -458,7 +458,7 @@
 <li class="toctree-l1"><a class="reference internal" href="change_management.html">Change management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requirements_management.html">Requirements management</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Software verification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="documentation_management.html">Documentation management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="documentation_management.html">Documentation Management Plan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software_development.html">Software Development</a></li>
 </ul>
 </div>
@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-0655fdb6">
+  <div class="need_container docutils container" id="SNCB-9fb924e3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -528,9 +528,9 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">draft</span></span></span></strong></div>
-<div class="line"><span>security: </span><strong><span></span></strong></div>
-<div class="line"><span>safety: </span><strong><span><span class="needs_safety"><span class="needs_data">ASIL_B</span></span></span></strong></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -631,12 +631,12 @@ as the software verification.</p>
 automated software build at any time.</p>
 <p>The following types of integrations are applicable:</p>
 <ol class="arabic simple">
-<li><p><strong>New software elements</strong> get integrated according to the <a class="reference internal" href="../process/guidance/contribution_request/index.html#gd_guidl__contr_request_guideline" title="gd_guidl__contr_request_guideline"><em class="xref need">Contribution Request Guideline (gd_guidl__contr_request_guideline)</em></a>
-and following the <a class="reference internal" href="../process/guidance/contribution_request/templates/feature_request_template.html#gd_temp__feat_request_template" title="gd_temp__feat_request_template"><em class="xref need">Feature Request Template (gd_temp__feat_request_template)</em></a> for new features.</p></li>
+<li><p><strong>New software elements</strong> get integrated according to the <a class="reference internal" href="../contribute/contribution_request/contribution_request.html#gd_guidl__contr_request_guideline" title="gd_guidl__contr_request_guideline"><em class="xref need">Contribution Request Guideline (gd_guidl__contr_request_guideline)</em></a>
+and following the <a class="reference internal" href="../contribute/contribution_request/templates/feature_request_template.html#gd_temp__feat_request_template" title="gd_temp__feat_request_template"><em class="xref need">Feature Request Template (gd_temp__feat_request_template)</em></a> for new features.</p></li>
 <li><p><strong>Fixes of defects</strong> get integrated based on their prioritization described by the
 <a class="reference internal" href="problem_resolution.html"><span class="doc">Problem Resolution</span></a>.</p></li>
 <li><p><strong>Changes</strong> get integrated based on the <a class="reference internal" href="../process/workflows/change_management.html#wf__cr_dc_changerequest" title="wf__cr_dc_changerequest"><em class="xref need">Create/Discuss Change request (wf__cr_dc_changerequest)</em></a> and will follow
-the <a class="reference internal" href="../process/guidance/contribution_request/index.html#gd_guidl__pull_request_guideline" title="gd_guidl__pull_request_guideline"><em class="xref need">Pull Request Guideline (gd_guidl__pull_request_guideline)</em></a> as any other artifact.</p></li>
+the <a class="reference internal" href="../contribute/contribution_request/contribution_request.html#gd_guidl__pull_request_guideline" title="gd_guidl__pull_request_guideline"><em class="xref need">Pull Request Guideline (gd_guidl__pull_request_guideline)</em></a> as any other artifact.</p></li>
 </ol>
 </section>
 <section id="levels-of-integration-and-verification">
@@ -925,6 +925,19 @@ section above). Driven by that the following test setups can be derived:</p>
 <p>A test set is a combination of different test scenarios running based on one or several verification setups. The list
 of sets has not been established yet.</p>
 </section>
+<section id="test-execution-environment-and-reference-hardware">
+<h3>Test execution environment and reference hardware<a class="headerlink" href="#test-execution-environment-and-reference-hardware" title="Link to this heading">#</a></h3>
+<p>The platform is consisting solely on features that are considered as “middleware” as the layer
+above the hardware abstraction layer. The platform itself doe not require to be running on
+a specific hardware. It integrates with an Posix Operating System which is the first level of
+abstraction to the physical hardware.</p>
+<p>The simulation environment will be based on x86 and arm64 architecture, to be close to later
+target hardware.</p>
+<p>The integration of the platform on a target device and the respective verification and validation
+should be considered by the distributor of the platform. On target integration tests that are
+running on a reference hardware in context of this project can be taken as a starting point.</p>
+<p>The reference hardware is defined in the <code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Well</span> <span class="pre">where</span> <span class="pre">will</span> <span class="pre">it</span> <span class="pre">be</span> <span class="pre">actually</span> <span class="pre">defined?]</span></code>.</p>
+</section>
 </section>
 </section>
 
@@ -952,7 +965,7 @@ of sets has not been established yet.</p>
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Documentation management</p>
+        <p class="prev-next-title">Documentation Management Plan</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1000,6 +1013,7 @@ of sets has not been established yet.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-setups-and-variants">Verification setups and variants</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-sets">Test sets</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-execution-environment-and-reference-hardware">Test execution environment and reference hardware</a></li>
 </ul>
 </li>
 </ul>

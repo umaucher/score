@@ -373,3 +373,22 @@ Test sets
 
 A test set is a combination of different test scenarios running based on one or several verification setups. The list
 of sets has not been established yet.
+
+Test execution environment and reference hardware
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The platform is consisting solely on features that are considered as "middleware" as the layer
+above the hardware abstraction layer. The platform itself doe not require to be running on
+a specific hardware. It integrates with an Posix Operating System which is the first level of
+abstraction to the physical hardware.
+
+The simulation environment will be based on x86 and arm64 architecture, to be close to later
+target hardware.
+
+The integration of the platform on a target device and the respective verification and validation
+should be considered by the distributor of the platform. On target integration tests that are
+running on a reference hardware in context of this project can be taken as a starting point.
+
+The reference hardware is defined in the ``[TODO: Well where will it be actually defined?]``.
+
+
