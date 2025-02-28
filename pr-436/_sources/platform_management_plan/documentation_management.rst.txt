@@ -52,6 +52,7 @@ This plan deals with these documents, which have the following manually set attr
 * Title: the name of the document (mandatory)
 * Unique Id: Id following the naming pattern of the document Title (mandatory)
 * Safety: which ASIL the document supports (mandatory)
+* Author: Who is the main committer to the document (mandatory)
 * Status: describing where in the lifecycle of the document it currently is (mandatory)
 * Tags: can be used to group documents for subsequent filtering (optional)
 
@@ -60,7 +61,6 @@ can be seen in the header section above, see :need:`doc__documentation_mgt_plan`
 
 The following additional attributes of the document are generated automatically during the documentation build:
 
-* Author: from the github information on who last committed the file holding the document "source"
 * Approver: from the github information on who was the last CODEOWNER performing the github review
 * Reviewer: any additional reviewer performing the github review without CODEOWNER rights
 

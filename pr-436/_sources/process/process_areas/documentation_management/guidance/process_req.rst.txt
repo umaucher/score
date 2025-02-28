@@ -20,8 +20,11 @@ Document Management Process Requirements
    :status: valid
    :complies: std_req__iso26262__support_43
 
-   Documents headers shall contain an "author" attribute, which is added during documentation build
-   and contains the last PR committer of the file containing the document.
+   Documents headers shall contain an "author" attribute. Every committer who adds more than 50%
+   of the content shall put his name.
+
+   Note: In the future this may also be automated based on an analysis of content during the
+   documentation build for every commmit of the file containing the document.
 
 .. gd_req:: Document Approver
    :id: gd_req__doc_approver
