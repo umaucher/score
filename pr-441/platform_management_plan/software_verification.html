@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-cc2da028">
+  <div class="need_container docutils container" id="SNCB-0655fdb6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -631,10 +631,12 @@ as the software verification.</p>
 automated software build at any time.</p>
 <p>The following types of integrations are applicable:</p>
 <ol class="arabic simple">
-<li><p><strong>New software elements</strong> get integrated according to the <code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">add</span> <span class="pre">link</span> <span class="pre">to</span> <span class="pre">lifecyle</span> <span class="pre">phases]</span></code>  of a
-contribution.</p></li>
+<li><p><strong>New software elements</strong> get integrated according to the <a class="reference internal" href="../process/guidance/contribution_request/index.html#gd_guidl__contr_request_guideline" title="gd_guidl__contr_request_guideline"><em class="xref need">Contribution Request Guideline (gd_guidl__contr_request_guideline)</em></a>
+and following the <a class="reference internal" href="../process/guidance/contribution_request/templates/feature_request_template.html#gd_temp__feat_request_template" title="gd_temp__feat_request_template"><em class="xref need">Feature Request Template (gd_temp__feat_request_template)</em></a> for new features.</p></li>
 <li><p><strong>Fixes of defects</strong> get integrated based on their prioritization described by the
 <a class="reference internal" href="problem_resolution.html"><span class="doc">Problem Resolution</span></a>.</p></li>
+<li><p><strong>Changes</strong> get integrated based on the <a class="reference internal" href="../process/workflows/change_management.html#wf__cr_dc_changerequest" title="wf__cr_dc_changerequest"><em class="xref need">Create/Discuss Change request (wf__cr_dc_changerequest)</em></a> and will follow
+the <a class="reference internal" href="../process/guidance/contribution_request/index.html#gd_guidl__pull_request_guideline" title="gd_guidl__pull_request_guideline"><em class="xref need">Pull Request Guideline (gd_guidl__pull_request_guideline)</em></a> as any other artifact.</p></li>
 </ol>
 </section>
 <section id="levels-of-integration-and-verification">
@@ -679,7 +681,7 @@ activities in general.</p>
 <p>As part of supporting activities:</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a></p></li>
+<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a> integrated into the respective test implementations.</p></li>
 </ol>
 <p>The link between a verification specification and the respective requirement or design specification is given by the
 identifier of the reference annotated to the verification specification.</p>
@@ -716,7 +718,7 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 </tr>
 <tr class="row-even"><td><p>Fault Injection</p></td>
 <td><p>fault-injection</p></td>
-<td><p>1, 2, 3</p></td>
+<td><p>1</p></td>
 <td><p>ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Inspection</p></td>
@@ -735,7 +737,7 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 <td><p>QM, ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Resource Usage Evaluation (only on reference environment)</p></td>
-<td><p>resource_usage</p></td>
+<td><p>resource-usage</p></td>
 <td><p>1, 2, 3</p></td>
 <td><p>QM, ASIL B</p></td>
 </tr>
@@ -779,17 +781,22 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 </tr>
 <tr class="row-odd"><td><p>Analysis of Equivalence Classes</p></td>
 <td><p>equivalence-classes</p></td>
-<td><p>1, 2, 3</p></td>
+<td><p>2, 3</p></td>
 <td><p>QM, ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Analysis of Requirements</p></td>
 <td><p>requirements-analysis</p></td>
-<td><p>1, 2, 3</p></td>
+<td><p>2, 3</p></td>
 <td><p>QM, ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Error Guessing based on Knowledge or Experience</p></td>
 <td><p>error-guessing</p></td>
 <td><p>1, 2, 3</p></td>
+<td><p>QM, ASIL B</p></td>
+</tr>
+<tr class="row-even"><td><p>Random Testing</p></td>
+<td><p>monkey-testing</p></td>
+<td><p>2, 3</p></td>
 <td><p>QM, ASIL B</p></td>
 </tr>
 </tbody>

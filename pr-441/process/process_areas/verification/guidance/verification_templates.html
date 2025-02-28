@@ -456,6 +456,7 @@
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Verification Templates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verification_process_toolreqs.html">Test Linking to Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verification_report_template.html">Verification Report Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="verification_specification.html">Verification Specification Guidance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows.html">Workflow Verification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workproducts.html">Work products</a></li>
 </ul>
@@ -574,48 +575,6 @@ A more detailed description of how to link code to requirements is available her
 <p>Writing test cases in python shall follow the recommendations from the official python and community documentation.
 <a class="reference external" href="https://docs.python-guide.org/writing/tests/">https://docs.python-guide.org/writing/tests/</a></p>
 </section>
-<section id="test-description">
-<h2>Test description<a class="headerlink" href="#test-description" title="Link to this heading">#</a></h2>
-<p>Following Given-When-Then is a preferred way to write test specifications.</p>
-<ul>
-<li><div class="line-block">
-<div class="line">Given (alternatively // Setup  )</div>
-<div class="line">This section contains the setup of the input.</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">Expected</div>
-<div class="line">This Section contains the expectation for calls to mocks or stubs</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">When (alternatively  // Call   )</div>
-<div class="line">This section contains the call to the software under test.</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">Then (alternatively // Expect )</div>
-<div class="line">This section contains the verification criteria of the test (e.g. all EXPECT statements).</div>
-</div>
-</li>
-</ul>
-<p>Another example for a good test description could be:</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">Verify successful login with valid credentials.</div>
-<div class="line">Input:</div>
-<div class="line">- Username: testuser</div>
-<div class="line">- Password: password123</div>
-<div class="line">Expected Outcome:</div>
-<div class="line">- User is redirected to the home page and the welcome message “Hello, testuser!” is displayed.</div>
-</div>
-</div></blockquote>
-<p>A example for a bad test description could be:</p>
-<blockquote>
-<div><p>Test user login</p>
-</div></blockquote>
-<p>Additional information can also be found in <a class="reference internal" href="verification_guidance.html"><span class="doc">Verification Guidance</span></a>.</p>
-</section>
 </section>
 
 
@@ -668,7 +627,6 @@ A more detailed description of how to link code to requirements is available her
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gtest">gTest</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rust">Rust</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-description">Test description</a></li>
 </ul>
   </nav></div>
 

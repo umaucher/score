@@ -456,6 +456,7 @@
 <li class="toctree-l3"><a class="reference internal" href="verification_templates.html">Verification Templates</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Test Linking to Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verification_report_template.html">Verification Report Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="verification_specification.html">Verification Specification Guidance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows.html">Workflow Verification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workproducts.html">Work products</a></li>
 </ul>
@@ -544,8 +545,8 @@
                 <article class="bd-article">
                   
   <section id="test-linking-to-requirements">
-<h1>Test Linking to Requirements<a class="headerlink" href="#test-linking-to-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-c5b374aa">
+<span id="verification-process-reqs"></span><h1>Test Linking to Requirements<a class="headerlink" href="#test-linking-to-requirements" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-9932aae5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -575,7 +576,22 @@
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>For linking test suites to requirements following metadata shall be used:</p>
 <ul class="simple">
-<li><p>Verifies</p></li>
+<li><dl class="simple">
+<dt>Verifies</dt><dd><ul>
+<li><p>PartiallyVerifies</p></li>
+<li><p>FullyVerifies</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>ASIL</dt><dd><ul>
+<li><p>QM</p></li>
+<li><p>ASIL_B</p></li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><p>Description</p></li>
 <li><dl class="simple">
 <dt>Status</dt><dd><ul>
@@ -601,11 +617,13 @@
 <li><p>Analysis of boundary values (boundary-values)</p></li>
 <li><p>Analysis of equivalence classes (equivalence-classes)</p></li>
 <li><p>Error guessing based on knowledge or experience (error-guessing)</p></li>
+<li><p>Random testing (monkey-testing)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
+<p>Morre information can be found in the <a class="reference internal" href="verification_guidance.html#gd_guidl__verification_guidance" title="gd_guidl__verification_guidance"><em class="xref need">Verification Guidance (gd_guidl__verification_guidance)</em></a> and <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Verification Specification ... (gd_guidl__verification_specification)</em></a>.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -622,7 +640,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-38b12c4a">
+<div class="need_container docutils container" id="SNCB-629af5dd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -689,7 +707,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3f648cbf">
+<div class="need_container docutils container" id="SNCB-a5b45af1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -747,7 +765,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-24627e76">
+<div class="need_container docutils container" id="SNCB-687d67dc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

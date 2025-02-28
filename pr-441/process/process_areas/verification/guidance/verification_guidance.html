@@ -456,6 +456,7 @@
 <li class="toctree-l3"><a class="reference internal" href="verification_templates.html">Verification Templates</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verification_process_toolreqs.html">Test Linking to Requirements</a></li>
 <li class="toctree-l3"><a class="reference internal" href="verification_report_template.html">Verification Report Templates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="verification_specification.html">Verification Specification Guidance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workflows.html">Workflow Verification</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../workproducts.html">Work products</a></li>
 </ul>
@@ -545,9 +546,52 @@
                   
   <section id="verification-guidance">
 <h1>Verification Guidance<a class="headerlink" href="#verification-guidance" title="Link to this heading">#</a></h1>
-<p>This guideline outlines the responsibilities and procedures for developers performing verification activities (test
-case creation, inspection, and review) for documentation, Rust and C/C++ elements of the platform and its tooling.
-Rust, python and gTest are used for test case creation.</p>
+<div class="need_container docutils container" id="SNCB-018deba6">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guidance">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Verification Guidance</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span>status: </span><strong><span><span class="needs_status"><span class="needs_data">valid</span></span></span></strong></div>
+<div class="line"><span>security: </span><strong><span></span></strong></div>
+<div class="line"><span>safety: </span><strong><span></span></strong></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span> </span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">is contained by: <span class="contains"><span><a class="reference internal" href="../workflows.html#wf__verification__plan" title="gd_guidl__verification_guidance">wf__verification__plan</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>This guideline outlines the responsibilities and procedures for developers performing verification activities (test
+case creation, inspection, and review) for documentation, Rust and C/C++ elements of the platform and its tooling.</p>
+<p>Note that rust, python and gTest are used for test case creation.</p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__verification_guidance" title="gd_guidl__verification_guidance">gd_guidl__verification_guidance</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <section id="general-principles">
 <h2>General Principles<a class="headerlink" href="#general-principles" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -568,21 +612,24 @@ not just at the end. This includes unit tests, integration tests, code reviews, 
 <ul class="simple">
 <li><p><strong>Comprehensive Coverage:</strong> Test cases should cover all functional and non-functional requirements, including
 positive, negative, and boundary conditions. Specific attention should be given to corner cases and error handling.</p></li>
-<li><dl class="simple">
-<dt><strong>Unit Testing:</strong> Focus on isolating and testing individual units or components of the code. Strive for high code coverage.</dt><dd><ul>
+<li><p><strong>Unit Testing:</strong> Focus on isolating and testing individual units or components of the code.
+Strive for high code coverage for branches and lines.
+Coverage goals are defined in the <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a>.
+Use the following frameworks:</p>
+<ul>
 <li><p><strong>Rust:</strong> Utilize the built-in testing framework with <code class="docutils literal notranslate"><span class="pre">#[test]</span></code> attributes and the <code class="docutils literal notranslate"><span class="pre">cargo</span> <span class="pre">test</span></code> command.</p></li>
 <li><p><strong>Python:</strong> Use <code class="docutils literal notranslate"><span class="pre">pytest</span></code> frameworks.</p></li>
 <li><p><strong>C++:</strong> Use Google Test frameworks.</p></li>
 </ul>
-</dd>
-</dl>
 </li>
-<li><p><strong>Integration Testing:</strong> Verify the interaction between different components or modules.</p></li>
+<li><p><strong>Integration Testing:</strong> Verify the interaction between different components or modules.
+For integration testing, the ITF (Integration Test Framework) is used. For more information, see
+<code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Link</span> <span class="pre">to</span> <span class="pre">ITF</span> <span class="pre">documentation</span> <span class="pre">once</span> <span class="pre">available</span> <span class="pre">related</span> <span class="pre">feature</span> <span class="pre">request</span> <span class="pre">is</span> <span class="pre">#200]</span></code>.</p></li>
 <li><p><strong>Platform Testing:</strong> Test the platform with configured features as a whole.</p></li>
 <li><p><strong>Regression Testing:</strong> Ensure that changes do not introduce new defects.
-Automate regression tests where possible and execute them as part of CI execution.</p></li>
-<li><p><strong>Performance Testing (when applicable):</strong> Evaluate the performance characteristics of the code, such as execution
-time, memory usage, and resource utilization.</p></li>
+Automate regression tests where possible as they will get executed as part of the CI.</p></li>
+<li><p><strong>Performance Testing (when applicable):</strong> Evaluate the performance characteristics of the code,
+such as execution time, memory usage, and resource utilization.</p></li>
 <li><p><strong>Tool Qualification Testing:</strong> Test the platform tools based on their tool requirements to achive tool qualification.</p></li>
 </ul>
 </section>
@@ -604,11 +651,14 @@ time, memory usage, and resource utilization.</p></li>
 </tr>
 <tr class="row-odd"><td><p>Description</p></td>
 <td><p>Text</p></td>
-<td><p>The description should include
-- The objective of the test.
-- Inputs
-- Expected outcome (e.g. “A success message is displayed.”)
-- Test environment (e.g. network configuration, clean system state)</p></td>
+<td><p>The description should include</p>
+<ul class="simple">
+<li><p>The objective of the test.</p></li>
+<li><p>Inputs</p></li>
+<li><p>Expected outcome (e.g. “A success message is displayed.”)</p></li>
+<li><p>Test environment (e.g. network configuration, clean system state)</p></li>
+</ul>
+</td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>Status</p></td>
@@ -617,13 +667,28 @@ time, memory usage, and resource utilization.</p></li>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>TestType</p></td>
-<td><p>Requirements-based test | Design based tests</p></td>
-<td><p>Assumptions of Use are treated as requirements.</p></td>
+<td><p>requirements-based | interface-test | boundary |
+coverage (various types apply, shall be tool spupported) |
+For <a class="reference internal" href="../workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a> also fault-injection</p></td>
+<td><p>Requirements-based test | Design based tests (Assumptions of Use are treated as requirements.)
+Coverage of branches</p>
+<p>Consult the implemenation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed types.</p>
+</td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>DerivationTechnique</p></td>
-<td><p>Analysis of requirements | Analysis of design</p></td>
-<td><p>Assumptions of Use are treated as requirements.</p></td>
+<td><p>requirements-analysis | boundary-values | equivalence-classes | error-guessing | monkey-testing</p></td>
+<td><p>Options are:</p>
+<ul class="simple">
+<li><p>Analysis of requirements | Analysis of design
+(Assumptions of Use are treated as requirements.)</p></li>
+<li><p>Analysis of Boundary Values</p></li>
+<li><p>Analysis of Equivalence classes</p></li>
+<li><p>Error guessing based on knowledge or experience</p></li>
+<li><p>Random testing</p></li>
+</ul>
+<p>Consult the implemenation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed methods.</p>
+</td>
 <td></td>
 </tr>
 </tbody>
@@ -644,51 +709,12 @@ what is being tested and how.</p>
 </ul>
 </dd>
 </dl>
-<p>Further recommendation can be found in the verification templates <a class="reference internal" href="verification_templates.html"><span class="doc">Verification Templates</span></a></p>
+<p>Test specifications should follow <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Verification Specification ... (gd_guidl__verification_specification)</em></a></p>
 <section id="structuring-of-the-test-case">
 <h3>Structuring of the Test Case<a class="headerlink" href="#structuring-of-the-test-case" title="Link to this heading">#</a></h3>
-<p>To fulfil the requirements for the workproduct <em>Software Verification Specification</em> the test case shall be structured using the Given-When-Then pattern:</p>
-<ul>
-<li><div class="line-block">
-<div class="line">Given (alternatively // Setup )</div>
-<div class="line">This section contains the setup of the input.</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">Expected</div>
-<div class="line">This Section contains the expectation for calls to mocks or stubs</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">When (alternatively  // Call )</div>
-<div class="line">This section contains the call to the software under test.</div>
-</div>
-</li>
-<li><div class="line-block">
-<div class="line">Then (alternatively // Expect )</div>
-<div class="line">This section contains the verification criteria of the test (e.g. all EXPECT statements).</div>
-</div>
-</li>
-</ul>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="n">TEST</span><span class="p">(</span><span class="n">CreateObjectHistory</span><span class="p">,</span><span class="w"> </span><span class="n">GivenVehicleInFront_ExpectHistoryBehindFrontVehicle</span><span class="p">)</span>
-<span class="p">{</span>
-<span class="w">   </span><span class="c1">// Given</span>
-<span class="w">   </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">whatever_input_values</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CreateVehicleInFront</span><span class="p">();</span>
-
-<span class="w">   </span><span class="c1">// Expected</span>
-<span class="w">   </span><span class="n">EXPECT_CALL</span><span class="p">(...,</span><span class="w"> </span><span class="p">...);</span>
-
-<span class="w">   </span><span class="c1">// When</span>
-<span class="w">   </span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">history</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">CreateObjectHistory</span><span class="p">(</span><span class="n">whatever_input_values</span><span class="p">,</span><span class="w"> </span><span class="p">...);</span>
-
-<span class="w">   </span><span class="c1">// Then</span>
-<span class="w">   </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="k">auto</span><span class="w"> </span><span class="n">point</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">history</span><span class="p">)</span>
-<span class="w">   </span><span class="p">{</span>
-<span class="w">      </span><span class="n">EXPECT_EQ</span><span class="p">(...,</span><span class="w"> </span><span class="p">...);</span>
-<span class="w">   </span><span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
+<p>To fulfil the requirements of the workproduct <a class="reference internal" href="../workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a> the
+templates in <a class="reference internal" href="verification_process_toolreqs.html#verification-process-reqs"><span class="std std-ref">Test Linking to Requirements</span></a> shall be used. This includes general information and
+templates for the allowed programming languages.</p>
 </section>
 </section>
 <section id="general-traceability-concept">
