@@ -34,4 +34,11 @@ lint.select = [
 lint.ignore = [
     # Rules we want to ignore go in here.
     # Always provide a comment explaining why.
+
+    # Rule: Unnecessary `else` after `return` statement.
+    # It's quite arguable whether this leads to better or worse readability.
+    # There is a bunch of articles and topics on the matter, e.g.:
+    # * https://www.fluentcpp.com/2018/08/24/how-to-design-early-returns-in-c-based-on-procedural-programming/
+    # * https://blog.mozilla.org/nnethercote/2009/08/31/no-else-after-return-considered-harmful/
+    "RET505",
 ]
