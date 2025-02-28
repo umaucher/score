@@ -50,8 +50,9 @@ Others are modelled as general documents (e.g. the plans which are part of the p
 This plan deals with these documents, which have the following manually set attributes:
 
 * Title: the name of the document (mandatory)
-* Unique Id: the name of the document (mandatory)
+* Unique Id: Id following the naming pattern of the document Title (mandatory)
 * Safety: which ASIL the document supports (mandatory)
+* Author: Who is the main committer to the document (mandatory)
 * Status: describing where in the lifecycle of the document it currently is (mandatory)
 * Tags: can be used to group documents for subsequent filtering (optional)
 
@@ -60,7 +61,6 @@ can be seen in the header section above, see :need:`doc__documentation_mgt_plan`
 
 The following additional attributes of the document are generated automatically during the documentation build:
 
-* Author: from the github information on who last committed the file holding the document "source"
 * Approver: from the github information on who was the last CODEOWNER performing the github review
 * Reviewer: any additional reviewer performing the github review without CODEOWNER rights
 
@@ -71,6 +71,9 @@ The lifecycle of S-CORE documents has two states:
 
 If a document is invalidated it is removed from the project entirely. A document can also transition from Valid to Draft,
 for example if a release was done with a Valid verification report and then the development for the next release is started.
+
+Invalidated documents are still observable as part of the git history in the unlikely case of later referral
+(e.g. for design decisions or audit). In this way, there is even an option to recover the content.
 
 The review of each document is done as defined for this type of work product in the respective process description.
 This means that for some of the work products dedicated checklists are defined, but for others there are not.
