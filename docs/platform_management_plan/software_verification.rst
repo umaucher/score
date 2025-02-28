@@ -97,11 +97,12 @@ automated software build at any time.
 
 The following types of integrations are applicable:
 
-#. **New software elements** get integrated according to the ``[TODO: add link to lifecyle phases]``  of a
-   contribution.
+#. **New software elements** get integrated according to the :need:`gd_guidl__contr_request_guideline`
+   and following the :need:`gd_temp__feat_request_template` for new features.
 #. **Fixes of defects** get integrated based on their prioritization described by the
    :doc:`problem_resolution`.
-
+#. **Changes** get integrated based on the :need:`wf__cr_dc_changerequest` and will follow
+   the :need:`gd_guidl__pull_request_guideline` as any other artifact.
 
 Levels of integration and verification
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -145,7 +146,7 @@ As part of the development of the product:
 As part of supporting activities:
 
 #. :need:`wp__verification__plan`
-#. :need:`wp__verification__specification`
+#. :need:`wp__verification__specification` integrated into the respective test implementations.
 
 The link between a verification specification and the respective requirement or design specification is given by the
 identifier of the reference annotated to the verification specification.
@@ -181,7 +182,7 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - QM, ASIL B
    * - Fault Injection
      - fault-injection
-     - 1, 2, 3
+     - 1
      - ASIL B
    * - Inspection
      - inspection
@@ -196,7 +197,7 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - 1, 2, 3
      - QM, ASIL B
    * - Resource Usage Evaluation (only on reference environment)
-     - resource_usage
+     - resource-usage
      - 1, 2, 3
      - QM, ASIL B
    * - Static Code Analysis
@@ -230,15 +231,19 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - QM, ASIL B
    * - Analysis of Equivalence Classes
      - equivalence-classes
-     - 1, 2, 3
+     - 2, 3
      - QM, ASIL B
    * - Analysis of Requirements
      - requirements-analysis
-     - 1, 2, 3
+     - 2, 3
      - QM, ASIL B
    * - Error Guessing based on Knowledge or Experience
      - error-guessing
      - 1, 2, 3
+     - QM, ASIL B
+   * - Random Testing
+     - monkey-testing
+     - 2, 3
      - QM, ASIL B
 
 Quality criteria
