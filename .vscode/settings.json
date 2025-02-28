@@ -34,6 +34,12 @@
         "editor.rulers": [
             79
         ],
+        // Opinionated option for the future:
+        // "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.sortImports": "explicit"
+        },
+        "editor.defaultFormatter": "charliermarsh.ruff",
     },
 
     // Markdown Settings

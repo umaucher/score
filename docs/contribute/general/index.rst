@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   # Copyright (c) 2024 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,14 +12,13 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Process Areas
-#############
+General
+#######
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
-   requirements_engineering/index.rst
-   safety_management/index.rst
-   documentation_management/index.rst
-   verification/index.rst
+   naming
+   git
+   folder
+   feature_flags
