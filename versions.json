@@ -8,10 +8,6 @@
     "url": "https://eclipse-score.github.io/score/arsibo_FR_logging/"
   },
   {
-    "version": "aschemmel-tech-patch-1",
-    "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-1/"
-  },
-  {
     "version": "aschemmel-tech-patch-3",
     "url": "https://eclipse-score.github.io/score/aschemmel-tech-patch-3/"
   },
@@ -80,10 +76,6 @@
     "url": "https://eclipse-score.github.io/score/pr-432/"
   },
   {
-    "version": "pr-436",
-    "url": "https://eclipse-score.github.io/score/pr-436/"
-  },
-  {
     "version": "pr-441",
     "url": "https://eclipse-score.github.io/score/pr-441/"
   },
@@ -96,10 +88,6 @@
     "url": "https://eclipse-score.github.io/score/pr-500/"
   },
   {
-    "version": "pr-518",
-    "url": "https://eclipse-score.github.io/score/pr-518/"
-  },
-  {
     "version": "pr-526",
     "url": "https://eclipse-score.github.io/score/pr-526/"
   },
@@ -110,6 +98,10 @@
   {
     "version": "pr-534",
     "url": "https://eclipse-score.github.io/score/pr-534/"
+  },
+  {
+    "version": "pr-543",
+    "url": "https://eclipse-score.github.io/score/pr-543/"
   },
   {
     "version": "ulhu_lola_hla",
@@ -126,9 +118,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-543",
-    "url": "https://eclipse-score.github.io/score/pr-543/"
   }
 ]
