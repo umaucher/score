@@ -26,7 +26,7 @@ The objectives of the **S-CORE** integration platform are expressed as stakehold
 These objectives are further detailed and structured in features. Features are described
 as a set of feature requirements with a corresponding feature architecture. The feature
 requirements satisfies the stakeholder requirements. The technical implementation of a feature
-is based on software components, which are built-up by units, the lowest element in our model.
+is based on components, which are built-up by units, the lowest element in our model.
 Components are described by component requirements, a component architecture and a detailed
 design.
 Software modules are used to encapsulate a set of components. Software modules are more or less

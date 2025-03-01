@@ -58,10 +58,6 @@ The next figures sets the focus on the component level and adds the traceability
 Component Requirements to the Component Architecture, Component Safety Analysis
 and the Component Assumption of use. Further the traceability to Component Assumptions of use
 from external Components is included.
-Component Architecture may either built-up of other components, then the traceability may in
-addition also needed to their architectures.
-Or less complex components may not require a Component Architecture, the traceability is not
-required as the architecture can be skipped.
 
 
 .. figure:: _assets/score_traceability_model_cmp_overview_1.svg
@@ -71,6 +67,8 @@ required as the architecture can be skipped.
 
   High level traceability overview for **S-CORE** component work products
 
+Component Architecture may either built-up of other components, then the traceability may in
+addition also needed to their architectures.
 
 .. figure:: _assets/score_traceability_model_cmp_overview_2.svg
   :width: 100%
@@ -79,6 +77,8 @@ required as the architecture can be skipped.
 
   High level traceability overview for **S-CORE** component work products including sub-components
 
+Or less complex components may not require a Component Architecture, the traceability is not
+required as the architecture can be skipped.
 
 .. figure:: _assets/score_traceability_model_cmp_overview_3.svg
   :width: 100%
