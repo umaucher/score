@@ -72,7 +72,7 @@ Schedules
 ~~~~~~~~~
 
 The integration of software elements is driven by contribution requests and their respective
-``[TODO: add link to lifecyle phases]`` model. The contribution of a feature itself implies that it gets fully
+``[TODO: add link to lifecycle phases]`` model. The contribution of a feature itself implies that it gets fully
 verified.
 
 Approach
@@ -111,7 +111,7 @@ There are the following different levels of integration (2, 3) and verification 
 
 1. Software unit verification to verify software detailed design
 2. Software component verification to verify the integration of units to a component and also
-   the integration of smaller component(s) to a componant based on
+   the integration of smaller component(s) to a component based on
 
    #. component architecture and
    #. component requirements
@@ -121,12 +121,12 @@ There are the following different levels of integration (2, 3) and verification 
    #. feature architecture and
    #. feature requirements
 
-Workproducts and traceability
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Work products and traceability
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The traceability between verification relevant work products is one of the defined objectives. An overall overview of
-the different workproducts and their relationship is given in project context - see
-:doc:`/process//workproducts/index`. The following workproducts are related to verification
+the different work products and their relationship is given in project context - see
+:doc:`/process/workproducts/index`. The following work products are related to verification
 activities in general.
 
 As part of the development of the product:
@@ -161,7 +161,7 @@ applicable level. Another column defines if a respective method is supposed to b
 QM or ASIL B relevant.
 
 Automated test cases should contain further information about which methods have been applied. The corresponding
-guidance is given here: :doc:`/process/process_areas/verification/guidance/verification_guidance`. The identifier of the respective
+guidance is given here: :need:`gd_guidl__verification_guidance`. The identifier of the respective
 method is to be used as meta data (*TestType* and *DerivationTechnique*).
 
 .. list-table:: Software verification methods (TestType)
@@ -174,48 +174,54 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - Applicable for QM / ASIL B
    * - Control Flow Analysis
      - control-flow-analysis
-     - 1, 2, 3
-     - QM, ASIL B
+     - 1, 2, -
+     - QM & ASIL B
    * - Data Flow Analysis
      - data-flow-analysis
-     - 1, 2, 3
-     - QM, ASIL B
+     - 1, 2, -
+     - QM & ASIL B
    * - Fault Injection
      - fault-injection
-     - 1
+     - 1, -, -
      - ASIL B
    * - Inspection
      - inspection
-     - 1
+     - 1, -, -
      - ASIL B
    * - Interface Test
      - interface-test
-     - 1, 2, 3
-     - QM, ASIL B
+     - -, 2, 3
+     - QM & ASIL B
    * - Requirements-based Test
      - requirements-based
-     - 1, 2, 3
-     - QM, ASIL B
+     - -,  2, 3
+     - QM & ASIL B
    * - Resource Usage Evaluation (only on reference environment)
      - resource-usage
-     - 1, 2, 3
-     - QM, ASIL B
+     - -, -, 3
+     - QM & ASIL B
    * - Static Code Analysis
      - static-code-analysis
      - 1, 2, 3
-     - QM, ASIL B
+     - QM & ASIL B
    * - Structural Statement Coverage (Code coverage)
      - structural-statement-coverage
-     - 1
-     - QM, ASIL B
+     - 1, -, -
+     - ASIL B
    * - Structural Branch Coverage (Code coverage)
      - structural-branch-coverage
-     - 1
-     - QM, ASIL B
+     - 1, -, -
+     - ASIL B
    * - Walkthrough
      - walkthrough
      - 1, 2, 3
      - QM
+
+For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
+These are data-flow-analysis as well as control-flow-analysis
+
+
+
 
 .. list-table:: Test case derivation methods (DerivationTechnique)
    :header-rows: 1
@@ -239,12 +245,18 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - QM, ASIL B
    * - Error Guessing based on Knowledge or Experience
      - error-guessing
-     - 1, 2, 3
+     - 2, 3
      - QM, ASIL B
    * - Random Testing
      - monkey-testing
-     - 2, 3
-     - QM, ASIL B
+     - 1, 2, 3
+     - ASIL B
+
+For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
+testing approaches, but cannot omit them completely. It may be possible to reduce the
+number of boundary-values tested based on a risk assessment and focus on impactful boundaries.
+Similar for the equivalence-classes the
+
 
 Quality criteria
 ~~~~~~~~~~~~~~~~
@@ -297,7 +309,7 @@ Test development
 The verification steps as well as the development of test cases is done along with the implementation of code. A full
 automation of tests should be achieved and the derived test cases should contain meta data that gives further
 information as defined in :doc:`/process/process_areas/verification/guidance/verification_process_toolreqs`. The list of
-relevant workproducts is shown above (as part of the development of the product).
+relevant work products is shown above (as part of the development of the product).
 
 The different environments that can be used for the test development are defined below.
 

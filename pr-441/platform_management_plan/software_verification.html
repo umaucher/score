@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-9fb924e3">
+  <div class="need_container docutils container" id="SNCB-7d122aa8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -610,7 +610,7 @@ the <a class="reference internal" href="risk_management.html"><span class="doc">
 <section id="schedules">
 <h3>Schedules<a class="headerlink" href="#schedules" title="Link to this heading">#</a></h3>
 <p>The integration of software elements is driven by contribution requests and their respective
-<code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">add</span> <span class="pre">link</span> <span class="pre">to</span> <span class="pre">lifecyle</span> <span class="pre">phases]</span></code> model. The contribution of a feature itself implies that it gets fully
+<code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">add</span> <span class="pre">link</span> <span class="pre">to</span> <span class="pre">lifecycle</span> <span class="pre">phases]</span></code> model. The contribution of a feature itself implies that it gets fully
 verified.</p>
 </section>
 </section>
@@ -645,7 +645,7 @@ the <a class="reference internal" href="../contribute/contribution_request/contr
 <ol class="arabic simple">
 <li><p>Software unit verification to verify software detailed design</p></li>
 <li><p>Software component verification to verify the integration of units to a component and also
-the integration of smaller component(s) to a componant based on</p>
+the integration of smaller component(s) to a component based on</p>
 <ol class="arabic simple">
 <li><p>component architecture and</p></li>
 <li><p>component requirements</p></li>
@@ -659,11 +659,11 @@ the integration of smaller component(s) to a componant based on</p>
 </li>
 </ol>
 </section>
-<section id="workproducts-and-traceability">
-<h3>Workproducts and traceability<a class="headerlink" href="#workproducts-and-traceability" title="Link to this heading">#</a></h3>
+<section id="work-products-and-traceability">
+<h3>Work products and traceability<a class="headerlink" href="#work-products-and-traceability" title="Link to this heading">#</a></h3>
 <p>The traceability between verification relevant work products is one of the defined objectives. An overall overview of
-the different workproducts and their relationship is given in project context - see
-<a class="reference internal" href="../process/workproducts/index.html"><span class="doc">Workproducts</span></a>. The following workproducts are related to verification
+the different work products and their relationship is given in project context - see
+<a class="reference internal" href="../process/workproducts/index.html"><span class="doc">Workproducts</span></a>. The following work products are related to verification
 activities in general.</p>
 <p>As part of the development of the product:</p>
 <ol class="arabic simple">
@@ -694,7 +694,7 @@ methods are not applied on each verification level. Due to that the following ta
 applicable level. Another column defines if a respective method is supposed to be applied if the linked references are
 QM or ASIL B relevant.</p>
 <p>Automated test cases should contain further information about which methods have been applied. The corresponding
-guidance is given here: <a class="reference internal" href="../process/process_areas/verification/guidance/verification_guidance.html"><span class="doc">Verification Guidance</span></a>. The identifier of the respective
+guidance is given here: <a class="reference internal" href="../process/process_areas/verification/guidance/verification_guidance.html#gd_guidl__verification_guidance" title="gd_guidl__verification_guidance"><em class="xref need">Verification Guidance (gd_guidl__verification_guidance)</em></a>. The identifier of the respective
 method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique</em>).</p>
 <div class="pst-scrollable-table-container"><table class="table table-center" id="id1">
 <caption><span class="caption-number">Table 22 </span><span class="caption-text">Software verification methods (TestType)</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
@@ -708,53 +708,53 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 <tbody>
 <tr class="row-even"><td><p>Control Flow Analysis</p></td>
 <td><p>control-flow-analysis</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>1, 2, -</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Data Flow Analysis</p></td>
 <td><p>data-flow-analysis</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>1, 2, -</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Fault Injection</p></td>
 <td><p>fault-injection</p></td>
-<td><p>1</p></td>
+<td><p>1, -, -</p></td>
 <td><p>ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Inspection</p></td>
 <td><p>inspection</p></td>
-<td><p>1</p></td>
+<td><p>1, -, -</p></td>
 <td><p>ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Interface Test</p></td>
 <td><p>interface-test</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>-, 2, 3</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Requirements-based Test</p></td>
 <td><p>requirements-based</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>-,  2, 3</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Resource Usage Evaluation (only on reference environment)</p></td>
 <td><p>resource-usage</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>-, -, 3</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Static Code Analysis</p></td>
 <td><p>static-code-analysis</p></td>
 <td><p>1, 2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>QM &amp; ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Structural Statement Coverage (Code coverage)</p></td>
 <td><p>structural-statement-coverage</p></td>
-<td><p>1</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>1, -, -</p></td>
+<td><p>ASIL B</p></td>
 </tr>
 <tr class="row-odd"><td><p>Structural Branch Coverage (Code coverage)</p></td>
 <td><p>structural-branch-coverage</p></td>
-<td><p>1</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>1, -, -</p></td>
+<td><p>ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Walkthrough</p></td>
 <td><p>walkthrough</p></td>
@@ -764,6 +764,8 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 </tbody>
 </table>
 </div>
+<p>For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
+These are data-flow-analysis as well as control-flow-analysis</p>
 <div class="pst-scrollable-table-container"><table class="table table-center" id="id2">
 <caption><span class="caption-number">Table 23 </span><span class="caption-text">Test case derivation methods (DerivationTechnique)</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <thead>
@@ -791,17 +793,21 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 </tr>
 <tr class="row-odd"><td><p>Error Guessing based on Knowledge or Experience</p></td>
 <td><p>error-guessing</p></td>
-<td><p>1, 2, 3</p></td>
+<td><p>2, 3</p></td>
 <td><p>QM, ASIL B</p></td>
 </tr>
 <tr class="row-even"><td><p>Random Testing</p></td>
 <td><p>monkey-testing</p></td>
-<td><p>2, 3</p></td>
-<td><p>QM, ASIL B</p></td>
+<td><p>1, 2, 3</p></td>
+<td><p>ASIL B</p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
+testing approaches, but cannot omit them completely. It may be possible to reduce the
+number of boundary-values tested based on a risk assessment and focus on impactful boundaries.
+Similar for the equivalence-classes the</p>
 </section>
 <section id="quality-criteria">
 <h3>Quality criteria<a class="headerlink" href="#quality-criteria" title="Link to this heading">#</a></h3>
@@ -862,7 +868,7 @@ to be reached with every contribution.</p>
 <p>The verification steps as well as the development of test cases is done along with the implementation of code. A full
 automation of tests should be achieved and the derived test cases should contain meta data that gives further
 information as defined in <a class="reference internal" href="../process/process_areas/verification/guidance/verification_process_toolreqs.html"><span class="doc">Test Linking to Requirements</span></a>. The list of
-relevant workproducts is shown above (as part of the development of the product).</p>
+relevant work products is shown above (as part of the development of the product).</p>
 <p>The different environments that can be used for the test development are defined below.</p>
 </section>
 <section id="test-execution-and-result-analysis">
@@ -1000,7 +1006,7 @@ running on a reference hardware in context of this project can be taken as a sta
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-approach">General approach</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-integration">Software integration</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#levels-of-integration-and-verification">Levels of integration and verification</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workproducts-and-traceability">Workproducts and traceability</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-products-and-traceability">Work products and traceability</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-criteria">Quality criteria</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-development">Test development</a></li>
