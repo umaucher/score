@@ -1,3 +1,6 @@
+# .env commonly stores user specific configuration like API keys
+.env
+
 # Bazel
 bazel-*
 MODULE.bazel.lock

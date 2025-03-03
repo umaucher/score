@@ -42,3 +42,7 @@ lint.ignore = [
     # * https://blog.mozilla.org/nnethercote/2009/08/31/no-else-after-return-considered-harmful/
     "RET505",
 ]
+
+[tool.ariadne-codegen]
+schema_path = "schema.docs.graphql"
+enable_custom_operations = true
