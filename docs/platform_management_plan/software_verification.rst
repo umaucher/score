@@ -161,7 +161,7 @@ applicable level. Another column defines if a respective method is supposed to b
 QM or ASIL B relevant.
 
 Automated test cases should contain further information about which methods have been applied. The corresponding
-guidance is given here: :need:`gd_guidl__verification_guidance`. The identifier of the respective
+guidance is given here: :need:`gd_guidl__verification_guide`. The identifier of the respective
 method is to be used as meta data (*TestType* and *DerivationTechnique*).
 
 .. list-table:: Software verification methods (TestType)
