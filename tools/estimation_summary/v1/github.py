@@ -2,11 +2,10 @@ import sys
 from collections import defaultdict
 from dataclasses import dataclass, field
 
-sys.path.insert(0, ".")
+# sys.path.insert(0, ".")
+import github_types as github_types
 import query_projectv2_issues
 from github_basics import GitHubClient_Basic
-
-import tools.estimation_summary.github_types as github_types
 
 
 @dataclass

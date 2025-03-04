@@ -4,7 +4,9 @@ from collections import defaultdict
 from dataclasses import dataclass, field
 from pprint import pprint
 
-sys.path.insert(0, ".")
+import github_types
+
+# sys.path.insert(0, ".")
 from github_basics import GitHubClient_Basic, parse
 
 # TODO: maybe this is not "github", but "issues_from_project"?
@@ -122,12 +124,13 @@ def _decode(project: int, item: dict):
         # TODO: how to query only issues?
         return None
 
-    issue = Issue(
+    issue = github_types.Issue(
         id=content["number"],
         title=content["title"],
         url=content["url"],
         closed=content["closed"],
         milestone=content["milestone"]["title"] if content["milestone"] else None,
+        custom_fields={},
     )
 
     for f in item.get("fieldValues", {}).get("nodes", []):

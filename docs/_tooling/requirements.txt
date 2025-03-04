@@ -24,6 +24,13 @@ pytest
 pytest-cov
 
 # For scripts that access github GrahlQL API
+# v1
 python-dotenv
 gql[all]
 diskcache
+
+# v2-codegen
+ariadne-codegen
+
+# v2-dev
+pydantic

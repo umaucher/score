@@ -1,0 +1,9 @@
+[tool.ariadne-codegen]
+schema_path = "schema.docs.graphql"
+queries_path  = "queries"
+
+#target_package_name = "github_generated_client" # default: "graphql_client"
+
+# more config options:
+# https://github.com/mirumee/ariadne-codegen
+

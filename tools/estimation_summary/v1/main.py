@@ -2,8 +2,8 @@ import asyncio
 from collections import defaultdict
 from pprint import pprint
 
-import src.github_types as gt
-from src.github import GitHubClient
+import github_types as gt
+from github import GitHubClient
 
 size_to_days = {
     "size:S (hours...)": 1,
@@ -25,8 +25,6 @@ async def main():
     async with GitHubClient("eclipse-score") as client:
         issues: list[gt.Issue] = await client.issues_from_project(6)
 
-        pprint(client.project_field_ids)
-
         # Group issues by month and size
         data = defaultdict(lambda: defaultdict(lambda: list()))
         for issue in issues:
@@ -47,12 +45,12 @@ async def main():
             summary = f"{month} 📅: {total} days ({', '.join(per_size)})"
             print(summary)
 
-            await client.set_project_single_select_field_description(
-                project_number=6,
-                field="month",
-                field_value=month,
-                new_description=summary,
-            )
+            # await client.set_project_single_select_field_description(
+            #     project_number=6,
+            #     field="month",
+            #     field_value=month,
+            #     new_description=summary,
+            # )
 
 
 if __name__ == "__main__":
