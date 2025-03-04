@@ -10,14 +10,14 @@ size_to_days = {
     "size:M (days...)": 5,
     "size:L (weeks...)": 12,
     "size:XL (months... too large!)": 20,
-    "not estimated": 5,
+    None: 5,
 }
 size_to_short = {
     "size:S (hours...)": "S",
     "size:M (days...)": "M",
     "size:L (weeks...)": "L",
     "size:XL (months... too large!)": "XL",
-    "not estimated": "<not estimated>",
+    None: "N/A",
 }
 
 
@@ -30,7 +30,7 @@ async def main():
         for issue in issues:
             if not issue.closed and "is_parent" not in issue.custom_fields:
                 month = issue.custom_fields.get("month", "unplanned")
-                size = issue.custom_fields.get("size", "not estimated")
+                size = issue.custom_fields.get("size", None)
                 data[month][size].append(issue)
 
         # Print summary

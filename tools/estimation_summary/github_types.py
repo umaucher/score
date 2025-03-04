@@ -1,5 +1,7 @@
 from dataclasses import dataclass
 
+# These types are made for business logic. They may not match the actual
+# GitHub API types exactly.
 
 @dataclass
 class SingleSelectFieldOption:

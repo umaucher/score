@@ -1,0 +1,9 @@
+mutation UpdateProjectReadme($projectId: ID!, $readme: String!) {
+  updateProjectV2(input: { projectId: $projectId, readme: $readme }) {
+    projectV2 {
+      id
+      title
+      readme
+    }
+  }
+}

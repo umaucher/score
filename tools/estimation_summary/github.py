@@ -5,6 +5,7 @@ from dataclasses import dataclass, field
 # sys.path.insert(0, ".")
 import github_types as github_types
 import query_projectv2_issues
+import query_projectv2_single_select_fields
 from github_basics import GitHubClient_Basic
 
 
@@ -44,5 +45,5 @@ class GitHubClient(GitHubClient_Basic):
         Warning: result is cached for 1 hour.
         Changes to GitHub will not be reflected.
         """
-        return await github_types.run_query(self, project_number)
+        return await query_projectv2_single_select_fields.run_query(self, project_number)
 

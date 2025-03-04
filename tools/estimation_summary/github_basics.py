@@ -55,6 +55,12 @@ def _load_github_graphql_schema():
     schema = _download(
         "https://docs.github.com/public/fpt/schema.docs.graphql",
     )
+
+    # Store schema for LSP
+    file = Path(__file__).parent / ".schema.docs.graphql"
+    if not file.exists():
+        file.write_text(schema)
+
     return graphql.build_ast_schema(graphql.parse(schema))
 
 GITHUB_SCHEMA = _load_github_graphql_schema()
