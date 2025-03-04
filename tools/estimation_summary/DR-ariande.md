@@ -60,7 +60,9 @@ Ariadne Codegen does not seem worth the extra complexity for this use case.
 When to Revisit the Decision:
 * If the schema-generated models become more widely used across the project.
 * If the schema-based models simplify more complex data structures.
-* If we want to explore schema-only code generation without query methods. Next Steps:
-* If schema generation becomes more relevant in the future, consider
+* If the current parser approach becomes too cumbersome to maintain.
+
+Next Steps:
+* Explore schema-only code generation without query methods. Consider
   datamodel-code-generator as an alternative, since it focuses solely on schema
   generation without adding unnecessary query-handling complexity.
