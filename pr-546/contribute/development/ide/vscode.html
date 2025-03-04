@@ -532,19 +532,21 @@
 </ul>
 <section id="starlark">
 <h2>Starlark<a class="headerlink" href="#starlark" title="Link to this heading">#</a></h2>
-<p>For Starlark currently no solution is integrated in VScode.</p>
+<p>For <em>Starlark</em> currently no solution is integrated in VScode.</p>
 </section>
 <section id="c">
 <h2>C++<a class="headerlink" href="#c" title="Link to this heading">#</a></h2>
 </section>
 <section id="python">
 <h2>Python<a class="headerlink" href="#python" title="Link to this heading">#</a></h2>
-<p>For Python currently the full feature set of the official <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>  Extension (MIT License) is provided included features e.g. autocomplete, syntax checking, …</p>
-<p>Also the configuration for displaying and executing pytest in the IDE is provided.</p>
+<p>For <em>Python</em> to work inside VS code the virtual environment needs to be selected. If not suggested automatically it can be performed manually:</p>
+<p>Click on the <em>Python</em> Version which is displayed in the lower right corner of the screen and select the <em>.venv_docs</em>.</p>
+<p>After selecting the virtual environment the full feature set of the official <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python</a>  Extension (MIT License) is provided included features e.g. autocomplete, syntax checking, …</p>
+<p>Also the configuration for displaying and executing <em>pytest</em> in the IDE is provided.</p>
 <p>As a linter the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff">ruff extension</a>  (MIT License) is set up.</p>
 <section id="debugging">
 <h3>Debugging<a class="headerlink" href="#debugging" title="Link to this heading">#</a></h3>
-<p>For debugging the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy">Python Debugger</a> (MIT License) and <em>debugpy</em> can be used for remote debugging.</p>
+<p>For <em>usual</em> debugging the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.debugpy">Python Debugger</a> (MIT License) can be used.</p>
 <section id="debugging-the-docs-build">
 <h4>Debugging the docs build<a class="headerlink" href="#debugging-the-docs-build" title="Link to this heading">#</a></h4>
 <p>For debugging the docs environment all necessary configuration is already provided. It can be activated for the incremental build via the following command:</p>
@@ -552,9 +554,9 @@
 </pre></div>
 </div>
 </section>
-<section id="manual-debugging">
-<h4>Manual debugging<a class="headerlink" href="#manual-debugging" title="Link to this heading">#</a></h4>
-<p>For all other tools the debugging needs to be setup manually. Therefore following steps need to be executed:</p>
+<section id="debugging-python-code-started-via-bazel">
+<h4>Debugging python code started via bazel<a class="headerlink" href="#debugging-python-code-started-via-bazel" title="Link to this heading">#</a></h4>
+<p>In rare cases where this does not fit, mostly because you want to start the tool via bazel, you can reuse the <em>debugpy</em> approach from <em>//docs:incremental</em> and use remote debugging:</p>
 <ol class="arabic">
 <li><p>Add following code to the project (e.g. the __init__.py)</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">debugpy</span><span class="o">.</span><span class="n">listen</span><span class="p">((</span><span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="o">&lt;&lt;</span><span class="n">port</span><span class="o">&gt;&gt;</span><span class="p">))</span>
@@ -565,9 +567,6 @@
 </li>
 <li><p>Create a launch configuration (can also be done automatically in VScode) similar to this</p>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-<span class="c1">// Use IntelliSense to learn about possible attributes.</span>
-<span class="c1">// Hover to view descriptions of existing attributes.</span>
-<span class="c1">// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387</span>
 <span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2.0&quot;</span><span class="p">,</span>
 <span class="nt">&quot;configurations&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <span class="w">   </span><span class="p">{</span>
@@ -576,7 +575,7 @@
 <span class="w">         </span><span class="nt">&quot;request&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;attach&quot;</span><span class="p">,</span>
 <span class="w">         </span><span class="nt">&quot;connect&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">            </span><span class="nt">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;&lt;localhost or name of remote workstation&gt;&gt;&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;&lt;portnumber&gt;&gt;&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;&lt;&lt;port number&gt;&gt;&quot;</span><span class="p">,</span>
 <span class="w">         </span><span class="p">},</span>
 <span class="w">   </span><span class="p">}</span>
 <span class="w">   </span><span class="p">]</span>
@@ -600,7 +599,7 @@
 <li><p>live-preview within IDE</p></li>
 <li><p>autocompletion</p></li>
 </ul>
-<p>Therefore a configuration for following plugins is available:</p>
+<p>Therefore when you open the project you get some recommendations for extensions (open directory) or preinstalled extensions (open devcontainer). A configuration for following plugins is available:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext">lextudio.restructuredtext</a> : rst syntax highlighting (MIT License)</p></li>
@@ -608,8 +607,9 @@
 <li><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=usernamehw.errorlens">usernamehw.errorlens</a>: highlights errors and warnings in IDE (MIT License)</p></li>
 </ul>
 </div></blockquote>
-<p>The live-preview can then be activated inside a .rst file by pressing Ctrl + Shift + V or clicking on the tiny symbol on the top right corner which looks like a book with a magnifier.</p>
-<p>If the sphinx configuration is altered the language server has to be restartet: Ctrl + Shift + P and select “Esbonio: Restart Language Server”</p>
+<p>The live-preview can then be activated inside a .rst file by pressing “Ctrl + Shift + V” or clicking on the tiny symbol on the top right corner which looks like a book with a magnifier.</p>
+<p>If the sphinx configuration is altered the language server has to be restarted:</p>
+<p>“Ctrl + Shift + P” and select “Esbonio: Restart Language Server”</p>
 <p>If there is any issue with the preview or syntax highlighting the error log can be visualized via the output and select “Esbonio”</p>
 </section>
 </section>
@@ -666,7 +666,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#python">Python</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging">Debugging</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging-the-docs-build">Debugging the docs build</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#manual-debugging">Manual debugging</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#debugging-python-code-started-via-bazel">Debugging python code started via bazel</a></li>
 </ul>
 </li>
 </ul>

@@ -525,9 +525,11 @@
 <section id="general-setup">
 <h2>General Setup<a class="headerlink" href="#general-setup" title="Link to this heading">#</a></h2>
 <p>The basic steps for setup the development environment and building the source file are described in the <a class="reference external" href="https://github.com/eclipse-score/score/blob/main/README.md">readme.md</a> of the score repository.</p>
-<p>This includes:
-* on your linux operating system <a class="reference external" href="https://github.com/bazelbuild/bazelisk">Bazelisk</a> is available
-* the score repository is cloned to your hard drive</p>
+<p>This includes:</p>
+<ul class="simple">
+<li><p>on your linux operating system <a class="reference external" href="https://github.com/bazelbuild/bazelisk">Bazelisk</a> is available</p></li>
+<li><p>the score repository is cloned to your hard drive</p></li>
+</ul>
 <p>Additional assistance for working with Bazel is provided by following tools:</p>
 <section id="buildifier">
 <span id="id1"></span><h3>Buildifier<a class="headerlink" href="#buildifier" title="Link to this heading">#</a></h3>
@@ -575,24 +577,25 @@ rm<span class="w"> </span>-rf<span class="w"> </span>bazel
 </section>
 <section id="ide-support">
 <h2>IDE Support<a class="headerlink" href="#ide-support" title="Link to this heading">#</a></h2>
-<p>Currently as a goal for this project the IDE shall provide support for:</p>
-<ul class="simple">
-<li><p>Starlark (Bazel)</p></li>
-<li><p>C++</p></li>
-<li><p>Python</p></li>
-<li><p>Sphinx</p></li>
-</ul>
-<p>The tooling environment, which includes all essential python packages can be built in a <em>virtual python environment</em> which is located in &lt;workspace_root/.venv_dovs&gt;. It needs be build first:</p>
+<p>Currently as a goal for this project the IDE shall provide support for most of the languages which are used in this project. For this Project <em>VS Code</em> is selected as the primary IDE. This means that only <em>VS code</em> will be checked in case of breaking changes!</p>
+<p>Other IDE integrations are provided on a community best effort basis.</p>
+<section id="python-environment">
+<h3>Python Environment<a class="headerlink" href="#python-environment" title="Link to this heading">#</a></h3>
+<p>The tooling environment, which includes all essential python packages for <em>docs</em> can be built in a <em>virtual python environment</em> which is located in &lt;workspace_root/.venv_dovs&gt;. It needs be build first:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bazel<span class="w"> </span>run<span class="w"> </span>//docs:ide_support
 </pre></div>
 </div>
 <p>Later the different IDEs shall be configured to use the tools which were installed into this virtual environment.</p>
+</section>
+<section id="ide-guides">
+<h3>IDE Guides<a class="headerlink" href="#ide-guides" title="Link to this heading">#</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="ide/vscode.html">VS Code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ide/clion.html">CLion</a></li>
 </ul>
 </div>
+</section>
 </section>
 </section>
 
@@ -648,7 +651,11 @@ rm<span class="w"> </span>-rf<span class="w"> </span>bazel
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#autocompletion-in-the-shell">Autocompletion in the Shell</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ide-support">IDE Support</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ide-support">IDE Support</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#python-environment">Python Environment</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ide-guides">IDE Guides</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
