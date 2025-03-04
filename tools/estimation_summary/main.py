@@ -34,7 +34,8 @@ async def main():
                 size = issue.custom_fields.get("size", None)
                 data[month][size].append(issue)
 
-        # Print summary
+        # Collect summary
+        summary = []
         for month in sorted(data.keys()):
             total = 0
 
@@ -43,22 +44,14 @@ async def main():
                 total += len(issues) * size_to_days[size]
                 per_size.append(f"{len(issues)}x{size_to_short[size]}")
 
-            summary = f"{month} 📅: {total} days ({', '.join(per_size)})"
-            print(summary)
+            summary.append(f"{month} 📅: {total} days ({', '.join(per_size)})")
 
-            # await client.set_project_single_select_field_description(
-            #     project_number=6,
-            #     field="month",
-            #     field_value=month,
-            #     new_description=summary,
-            # )
-
-            await queries.set_project_description.run_mutation(
-                client=client,
-                org="eclipse-score",
-                project_number=6,
-                readme=summary,
-            )
+        await queries.set_project_description.run_mutation(
+            client=client,
+            org="eclipse-score",
+            project_number=6,
+            readme="\n".join(summary),
+        )
 
 
 if __name__ == "__main__":

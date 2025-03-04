@@ -1,5 +1,5 @@
-query GetProjectId($owner: String!, $projectNumber: Int!) {
-  user(login: $owner) {
+query GetProjectId($org: String!, $projectNumber: Int!) {
+  organization(login: $org) {
     projectV2(number: $projectNumber) {
       id
     }

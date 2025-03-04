@@ -1,3 +1,4 @@
+import functools
 import os
 import sys
 import urllib.request
@@ -44,6 +45,11 @@ def _download(
     except Exception as e:
         sys.exit(f"❌ Failed to download {url}: {str(e)}")
 
+@functools.cache
+def get_query(name):
+    file = Path(__file__).parent / "queries" / f"{name}.graphql"
+    query = file.read_text()
+    return parse(query)
 
 def _load_github_graphql_schema():
     """

@@ -8,13 +8,7 @@ from pprint import pprint
 import github_types
 
 # sys.path.insert(0, ".")
-from github_basics import GitHubClient_Basic, parse
-
-
-@functools.cache
-def _query():
-    query = Path(__file__).with_suffix(".graphql").read_text()
-    return parse(query)
+from github_basics import GitHubClient_Basic, get_query, parse
 
 
 def _decode(project: int, item: dict):
@@ -72,11 +66,23 @@ async def run_mutation(
     # Note: would be nice if we had a code generator that would have generated
     # an appropriate dataclass for the return type of this query...
 
-    result = await client._execute(
-        query=_query(),
+
+    id = await client._execute(
+        query=get_query("get_project_id"),
         variable_values={
             "org": org,
-            "projectId": project_number,
+            "projectNumber": project_number,
+        },
+    )
+    # pprint(id) -> {'organization': {'projectV2': {'id': 'PVT_kwDOCy9hX84AzmuL'}}}
+    id = id["organization"]["projectV2"]["id"]
+    assert isinstance(id, str), id
+
+    result = await client._execute(
+        query=get_query(Path(__file__).stem),
+        variable_values={
+            "org": org,
+            "projectId": id,
             "readme": readme,
         },
     )

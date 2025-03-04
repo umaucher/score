@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 # sys.path.insert(0, ".")
 import github_types as github_types
-import query_projectv2_issues
+import queries.get_projectv2_issues
 import query_projectv2_single_select_fields
 from github_basics import GitHubClient_Basic
 
@@ -16,6 +16,7 @@ class ProjectData:
 
     single_select_fields: dict[str, dict[str, str]] = field(default_factory=dict)
     """field_name -> option_name -> option_id"""
+
 
 class GitHubClient(GitHubClient_Basic):
     def __init__(self, org: str, token: str | None = None):
@@ -36,7 +37,7 @@ class GitHubClient(GitHubClient_Basic):
         Warning: result is cached for 1 hour.
         Changes to GitHub will not be reflected.
         """
-        return await query_projectv2_issues.run_query(self, project_number)
+        return await queries.get_projectv2_issues.run_query(self, project_number)
 
     async def single_select_fields_in_project(self, project_number: int):
         """
@@ -45,5 +46,6 @@ class GitHubClient(GitHubClient_Basic):
         Warning: result is cached for 1 hour.
         Changes to GitHub will not be reflected.
         """
-        return await query_projectv2_single_select_fields.run_query(self, project_number)
-
+        return await query_projectv2_single_select_fields.run_query(
+            self, project_number
+        )
