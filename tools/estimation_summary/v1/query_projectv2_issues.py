@@ -126,12 +126,17 @@ def _decode(project: int, item: dict):
 
     issue = github_types.Issue(
         id=content["number"],
+        # v2: id=content.numb
         title=content["title"],
         url=content["url"],
         closed=content["closed"],
         milestone=content["milestone"]["title"] if content["milestone"] else None,
         custom_fields={},
     )
+
+    # v2:
+    # if item.fieldValues:
+    #     for f in item.fieldValues.nodes:
 
     for f in item.get("fieldValues", {}).get("nodes", []):
         if not f:
