@@ -100,6 +100,75 @@ Available templates:
 Feature request: :need:`gd_temp__change__feature_request`
 
 
+Change Request Infrastructure and Types
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:need:`GitHub Issues (ISSUE) <gd_guidl__platform__issue>`) are used for managing Change Requests.
+The tool is used to create, control, manage and monitor change requests within **S-CORE**.
+
+Changes are clustered in the following types:
+
+.. list-table:: Change Request Types
+   :header-rows: 1
+   :widths: 15,85,15
+
+   * - Type
+     - Description
+     - Infrastructure
+   * - Feature
+     - Created by :need:`Contributor <rl__contributor>` to change requirements and work products, e.g. creating new feature, scope change of existing feature
+     - ISSUE with label ``feature_request``
+   * - Improvement
+     - Created by :need:`Contributor <rl__contributor>` to improve work products, e.g. code refactoring
+     - ISSUE with label ``improvement``
+   * - Bugfix
+     - Created by :need:`Contributor <rl__contributor>` to gix bugs in work products
+     - ISSUE with label ``bugfix``
+
+
+.. gd_guidl:: Issue Guideline
+   :id: gd_guidl__platform__issue
+   :status: valid
+
+
+Change Request Workflow
+^^^^^^^^^^^^^^^^^^^^^^^
+
+In General, every Change Request follows the following steps:
+
+* 1. Open/Create the Change Request
+* 2. Analyze the Change Request
+* 3. Approve the Change Request
+* 4. Implement the Change Request
+* 5. Verify successful implementation of the Change Request
+* 6. Close the Change Request
+
+To 1. Open/Create the Change Request:
+
+An ISSUE is the **ONLY** way to create a Change Request in **S-COPRE**.
+
+For creating ISSUEs compare here:  `Creating a GitHub Issue (Github Docs) <https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue>`_.
+
+.. figure:: _assets/score_change_request_workflow.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Change Request Workflow Overview
+
+  Change Request Workflow Overview
+
+:need:`Contributor <rl__contributor>` creates an ISSUE with the expected content
+(depends on the type). The ISSUE is linked to a :need:`PR (Pull Request) <gd_guidl__platform__pull_request>`,
+which contains the affeted work products. As long as the :need:`Contributor <rl__contributor>` wants
+to discuss the Change Request, the PR is kept in status ``DRAFT``. When ready to review, the status
+of the PR is changed to ``OPEN``.
+
+To 2. Analyze the Change Request:
+
+The Change Request is analyzed from the :need:`Committer <rl__committer>` together with the
+:need:`Contributor <rl__contributor>` and the results are documented in the ISSUE.
+Therefore the **S-CORE** project provides content specific templates, which the
+contributor (:need:`Contributor <rl__contributor>`) must use for his Change Request.
+
 .. gd_guidl:: Pull Request Guideline
    :id: gd_guidl__platform__pull_request
    :status: valid
@@ -191,31 +260,7 @@ At any point the contributor (:need:`Contributor <rl__contributor>`) may decide 
 with the PR, then the contributor (:need:`Contributor <rl__contributor>`) just closes the PR.
 
 
-.. gd_guidl:: Issue Guideline
-   :id: gd_guidl__platform__issue
-   :status: valid
 
-
-What is a GitHub Issue (ISSUE)?
-"""""""""""""""""""""""""""""""
-A ISSUE is the way to report bugs or propose improvements without knowing the solution and to
-request features (incl. scope changes).
-
-For creating GitHub Issue compare here:  `Creating a GitHub Issue (Github Docs) <https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/creating-an-issue>`_.
-
-Create an ISSUE to collect feedback, before investing too much effort into a PR. ISSUEs may be
-accompanied by draft PRs if code is to be shown.
-
-It can also be used to collect community input and for planning and tracking activities.
-
-The figure below shows options to report something.
-
-.. figure:: _assets/score_discussion_request_options.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Reporting options overview
-
-  Reporting options overview
 
 Change Management SW Platform Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
