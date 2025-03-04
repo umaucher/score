@@ -544,7 +544,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8024833a">
+<div class="need_container docutils container" id="SNCB-5af6c455">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -638,8 +638,8 @@ such as execution time, memory usage, and resource utilization.</p></li>
 <colgroup>
 <col style="width: 10.0%" />
 <col style="width: 30.0%" />
-<col style="width: 30.0%" />
-<col style="width: 30.0%" />
+<col style="width: 40.0%" />
+<col style="width: 20.0%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Property</p></th>
@@ -676,27 +676,39 @@ such as execution time, memory usage, and resource utilization.</p></li>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>TestType</p></td>
-<td><p>requirements-based | interface-test | boundary |
-coverage (various types apply, shall be tool supported) |
-For <a class="reference internal" href="../workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a> also fault-injection</p></td>
-<td><p>Requirements-based test | Design based tests (Assumptions of Use are treated as requirements.)
-Coverage of branches</p>
-<p>Consult the implemenation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed types.</p>
+<td><ul class="simple">
+<li><p>requirements-based</p></li>
+<li><p>interface-test</p></li>
+<li><p>boundary</p></li>
+<li><p>coverage (various types apply, shall be tool supported)</p></li>
+<li><p>for <a class="reference internal" href="../workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a> also fault-injection</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Requirements-based test (Assumptions of Use are treated as requirements.)</p></li>
+<li><p>Design based tests</p></li>
+</ul>
+<p>Consult the implementation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed types.</p>
 </td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>DerivationTechnique</p></td>
-<td><p>requirements-analysis | boundary-values | equivalence-classes | error-guessing | monkey-testing</p></td>
-<td><p>Options are:</p>
-<ul class="simple">
-<li><p>Analysis of requirements | Analysis of design
-(Assumptions of Use are treated as requirements.)</p></li>
+<td><ul class="simple">
+<li><p>requirements-analysis</p></li>
+<li><p>boundary-values</p></li>
+<li><p>equivalence-classes</p></li>
+<li><p>error-guessing</p></li>
+<li><p>monkey-testing</p></li>
+</ul>
+</td>
+<td><ul class="simple">
+<li><p>Analysis of requirements / design (Assumptions of Use are treated as requirements.)</p></li>
 <li><p>Analysis of Boundary Values</p></li>
 <li><p>Analysis of Equivalence classes</p></li>
 <li><p>Error guessing based on knowledge or experience</p></li>
 <li><p>Random testing</p></li>
 </ul>
-<p>Consult the implemenation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed methods.</p>
+<p>Consult the implementation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed methods.</p>
 </td>
 <td></td>
 </tr>
@@ -721,7 +733,7 @@ what is being tested and how.</p>
 <p>Test specifications should follow <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Verification Specification ... (gd_guidl__verification_specification)</em></a></p>
 <section id="structuring-of-the-test-case">
 <h3>Structuring of the Test Case<a class="headerlink" href="#structuring-of-the-test-case" title="Link to this heading">#</a></h3>
-<p>To fulfil the requirements of the workproduct <a class="reference internal" href="../workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a> the
+<p>To fulfil the requirements of the work product <a class="reference internal" href="../workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a> the
 templates in <a class="reference internal" href="verification_process_toolreqs.html#verification-process-reqs"><span class="std std-ref">Test Linking to Requirements</span></a> shall be used. This includes general information and
 templates for the allowed programming languages.</p>
 </section>
