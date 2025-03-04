@@ -30,7 +30,7 @@ several standards especically to achieve functional safety.
 Features are improved during the **Maintenance Phase**. In case bugs are found, they are also
 fixed during this phase.
 
-.. figure:: _assets/score_lifecycle_model.drawio.svg.svg
+.. figure:: _assets/score_lifecycle_model.drawio.svg
   :width: 100%
   :align: center
   :alt: Lifecycle model for S-CORE

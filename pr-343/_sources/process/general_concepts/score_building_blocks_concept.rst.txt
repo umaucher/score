@@ -32,7 +32,7 @@ design.
 Software modules are used to encapsulate a set of components. Software modules are more or less
 container for a component or a set of components realizing a feature.
 
-.. figure:: _assets/score_building_blocks_meta_model.drawio.svg.svg
+.. figure:: _assets/score_building_blocks_meta_model.drawio.svg
   :width: 100%
   :align: center
   :alt: Building blocks overview for **S-CORE** platform
@@ -51,7 +51,7 @@ The latter example is more or less a corner case.
 Components may optionally built-up by other components. Software modules may also be designed
 as safety element out of context (SEooC).
 
-.. figure:: _assets/score_building_blocks_example.drawio.svg.svg
+.. figure:: _assets/score_building_blocks_example.drawio.svg
   :width: 100%
   :align: center
   :alt: Building blocks example
