@@ -2,7 +2,7 @@
 # https://marketplace.visualstudio.com/items?itemName=GraphQL.vscode-graphql
 # You'll need to restart VS Code after doing so.
 
-query($org: String!, $projectNumber: Int!, $cursor: String) {
+query project_v2_issues($org: String!, $projectNumber: Int!, $cursor: String) {
     rateLimit {
         limit
         cost

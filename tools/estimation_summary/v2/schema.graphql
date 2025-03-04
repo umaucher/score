@@ -1,0 +1,82 @@
+type Query {
+    rateLimit: RateLimit
+    organization(login: String!): Organization
+}
+
+type RateLimit {
+    limit: Int
+    cost: Int
+    remaining: Int
+    resetAt: String
+}
+
+type Organization {
+    projectV2(number: Int!): ProjectV2
+}
+
+type ProjectV2 {
+    items(first: Int, after: String): ProjectV2ItemConnection
+}
+
+type ProjectV2ItemConnection {
+    totalCount: Int
+    pageInfo: PageInfo
+    nodes: [ProjectV2Item]
+}
+
+type PageInfo {
+    hasNextPage: Boolean
+    endCursor: String
+}
+
+type ProjectV2Item {
+    id: ID
+    content: ProjectV2ItemContent
+    fieldValues(first: Int): [ProjectV2ItemFieldValue]
+}
+
+union ProjectV2ItemContent = Issue
+
+type Issue {
+    number: Int
+    title: String
+    url: String
+    closed: Boolean
+    milestone: Milestone
+}
+
+type Milestone {
+    title: String
+}
+
+union ProjectV2ItemFieldValue = ProjectV2ItemFieldSingleSelectValue | ProjectV2ItemFieldTextValue | ProjectV2ItemFieldDateValue | ProjectV2ItemFieldIterationValue | ProjectV2ItemFieldNumberValue
+
+type ProjectV2ItemFieldSingleSelectValue {
+    field: ProjectV2FieldCommon
+    name: String
+}
+
+type ProjectV2ItemFieldTextValue {
+    field: ProjectV2FieldCommon
+    text: String
+}
+
+type ProjectV2ItemFieldDateValue {
+    field: ProjectV2FieldCommon
+    date: String
+}
+
+type ProjectV2ItemFieldIterationValue {
+    field: ProjectV2FieldCommon
+    title: String
+}
+
+type ProjectV2ItemFieldNumberValue {
+    field: ProjectV2FieldCommon
+    number: Float
+}
+
+interface ProjectV2FieldCommon {
+    id: ID
+    name: String
+}
