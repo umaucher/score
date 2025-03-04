@@ -3,6 +3,7 @@ from collections import defaultdict
 from pprint import pprint
 
 import github_types as gt
+import queries.set_project_description
 from github import GitHubClient
 
 size_to_days = {
@@ -51,6 +52,13 @@ async def main():
             #     field_value=month,
             #     new_description=summary,
             # )
+
+            await queries.set_project_description.run_mutation(
+                client=client,
+                org="eclipse-score",
+                project_number=6,
+                readme=summary,
+            )
 
 
 if __name__ == "__main__":

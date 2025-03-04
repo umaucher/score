@@ -65,21 +65,23 @@ def _decode(project: int, item: dict):
     return issue
 
 
-async def run_mutation(
-    client: GitHubClient_Basic, org: str, project_number: int, readme: str
-):
-    """Will return a dict with the project name and new readme."""
-    # Note: would be nice if we had a code generator that would have generated
-    # an appropriate dataclass for the return type of this query...
+async def run_query(client: GitHubClient_Basic, project_number: int):
+    """
+    Get all issues within the project.
 
-    result = await client._execute(
+    Warning: result is cached for 1 hour.
+    Changes to GitHub will not be reflected.
+    """
+
+    issues = await client.fetch_all_elements(
         query=_query(),
         variable_values={
-            "org": org,
-            "projectId": project_number,
-            "readme": readme,
+            "org": client.org,
+            "projectNumber": project_number,
         },
+        path_to_elements=["organization", "projectV2", "items"],
+        decoder=lambda item: _decode(project_number, item),
     )
-    print("Result:")
-    pprint(result)
-    return result
+
+    print(f"✅ {len(issues)} issues fetched")
+    return issues

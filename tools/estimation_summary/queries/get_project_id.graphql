@@ -1,0 +1,7 @@
+query GetProjectId($owner: String!, $projectNumber: Int!) {
+  user(login: $owner) {
+    projectV2(number: $projectNumber) {
+      id
+    }
+  }
+}
