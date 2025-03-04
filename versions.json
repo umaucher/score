@@ -96,12 +96,20 @@
     "url": "https://eclipse-score.github.io/score/pr-530/"
   },
   {
-    "version": "pr-534",
-    "url": "https://eclipse-score.github.io/score/pr-534/"
+    "version": "pr-546",
+    "url": "https://eclipse-score.github.io/score/pr-546/"
   },
   {
-    "version": "pr-543",
-    "url": "https://eclipse-score.github.io/score/pr-543/"
+    "version": "pr-547",
+    "url": "https://eclipse-score.github.io/score/pr-547/"
+  },
+  {
+    "version": "pr-548",
+    "url": "https://eclipse-score.github.io/score/pr-548/"
+  },
+  {
+    "version": "pr-552",
+    "url": "https://eclipse-score.github.io/score/pr-552/"
   },
   {
     "version": "ulhu_lola_hla",
@@ -118,33 +126,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-545",
-    "url": "https://eclipse-score.github.io/score/pr-545/"
-  },
-  {
-    "version": "pr-546",
-    "url": "https://eclipse-score.github.io/score/pr-546/"
-  },
-  {
-    "version": "pr-547",
-    "url": "https://eclipse-score.github.io/score/pr-547/"
-  },
-  {
-    "version": "pr-548",
-    "url": "https://eclipse-score.github.io/score/pr-548/"
-  },
-  {
-    "version": "pr-550",
-    "url": "https://eclipse-score.github.io/score/pr-550/"
-  },
-  {
-    "version": "pr-551",
-    "url": "https://eclipse-score.github.io/score/pr-551/"
-  },
-  {
-    "version": "pr-552",
-    "url": "https://eclipse-score.github.io/score/pr-552/"
   }
 ]
