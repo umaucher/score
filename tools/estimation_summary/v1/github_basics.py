@@ -159,6 +159,7 @@ class GitHubClient_Basic:
                 break
 
             cursor = result["pageInfo"]["endCursor"]
+            #v2: cursor = result.pageInfo.endCursor
 
         return nodes
 

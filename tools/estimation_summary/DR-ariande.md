@@ -1,51 +1,66 @@
-# Decision Record: use ariande for code generation
+# Decision Record: Use Ariadne for Code Generation
 
+## Context
 
-## Alternatives
+We need a way to interact with GitHub’s GraphQL API efficiently while keeping
+maintenance overhead low. The goal is to minimize boilerplate code and improve type
+safety without introducing unnecessary complexity.
 
-### v1 - Using the `manual` queries
+Initially, a **manual approach** was used, where queries were written as strings, and
+the results were manually parsed into Python data structures. This required a lot of
+boilerplate code but gave full control over the API calls.
 
-It's not quite in a working state, but this is simply due to careless moving of files
-and functions. You can still see all the code.
+To improve this, **Ariadne Codegen** was introduced to generate query-code and
+schema-based data models automatically. The hypothesis was that this would reduce manual
+work and improve maintainability.
 
-Basically it has the queries and manual code to parse those queries. It's a lot of
-boilerplate.
+---
 
-### v2 - Using 'ariande' code generation
+## Alternatives Considered
 
-This is the approach I'm currently working on. The goal is to reduce manually written
-code to a minimum.
+### Manual Queries
+This version manually defines queries and parses responses. While it works, it requires
+writing and maintaining a lot of boilerplate code. The main issues:
+- Queries are **hardcoded as strings** in Python.
+- Responses must be **manually parsed** into the correct data structures.
+- Schema changes require **manual updates**.
 
-We'll see whether it's actually better or not.
+### Using Ariadne Codegen
+This approach leverages **Ariadne Codegen** to:
+- **Automatically generate** Python methods for GraphQL queries.
+- **Generate Pydantic-based schema models** for type safety.
+- **Reduce boilerplate** by handling query execution and result parsing.
 
-# Decision
+The main goal was to see if Ariadne Codegen simplifies query execution and reduces
+maintenance costs.
 
-## query-code
-The generated query-code does not add any benefit. `run_query` in v1 was a 1-liner:
+---
 
-```python
-fetch_all_elements(query=query_str, ...)
-```
+## Conclusion
 
-In v2 it's something like:
+### Query Code
 
-```python
-fetch_all_elements(query=fetch_all_elements_query, ...)
-```
+The generated query code does not provide significant benefits. Originally executing a
+query was already a simple one-liner: `fetch_all_elements(query=query_str, ...)`. Using
+Ariadne Codegen, it becomes: `fetch_all_elements(query=fetch_all_elements_query, ...)`.
+The difference is minimal, and the additional complexity of generating query methods
+does not justify its use.
 
-## schema-code
-The generated schema-code adds some benefit, as it provides type safety and auto-completion while writing the "parsers" as they were coined in v1.
+### Schema Code
+The generated schema models add some value by providing:
+* Type safety: Errors due to incorrect data structures are reduced.
+* Auto-completion: IDE support improves while writing parsing logic.
 
-However it's a rather localised benefit, as the schema-code is only used in the
-"parsers".
+However, this benefit is localized—it mainly helps within the parsing layer but does not
+impact the broader application structure.
 
-# Conclusion
+### Summary
+Ariadne Codegen does not seem worth the extra complexity for this use case.
 
-Ariande doesn't seem to be worth the extra complexity.
-
-Revisit decision when:
-* the schema-code is used in more places
-* the schema-code is used in more complex ways
-
-Opon revisiting investigate schema-only code generation by other tools.
-e.g. via datamodel-code-generator.
+When to Revisit the Decision:
+* If the schema-generated models become more widely used across the project.
+* If the schema-based models simplify more complex data structures.
+* If we want to explore schema-only code generation without query methods. Next Steps:
+* If schema generation becomes more relevant in the future, consider
+  datamodel-code-generator as an alternative, since it focuses solely on schema
+  generation without adding unnecessary query-handling complexity.
