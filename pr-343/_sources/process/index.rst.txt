@@ -45,8 +45,8 @@ General Concepts
 .. toctree::
    :maxdepth: 1
 
-   process_areas/index.rst
    general_concepts/index.rst
+   process_areas/index.rst
    process_areas/requirements_engineering/index.rst
    process_areas/safety_management/index.rst
 
