@@ -20,7 +20,7 @@ Templates
 .. gd_temp:: Feature Request Template
    :id: gd_temp__change__feature_request
    :status: valid
-   :complies: std_req__aspice_40__SUP-10-BP1, std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5
+   :complies: std_req__aspice_40__SUP-10-BP1, std_req__aspice_40__SUP-10-BP3, std_req__aspice_40__SUP-10-BP5, std_req__iso26262__support_21, std_req__iso26262__support_22, , std_req__iso26262__support_23
 
 .. attention::
     Remove everything above when copying and filling the template.
