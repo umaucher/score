@@ -72,7 +72,7 @@ Schedules
 ~~~~~~~~~
 
 The integration of software elements is driven by contribution requests and their respective
-``[TODO: add link to lifecycle phases]`` model. The contribution of a feature itself implies that it gets fully
+:ref:`general_concepts_lifecycle` model. The contribution of a feature itself implies that it gets fully
 verified.
 
 Approach
@@ -402,5 +402,3 @@ should be considered by the distributor of the platform. On target integration t
 running on a reference hardware in context of this project can be taken as a starting point.
 
 The reference hardware is defined in the ``[TODO: Well where will it be actually defined?]``.
-
-
