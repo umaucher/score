@@ -12,12 +12,16 @@
 # *******************************************************************************
 """The tool for converting requirements.txt into dash checker format"""
 
-import re
-import sys
 import argparse
 import logging
+import re
+import sys
 from pathlib import Path
-from typing import Optional
+
+try:
+    import tomllib
+except ImportError:
+    import tomli as tomllib
 
 LOGGER = logging.getLogger()
 
@@ -41,7 +45,8 @@ LOGGER_COLORS = {
 
 class ColoredFormatter(logging.Formatter):
     """
-    A custom logging formatter to add color to log level names based on the logging level.
+    A custom logging formatter to add color to log level names
+    based on the logging level.
 
     The `ColoredFormatter` class extends `logging.Formatter` and overrides the `format`
     method to add color codes to the log level name (e.g., `INFO`, `WARNING`, `ERROR`)
@@ -49,14 +54,14 @@ class ColoredFormatter(logging.Formatter):
     visually distinguishing log messages by severity.
 
     Attributes:
-        LOGGER_COLORS (dict): A dictionary mapping log level names (e.g., "INFO", "ERROR")
-                              to their respective color codes.
-        COLORS (dict): A dictionary of terminal color codes, including an "ENDC" key to reset
-                       colors after the level name.
+        LOGGER_COLORS (dict): A dictionary mapping log level names
+                              (e.g., "INFO", "ERROR") to their respective color codes.
+        COLORS (dict): A dictionary of terminal color codes, including an "ENDC" key
+                       to reset colors after the level name.
 
     Methods:
-        format(record): Adds color to the `levelname` attribute of the log record and then
-                        formats the record as per the superclass `Formatter`.
+        format(record): Adds color to the `levelname` attribute of the log record and
+                        then formats the record as per the superclass `Formatter`.
     """
 
     def format(self, record):
@@ -65,7 +70,7 @@ class ColoredFormatter(logging.Formatter):
         return super().format(record)
 
 
-def configure_logging(log_file_path: Path = None, verbose: bool = False) -> None:
+def configure_logging(log_file_path: Path | None = None, verbose: bool = False) -> None:
     """
     Configures the logging settings for the application.
 
@@ -80,10 +85,12 @@ def configure_logging(log_file_path: Path = None, verbose: bool = False) -> None
         None: This function does not return any value, it only configures logging.
 
     Notes:
-        - If `log_file_path` is provided, the log messages will be saved to the specified file.
-        - If `verbose` is `True`, detailed logs (DEBUG level) will be captured; otherwise,
-          less detailed logs (INFO level) will be captured.
-        - The default logging format is `%(asctime)s - %(name)s - %(levelname)s - %(message)s`.
+        - If `log_file_path` is provided, the log messages will be saved
+          to the specified file.
+        - If `verbose` is `True`, detailed logs (DEBUG level) will be captured;
+          otherwise, less detailed logs (INFO level) will be captured.
+        - The default logging format is:
+          `%(asctime)s - %(name)s - %(levelname)s - %(message)s`.
     """
     log_level = logging.DEBUG if verbose else logging.INFO
     LOGGER.setLevel(log_level)
@@ -103,21 +110,22 @@ def configure_logging(log_file_path: Path = None, verbose: bool = False) -> None
 
 def format_line(
     line: str, regex: str = r"([a-zA-Z0-9_-]+)==([a-zA-Z0-9.\-_]+)"
-) -> Optional[str]:
+) -> str | None:
     """
-    Formats a line of text by matching a specified regex pattern and extracting components.
+    Formats a line of text by matching a specified regex pattern and
+    extracting components.
 
     Args:
         line (str): The input string to be processed.
         regex (str, optional): A regular expression pattern to match the input line.
 
     Returns:
-        Optional[str]: A formatted string based on the regex match if the pattern is found,
-        or None if no match is found.
+        Optional[str]: A formatted string based on the regex match
+        if the pattern is found, or None if no match is found.
 
     Notes:
-        - The function uses the provided regex to capture two components from the input line:
-          the package name and its version.
+        - The function uses the provided regex to capture two components
+          from the input line: the package name and its version.
         - The formatted string follows the pattern "pypi/pypi/-/{package}/{version}".
         - If the regex does not match, None is returned.
     """
@@ -132,27 +140,66 @@ def format_line(
     return ret
 
 
-def convert_to_dash_format(input_file: Path, output_file: Path) -> int:
+def convert_to_dash_format(input_file: Path, output_file: Path):
     """
     Converts the content of an input to a "dash format" and writes output file.
 
-    The exact transformation applied to the content is assumed to replace specific patterns or
-    structures with a dash-separated format, although the details depend on the implementation.
+    The exact transformation applied to the content is assumed to replace specific
+    patterns or structures with a dash-separated format, although the details depend
+    on the implementation.
 
     Args:
         input_file (Path): Path to the input file containing the original content.
-        output_file (Path): Path to the output file where the converted content will be written.
+        output_file (Path): Path to the output file where the converted content
+                            will be written.
 
-    Returns:
-        int: Error thrown by system over exceptions.
     """
     encoding = "utf-8"
-    with open(input_file, "r", encoding=encoding) as infile:
-        with open(output_file, "w", encoding=encoding) as outfile:
-            for line in infile:
-                formatted_line = format_line(line.strip())
-                if formatted_line:
-                    outfile.write(formatted_line + "\n")
+    with (
+        open(input_file, encoding=encoding) as infile,
+        open(output_file, "w", encoding=encoding) as outfile,
+    ):
+        for line in infile:
+            formatted_line = format_line(line.strip())
+            if formatted_line:
+                outfile.write(formatted_line + "\n")
+
+
+def convert_cargo_to_dash_format(input_file: Path, output_file: Path) -> int:
+    """
+    Converts a Cargo.lock file into dash format.
+
+    This function parses the TOML-formatted Cargo.lock file, iterates over the package entries,
+    and writes each package's name and version in the format:
+        cargo/cargo/-/{name}/{version}
+    """
+    encoding = "utf-8"
+    try:
+        with open(input_file, "rb") as infile:
+            cargo_data = tomllib.load(infile)
+    except Exception as e:
+        LOGGER.error(f"Error parsing Cargo.lock file: {e}")
+        return 1
+
+    packages = cargo_data.get("package", [])
+
+    if not packages:
+        LOGGER.warning("No packages found in Cargo.lock.")
+
+    with open(output_file, "w", encoding=encoding) as outfile:
+        for pkg in packages:
+            name = pkg.get("name")
+            version = pkg.get("version")
+            if name and version:
+                line = f"cargo/cargo/-/{name}/{version}"
+                LOGGER.debug(f"Extracted package: {line}")
+                outfile.write(line + "\n")
+
+    LOGGER.info(
+        f"Successfully converted {len(packages)} packages from Cargo.lock to {output_file}"
+    )
+
+    return 0
 
 
 def parse_arguments(argv: list[str]) -> argparse.Namespace:
@@ -167,7 +214,8 @@ def parse_arguments(argv: list[str]) -> argparse.Namespace:
 
     Notes:
         - This function expects an `argparse.ArgumentParser` to be configured with
-          the required arguments. If `argv` is not provided, it defaults to an empty list.
+          the required arguments.
+          If `argv` is not provided, it defaults to an empty list.
         - Use the `argparse.Namespace` object to access parsed arguments by their names.
     """
 
@@ -207,31 +255,51 @@ def parse_arguments(argv: list[str]) -> argparse.Namespace:
         help="Path to the formatted_list.txt file",
     )
 
+    parser.add_argument(
+        "-t",
+        "--type",
+        choices=["requirements", "cargo"],
+        default="requirements",
+        help="Type of input file: 'requirements' for requirements.txt or 'cargo' for Cargo.lock (default: requirements)",
+    )
+
     return parser.parse_args(argv)
 
 
-def main(argv: list[str] = None) -> int:
+def main(argv: list[str] | None) -> int:
     """
     The main entry point of the script.
 
+    This function parses command-line arguments, configures logging, and dispatches the appropriate
+    conversion function based on the input file type. Supported file types include:
+      - 'requirements': for processing requirements.txt files.
+      - 'cargo': for processing Cargo.lock files.
+    The selected conversion function reads the input file, transforms its content into the Eclipse dash
+    format, and writes the results to the specified output file.
+
     Args:
-        argv (list[str], optional): A list of command-line arguments. If not provided,
-            defaults to `None`, in which case `sys.argv[1:]` is typically used.
+        argv (list[str], optional): A list of command-line arguments. If not provided, defaults to
+            None, in which case sys.argv[1:] is used.
 
     Returns:
-        int: An exit code where `0` indicates successful execution, and any non-zero
-        value indicates an error.
+        int: An exit code where 0 indicates successful execution, and any non-zero value indicates
+            an error occurred during processing.
 
     Notes:
-        - This function is often called in the `if __name__ == "__main__":` block.
-        - The function typically orchestrates parsing arguments, performing the core
-          logic of the script, and handling exceptions.
-        - Ensure the function catches and logs errors appropriately before returning
-          a non-zero exit code.
+        - This function is typically invoked in the 'if __name__ == "__main__":' block.
+        - It orchestrates argument parsing, logging configuration, file conversion, and error handling.
+        - Conversion behavior depends on the '--type' argument:
+            * 'requirements' (default): Converts a requirements.txt file.
+            * 'cargo': Converts a Cargo.lock file using TOML parsing.
+        - Errors during file reading, parsing, or conversion are logged appropriately, and a non-zero
+          exit code is returned to signal failure.
     """
     args = parse_arguments(argv if argv is not None else sys.argv[1:])
     configure_logging(args.log_file, args.verbose)
-    convert_to_dash_format(args.input, args.output)
+    if args.type == "cargo":
+        ret = convert_cargo_to_dash_format(args.input, args.output)
+    else:
+        ret = convert_to_dash_format(args.input, args.output)
     return 0
 
 

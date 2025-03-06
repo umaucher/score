@@ -49,9 +49,9 @@ jobs:
         uses: bazel-contrib/setup-bazel@0.9.1
       - name: Derive project shortname and repo URL
         run: |
-          # Convert slash to dot for the Dash shortname
-          SHORTNAME=$(echo "${GITHUB_REPOSITORY}" | tr '/' '.')
-          REPO_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}.git"
+          # Use a fixed shortname for the Dash project
+          SHORTNAME="automotive.score"
+          REPO_URL="${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}"
           echo "SHORTNAME=$SHORTNAME" >> $GITHUB_ENV
           echo "REPO_URL=$REPO_URL" >> $GITHUB_ENV
       - name: Run license checks
@@ -62,7 +62,8 @@ jobs:
           # We save both  output and exit code in the GH actions env file
           set +e  # Ensure script does not exit on failure, even if the bazel run fails, the execution will continue
           OUTPUT=$(
-            bazel run //docs:license.check.python --define=CI_BUILD=true -- \
+            bazel run //docs:license.check.python -- \
+              -review \
               -project "$SHORTNAME" \
               -repo "$REPO_URL" \
               -token "${{ secrets.ECLIPSE_GITLAB_API_TOKEN }}" 2>&1
@@ -73,10 +74,21 @@ jobs:
           echo "output<<EOF" >> $GITHUB_ENV
           echo "$OUTPUT" >> $GITHUB_ENV
           echo "EOF" >> $GITHUB_ENV
+
+      - name: Find Comment
+        if: github.event.pull_request
+        uses: peter-evans/find-comment@v3
+        id: fc
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: License Check Results
+
       - name: Comment on PR with License Check Results
-        if: github.event_name == 'pull_request'
+        if: github.event.pull_request
         uses: peter-evans/create-or-update-comment@v4
         with:
+          comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
             ### License Check Results
@@ -93,3 +105,4 @@ jobs:
 
             </details>
           reactions: eyes
+          edit-mode: replace
