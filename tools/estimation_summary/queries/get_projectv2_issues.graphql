@@ -7,17 +7,15 @@ query get_projectv2_issues($org: String!, $projectNumber: Int!, $cursor: String)
     }
     organization(login: $org) {
         projectV2(number: $projectNumber) {
-            id
+            id # of project
             items(first: 50, after: $cursor) {
-                # Type: ProjectV2ItemConnection!
                 totalCount
                 pageInfo {
                     hasNextPage
                     endCursor
                 }
                 nodes {
-                    # Type: ProjectV2Item
-                    id
+                    id # of ProjectV2Item
                     content {
                         ... on Issue {
                             number
@@ -26,26 +24,13 @@ query get_projectv2_issues($org: String!, $projectNumber: Int!, $cursor: String)
                             closed # issues can only be open or closed!
                             milestone {
                                 title
+
                             }
                         }
                         # Info: Other types are DraftIssue and PullRequest
                     }
                     fieldValues(first: 99) {
                         nodes {
-                            # Union: ProjectV2ItemFieldValue
-                            # Can be one of those:
-                            # ProjectV2ItemFieldDateValue
-                            # ProjectV2ItemFieldIterationValue
-                            # ProjectV2ItemFieldLabelValue
-                            # ProjectV2ItemFieldMilestoneValue
-                            # ProjectV2ItemFieldNumberValue
-                            # ProjectV2ItemFieldPullRequestValue
-                            # ProjectV2ItemFieldRepositoryValue
-                            # ProjectV2ItemFieldReviewerValue
-                            # ProjectV2ItemFieldSingleSelectValue
-                            # ProjectV2ItemFieldTextValue
-                            # ProjectV2ItemFieldUserValue
-
                             ... on ProjectV2ItemFieldSingleSelectValue {
                                 field {
                                     ... on ProjectV2FieldCommon {

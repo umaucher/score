@@ -1,14 +1,8 @@
-import functools
-import sys
-from collections import defaultdict
-from dataclasses import dataclass, field
 from pathlib import Path
 from pprint import pprint
 
 import github_types
-
-# sys.path.insert(0, ".")
-from github_basics import GitHubClient_Basic, get_query, parse
+from github_basics import GitHubClient_Basic, get_query
 
 
 def _decode(project: int, item: dict):
@@ -66,8 +60,8 @@ async def run_mutation(
     # Note: would be nice if we had a code generator that would have generated
     # an appropriate dataclass for the return type of this query...
 
-
-    id = await client._execute(
+    # TODO: cache id
+    result1 = await client._execute(
         query=get_query("get_project_id"),
         variable_values={
             "org": org,
@@ -75,10 +69,11 @@ async def run_mutation(
         },
     )
     # pprint(id) -> {'organization': {'projectV2': {'id': 'PVT_kwDOCy9hX84AzmuL'}}}
-    id = id["organization"]["projectV2"]["id"]
-    assert isinstance(id, str), id
+    # result1.organization.projectV2.id
+    id = result1["organization"]["projectV2"]["id"]
+    assert isinstance(id, str), result1
 
-    result = await client._execute(
+    result2 = await client._execute(
         query=get_query(Path(__file__).stem),
         variable_values={
             "org": org,
@@ -86,6 +81,9 @@ async def run_mutation(
             "readme": readme,
         },
     )
+
     print("Result:")
-    pprint(result)
-    return result
+    pprint(result2)
+    actual_readme = result2["updateProjectV2"]["projectV2"]["readme"]
+    assert readme == actual_readme, actual_readme
+    return result2

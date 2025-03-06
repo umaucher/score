@@ -23,14 +23,9 @@ esbonio<1
 pytest
 pytest-cov
 
-# For scripts that access github GrahlQL API
-# v1
+# For scripts that access github GrahlQL API.
 python-dotenv
 gql[all]
 diskcache
-
-# v2-codegen
 ariadne-codegen
-
-# v2-dev
 pydantic

@@ -126,6 +126,7 @@ class GitHubClient_Basic:
             print("🔌 Connected to GitHub GraphQL API")
         return self.session
 
+    # @memoize(cache, expire=timedelta(hours=1), ignore_self=True)
     async def _execute(self, query, variable_values):
         session = await self._session()
         return await session.execute(query, variable_values=variable_values)

@@ -1,11 +1,8 @@
-import sys
-from collections import defaultdict
 from dataclasses import dataclass, field
 
-# sys.path.insert(0, ".")
 import github_types as github_types
 import queries.get_projectv2_issues
-import query_projectv2_single_select_fields
+import queries.set_project_description
 from github_basics import GitHubClient_Basic
 
 
@@ -39,13 +36,12 @@ class GitHubClient(GitHubClient_Basic):
         """
         return await queries.get_projectv2_issues.run_query(self, project_number)
 
-    async def single_select_fields_in_project(self, project_number: int):
-        """
-        Get all single select fields within the project.
+    async def set_project_description(self, project_number: int, readme: str):
+        """Will return a dict with the project name and new readme."""
 
-        Warning: result is cached for 1 hour.
-        Changes to GitHub will not be reflected.
-        """
-        return await query_projectv2_single_select_fields.run_query(
-            self, project_number
+        await queries.set_project_description.run_mutation(
+            client=self,
+            org="eclipse-score",
+            project_number=project_number,
+            readme="\n".join(readme),
         )

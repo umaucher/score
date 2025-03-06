@@ -1,13 +1,7 @@
 import functools
-import sys
-from collections import defaultdict
-from dataclasses import dataclass, field
 from pathlib import Path
-from pprint import pprint
 
 import github_types
-
-# sys.path.insert(0, ".")
 from github_basics import GitHubClient_Basic, parse
 
 
@@ -17,8 +11,8 @@ def _query():
     return parse(query)
 
 
-def _decode(project: int, item: dict):
-    content = item.get("content")
+def _decode(project: int, node: dict):
+    content = node.get("content")
     if not content:
         # It's probably a pull request and not an issue
         # TODO: how to query only issues?
@@ -38,7 +32,7 @@ def _decode(project: int, item: dict):
     # if item.fieldValues:
     #     for f in item.fieldValues.nodes:
 
-    for f in item.get("fieldValues", {}).get("nodes", []):
+    for f in node.get("fieldValues", {}).get("nodes", []):
         if not f:
             # TODO: what type is missing in the query?
             continue
@@ -73,7 +67,7 @@ async def run_query(client: GitHubClient_Basic, project_number: int):
     Changes to GitHub will not be reflected.
     """
 
-    issues = await client.fetch_all_elements(
+    issues: list[github_types.Issue] = await client.fetch_all_elements(
         query=_query(),
         variable_values={
             "org": client.org,
