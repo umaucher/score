@@ -30,7 +30,7 @@ expressed as concrete **Stakeholder Requirements** (blue box, top, 2nd column), 
 by provided **Platform Tests** (blue box, top, 5nd column) for reference hardware platforms. The
 platform consists of **Features** (yellow box, middle, 2nd column).
 
-Further **S-CORE** provides **Software Modules** (red box, middle, 1st column), which can als be
+Further **S-CORE** provides **Software Modules** (red box, middle, 1st column), which can also be
 developed as a SEooC. A Software Module is defined as a **Component** (green box, middle, 2nd column)
 or a set of components realizing a Feature of the platform. A Software Module represents e.g.
 executable code or a library.
@@ -53,10 +53,10 @@ as well as the Integration of multiple Units to a Component.
 As mentioned above a Software Module is defined as a Component or a set of components realizing a
 Feature of the platform. Features consists of Components and are defined by **Feature Requirements**
 (yellow box, middle, 3nd column) and the **Feature Architecture** (yellow box, middle, 4nd column).
-A **Feature Safety Analysis** (green box, middle, 6nd column) is required to verify the Feature
+A **Feature Safety Analysis** (yellow box, middle, 6nd column) is required to verify the Feature
 Architecture. Potential faults may mitigated by updating the Feature Requirements or by the
-**Feature Assumptions of Use** (green box, middle, 8nd column). The latter one must be considered
-by the user of the Feature. **Feature Integration Tests** (green box, middle, 5nd column) verify
+**Feature Assumptions of Use** (yellow box, middle, 8nd column). The latter one must be considered
+by the user of the Feature. **Feature Integration Tests** (yellow box, middle, 5nd column) verify
 the Feature Requirements and the Feature Architecture as well as the Integration of multiple Units
 to a Component.
 
