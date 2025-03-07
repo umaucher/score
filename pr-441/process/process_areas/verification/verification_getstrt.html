@@ -546,7 +546,7 @@
                   
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-b524727b">
+<div class="need_container docutils container" id="SNCB-c8cd9855">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__verification__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -575,7 +575,7 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>This document guides you through the initial steps of the software verification process,
-from creating test cases to executing and analyzing results.
+from creating test cases to executing and result reporting.
 It leverages the <a class="reference internal" href="verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a> and <a class="reference internal" href="guidance/verification_guidance.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a>.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -594,23 +594,41 @@ It leverages the <a class="reference internal" href="verification_concept.html#d
 </div>
 <section id="relevant-documents">
 <h2>Relevant Documents<a class="headerlink" href="#relevant-documents" title="Link to this heading">#</a></h2>
+<p>Key documents to get an understanding about verification activities are:</p>
 <ul class="simple">
 <li><p><strong>Concept Document:</strong> <a class="reference internal" href="verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a> provides a high-level overview of the verification concept.</p></li>
 <li><p><strong>Verification Guideline:</strong> <a class="reference internal" href="guidance/verification_guidance.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a> details test case development, execution, and reporting procedures.</p></li>
-<li><p><strong>Verification Plan:</strong> <a class="reference internal" href="workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> implementation outlines the overall verification strategy and objectives.</p></li>
+<li><p><strong>Verification Plan:</strong> <a class="reference internal" href="workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> implementation outlines the overall verification strategy and objectives.
+(Note that the implemnation of the verification plan can be found in the platform management plan.)</p></li>
 </ul>
+</section>
+<section id="general-workflow">
+<h2>General Workflow<a class="headerlink" href="#general-workflow" title="Link to this heading">#</a></h2>
+<p>The workflows can be split into 4 major parts:</p>
+<ul class="simple">
+<li><p>Test planning filling the template <a class="reference internal" href="guidance/verification_plan_template.html#gd_temp__verification__plan" title="gd_temp__verification__plan"><em class="xref need">Platform Verification Plan ... (gd_temp__verification__plan)</em></a>.</p></li>
+<li><p>Test specification and implementation for the respecitve testing level</p></li>
+<li><p>Test execution by the CI.
+(Manual test cases are treated as automated test with user interaction and timeouts.)</p></li>
+<li><p>Test reports are created when all verification artifacts on a module and platform level are
+available for a specific baseline.</p></li>
+</ul>
+<p>The details of what needs to be done in each part are described in the <a class="reference internal" href="workflows.html#verification-workflows"><span class="std std-ref">Workflow Verification</span></a>.</p>
 </section>
 <section id="tooling-support">
 <h2>Tooling Support<a class="headerlink" href="#tooling-support" title="Link to this heading">#</a></h2>
 <p>The following tools support the verification process:</p>
 <ul class="simple">
-<li><p><strong>Bazel:</strong> For building the software and running tests.</p></li>
+<li><p><strong>Bazel:</strong> For building the software and running tests (supported by ITF).</p></li>
 <li><p><strong>Google Test:</strong> For unit testing in C++.</p></li>
 <li><p><strong>Rust’s built-in testing framework:</strong> For unit testing in Rust.</p></li>
 <li><p><strong>Pytest:</strong> For component to integration testing in Python.</p></li>
 <li><p><strong>ITF (Integration Test Framework):</strong> As framework for integration testing based on pytest.
-[TODO: Add link to ITF documentation once available]</p></li>
+<code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Add</span> <span class="pre">link</span> <span class="pre">to</span> <span class="pre">ITF</span> <span class="pre">documentation</span> <span class="pre">once</span> <span class="pre">available]</span></code></p></li>
+<li><p><strong>Sphinx-needs:</strong> Tracing artifacts like requirements to test cases.</p></li>
 </ul>
+<p>Additionally, tools will be provided to automatically generate coverage tests based on the unit source code.
+<code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Add</span> <span class="pre">link</span> <span class="pre">to</span> <span class="pre">automated</span> <span class="pre">test</span> <span class="pre">case</span> <span class="pre">creation</span> <span class="pre">scripts</span> <span class="pre">under</span> <span class="pre">preparation.]</span></code></p>
 </section>
 </section>
 
@@ -662,6 +680,7 @@ It leverages the <a class="reference internal" href="verification_concept.html#d
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#relevant-documents">Relevant Documents</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-workflow">General Workflow</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tooling-support">Tooling Support</a></li>
 </ul>
   </nav></div>
