@@ -25,6 +25,8 @@ This document describes the general guidances for Change Management based on the
 General Hints
 =============
 
+The detailed implementation of the Change Management for **S-CORE** is desribed in the :need:`[[title]]<doc__platform_change_management_plan>`.
+
 Templates
 ---------
 
@@ -165,5 +167,3 @@ and the defined verification measures are properly executed and successfully pas
 Change Request can be confirmed.
 
 The Change Request is closed by setting the status to "confirmed".
-
-

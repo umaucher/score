@@ -18,7 +18,7 @@
    :safety: ASIL_B
    :tags: platform_management
 
-Change management / Change Management Plan
+Change Management / Change Management Plan
 ------------------------------------------
 
 This document implements parts of the :need:`wp__platform_mgmt`.
@@ -69,10 +69,10 @@ The tool is used to create, plan, control, and monitor Change Requests within **
 of Change Requests. The tool is used to implement and verify Change Requests within **S-CORE**.
 
 The next figure gives an overview, how Change Requests are realized in **S-CORE**. An ISSUE is
-used to create a Change Request including reuqired attributes as defined in
+used to create a Change Request including required attributes as defined in
 :ref:`chm_process_change_request_attributes`.
 The ISSUE may be linked to SUB-ISSUEs, if required, to manage more complex Change Requests.
-Implementation of Change Requests requires at least one or more PRs linked to the ISSUE created
+The implementation of a Change Request requires at least one PR linked to the ISSUE created
 for the Change Request.
 
 .. figure:: _assets/score_change_request_overview.drawio.svg
@@ -135,7 +135,7 @@ In General, every Change Request follows the following steps:
 * 3. Approve the Change Request
 
 
-To 1. Create the Change Request:
+**To 1. Create the Change Request:**
 
 An ISSUE is the **ONLY** way to create and manage a Change Request in **S-CORE**.
 A PR is the **ONLY** way to implement a Change Request in **S-CORE**,
@@ -146,7 +146,8 @@ The figure below shows the workflow for the simple case of a Change Request.
 An ISSUE with the label according to the Change Request type is created in status ``OPEN``.
 The title of the ISSUE reflects the potential change.
 The Description of the ISSUE describes the details and potential impact. For the new feature
-request use the template Feature request: :ref:`chm_templates`.
+request use the template :ref:`Feature Request<chm_templates>`. For feature modifications update
+the existing feature documentation (based on the filled template).
 
 The ISSUE is linked to one PR in status ``DRAFT``, which may contain the
 required affected work products based on defined templates or implementation and verification
@@ -170,11 +171,12 @@ To trigger the next step the PR status is changed from ``DRAFT`` to ``OPEN``.
   Change Request Simple Workflow Overview
 
 
-To 2. Review the Change Request:
+**To 2. Review the Change Request:**
 
-The Change Request is analyzed from the :need:`Contributor <rl__contributor>`
-together with the :need:`Committer <rl__committer>` and the results are documented in the ISSUE.
-Unless the information is not sufficient, the related PR is kept in status ``OPEN``.
+The Change Request is reviewed from the :need:`Committer <rl__committer>` and
+review results are resolved by the :need:`Contributor <rl__contributor>`. The review results
+are documented in the PR. Unless the information is not sufficient, the related PR is kept in
+status ``OPEN``.
 
 :ref:`chm_checklist` can help to verify whether the information is complete.
 
@@ -187,8 +189,9 @@ Change request status: ``in review`` is implemented as
 ISSUE status ``OPEN`` and PR status ``OPEN``.
 
 
-To 3. Approve the Change Request:
-:need:`Committer <rl__committer>` decides finally, if the Change Request is accepted or rejected.
+**To 3. Approve the Change Request:**
+:need:`Technical Lead <rl__technical_lead>` or  :need:`Module Lead <rl__module_lead>` decides finally,
+if the Change Request is accepted or rejected.
 
 :need:`Committer <rl__committer>` checks finally if the Change Request is completed and the
 required verification measures are executed and sucessfully passed.
@@ -196,14 +199,15 @@ required verification measures are executed and sucessfully passed.
 If ``approved``, the status of the concerned PRs change to ``MERGED``,
 otherwise, if rejected, PR status changes to ``CLOSED``.
 
-If ``approved`` the status of the ISSUE is ``CLOSED``.
+If ``approved`` the status of the ISSUE is ``CLOSED``. This is also the case for rejected Change
+Requests.
 
 
 The figure below shows the workflow for a complex case of a Change Request.
 
 The ISSUE is linked to SUB-ISSUES, and the SUB-ISSUE is linked to a PR. In principle the Change
 Request workflows applies for all SUB-ISSUEs independently. Finally the ISSUE must be closed
-manually
+manually.
 
 .. figure:: _assets/score_change_request_workflow_complex_1.drawio.svg
   :width: 100%
@@ -211,20 +215,6 @@ manually
   :alt: Change Request Complex Workflow Overview Case 1
 
   Change Request Complex Workflow Overview Case 1
-
-Another version of a more complex Change Request case is shwon the following figure.
-
-Here the ISSUE is linked to multiple PRs. As the PRs may accepted not at the same time, e.g. default
-to priorization, the Change Request must be kept in the correct status by manually changing the
-ISSUE status to ``OPEN`` unless the last linked PR is accepted.
-
-.. figure:: _assets/score_change_request_workflow_complex_2.drawio.svg
-  :width: 100%
-  :align: center
-  :alt: Change Request Complex Workflow Overview Case 2
-
-  Change Request Complex Workflow Overview Case 2
-
 
 Change Management SW Platform Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -238,13 +228,6 @@ Change Management SW Platform Work Products
       - Link to issue
       - Link to WP
       - WP status
-
-    * - :need:`wp__policies`
-      - n/a (comes from outside the project)
-      - n/a
-      - n/a
-      - `Eclipse Foundation Project Handbook: <https://www.eclipse.org/projects/handbook/>`_
-      - RELEASED
 
     * - :need:`wp__issue_track_system`
       - :doc:`index`
@@ -266,5 +249,3 @@ Change Management SW Platform Work Products
       - `Process community issues <https://github.com/orgs/eclipse-score/projects/7>`_
       - :ref:`process_description`
       - <automated>
-
-

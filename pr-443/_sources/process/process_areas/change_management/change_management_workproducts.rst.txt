@@ -21,7 +21,7 @@ Work Products Change Management
    :tags: change_management
 
    | - Change request
-   | - change request plan
+   | - Change request plan
    | - Change report
    | - Identified safety anomaly report
    | - Impact analysis
@@ -35,7 +35,7 @@ Work Products Change Management
    :status: draft
    :tags: change_management
 
-   | - Feature request (= Change Request)
+   | - Feature request for a new feature
    |
    | Contribution of a new platform feature
 
