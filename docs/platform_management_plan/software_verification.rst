@@ -19,12 +19,12 @@
    :tags: platform_management
 
 Software verification
----------------------
+*********************
 
 This document implements :need:`wp__verification__plan`.
 
 Purpose
-+++++++
+=======
 
 The present document describes the plan for software integration and verification of the project. It intends to give
 an overview by linking to other relevant sources and provide further information about the verification and testing
@@ -35,10 +35,10 @@ the overall quality of the software project. The target groups of this document 
 and :need:`rl__committer`.
 
 Objectives and scope
-++++++++++++++++++++
+====================
 
 Objectives
-~~~~~~~~~~
+----------
 
 The overall objectives of the projects software integration and verification activities are the following:
 
@@ -55,7 +55,7 @@ The overall objectives of the projects software integration and verification act
    properly managed and documented according to the processes defined in this project.
 
 Verification scope and constraints
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 The software verification aspects described in this document focus on the verification of the software platform
 and modules developed within this project. The integration of the platform on a target device and the respective
@@ -63,23 +63,23 @@ verification and validation should be considered by the distributor of the platf
 are running on a reference hardware in context of this project can be taken as a starting point.
 
 Risks and mitigation
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 Potential risks that derived from the verification activities and their respective mitigation measures are handled by
 the :doc:`risk_management`.
 
 Schedules
-~~~~~~~~~
+---------
 
 The integration of software elements is driven by contribution requests and their respective
 :ref:`general_concepts_lifecycle` model. The contribution of a feature itself implies that it gets fully
 verified.
 
 Approach
-++++++++
+========
 
 General approach
-~~~~~~~~~~~~~~~~
+----------------
 
 The above defined objectives are supposed to be achieved by the following approaches.
 
@@ -90,7 +90,7 @@ documentation are defined as code. The following sections provide more details a
 as the software verification.
 
 Software integration
-~~~~~~~~~~~~~~~~~~~~
+--------------------
 
 The already mentioned approach of Continuous Integration means that software integration is performed with each fully
 automated software build at any time.
@@ -105,7 +105,7 @@ The following types of integrations are applicable:
    the :need:`gd_guidl__pull_request_guideline` as any other artifact.
 
 Levels of integration and verification
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------------
 
 There are the following different levels of integration (2, 3) and verification (1, 2, 3) defined:
 
@@ -121,38 +121,9 @@ There are the following different levels of integration (2, 3) and verification 
    #. feature architecture and
    #. feature requirements
 
-Work products and traceability
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The traceability between verification relevant work products is one of the defined objectives. An overall overview of
-the different work products and their relationship is given in project context - see
-:doc:`/process/workproducts/index`. The following work products are related to verification
-activities in general.
-
-As part of the development of the product:
-
-#. :need:`wp__verification__platform_test`
-#. :need:`wp__verification__platform_ver_report`
-#. :need:`wp__verification__feat_int_test`
-#. :need:`wp__verification__comp_int_test`
-#. :need:`wp__verification__module_ver_report`
-#. :need:`wp__verification__component_test`
-#. :need:`wp__verification__sw_unit_test`
-#. :need:`wp__requirements__inspect`
-#. :need:`wp__sw_arch_verification`
-#. :need:`wp__sw_code_inspect`
-
-
-As part of supporting activities:
-
-#. :need:`wp__verification__plan`
-#. :need:`wp__verification__specification` integrated into the respective test implementations.
-
-The link between a verification specification and the respective requirement or design specification is given by the
-identifier of the reference annotated to the verification specification.
-
-Methods
-~~~~~~~
+Verification Methods
+--------------------
 
 A verification is based on different methods. The derivation of test cases can also be based on certain methods. An
 overview of the different methods that are applicable in the project are given in this section. Usually the defined
@@ -220,8 +191,8 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
 For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
 These are data-flow-analysis as well as control-flow-analysis
 
-
-
+Test Derivation Methods
+^^^^^^^^^^^^^^^^^^^^^^^
 
 .. list-table:: Test case derivation methods (DerivationTechnique)
    :header-rows: 1
@@ -249,17 +220,23 @@ These are data-flow-analysis as well as control-flow-analysis
      - QM, ASIL B
    * - Random Testing
      - monkey-testing
-     - 1, 2, 3
-     - ASIL B
+     - 3
+     - QM, ASIL B
+   * - Exlporative Testing
+     - explore-testing
+     - 2, 3
+     - QM, ASIL B
 
 For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
 testing approaches, but cannot omit them completely. It may be possible to reduce the
 number of boundary-values tested based on a risk assessment and focus on impactful boundaries.
-Similar for the equivalence-classes the
+Similar for the equivalence-classes the focus can be put on more likely classes such as
+invalid classes, empty/null/zero values, system limits. Equivalence Classes should be
+supplemented by Boundary Value Analysis.
 
 
 Quality criteria
-~~~~~~~~~~~~~~~~
+----------------
 
 The quality criteria of the software verification activities are defined at the following table. The defined goals are
 to be reached with every contribution.
@@ -274,7 +251,7 @@ to be reached with every contribution.
      - Goal for Safety
    * - 1
      - Structural Statement Coverage
-     - 95%
+     - 85%
      - 100%
    * - 2
      - Structural Branch Coverage
@@ -304,7 +281,7 @@ to be reached with every contribution.
 Further quality goals are defined in section :doc:`quality_management`.
 
 Test development
-~~~~~~~~~~~~~~~~
+----------------
 
 The verification steps as well as the development of test cases is done along with the implementation of code. A full
 automation of tests should be achieved and the derived test cases should contain meta data that gives further
@@ -314,23 +291,35 @@ relevant work products is shown above (as part of the development of the product
 The different environments that can be used for the test development are defined below.
 
 Test execution and result analysis
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------
 
 The execution of the tests is based on a full automation defined by build pipelines. The analysis of the test results
 needs to be performed by the contributor.
 
 Test selection and regression testing
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 All existing test cases should be executed within continuous integration pipelines to verify initially developed
 components or software changes. A specific selection of sub sets is not planned. The fact that all existing and
 automated tests get executed continuously covers the approach to identify regressions.
 
+Work products and traceability
+------------------------------
+
+The traceability between verification relevant work products is one of the defined objectives.
+An overall overview of the different work products and their relationship is given in project
+context - see :doc:`/process/workproducts/index`.
+
+The work products are related to verification can be found in :ref:`verification_work_products`.
+
+The link between a test specification and the respective requirement or design specification is given by the
+identifier of the reference annotated to the verification specification.
+
 Environments and resources
-++++++++++++++++++++++++++
+==========================
 
 Roles
-~~~~~~
+-----
 
 In general, the different roles of this project are defined within the Process documentation:
 :doc:`/process/roles/index`. The following roles are crucial to comply with the aspects defined in this
@@ -340,8 +329,10 @@ document:
    fulfilled when contributing to the project.
 #. The :need:`rl__committer` needs to verify that the contributor has fulfilled the expected objectives.
 
+In this way roles are followed as defined in :ref:`verification_roles`.
+
 Tools
-~~~~~
+-----
 
 The list of the tools mentioned here does not reflect the full list of tools that are used for the whole project. Only
 tools that have an important impact on the test execution and reporting are given here. A full list of tools (and their
@@ -369,7 +360,7 @@ The platform developed in this project supports `Rust <https://www.rust-lang.org
 built-in test framework is used to test respective software components.
 
 Verification setups and variants
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------------
 
 Different test frameworks get used to verify software components and their integration into the platform (see Tools
 section above). Driven by that the following test setups can be derived:
@@ -380,14 +371,9 @@ section above). Driven by that the following test setups can be derived:
 
 All defined setups are used to run automated tests within continuous integration pipelines.
 
-Test sets
-~~~~~~~~~
-
-A test set is a combination of different test scenarios running based on one or several verification setups. The list
-of sets has not been established yet.
 
 Test execution environment and reference hardware
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------------------
 
 The platform is consisting solely on features that are considered as "middleware" as the layer
 above the hardware abstraction layer. The platform itself doe not require to be running on
@@ -401,4 +387,11 @@ The integration of the platform on a target device and the respective verificati
 should be considered by the distributor of the platform. On target integration tests that are
 running on a reference hardware in context of this project can be taken as a starting point.
 
-The reference hardware is defined in the ``[TODO: Well where will it be actually defined?]``.
+The reference hardware is not yet decided.
+
+Reference hardware interaction with infrastructure
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Once the reference hardware is decided, this section will inform about the location of the
+reference hardware, how it interacts with the CI system and how access rights are handled.
+This includes physical maintenance as well as virtual access.
