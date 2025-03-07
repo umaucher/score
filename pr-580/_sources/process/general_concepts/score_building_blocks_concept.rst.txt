@@ -32,14 +32,14 @@ platform consists of **Features** (yellow box, middle, 2nd column).
 
 Further **S-CORE** provides **Software Modules** (red box, middle, 1st column), which can also be
 developed as a SEooC. A Software Module is defined as a **Component** (green box, middle, 2nd column)
-or a set of components realizing a Feature of the platform. A Software Module represents e.g.
-executable code or a library.
+or a set of components realizing a Feature of the platform. In this sense a Software Module is the
+highest level component in our model. A Software Module represents e.g. executable code or a library.
 
 Components are the major building blocks of the platform. Components consists of **Units**
 (grey box, bottom, 2nd column), the lowest level in our model. The represent the source code,
-which implements the Unit. Units has a **Detailed Design** (grey box, middle, 3nd column), which is also
-implemented by the **Source Code** (grey box, bottom, 3nd column). The Detailed Design is verified
-by **Unit Tests** (grey box, middle, 5nd column).
+which implements the Unit. Units has a **Detailed Design** (grey box, middle, 3nd column), which is
+also implemented by the **Source Code** (grey box, bottom, 3nd column). The Detailed Design is
+verified by **Unit Tests** (grey box, middle, 5nd column).
 
 Components are defined by **Component Requirements** (green box, middle, 3nd column) and the
 **Component Architecture** (green box, middle, 4nd column). A **Component Safety Analysis**
