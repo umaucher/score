@@ -191,6 +191,8 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
 For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
 These are data-flow-analysis as well as control-flow-analysis
 
+Static code analysis is part of the :need:`wp__sw_implementation`.
+
 Test Derivation Methods
 ^^^^^^^^^^^^^^^^^^^^^^^
 
