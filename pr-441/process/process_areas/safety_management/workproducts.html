@@ -31,7 +31,10 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,9 +447,13 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Safety Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="roles.html">Roles</a></li>
@@ -458,16 +462,7 @@
 <li class="toctree-l3"><a class="reference internal" href="guidance/index.html">Guidance</a></li>
 </ul>
 </details></li>
-<li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Safety Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="roles.html">Roles</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Work products</a></li>
-<li class="toctree-l2"><a class="reference internal" href="workflows.html">Workflows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="guidance/index.html">Guidance</a></li>
 </ul>
 </details></li>
 </ul>
@@ -550,7 +545,7 @@
                   
   <section id="work-products">
 <h1>Work products<a class="headerlink" href="#work-products" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-29c346f7">
+<div class="need_container docutils container" id="SNCB-bb7eb6ae">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__platform_safety_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -602,7 +597,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bb50b661">
+<div class="need_container docutils container" id="SNCB-c08fa847">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__module_safety_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -653,7 +648,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c00db6e5">
+<div class="need_container docutils container" id="SNCB-61aaa831">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__platform_safety_case">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -700,7 +695,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-904e5279">
+<div class="need_container docutils container" id="SNCB-fc8bcda6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__module_safety_case">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -747,7 +742,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-dfefe989">
+<div class="need_container docutils container" id="SNCB-6ae55b28">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__cmr_reports">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -795,7 +790,7 @@ Note that the Safety Case confirmation review will always be incomplete because 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-409e3b45">
+<div class="need_container docutils container" id="SNCB-25f46205">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__audit_report">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -840,7 +835,7 @@ Note that the Safety Case confirmation review will always be incomplete because 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-9f44f1de">
+<div class="need_container docutils container" id="SNCB-573231fd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__platform_safety_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -895,7 +890,7 @@ Note that the Safety Case confirmation review will always be incomplete because 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b2057c70">
+<div class="need_container docutils container" id="SNCB-00c49182">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__module_safety_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -950,7 +945,7 @@ Note that the Safety Case confirmation review will always be incomplete because 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c93df685">
+<div class="need_container docutils container" id="SNCB-e1e31f20">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_component_class">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1003,7 +998,7 @@ Note that the Safety Case confirmation review will always be incomplete because 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-41bb400f">
+<div class="need_container docutils container" id="SNCB-50c2f3c7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__tailoring">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
