@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-a01960cb">
+  <div class="need_container docutils container" id="SNCB-8330a51a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -659,35 +659,8 @@ the integration of smaller component(s) to a component based on</p>
 </li>
 </ol>
 </section>
-<section id="work-products-and-traceability">
-<h3>Work products and traceability<a class="headerlink" href="#work-products-and-traceability" title="Link to this heading">#</a></h3>
-<p>The traceability between verification relevant work products is one of the defined objectives. An overall overview of
-the different work products and their relationship is given in project context - see
-<a class="reference internal" href="../process/workproducts/index.html"><span class="doc">Workproducts</span></a>. The following work products are related to verification
-activities in general.</p>
-<p>As part of the development of the product:</p>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__platform_test" title="wp__verification__platform_test"><em class="xref need">Platform test (wp__verification__platform_test)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__platform_ver_report" title="wp__verification__platform_ver_report"><em class="xref need">Platform Verification Report (wp__verification__platform_ver_report)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__feat_int_test" title="wp__verification__feat_int_test"><em class="xref need">Feature Integration test (wp__verification__feat_int_test)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__comp_int_test" title="wp__verification__comp_int_test"><em class="xref need">Component Integration test (wp__verification__comp_int_test)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__module_ver_report" title="wp__verification__module_ver_report"><em class="xref need">Module Verification Report (wp__verification__module_ver_report)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__component_test" title="wp__verification__component_test"><em class="xref need">Component test (wp__verification__component_test)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/requirements_engineering/requirements_workproducts.html#wp__requirements__inspect" title="wp__requirements__inspect"><em class="xref need">Requirements Inspection (wp__requirements__inspect)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification (wp__sw_arch_verification)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_code_inspect" title="wp__sw_code_inspect"><em class="xref need">Code Inspection (wp__sw_code_inspect)</em></a></p></li>
-</ol>
-<p>As part of supporting activities:</p>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a></p></li>
-<li><p><a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__specification" title="wp__verification__specification"><em class="xref need">Verification Specification (wp__verification__specification)</em></a> integrated into the respective test implementations.</p></li>
-</ol>
-<p>The link between a verification specification and the respective requirement or design specification is given by the
-identifier of the reference annotated to the verification specification.</p>
-</section>
-<section id="methods">
-<h3>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h3>
+<section id="verification-methods">
+<h3>Verification Methods<a class="headerlink" href="#verification-methods" title="Link to this heading">#</a></h3>
 <p>A verification is based on different methods. The derivation of test cases can also be based on certain methods. An
 overview of the different methods that are applicable in the project are given in this section. Usually the defined
 methods are not applied on each verification level. Due to that the following tables contain a column that defines the
@@ -766,6 +739,8 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 </div>
 <p>For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
 These are data-flow-analysis as well as control-flow-analysis</p>
+<section id="test-derivation-methods">
+<h4>Test Derivation Methods<a class="headerlink" href="#test-derivation-methods" title="Link to this heading">#</a></h4>
 <div class="pst-scrollable-table-container"><table class="table table-center" id="id2">
 <caption><span class="caption-number">Table 23 </span><span class="caption-text">Test case derivation methods (DerivationTechnique)</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <thead>
@@ -798,8 +773,13 @@ These are data-flow-analysis as well as control-flow-analysis</p>
 </tr>
 <tr class="row-even"><td><p>Random Testing</p></td>
 <td><p>monkey-testing</p></td>
-<td><p>1, 2, 3</p></td>
-<td><p>ASIL B</p></td>
+<td><p>3</p></td>
+<td><p>QM, ASIL B</p></td>
+</tr>
+<tr class="row-odd"><td><p>Exlporative Testing</p></td>
+<td><p>explore-testing</p></td>
+<td><p>2, 3</p></td>
+<td><p>QM, ASIL B</p></td>
 </tr>
 </tbody>
 </table>
@@ -807,7 +787,10 @@ These are data-flow-analysis as well as control-flow-analysis</p>
 <p>For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
 testing approaches, but cannot omit them completely. It may be possible to reduce the
 number of boundary-values tested based on a risk assessment and focus on impactful boundaries.
-Similar for the equivalence-classes the</p>
+Similar for the equivalence-classes the focus can be put on more likely classes such as
+invalid classes, empty/null/zero values, system limits. Equivalence Classes should be
+supplemented by Boundary Value Analysis.</p>
+</section>
 </section>
 <section id="quality-criteria">
 <h3>Quality criteria<a class="headerlink" href="#quality-criteria" title="Link to this heading">#</a></h3>
@@ -825,7 +808,7 @@ to be reached with every contribution.</p>
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Structural Statement Coverage</p></td>
-<td><p>95%</p></td>
+<td><p>85%</p></td>
 <td><p>100%</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
@@ -882,6 +865,15 @@ needs to be performed by the contributor.</p>
 components or software changes. A specific selection of sub sets is not planned. The fact that all existing and
 automated tests get executed continuously covers the approach to identify regressions.</p>
 </section>
+<section id="work-products-and-traceability">
+<h3>Work products and traceability<a class="headerlink" href="#work-products-and-traceability" title="Link to this heading">#</a></h3>
+<p>The traceability between verification relevant work products is one of the defined objectives.
+An overall overview of the different work products and their relationship is given in project
+context - see <a class="reference internal" href="../process/workproducts/index.html"><span class="doc">Workproducts</span></a>.</p>
+<p>The work products are related to verification can be found in <a class="reference internal" href="../process/process_areas/verification/workproducts.html#verification-work-products"><span class="std std-ref">Verification Work Products</span></a>.</p>
+<p>The link between a test specification and the respective requirement or design specification is given by the
+identifier of the reference annotated to the verification specification.</p>
+</section>
 </section>
 <section id="environments-and-resources">
 <h2>Environments and resources<a class="headerlink" href="#environments-and-resources" title="Link to this heading">#</a></h2>
@@ -895,6 +887,7 @@ document:</p>
 fulfilled when contributing to the project.</p></li>
 <li><p>The <a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> needs to verify that the contributor has fulfilled the expected objectives.</p></li>
 </ol>
+<p>In this way roles are followed as defined in <a class="reference internal" href="../process/process_areas/verification/verification_roles.html#verification-roles"><span class="std std-ref">Roles</span></a>.</p>
 </section>
 <section id="tools">
 <h3>Tools<a class="headerlink" href="#tools" title="Link to this heading">#</a></h3>
@@ -926,11 +919,6 @@ section above). Driven by that the following test setups can be derived:</p>
 </ol>
 <p>All defined setups are used to run automated tests within continuous integration pipelines.</p>
 </section>
-<section id="test-sets">
-<h3>Test sets<a class="headerlink" href="#test-sets" title="Link to this heading">#</a></h3>
-<p>A test set is a combination of different test scenarios running based on one or several verification setups. The list
-of sets has not been established yet.</p>
-</section>
 <section id="test-execution-environment-and-reference-hardware">
 <h3>Test execution environment and reference hardware<a class="headerlink" href="#test-execution-environment-and-reference-hardware" title="Link to this heading">#</a></h3>
 <p>The platform is consisting solely on features that are considered as “middleware” as the layer
@@ -942,7 +930,13 @@ target hardware.</p>
 <p>The integration of the platform on a target device and the respective verification and validation
 should be considered by the distributor of the platform. On target integration tests that are
 running on a reference hardware in context of this project can be taken as a starting point.</p>
-<p>The reference hardware is defined in the <code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Well</span> <span class="pre">where</span> <span class="pre">will</span> <span class="pre">it</span> <span class="pre">be</span> <span class="pre">actually</span> <span class="pre">defined?]</span></code>.</p>
+<p>The reference hardware is not yet decided.</p>
+<section id="reference-hardware-interaction-with-infrastructure">
+<h4>Reference hardware interaction with infrastructure<a class="headerlink" href="#reference-hardware-interaction-with-infrastructure" title="Link to this heading">#</a></h4>
+<p>Once the reference hardware is decided, this section will inform about the location of the
+reference hardware, how it interacts with the CI system and how access rights are handled.
+This includes physical maintenance as well as virtual access.</p>
+</section>
 </section>
 </section>
 </section>
@@ -1006,20 +1000,25 @@ running on a reference hardware in context of this project can be taken as a sta
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-approach">General approach</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#software-integration">Software integration</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#levels-of-integration-and-verification">Levels of integration and verification</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-products-and-traceability">Work products and traceability</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-methods">Verification Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-derivation-methods">Test Derivation Methods</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-criteria">Quality criteria</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-development">Test development</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-execution-and-result-analysis">Test execution and result analysis</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-selection-and-regression-testing">Test selection and regression testing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#work-products-and-traceability">Work products and traceability</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#environments-and-resources">Environments and resources</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#roles">Roles</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tools">Tools</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-setups-and-variants">Verification setups and variants</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-sets">Test sets</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-execution-environment-and-reference-hardware">Test execution environment and reference hardware</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-execution-environment-and-reference-hardware">Test execution environment and reference hardware</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#reference-hardware-interaction-with-infrastructure">Reference hardware interaction with infrastructure</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

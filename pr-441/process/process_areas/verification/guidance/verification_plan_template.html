@@ -557,7 +557,7 @@
                   
   <section id="verification-plan-template">
 <span id="id1"></span><h1>Verification Plan Template<a class="headerlink" href="#verification-plan-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7d80eda2">
+<div class="need_container docutils container" id="SNCB-1f942357">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__verification__plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -585,7 +585,169 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>This document implements <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a>.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>This document implements <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a>.</p>
+<p>It provides a template for a software verification plan and should be adapted to the specific
+project needs.</p>
+<blockquote>
+<div><p>The document should start with a header following the <a class="reference internal" href="../../../../platform_management_plan/documentation_management.html#doc__documentation_mgt_plan" title="doc__documentation_mgt_plan"><em class="xref need">Documentation Management Plan (doc__documentation_mgt_plan)</em></a>.</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">document</span><span class="p">::</span> Software Verification Plan
+   <span class="nc">:id:</span> doc__verification_plan
+   <span class="nc">:status:</span> draft
+   <span class="nc">:safety:</span> ASIL_B
+   <span class="nc">:tags:</span> platform_management
+
+<span class="gh">Software Verification Plan</span>
+<span class="gh">**************************</span>
+
+This document provides a template for a software verification plan.
+It should be adapted to the specific needs of project.
+
+
+<span class="gh">Purpose</span>
+<span class="gh">=======</span>
+
+This section should briefly describe the overall goal of the verification plan.
+It should state the plan&#39;s intended audience and the information it aims to provide.
+This might include clarifying the scope of the verification activities and linking to
+other relevant documents.
+
+
+<span class="gh">Objectives and Scope</span>
+<span class="gh">====================</span>
+
+<span class="gh">Objectives</span>
+<span class="gh">----------</span>
+
+This section outlines the key objectives of the software verification effort.
+Examples include correctness, completeness, reliability, performance, maintainability,
+compliance, and traceability. Each objective should be clearly defined and measurable.
+
+<span class="gh">Verification Scope and Constraints</span>
+<span class="gh">----------------------------------</span>
+
+This section details what software components and functionalities are included in the
+verification process. It should also clearly specify any limitations or exclusions.
+This section should address external dependencies and integrations.
+
+
+<span class="gh">Risks and Mitigation</span>
+<span class="gh">--------------------</span>
+
+This section identifies potential risks associated with the verification activities and outlines
+strategies to mitigate those risks. This may involve referencing the <span class="na">:need:</span><span class="nv">`wp__platform_mgmt`</span>.
+
+
+<span class="gh">Schedules</span>
+<span class="gh">---------</span>
+
+This section defines the timeline for different verification activities.
+It might include milestones, deadlines, and dependencies between tasks.
+
+
+<span class="gh">Approach</span>
+<span class="gh">========</span>
+
+<span class="gh">General Approach</span>
+<span class="gh">----------------</span>
+
+This section provides a high-level overview of the verification strategy.
+It should describe the overall methodology (e.g., Continuous Integration),
+approaches used, and rationale behind the choices made.
+
+<span class="gh">Software Integration</span>
+<span class="gh">--------------------</span>
+
+This section details how software components are integrated into the system.
+It should describe the integration process, including procedures for handling new features,
+bug fixes, and code changes.
+
+<span class="gh">Levels of Integration and Verification</span>
+<span class="gh">--------------------------------------</span>
+
+This section defines the different levels of integration and verification that will be performed
+(e.g., unit, component, system). Each level should be clearly defined, with associated criteria
+for successful completion.
+
+<span class="gh">Verification Methods</span>
+<span class="gh">--------------------</span>
+
+This section lists the specific verification methods used, such as static analysis,
+dynamic testing, reviews, and inspections. Each method should be briefly described,
+including its purpose and applicability at different levels of verification.
+Reference tables can list methods, identifiers, applicable levels and ASIL relevance.
+
+<span class="gh">Test Derivation Methods</span>
+<span class="gh">^^^^^^^^^^^^^^^^^^^^^^^</span>
+
+This section details the techniques used to derive test cases (e.g., boundary value analysis,
+equivalence partitioning, requirements tracing). It should clarify which techniques are used
+at each level of testing and for different ASIL levels.  Again, a reference table is recommended.
+
+<span class="gh">Quality Criteria</span>
+<span class="gh">----------------</span>
+
+This section specifies the quality criteria that must be met for successful verification.
+These criteria might include code coverage metrics, defect density, or other relevant measures.
+The criteria should be defined with quantifiable goals for different ASIL levels.
+
+<span class="gh">Test Development</span>
+<span class="gh">----------------</span>
+
+This section describes the process for developing and maintaining test cases.
+It should cover aspects such as test automation, test data management, and version control.
+
+<span class="gh">Test Execution and Result Analysis</span>
+<span class="gh">----------------------------------</span>
+
+This section describes how tests will be executed and the procedures for analyzing the results.
+It should outline the tools and processes used for test execution and reporting.
+
+<span class="gh">Test Selection and Regression Testing</span>
+<span class="gh">-------------------------------------</span>
+
+This section describes the approach to selecting test cases for execution and the strategy for
+regression testing to ensure that new changes don&#39;t introduce regressions.
+
+<span class="gh">Work Products and Traceability</span>
+<span class="gh">------------------------------</span>
+
+This section lists all the key deliverables related to the verification process.
+It should also describe how traceability between requirements, design, code, and test
+cases is maintained.
+
+
+<span class="gh">Environments and Resources</span>
+<span class="gh">==========================</span>
+
+<span class="gh">Roles</span>
+<span class="gh">-----</span>
+
+This section defines the roles and responsibilities of individuals involved in the
+verification process. It can refer and should be based on the definition in the
+verifcation process <span class="na">:ref:</span><span class="nv">`verification_roles`</span>.
+
+<span class="gh">Tools</span>
+<span class="gh">-----</span>
+
+This section lists the tools used for verification, including build systems, test frameworks,
+static analysis tools, and other relevant software.
+
+<span class="gh">Verification Setups and Variants</span>
+<span class="gh">--------------------------------</span>
+
+This section describes the different test environments and configurations used for verification.
+
+<span class="gh">Test Execution Environment and Reference Hardware</span>
+<span class="gh">-------------------------------------------------</span>
+
+This section describes the hardware and software environments used for test execution.
+It should include information about any specific hardware platforms or simulators used.
+It should also define how the verification environment interacts with the CI system, including
+access control and maintenance.
+</pre></div>
+</div>
+</div></blockquote>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__verification__plan" title="gd_temp__verification__plan">gd_temp__verification__plan</a></span></span></div>
