@@ -30,7 +30,7 @@ Checklists
    | **2. Checklist**
    |
 
-   .. list-table:: Feature Request Review Checklist
+   .. list-table:: Feature/Component Request Review Checklist
       :header-rows: 1
       :widths: 10,30,6
 
@@ -38,11 +38,11 @@ Checklists
         - Topic
         - Status [FAIL|PASS]
       * - 1
-        - Does the Feature Request follow the template?
+        - Does the Feature/Component Request follow the template?
         -
 
       * - 2
-        - Are all required topics of the Feature Request template filled?
+        - Are all required topics of the Feature/Component Request template filled?
         -
 
       * - 3
@@ -75,4 +75,7 @@ Checklists
 
       * - 10
         - Does the Change Request has a milestone as specified?
+        -
+      * - 11
+        - Does the Change Request has verification measure as specified?
         -

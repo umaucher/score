@@ -41,8 +41,12 @@ Change Request type.
      - Template
    * - Feature
      - :need:`[[title]] <gd_temp__change__feature_request>`
-   * - Modification
+   * - Feature Modification
      - :need:`[[title]] <gd_temp__change__feature_request>`
+   * - Component
+     - :need:`[[title]] <gd_temp__change__component_request>`
+   * - Component Modification
+     - :need:`[[title]] <gd_temp__change__component_request>`
 
 Attributes
 ----------
@@ -98,14 +102,14 @@ Create Change Request
 ---------------------
 
 :need:`[[title]] <rl__contributor>` creates the Change Request in the defined Issue Tracking
-System based on a defined template. It is expected, that the UID will be provided by the Issue
-Tracking System.
+System linked to the created Feature or Component Request work products based on the provided templates.
+It is expected, that the UID will be provided by the Issue Tracking System.
 
-The title of the Change Request should reflect the tpye (new feature request or feature
-modification).
+The title of the Change Request should reflect the tpye (new feature/component request or
+feature/component modification).
 
-The desription should reflect the detailed changes. In case of a feature request, fill-out the
-template sections properly. For modifications touch only the concerned sections.
+The desription should reflect the detailed changes. In case of a new feature/component request,
+fill-out the template sections properly. For modifications touch only the concerned sections.
 
 Set the status of the Change Request to "draft", indicating that is not ready for review.
 
@@ -121,7 +125,7 @@ the following topics in the created Change Request:
 1. List of all affected work products
 2. Provide potential implementation schedule including targeted Milestone
 3. Identify risks for implementation, required **S-CORE** resources
-4. Identify impact on functional safety, security
+4. Identify impact on existing work producst and on functional safety, security
 5. Define verification measures used to confirm the implementation
 
 Set the status of the Change Request to "draft", indicating that is not ready for review.

@@ -556,7 +556,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8b3a8bf6">
+<div class="need_container docutils container" id="SNCB-091513d5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__change__change_request">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -624,8 +624,14 @@ Change Request type.</p>
 <tr class="row-even"><td><p>Feature</p></td>
 <td><p><a class="reference internal" href="change_management_templates.html#gd_temp__change__feature_request" title="gd_temp__change__feature_request"><em class="xref need">Feature Request Template</em></a></p></td>
 </tr>
-<tr class="row-odd"><td><p>Modification</p></td>
+<tr class="row-odd"><td><p>Feature Modification</p></td>
 <td><p><a class="reference internal" href="change_management_templates.html#gd_temp__change__feature_request" title="gd_temp__change__feature_request"><em class="xref need">Feature Request Template</em></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Component</p></td>
+<td><p><a class="reference internal" href="change_management_templates.html#gd_temp__change__component_request" title="gd_temp__change__component_request"><em class="xref need">Component Request Template</em></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Component Modification</p></td>
+<td><p><a class="reference internal" href="change_management_templates.html#gd_temp__change__component_request" title="gd_temp__change__component_request"><em class="xref need">Component Request Template</em></a></p></td>
 </tr>
 </tbody>
 </table>
@@ -715,12 +721,12 @@ be found here: <a class="reference internal" href="../change_management_concept.
 <section id="create-change-request">
 <span id="chm-create-change-request"></span><h3>Create Change Request<a class="headerlink" href="#create-change-request" title="Link to this heading">#</a></h3>
 <p><a class="reference internal" href="../../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a> creates the Change Request in the defined Issue Tracking
-System based on a defined template. It is expected, that the UID will be provided by the Issue
-Tracking System.</p>
-<p>The title of the Change Request should reflect the tpye (new feature request or feature
-modification).</p>
-<p>The desription should reflect the detailed changes. In case of a feature request, fill-out the
-template sections properly. For modifications touch only the concerned sections.</p>
+System linked to the created Feature or Component Request work products based on the provided templates.
+It is expected, that the UID will be provided by the Issue Tracking System.</p>
+<p>The title of the Change Request should reflect the tpye (new feature/component request or
+feature/component modification).</p>
+<p>The desription should reflect the detailed changes. In case of a new feature/component request,
+fill-out the template sections properly. For modifications touch only the concerned sections.</p>
 <p>Set the status of the Change Request to “draft”, indicating that is not ready for review.</p>
 </section>
 <section id="analyse-change-request">
@@ -732,7 +738,7 @@ the following topics in the created Change Request:</p>
 <li><p>List of all affected work products</p></li>
 <li><p>Provide potential implementation schedule including targeted Milestone</p></li>
 <li><p>Identify risks for implementation, required <strong>S-CORE</strong> resources</p></li>
-<li><p>Identify impact on functional safety, security</p></li>
+<li><p>Identify impact on existing work producst and on functional safety, security</p></li>
 <li><p>Define verification measures used to confirm the implementation</p></li>
 </ol>
 <p>Set the status of the Change Request to “draft”, indicating that is not ready for review.

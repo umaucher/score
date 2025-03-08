@@ -97,7 +97,11 @@ Change Request Attributes
    :complies: std_req__aspice_40__SUP-10-BP1
 
       * Feature
-      * Modification
+      * Feature Modification
+      * Component
+      * Componnent Modification
+
+   Feature/Component means new Feature/Component
 
 .. gd_req:: Change Request attribute: Affected Work Products
    :id: gd_req__change__attr_affected_wp

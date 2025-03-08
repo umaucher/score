@@ -35,7 +35,7 @@ Work Products Change Management
    :status: valid
    :tags: change_management
 
-   | - Feature request for a new feature or feature modification
+   | - Feature request for a new feature or a feature modification
    |
    | Change Request for a new platform feature or a modification of an existing platform feature,
    | which changes the scope of the feature.
@@ -45,7 +45,7 @@ Work Products Change Management
    :status: valid
    :tags: change_management
 
-   | - Component request for a new component or component modification
+   | - Component request for a new component or a component modification
    |
    | Change Request for a new platform component or a modification of an existing platform component,
    | which changes the scope of the component.

@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-898b7b95">
+  <div class="need_container docutils container" id="SNCB-3680e4cd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_change_management_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -579,7 +579,7 @@ and verification.</p>
 <h3>Change Management Goals<a class="headerlink" href="#change-management-goals" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Requests for Changes are recorded and identified.</p></li>
-<li><p>Change Requests are analyzed, dependencies and relationships to Work Products or other Change
+<li><p>Change Requests are analyzed, dependencies and relationships to work products or other Change
 Requests are identified, and the impact is estimated.</p></li>
 <li><p>Change Requests are approved before implementation and prioritized accordingly.</p></li>
 <li><p>Bidirectional traceability is established between Change Requests and affected work products.</p></li>
@@ -597,8 +597,8 @@ affected parties.</p></li>
 <p>Contributions in general to the <strong>S-CORE</strong> project are described here
 (compare <a class="reference internal" href="../contribute/contribution_request/contribution_request.html#gd_guidl__contr_request_guideline" title="gd_guidl__contr_request_guideline"><em class="xref need">Contribution Request Guideline (gd_guidl__contr_request_guideline)</em></a>).</p>
 <p>A Change Request is a specific contribution, and
-it is the <strong>ONLY</strong> way to contribute new features or to modify the scope of existing features
-in the <strong>S-CORE</strong> project.</p>
+it is the <strong>ONLY</strong> way to contribute new features/components or to modify the scope of existing
+features/components in the <strong>S-CORE</strong> project.</p>
 </section>
 <section id="change-request-infrastructure-and-types">
 <h3>Change Request Infrastructure and Types<a class="headerlink" href="#change-request-infrastructure-and-types" title="Link to this heading">#</a></h3>
@@ -609,8 +609,8 @@ of Change Requests. The tool is used to implement and verify Change Requests wit
 <p>The next figure gives an overview, how Change Requests are realized in <strong>S-CORE</strong>. An ISSUE is
 used to create a Change Request including required attributes as defined in
 <a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#chm-process-change-request-attributes"><span class="std std-ref">Change Request Attributes</span></a>.
-The ISSUE may be linked to SUB-ISSUEs, if required, to manage more complex Change Requests.
-The implementation of a Change Request requires at least one PR linked to the ISSUE created
+The ISSUE may be linked to other ISSUEs or SUB-ISSUEs, if required, to manage more complex Change
+Requests. The implementation of a Change Request requires at least one PR linked to the ISSUE created
 for the Change Request.</p>
 <figure class="align-center" id="id1">
 <a class="reference internal image-reference" href="../_images/score_change_request_overview.drawio.svg"><img alt="Change Request Overview" src="../_images/score_change_request_overview.drawio.svg" style="width: 100%;" />
@@ -638,13 +638,23 @@ for the Change Request.</p>
 <td><p>Created by <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> to change requirements and work products, new feature</p></td>
 <td><p>ISSUE with label <code class="docutils literal notranslate"><span class="pre">feature_request</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p>Modification</p></td>
+<tr class="row-odd"><td><p>Feature Modification</p></td>
 <td><p>Created by <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> to change requirements and work products, scope change</p></td>
 <td><p>ISSUE with label <code class="docutils literal notranslate"><span class="pre">feature_modification</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Component</p></td>
+<td><p>Created by <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> to change requirements and work products, new component</p></td>
+<td><p>ISSUE with label <code class="docutils literal notranslate"><span class="pre">component_request</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Component Modification</p></td>
+<td><p>Created by <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> to change requirements and work products, scope change</p></td>
+<td><p>ISSUE with label <code class="docutils literal notranslate"><span class="pre">component_modification</span></code></p></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>Change Request Traceability Impact Analysis requires the following tools:</p>
+<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change_tool_impact_analysis" title="gd_req__change_tool_impact_analysis"><em class="xref need">Change Requests Impact Anal...</em></a></p>
 </section>
 <section id="change-request-attributes">
 <h3>Change Request Attributes<a class="headerlink" href="#change-request-attributes" title="Link to this heading">#</a></h3>
@@ -653,11 +663,14 @@ for the Change Request.</p>
 <p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_status" title="gd_req__change__attr_status"><em class="xref need">Requirement attribute: status</em></a> is defined by the combination of the ISSUE state
 and the states of the linked PRs.</p>
 <p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_title" title="gd_req__change__attr_title"><em class="xref need">Change Request attribute: t...</em></a> is identical to the ISSUE title.</p>
-<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_description" title="gd_req__change__attr_impact_description"><em class="xref need">Change Request attribute: d...</em></a> is identical to the description filled
-of an ISSUE.</p>
-<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_safety" title="gd_req__change__attr_impact_safety"><em class="xref need">Change Request attribute: s...</em></a> is part of the description.</p>
-<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_security" title="gd_req__change__attr_impact_security"><em class="xref need">Change Request attribute: s...</em></a> is part of the description.</p>
-<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__types" title="gd_req__change__types"><em class="xref need">Change Request: Types</em></a> is defined by labe of a ISSUE.</p>
+<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_description" title="gd_req__change__attr_impact_description"><em class="xref need">Change Request attribute: d...</em></a> is defined in the linked PR or part of the
+description.</p>
+<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_safety" title="gd_req__change__attr_impact_safety"><em class="xref need">Change Request attribute: s...</em></a> is defined in the linked PR or part of the
+description.</p>
+<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_impact_security" title="gd_req__change__attr_impact_security"><em class="xref need">Change Request attribute: s...</em></a> is defined in the linked PR or part of the
+description.</p>
+<p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__types" title="gd_req__change__types"><em class="xref need">Change Request: Types</em></a> is defined by label of a ISSUE and part of the
+description.</p>
 <p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_affected_wp" title="gd_req__change__attr_affected_wp"><em class="xref need">Change Request attribute: A...</em></a> is defined in the linked PR or part of the
 description.</p>
 <p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_reqs.html#gd_req__change__attr_milestone" title="gd_req__change__attr_milestone"><em class="xref need">Change Request attribute: M...</em></a> is defined by the Milestone of a ISSUE.</p>
@@ -683,15 +696,16 @@ description.</p>
 <p>An ISSUE is the <strong>ONLY</strong> way to create and manage a Change Request in <strong>S-CORE</strong>.
 A PR is the <strong>ONLY</strong> way to implement a Change Request in <strong>S-CORE</strong>,
 thus an ISSUE must be linked at least to one or more PRs.</p>
-<p>The figure below shows the workflow for the simple case of a Change Request.</p>
+<p>The figure below shows the workflow for the simplest case of a Change Request.</p>
 <p>An ISSUE with the label according to the Change Request type is created in status <code class="docutils literal notranslate"><span class="pre">OPEN</span></code>.
-The title of the ISSUE reflects the potential change.
-The Description of the ISSUE describes the details and potential impact. For the new feature
-request use the template <a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_templates.html#chm-templates"><span class="std std-ref">Feature Request</span></a>. For feature modifications update
-the existing feature documentation (based on the filled template).</p>
-<p>The ISSUE is linked to one PR in status <code class="docutils literal notranslate"><span class="pre">DRAFT</span></code>, which may contain the
-required affected work products based on defined templates or implementation and verification
-proposals.</p>
+The title of the ISSUE reflects the potential change. The description of the ISSUE may give a brief
+description of the requested change or modification.</p>
+<p>The details are part of the Feature/Component Request work product. The Feature/Component Request
+is provided by a PR, which is linked to the ISSUE in status <code class="docutils literal notranslate"><span class="pre">DRAFT</span></code>.</p>
+<p>For a new Feature/Component Request the provided templates <a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_templates.html#chm-templates"><span class="std std-ref">Feature/Component Request</span></a>
+must be used. For a modification of an existing Feature/Component, update the existing work products.</p>
+<p>The linked PR in status <code class="docutils literal notranslate"><span class="pre">DRAFT</span></code>, which contains the Feature/Component Requests, may contain also
+other required affected and changed work products or implementation and verification proposals.</p>
 <p>Planning is done by setting the milestone of the ISSUE accordingly.</p>
 <p>As long as the <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> wants to modify the content of the Change
 Request, the linked PR is kept in status <code class="docutils literal notranslate"><span class="pre">DRAFT</span></code>.</p>
@@ -706,13 +720,13 @@ ISSUE status <code class="docutils literal notranslate"><span class="pre">OPEN</
 </figcaption>
 </figure>
 <p><strong>To 2. Review the Change Request:</strong></p>
-<p>The Change Request is reviewed from the <a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> and
+<p>The Change Request is reviewed from the <a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> and the
 review results are resolved by the <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a>. The review results
-are documented in the PR. Unless the information is not sufficient, the related PR is kept in
+are documented in the PR. As long as the information is not sufficient, the related PR is kept in
 status <code class="docutils literal notranslate"><span class="pre">OPEN</span></code>.</p>
 <p><a class="reference internal" href="../process/process_areas/change_management/guidance/change_management_checklist.html#chm-checklist"><span class="std std-ref">Checklists</span></a> can help to verify whether the information is complete.</p>
-<p>The implementation part of the Change Request is reviewed according the checklists of the affected
-work products. Verification of the implementation must be successful.
+<p>The realisation parts of the Change Request are reviewed according the checklists of the affected
+work products. Verification of the realisation parts must be successful.
 If the verification is not sufficient, the related PR is kept in status <code class="docutils literal notranslate"><span class="pre">OPEN</span></code> or may changed
 back to <code class="docutils literal notranslate"><span class="pre">DRAFT</span></code> (compare <a class="reference internal" href="../contribute/contribution_request/contribution_request.html#gd_guidl__issue_guideline" title="gd_guidl__issue_guideline"><em class="xref need">Issue Guideline (gd_guidl__issue_guideline)</em></a>).</p>
 <p>Change request status: <code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">review</span></code> is implemented as
@@ -727,7 +741,7 @@ otherwise, if rejected, PR status changes to <code class="docutils literal notra
 <p>If <code class="docutils literal notranslate"><span class="pre">approved</span></code> the status of the ISSUE is <code class="docutils literal notranslate"><span class="pre">CLOSED</span></code>. This is also the case for rejected Change
 Requests.</p>
 <p>The figure below shows the workflow for a complex case of a Change Request.</p>
-<p>The ISSUE is linked to SUB-ISSUES, and the SUB-ISSUE is linked to a PR. In principle the Change
+<p>The ISSUE is linked to SUB-ISSUES, and each SUB-ISSUE is linked to a PR. In principle the Change
 Request workflows applies for all SUB-ISSUEs independently. Finally the ISSUE must be closed
 manually.</p>
 <figure class="align-center" id="id4">
@@ -739,7 +753,7 @@ manually.</p>
 </figure>
 <p>The figure below shows the workflow for another complex case of a Change Request.</p>
 <p>Here the Change Request has an impact on work products in different repositories, e.g. the
-<strong>S-CORE</strong> repository, containts feature work products and a Module repository, contains
+<strong>S-CORE</strong> repository, contains feature work products and a Module repository, contains
 Component work products.
 The ISSUE is linked to SUB-ISSUES in the <strong>S-CORE</strong> repository, and the SUB-ISSUE is linked to a PR.
 But in addition the ISSUE is now linked to another ISSUE in the Module repository, also linked

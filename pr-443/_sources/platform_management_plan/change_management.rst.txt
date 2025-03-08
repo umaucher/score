@@ -37,7 +37,7 @@ Change Management Goals
 ^^^^^^^^^^^^^^^^^^^^^^^
 
 * Requests for Changes are recorded and identified.
-* Change Requests are analyzed, dependencies and relationships to Work Products or other Change
+* Change Requests are analyzed, dependencies and relationships to work products or other Change
   Requests are identified, and the impact is estimated.
 * Change Requests are approved before implementation and prioritized accordingly.
 * Bidirectional traceability is established between Change Requests and affected work products.
@@ -56,8 +56,8 @@ Contributions in general to the **S-CORE** project are described here
 (compare :need:`gd_guidl__contr_request_guideline`).
 
 A Change Request is a specific contribution, and
-it is the **ONLY** way to contribute new features or to modify the scope of existing features
-in the **S-CORE** project.
+it is the **ONLY** way to contribute new features/components or to modify the scope of existing
+features/components in the **S-CORE** project.
 
 Change Request Infrastructure and Types
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -71,8 +71,8 @@ of Change Requests. The tool is used to implement and verify Change Requests wit
 The next figure gives an overview, how Change Requests are realized in **S-CORE**. An ISSUE is
 used to create a Change Request including required attributes as defined in
 :ref:`chm_process_change_request_attributes`.
-The ISSUE may be linked to SUB-ISSUEs, if required, to manage more complex Change Requests.
-The implementation of a Change Request requires at least one PR linked to the ISSUE created
+The ISSUE may be linked to other ISSUEs or SUB-ISSUEs, if required, to manage more complex Change
+Requests. The implementation of a Change Request requires at least one PR linked to the ISSUE created
 for the Change Request.
 
 .. figure:: _assets/score_change_request_overview.drawio.svg
@@ -94,9 +94,20 @@ Changes are clustered in the following types:
    * - Feature
      - Created by :need:`Contributor <rl__contributor>` to change requirements and work products, new feature
      - ISSUE with label ``feature_request``
-   * - Modification
+   * - Feature Modification
      - Created by :need:`Contributor <rl__contributor>` to change requirements and work products, scope change
      - ISSUE with label ``feature_modification``
+   * - Component
+     - Created by :need:`Contributor <rl__contributor>` to change requirements and work products, new component
+     - ISSUE with label ``component_request``
+   * - Component Modification
+     - Created by :need:`Contributor <rl__contributor>` to change requirements and work products, scope change
+     - ISSUE with label ``component_modification``
+
+
+Change Request Traceability Impact Analysis requires the following tools:
+
+:need:`[[title]] <gd_req__change_tool_impact_analysis>`
 
 Change Request Attributes
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -107,17 +118,19 @@ Change Request Attributes
 :need:`[[title]] <gd_req__change__attr_status>` is defined by the combination of the ISSUE state
 and the states of the linked PRs.
 
-
 :need:`[[title]] <gd_req__change__attr_title>` is identical to the ISSUE title.
 
-:need:`[[title]] <gd_req__change__attr_impact_description>` is identical to the description filled
-of an ISSUE.
+:need:`[[title]] <gd_req__change__attr_impact_description>` is defined in the linked PR or part of the
+description.
 
-:need:`[[title]] <gd_req__change__attr_impact_safety>` is part of the description.
+:need:`[[title]] <gd_req__change__attr_impact_safety>` is defined in the linked PR or part of the
+description.
 
-:need:`[[title]] <gd_req__change__attr_impact_security>` is part of the description.
+:need:`[[title]] <gd_req__change__attr_impact_security>` is defined in the linked PR or part of the
+description.
 
-:need:`[[title]] <gd_req__change__types>` is defined by labe of a ISSUE.
+:need:`[[title]] <gd_req__change__types>` is defined by label of a ISSUE and part of the
+description.
 
 :need:`[[title]] <gd_req__change__attr_affected_wp>` is defined in the linked PR or part of the
 description.
@@ -141,17 +154,20 @@ An ISSUE is the **ONLY** way to create and manage a Change Request in **S-CORE**
 A PR is the **ONLY** way to implement a Change Request in **S-CORE**,
 thus an ISSUE must be linked at least to one or more PRs.
 
-The figure below shows the workflow for the simple case of a Change Request.
+The figure below shows the workflow for the simplest case of a Change Request.
 
 An ISSUE with the label according to the Change Request type is created in status ``OPEN``.
-The title of the ISSUE reflects the potential change.
-The Description of the ISSUE describes the details and potential impact. For the new feature
-request use the template :ref:`Feature Request<chm_templates>`. For feature modifications update
-the existing feature documentation (based on the filled template).
+The title of the ISSUE reflects the potential change. The description of the ISSUE may give a brief
+description of the requested change or modification.
 
-The ISSUE is linked to one PR in status ``DRAFT``, which may contain the
-required affected work products based on defined templates or implementation and verification
-proposals.
+The details are part of the Feature/Component Request work product. The Feature/Component Request
+is provided by a PR, which is linked to the ISSUE in status ``DRAFT``.
+
+For a new Feature/Component Request the provided templates :ref:`Feature/Component Request<chm_templates>`
+must be used. For a modification of an existing Feature/Component, update the existing work products.
+
+The linked PR in status ``DRAFT``, which contains the Feature/Component Requests, may contain also
+other required affected and changed work products or implementation and verification proposals.
 
 Planning is done by setting the milestone of the ISSUE accordingly.
 
@@ -173,15 +189,15 @@ To trigger the next step the PR status is changed from ``DRAFT`` to ``OPEN``.
 
 **To 2. Review the Change Request:**
 
-The Change Request is reviewed from the :need:`Committer <rl__committer>` and
+The Change Request is reviewed from the :need:`Committer <rl__committer>` and the
 review results are resolved by the :need:`Contributor <rl__contributor>`. The review results
-are documented in the PR. Unless the information is not sufficient, the related PR is kept in
+are documented in the PR. As long as the information is not sufficient, the related PR is kept in
 status ``OPEN``.
 
 :ref:`chm_checklist` can help to verify whether the information is complete.
 
-The implementation part of the Change Request is reviewed according the checklists of the affected
-work products. Verification of the implementation must be successful.
+The realisation parts of the Change Request are reviewed according the checklists of the affected
+work products. Verification of the realisation parts must be successful.
 If the verification is not sufficient, the related PR is kept in status ``OPEN`` or may changed
 back to ``DRAFT`` (compare :need:`gd_guidl__issue_guideline`).
 
@@ -205,7 +221,7 @@ Requests.
 
 The figure below shows the workflow for a complex case of a Change Request.
 
-The ISSUE is linked to SUB-ISSUES, and the SUB-ISSUE is linked to a PR. In principle the Change
+The ISSUE is linked to SUB-ISSUES, and each SUB-ISSUE is linked to a PR. In principle the Change
 Request workflows applies for all SUB-ISSUEs independently. Finally the ISSUE must be closed
 manually.
 
@@ -219,7 +235,7 @@ manually.
 The figure below shows the workflow for another complex case of a Change Request.
 
 Here the Change Request has an impact on work products in different repositories, e.g. the
-**S-CORE** repository, containts feature work products and a Module repository, contains
+**S-CORE** repository, contains feature work products and a Module repository, contains
 Component work products.
 The ISSUE is linked to SUB-ISSUES in the **S-CORE** repository, and the SUB-ISSUE is linked to a PR.
 But in addition the ISSUE is now linked to another ISSUE in the Module repository, also linked
