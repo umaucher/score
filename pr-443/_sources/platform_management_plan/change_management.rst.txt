@@ -216,6 +216,24 @@ manually.
 
   Change Request Complex Workflow Overview Case 1
 
+The figure below shows the workflow for another complex case of a Change Request.
+
+Here the Change Request has an impact on work products in different repositories, e.g. the
+**S-CORE** repository, containts feature work products and a Module repository, contains
+Component work products.
+The ISSUE is linked to SUB-ISSUES in the **S-CORE** repository, and the SUB-ISSUE is linked to a PR.
+But in addition the ISSUE is now linked to another ISSUE in the Module repository, also linked
+to a PR. In principle the Change Request workflows applies for all SUB-ISSUEs, ISSUES in
+Module repository independently. Finally the ISSUE in the **S-CORE** repository must be closed
+manually.
+
+.. figure:: _assets/score_change_request_workflow_complex_2.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Change Request Complex Workflow Overview Case 2
+
+  Change Request Complex Workflow Overview Case 2
+
 Change Management SW Platform Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

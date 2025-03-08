@@ -138,5 +138,19 @@ Change Request Checks
       :columns: title
       :colwidths: 30
 
+
+Change Request Traceability Impact Analysis Tool
+''''''''''''''''''''''''''''''''''''''''''''''''
+
+.. gd_req:: Change Requests Impact Analysis Tool
+   :id: gd_req__change_tool_impact_analysis
+   :status: valid
+   :tags: check, tool
+   :satisfies: wf__change__cr_an_change_request, wf__change__rv_ap_change_request
+   :complies:
+
+   It shall be reported, which work products and elements are affected by adding a new
+   feature or component or by a modification of an existing feature or component.
+
 .. needextend:: "process_areas/change_management" in docname
    :+tags: change_management

@@ -28,24 +28,29 @@ Key concept
 ***********
 A Change Request is the **ONLY** way to contribute (compare :need:`gd_guidl__contr_request_guideline`)
 new features or to modify the scope of existing features in the **S-CORE** project.
+As features are built-up by Components a Change Request is also needed to add a new Components or
+to modify the scope of existing Components.
+As a Software Module isd defined as the top-level Component, all statements here for Components
+are also valid for Software Modules.
 
 Inputs
 ******
 
 #. Stakeholders for the Change Requests?
 #. Who needs which information?
-#. Which change requests types can we derive from that?
+#. Which Change Requests types can we derive from that?
 #. Which attributes are required?
-#. How do the different change requests types correlate to each other?
+#. How do the different Change Requests types correlate to each other?
 
 Stakeholders for the Change Requests
 ====================================
 
 #. :need:`Contributor <rl__contributor>`
 
-   * Contributes features to grow the **S-CORE** content
+   * Contributes features and components to grow the **S-CORE** content
 
-   Contribution include scope modification of existing features or adding new features.
+   Contribution include scope modification of existing features/components or adding new
+   features/components.
 
 #. :need:`Committer <rl__committer>`
 
@@ -67,15 +72,26 @@ Change Request Types
 Feature
 =======
 
-This Change Request describes a potential new feature for the platform
-(Feature request: :ref:`chm_templates`).
+This Change Request describes a potential new feature for the platform.
+The Change Request uses the Feature request template: :ref:`chm_templates`.
 
-Modification
-============
+Feature Modification
+====================
 
 This Change Request describes a scope modification of an existing feature (requirement or work
-product).
+product). The Change Request modifies the already existing Feature Request template: :ref:`chm_templates`.
 
+Component
+=========
+
+This Change Request describes a potential new component for the platform.
+The Change Request uses the Component request template: :ref:`chm_templates`.
+
+Component Modification
+======================
+
+This Change Request describes a scope modification of an existing component (requirement or work
+product). The Change Request modifies the already existing Component Request template: :ref:`chm_templates`.
 
 .. _chm_attributes:
 
