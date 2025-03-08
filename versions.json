@@ -16,10 +16,6 @@
     "url": "https://eclipse-score.github.io/score/disable_tests/"
   },
   {
-    "version": "hoe_jo_initial_draft_architecture_process",
-    "url": "https://eclipse-score.github.io/score/hoe_jo_initial_draft_architecture_process/"
-  },
-  {
     "version": "masc2023_add_changemgt",
     "url": "https://eclipse-score.github.io/score/masc2023_add_changemgt/"
   },
@@ -76,20 +72,12 @@
     "url": "https://eclipse-score.github.io/score/pr-443/"
   },
   {
-    "version": "pr-500",
-    "url": "https://eclipse-score.github.io/score/pr-500/"
-  },
-  {
     "version": "pr-526",
     "url": "https://eclipse-score.github.io/score/pr-526/"
   },
   {
     "version": "pr-530",
     "url": "https://eclipse-score.github.io/score/pr-530/"
-  },
-  {
-    "version": "pr-568",
-    "url": "https://eclipse-score.github.io/score/pr-568/"
   },
   {
     "version": "pr-572",
@@ -102,10 +90,6 @@
   {
     "version": "pr-578",
     "url": "https://eclipse-score.github.io/score/pr-578/"
-  },
-  {
-    "version": "pr-580",
-    "url": "https://eclipse-score.github.io/score/pr-580/"
   },
   {
     "version": "pr-595",
@@ -126,13 +110,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-596",
-    "url": "https://eclipse-score.github.io/score/pr-596/"
-  },
-  {
-    "version": "pr-607",
-    "url": "https://eclipse-score.github.io/score/pr-607/"
   }
 ]
