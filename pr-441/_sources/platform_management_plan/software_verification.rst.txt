@@ -282,6 +282,34 @@ to be reached with every contribution.
 
 Further quality goals are defined in section :doc:`quality_management`.
 
+Coverage of detailed design
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Beside :need:`wp__verification__comp_int_test` and :need:`wp__verification__sw_unit_test` the
+following aspects define the coverage of detailed design.
+
+- Statement/Branch/Path coverage as defined by their specific thresholds
+- Static analysis and Linting
+- :need:`wp__sw_code_inspect` for safety-critical implementation
+
+``[TODO: What can we do, what shall we do: Data Flow Coverage?]``
+
+Coverage of architectural design
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Beside :need:`wp__verification__comp_int_test` the following aspects define the coverage of the
+architectural design.
+
+- :need:`wp__sw_arch_verification`
+
+``[TODO: What can we do, what shall we do: Sequence diagrams? But how do we measure coverage?]``
+
+Coverage of software requirements specifications
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For a release all ``valid`` requirements need to have a complete test coverage of linked test cases.
+
+
 Test development
 ----------------
 

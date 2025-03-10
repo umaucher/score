@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-0d0ad488">
+  <div class="need_container docutils container" id="SNCB-74e49b44">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -846,6 +846,30 @@ to be reached with every contribution.</p>
 </table>
 </div>
 <p>Further quality goals are defined in section <a class="reference internal" href="quality_management.html"><span class="doc">Quality management</span></a>.</p>
+<section id="coverage-of-detailed-design">
+<h4>Coverage of detailed design<a class="headerlink" href="#coverage-of-detailed-design" title="Link to this heading">#</a></h4>
+<p>Beside <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__comp_int_test" title="wp__verification__comp_int_test"><em class="xref need">Component Integration test (wp__verification__comp_int_test)</em></a> and <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a> the
+following aspects define the coverage of detailed design.</p>
+<ul class="simple">
+<li><p>Statement/Branch/Path coverage as defined by their specific thresholds</p></li>
+<li><p>Static analysis and Linting</p></li>
+<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_code_inspect" title="wp__sw_code_inspect"><em class="xref need">Code Inspection (wp__sw_code_inspect)</em></a> for safety-critical implementation</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">What</span> <span class="pre">can</span> <span class="pre">we</span> <span class="pre">do,</span> <span class="pre">what</span> <span class="pre">shall</span> <span class="pre">we</span> <span class="pre">do:</span> <span class="pre">Data</span> <span class="pre">Flow</span> <span class="pre">Coverage?]</span></code></p>
+</section>
+<section id="coverage-of-architectural-design">
+<h4>Coverage of architectural design<a class="headerlink" href="#coverage-of-architectural-design" title="Link to this heading">#</a></h4>
+<p>Beside <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__comp_int_test" title="wp__verification__comp_int_test"><em class="xref need">Component Integration test (wp__verification__comp_int_test)</em></a> the following aspects define the coverage of the
+architectural design.</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification (wp__sw_arch_verification)</em></a></p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">What</span> <span class="pre">can</span> <span class="pre">we</span> <span class="pre">do,</span> <span class="pre">what</span> <span class="pre">shall</span> <span class="pre">we</span> <span class="pre">do:</span> <span class="pre">Sequence</span> <span class="pre">diagrams?</span> <span class="pre">But</span> <span class="pre">how</span> <span class="pre">do</span> <span class="pre">we</span> <span class="pre">measure</span> <span class="pre">coverage?]</span></code></p>
+</section>
+<section id="coverage-of-software-requirements-specifications">
+<h4>Coverage of software requirements specifications<a class="headerlink" href="#coverage-of-software-requirements-specifications" title="Link to this heading">#</a></h4>
+<p>For a release all <code class="docutils literal notranslate"><span class="pre">valid</span></code> requirements need to have a complete test coverage of linked test cases.</p>
+</section>
 </section>
 <section id="test-development">
 <h3>Test development<a class="headerlink" href="#test-development" title="Link to this heading">#</a></h3>
@@ -1011,7 +1035,12 @@ This includes physical maintenance as well as virtual access.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#test-derivation-methods">Test Derivation Methods</a></li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-criteria">Quality criteria</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-criteria">Quality criteria</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-of-detailed-design">Coverage of detailed design</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-of-architectural-design">Coverage of architectural design</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#coverage-of-software-requirements-specifications">Coverage of software requirements specifications</a></li>
+</ul>
+</li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test-development">Test development</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pre-existing-test-cases">Pre-existing test cases</a></li>
 </ul>
