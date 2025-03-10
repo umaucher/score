@@ -292,6 +292,13 @@ relevant work products is shown above (as part of the development of the product
 
 The different environments that can be used for the test development are defined below.
 
+Pre-existing test cases
+^^^^^^^^^^^^^^^^^^^^^^^
+
+The recommendations according to the :need:`gd_guidl__verification_guide` for pre-existing test
+cases is followed. Any pre-existing test case (e.g. from OSS components) is reviewed and adopted
+to follow the :need:`gd_guidl__verification_specification` and :need:`gd_req__link_tests`.
+
 Test execution and result analysis
 ----------------------------------
 
