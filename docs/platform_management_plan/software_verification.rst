@@ -292,8 +292,6 @@ following aspects define the coverage of detailed design.
 - Static analysis and Linting
 - :need:`wp__sw_code_inspect` for safety-critical implementation
 
-``[TODO: What can we do, what shall we do: Data Flow Coverage?]``
-
 Coverage of architectural design
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -306,8 +304,6 @@ following aspects define the coverage of the architectural design.
 
 Each architectural element has at least one test case linked with attribute "fully verified" or
 multiple test cases with attribute "partially verified".
-
-``[TODO: What can we do, what shall we do: Sequence diagrams? But how do we measure coverage?]``
 
 Coverage of software requirements specifications
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
