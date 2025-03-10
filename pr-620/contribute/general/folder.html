@@ -529,72 +529,72 @@ can be in a different order.</p>
     glossary/                                   -&gt; Glossary of abbreviations used in the platform context.
     manual/                                     -&gt; user and integration manual(s)
     overview/                                   -&gt; Introduction and high-level description of the platform features.
-    platform_management_plan/                   -&gt; Overall Platform Management Plan  [wf__platform_mgmt], consisting of ...
+    platform_management_plan/                   -&gt; Overall Platform Management Plan  [wp__platform_mgmt], consisting of ...
         project_management.rst                  -&gt; ... Project Management.
         stakeholder_management.rst              -&gt; ... Stakeholder Management.
-        safety_management.rst                   -&gt; ... Safety Management incl. platform safety plan [wf__platform_safety_plan]
+        safety_management.rst                   -&gt; ... Safety Management incl. platform safety plan [wp__platform_safety_plan]
         risk_management.rst                     -&gt; ... Risk Management.
-        quality_management.rst                  -&gt; ... Quality Management [wf__qms].
+        quality_management.rst                  -&gt; ... Quality Management [wp__qms].
         config_management.rst                   -&gt; ... Configuration Management.
         tool_management.rst                     -&gt; ... Tool Management.
         release_management.rst                  -&gt; ... Release Management.
         problem_resolution.rst                  -&gt; ... Problem Management.
         change_management.rst                   -&gt; ... Change Management.
         requirements_management.rst             -&gt; ... Requirements Management.
-        software_development.rst                -&gt; ... Development [wf__sw_dev_plan].
-        software_verification.rst               -&gt; ... Verification [wf__verification_plan].
+        software_development.rst                -&gt; ... Development [wp__sw_dev_plan].
+        software_verification.rst               -&gt; ... Verification [wp__verification_plan].
         documentation_management.rst            -&gt; ... Documentation Management.
         security_management.rst                 -&gt; ... Security Management.
-    release/                                    -&gt; [wf__platform_sw_release_note]
-    safety/                                     -&gt; safety documentation on platform level (SEooC): [wf__feature_dfa], [wf__platform_sw_safety_manual], [wf__platform_safety_case], [wf__cmr_reports], [wf__assessment_report]
+    release/                                    -&gt; [wp__platform_sw_release_note]
+    safety/                                     -&gt; safety documentation on platform level (SEooC): [wp__feature_dfa], [wp__platform_sw_safety_manual], [wp__platform_safety_case], [wp__cmr_reports], [wp__assessment_report]
     security/                                   -&gt; security documentation on platform level
     requirements/                               -&gt; requirements on platform level ...
-        stakeholder/                            -&gt; ... Stakeholder requirements [wf__stakeholder_req].
-        tool/                                   -&gt; ... Tool requirements [wf__tool_req]
+        stakeholder/                            -&gt; ... Stakeholder requirements [wp__stakeholder_req].
+        tool/                                   -&gt; ... Tool requirements [wp__tool_req]
     tutorials/                                  -&gt; General tutorials.
 
 examples/                                       -&gt; examples how a C++, Rust, Python module can be set up
 
 features/                                       -&gt; All features of the platform.
-    &lt;feature_name&gt;/                             -&gt; Folder containing all sub-folders corresponding to one feature and the contribution request [wf__cont_request]
+    &lt;feature_name&gt;/                             -&gt; Folder containing all sub-folders corresponding to one feature and the contribution request [wp__cont_request]
         docs/                                   -&gt; Documentation of the feature consisting of ...
-            architecture/                       -&gt; ... Feature architecture [wf__FEATURE_ARCHITECTURE].
-            requirements/                       -&gt; ... Feature requirements [wf__requirements__feat].
-            safety_analysis/                    -&gt; ... Safety analysis on feature level [wf__FEATURE_SAFETY_ANALYSES]
+            architecture/                       -&gt; ... Feature architecture [wp__feature_architecture].
+            requirements/                       -&gt; ... Feature requirements [wp__requirements__feat].
+            safety_analysis/                    -&gt; ... Safety analysis on feature level [wp__feature_safety_analysis]
             safety_planning/                    -&gt; ... the feature specific safety workproducts planning
-            verification/                       -&gt; ... Feature verification report (reporting all feature verifications) [wf__platform_sw_verification_report]
+            verification/                       -&gt; ... Feature verification report (reporting all feature verifications) [wp__platform_sw_verification_report]
         tests/                                  -&gt; Feature tests, consisting of ...
-            integration-tests/                  -&gt; ... integration tests [wf__feature_integration_test].
+            integration-tests/                  -&gt; ... integration tests [wp__feature_integration_test].
     toolchain/                                  -&gt; Definition of toolchain
 
 modules/                                        -&gt; Modules of the SW platform.
     &lt;module_name&gt;/                              -&gt; Folder containing all artifacts corresponding to one module.
         docs/                                   -&gt; Documentation of the module consisting of ...
-            manual/                             -&gt; ... Module manual, e.g. integration manual, assumptions of use and safety manual [wf__sw_component_aou], [wf__module_sw_safety_manual].
-            release/                            -&gt; ... Module release note [wf__module_sw_release_note] plus safety assessment [wf__assessment_report]
-            safety_plan/                        -&gt; ... Module safety plan [wf__module_safety_plan], module safety case [wf__module_safety_case] and their conformance reviews [wf__cmr_reports]
-            safety_analysis/                    -&gt; ... Safety analysis on module level [wf__sw_component_dfa]
-            verification/                       -&gt; ... Module verification report (reporting all module&#39;s components verifications) [wf__module_sw_verification_report] plus safety analysis conformance reviews [wf__cmr_reports]
+            manual/                             -&gt; ... Module manual, e.g. integration manual, assumptions of use and safety manual [wp__sw_component_aou], [wp__module_sw_safety_manual].
+            release/                            -&gt; ... Module release note [wp__module_sw_release_note] plus safety assessment [wp__assessment_report]
+            safety_plan/                        -&gt; ... Module safety plan [wp__module_safety_plan], module safety case [wp__module_safety_case] and their conformance reviews [wp__cmr_reports]
+            safety_analysis/                    -&gt; ... Safety analysis on module level [wp__sw_component_dfa]
+            verification/                       -&gt; ... Module verification report (reporting all module&#39;s components verifications) [wp__module_sw_verification_report] plus safety analysis conformance reviews [wp__cmr_reports]
 
         components/                             -&gt; Components of the module.
             &lt;component_name&gt;/                   -&gt; Folder containing all artifacts corresponding to one component.
                 docs/                           -&gt; Documentation of the component consisting of ...
-                    architecture/               -&gt; ... Component architecture (only if sub-components exist) [wf__cr_mt_comparch].
-                    requirements/               -&gt; ... Component requirements [wf__sw_component_req] and HSI (if relevant) [wf__hsi].
-                    safety_analysis/            -&gt; ... Safety analysis on component level [wf__sw_component_safety_analyses]
-                    verification/               -&gt; ... Architecture review [wf__sw_arch_verification], code inspection [wf__sw_code_inspect]
-                src/                            -&gt; Source files of the component (incl. detailed design) [wf__sw_implementation].
+                    architecture/               -&gt; ... Component architecture (only if sub-components exist) [wp__cr_mt_comparch].
+                    requirements/               -&gt; ... Component requirements [wp__sw_component_req] and HSI (if relevant) [wp__hsi].
+                    safety_analysis/            -&gt; ... Safety analysis on component level [wp__sw_component_safety_analyses]
+                    verification/               -&gt; ... Architecture review [wp__sw_arch_verification], code inspection [wp__sw_code_inspect]
+                src/                            -&gt; Source files of the component (incl. detailed design) [wp__sw_implementation].
                 include/                        -&gt; Include files of the component
                 tests/                          -&gt; Component tests, consisting of ...
-                    unit/                       -&gt; ... unit tests [wf__sw_unit_test] (for lowest level of components).
-                    integration/                -&gt; ... integration tests [wf__sw_component_integration_test].
-                    verification/               -&gt; ... verification tests [wf__sw_component_test].
+                    unit/                       -&gt; ... unit tests [wp__sw_unit_test] (for lowest level of components).
+                    integration/                -&gt; ... integration tests [wp__sw_component_integration_test].
+                    verification/               -&gt; ... verification tests [wp__sw_component_test].
                 &lt;sub_component_name&gt;/           -&gt; Sub-Component of the Component.
                      copy the relevant folders below &lt;component-name&gt; if applicable (example: no code inspection needed for sub-components from the Open Source)
 
 platform_integration_tests/                     -&gt; Integration tests on reference hardware.
 
-process/                                        -&gt; process definition including workflows, workproducts, roles, guidance [wf__process_definition]
+process/                                        -&gt; process definition including workflows, workproducts, roles, guidance [wp__process_definition]
 
 registry/                                       -&gt; infrastructure configuration
 
