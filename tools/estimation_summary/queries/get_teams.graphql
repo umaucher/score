@@ -1,0 +1,13 @@
+query get_teams($org: String!, $cursor: String) {
+  organization(login: $org) {
+    teams(first: 5, after: $cursor) {
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+      nodes {
+        name
+      }
+    }
+  }
+}

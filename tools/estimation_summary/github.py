@@ -3,6 +3,7 @@ from dataclasses import dataclass, field
 import github_types as github_types
 import queries.get_projectv2_issues
 import queries.set_project_description
+import queries.teams
 from github_basics import GitHubClient_Basic
 
 
@@ -45,3 +46,6 @@ class GitHubClient(GitHubClient_Basic):
             project_number=project_number,
             readme="\n".join(readme),
         )
+
+    async def teams(self):
+        return await queries.teams.run_query(self)
