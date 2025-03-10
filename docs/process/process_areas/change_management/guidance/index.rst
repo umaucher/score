@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,10 +12,15 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _contribution_templates:
-
-Contribution Templates
-######################
+Guidance
+########
 
 .. toctree::
    :maxdepth: 1
+
+   change_management_guideline
+   change_management_checklist
+   change_management_feature_template
+   change_management_component_template
+   change_management_impact_analysis_template
+   change_management_reqs
