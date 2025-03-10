@@ -225,7 +225,7 @@ Test Derivation Methods
      - 3
      - QM, ASIL B
    * - Exlporative Testing
-     - explore-testing
+     - explorative-testing
      - 2, 3
      - QM, ASIL B
 

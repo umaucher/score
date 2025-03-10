@@ -558,12 +558,11 @@
                   
   <section id="test-specification-guideline">
 <h1>Test Specification Guideline<a class="headerlink" href="#test-specification-guideline" title="Link to this heading">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">Check</span> <span class="pre">if</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">really</span> <span class="pre">seen</span> <span class="pre">as</span> <span class="pre">own</span> <span class="pre">document.</span> <span class="pre">As</span> <span class="pre">per</span> <span class="pre">review</span> <span class="pre">comment</span> <span class="pre">we</span> <span class="pre">may</span> <span class="pre">not</span> <span class="pre">want</span> <span class="pre">it</span> <span class="pre">at</span> <span class="pre">all]</span></code></p>
-<div class="need_container docutils container" id="SNCB-20d5ce7b">
+<div class="need_container docutils container" id="SNCB-c422b9ca">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_specification">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Verification Specification Guideline</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Test Specification Guideline</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -622,9 +621,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Verifies</p></td>
-<td><p>Sphinx-needs Ids</p></td>
-<td><p>Links to one or more requirement Ids. Can be partially or fully verifies, as per test property.</p></td>
+<tr class="row-even"><td><p>Partially and/or Fully Verifies</p></td>
+<td><p>Sphinx-needs Id(s)</p></td>
+<td><p>Links to one or more requirement Ids. Can be partial or full coverage of a
+requirement, as per test property.</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>Description</p></td>
@@ -649,7 +649,8 @@
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>TestType</p></td>
-<td><ul class="simple">
+<td><p>Examples are:</p>
+<ul class="simple">
 <li><p>requirements-based</p></li>
 <li><p>interface-test</p></li>
 <li><p>boundary</p></li>
@@ -657,37 +658,29 @@
 <li><p>for <a class="reference internal" href="../workproducts.html#wp__verification__sw_unit_test" title="wp__verification__sw_unit_test"><em class="xref need">Unit test (wp__verification__sw_unit_test)</em></a> also fault-injection</p></li>
 </ul>
 </td>
-<td><ul class="simple">
-<li><p>Requirements-based test (Assumptions of Use are treated as requirements.)</p></li>
-<li><p>Design based tests</p></li>
-</ul>
-<p>Consult the implementation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed types.</p>
-</td>
+<td><p>These are example values and an incomplete list.
+A full list of test types is available in <a class="reference internal" href="../verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a> at
+<a class="reference internal" href="../verification_concept.html#verification-concept-types-methods"><span class="std std-ref">Verification Methods</span></a>.</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>DerivationTechnique</p></td>
-<td><ul class="simple">
+<td><p>Examples are:</p>
+<ul class="simple">
 <li><p>requirements-analysis</p></li>
 <li><p>boundary-values</p></li>
 <li><p>equivalence-classes</p></li>
 <li><p>error-guessing</p></li>
-<li><p>monkey-testing</p></li>
 </ul>
 </td>
-<td><ul class="simple">
-<li><p>Analysis of requirements / design (Assumptions of Use are treated as requirements.)</p></li>
-<li><p>Analysis of Boundary Values</p></li>
-<li><p>Analysis of Equivalence classes</p></li>
-<li><p>Error guessing based on knowledge or experience</p></li>
-<li><p>Random testing</p></li>
-</ul>
-<p>Consult the implementation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> for the full list of allowed methods.</p>
-</td>
+<td><p>These are example values and an incomplete list.
+A full list of test methods is available in <a class="reference internal" href="../verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a> at
+<a class="reference internal" href="../verification_concept.html#verification-concept-types-methods"><span class="std std-ref">Verification Methods</span></a>.</p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 </div>
+<p>The implementation of <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a> defines the full list of allowed types and methods.</p>
 </section>
 <section id="test-description">
 <h2>Test description<a class="headerlink" href="#test-description" title="Link to this heading">#</a></h2>
@@ -748,8 +741,8 @@
 <blockquote>
 <div><p>Test user login</p>
 </div></blockquote>
-<p>Additional information can also be found in <a class="reference internal" href="verification_guidance.html"><span class="doc">Verification Guideline</span></a>.</p>
-<p>The specification is part of the test implementatin and has to comply to the requirements
+<p>Additional information can also be found in <a class="reference internal" href="verification_guidance.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a>.</p>
+<p>The specification is part of the test implementation and has to comply to the requirements
 specified in <a class="reference internal" href="verification_process_toolreqs.html#gd_req__link_tests" title="gd_req__link_tests"><em class="xref need">Linking Requirements to Tests (gd_req__link_tests)</em></a>.</p>
 </section>
 </section>

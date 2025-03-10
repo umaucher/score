@@ -558,7 +558,7 @@
                   
   <section id="test-linking-to-requirements">
 <span id="verification-process-reqs"></span><h1>Test Linking to Requirements<a class="headerlink" href="#test-linking-to-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-bb310013">
+<div class="need_container docutils container" id="SNCB-84d137c4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -615,9 +615,17 @@
 </li>
 <li><dl class="simple">
 <dt>TestType</dt><dd><ul>
-<li><p>Requirements-based test (requirements-based)</p></li>
-<li><p>Design based tests (design-based)</p></li>
+<li><p>Control Flow Analysis (control-flow-analysis)</p></li>
+<li><p>Data Flow Analysis (data-flow-analysis)</p></li>
+<li><p>Fault Injection (fault-injection)</p></li>
+<li><p>Inspection (inspection)</p></li>
 <li><p>Interface Test (interface-test)</p></li>
+<li><p>Requirements-based Test (requirements-based)</p></li>
+<li><p>Resource Usage Evaluation (resource-usage)</p></li>
+<li><p>Static Code Analysis (static-code-analysis)</p></li>
+<li><p>Structural Statement coverage (structural-statement-coverage)</p></li>
+<li><p>Structural Branch Coverage (structural-branch-coverage)</p></li>
+<li><p>Walkthrough (walkthrough)</p></li>
 </ul>
 </dd>
 </dl>
@@ -630,12 +638,14 @@
 <li><p>Analysis of equivalence classes (equivalence-classes)</p></li>
 <li><p>Error guessing based on knowledge or experience (error-guessing)</p></li>
 <li><p>Random testing (monkey-testing)</p></li>
+<li><p>Exlporative testing (explorative-testing)</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
-<p>More information can be found in the <a class="reference internal" href="verification_guidance.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a> and <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Verification Specification ... (gd_guidl__verification_specification)</em></a>.</p>
+<p>More information can be found in the <a class="reference internal" href="verification_guidance.html#gd_guidl__verification_guide" title="gd_guidl__verification_guide"><em class="xref need">Verification Guideline (gd_guidl__verification_guide)</em></a>, <a class="reference internal" href="../verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a>,
+and <a class="reference internal" href="verification_specification.html#gd_guidl__verification_specification" title="gd_guidl__verification_specification"><em class="xref need">Test Specification Guideline (gd_guidl__verification_specification)</em></a>.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -652,7 +662,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-51ce54ad">
+<div class="need_container docutils container" id="SNCB-f7a018c7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_cpp">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -679,7 +689,9 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>For linking C++ test suites to requirements <strong>record properties</strong> shall be used. Attributes which are common for all test cases can be specified in the Setup Function (SetUp()), the other attributes which are specific for each test case need to be specified within the test case:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>For linking C++ test suites to requirements <strong>record properties</strong> shall be used. Attributes
+which are common for all test cases can be specified in the Setup Function (SetUp()), the other
+attributes which are specific for each test case need to be specified within the test case:</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="nc">TestSuite</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="o">::</span><span class="n">testing</span><span class="o">::</span><span class="n">Test</span><span class="p">{</span>
 <span class="w">   </span><span class="k">public</span><span class="o">:</span>
 <span class="w">      </span><span class="kt">void</span><span class="w"> </span><span class="n">SetUp</span><span class="p">()</span><span class="w"> </span><span class="k">override</span>
@@ -718,7 +730,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6e48886c">
+<div class="need_container docutils container" id="SNCB-41808188">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_python">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -745,7 +757,9 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>For linking python tests to requirements <strong>metadata</strong> shall be used. Attributes which are common for all test cases can be specified in the Test Suite (above the class), the other attributes which are specific for each test case need to be specified above the test case:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>For linking python tests to requirements <strong>metadata</strong> shall be used. Attributes which are
+common for all test cases can be specified in the Test Suite (above the class), the other
+attributes which are specific for each test case need to be specified above the test case:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="s2">&quot;session&quot;</span><span class="p">,</span> <span class="n">autouse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">add_metadata</span><span class="p">(</span><span class="n">record_testsuite_property</span><span class="p">):</span>
    <span class="n">record_testsuite_property</span><span class="p">(</span><span class="s2">&quot;ASIL&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;ASIL&gt;&quot;</span><span class="p">)</span>
@@ -775,7 +789,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e60ac82f">
+<div class="need_container docutils container" id="SNCB-b7f18763">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__link_tests_rust">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -834,7 +848,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-699cca51">
+<div class="need_container docutils container" id="SNCB-bab5cc8f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__verification_independence">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
