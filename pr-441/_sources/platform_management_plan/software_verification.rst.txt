@@ -297,10 +297,15 @@ following aspects define the coverage of detailed design.
 Coverage of architectural design
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Beside :need:`wp__verification__comp_int_test` the following aspects define the coverage of the
-architectural design.
+Beside :need:`wp__verification__comp_int_test` and :need:`wp__verification__feat_int_test` the
+following aspects define the coverage of the architectural design.
 
 - :need:`wp__sw_arch_verification`
+- :need:`wp__sw_component_safety_analyses` for safety-critical parts
+- :need:`wp__feature_safety_analyses` for safety-critical parts
+
+Each architectural element has at least one test case linked with attribute "fully verified" or
+multiple test cases with attribute "partially verified".
 
 ``[TODO: What can we do, what shall we do: Sequence diagrams? But how do we measure coverage?]``
 
@@ -313,9 +318,9 @@ For a release all ``valid`` requirements need to have a complete test coverage o
 Test development
 ----------------
 
-The verification steps as well as the development of test cases is done along with the implementation of code. A full
-automation of tests should be achieved and the derived test cases should contain meta data that gives further
-information as defined in :doc:`/process/process_areas/verification/guidance/verification_process_toolreqs`. The list of
+The verification steps as well as the development of test cases is done along with the implementation
+of code. A full automation of tests should be achieved and the derived test cases should contain meta
+data that gives further information as defined in :ref:`verification_process_reqs`. The list of
 relevant work products is shown above (as part of the development of the product).
 
 The different environments that can be used for the test development are defined below.

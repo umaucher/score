@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-ffde041a">
+  <div class="need_container docutils container" id="SNCB-456ee2bc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -859,11 +859,15 @@ following aspects define the coverage of detailed design.</p>
 </section>
 <section id="coverage-of-architectural-design">
 <h4>Coverage of architectural design<a class="headerlink" href="#coverage-of-architectural-design" title="Link to this heading">#</a></h4>
-<p>Beside <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__comp_int_test" title="wp__verification__comp_int_test"><em class="xref need">Component Integration test (wp__verification__comp_int_test)</em></a> the following aspects define the coverage of the
-architectural design.</p>
+<p>Beside <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__comp_int_test" title="wp__verification__comp_int_test"><em class="xref need">Component Integration test (wp__verification__comp_int_test)</em></a> and <a class="reference internal" href="../process/process_areas/verification/workproducts.html#wp__verification__feat_int_test" title="wp__verification__feat_int_test"><em class="xref need">Feature Integration test (wp__verification__feat_int_test)</em></a> the
+following aspects define the coverage of the architectural design.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_arch_verification" title="wp__sw_arch_verification"><em class="xref need">Architecture Verification (wp__sw_arch_verification)</em></a></p></li>
+<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__sw_component_safety_analyses" title="wp__sw_component_safety_analyses"><em class="xref need">Component Safety Analyses (wp__sw_component_safety_analyses)</em></a> for safety-critical parts</p></li>
+<li><p><a class="reference internal" href="../process/workproducts/index.html#wp__feature_safety_analyses" title="wp__feature_safety_analyses"><em class="xref need">Feature Safety Analyses (wp__feature_safety_analyses)</em></a> for safety-critical parts</p></li>
 </ul>
+<p>Each architectural element has at least one test case linked with attribute “fully verified” or
+multiple test cases with attribute “partially verified”.</p>
 <p><code class="docutils literal notranslate"><span class="pre">[TODO:</span> <span class="pre">What</span> <span class="pre">can</span> <span class="pre">we</span> <span class="pre">do,</span> <span class="pre">what</span> <span class="pre">shall</span> <span class="pre">we</span> <span class="pre">do:</span> <span class="pre">Sequence</span> <span class="pre">diagrams?</span> <span class="pre">But</span> <span class="pre">how</span> <span class="pre">do</span> <span class="pre">we</span> <span class="pre">measure</span> <span class="pre">coverage?]</span></code></p>
 </section>
 <section id="coverage-of-software-requirements-specifications">
@@ -873,9 +877,9 @@ architectural design.</p>
 </section>
 <section id="test-development">
 <h3>Test development<a class="headerlink" href="#test-development" title="Link to this heading">#</a></h3>
-<p>The verification steps as well as the development of test cases is done along with the implementation of code. A full
-automation of tests should be achieved and the derived test cases should contain meta data that gives further
-information as defined in <a class="reference internal" href="../process/process_areas/verification/guidance/verification_process_toolreqs.html"><span class="doc">Test Linking to Requirements</span></a>. The list of
+<p>The verification steps as well as the development of test cases is done along with the implementation
+of code. A full automation of tests should be achieved and the derived test cases should contain meta
+data that gives further information as defined in <a class="reference internal" href="../process/process_areas/verification/guidance/verification_process_toolreqs.html#verification-process-reqs"><span class="std std-ref">Test Linking to Requirements</span></a>. The list of
 relevant work products is shown above (as part of the development of the product).</p>
 <p>The different environments that can be used for the test development are defined below.</p>
 <section id="pre-existing-test-cases">
