@@ -98,7 +98,6 @@ automated software build at any time.
 The following types of integrations are applicable:
 
 #. **New software elements** get integrated according to the :need:`gd_guidl__contr_request_guideline`
-   and following the :need:`gd_temp__feat_request_template` for new features.
 #. **Fixes of defects** get integrated based on their prioritization described by the
    :doc:`problem_resolution`.
 #. **Changes** get integrated based on the :need:`wf__cr_dc_changerequest` and will follow
