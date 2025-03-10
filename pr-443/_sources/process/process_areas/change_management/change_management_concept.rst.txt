@@ -73,25 +73,25 @@ Feature
 =======
 
 This Change Request describes a potential new feature for the platform.
-The Change Request uses the Feature request template: :ref:`chm_templates`.
+The Change Request uses the Feature request template: :ref:`chm_feature_templates`.
 
 Feature Modification
 ====================
 
 This Change Request describes a scope modification of an existing feature (requirement or work
-product). The Change Request modifies the already existing Feature Request template: :ref:`chm_templates`.
+product). The Change Request modifies the already existing Feature Request template: :ref:`chm_feature_templates`.
 
 Component
 =========
 
 This Change Request describes a potential new component for the platform.
-The Change Request uses the Component request template: :ref:`chm_templates`.
+The Change Request uses the Component request template: :ref:`chm_component_templates`.
 
 Component Modification
 ======================
 
 This Change Request describes a scope modification of an existing component (requirement or work
-product). The Change Request modifies the already existing Component Request template: :ref:`chm_templates`.
+product). The Change Request modifies the already existing Component Request template: :ref:`chm_component_templates`.
 
 .. _chm_attributes:
 
@@ -121,7 +121,7 @@ Following attributes need to be filled manually for each Change Request:
    * - Security
      - This attribute describes the impact on security
    * - Change Request Type
-     - Following types are defined: [Feature, Modification]
+     - Following types are defined: [Feature, Feature Modification, Component, Component Modification]
    * - Affected work products
      - Links to the work producs affected by the Change Request
    * - Milestone
@@ -137,6 +137,7 @@ The affected work products must be identified.
 The potential impact on functional safety and security must be addressed.
 Schedule, risks, resources for the realisation must be evaluated.
 Verifcation measures must be defined.
+Use therefore the : :ref:`Impact Analysis Template <chm_impact_analysis_templates>`.
 
 
 .. _chm_evaluation:

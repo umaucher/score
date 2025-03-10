@@ -163,8 +163,9 @@ description of the requested change or modification.
 The details are part of the Feature/Component Request work product. The Feature/Component Request
 is provided by a PR, which is linked to the ISSUE in status ``DRAFT``.
 
-For a new Feature/Component Request the provided templates :ref:`Feature/Component Request<chm_templates>`
-must be used. For a modification of an existing Feature/Component, update the existing work products.
+For a new Feature/Component Request the provided templates :ref:`Feature Request<chm_feature_templates>`,
+:ref:`Component Request<chm_component_templates>` must be used. For a modification of an existing
+Feature/Component, update the existing work products.
 
 The linked PR in status ``DRAFT``, which contains the Feature/Component Requests, may contain also
 other required affected and changed work products or implementation and verification proposals.

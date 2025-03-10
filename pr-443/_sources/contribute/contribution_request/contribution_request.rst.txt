@@ -35,7 +35,7 @@ For more complex contributions, like adding a new feature:
 
 For a feature request, use the template provided below and add it to the appropriate section under docs/features.
 
-:ref:`Feature Request Template <chm_templates>`
+:ref:`Feature Request Template <chm_feature_templates>`
 
 If possible, the reviewer should use the suggestion functionality to suggest a change that the author of the pull request can click to commit if they agree with your suggestion.
 
