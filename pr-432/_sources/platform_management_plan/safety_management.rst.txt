@@ -16,12 +16,11 @@
    :id: doc__platform_safety_plan
    :status: draft
    :safety: ASIL_B
+   :realizes: wp__platform_safety_plan
    :tags: platform_management
 
 Safety management / Platform Safety Plan
 ----------------------------------------
-
-This document implements :need:`wp__platform_safety_plan`.
 
 Purpose
 +++++++
@@ -83,13 +82,13 @@ Tailoring of safety activities:
 
 The following  ISO 26262 defined safety work products are not relevant for the SCORE SW platform development:
 
-Because these are in responsibility of the system integrator: :need:`std_wp_iso26262__management_11`,
-:need:`std_wp_iso26262__system_2`, :need:`std_wp_iso26262__system_3`, :need:`std_wp_iso26262__system_4`,
-:need:`std_wp_iso26262__system_5`, :need:`std_wp_iso26262__system_6`, :need:`std_wp_iso26262__system_7`,
-:need:`std_wp_iso26262__system_8`, :need:`std_wp_iso26262__system_9`, :need:`std_wp_iso26262__system_10`,
-:need:`std_wp_iso26262__system_11`
+Because these are in responsibility of the system integrator: :need:`std_wp__iso26262__management_11`,
+:need:`std_wp__iso26262__system_2`, :need:`std_wp__iso26262__system_3`, :need:`std_wp__iso26262__system_4`,
+:need:`std_wp__iso26262__system_5`, :need:`std_wp__iso26262__system_6`, :need:`std_wp__iso26262__system_7`,
+:need:`std_wp__iso26262__system_8`, :need:`std_wp__iso26262__system_9`, :need:`std_wp__iso26262__system_10`,
+:need:`std_wp__iso26262__system_11`
 
-Note that stakeholder requirements (:need:`std_wp_iso26262__system_1`) are in scope of the project,
+Note that stakeholder requirements (:need:`std_wp__iso26262__system_1`) are in scope of the project,
 to be able to cover System and HW related failures which are usually covered by SW (e.g. end to end protection for ECU external communication).
 But those are the "Assumed Technical Safety Requirements" of the SW platform SEooC and do not need to be tested by SEooC supplier.
 I.e. the system testing is out of scope.
@@ -97,26 +96,26 @@ There will be HW/SW integration tests of feature requirements, as required by IS
 These may be reused by the user on his HW platform also to cover his Technical Safety Requirements towards the SW platform.
 But this is the decision of the user.
 
-Because there is no calibration used for the SCORE SW platform components, only configuration: :need:`std_wp_iso26262__software_19`,
-:need:`std_wp_iso26262__software_21`, :need:`std_wp_iso26262__software_24`
+Because there is no calibration used for the SCORE SW platform components, only configuration: :need:`std_wp__iso26262__software_19`,
+:need:`std_wp__iso26262__software_21`, :need:`std_wp__iso26262__software_24`
 
 Because distributed development is not how the project is organized. All contributors are seen as part of the project team.
-When used, OSS components are qualified and external SEooCs are integrated in the project scope: :need:`std_wp_iso26262__support_1`,
-:need:`std_wp_iso26262__support_2`, :need:`std_wp_iso26262__support_3`, :need:`std_wp_iso26262__support_4`, :need:`std_wp_iso26262__support_5`
+When used, OSS components are qualified and external SEooCs are integrated in the project scope: :need:`std_wp__iso26262__support_1`,
+:need:`std_wp__iso26262__support_2`, :need:`std_wp__iso26262__support_3`, :need:`std_wp__iso26262__support_4`, :need:`std_wp__iso26262__support_5`
 
-Because in the SCORE SW platform HW elements are out of scope: :need:`std_wp_iso26262__support_21`, :need:`std_wp_iso26262__support_22`, :need:`std_wp_iso26262__support_23`
+Because in the SCORE SW platform HW elements are out of scope: :need:`std_wp__iso26262__support_21`, :need:`std_wp__iso26262__support_22`, :need:`std_wp__iso26262__support_23`
 
-Because in the SCORE SW platform a proven in use argument will not be applied: :need:`std_wp_iso26262__support_24`, :need:`std_wp_iso26262__support_25`
+Because in the SCORE SW platform a proven in use argument will not be applied: :need:`std_wp__iso26262__support_24`, :need:`std_wp__iso26262__support_25`
 
-Because in the SCORE SW platform interfacing of out of scope of ISO 26262 applications is not planned: :need:`std_wp_iso26262__support_26`
+Because in the SCORE SW platform interfacing of out of scope of ISO 26262 applications is not planned: :need:`std_wp__iso26262__support_26`
 
-Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp_iso26262__support_27`
+Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp__iso26262__support_27`
 
-Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp_iso26262__analysis_1`, :need:`std_wp_iso26262__analysis_2`
+Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp__iso26262__analysis_1`, :need:`std_wp__iso26262__analysis_2`
 
-Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp_iso26262__support_27`
+Because in the SCORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: :need:`std_wp__iso26262__support_27`
 
-Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp_iso26262__analysis_1`, :need:`std_wp_iso26262__analysis_2`
+Because in the SCORE SW platform no ASIL decomposition is planned: :need:`std_wp__iso26262__analysis_1`, :need:`std_wp__iso26262__analysis_2`
 
 Approach
 ++++++++
@@ -300,11 +299,11 @@ Functional Safety Management SW Platform Work Products
       - :ndf:`copy('status', need_id='wf__cr_mt_platform_mngmt_plan')`
       - <Link to issue>
       - :doc:`quality_management`
-      - :ndf:`copy('status', need_id='doc__project_quality_plan')`
+      - not started
 
     * - :need:`wp__issue_track_system`
       - :doc:`index`
-      - :ndf:`copy('status', need_id='doc__platform_management_plan')`
+      - :ndf:`copy('status', need_id='doc__platform_mgt_plan')`
       - n/a
       - `Project issues <https://github.com/eclipse-score/score/issues>`_
       - established
@@ -314,7 +313,7 @@ Functional Safety Management SW Platform Work Products
       - :ndf:`copy('status', need_id='wf__cr_mt_platform_mngmt_plan')`
       - <Link to issue>
       - :doc:`index`
-      - :ndf:`copy('status', need_id='doc__platform_management_plan')`
+      - :ndf:`copy('status', need_id='doc__platform_mgt_plan')`
 
     * - :need:`wp__process_definition`
       - :need:`wf__def_app_process_definition`
@@ -380,15 +379,15 @@ Functional Safety Management SW Platform Work Products
       - <WP status (manual)>
 
     * - :need:`wp__feature_dfa`
-      - :need:`gd_temp__dfa`
-      - :ndf:`copy('status', need_id='gd_temp__dfa')`
+      - <Link to process>
+      - <Process status>
       - <Link to issue>
       - <Link to WP>
       - <automated>
 
     * - :need:`wp__platform_sw_build_config`
       - :doc:`software_development`
-      - :ndf:`copy('status', need_id='doc__sw_development_plan')`
+      - not started
       - <Link to issue>
       - <Link to WP>
       - <automated>
@@ -402,49 +401,42 @@ Functional Safety Management SW Platform Work Products
 
     * - :need:`wp__platform_sw_release_note`
       - :doc:`release_management`
-      - :ndf:`copy('status', need_id='doc__release_management_plan')`
+      - not started
       - <Link to issue>
       - <Link to WP>
       - <automated>
 
-    * - :need:`wp__platform_sw_verification_report`
-      - :need:`gd_temp__platform_verification_report_template`
-      - :ndf:`copy('status', need_id='gd_temp__platform_verification_report_template')`
+    * - :need:`wp__verification__platform_ver_report`
+      - <Link to process>
+      - <Process status>
       - <Link to issue>
       - <Link to WP>
       - <automated>
 
-    * - :need:`wp__stakeholder_req`
+    * - :need:`wp__requirements__stkh`
       - :need:`gd_temp__req__stkh_req`
       - :ndf:`copy('status', need_id='gd_temp__req__stkh_req')`
       - n/a (done already)
       - :ref:`stakeholder_requirements`
-      - See below status charts
-
-    * - :need:`wp__tool_req`
-      - :need:`gd_temp__req__process_req`
-      - :ndf:`copy('status', need_id='gd_temp__req__process_req')`
-      - <Link to issue>
-      - :ref:`tool_requirements`
-      - See below status charts
+      - <automated>
 
     * - :need:`wp__sw_dev_plan`
       - :need:`wf__cr_mt_platform_mngmt_plan`
       - :ndf:`copy('status', need_id='wf__cr_mt_platform_mngmt_plan')`
       - <Link to issue>
       - :doc:`software_development`
-      - :ndf:`copy('status', need_id='doc__sw_development_plan')`
+      - not started
 
-    * - :need:`wp__verification_plan`
+    * - :need:`wp__verification__plan`
       - :need:`wf__cr_mt_platform_mngmt_plan`
       - :ndf:`copy('status', need_id='wf__cr_mt_platform_mngmt_plan')`
       - <Link to issue>
       - :doc:`software_verification`
-      - :ndf:`copy('status', need_id='doc__sw_verification_plan')`
+      - not started
 
     * - :need:`wp__tool_eval`
       - :doc:`tool_management`
-      - :ndf:`copy('status', need_id='doc__tool_management_plan')`
+      - not started
       - <Link to issue>
       - <Link to WP>
       - <automated>
@@ -465,18 +457,6 @@ See feature tree documents (created by using :need:`gd_temp__feature_safety_wp`)
 
 Functional Safety Work Products Status Charts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. needpie:: Stakeholder Requirements
-  valid, invalid
-
-  type == 'stkh_req' and status == 'valid'
-  type == 'stkh_req' and status != 'valid'
-
-.. needpie:: Toolchain Requirements
-  valid, invalid
-
-  type == 'tool_req' and status == 'valid'
-  type == 'tool_req' and status != 'valid'
 
 .. needtable::
    :style: table
