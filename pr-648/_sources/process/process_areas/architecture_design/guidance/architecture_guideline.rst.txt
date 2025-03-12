@@ -156,7 +156,8 @@ Those links shall be established from architectural elements to feature requirem
 Review architectural design
 ---------------------------
 
-As soon as the design is in a mature state it can be reviewed according to <TBD> and merged into the main branch of the score repository.
+As soon as the design is in a mature state it can be reviewed according to :need:`doc_concept__wp_inspections`
+and merged into the main branch of the score repository.
 
 For the review process a checklist template is available: :need:`[[title]] <gd_chklst__arch__inspection_checklist>`
 
