@@ -13,13 +13,10 @@ async def run_query(
     # an appropriate dataclass for the return type of this query...
 
     # TODO: cache id
-    result1 = await client.fetch_all_elements(
-        query=get_query("get_teams"),
+    result1 = await client._execute(
+        query=get_query("commits"),
         variable_values={
-            "org": client.org,
         },
-        decoder=lambda data: data,
-        path_to_elements=["organization", "teams"],
     )
     pprint(result1)
     return result1

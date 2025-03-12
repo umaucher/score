@@ -100,7 +100,7 @@ class GitHubClient_Basic:
         self.org = org
 
         if not token:
-            load_dotenv()
+            load_dotenv(verbose=True)
             self.token = os.getenv("GITHUB_TOKEN")
 
     async def __aenter__(self):

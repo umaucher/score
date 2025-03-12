@@ -1,0 +1,102 @@
+query {
+  rateLimit {
+    limit
+    remaining
+    used
+    resetAt
+    cost
+  }
+  repository(owner: "eclipse-score", name: "score") {
+    commit0: object(expression: "a7634dbccd021c3a059b6238391528d18a1b4272") {
+      ... on Commit {
+        associatedPullRequests(first: 10) {
+          nodes {
+            author {
+              login
+            }
+            approver: reviews(first: 100, states: APPROVED) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+            reviewer: reviews(
+              first: 100
+              states: [COMMENTED, CHANGES_REQUESTED, DISMISSED]
+            ) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    commit1: object(expression: "a7634dbccd021c3a059b6238391528d18a1b4272") {
+      ... on Commit {
+        associatedPullRequests(first: 10) {
+          nodes {
+            author {
+              login
+            }
+            approver: reviews(first: 100, states: APPROVED) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+            reviewer: reviews(
+              first: 100
+              states: [COMMENTED, CHANGES_REQUESTED, DISMISSED]
+            ) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    # ... (shortened for brevity)
+    commit132: object(expression: "f03a8528be21e47eeff1e3d8590c4642215cec83") {
+      ... on Commit {
+        associatedPullRequests(first: 10) {
+          nodes {
+            author {
+              login
+            }
+            approver: reviews(first: 100, states: APPROVED) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+            reviewer: reviews(
+              first: 100
+              states: [COMMENTED, CHANGES_REQUESTED, DISMISSED]
+            ) {
+              nodes {
+                state
+                author {
+                  login
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
