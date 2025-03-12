@@ -31,7 +31,10 @@
 <link href="../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -454,9 +454,9 @@
 <li class="toctree-l1"><a class="reference internal" href="tool_management.html">Tool Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release_management.html">Release management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="problem_resolution.html">Problem Resolution</a></li>
-<li class="toctree-l1"><a class="reference internal" href="change_management.html">Change management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change_management.html">Change Management / Change Management Plan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="requirements_management.html">Requirements management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="software_verification.html">Software Verification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_verification.html">Software verification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="documentation_management.html">Documentation Management Plan</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Software Development</a></li>
 </ul>
@@ -521,15 +521,122 @@
                   
   <section id="software-development">
 <span id="sw-development"></span><h1>Software Development<a class="headerlink" href="#software-development" title="Link to this heading">#</a></h1>
-<section id="purpose">
-<h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
-</section>
-<section id="objectives-and-scope">
-<h2>Objectives and scope<a class="headerlink" href="#objectives-and-scope" title="Link to this heading">#</a></h2>
-</section>
-<section id="approach">
-<h2>Approach<a class="headerlink" href="#approach" title="Link to this heading">#</a></h2>
-</section>
+<div class="need_container docutils container" id="SNCB-93aee142">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__software_development_plan">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Software Development Plan</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_req__iso26262__management_35" title="gd_temp__software_development_plan">std_req__iso26262__management_35</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_req__iso26262__management_36" title="gd_temp__software_development_plan">std_req__iso26262__management_36</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_req__iso26262__management_37" title="gd_temp__software_development_plan">std_req__iso26262__management_37</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_req__iso26262__management_38" title="gd_temp__software_development_plan">std_req__iso26262__management_38</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_req__iso26262__management_39" title="gd_temp__software_development_plan">std_req__iso26262__management_39</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__software_development_plan" title="gd_temp__software_development_plan">gd_temp__software_development_plan</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Template</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>This document implements <a class="reference internal" href="../process/process_areas/implementation/implementation_workproducts.html#wp__sw_development_plan" title="wp__sw_development_plan"><em class="xref need">Software Development Plan (wp__sw_development_plan)</em></a>.</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line"><strong>1. Purpose</strong></div>
+<div class="line"><br /></div>
+<div class="line">Process description of SW development including</div>
+<div class="line">- selection of design and programming language</div>
+<div class="line">- design guideline</div>
+<div class="line">- coding guideline (e.g. MISRA, can also include style guide or naming convention)</div>
+<div class="line">- SW configuration guideline</div>
+<div class="line">- Method selection (e.g. for Architecture Verification)</div>
+<div class="line">- development tools</div>
+<div class="line"><br /></div>
+<div class="line">Compare also <a class="reference external" href="https://docs.github.com/en">Github documentation</a></div>
+<div class="line">Compare also <a class="reference external" href="https://www.eclipse.org/projects/handbook/">Eclipse Project Handbook</a></div>
+<div class="line"><br /></div>
+<div class="line"><strong>2. Objectives and scope</strong></div>
+<div class="line"><br /></div>
+<div class="line">Objective is to define the main SW development policies as defined in the “Purpose” in an ISO 26262 and ASPICE compliant manner.</div>
+<div class="line">Scope is the complete SW platform.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>3. Approach</strong></div>
+<div class="line"><br /></div>
+<div class="line"><strong>Design Language:</strong> <a class="reference internal" href="../process/process_areas/implementation/guidance/detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a> The Detailed Design ???.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>SW Configuration Guideline</strong> ?</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Method selection for Architecture Verification</strong> &lt;insert Link&gt;</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Development Tools</strong></div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"><strong>GitHub</strong> GitHub is used for hosting, versioning and contribution of the software. Within</div>
+<div class="line">pull requests it’s possible to contribute. For contribution a seperate process description is</div>
+<div class="line">&lt;Link to contribute&gt; available. In the discussion section the informations regarding meeting</div>
+<div class="line">minutes and Working Sections were stored. Within issues can bugfixes, improvements, blank issues</div>
+<div class="line">set up. It’s also possible to report there Security vulnerabilities. GitHub Actions is used</div>
+<div class="line">as a support for continuous integration.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>PlantUML</strong> PlantUML is used for dynamic and static diagrams for unit interaction.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Sphinx</strong> Sphinx is used for software documentation to generate html-sides from reStructuredText.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Sphinx-Needs</strong> Sphinx-Needs is used for docs-as-code based documentation thats created</div>
+<div class="line">and managed by the sphinx documentation generator. With “needs objects, created in rst-files,</div>
+<div class="line">requirements, specifications and so on could be generated. Sphinx-Needs is 100% compliant to</div>
+<div class="line">Sphinx and reStructuredText.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Draw.io</strong>  Draw.io is used to create flowcharts and diagrams for dynamic and static diagrams</div>
+<div class="line">for unit interaction.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>C++</strong> C++17 is used for the project. Also some non (safety) critical elements of C++20</div>
+<div class="line">&lt;tbd&gt; are allowed.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Rust</strong></div>
+<div class="line"><br /></div>
+<div class="line"><strong>Coding Guideline C++</strong> &lt;insert Link&gt;</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Coding Guideline Rust</strong> &lt;insert Link&gt;</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Compiler</strong> GCC is usesd as C++ compiler. The compiler must not be certified. It’s used as</div>
+<div class="line">a development tool to use e.g. compiler warnings. A qualified compiler from QNX shall mentioned</div>
+<div class="line">as highly recommended after it’s available.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Clang-tidy</strong></div>
+<div class="line"><br /></div>
+<div class="line"><strong>Bazel</strong> Bazel is used for building and testing of the software. The set up and usage of</div>
+<div class="line">bazel is escribed in the readme of the Score Platform &lt;Link&gt;.</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Googletest</strong> GoogleTest is Google’s C++ testing and mocking framework. &lt;Link to <a class="github reference external" href="https://github.com/google/googletest">google/googletest</a>&gt;</div>
+</div>
+</div>
+</div></blockquote>
 </section>
 
 
@@ -561,20 +668,6 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#purpose">Purpose</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objectives-and-scope">Objectives and scope</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach">Approach</a></li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
 

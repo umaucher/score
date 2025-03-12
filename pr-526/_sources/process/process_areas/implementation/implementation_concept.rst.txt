@@ -69,15 +69,13 @@ Specification of Detailed Design
 A **unit** is a **granular, independent entity** of a component that can be **tested separately** during the unit testing phase.
 Each unit represents a **self-contained functionality** and is derived from the decomposition of a component.
 
-**Characteristics of a Unit**
+**Draft: Characteristics of a Unit**
 
 - **Independent** – Can be tested in isolation.
 - **Granular** – Represents a small, well-defined part of the system.
 - **Relational** – Has associations with other units, defined using **UML 2.0 notations** such as aggregation, composition, and generalization.
 
 **Units in UML Diagrams**
-
-- In **class diagrams**, a **unit** is typically represented as a **class** with attributes, methods, and relationships.
 
 - For **Rust development**, a **unit** is modeled using a **combination of `struct` and `trait`**, as Rust does not have traditional classes.
 
@@ -138,7 +136,7 @@ for rust -
 
 Interface View
 ```````````````
-For every unit , it should show the interface provided by that unit . For each unit and corresponding interface,
+For every unit, it should show the interface provided by that unit. For each unit and corresponding interface,
 there shall be an implementation and documentation which is generated for the implementation will have the units description and the interface.
 According the template the attributes shall be filled and corresponding element is shown in the documentation generated form the implementation.
 

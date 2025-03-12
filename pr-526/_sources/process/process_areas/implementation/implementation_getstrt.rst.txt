@@ -22,7 +22,7 @@ Getting Started
 
 This document describes the steps which need to be done to document detailed design and implement the code.
 
-Therefore a detailed guideline :need:`gd_guidl__implementation` is available.
+Therefore a detailed guideline :need:`gd_guidl__implementation` and a :need:`[[title]] <doc_concept__imp__concept>` is available.
 
 
 Relevant Documents
@@ -30,7 +30,7 @@ Relevant Documents
 
 **Concept Document:** :need:`doc_concept__imp__concept` provides a high-level overview of the integration concept.
 **Implementation Guideline:** :need:`gd_guidl__implementation` Details on the implemenation.
-**SW Development Plan:** <Link to SW Development Plan> Process description of SW development including
+**SW Development Plan:** :need:`gd_temp__software_development_plan` Process description of SW development including
 - selection of design and programming language
 - design guideline
 - coding guideline (e.g. MISRA, can also include style guide or naming convention)
@@ -39,27 +39,7 @@ Relevant Documents
 - development tools
 
 
-Tooling Support
-***************
-
-Compiler selection
-==================
-<TBD>
-
-
-CI/CD Pipeline
-==============
-
-Description which Static Code Analysis Tools <TBD>, Compiler <TBD>, Unit Test Tool <TBD>, Structural Coverage
- Tool <TBD>, are implmented in the CI/CD Pipeline.
-
 Developer Experience
 ====================
 
-For all RST files also a linter is configured, it will be automatically run in the CI upon check-in.
-Locally it can be run via
-
-.. code-block:: shell
-
-   bazel test //:format.check
-   bazel build //docs
+There are some tests forseen to check e.g. format which are described in README.MD <Link>.

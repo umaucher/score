@@ -31,7 +31,10 @@
 <link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,12 +447,17 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Implementation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../implementation_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../implementation_concept.html">Concept Description</a></li>
@@ -470,8 +475,6 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../roles/index.html">Roles</a></li>
@@ -555,7 +558,7 @@
                   
   <section id="implementation-checklist">
 <span id="id1"></span><h1>Implementation Checklist<a class="headerlink" href="#implementation-checklist" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-d32c934a">
+<div class="need_container docutils container" id="SNCB-d937fe16">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_chklst table" id="gd_chklst__impl_inspection">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,7 +572,7 @@
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
 </div>
 </td>
 </tr>
@@ -583,12 +586,11 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p><strong>Purpose</strong>
-The purpose of this checklist is to collect the topics to be checked during implementation.
-It will be filled out within the github “inspection” pull request.</p>
+The purpose of this checklist is to collect the topics to be checked during implementation.</p>
 <p><strong>Checklist</strong></p>
 <blockquote>
 <div><div class="pst-scrollable-table-container"><table class="table" id="id2">
-<caption><span class="caption-number">Table 20 </span><span class="caption-text">Implementation Checklist</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 33 </span><span class="caption-text">Implementation Checklist</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 9.1%" />
 <col style="width: 27.3%" />
@@ -608,21 +610,56 @@ It will be filled out within the github “inspection” pull request.</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>IMPL_01_01</p></td>
+<td><p>Is the design template used?</p></td>
+<td><p>see <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a></p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>IMPL_02_01</p></td>
 <td><p>Is the code developed as per implementation guideline?</p></td>
 <td><p>see <a class="reference internal" href="implementation_guideline.html#gd_guidl__implementation" title="gd_guidl__implementation"><em class="xref need">Implementation Guideline (gd_guidl__implementation)</em></a></p></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><p>IMPL_02_01</p></td>
+<tr class="row-even"><td><p>IMPL_03_01</p></td>
 <td><p>Is the MISRA report verified for violations which are safety critical?</p></td>
 <td></td>
 <td></td>
 <td></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><p>IMPL_03_01</p></td>
-<td><p>Are the manual check &lt;TBD&gt; of MISRA rules done?</p></td>
+<tr class="row-odd"><td><p>IMPL_04_01</p></td>
+<td><p>Are the &lt;TBD&gt; manual checks that are derived from the c++ coding guideline done?</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>IMPL_05_01</p></td>
+<td><p>SOLID design principles are applied?</p></td>
+<td><p>The Unit Design and Implementation shall archieve the following principles. Correct order of excecution of the functions, consistency of the interfaces between the units, correctness of data flow and data controll between the units, simplicity, readability and comprehensibility, robustness, suitability for modifications, verifiability</p></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>IMPL_06_01</p></td>
+<td><p>Is the static and dynamic diagram descirbed per UML notations?</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>IMPL_07_01</p></td>
+<td><p>Are the design decisions and constraints are documented?</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>IMPL_08_01</p></td>
+<td><p>Do detailed design and implementation allowing a iterative development?</p></td>
 <td></td>
 <td></td>
 <td></td>

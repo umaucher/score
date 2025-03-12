@@ -31,7 +31,10 @@
 <link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,12 +447,17 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Implementation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../implementation_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../implementation_concept.html">Concept Description</a></li>
@@ -470,8 +475,6 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../roles/index.html">Roles</a></li>
@@ -555,7 +558,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-e279db36">
+<div class="need_container docutils container" id="SNCB-36c13a70">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,12 +572,13 @@
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
 </div>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -604,25 +608,38 @@ In the concept is a example of a Detailed Design included.</p>
 <section id="template">
 <h3>Template<a class="headerlink" href="#template" title="Link to this heading">#</a></h3>
 <p>The detailded design template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates</em></a> shall be used to ensure that the correct syntax
-and attribute definition is used.</p>
+and attribute definition are used.</p>
 </section>
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
 </section>
 <section id="checks">
 <h3>Checks<a class="headerlink" href="#checks" title="Link to this heading">#</a></h3>
-<p>During the build checks will be performed on the implementation &lt;TBD&gt;</p>
+<p>During the sphinx build checks will be performed on the requirements. Those are specified via following process requirements:</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">Static Diagram for Unit Interactions</div>
+<div class="line">Dynamic Diagram for Unit Interactions</div>
+</div>
+</div></blockquote>
 </section>
 </section>
 <section id="workflow-for-implementation">
 <h2>Workflow for Implementation<a class="headerlink" href="#workflow-for-implementation" title="Link to this heading">#</a></h2>
 <p>This section describes in detail which steps need for implementation.</p>
-<p>Creation of a detailed design by using the Template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates</em></a>.
-The detailed design shall be so exact, that test and implementation can be run simultaneously.
-The generated code and tests shall run the checks locally before commiting/pushing changes to a
-branch to avoid unnecessary cycles. The checks can be executed by &lt;TBD&gt;. Use the explenations of
-the tools.</p>
-<p>In the CI/CDcd pipeline the checks &lt;TBD&gt; are executed. Use the explenations in the pipeline.</p>
+<p><strong>Create/Maintain Software Development Plan</strong>
+Adaption of the Software Development Plan to the Projekt by using the <a class="reference internal" href="../../../../platform_management_plan/software_development.html#gd_temp__software_development_plan" title="gd_temp__software_development_plan"><em class="xref need">Software Development Plan (gd_temp__software_development_plan)</em></a>.</p>
+<p><strong>Create/Maintain Detailed Design</strong>
+Create a Detailed Design by using the template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a>.
+In this step, the components are broken down into smaller, independent units that can be tested
+separately during the unit testing phase. The detailed design shall be so exact, that test and
+implementation can be run simultaneously.</p>
+<p><strong>Static analysis</strong>
+Static analysis is done by running the software conceptually without any data and inputs.</p>
+<p><strong>Dynamic analysis</strong>
+Dynamic analysis is done by running the software by feeding some inputs to it.</p>
+<p><strong>Code Inspection</strong>
+The code inspection is done to review the code of the software and detect errors in it.</p>
 </section>
 </section>
 

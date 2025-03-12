@@ -31,7 +31,10 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,12 +447,17 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Implementation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="implementation_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3 current active has-children"><a class="current reference internal" href="#">Concept Description</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
@@ -467,8 +472,6 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../roles/index.html">Roles</a></li>
@@ -549,7 +552,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-41a6673b">
+<div class="need_container docutils container" id="SNCB-5afc7319">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp__concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -563,7 +566,7 @@
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
 </div>
 </td>
 </tr>
@@ -642,7 +645,7 @@ Part-6 Chapter 8+9 and ASPICE Requirements from SWE.3+4.</p>
 <h4>Specification of Detailed Design<a class="headerlink" href="#specification-of-detailed-design" title="Link to this heading">#</a></h4>
 <p>A <strong>unit</strong> is a <strong>granular, independent entity</strong> of a component that can be <strong>tested separately</strong> during the unit testing phase.
 Each unit represents a <strong>self-contained functionality</strong> and is derived from the decomposition of a component.</p>
-<p><strong>Characteristics of a Unit</strong></p>
+<p><strong>Draft: Characteristics of a Unit</strong></p>
 <ul class="simple">
 <li><p><strong>Independent</strong> – Can be tested in isolation.</p></li>
 <li><p><strong>Granular</strong> – Represents a small, well-defined part of the system.</p></li>
@@ -650,7 +653,6 @@ Each unit represents a <strong>self-contained functionality</strong> and is deri
 </ul>
 <p><strong>Units in UML Diagrams</strong></p>
 <ul class="simple">
-<li><p>In <strong>class diagrams</strong>, a <strong>unit</strong> is typically represented as a <strong>class</strong> with attributes, methods, and relationships.</p></li>
 <li><p>For <strong>Rust development</strong>, a <strong>unit</strong> is modeled using a <strong>combination of `struct` and `trait`</strong>, as Rust does not have traditional classes.</p></li>
 </ul>
 <section id="static-view">
@@ -702,7 +704,7 @@ For this we use the tracing to the documentation generated from the code comment
 </div>
 <section id="interface-view">
 <h5>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h5>
-<p>For every unit , it should show the interface provided by that unit . For each unit and corresponding interface,
+<p>For every unit, it should show the interface provided by that unit. For each unit and corresponding interface,
 there shall be an implementation and documentation which is generated for the implementation will have the units description and the interface.
 According the template the attributes shall be filled and corresponding element is shown in the documentation generated form the implementation.</p>
 <p>For cpp using doxygen comments-</p>

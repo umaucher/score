@@ -31,7 +31,10 @@
 <link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,12 +447,17 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Implementation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="implementation_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="implementation_concept.html">Concept Description</a></li>
@@ -464,8 +469,6 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../roles/index.html">Roles</a></li>
@@ -546,7 +549,7 @@
                   
   <section id="workproducts-implementation">
 <h1>Workproducts Implementation<a class="headerlink" href="#workproducts-implementation" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7dc7244e">
+<div class="need_container docutils container" id="SNCB-43a869d3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -554,23 +557,24 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
 </div>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="implementation_workflow.html#wf__impl__unit_test" title="wp__sw_implementation">wf__impl__unit_test</a></span></span></div>
-<div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__impl__detailed_design" title="wp__sw_implementation">wf__impl__detailed_design</a></span></span></div>
-<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_wp__iso26262__software_10" title="wp__sw_implementation">std_wp__iso26262__software_10</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_29" title="wp__sw_implementation">std_req__iso26262__software_29</a></span></span></div>
+<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="../verification/workflows.html#wf__verification__unit_test" title="wp__sw_implementation">wf__verification__unit_test</a>, <a class="reference internal" href="../verification/workflows.html#wf__verification__comp_int_test" title="wp__sw_implementation">wf__verification__comp_int_test</a>, <a class="reference internal" href="implementation_workflow.html#wf__sw_static_analysis" title="wp__sw_implementation">wf__sw_static_analysis</a>, <a class="reference internal" href="implementation_workflow.html#wf__sw_dynamic_analysis" title="wp__sw_implementation">wf__sw_dynamic_analysis</a>, <a class="reference internal" href="implementation_workflow.html#wf__sw_code_inspection" title="wp__sw_implementation">wf__sw_code_inspection</a></span></span></div>
+<div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_detailed_design" title="wp__sw_implementation">wf__sw_detailed_design</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_10" title="wp__sw_implementation">std_req__iso26262__software_10</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_29" title="wp__sw_implementation">std_req__iso26262__software_29</a></span></span></div>
+<div class="line">is satisfied by: <span class="satisfies"><span><a class="reference internal" href="guidance/implementation_process_reqs.html#gd_req__static_diagram" title="wp__sw_implementation">gd_req__static_diagram</a>, <a class="reference internal" href="guidance/implementation_process_reqs.html#gd_req__dynamic_diagram" title="wp__sw_implementation">gd_req__dynamic_diagram</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -593,39 +597,226 @@ The “how to” is described in the SW Development Plan guidelines</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-7455cf3f">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_unit_test">
+<div class="need_container docutils container" id="SNCB-016a0f34">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_code_design_inspect">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Unit test</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Code and Design Inspection</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__hide__meta"><span class="needs collapsed collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
 </div>
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__impl__unit_test" title="wp__sw_unit_test">wf__impl__unit_test</a></span></span></div>
-<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_wp__iso26262__software_11" title="wp__sw_unit_test">std_wp__iso26262__software_11</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_wp__iso26262__software_12" title="wp__sw_unit_test">std_wp__iso26262__software_12</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_29" title="wp__sw_unit_test">std_req__iso26262__software_29</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_11" title="wp__sw_code_design_inspect">std_req__iso26262__software_11</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_12" title="wp__sw_code_design_inspect">std_req__iso26262__software_12</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_29" title="wp__sw_code_design_inspect">std_req__iso26262__software_29</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Unit testing verifies component requirements and detailed design (traced to). Tooling defined in SW Development Plan and integrated in CI/Build.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Github review with integrated inspection checklist (includes manual checking of coding guidelines)</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_unit_test" title="wp__sw_unit_test">wp__sw_unit_test</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_code_design_inspect" title="wp__sw_code_design_inspect">wp__sw_code_design_inspect</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workproduct</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-cb523c6f">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_static_analysis">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Static analysis</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_static_analysis" title="wp__sw_static_analysis">wf__sw_static_analysis</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_31" title="wp__sw_static_analysis">std_req__iso26262__software_31</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_36" title="wp__sw_static_analysis">std_req__iso26262__software_36</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Static analysis is used to test the unit.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_static_analysis" title="wp__sw_static_analysis">wp__sw_static_analysis</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workproduct</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-460a1ed1">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_dynamic_analysis">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Dynamic analysis</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_dynamic_analysis" title="wp__sw_dynamic_analysis">wf__sw_dynamic_analysis</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_31" title="wp__sw_dynamic_analysis">std_req__iso26262__software_31</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_36" title="wp__sw_dynamic_analysis">std_req__iso26262__software_36</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Dynamic analysis is used to test the unit.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_dynamic_analysis" title="wp__sw_dynamic_analysis">wp__sw_dynamic_analysis</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workproduct</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-f47cb60b">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_code_inspection">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Code Inspection</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="../verification/workflows.html#wf__verification__mod_ver_report" title="wp__sw_code_inspection">wf__verification__mod_ver_report</a></span></span></div>
+<div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_code_inspection" title="wp__sw_code_inspection">wf__sw_code_inspection</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_31" title="wp__sw_code_inspection">std_req__iso26262__software_31</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_36" title="wp__sw_code_inspection">std_req__iso26262__software_36</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Code Inspection is used to verify the unit.</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_code_inspection" title="wp__sw_code_inspection">wp__sw_code_inspection</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workproduct</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-8b12729a">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__sw_development_plan">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Software Development Plan</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety</span><span class="needs_spacer">, </span><span class="needs_data">implementation</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">is input to: <span class="input"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_detailed_design" title="wp__sw_development_plan">wf__sw_detailed_design</a></span></span></div>
+<div class="line">is output from: <span class="output"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_development_plan" title="wp__sw_development_plan">wf__sw_development_plan</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_1" title="wp__sw_development_plan">std_req__iso26262__software_1</a>, <a class="reference internal" href="../../standards/iso26262/iso26262.html#std_req__iso26262__software_25" title="wp__sw_development_plan">std_req__iso26262__software_25</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>Process description of SW development including
+- selection of design and programming language
+- design guideline
+- coding guideline (e.g. MISRA, can also include style guide or naming convention)
+- SW configuration guideline
+- Method selection (e.g. for Architecture Verification)
+- development tools</p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__sw_development_plan" title="wp__sw_development_plan">wp__sw_development_plan</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
