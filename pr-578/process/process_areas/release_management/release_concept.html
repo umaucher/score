@@ -545,7 +545,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-823674e5">
+<div class="need_container docutils container" id="SNCB-bb0086ab">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__rel__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -598,6 +598,14 @@ can include multiple software module releases within a platform release scope.</
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Module safety case</p></li>
+<li><p>Platform safety case</p></li>
+<li><p>Issue tracking system</p></li>
+<li><p>Platform Management Plan</p></li>
+</ol>
+</section>
+<section id="outputs">
+<h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
 <li><p>Module release plan</p></li>
 <li><p>Module release note</p></li>
 <li><p>Platform release plan</p></li>
@@ -606,7 +614,8 @@ can include multiple software module releases within a platform release scope.</
 <section id="platform-release-plan">
 <h3>Platform Release Plan<a class="headerlink" href="#platform-release-plan" title="Link to this heading">#</a></h3>
 <p>The platform release plan provides a reliable plan on what software modules can be expected in the
-upcoming platform release. Therefore it is of importance that the <em>Project Leads</em> are aligned with
+upcoming platform release. The platform release plan is reflected by feature requests which are
+demanded. Therefore it is of importance that the <em>Project Leads</em> are aligned with
 the various software module <em>Technical Leads</em> and <em>Project Leads</em> to align the platform release
 plan properly with the module release plan as the platform release plan has a clear dependency on
 its output.</p>
@@ -683,6 +692,16 @@ Only released software modules can be included into a platform release.</p>
 </li>
 </ol>
 </section>
+<section id="branching-strategy">
+<h3>Branching Strategy<a class="headerlink" href="#branching-strategy" title="Link to this heading">#</a></h3>
+<p>Branches:
+* main: Stable, production-ready code.
+* release/*: Branches for distinct releases, named release/&lt;version-number&gt;.</p>
+<p>Workflow:</p>
+<p>When ready for a new release, create a branch release/&lt;version-number&gt; from main.
+Perform final testing and adjustments on the release branch.
+Tag the release in the release branch.</p>
+</section>
 </section>
 </section>
 
@@ -733,11 +752,13 @@ Only released software modules can be included into a platform release.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#platform-release-plan">Platform Release Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#platform-release">Platform Release</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module-release-plan">Module Release Plan</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#module-release">Module Release</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#branching-strategy">Branching Strategy</a></li>
 </ul>
 </li>
 </ul>

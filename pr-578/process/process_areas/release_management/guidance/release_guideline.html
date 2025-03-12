@@ -552,7 +552,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8cd4554f">
+<div class="need_container docutils container" id="SNCB-b2133654">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__rel_management">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -595,7 +595,7 @@
 </div>
 </div>
 <section id="software-module-release">
-<h2>Software Module Release<a class="headerlink" href="#software-module-release" title="Link to this heading">#</a></h2>
+<span id="workflow-release"></span><h2>Software Module Release<a class="headerlink" href="#software-module-release" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p><strong>Repository Management</strong>:</p>
 <ul class="simple">
@@ -615,6 +615,7 @@
 <li><p>Follow the development guidelines and coding standards.</p></li>
 <li><p>Conduct thorough testing, including unit tests, integration tests, and system tests.</p></li>
 <li><p>Ensure that all tests pass before proceeding to the release.</p></li>
+<li><p>In case of failed test, evaluate and possibly justify their continued existence.</p></li>
 </ul>
 </li>
 <li><p><strong>Release Preparation</strong>:</p>
@@ -629,7 +630,7 @@
 <ul class="simple">
 <li><p>Push the release to the main branch.</p></li>
 <li><p>Create a release in the GitHub repository and attach the release notes.</p></li>
-<li><p>Notify the platform release manager about the release.</p></li>
+<li><p>Notify the tech lead circle about the release.</p></li>
 </ul>
 </li>
 </ol>
@@ -639,7 +640,7 @@
 <ol class="arabic simple">
 <li><p><strong>Integration of Software Modules</strong>:</p>
 <ul class="simple">
-<li><p>The platform release in the integrates various software modules.</p></li>
+<li><p>The platform release integrates various software modules.</p></li>
 <li><p>Ensure that all software modules are released and tagged before the platform release.</p></li>
 </ul>
 </li>
@@ -668,7 +669,68 @@
 <ul class="simple">
 <li><p>Push the platform release to the main branch.</p></li>
 <li><p>Create a release in the GitHub repository and attach the platform release notes.</p></li>
-<li><p>Communicate the platform release to all stakeholders.</p></li>
+<li><p>Publish within Eclipse SDV</p></li>
+</ul>
+</li>
+</ol>
+</section>
+<section id="release-versioning-rules">
+<h2>Release Versioning Rules<a class="headerlink" href="#release-versioning-rules" title="Link to this heading">#</a></h2>
+<ol class="arabic">
+<li><p>Semantic Versioning Format</p>
+<p>Use the format MAJOR.MINOR.PATCH for version numbers.</p>
+</li>
+<li><p>Version Components</p>
+<ul class="simple">
+<li><p>MAJOR: Incremented for incompatible API changes.</p></li>
+<li><p>MINOR: Incremented for backward-compatible functionality additions.</p></li>
+<li><p>PATCH: Incremented for backward-compatible bug fixes.</p></li>
+</ul>
+</li>
+<li><p>Rules for Incrementing Versions</p>
+<ul>
+<li><p>Major Version (MAJOR)</p>
+<blockquote>
+<div><p>Increment the MAJOR version when making changes that break backward compatibility.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Removing or renaming public APIs.</p></li>
+<li><p>Significant changes to the architecture that require modifications from dependent modules.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Minor Version (MINOR)</p>
+<blockquote>
+<div><p>Increment the MINOR version when adding new features or functionality in a backward-compatible manner.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Adding new APIs or modules.</p></li>
+<li><p>Enhancements to existing features that do not affect existing functionality.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Patch Version (PATCH)</p>
+<blockquote>
+<div><p>Increment the PATCH version when making backward-compatible bug fixes.</p>
+<p>Examples:</p>
+<ul class="simple">
+<li><p>Fixing bugs or issues in the existing code.</p></li>
+<li><p>Minor improvements that do not add new features or change existing ones.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</li>
+<li><p>Pre-Release Versions</p>
+<ul class="simple">
+<li><p>Use pre-release versions for features or fixes that are not yet ready for production.</p></li>
+<li><p>Format: MAJOR.MINOR.PATCH-&lt;pre-release-tag&gt;, e.g., 1.0.0-alpha, 1.0.0-beta.</p></li>
+</ul>
+</li>
+<li><p>Tagging Releases</p>
+<ul class="simple">
+<li><p>Tag each release in the repository with the version number.</p></li>
+<li><p>Format: vMAJOR.MINOR.PATCH, e.g., v1.3.0.</p></li>
 </ul>
 </li>
 </ol>
@@ -685,7 +747,7 @@
 <li><p><strong>Communication</strong>:</p>
 <ul class="simple">
 <li><p>Regularly update all stakeholders on the release status.</p></li>
-<li><p>Hold periodic meetings to discuss progress, issues, and dependencies.</p></li>
+<li><p>Hold periodic meetings to discuss progress, issues, and dependencies within the tech lead circle.</p></li>
 <li><p>Ensure clear and transparent communication throughout the release process.</p></li>
 </ul>
 </li>
@@ -768,6 +830,7 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#software-module-release">Software Module Release</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#platform-release">Platform Release</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#release-versioning-rules">Release Versioning Rules</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tracking-and-communication">Tracking and Communication</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#templates">Templates</a></li>
 </ul>
