@@ -17,6 +17,7 @@
    :status: draft
    :safety: ASIL_B
    :tags: platform_management
+   :realizes: wp__chm_plan
 
 Change Management / Change Management Plan
 ------------------------------------------
