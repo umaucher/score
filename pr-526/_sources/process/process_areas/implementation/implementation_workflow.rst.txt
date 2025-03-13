@@ -23,13 +23,14 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__platform_mgmt
    :output: wp__sw_development_plan
+   :contains: gd_temp__software_development_plan
 
    The Software Development Plan shall descirbe
      - methods
      - Guidelines
      - development environment
 
-.. workflow:: Create/Maintain Detailed Design
+.. workflow:: Create/Maintain Implementation
    :id: wf__sw_detailed_design
    :status: valid
    :tags: implementation
@@ -37,40 +38,23 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__requirements__comp, wp__component_arch, wp__sw_development_plan
    :output: wp__sw_implementation
+   :contains: gd_temp__detailed_design
+   :has: doc_concept__imp__concept
 
-   Every Unit has a Detailed Design. After the Design the implementation will be done by write the
-   Source Code. It will be verified by the Unit Test. It's recommended to use the local build environments
-   to avoid unnecessary cycles.
+   The implementation is created, consisting of
+     - Detailed Design
+     - Source Code
 
-.. workflow:: Static analysis
-   :id: wf__sw_static_analysis
+.. workflow:: Verify Implementation
+   :id: wf__sw_verify_implementation
    :status: valid
    :tags: implementation
    :responsible: rl__contributor
    :approved_by: rl__committer
-   :input: wp__sw_implementation
-   :output: wp__sw_static_analysis
+   :input: wp__sw_implementation, wp__sw_development_plan
+   :output: wp__issue_track_system, wp__sw_implementation_inspection, wp__verification__module_ver_report
+   :contains: gd_chklst__impl_inspection
 
-   Static analysis is done by running the software conceptually without any data and inputs.
-
-.. workflow:: Dynamic analysis
-   :id: wf__sw_dynamic_analysis
-   :status: valid
-   :tags: implementation
-   :responsible: rl__contributor
-   :approved_by: rl__committer
-   :input: wp__sw_implementation
-   :output: wp__sw_dynamic_analysis
-
-   Dynamic analysis is done by running the software by feeding some inputs to it.
-
-.. workflow:: Code Inspection
-   :id: wf__sw_code_inspection
-   :status: valid
-   :tags: implementation
-   :responsible: rl__contributor
-   :approved_by: rl__committer
-   :input: wp__sw_implementation
-   :output: wp__sw_code_inspection
-
-   The code inspection is done to review the code of the software and detect errors in it.
+   The Implementation Verification of the Detailed Design and Code consists of the following topics
+     - Detailed Design and Code Inspection
+     - Static and Dynamic Code Analysis performed by a tool

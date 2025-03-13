@@ -549,7 +549,7 @@
                   
   <section id="workflow-implementation">
 <h1>Workflow Implementation<a class="headerlink" href="#workflow-implementation" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-4f900cfb">
+<div class="need_container docutils container" id="SNCB-15ff9935">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_development_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -571,7 +571,8 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../../workproducts/index.html#wp__platform_mgmt" title="wf__sw_development_plan">wp__platform_mgmt</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="../../../platform_management_plan/software_development.html#gd_temp__software_development_plan" title="wf__sw_development_plan">gd_temp__software_development_plan</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="../../workproducts/index.html#wp__platform_mgmt" title="wf__sw_development_plan">wp__platform_mgmt</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_development_plan" title="wf__sw_development_plan">wp__sw_development_plan</a></span></span></div>
 <div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_development_plan">rl__contributor</a></span></span></div>
 <div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_development_plan">rl__committer</a></span></span></div>
@@ -604,11 +605,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-33111596">
+<div class="need_container docutils container" id="SNCB-0464070b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_detailed_design">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Create/Maintain Detailed Design</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Create/Maintain Implementation</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -626,7 +627,9 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="../requirements_engineering/requirements_workproducts.html#wp__requirements__comp" title="wf__sw_detailed_design">wp__requirements__comp</a>, <a class="reference internal" href="../architecture_design/architecture_workproducts.html#wp__component_arch" title="wf__sw_detailed_design">wp__component_arch</a>, <a class="reference internal" href="implementation_workproducts.html#wp__sw_development_plan" title="wf__sw_detailed_design">wp__sw_development_plan</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/detailed_design_template.html#gd_temp__detailed_design" title="wf__sw_detailed_design">gd_temp__detailed_design</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="implementation_concept.html#doc_concept__imp__concept" title="wf__sw_detailed_design">doc_concept__imp__concept</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="../requirements_engineering/requirements_workproducts.html#wp__requirements__comp" title="wf__sw_detailed_design">wp__requirements__comp</a>, <a class="reference internal" href="../architecture_design/architecture_workproducts.html#wp__component_arch" title="wf__sw_detailed_design">wp__component_arch</a>, <a class="reference internal" href="implementation_workproducts.html#wp__sw_development_plan" title="wf__sw_detailed_design">wp__sw_development_plan</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation" title="wf__sw_detailed_design">wp__sw_implementation</a></span></span></div>
 <div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_detailed_design">rl__contributor</a></span></span></div>
 <div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_detailed_design">rl__committer</a></span></span></div>
@@ -635,9 +638,14 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Every Unit has a Detailed Design. After the Design the implementation will be done by write the
-Source Code. It will be verified by the Unit Test. It’s recommended to use the local build environments
-to avoid unnecessary cycles.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><dl class="simple">
+<dt>The implementation is created, consisting of</dt><dd><ul class="simple">
+<li><p>Detailed Design</p></li>
+<li><p>Source Code</p></li>
+</ul>
+</dd>
+</dl>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__sw_detailed_design" title="wf__sw_detailed_design">wf__sw_detailed_design</a></span></span></div>
@@ -653,11 +661,11 @@ to avoid unnecessary cycles.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-70dc79be">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_static_analysis">
+<div class="need_container docutils container" id="SNCB-3d697185">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_verify_implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Static analysis</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Verify Implementation</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -675,113 +683,27 @@ to avoid unnecessary cycles.</p></td>
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation" title="wf__sw_static_analysis">wp__sw_implementation</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_static_analysis" title="wf__sw_static_analysis">wp__sw_static_analysis</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_static_analysis">rl__contributor</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_static_analysis">rl__committer</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/implementation_checklist.html#gd_chklst__impl_inspection" title="wf__sw_verify_implementation">gd_chklst__impl_inspection</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation" title="wf__sw_verify_implementation">wp__sw_implementation</a>, <a class="reference internal" href="implementation_workproducts.html#wp__sw_development_plan" title="wf__sw_verify_implementation">wp__sw_development_plan</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wf__sw_verify_implementation">wp__issue_track_system</a>, <a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation_inspection" title="wf__sw_verify_implementation">wp__sw_implementation_inspection</a>, <a class="reference internal" href="../verification/workproducts.html#wp__verification__module_ver_report" title="wf__sw_verify_implementation">wp__verification__module_ver_report</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_verify_implementation">rl__contributor</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_verify_implementation">rl__committer</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Static analysis is done by running the software conceptually without any data and inputs.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><dl class="simple">
+<dt>The Implementation Verification of the Detailed Design and Code consists of the following topics</dt><dd><ul class="simple">
+<li><p>Detailed Design and Code Inspection</p></li>
+<li><p>Static and Dynamic Code Analysis performed by a tool</p></li>
+</ul>
+</dd>
+</dl>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__sw_static_analysis" title="wf__sw_static_analysis">wf__sw_static_analysis</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-803b4307">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_dynamic_analysis">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Dynamic analysis</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation" title="wf__sw_dynamic_analysis">wp__sw_implementation</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_dynamic_analysis" title="wf__sw_dynamic_analysis">wp__sw_dynamic_analysis</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_dynamic_analysis">rl__contributor</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_dynamic_analysis">rl__committer</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Dynamic analysis is done by running the software by feeding some inputs to it.</p></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__sw_dynamic_analysis" title="wf__sw_dynamic_analysis">wf__sw_dynamic_analysis</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workflow</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-94d657fe">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__sw_code_inspection">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Code Inspection</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span></span></div>
-<div class="line"><span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_implementation" title="wf__sw_code_inspection">wp__sw_implementation</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="implementation_workproducts.html#wp__sw_code_inspection" title="wf__sw_code_inspection">wp__sw_code_inspection</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__contributor" title="wf__sw_code_inspection">rl__contributor</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__sw_code_inspection">rl__committer</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The code inspection is done to review the code of the software and detect errors in it.</p></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__sw_code_inspection" title="wf__sw_code_inspection">wf__sw_code_inspection</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__sw_verify_implementation" title="wf__sw_verify_implementation">wf__sw_verify_implementation</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">

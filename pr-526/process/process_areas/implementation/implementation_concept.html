@@ -552,7 +552,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-01a64191">
+<div class="need_container docutils container" id="SNCB-5f1bfca0">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__imp__concept">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -574,7 +574,8 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="implementation_workflow.html#wf__sw_detailed_design" title="doc_concept__imp__concept">wf__sw_detailed_design</a></span></span></div>
+</span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
@@ -595,87 +596,80 @@
 </table>
 </div>
 </div>
-<p>In this section a concept for the implementation will be discussed. Inputs for this concepts are both the requirements of ISO26262
-Part-6 Chapter 8+9 and ASPICE Requirements from SWE.3+4.</p>
+<p>In this section a concept for the implementation will be discussed. Inputs for this concepts are
+both the requirements of ISO26262 Part-6 Chapter 8+9 and ASPICE SWE 3+4.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>ISO 26262 Part-6 Chapter 8 and 9</p></li>
-<li><p>ASPICE SWE3 and SWE4</p></li>
-<li><p>Detailed Design</p></li>
-<li><p>Coding Rules and Static Code Analyis Tools</p></li>
-<li><p>Stakeholders for the implementation</p></li>
-<li><p>Who needs which information?</p></li>
+<li><p>ISO 26262 Part-6 Chapter 8+9</p></li>
+<li><p>ASPICE SWE 3+4</p></li>
+<li><p>Component Requirements <a class="reference internal" href="../requirements_engineering/requirements_workproducts.html#wp__requirements__comp" title="wp__requirements__comp"><em class="xref need">Component Requirements (wp__requirements__comp)</em></a> and Architecture <a class="reference internal" href="../architecture_design/architecture_workproducts.html#wp__component_arch" title="wp__component_arch"><em class="xref need">Component Architecture (wp__component_arch)</em></a></p></li>
+<li><p>Software Development Plan <a class="reference internal" href="../../../platform_management_plan/software_development.html#gd_temp__software_development_plan" title="gd_temp__software_development_plan"><em class="xref need">Software Development Plan (gd_temp__software_development_plan)</em></a></p></li>
 </ol>
-<section id="stakeholders-for-the-implementation">
-<h3>Stakeholders for the implementation<a class="headerlink" href="#stakeholders-for-the-implementation" title="Link to this heading">#</a></h3>
-<ul>
-<li><p><a class="reference internal" href="../../roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor</em></a></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Implement the code according to its specification</p></li>
-<li><p>Verify that the specification is fulfilled by the elements under test</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p><a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer</em></a></p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Committs the implementation</p></li>
-</ul>
-</div></blockquote>
-</li>
-</ul>
-</section>
 </section>
 <section id="outputs">
 <h2>Outputs<a class="headerlink" href="#outputs" title="Link to this heading">#</a></h2>
 <section id="detailed-design">
 <h3>Detailed Design<a class="headerlink" href="#detailed-design" title="Link to this heading">#</a></h3>
-<p>In this step, the <strong>components</strong> are broken down into smaller, independent <strong>units</strong> that can be <strong>tested separately</strong> during the unit testing phase.</p>
-<p>Following the <strong>TBD: detailed_design-template</strong>, we must document the <strong>design decisions</strong> and <strong>constraints</strong> that guide the decomposition of the component into multiple units. These decisions should be made based on the following ideas:</p>
+<p>In this step, the <strong>components</strong> are broken down into smaller, independent <strong>units</strong> that can be
+<strong>tested separately</strong> during the unit testing phase.</p>
+<p>Following the <strong>Detailed Design Template</strong> <a class="reference internal" href="guidance/detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a>, we must document the
+<strong>design decisions</strong> and <strong>constraints</strong> that guide the decomposition of the component into multiple
+units. These decisions should be made based on the following ideas:</p>
 <ul class="simple">
 <li><p><strong>Design principles</strong></p></li>
 <li><p><strong>Design patterns</strong></p></li>
 <li><p><strong>Testability strategies</strong></p></li>
 </ul>
-<p>The goal is to ensure that the decomposition supports <strong>reusability</strong> , <strong>maintainability</strong>, <strong>scalability</strong>, <strong>extensibility</strong> and <strong>ease of testing</strong> etc.</p>
-<p>The detailed design and implementation should follow an <strong>iterative approach</strong>, allowing for continuous improvements in quality through multiple cycles of refinement.</p>
+<p>The goal is to ensure that the decomposition supports <strong>reusability</strong> , <strong>maintainability</strong>,
+<strong>scalability</strong>, <strong>extensibility</strong> and <strong>ease of testing</strong>.</p>
+<p>The detailed design and implementation should follow an <strong>iterative approach</strong>, allowing for
+continuous improvements in quality through multiple cycles of refinement.</p>
 <section id="specification-of-detailed-design">
 <h4>Specification of Detailed Design<a class="headerlink" href="#specification-of-detailed-design" title="Link to this heading">#</a></h4>
-<p>A <strong>unit</strong> is a <strong>granular, independent entity</strong> of a component that can be <strong>tested separately</strong> during the unit testing phase.
-Each unit represents a <strong>self-contained functionality</strong> and is derived from the decomposition of a component.</p>
+<p>A <strong>unit</strong> is a <strong>granular, independent entity</strong> of a component that can be <strong>tested separately</strong>
+during the unit testing phase. Each unit represents a <strong>self-contained functionality</strong> and is
+derived from the decomposition of a component.</p>
 <p><strong>Draft: Characteristics of a Unit</strong></p>
 <ul class="simple">
 <li><p><strong>Independent</strong> – Can be tested in isolation.</p></li>
 <li><p><strong>Granular</strong> – Represents a small, well-defined part of the system.</p></li>
-<li><p><strong>Relational</strong> – Has associations with other units, defined using <strong>UML 2.0 notations</strong> such as aggregation, composition, and generalization.</p></li>
+<li><p><strong>Relational</strong> – Has associations with other units, defined using <strong>UML 2.0 notations</strong> such as
+aggregation, composition, and generalization.</p></li>
 </ul>
 <p><strong>Units in UML Diagrams</strong></p>
 <ul class="simple">
-<li><p>For <strong>Rust development</strong>, a <strong>unit</strong> is modeled using a <strong>combination of `struct` and `trait`</strong>, as Rust does not have traditional classes.</p></li>
+<li><p>For <strong>Rust development</strong>, a <strong>unit</strong> is modeled using a <strong>combination of `struct` and `trait`</strong>,
+as Rust does not have traditional classes.</p></li>
 </ul>
 <section id="static-view">
 <h5>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h5>
-<p>The <strong>static view</strong> represents the <strong>units</strong> and their relationships using <strong>UML 2.0 notations</strong>, such as
-<strong>aggregation, composition, and generalization</strong>. This is depicted through <strong>UML structural diagrams</strong>, including:</p>
+<p>The <strong>static view</strong> represents the <strong>units</strong> and their relationships using <strong>UML 2.0 notations</strong>,
+such as <strong>aggregation, composition, and generalization</strong>. This is depicted through
+<strong>UML structural diagrams</strong>, including:</p>
 <ul class="simple">
 <li><p><strong>Class Diagrams</strong> – Define <strong>classes, attributes, methods, and relationships</strong> (e.g., inheritance, associations, dependencies).
 Each <strong>class</strong> can be considered a <strong>unit</strong> in the design.</p></li>
-<li><p><strong>Rust Development Approach</strong> – Instead of traditional classes, <strong>Rust uses `struct` and `trait` combinations</strong> to represent <strong>units</strong> in UML diagrams.</p></li>
+<li><p><strong>Rust Development Approach</strong> – Instead of traditional classes, <strong>Rust uses `struct` and `trait`
+combinations</strong> to represent <strong>units</strong> in UML diagrams.</p></li>
 </ul>
 <p>This view focuses <strong>only on units and their relationships</strong>.
-Details such as <strong>attributes and interfaces</strong> are documented under the <strong>Units within the Component section</strong> (refer to the template for details).</p>
+Details such as <strong>attributes and interfaces</strong> are documented under the <strong>Units within the Component section</strong>
+(refer to the template for details).</p>
 </section>
 <section id="dynamic-view">
 <h5>Dynamic View<a class="headerlink" href="#dynamic-view" title="Link to this heading">#</a></h5>
-<p>The <strong>dynamic view</strong> illustrates how the <strong>units</strong> interact with each other to fulfill a specific <strong>use case</strong> or <strong>functionality</strong>. This view captures the <strong>behavioral aspects</strong> of the component as it executes.
+<p>The <strong>dynamic view</strong> illustrates how the <strong>units</strong> interact with each other to fulfill a specific
+<strong>use case</strong> or <strong>functionality</strong>. This view captures the <strong>behavioral aspects</strong> of the component as it executes.
 It is represented using <strong>UML behavioral diagrams</strong>, including:</p>
 <ul class="simple">
-<li><p><strong>Sequence Diagrams</strong> – Depict the interactions between objects in a <strong>time-ordered sequence</strong>, highlighting how methods are invoked and how control flows between objects over time.</p></li>
-<li><p><strong>State Machine Diagrams</strong> – Show how the <strong>state of an object changes</strong> in response to events, allowing for the modeling of complex state transitions.</p></li>
+<li><p><strong>Sequence Diagrams</strong> – Depict the interactions between objects in a <strong>time-ordered sequence</strong>,
+highlighting how methods are invoked and how control flows between objects over time.</p></li>
+<li><p><strong>State Machine Diagrams</strong> – Show how the <strong>state of an object changes</strong> in response to events,
+allowing for the modeling of complex state transitions.</p></li>
 </ul>
-<p>These diagrams are essential for understanding the <strong>dynamic behavior</strong> of the component and how units collaborate to perform tasks.</p>
+<p>These diagrams are essential for understanding the <strong>dynamic behavior</strong> of the component and how
+units collaborate to perform tasks.</p>
 </section>
 </section>
 <section id="units-within-the-component">
@@ -704,9 +698,10 @@ For this we use the tracing to the documentation generated from the code comment
 </div>
 <section id="interface-view">
 <h5>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h5>
-<p>For every unit, it should show the interface provided by that unit. For each unit and corresponding interface,
-there shall be an implementation and documentation which is generated for the implementation will have the units description and the interface.
-According the template the attributes shall be filled and corresponding element is shown in the documentation generated form the implementation.</p>
+<p>For every unit, it should show the interface provided by that unit. For each unit and corresponding
+interface, there shall be an implementation and documentation which is generated for the implementation
+will have the units description and the interface. According the template the attributes shall be
+filled and corresponding element is shown in the documentation generated form the implementation.</p>
 <p>For cpp using doxygen comments-</p>
 <div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="cm">/**</span>
 <span class="cm">   * @rst</span>
@@ -786,10 +781,7 @@ According the template the attributes shall be filled and corresponding element 
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-implementation">Stakeholders for the implementation</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#outputs">Outputs</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#detailed-design">Detailed Design</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#specification-of-detailed-design">Specification of Detailed Design</a><ul class="nav section-nav flex-column">

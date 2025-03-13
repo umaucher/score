@@ -19,48 +19,24 @@ Workproducts Implementation
    :id: wp__sw_implementation
    :status: valid
    :tags: safety
-   :complies: std_req__iso26262__software_10, std_req__iso26262__software_29
+   :complies: std_wp__iso26262__software_9, std_wp__iso26262__software_10
 
    Implementation includes source code and detailed design (e.g. in form of comments or linked graphical representations) and SW configuration (e.g. #ifdef)
    The "how to" is described in the SW Development Plan guidelines
 
-.. workproduct:: Code and Design Inspection
-   :id: wp__sw_code_design_inspect
+.. workproduct:: Implementation Inspection
+   :id: wp__sw_implementation_inspection
    :status: valid
    :tags: safety
-   :complies: std_req__iso26262__software_11, std_req__iso26262__software_12, std_req__iso26262__software_29
+   :complies: std_wp__iso26262__software_11, std_wp__iso26262__software_11
 
-   Github review with integrated inspection checklist (includes manual checking of coding guidelines)
-
-.. workproduct:: Static analysis
-   :id: wp__sw_static_analysis
-   :status: valid
-   :tags: safety
-   :complies: std_req__iso26262__software_31, std_req__iso26262__software_36
-
-   Static analysis is used to test the unit.
-
-.. workproduct:: Dynamic analysis
-   :id: wp__sw_dynamic_analysis
-   :status: valid
-   :tags: safety
-   :complies: std_req__iso26262__software_31, std_req__iso26262__software_36
-
-   Dynamic analysis is used to test the unit.
-
-.. workproduct:: Code Inspection
-   :id: wp__sw_code_inspection
-   :status: valid
-   :tags: safety
-   :complies: std_req__iso26262__software_31, std_req__iso26262__software_36
-
-   Code Inspection is used to verify the unit.
+   Github review with integrated inspection checklist, only valid Detailed Design and Code get merged
 
 .. workproduct:: Software Development Plan
    :id: wp__sw_development_plan
    :status: valid
    :tags: safety
-   :complies: std_req__iso26262__software_1, std_req__iso26262__software_25
+   :complies: std_wp__iso26262__software_1, std_wp__iso26262__software_25, std_wp__iso26262__management_7
 
    Process description of SW development including
    - selection of design and programming language
