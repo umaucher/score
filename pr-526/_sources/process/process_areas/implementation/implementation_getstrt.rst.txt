@@ -32,7 +32,7 @@ Concept Document: :need:`doc_concept__imp__concept` provides a high-level overvi
 
 Implementation Guideline: :need:`gd_guidl__implementation` Details on the implemenation.
 
-SW Development Plan: :need:`gd_temp__software_development_plan` Process description of SW development including
+SW Development Plan: :need:`doc__software_development_plan` Process description of SW development including
   - selection of design and programming language
   - design guideline
   - coding guideline (e.g. MISRA, can also include style guide or naming convention)

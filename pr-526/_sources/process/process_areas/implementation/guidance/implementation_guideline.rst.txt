@@ -52,7 +52,7 @@ This section describes in detail which steps need for implementation.
 
 
 **Create/Maintain Software Development Plan**
-Adaption of the Software Development Plan to the Projekt by using the :need:`gd_temp__software_development_plan`.
+Adaption of the Software Development Plan to the Projekt by using the :need:`doc__software_development_plan`.
 
 **Create/Maintain Detailed Design**
 Create a Detailed Design by using the template :need:`gd_temp__detailed_design`.

@@ -23,7 +23,7 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__platform_mgmt
    :output: wp__sw_development_plan
-   :contains: gd_temp__software_development_plan
+   :contains: doc__software_development_plan
 
    The Software Development Plan shall descirbe
      - methods
