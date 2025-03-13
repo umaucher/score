@@ -553,7 +553,7 @@
                   
   <section id="writing-c-code">
 <h1>Writing C++ Code<a class="headerlink" href="#writing-c-code" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-93defaca">
+<div class="need_container docutils container" id="SNCB-f3ca2e7a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__cpp_coding_guidelines">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -601,14 +601,17 @@
 <p>Most programming languages are not specifically designed to be used within safety critical systems. If they are still applied in this context, <em>coding guidelines</em> are required. In those guidelines e.g. a safe subset of the language is defined which can be used safely and is not known to be error-prone. Another approach could be that those guidelines require a SW which includes only low complexity code. This means by using those guidelines the risk for systematic error, when using this language, can be minimized.</p>
 <section id="misra-c-2023">
 <h3>MISRA C++:2023<a class="headerlink" href="#misra-c-2023" title="Link to this heading">#</a></h3>
-<p>These guidelines were released on November 2023, and they replace the <em>AUTOSAR guidelines for C++14</em> and the <em>MISRA C++:2008 guidelines</em>.</p>
-<p><em>MISRA C++:2023</em> is designed to be used with <em>C++17</em>. If these were used in older C++ versions like <em>C++14</em> or <em>C++11</em>, it would mean that additional or different guidelines would need to be applied. For example, from <em>MISRA C++:2008</em> and/or <em>AUTOSAR</em> some rules have been dropped because they address issues which are no longer relevant for <em>C++17</em>. The same would apply if a newer C++ standard would be used like for example <em>C++20</em> or <em>C++23</em>.</p>
-<section id="code-formatter">
-<h4>Code Formatter<a class="headerlink" href="#code-formatter" title="Link to this heading">#</a></h4>
-<p>Appropriate code formatting provides a source code which is easier to read and better to understand as it follows a well defined, known standard. That is why usually code formatters are applied. For this project <em>Clang-Format</em> shall be used.</p>
+<p><em>MISRA</em> introduces coding rules for C++ which aim at providing a language subset which guarantees a high code quality. As <em>MISRA</em> is mostly accepted as an industry standard, SCORE will adhere to those rules.</p>
+<p><em>MISRA C++:2023</em> guidelines were released on November 2023. They are designed to be used with <em>C++17</em> and replace the <em>AUTOSAR guidelines for C++14</em> and the <em>MISRA C++:2008 guidelines</em>.</p>
+<p>However if the <em>MISRA C++:2023</em> guidelines were used in combination with other C++ versions like <em>C++14</em> or <em>C++11</em>, it would mean that additional or different guidelines would need to be applied. For example, from <em>MISRA C++:2008</em> and/or <em>AUTOSAR guidelines for C++14</em> some rules have been dropped because they address issues which are no longer relevant for <em>C++17</em>. The same would apply if the <em>MISRA C++:2023</em> guidelines were used with a newer C++ standard like <em>C++20</em> or <em>C++23</em>.</p>
+</section>
+</section>
+<section id="code-format">
+<h2>Code Format<a class="headerlink" href="#code-format" title="Link to this heading">#</a></h2>
+<p>Appropriate code formatting provides a source code which is easier to read and better to understand as it follows a well defined, known standard. That is why usually code formatters are applied. For this project <em>Clang-Format</em> will be used.</p>
 </section>
 <section id="code-style">
-<h4>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h4>
+<h2>Code Style<a class="headerlink" href="#code-style" title="Link to this heading">#</a></h2>
 <p>A <em>code style</em> describes which patterns, elements, conventions or best practices should be used during implementation.</p>
 <p>Examples are:</p>
 <ul class="simple">
@@ -616,23 +619,20 @@
 <li><p>function calls</p></li>
 <li><p>initialization of variables.</p></li>
 </ul>
-<p>For this project an adapted code style based on the <a class="reference external" href="https://google.github.io/styleguide/cppguide.html">google style guide</a> shall be used.</p>
+<p>For this project an code style is not yet decided.</p>
 </section>
-<section id="language-feature-selection">
-<h4>Language Feature Selection<a class="headerlink" href="#language-feature-selection" title="Link to this heading">#</a></h4>
-<p>Basically, all C++17 Features which are allowed by the <em>MISRA C++:2023</em> guidelines can be used.</p>
-<p>Only if absolutely necessary also features of <em>C++:20</em> which are mentioned in the Chapter <a class="reference internal" href="#cpp20"><span class="std std-ref">C++20</span></a> <strong>might</strong> be used.
-The reason for this is, that the current discussions on the new <em>MISRA</em> Standard are going in a direction that those features should be ok to use.</p>
-<p><strong>However to do so, a discussion and detailed evaluation needs to take place together with the process community beforehand.</strong></p>
+<section id="c-version">
+<h2>C++ Version<a class="headerlink" href="#c-version" title="Link to this heading">#</a></h2>
+<p><strong>C++17</strong> is selected as the C++ standard for this project. This means that basically, all C++17 Features can be used according to the <em>MISRA C++:2023</em> guidelines.</p>
+<p>Only if absolutely necessary also features of <em>C++:20</em> which are mentioned in the Chapter <a class="reference internal" href="#cpp20"><span class="std std-ref">C++20</span></a> <strong>might</strong> be used. The reason for this is, that the current discussions on the new <em>MISRA</em> standard are going in a direction that those features should be ok to use.</p>
+<p><strong>However to do so, a discussion and detailed evaluation needs to take place together with the process community beforehand for every such feature.</strong></p>
 <p>This is because the new standard is not finalized yet and therefore a rule might come up which prohibits exactly the use case or places restrictions to it.</p>
 </section>
 <section id="language-features">
-<h4>Language features<a class="headerlink" href="#language-features" title="Link to this heading">#</a></h4>
+<h2>Language features<a class="headerlink" href="#language-features" title="Link to this heading">#</a></h2>
 <p>Every new version of C++ brings new features with it. Some of them can have a positive impact due to making the code safer by reducing the chances to have undesired behavior.</p>
 <p>In this section, some of these features will be explained, however it is not intended to be a complete list and it is up to the developer to judge if certain features make sense or not in each particular use case.</p>
 <p>The features are divided by C++ version where it became available. This structure can help you to judge which C++ version to use.</p>
-</section>
-</section>
 <section id="c-17">
 <span id="cpp17"></span><h3>C++17<a class="headerlink" href="#c-17" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -714,13 +714,13 @@ The reason for this is, that the current discussions on the new <em>MISRA</em> S
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coding-guidelines">Coding Guidelines</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misra-c-2023">MISRA C++:2023</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code-formatter">Code Formatter</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style">Code Style</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#language-feature-selection">Language Feature Selection</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#language-features">Language features</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#misra-c-2023">MISRA C++:2023</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-format">Code Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#code-style">Code Style</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#c-version">C++ Version</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#language-features">Language features</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-17">C++17</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#c-20">C++20</a></li>
 </ul>

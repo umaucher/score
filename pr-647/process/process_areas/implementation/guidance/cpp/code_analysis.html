@@ -553,7 +553,7 @@
                   
   <section id="code-analysis-c">
 <h1>Code Analysis C++<a class="headerlink" href="#code-analysis-c" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7930d03f">
+<div class="need_container docutils container" id="SNCB-68bb48a4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__cpp__code_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -598,15 +598,16 @@
 </div>
 <section id="static-code-analysis">
 <h2>Static Code Analysis<a class="headerlink" href="#static-code-analysis" title="Link to this heading">#</a></h2>
-<p>In order to fulfil standard requirements a concept for <em>Static Code Analysis</em> needs to be established. Input for this is based upon <em>MISRA</em> and <em>ISO26262</em>.</p>
-<p><em>MISRA</em> introduces coding rules which need to be implemented and enforced. Checking those rules can partially be automated and implemented by a combination of different tools. Thus a mapping needs to be established which provides a linkage of all <em>MISRA</em> requirements to the respective tool requirements/rules. For <em>MISRA C++:2023</em> this mapping is established: <a class="reference internal" href="misra_2023_rule_mapping.html#gd_guidl__cpp__misra2023_rule_mapping" title="gd_guidl__cpp__misra2023_rule_mapping"><em class="xref need">here (gd_guidl__cpp__misra2023_rule_mapping)</em></a></p>
-<p>Additionally several other SW Analyses are required by <em>ISO26262</em>. Together with the <em>MISRA</em> rules those can be fulfilled by following toolset:</p>
+<p>In order to fulfil the SCORE related standard requirements a concept for <em>Static Code Analysis</em> needs to be established. Input for the analysis is based upon <em>MISRA</em> and <em>ISO26262</em> standards in accordance to the <a class="reference internal" href="coding_guidelines.html#gd_guidl__cpp_coding_guidelines" title="gd_guidl__cpp_coding_guidelines"><em class="xref need">Coding Guidelines CPP (gd_guidl__cpp_coding_guidelines)</em></a>.</p>
+<p>Checking those rules can partially be automated and implemented by a combination of different tools. Thus a mapping needs to be established which provides a linkage of all <em>MISRA</em> requirements to the respective tool requirements/rules. For <em>MISRA C++:2023</em> this mapping is established: <a class="reference internal" href="misra_2023_rule_mapping.html#gd_guidl__cpp__misra2023_rule_mapping" title="gd_guidl__cpp__misra2023_rule_mapping"><em class="xref need">here (gd_guidl__cpp__misra2023_rule_mapping)</em></a></p>
 <p class="plantuml" id="needuml-process/process_areas/implementation/guidance/cpp/code_analysis-0">
 <object data="../../../../../_images/plantuml-e2bd6836cd367517a30c1bda74dd83d71abf856a.svg" type="image/svg+xml" style="width:391px;height:241px;background:#FFFFFF;"></object></p>
+<p>One of the reasons why this tooling setup is selected is, that it was already proven in use. Also with a combination of the two compilers a lager set of findings could be addressed.</p>
+<p>If for some technical reason any <em>MISRA</em> finding can not be addressed it needs to be justified appropriately. This means that it needs to be explained why it does not have any impact on the safety of the code and finally documented within the source code. A detailed workflow will follow on demand.</p>
 </section>
 <section id="dynamic-code-analysis">
 <h2>Dynamic Code Analysis<a class="headerlink" href="#dynamic-code-analysis" title="Link to this heading">#</a></h2>
-<p>A dynamic code analysis is not explicitly required by a standard. However to provide a sufficient good SW quality following tools should be used to catch most common errors:</p>
+<p>A dynamic code analysis is not explicitly required by any SCORE related standards. However to provide a sufficient good SW quality following tools should be used to catch most common errors:</p>
 <p class="plantuml" id="needuml-process/process_areas/implementation/guidance/cpp/code_analysis-1">
 <object data="../../../../../_images/plantuml-f9a4d8bb55ca4fb250f61868c109e88a2aaa06ec.svg" type="image/svg+xml" style="width:311px;height:337px;background:#FFFFFF;"></object></p>
 <p>Following sections provide a short overview of the most important features of each applied tool:</p>
@@ -644,8 +645,12 @@
 </section>
 <section id="coverage">
 <h2>Coverage<a class="headerlink" href="#coverage" title="Link to this heading">#</a></h2>
-<p>As required by the verification guideline coverage needs to be calculated for the code which is used in the project. For a release the coverage needs to be calculated on the target (QNX). However for development also a quicker approach on the host shall be available.</p>
-<p>To enable this, following tools shall be used:</p>
+<p>As required by the verification guideline coverage needs to be calculated for the code which is used in the project. Therefore two approaches should be available:</p>
+<ul class="simple">
+<li><p>As a quick solution it is possible to calculate the coverage on the host via gcc.</p></li>
+<li><p>But for a more accurate statement coverage can also be calculated with the qcc compiler with the appropriate libraries and POSIX interfaces. This method will also be used for the reporting.</p></li>
+</ul>
+<p>To enable this, following tools are used:</p>
 <p class="plantuml" id="needuml-process/process_areas/implementation/guidance/cpp/code_analysis-2">
 <object data="../../../../../_images/plantuml-ba46dc75b1073997427e3224785f13dfb64b22ab.svg" type="image/svg+xml" style="width:137px;height:337px;background:#FFFFFF;"></object></p>
 </section>
