@@ -22,60 +22,22 @@ Guideline
 This document describes the general guidances for implementation based on the concept which is defined :need:`[[title]]<doc_concept__imp__concept>`.
 In the concept is a example of a Detailed Design included.
 
-General Hints
-=============
-
-Template
----------
-
-The detailded design template :need:`[[title]] <gd_temp__detailed_design>` shall be used to ensure that the correct syntax
-and attribute definition are used.
-
-Attributes
-----------
-
-
-
-Checks
-------
-
-During the sphinx build checks will be performed on the requirements. Those are specified via following process requirements:
-
-  | Static Diagram for Unit Interactions
-  | Dynamic Diagram for Unit Interactions
-
-
 Workflow for Implementation
 ===========================
 
-This section describes in detail which steps need for implementation.
+This section describes which steps are need for implementation.
 
-
-**Create/Maintain Software Development Plan**
-Adaption of the Software Development Plan to the Projekt by using the :need:`gd_temp__software_development_plan`.
-
-**Create/Maintain Detailed Design**
-Create a Detailed Design by using the template :need:`gd_temp__detailed_design`.
-In this step, the components are broken down into smaller, independent units that can be tested
-separately during the unit testing phase. The detailed design shall be so exact, that test and
-implementation can be run simultaneously.
-
-**Static analysis**
-Static analysis is done by running the software conceptually without any data and inputs.
-
-**Dynamic analysis**
-Dynamic analysis is done by running the software by feeding some inputs to it.
-
-**Code Inspection**
-The code inspection is done to review the code of the software and detect errors in it.
-
-
-
-
-
-
-.. Explenation of implementation of Coding Rules if needed
-
-.. Explenation of procedure with Rust regarding to the discussions for coding rules for Rust
-
-.. Exceptions handling
+#. Consult which programming languages, design/coding guidelines and tools are used for Software
+   development within the Software Development Plan :need:`doc__software_development_plan`.
+#. Create a Detailed Design by using the template :need:`gd_temp__detailed_design`.
+   In this step, the components are broken down into smaller, independent units that can be tested
+   separately during the unit testing phase. The detailed design shall be so exact, that test and
+   implementation can be run simultaneously.
+#. Implement the source code, by using the coding guidelines :need:`gd_guidl__cpp_coding_guidelines` for C++,
+   or <TBD> for Rust.
+#. Create a pull request for your change.
+#. Detail Design and Code Inspection is done to review the code of the software and detect errors in it.
+#. Check the results of the static and dynamic code analysis (this inlcludes compiler warnings).
+#. Fix or justify the errors.
+#. Merge the pull request.
+#. Create a follow up ticket if not all findings could be fixed.

@@ -560,7 +560,7 @@
                   
   <section id="guideline">
 <h1>Guideline<a class="headerlink" href="#guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-adeddc66">
+<div class="need_container docutils container" id="SNCB-cbb79011">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__implementation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -605,43 +605,25 @@
 </div>
 <p>This document describes the general guidances for implementation based on the concept which is defined <a class="reference internal" href="../implementation_concept.html#doc_concept__imp__concept" title="doc_concept__imp__concept"><em class="xref need">Concept Description</em></a>.
 In the concept is a example of a Detailed Design included.</p>
-<section id="general-hints">
-<h2>General Hints<a class="headerlink" href="#general-hints" title="Link to this heading">#</a></h2>
-<section id="template">
-<h3>Template<a class="headerlink" href="#template" title="Link to this heading">#</a></h3>
-<p>The detailded design template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates</em></a> shall be used to ensure that the correct syntax
-and attribute definition are used.</p>
-</section>
-<section id="attributes">
-<h3>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">#</a></h3>
-</section>
-<section id="checks">
-<h3>Checks<a class="headerlink" href="#checks" title="Link to this heading">#</a></h3>
-<p>During the sphinx build checks will be performed on the requirements. Those are specified via following process requirements:</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">Static Diagram for Unit Interactions</div>
-<div class="line">Dynamic Diagram for Unit Interactions</div>
-</div>
-</div></blockquote>
-</section>
-</section>
 <section id="workflow-for-implementation">
 <h2>Workflow for Implementation<a class="headerlink" href="#workflow-for-implementation" title="Link to this heading">#</a></h2>
-<p>This section describes in detail which steps need for implementation.</p>
-<p><strong>Create/Maintain Software Development Plan</strong>
-Adaption of the Software Development Plan to the Projekt by using the <a class="reference internal" href="software_development_template.html#gd_temp__software_development_plan" title="gd_temp__software_development_plan"><em class="xref need">Software Development Plan T... (gd_temp__software_development_plan)</em></a>.</p>
-<p><strong>Create/Maintain Detailed Design</strong>
-Create a Detailed Design by using the template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a>.
+<p>This section describes which steps are need for implementation.</p>
+<ol class="arabic simple">
+<li><p>Consult which programming languages, design/coding guidelines and tools are used for Software
+development within the Software Development Plan <a class="reference internal" href="../../../../platform_management_plan/software_development.html#doc__software_development_plan" title="doc__software_development_plan"><em class="xref need">Software Development Plan (doc__software_development_plan)</em></a>.</p></li>
+<li><p>Create a Detailed Design by using the template <a class="reference internal" href="detailed_design_template.html#gd_temp__detailed_design" title="gd_temp__detailed_design"><em class="xref need">Detailed Design Templates (gd_temp__detailed_design)</em></a>.
 In this step, the components are broken down into smaller, independent units that can be tested
 separately during the unit testing phase. The detailed design shall be so exact, that test and
-implementation can be run simultaneously.</p>
-<p><strong>Static analysis</strong>
-Static analysis is done by running the software conceptually without any data and inputs.</p>
-<p><strong>Dynamic analysis</strong>
-Dynamic analysis is done by running the software by feeding some inputs to it.</p>
-<p><strong>Code Inspection</strong>
-The code inspection is done to review the code of the software and detect errors in it.</p>
+implementation can be run simultaneously.</p></li>
+<li><p>Implement the source code, by using the coding guidelines <a class="reference internal" href="cpp/coding_guidelines.html#gd_guidl__cpp_coding_guidelines" title="gd_guidl__cpp_coding_guidelines"><em class="xref need">Coding Guidelines CPP (gd_guidl__cpp_coding_guidelines)</em></a> for C++,
+or &lt;TBD&gt; for Rust.</p></li>
+<li><p>Create a pull request for your change.</p></li>
+<li><p>Detail Design and Code Inspection is done to review the code of the software and detect errors in it.</p></li>
+<li><p>Check the results of the static and dynamic code analysis (this inlcludes compiler warnings).</p></li>
+<li><p>Fix or justify the errors.</p></li>
+<li><p>Merge the pull request.</p></li>
+<li><p>Create a follow up ticket if not all findings could be fixed.</p></li>
+</ol>
 </section>
 </section>
 
@@ -692,12 +674,6 @@ The code inspection is done to review the code of the software and detect errors
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#general-hints">General Hints</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#template">Template</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes">Attributes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#checks">Checks</a></li>
-</ul>
-</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-implementation">Workflow for Implementation</a></li>
 </ul>
   </nav></div>

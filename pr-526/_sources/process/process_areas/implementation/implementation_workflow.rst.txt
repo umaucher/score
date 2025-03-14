@@ -19,11 +19,12 @@ Workflow Implementation
    :id: wf__sw_development_plan
    :status: valid
    :tags: implementation
-   :responsible: rl__contributor
-   :approved_by: rl__committer
+   :responsible: rl__committer
+   :approved_by: rl__technical_lead
    :input: wp__platform_mgmt
    :output: wp__sw_development_plan
-
+   :contains: gd_temp__software_development_plan
+   :has: doc_concept__imp__concept, doc_getstrt__imp__getstrt
 
    The Software Development Plan shall descirbe
      - methods
@@ -49,7 +50,7 @@ Workflow Implementation
    :id: wf__sw_verify_implementation
    :status: valid
    :tags: implementation
-   :responsible: rl__contributor
+   :responsible: rl__committer
    :approved_by: rl__committer
    :input: wp__sw_implementation, wp__sw_development_plan
    :output: wp__issue_track_system, wp__sw_implementation_inspection, wp__verification__module_ver_report
