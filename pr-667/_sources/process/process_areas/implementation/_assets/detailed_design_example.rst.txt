@@ -53,8 +53,8 @@ Units within the Component
 --------------------------
 From here onwards the needs are defined in the source code and will be automatically generated and linked via doxygen.
 
-Component
-*********
+SW Unit
+*******
 
 .. sw_unit:: unit1
     :id: sw_unit__unit1
@@ -75,8 +75,8 @@ Interface
 
     Placeholder for the description that will be generated from doxygen
 
-Component
-*********
+SW Unit
+*******
 
 .. sw_unit:: unit2
     :id: sw_unit__unit2
