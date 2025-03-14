@@ -1,8 +1,8 @@
 import asyncio
 from collections import defaultdict
 
-import github_types as gt
-from github import GitHubClient
+import src.github_types as gt
+from src.github import GitHubClient
 
 size_to_days = {
     "size:S (hours...)": 1,
@@ -44,7 +44,9 @@ async def main():
 
             summary.append(f"{month} 📅: {total} days ({', '.join(per_size)})")
 
-        await client.set_project_description(6, "\n".join(summary))
+        summary_str = "\n".join(summary)
+        print(f"Setting summary:\n{summary_str}")
+        await client.set_project_description(6, summary_str)
 
 
 if __name__ == "__main__":

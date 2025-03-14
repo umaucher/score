@@ -1,10 +1,10 @@
 from dataclasses import dataclass, field
 
-import github_types as github_types
 import queries.get_projectv2_issues
 import queries.set_project_description
 import queries.teams
-from github_basics import GitHubClient_Basic
+import src.github_types as github_types
+from src.github_basics import GitHubClient_Basic
 
 
 @dataclass
@@ -44,7 +44,7 @@ class GitHubClient(GitHubClient_Basic):
             client=self,
             org="eclipse-score",
             project_number=project_number,
-            readme="\n".join(readme),
+            readme=readme,
         )
 
     async def teams(self):

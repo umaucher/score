@@ -1,8 +1,8 @@
 import functools
 from pathlib import Path
 
-import github_types
-from github_basics import GitHubClient_Basic, parse
+import src.github_types as github_types
+from src.github_basics import GitHubClient_Basic, parse
 
 
 @functools.cache

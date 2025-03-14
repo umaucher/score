@@ -1,8 +1,8 @@
 from pathlib import Path
 from pprint import pprint
 
-import github_types
-from github_basics import GitHubClient_Basic, get_query
+import src.github_types
+from src.github_basics import GitHubClient_Basic, get_query
 
 
 async def run_query(

@@ -9,7 +9,7 @@ from typing import Any
 import diskcache as dc
 
 sys.path.insert(0, ".")
-from diskcache_decorator import memoize
+from src.diskcache_decorator import memoize
 
 try:
     from dotenv import load_dotenv
@@ -47,7 +47,7 @@ def _download(
 
 @functools.cache
 def get_query(name):
-    file = Path(__file__).parent / "queries" / f"{name}.graphql"
+    file = Path(__file__).parent.parent / "queries" / f"{name}.graphql"
     query = file.read_text()
     return parse(query)
 
@@ -142,7 +142,7 @@ class GitHubClient_Basic:
                     f"Reset at {rateLimit['resetAt']}"
                 )
 
-    @memoize(cache, expire=timedelta(hours=1), ignore_self=True)
+    @memoize(cache, expire=timedelta(minutes=3), ignore_self=True)
     async def _execute_paginated(
         self, query, variable_values: dict[str, Any], path_to_pageInfo: list[str]
     ):
