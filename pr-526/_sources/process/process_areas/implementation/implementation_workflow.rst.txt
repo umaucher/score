@@ -23,7 +23,7 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__platform_mgmt
    :output: wp__sw_development_plan
-   :contains: doc__software_development_plan
+   :contains: gd_temp__software_development_plan
 
    The Software Development Plan shall descirbe
      - methods
@@ -39,7 +39,7 @@ Workflow Implementation
    :input: wp__requirements__comp, wp__component_arch, wp__sw_development_plan
    :output: wp__sw_implementation
    :contains: gd_temp__detailed_design
-   :has: doc_concept__imp__concept
+   :has: doc_concept__imp__concept, doc_getstrt__imp__getstrt
 
    The implementation is created, consisting of
      - Detailed Design
@@ -53,7 +53,7 @@ Workflow Implementation
    :approved_by: rl__committer
    :input: wp__sw_implementation, wp__sw_development_plan
    :output: wp__issue_track_system, wp__sw_implementation_inspection, wp__verification__module_ver_report
-   :contains: gd_chklst__impl_inspection
+   :contains: gd_chklst__impl_inspection, doc_getstrt__imp__getstrt
 
    The Implementation Verification of the Detailed Design and Code consists of the following topics
      - Detailed Design and Code Inspection
