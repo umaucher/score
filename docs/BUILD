@@ -26,11 +26,32 @@ sphinx_requirements = all_requirements + [
     ":plantuml_for_python",
 ]
 
-docs()
+# Creates all documentation targets:
+# - `docs:incremental` for building docs incrementally at runtime
+# - `docs:live_preview` for live preview in the browser without an IDE
+# - `docs:ide_support` for creating python virtualenv for IDE support
+# - `docs:docs` for building documentation at build-time
+docs(source_files_to_scan_for_needs_links = [
+    # Note: you can add filegroups, globs, or entire targets here.
+    ":score_metamodel",
+    ":score_source_code_linker",
+])
 
 sphinx_build_binary(
     name = "sphinx_build",
     deps = sphinx_requirements,
+)
+
+# These are only exported because they're passed as files to the //docs.bzl
+# macros, and thus must be visible to other packages. They should only be
+# referenced by the //docs.bzl macros.
+exports_files(
+    glob(
+        [
+            "_tooling/**/*.py",
+        ],
+    ) + ["_tooling/requirements_lock.txt"],
+    visibility = ["//visibility:public"],
 )
 
 # In order to update the requirements, change the `requirements.txt` file and run:
@@ -45,6 +66,16 @@ compile_pip_requirements(
     tags = [
         "manual",
     ],
+)
+
+# Used inside //docs.bzl to enable access to the assets (css files etc.)
+filegroup(
+    name = "docs_assets",
+    srcs = glob([
+        "_assets/**",
+        "_tooling/assets/**",
+    ]),
+    visibility = ["//visibility:public"],
 )
 
 filegroup(
@@ -124,7 +155,7 @@ score_py_pytest(
     ],
 )
 
-# Needed to make the file parser executeable and findable for the aspect below
+# Needed to make the file parser executeable and findable for the source_code_linker aspect
 py_binary(
     name = "parsed_source_files_for_source_code_linker",
     srcs = ["_tooling/extensions/score_source_code_linker/parse_source_files.py"],
