@@ -44,16 +44,8 @@
     "url": "https://eclipse-score.github.io/score/pr-374/"
   },
   {
-    "version": "pr-398",
-    "url": "https://eclipse-score.github.io/score/pr-398/"
-  },
-  {
     "version": "pr-530",
     "url": "https://eclipse-score.github.io/score/pr-530/"
-  },
-  {
-    "version": "pr-572",
-    "url": "https://eclipse-score.github.io/score/pr-572/"
   },
   {
     "version": "pr-576",
@@ -72,12 +64,16 @@
     "url": "https://eclipse-score.github.io/score/pr-618/"
   },
   {
-    "version": "pr-655",
-    "url": "https://eclipse-score.github.io/score/pr-655/"
+    "version": "pr-625",
+    "url": "https://eclipse-score.github.io/score/pr-625/"
   },
   {
-    "version": "pr-670",
-    "url": "https://eclipse-score.github.io/score/pr-670/"
+    "version": "pr-714",
+    "url": "https://eclipse-score.github.io/score/pr-714/"
+  },
+  {
+    "version": "pr-715",
+    "url": "https://eclipse-score.github.io/score/pr-715/"
   },
   {
     "version": "ulhu_lola_hla",
@@ -94,45 +90,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-700",
-    "url": "https://eclipse-score.github.io/score/pr-700/"
-  },
-  {
-    "version": "pr-702",
-    "url": "https://eclipse-score.github.io/score/pr-702/"
-  },
-  {
-    "version": "pr-703",
-    "url": "https://eclipse-score.github.io/score/pr-703/"
-  },
-  {
-    "version": "pr-706",
-    "url": "https://eclipse-score.github.io/score/pr-706/"
-  },
-  {
-    "version": "pr-707",
-    "url": "https://eclipse-score.github.io/score/pr-707/"
-  },
-  {
-    "version": "pr-708",
-    "url": "https://eclipse-score.github.io/score/pr-708/"
-  },
-  {
-    "version": "pr-711",
-    "url": "https://eclipse-score.github.io/score/pr-711/"
-  },
-  {
-    "version": "pr-625",
-    "url": "https://eclipse-score.github.io/score/pr-625/"
-  },
-  {
-    "version": "pr-714",
-    "url": "https://eclipse-score.github.io/score/pr-714/"
-  },
-  {
-    "version": "pr-715",
-    "url": "https://eclipse-score.github.io/score/pr-715/"
   }
 ]
