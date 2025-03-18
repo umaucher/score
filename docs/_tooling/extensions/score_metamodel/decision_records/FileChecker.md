@@ -4,6 +4,14 @@ Instead of writing lots and lots of unit tests, we could define the tests in a m
 This would allow us to:
 * Run this file through sphinx and check the output
 * Run this file as a unit test replacement
+* Allow process experts to read the tests
+* Allow process experts to write the tests!!
+
+## References
+
+* [FileCheck](https://llvm.org/docs/CommandGuide/FileCheck.html)
+* [Example of FileCheck](https://github.com/llvm/llvm-project/blob/main/clang-tools-extra/test/clang-tidy/checkers/bugprone/chained-comparison.cpp)
+
 
 ## Comparison
 
@@ -62,6 +70,13 @@ Idea:
 
 
 ### Considered alternatives
+
+#### Refactor the test code
+However much we try, the test code will never be as readable as a human-readable format.
+
+#### Use a different test framework
+e.g. Cucumber was designed specifically for this purpose, but it is not a good fit for our needs. Cucumber is designed for BDD and not for testing a metamodel.
+
 
 #### EXPECT attribute
 
