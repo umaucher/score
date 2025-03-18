@@ -32,6 +32,9 @@
 
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css?v=4ae1632d" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
@@ -41,9 +44,6 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
   
   <!-- So that users can add custom icons -->
   <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -447,9 +447,15 @@
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../introduction/index.html">Introduction</a></li>
 </ul>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../general_concepts/index.html">General concepts</a></li>
+</ul>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Requirements Engineering</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../requirements_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../requirements_concept.html">Concept Description</a></li>
@@ -466,25 +472,9 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Requirements Engineering</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../requirements_getstrt.html">Getting Started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_concept.html">Concept Description</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="requirements_guideline.html">Guideline</a></li>
-<li class="toctree-l3"><a class="reference internal" href="requirements_inspection_checklist.html">Requirement Inspection Checklist</a></li>
-<li class="toctree-l3"><a class="reference internal" href="requirements_templates.html">Templates</a></li>
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Process Requirements</a></li>
-</ul>
-</details></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_roles.html">Roles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_workflow.html">Workflow Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_workproducts.html">Workproducts Requirements Engineering</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
 </ul>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../roles/index.html">Roles</a></li>
@@ -568,7 +558,7 @@
                   
   <section id="process-requirements">
 <span id="id1"></span><h1>Process Requirements<a class="headerlink" href="#process-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9449ea8e">
+<div class="need_container docutils container" id="SNCB-e200f9ba">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__structure">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -626,7 +616,7 @@
 </div>
 <section id="process-requirement-attributes">
 <span id="id2"></span><h2>Process Requirement Attributes<a class="headerlink" href="#process-requirement-attributes" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-fa8e2a52">
+<div class="need_container docutils container" id="SNCB-beabb9ec">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_uid">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -680,7 +670,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-295df4ee">
+<div class="need_container docutils container" id="SNCB-c917f8c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__requirements_attr_title">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -709,7 +699,13 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The title of the requirement shall provide a short summary of the description. This means that e.g. the word “shall” must not be used here.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The title of the requirement shall provide a short summary of the description. This means that e.g. the word “shall” must not be used int the title for:</p>
+<ul class="simple">
+<li><p>Stakeholder Requirements</p></li>
+<li><p>Feature Requirements</p></li>
+<li><p>Component Requirements</p></li>
+</ul>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__requirements_attr_title" title="gd_req__requirements_attr_title">gd_req__requirements_attr_title</a></span></span></div>
@@ -725,7 +721,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-394bcadf">
+<div class="need_container docutils container" id="SNCB-1f0ac57a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__requirements_attr_description">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -776,7 +772,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3e929b97">
+<div class="need_container docutils container" id="SNCB-600ae060">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_type">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -830,7 +826,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-03c15c4a">
+<div class="need_container docutils container" id="SNCB-1a1a8783">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__requirements_attr_security">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -881,7 +877,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ea109877">
+<div class="need_container docutils container" id="SNCB-25c58fc6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -934,7 +930,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8b7bf6bd">
+<div class="need_container docutils container" id="SNCB-d8c1e1f1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_status">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -986,7 +982,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8921f804">
+<div class="need_container docutils container" id="SNCB-721a52fb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_rationale">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1032,7 +1028,7 @@
 </div>
 <section id="process-requirement-linkage">
 <span id="id3"></span><h3>Process Requirement Linkage<a class="headerlink" href="#process-requirement-linkage" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-03dae23e">
+<div class="need_container docutils container" id="SNCB-b7074e84">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__linkage">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1085,7 +1081,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-7fef284f">
+<div class="need_container docutils container" id="SNCB-6dda739c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_req_cov">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1137,7 +1133,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-34ff80bf">
+<div class="need_container docutils container" id="SNCB-2500feef">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_impl">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1181,7 +1177,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b868fcc6">
+<div class="need_container docutils container" id="SNCB-032a522b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_testlink">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1226,7 +1222,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-0037cac3">
+<div class="need_container docutils container" id="SNCB-9206ef6d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_test_covered">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1278,7 +1274,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-75d2161d">
+<div class="need_container docutils container" id="SNCB-c6f183cd">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_hash">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1328,7 +1324,7 @@
 </section>
 <section id="process-requirements-checks">
 <span id="process-requirement-checks"></span><h3>Process Requirements Checks<a class="headerlink" href="#process-requirements-checks" title="Link to this heading">#</a></h3>
-<div class="need_container docutils container" id="SNCB-68c9956a">
+<div class="need_container docutils container" id="SNCB-8838d2c2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_mandatory">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1404,7 +1400,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8cc79543">
+<div class="need_container docutils container" id="SNCB-f5a4e441">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__attr_desc_weak">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1432,7 +1428,13 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be ensured that no <em>weak words</em> are contained in the requirement description.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>It shall be ensured that no <em>weak words</em> are contained in the requirement description for:</p>
+<ul class="simple">
+<li><p>Stakeholder Requirements</p></li>
+<li><p>Feature Requirements</p></li>
+<li><p>Component Requirements</p></li>
+</ul>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_req__req__attr_desc_weak" title="gd_req__req__attr_desc_weak">gd_req__req__attr_desc_weak</a></span></span></div>
@@ -1448,7 +1450,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b678d624">
+<div class="need_container docutils container" id="SNCB-a2d4d045">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__linkage_fulfill">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1495,7 +1497,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6fc074ae">
+<div class="need_container docutils container" id="SNCB-4cfba84f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__linkage_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1540,7 +1542,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bf9cb37c">
+<div class="need_container docutils container" id="SNCB-bf086357">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_req table" id="gd_req__req__linkage_safety">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

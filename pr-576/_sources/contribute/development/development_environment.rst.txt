@@ -12,6 +12,8 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _setting_up_dev_env:
+
 Setting Up the Development Environment
 ######################################
 
@@ -72,6 +74,20 @@ Basically following steps need to be performed:
       sudo cp bazel-bin/scripts/bazel-complete.bash /etc/bash_completion.d/
       cd ..
       rm -rf bazel
+
+
+
+Graphviz/Dot Installation
+-------------------------
+
+Graphviz/Dot is mandatory for local development (outside the `devcointainer`).
+To install it on a Linux system using apt, execute the following command:
+
+.. code-block:: shell
+
+   sudo apt update && sudo apt install graphviz
+
+This ensures that all necessary dependencies for generating diagrams are available during development.
 
 IDE Support
 ===========
