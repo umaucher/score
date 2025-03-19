@@ -5,7 +5,7 @@ Logging
 Log Level Guidelines
 ====================
 
-Logging is a critical part of both application development and maintenance. A well-defined log level structure helps separate the concerns of developers and end users, ensuring that relevant information is communicated at the right level of detail. The following guidelines expand on the basic definitions and provide more context and examples.
+Logging is a critical part of both application development and maintenance. A well-defined log level structure helps separate the concerns of developers and end users, ensuring that relevant information is communicated at the right level of detail.
 
 Developer-Oriented Log Levels
 -----------------------------
