@@ -29,8 +29,9 @@ Documentation
    <div id="videowrapper">
       <div id="fullScreenDiv">
          <div id="score-title">
-               <img id="logo_center_light" class="logo" src="_static/S-CORE_Logo_RGB.svg" width="600px"/>
-               <img id="logo_center_drk" class="logo" src="_static/S-CORE_Logo_white.svg" width="600px"/>
+           Eclipse S-CORE
+               <!--<img id="logo_center_light" class="logo" src="_static/S-CORE_Logo_RGB.svg" width="600px"/>
+               <img id="logo_center_drk" class="logo" src="_static/S-CORE_Logo_white.svg" width="600px"/>-->
          </div>
       </div>
    </div>
@@ -117,24 +118,24 @@ Project structure and processes
       ^^^
       Understand how we work, by reading our :ref:`Process description <process_description>`.
       And receive tips & tricks for our used tool stack by reading the
-      :ref:`Guidance <process_guidance>`.
+      :ref:`contribute`.
 
    .. grid-item-card::
 
       Platform Management Plan (PMP)
       ^^^
       Read about our project and organization structure in the
-      :ref:`Project Handbook <project_management_plan>`.
-      And learn how we deal with :ref:`safety_management` or care about :ref:`sw_verification`.
+      :ref:`Project Handbook <pmp>`.
+      And learn how we deal with :ref:`process_safety_management` or care about :ref:`process_verification`.
 
 .. dropdown:: Click to see the complete sitemap
 
    .. toctree::
-      :maxdepth: 3
+      :maxdepth: 1
 
       requirements/index
       features/index
-      guidance/index
+      contribute/index
       Releases <score_releases/index.rst>
       process/index
       PMP <platform_management_plan/index.rst>
