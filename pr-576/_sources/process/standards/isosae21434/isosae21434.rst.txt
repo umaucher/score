@@ -14,10 +14,10 @@
 
 .. _standard_isosae21434:
 
-ISO/SAE 21434
--------------
+ISO/SAE 21434:2021(E)
+---------------------
 
-The standard ISO/SAE 21434 has several clauses. All work products and requirements are
+The standard ISO/SAE 21434:2021(E) has several clauses. All work products and requirements are
 defined as references below, if those are relevant for the S-CORE project.
 
 Irrelevant clauses for S-CORE process requirements and work products compliance are:
@@ -483,7 +483,7 @@ Clause 15: Threat analysis and risk assessment methods
 
 
 .. note::
-   Titles of the ISO/SAE 21434 standard clauses are from official `ISO website <https://www.iso.org/search.html>`_ (search for "21434").
+   Titles of the ISO/SAE 21434:2021(E) standard clauses are from official `ISO website <https://www.iso.org/search.html>`_ (search for "21434").
 
    Requirements and work products numbering as above is derived by the sequence as those are defined in the standard document.
    All work products of the relevant clauses are included in the list to enable the documentation of the project wide tailoring,
