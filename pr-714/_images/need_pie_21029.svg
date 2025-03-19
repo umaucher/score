@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2025-03-19T07:52:47.520568</dc:date>
+    <dc:date>2025-03-19T14:45:48.836955</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -37,7 +37,7 @@ C 199.058244 110.36241 194.399996 127.747239 194.4 145.44002
 C 194.400004 163.132801 199.058258 180.517628 207.904653 195.840023 
 L 295.2 145.44 
 z
-" style="fill: #008000"/>
+" style="fill: #20b2aa"/>
    </g>
    <g id="patch_3">
     <path d="M 207.904647 195.840018 
@@ -51,7 +51,7 @@ C 373.648968 79.7176 360.922394 66.991032 345.6 58.144641
 C 330.277606 49.298249 312.89279 44.64 295.200014 44.64 
 L 295.2 145.44 
 z
-" style="fill: #ff0000"/>
+" style="fill: #d3d3d3"/>
    </g>
    <g id="matplotlib.axis_1"/>
    <g id="matplotlib.axis_2"/>
@@ -962,7 +962,7 @@ L 458.12 148.199375
 L 458.12 141.199375 
 L 438.12 141.199375 
 z
-" style="fill: #008000"/>
+" style="fill: #20b2aa"/>
     </g>
     <g id="text_7">
      <!-- Linked -->
@@ -981,7 +981,7 @@ L 458.12 162.8775
 L 458.12 155.8775 
 L 438.12 155.8775 
 z
-" style="fill: #ff0000"/>
+" style="fill: #d3d3d3"/>
     </g>
     <g id="text_8">
      <!-- Not Linked -->
