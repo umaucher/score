@@ -41,9 +41,6 @@ Welcome & Overview
 
 **Welcome to the Software documentation of the SCORE project.**
 
-If this is the first time you get in touch with SCORE, the `SCORE main page <https://eclipse-score.github.io/>`__
-may be a good starting point to receive first insights of the project itself.
-
 Introduction
 ~~~~~~~~~~~~
 
@@ -84,7 +81,7 @@ Software artifacts
 
       Requirements
       ^^^
-      Analyse :ref:`Stakeholder <stakeholder_requirements>` or :ref:`Tool <tool_requirements>` requirements for
+      Analyze :ref:`Stakeholder <stakeholder_requirements>` requirements for
       the work with and implementation inside SCORE.
       Or get the complete picture on the :ref:`requirements` page.
 
@@ -140,5 +137,4 @@ Project structure and processes
       Releases <score_releases/index.rst>
       process/index
       PMP <platform_management_plan/index.rst>
-      SCORE <https://eclipse-score.github.io>
       Eclipse <https://projects.eclipse.org/projects/automotive.score>

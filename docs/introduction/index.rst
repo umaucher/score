@@ -80,7 +80,7 @@ including hardware specific peripherals.
 Target Picture of Core Stack - PRELIMINARY
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The following image shows platform architecture in more details including surroundings as  
+The following image shows platform architecture in more details including surroundings as
 Board support package (BSP) and HW specific.
 
 .. image:: _assets/score_architecture_core_stack_target_picture.png
@@ -95,13 +95,12 @@ Roadmap
 
 Here you can find the preliminary roadmap of the project:
 
-.. image:: _assets/score_roadmap.svg
+.. image:: _assets/score_roadmap.drawio.svg
    :alt: project roadmap
    :align: center
 
-
-Please be aware, that this roadmap will be also transfered to the `GitHub project <https://github.com/orgs/eclipse-score/projects/1>`_.
-Please follow this link to get the latest state of the planning. 
+Please be aware, that the roadmap is transferred to and maintained in the `GitHub project <https://github.com/orgs/eclipse-score/projects/13/views/2>`_.
+Please follow this link to get the latest state of the planning.
 
 MVP Phase
 ^^^^^^^^^
@@ -111,16 +110,16 @@ The main goals of the *MVP Phase* are following:
 * establish a working infrastructure, that enables every developer of the project to specify
   requirements and architecture, implement code and test it accordingly.
 * set-up project structure, that covers all aspects of the open source software development including
-  cooperation between developers and teams, planning, creation of the roadmaps and coordination meetings.
-* define a software development process compliant to ISO 26262:2018, that is a prerequiste for any other software development in the project.
+  cooperation between developers and teams, planning, creation of the roadmap and coordination meetings.
+* define a software development process compliant to ISO 26262:2018, that is a pre-requisite for any other software development in the project.
 
 A lot of preparation was already done in the background, therefore we are quite optimistic to finish the *MVP Phase*
-latest in the beginning of 2025.  
+latest in the beginning of 2025.
 
 Alignment Phase
 ^^^^^^^^^^^^^^^
 
-In the *Alignment Phase* the main goal is to align on the feature architecture and requirements of the *SCORE Platform v1.0*.
+In the *Alignment Phase* the main goal is to align on the feature architecture and requirements of the *S-CORE Platform v1.0*.
 Additionally it is important to define the roadmap and the order, in which the features should be implemented.
 
 Development Phase
@@ -128,13 +127,13 @@ Development Phase
 
 The *Development Phase* is the phase, where the implementation of the main modules of the platform should happen.
 The most important milestone here is the *Release v0.5*, that should contain the basic modules, e.g *IPC*.
-The *Release v0.5* milestone will show, whether previously defined software development process will work and how big is the acceptance and 
+The *Release v0.5* milestone will show, whether previously defined software development process will work and how big is the acceptance and
 the interest of the automotive community to the project.
 
 Series Stability & Evolution Phase
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-In this phase the project should be in an well established state and accepted by the community. Continious development
+In this phase the project should be in an well established state and accepted by the community. Continuous development
 of the features is taking place.
 
 How we Work
@@ -143,15 +142,13 @@ How we Work
 Meetings
 ^^^^^^^^
 
-The following regular meetings (and corresponding meeting minutes) are held as part of the project:
+Regular meetings (and corresponding meeting minutes) are held as part of the project:
 
-- `Project Leader Circle <https://github.com/orgs/eclipse-score/discussions/categories/project-lead-circle>`_
+- `Teams & Circles <https://github.com/orgs/eclipse-score/discussions>`_
 
-- `Technical Leader Circle <https://github.com/orgs/eclipse-score/discussions/categories/technical-leader-circle>`_
+Typically teams and circles meet weekly.
 
-The dates will be announced via the score-dev@eclipse.org mailing list.
-
-We plan to start regular exchange in the scope of the *SCORE* project in December 2024.
+A public meeting calendar for the *S-CORE* project is in preparation.
 
 Partners
 ^^^^^^^^
