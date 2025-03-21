@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-content_root="../../../" >
+<html lang="en" data-content_root="../../../../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Architecture Concept &#8212; Score 0.1 documentation</title>
+    <title>Component Architecture &#8212; Score 0.1 documentation</title>
   
   
   
@@ -27,42 +27,42 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=8f2a1f02" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score.css?v=940e959b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/css/score_design.css?v=7199c97b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score.css?v=940e959b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_needs.css?v=e97392eb" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/score_design.css?v=7199c97b" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script src="../../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../../../_static/jquery.js?v=5d32c60e"></script>
-    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-    <script src="../../../_static/documentation_options.js?v=2709fde1"></script>
-    <script src="../../../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
-    <script src="../../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
-    <script src="../../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
-    <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
-    <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
-    <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/communication/ipc/architecture';</script>
+    <script src="../../../../_static/jquery.js?v=5d32c60e"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+    <script src="../../../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../../../_static/sphinx-data-viewer/jsonview.bundle.js?v=18cd53c5"></script>
+    <script src="../../../../_static/sphinx-data-viewer/jsonview_loader.js?v=f7ff7e7d"></script>
+    <script src="../../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
+    <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
+    <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features/communication/ipc/architecture/component_architecture';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -70,10 +70,10 @@
         DOCUMENTATION_OPTIONS.show_version_warning_banner =
             false;
         </script>
-    <link rel="index" title="Index" href="../../../genindex.html" />
-    <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Roadmap" href="roadmap.html" />
-    <link rel="prev" title="Inter-process Communication" href="index.html" />
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="Requirements" href="../requirements/index.html" />
+    <link rel="prev" title="Feature Architecture" href="feature_architecture.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -95,7 +95,7 @@
   <dialog id="pst-search-dialog">
     
 <form class="bd-search d-flex align-items-center"
-      action="../../../search.html"
+      action="../../../../search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -131,7 +131,7 @@
     
   
 
-<a class="navbar-brand logo" href="../../../index.html">
+<a class="navbar-brand logo" href="../../../../index.html">
   
   
   
@@ -153,35 +153,35 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../requirements/index.html">
+  <a class="nav-link nav-internal" href="../../../../requirements/index.html">
     Requirements
   </a>
 </li>
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../../index.html">
+  <a class="nav-link nav-internal" href="../../../index.html">
     Features
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../contribute/index.html">
+  <a class="nav-link nav-internal" href="../../../../contribute/index.html">
     Contribute
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../score_releases/index.html">
+  <a class="nav-link nav-internal" href="../../../../score_releases/index.html">
     Releases
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../process/index.html">
+  <a class="nav-link nav-internal" href="../../../../process/index.html">
     Process
   </a>
 </li>
@@ -195,7 +195,7 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../platform_management_plan/index.html">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../platform_management_plan/index.html">
     PMP
   </a>
 </li>
@@ -327,42 +327,42 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../requirements/index.html">
+  <a class="nav-link nav-internal" href="../../../../requirements/index.html">
     Requirements
   </a>
 </li>
 
 
 <li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../../index.html">
+  <a class="nav-link nav-internal" href="../../../index.html">
     Features
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../contribute/index.html">
+  <a class="nav-link nav-internal" href="../../../../contribute/index.html">
     Contribute
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../score_releases/index.html">
+  <a class="nav-link nav-internal" href="../../../../score_releases/index.html">
     Releases
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../process/index.html">
+  <a class="nav-link nav-internal" href="../../../../process/index.html">
     Process
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../platform_management_plan/index.html">
+  <a class="nav-link nav-internal" href="../../../../platform_management_plan/index.html">
     PMP
   </a>
 </li>
@@ -445,30 +445,24 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="../../analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Communication</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Inter-process Communication</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Architecture Concept</a></li>
-<li class="toctree-l3"><a class="reference internal" href="roadmap.html">Roadmap</a></li>
-<li class="toctree-l3"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../analysis-infra/index.html">Analysis Infrastructure</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Communication</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Inter-process Communication</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Architecture</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="feature_architecture.html">Feature Architecture</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">Component Architecture</a></li>
 </ul>
 </details></li>
-
-
-
-
-
-
-
-
-
-
+<li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../roadmap.html">Roadmap</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../infrastructure/index.html">Infrastructure</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../integration/index.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../persistency/index.html">Persistency</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../frameworks/index.html">Frameworks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../integration/index.html">Integration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../persistency/index.html">Persistency</a></li>
 </ul>
 </div>
 </nav></div>
@@ -505,20 +499,23 @@
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../../../index.html" class="nav-link" aria-label="Home">
+      <a href="../../../../index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Features</a></li>
+    <li class="breadcrumb-item"><a href="../../../index.html" class="nav-link">Features</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Communication</a></li>
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Communication</a></li>
     
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Inter-process Communication</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Inter-process Communication</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Architecture Concept</span></li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Architecture</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Component Architecture</span></li>
   </ul>
 </nav>
 </div>
@@ -535,15 +532,15 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="architecture-concept">
-<h1>Architecture Concept<a class="headerlink" href="#architecture-concept" title="Link to this heading">#</a></h1>
+  <section id="component-architecture">
+<h1>Component Architecture<a class="headerlink" href="#component-architecture" title="Link to this heading">#</a></h1>
 <section id="technical-concept-description">
 <h2>Technical Concept Description<a class="headerlink" href="#technical-concept-description" title="Link to this heading">#</a></h2>
-<p>As discussed in <a class="reference internal" href="index.html#ipc-feature"><span class="std std-ref">Inter-process Communication</span></a>, the overall architecture of the communication framework must be layered.
+<p>As discussed in <a class="reference internal" href="../index.html#ipc-feature"><span class="std std-ref">Inter-process Communication</span></a>, the overall architecture of the communication framework must be layered.
 This is required, to separate the frontend from the underlying communication mechanisms (also called bindings).</p>
 <p>This ensures a stable public API, independent of the underlying binding(s).
 At the same time, the communication framework can support many different communication protocols in a flexible manner.</p>
-<img alt="Layered architecture with binding-agnostic mw::com and bindings beneath" src="../../../_images/lola_layers.drawio.svg" />
+<img alt="Layered architecture with binding-agnostic mw::com and bindings beneath" src="../../../../_images/lola_layers.drawio.svg" />
 <p>In the following sections we will look on the different architectural elements of the communication framework in more
 detail.</p>
 <section id="frontend">
@@ -557,7 +554,7 @@ Each consumer creates a <cite>Proxy</cite> to connect to a producer.
 Consumers can find available producers through a service discovery mechanism.
 This mechanism is tightly bound to the <cite>Proxy</cite>, to only discover producers offering a compatible implementation of a
 <cite>Skeleton</cite>.</p>
-<div class="need_container docutils container" id="SNCB-bd6cb864">
+<div class="need_container docutils container" id="SNCB-194d8f1e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__communication__proxy_skeleton">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -584,8 +581,8 @@ This mechanism is tightly bound to the <cite>Proxy</cite>, to only discover prod
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-features/communication/ipc/architecture-0">
-<object data="../../../_images/plantuml-27b2bc36e8d49bb0db29b656c7f1deb04c276378.svg" type="image/svg+xml" style="width:327px;height:278px;background:#FFFFFF;"></object></p>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-features/communication/ipc/architecture/component_architecture-0">
+<object data="../../../../_images/plantuml-d03cb40521997535fb67ae3f51ecc1b7e87d7c84.svg" type="image/svg+xml" style="width:327px;height:278px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -607,9 +604,9 @@ This runtime is invisible to the user.
 This runtime is responsible for service discovery (explained in <a class="reference internal" href="#service-discovery"><span class="std std-ref">Service Discovery</span></a>), notification reception and
 other infrastructure tasks.</p>
 <p>Compatibility of <cite>Skeleton</cite> and <cite>Proxy</cite> is currently defined by them sharing the same communication interface.
-Additionally, versioning will be taken into account in the future (see <a class="reference internal" href="roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>).</p>
+Additionally, versioning will be taken into account in the future (see <a class="reference internal" href="../roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>).</p>
 <p>The communication interface for now consists of events. Support for methods and signals will be added in the future
-(see <a class="reference internal" href="roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>).</p>
+(see <a class="reference internal" href="../roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>).</p>
 <p>Since S-CORE supports strongly typed programming languages, the API of <cite>Skeleton</cite> and <cite>Proxy</cite> is also strongly typed.
 Instead of a code generator, we utilize features like templates in C++ and macros in Rust to “generate” the necessary
 code at compile time.</p>
@@ -633,7 +630,7 @@ Currently, the available bindings are:</p>
 </section>
 <section id="bindings">
 <h3>Bindings<a class="headerlink" href="#bindings" title="Link to this heading">#</a></h3>
-<p>The need for bindings was discussed in <a class="reference internal" href="index.html#multi-binding-support"><span class="std std-ref">Multi-binding support</span></a>.
+<p>The need for bindings was discussed in <a class="reference internal" href="../index.html#multi-binding-support"><span class="std std-ref">Multi-binding support</span></a>.
 Bindings reside beneath the frontend layer and accept the forwarded requests.</p>
 <section id="ipc-binding">
 <h4>IPC Binding<a class="headerlink" href="#ipc-binding" title="Link to this heading">#</a></h4>
@@ -664,13 +661,13 @@ Since this kind of access requires write access, we split the shared memory segm
 This way it can be ensured that no low-level ASIL process interferes with higher level ones.
 More information on shared memory handling can be found in <a class="reference internal" href="#shared-memory-handling"><span class="std std-ref">Shared Memory Handling</span></a>.</p></li>
 </ul>
-<img alt="Mixed criticality setup for zero-copy IPC" src="../../../_images/lola_mixed_crit_1_n.drawio.svg" />
+<img alt="Mixed criticality setup for zero-copy IPC" src="../../../../_images/lola_mixed_crit_1_n.drawio.svg" />
 <p>One of the main ideas in this concept is the split of control data from sample (user) data.
 In order to ensure a mapping, the shared memory segments are divided into slots.
 By convention, we then define that the slot indexes correlate.
 Meaning, slot 0 in the control data is used to synchronize slot 0 in the sample data.
 More information on these slot and the underlying algorithm can be found in <a class="reference internal" href="#synchronization-algorithm"><span class="std std-ref">Synchronization Algorithm</span></a>.</p>
-<img alt="Relation of control data and sample data" src="../../../_images/lola_slots.drawio.svg" />
+<img alt="Relation of control data and sample data" src="../../../../_images/lola_slots.drawio.svg" />
 <section id="message-passing-facilities">
 <span id="id1"></span><h5>Message Passing Facilities<a class="headerlink" href="#message-passing-facilities" title="Link to this heading">#</a></h5>
 <p>The Message Passing facilities, will not be used to synchronize the access to the shared memory segments.
@@ -696,7 +693,7 @@ shall use a custom thread to wait for new messages.
 Further, it must be possible to register callbacks for mentioned messages.
 These callbacks shall then be invoked in the context of the socket specific thread.
 This way we can ensure that messages are received in a serialized manner.</p>
-<img alt="Message Passing in LoLa" src="../../../_images/lola_message_passing.drawio.svg" />
+<img alt="Message Passing in LoLa" src="../../../../_images/lola_message_passing.drawio.svg" />
 </section>
 <section id="shared-memory-handling">
 <span id="id2"></span><h5>Shared Memory Handling<a class="headerlink" href="#shared-memory-handling" title="Link to this heading">#</a></h5>
@@ -740,7 +737,7 @@ whenever a offset pointer is dereferenced.</p>
 <p>The last possible impact can be on timing.
 If another process for example wrongly locks a mutex within the shared memory region and another process would then wait
 for this lock, we would end up in a deadlock.
-While timing is explicitly not a safety requirement (see <a class="reference internal" href="index.html#spec-mixed-criticality"><span class="std std-ref">Mixed-Criticality safety systems</span></a>), we still want to strive for
+While timing is explicitly not a safety requirement (see <a class="reference internal" href="../index.html#spec-mixed-criticality"><span class="std std-ref">Mixed-Criticality safety systems</span></a>), we still want to strive for
 wait-free algorithms to avoid such situations.
 Further, avoiding mutexes in our algorithms increases performance since it reduces kernel calls.</p>
 </section>
@@ -771,7 +768,7 @@ The offered services are differentiated by:</p>
 <li><p>service id (a unique identifier per different service interface)</p></li>
 <li><p>instance id (a unique identifier per different producer offering the same service interface)</p></li>
 <li><p>criticality level</p></li>
-<li><p>version (not yet supported, see <a class="reference internal" href="roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>)</p></li>
+<li><p>version (not yet supported, see <a class="reference internal" href="../roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>)</p></li>
 </ul>
 <p>To reduce resource consumption we decide against using an approach with a service registry daemon.
 Instead we choose to use operating system facilities to achieve a performant service discovery.</p>
@@ -785,7 +782,7 @@ an appropriate event.</p>
 <p>Also complex search requests where a consumer wants to know about all service instances with the same service interface,
 can be solved efficiently with the inotify subsystem.</p>
 <p>Service discovery is currently fully explicit.
-Implicit service discovery for consumers is on our <a class="reference internal" href="roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>.
+Implicit service discovery for consumers is on our <a class="reference internal" href="../roadmap.html#roadmap"><span class="std std-ref">Roadmap</span></a>.
 The goal is to handle service discovery transparently wherever possible.</p>
 </section>
 <section id="partial-restart-capability">
@@ -843,159 +840,8 @@ The mock binding utilizes the GMock framework.</p>
 </section>
 </section>
 </section>
-<section id="static-architecture">
-<h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-812bc8a2">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__communication__ipc">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Static Architecture Lola</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="requirements/index.html#feat_req__ipc__data_loss" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_loss</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__time_based_arch" title="feat_arc_sta__communication__ipc">feat_req__ipc__time_based_arch</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__data_driven_arch" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_driven_arch</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__request_driven_arch" title="feat_arc_sta__communication__ipc">feat_req__ipc__request_driven_arch</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__event_type" title="feat_arc_sta__communication__ipc">feat_req__ipc__event_type</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__method" title="feat_arc_sta__communication__ipc">feat_req__ipc__method</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__signal" title="feat_arc_sta__communication__ipc">feat_req__ipc__signal</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__producer_consumer" title="feat_arc_sta__communication__ipc">feat_req__ipc__producer_consumer</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__service_instance" title="feat_arc_sta__communication__ipc">feat_req__ipc__service_instance</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__service_instance_names" title="feat_arc_sta__communication__ipc">feat_req__ipc__service_instance_names</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__versioning" title="feat_arc_sta__communication__ipc">feat_req__ipc__versioning</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__service_location_transparency" title="feat_arc_sta__communication__ipc">feat_req__ipc__service_location_transparency</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__stateless_communication" title="feat_arc_sta__communication__ipc">feat_req__ipc__stateless_communication</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__service_instance_granularity" title="feat_arc_sta__communication__ipc">feat_req__ipc__service_instance_granularity</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__service_discovery" title="feat_arc_sta__communication__ipc">feat_req__ipc__service_discovery</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__safe_communication" title="feat_arc_sta__communication__ipc">feat_req__ipc__safe_communication</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__data_corruption" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_corruption</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__data_reordering" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_reordering</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__data_repetition" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_repetition</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__data_loss" title="feat_arc_sta__communication__ipc">feat_req__ipc__data_loss</a>, <a class="reference internal" href="requirements/index.html#feat_req__ipc__asil" title="feat_arc_sta__communication__ipc">feat_req__ipc__asil</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#feat_arc_int__communication__ipc" title="feat_arc_sta__communication__ipc">feat_arc_int__communication__ipc</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><figure class="align-center">
-<p class="plantuml">
-<object data="../../../_images/plantuml-c42ef33142ee9fe073ca3018c677f48cfaf47ef4.svg" type="image/svg+xml" style="width:2413px;height:775px;background:#FFFFFF;"></object></p>
-</figure>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_sta__communication__ipc" title="feat_arc_sta__communication__ipc">feat_arc_sta__communication__ipc</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Static View</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
-<section id="dynamic-architecture">
-<h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-5d07d3aa">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__communication__ipc">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Dynamic Architecture Lola</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="requirements/index.html#feat_req__ipc__depl_config_runtime" title="feat_arc_dyn__communication__ipc">feat_req__ipc__depl_config_runtime</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"><figure class="align-center">
-<p class="plantuml">
-<object data="../../../_images/plantuml-b53ffae37f2b8d27468231a433ac80acd61989cf.svg" type="image/svg+xml" style="width:1944px;height:2338px;background:#FFFFFF;"></object></p>
-</figure>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_dyn__communication__ipc" title="feat_arc_dyn__communication__ipc">feat_arc_dyn__communication__ipc</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Dynamic View</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section>
 <section id="interfaces">
 <h2>Interfaces<a class="headerlink" href="#interfaces" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-01df1a48">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int table" id="feat_arc_int__communication__ipc">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Logical Interface Lola</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="requirements/index.html#feat_req__ipc__interfaces" title="feat_arc_int__communication__ipc">feat_req__ipc__interfaces</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_sta__communication__ipc" title="feat_arc_int__communication__ipc">feat_arc_sta__communication__ipc</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int__communication__ipc" title="feat_arc_int__communication__ipc">feat_arc_int__communication__ipc</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interfaces</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
 </section>
 </section>
 
@@ -1010,20 +856,20 @@ The mock binding utilizes the GMock framework.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="index.html"
+       href="feature_architecture.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Inter-process Communication</p>
+        <p class="prev-next-title">Feature Architecture</p>
       </div>
     </a>
     <a class="right-next"
-       href="roadmap.html"
+       href="../requirements/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Roadmap</p>
+        <p class="prev-next-title">Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1066,8 +912,6 @@ The mock binding utilizes the GMock framework.</p>
 </li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#static-architecture">Static Architecture</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dynamic-architecture">Dynamic Architecture</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interfaces">Interfaces</a></li>
 </ul>
   </nav></div>
@@ -1076,7 +920,7 @@ The mock binding utilizes the GMock framework.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/communication/ipc/architecture.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/communication/ipc/architecture/component_architecture.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -1092,7 +936,7 @@ The mock binding utilizes the GMock framework.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../_sources/features/communication/ipc/architecture.rst.txt"
+      <li><a href="../../../../_sources/features/communication/ipc/architecture/component_architecture.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
@@ -1110,8 +954,8 @@ The mock binding utilizes the GMock framework.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
