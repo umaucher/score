@@ -34,12 +34,38 @@ Process Model
 The SCORE process model is described by workflows, executed by roles and is creating work products.
 Workflow activities are supported by guidances.
 
+.. figure:: _assets/score_process_area_overview.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Process area overview for **S-CORE** platform
+
+  Process area overview for **S-CORE** platform
+
+General Concepts
+~~~~~~~~~~~~~~~~
+
+General concepts like traceability of work products, life cycle model, buidling blocks can be found here:
+
+.. toctree::
+   :maxdepth: 1
+
+   general_concepts/index.rst
+
+Process Areas
+~~~~~~~~~~~~~
+
+The process description for the SCORE project (e.g. requirements, architecture, safety management) can be found here:
+
+.. toctree::
+   :maxdepth: 1
+
+   process_areas/index.rst
+
 Process Role definition
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    roles/index.rst
 
@@ -48,7 +74,6 @@ Workproducts
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    workproducts/index.rst
 
@@ -57,20 +82,15 @@ Workflows
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    workflows/index.rst
 
-Process Guidances
+How To Contribute
 -----------------
 
-The guidance for the SCORE project (e.g. templates, guidelines, checklists) can be found here:
+How to contribute to the SCORE project (e.g. naming convention, folder structure, IDE setup) can be found here:
 
-.. toctree::
-   :maxdepth: 1
-   :glob:
-
-   guidance/index.rst
+:ref:`contribute`
 
 Standards
 ---------
@@ -79,6 +99,5 @@ The the standard references the SCORE project's processes are derived from can b
 
 .. toctree::
    :maxdepth: 1
-   :glob:
 
    standards/index.rst
