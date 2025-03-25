@@ -560,7 +560,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-de87bbf1">
+<div class="need_container docutils container" id="SNCB-00665050">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -768,6 +768,17 @@ hard to have reasonable testing in the reference implementation</p>
 </li>
 </ul>
 </div></blockquote>
+</section>
+<section id="condition-coverage">
+<h4>Condition Coverage<a class="headerlink" href="#condition-coverage" title="Link to this heading">#</a></h4>
+<p>Condition coverage is a white-box testing technique used to test each Boolean condition in a
+software component. The goal is to ensure that each condition evaluates to both true and false at
+least once during the testing process.</p>
+<p>Condition coverage is also creating branch coverage, so a 100% <cite>structural-condition-coverage</cite> will not
+guarantee a 100% branch coverage. The actual branch coverage percentage depends on the actual code
+under test.</p>
+<p>Fro C++ based unit testing gTest is the “software tool” which supports conditional coverage, but
+has no direct option to create branch coverage. This has be considered, while writing unit tests.</p>
 </section>
 </section>
 <section id="derivation-techniques">
@@ -984,6 +995,7 @@ Aim to cover all classes in your test suite.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-injection">Fault Injection</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interface-test">Interface Test</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#condition-coverage">Condition Coverage</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">
