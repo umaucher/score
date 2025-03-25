@@ -1,0 +1,75 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+.. _contribute_contribution_request:
+
+How to Contribute?
+##################
+
+.. gd_guidl:: Contribution Request Guideline
+  :id: gd_guidl__contr_request_guideline
+  :status: valid
+  :tags: contribution_management
+
+
+At S-CORE, we believe that every contribution makes our platform stronger. Whether you're a seasoned developer or just starting out in open source, your ideas and work are warmly welcomed. We follow a structured yet flexible process rooted in our change management principles and overall lifecycle concept. For more details on our processes, feel free to explore our :ref:`general_concepts_lifecycle` and the :ref:`change_management`.
+
+Feature Requests: Our Shared Roadmap
+=====================================
+
+Feature requests are at the heart of our evolution. They describe the intended functionality of the S-CORE platform and serve as a collaborative starting point where maintainers and contributors align on new ideas. These requests not only define the motivation and requirements but also shape the technical roadmap for future developments. We invite you to check out all current feature requests on our
+`Feature Request Board <https://github.com/orgs/eclipse-score/projects/4>`_.
+
+From Vision to Reality: Calling for Contributions
+===================================================
+
+Once a feature request is embraced by the community, it becomes a targeted opportunity for innovation. At this stage, we issue a call for contributions, inviting anyone with a solution - whether in-house or open source - to submit a contribution pitch. We ask that your pitch focuses on the technical aspects and clearly outlines how you plan to meet the feature goals (and not a sales pitch 😉). Don't worry if you're still polishing your idea; as long as the source code is already available (or will be within about three weeks with a publicly committed roadmap), you're ready to join in the conversation.
+
+How We Evaluate Contributions
+=============================
+
+We work together with contributors to review each pitch based on several criteria:
+
+- **Alignment with the Feature Request:**
+  Your solution should fully or partially meet the specified functionality, with room for further enhancements as needed.
+
+- **Availability of the Source Code:**
+  We value open source solutions under an OSI-compliant license. If your code isn't public yet, a clear plan to open source it is just as welcome.
+
+- **Technical Maturity:**
+  We look at whether your implementation is built in a safety-certifiable subset of C++ or Rust, or if it might need some refinements.
+
+- **Supporting Artifacts:**
+  To ensure everything is in order for certification and further development, we check that all necessary artifacts are available or that there's a plan to make them available.
+
+For a deeper dive into our evaluation process, you can review the notes from our very first call for contributions on our
+`Contributions Discussion <https://github.com/orgs/eclipse-score/discussions/375>`_.
+
+Once a contribution is selected, it not only implements a new feature but also helps guide the ongoing evolution of S-CORE. If you have an idea for improving an existing feature, you're welcome to pitch a replacement implementation—just be sure to highlight the benefits over the current solution.
+
+Join Us in Building S-CORE
+===========================
+
+- **Have a New Idea?**
+  Start by raising a new feature request to help expand the scope of our platform.
+
+- **Ready to Code?**
+  Submit a contribution pitch for a specific feature request if you have a solution you'd like to share.
+
+- **Looking to Improve What's Already There?**
+  Contribute enhancements to existing implementations or get involved with one of our cross-functional teams (CFTs).
+
+We're excited to have you on board. Together, we can shape S-CORE into a platform that's not only innovative but also a joy to be a part of.
+
+For further guidance chech out our :ref:`pull_request_guidelines` and :ref:`github_issues_guidelines`.
