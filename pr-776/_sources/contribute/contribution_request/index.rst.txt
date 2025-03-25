@@ -56,7 +56,11 @@ We work together with contributors to review each pitch based on several criteri
 For a deeper dive into our evaluation process, you can review the notes from our very first call for contributions on our
 `Contributions Discussion <https://github.com/orgs/eclipse-score/discussions/375>`_.
 
-Once a contribution is selected, it not only implements a new feature but also helps guide the ongoing evolution of S-CORE. If you have an idea for improving an existing feature, you're welcome to pitch a replacement implementation—just be sure to highlight the benefits over the current solution.
+Once a contribution is selected, it not only implements a new feature but also helps guide the ongoing evolution of S-CORE.
+
+**Replacement of existing functionality**
+In S-CORE we aim for having only one solution for a specific problem. If you have an idea for improving an existing feature, you're welcome to pitch a replacement implementation. Just be sure to highlight clearly the benefits over the current solution.
+
 
 Join Us in Building S-CORE
 ===========================
