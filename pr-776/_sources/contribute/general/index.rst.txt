@@ -20,8 +20,6 @@ General
 
    naming
    git
-   pull_request
-   issues
    folder
    feature_flags
    contribution_attribution
