@@ -67,7 +67,7 @@ Introduction
       How to Contribute?
       ^^^
       The only way to influence Eclipse SCORE is to contribute - SCORE is open! Please check our
-      :ref:`Get Involved <introduction_get_involved>` guide for more
+      :ref:`Contribute <contribute>` guide for more
       information.
 
 
