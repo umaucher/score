@@ -139,10 +139,10 @@ Methods
 Fault Injection
 """""""""""""""
 
-As part of ``fault-injection`` source code instrumentation on unit and component level is the
-preferred method. While it is theoretically possible to modify binaries, this is not considered as
-it is hard to maintain and should only be done, when no source code access is possible. Therefore,
-this is not applicable to software provided as open source.
+As part of ``fault-injection`` instrumentation of source code is the preferred method.
+While it is theoretically possible to modify binaries, this is not considered as it is hard to
+maintain and should only be done, when no source code access is possible. Therefore, this is not
+applicable to software provided as open source.
 
 Practical approaches are:
 
