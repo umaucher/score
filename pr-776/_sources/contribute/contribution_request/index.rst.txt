@@ -54,7 +54,7 @@ We work together with contributors to review each pitch based on several criteri
   To ensure everything is in order for certification and further development, we check that all necessary artifacts are available or that there's a plan to make them available.
 
 For a deeper dive into our evaluation process, you can review the notes from our very first call for contributions on our
-`Contributions Discussion <https://github.com/orgs/eclipse-score/discussions/375>`_.
+`Architecture Community F2F Workshop [2025-02-11 - 2025-02-13] <https://github.com/orgs/eclipse-score/discussions/375>`_.
 
 Once a contribution is selected, it not only implements a new feature but also helps guide the ongoing evolution of S-CORE.
 
