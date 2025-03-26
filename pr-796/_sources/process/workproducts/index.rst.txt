@@ -197,10 +197,10 @@ Component development
 Supporting activities
 ---------------------
 
-.. workproduct:: Tool safety report
-   :id: wp__tool_safety
+.. workproduct:: Tool Verification Report
+   :id: wp__tool_verification
    :status: draft
-   :tags: process, safety
+   :tags: process, safety, security
    :complies: std_wp__iso26262__support_1151, std_wp__iso26262__support_1152
 
    According to the safety tool process, each tool's confidence level (TCL) must be determined. Based on TCL the appropriate qualification methods shall be applied.

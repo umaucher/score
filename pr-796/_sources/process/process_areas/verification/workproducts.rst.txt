@@ -131,11 +131,11 @@ The work products are handled within these process areas:
      * :ref:`arch_design_process` implementing :need:`wp__sw_arch_verification`
      * :ref:`implementation` implementing :need:`wp__sw_implementation_inspection`
 
-Tool Evaluation
-***************
+Tool Verification
+*****************
 
-As part of tool qualification as supporting function it is handled as follows
+As part of tool management as supporting function it is handled as follows
 
-     * :ref:`general_concepts_tool_safety` describes implementation of :need:`wp__tool_safety`
+     * :ref:`general_concepts_tool_safety` describes implementation of :need:`wp__tool_verification`
 
 It is planned in the :need:`wp__platform_mgmt`

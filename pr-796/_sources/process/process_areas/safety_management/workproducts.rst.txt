@@ -68,7 +68,7 @@ Work products
 
    Review that a work product provides sufficient and convincing evidence of their contribution to the achievement of functional safety considering the corresponding objectives and requirements of ISO 26262.
 
-   Will contain confirmation review report for Safety Plan, Safety Package, Safety Analyses and DFA
+   Will contain formal review report for Safety Plan, Safety Package, Safety Analyses and DFA
 
 .. workproduct:: Process Safety Audit Report
    :id: wp__audit_report
