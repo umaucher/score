@@ -22,10 +22,10 @@ How to Contribute?
   :status: valid
   :tags: contribution_management
 
-How we work
+How we Work
 ===========
 
-At S-CORE, we believe that every contribution makes our platform stronger. Whether you're a seasoned developer or just starting out in open source, your ideas and work are warmly welcomed. We follow a structured yet flexible process rooted in our change management principles and overall lifecycle concept. For more details on our processes, feel free to explore our :ref:`general_concepts_lifecycle` and the :ref:`change_management`.
+At S-CORE, we believe that every contribution makes our platform stronger. Whether you're a seasoned developer or just starting out in open source, your ideas and work are warmly welcomed. We follow a structured yet flexible process rooted in our change management principles and overall lifecycle concept. For more details on our processes, feel free to explore our :ref:`general_concepts_lifecycle` and the :ref:`change_management`. And if you want to dive right into contributing, check out :ref:`what_is_a_pr` and :ref:`what_is_a_github_issue`.
 
 Feature Requests: Our Shared Roadmap
 ------------------------------------
@@ -78,7 +78,7 @@ Join Us in Building S-CORE
 
 We're excited to have you on board. Together, we can shape S-CORE into a platform that's not only innovative but also a joy to be a part of.
 
-
+.. _what_is_a_pr:
 
 What is a Pull Request (PR)?
 ============================
@@ -147,7 +147,7 @@ To change from "Draft" to "Open" see `Changing the stage of a pull request (Gith
 
 At any point the contributor (:need:`Contributor <rl__contributor>`) may decide not to continue with the PR, then the contributor (:need:`Contributor <rl__contributor>`) just closes the PR.
 
-
+.. _what_is_a_github_issue:
 
 What is a GitHub Issue?
 =======================
