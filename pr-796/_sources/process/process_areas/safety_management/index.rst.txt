@@ -73,7 +73,7 @@ Apart from the safety plans the main work products of safety management are (see
 
 * :need:`Safety Manual <wp__platform_safety_manual>` - the safety manual defines the requirements for safe usage or integration of the SW platform (or its individual modules)
 * :need:`Confirmation Reviews <wp__fdr_reports>` - on safety plan, safety package and safety analyses, according to ISO 26262 requirements
-* :need:`Safety Package <wp__platform_safety_package>` - the safety package does not contain the safety argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributor to integrate the SW platform (or its individual modules) in his safety package.
+* :need:`Safety Package <wp__platform_safety_package>` - the safety package does not contain the safety argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their safety package.
 
 Safety Management Tooling
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -92,7 +92,7 @@ Getting started
    :status: valid
 
 
-In package you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the S-CORE project:
+In case you are appointed as a :need:`Safety Manager <rl__safety_manager>` by the :need:`rl__project_lead` in the S-CORE project:
 
 * Contact the :need:`Technical Lead <rl__technical_lead>` for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)
 * Create your safety plan according to :need:`wf__cr_mt_safety_plan`

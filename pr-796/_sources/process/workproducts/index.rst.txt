@@ -35,27 +35,31 @@ General
    :id: wp__policies
    :status: draft
    :tags: requirements_management
+   :complies: std_wp__iso26262__management_551
 
-   Organization-specific rules and processes for functional safety and cybersecurity.
+   Policies for functional safety and cybersecurity.
 
 .. workproduct:: Training path
    :id: wp__training_path
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__management_552
 
-   Evidence of competence management.
+   Trainings for safety and security for S-CORE
 
-.. workproduct:: Quality management system
+.. workproduct:: Quality management plan
    :id: wp__qms
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__management_553
 
-   Evidence of quality management.
+   Quality management process descriptions and definitions
 
 .. workproduct:: Quality report
    :id: wp__qms_report
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__management_553
 
    | Evidence of quality conformance:
    | * Identifies what tasks/activities/process produce the information
@@ -112,6 +116,7 @@ Platform development
    :id: wp__feature_safety_analysis
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752
 
    Bottom-Up Safety Analysis with e.g. FMEA method, verifies the feature architecture (as part of SW Safety Concept)
    - Detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use
@@ -120,6 +125,7 @@ Platform development
    :id: wp__feature_dfa
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753
 
    Dependent Failure Analysis on platform/feature level
    - Detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use
@@ -129,6 +135,7 @@ Platform development
    :id: wp__platform_sw_build_config
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__software_1052
 
    Build configuration capable to create the SEooC Library for the reference HW, platform level.
    Note: Embedded software in the sense of the Iso (i.e. deployed on the production HW) is not part of our delivery.
@@ -137,6 +144,7 @@ Platform development
    :id: wp__platform_sw_release_note
    :status: draft
    :tags: safety_management
+   :complies: std_wp__iso26262__management_656
 
    Release notes describe the qualified SW version including known bugs from own testing and field reporting, with clear statement, that these bugs do not lead to violation of any safety requirements or with corresponding workaround measures. Platform level.
 
@@ -144,6 +152,7 @@ Platform development
    :id: wp__hsi
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__software_652
 
    | The document shall specify the hardware and software interaction and be consistent with the safety concept.
    | It shall include the platform's hardware parts that are controlled by software and hardware resources that support the execution of the software.
@@ -156,6 +165,7 @@ Component development
    :id: wp__sw_component_safety_analysis
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__analysis_851, std_wp__iso26262__software_752
 
    Bottom-Up Safety Analysis with e.g. FMEA method, verifies the component architecture (as part of SW Safety Concept)
    - Detection and prevention mitigations linked to Software Component Requirements or Assumptions of Use
@@ -164,6 +174,7 @@ Component development
    :id: wp__sw_component_dfa
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__analysis_751, std_wp__iso26262__software_753
 
    Dependent Failure Analysis on component/module level
    - Detection and prevention mitigations linked to Software Component Requirements or Assumptions of Use
@@ -182,6 +193,7 @@ Component development
    :id: wp__module_sw_build_config
    :status: draft
    :tags: safety
+   :complies: std_wp__iso26262__software_1052
 
    Build configuration capable to create the SEooC Library for the reference HW, module level.
    Note: Embedded software in the sense of the Iso (i.e. deployed on the production HW) is not part of our delivery.
@@ -190,6 +202,7 @@ Component development
    :id: wp__module_sw_release_note
    :status: draft
    :tags: safety_management
+   :complies: std_wp__iso26262__management_656
 
    Release notes describe the qualified SW version including known bugs from own testing and field reporting, with clear statement, that these bugs do not lead to violation of any safety requirements or with corresponding workaround measures. Module level.
 
