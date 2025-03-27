@@ -130,5 +130,9 @@
   {
     "version": "pr-803",
     "url": "https://eclipse-score.github.io/score/pr-803/"
+  },
+  {
+    "version": "pr-805",
+    "url": "https://eclipse-score.github.io/score/pr-805/"
   }
 ]
