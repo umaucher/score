@@ -153,7 +153,7 @@ SCORE development roles
    The testing community members are responsible for the test case development from component to
    platform level. They shall be included in any requirements reviews. They can also improve
    independence argumentation when involved in the development of unit testing on safety critical
-   units.
+   units. In this way the testing community takes a supportive role for unit testing
 
 
 SCORE cross functional teams
