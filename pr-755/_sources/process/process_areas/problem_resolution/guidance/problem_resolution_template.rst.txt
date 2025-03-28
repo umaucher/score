@@ -36,9 +36,9 @@ Problem description
 -------------------
 
 [What is the problem?]
-Determine the cause of the problem.
-Determine the impact of the problem.
-Is notification required due to determined impact on affected parties.
+Determine the cause of the problem, if possible.
+Determine the impact of the problem, if possible.
+Is notification required due to determined impact on affected parties?
 
 Problem supporting information
 ------------------------------

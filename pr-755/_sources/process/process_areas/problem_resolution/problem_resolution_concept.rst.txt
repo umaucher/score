@@ -144,5 +144,5 @@ Monitoring and tracking to closure
 
 The Problem report must be tracked until it is closed.
 
-Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completness of the closed
+Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completeness of the closed
 Problem report.

@@ -25,7 +25,7 @@ Workflow Problem Resolution
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
    :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem, gd_req__problem__attr_uid
+   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
    :has: doc_concept__problem__process, doc_getstrt__problem__process
 
    The Problem is created.
@@ -48,9 +48,9 @@ Workflow Problem Resolution
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
-   :input: wp__issue_track_system
+   :input: wp__issue_track_system, wp__prm_plan
    :output: wp__issue_track_system
-   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem, gd_req__problem__attr_uid
+   :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
    :has: doc_concept__problem__process, doc_getstrt__problem__process
 
    The Problem resolution is implemented.

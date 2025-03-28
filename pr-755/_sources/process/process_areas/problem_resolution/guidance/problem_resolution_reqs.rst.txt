@@ -36,7 +36,7 @@ Problem Attributes
    :status: valid
    :tags: attribute, mandatory
    :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
-   :complies:
+   :complies: std_req__aspice_40__SUP-9-BP1
 
    Each Problem shall have a status:
 
@@ -98,7 +98,7 @@ Problem Attributes
       * Bug
       * Quality
 
-.. gd_req:: Problemt attribute: milestone
+.. gd_req:: Problem attribute: milestone
    :id: gd_req__problem__attr_milestone
    :status: valid
    :tags: attribute, mandatory
@@ -118,7 +118,7 @@ Problem Resolution Checks
    :status: valid
    :tags: attribute, check
    :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
-   :complies:
+   :complies: std_req__aspice_40__SUP-9-BP1
 
    It shall be checked if all mandatory attributes for each Problem
    is provided by the user. For all requirements following attributes shall be mandatory:
