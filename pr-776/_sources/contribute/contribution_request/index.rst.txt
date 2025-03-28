@@ -52,6 +52,9 @@ We work together with contributors to review each pitch based on several criteri
 - **Technical Maturity:**
   We look at whether your implementation is built in a safety-certifiable subset of C++ or Rust, or if it might need some refinements.
 
+- **Initial Impact Assessment:**
+  Please state the assumed impact on other systems. It makes a significant difference if your solution requires other components to refactor versus extending functionality through existing APIs.
+
 - **Supporting Artifacts:**
   To ensure everything is in order for certification and further development, we check that all necessary artifacts are available or that there's a plan to make them available.
 
