@@ -21,7 +21,7 @@ Checklists
    :id: gd_chklst__problem__cr_review
    :status: valid
    :tags: problem_resolution
-   :complies: std_req__iso26262__support_10, std_req__iso26262__support_11
+   :complies:
 
    | **1. Purpose**
    | The purpose of this checklist is to collect the topics to be checked during a Problem report from any contributor.

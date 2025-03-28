@@ -19,7 +19,7 @@ Work Products Problem Resolution
    :id: wp__prm_plan
    :status: valid
    :tags: problem_resolution
-   :complies: std_wp__iso26262__support_7
+   :complies: std_wp__iso26262__support_851
 
    Problem Resolution Plan (Part of the Platform Management Plan)
 
