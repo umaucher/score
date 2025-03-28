@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Writing C++ Code &#8212; Score 0.1 documentation</title>
+    <title>Writing C++ Code &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -153,6 +153,13 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
     Requirements
   </a>
@@ -179,13 +186,6 @@
   </a>
 </li>
 
-
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="../../../../index.html">
-    Process
-  </a>
-</li>
-
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button"
                 data-bs-toggle="dropdown" aria-expanded="false"
@@ -194,16 +194,16 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../../../../platform_management_plan/index.html">
-    PMP
+<li class=" current active">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../index.html">
+    Process
   </a>
 </li>
 
 
 <li class=" ">
-  <a class="nav-link dropdown-item nav-external" href="https://eclipse-score.github.io">
-    SCORE
+  <a class="nav-link dropdown-item nav-internal" href="../../../../../platform_management_plan/index.html">
+    PMP
   </a>
 </li>
 
@@ -327,6 +327,13 @@
   <ul class="bd-navbar-elements navbar-nav">
     
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../../introduction/index.html">
+    Introduction
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../requirements/index.html">
     Requirements
   </a>
@@ -364,13 +371,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../../platform_management_plan/index.html">
     PMP
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-external" href="https://eclipse-score.github.io">
-    SCORE
   </a>
 </li>
 
@@ -565,7 +565,7 @@
                   
   <section id="writing-c-code">
 <h1>Writing C++ Code<a class="headerlink" href="#writing-c-code" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-84a136e1">
+<div class="need_container docutils container" id="SNCB-1fe4bbdb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__cpp_coding_guidelines">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -587,7 +587,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">implementation</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_1" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_1</a>, <a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_2" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_2</a>, <a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_3" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_3</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_541" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_541</a>, <a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_542" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_542</a>, <a class="reference internal" href="../../../../standards/iso26262/iso26262.html#std_req__iso26262__software_543" title="gd_guidl__cpp_coding_guidelines">std_req__iso26262__software_543</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -614,7 +614,7 @@
 <p>Most programming languages are not specifically designed to be used within safety critical systems. If they are still applied in this context, <em>coding guidelines</em> are required. In those guidelines e.g. a safe subset of the language is defined which can be used safely and is not known to be error-prone. Another approach could be that those guidelines require a SW which includes only low complexity code. This means by using those guidelines the risk for systematic error, when using this language, can be minimized.</p>
 <section id="misra-c-2023">
 <h3>MISRA C++:2023<a class="headerlink" href="#misra-c-2023" title="Link to this heading">#</a></h3>
-<p><em>MISRA</em> introduces coding rules for C++ which aim at providing a language subset which guarantees a high code quality. As <em>MISRA</em> is mostly accepted as an industry standard, SCORE will adhere to those rules.</p>
+<p><em>MISRA</em> introduces coding rules for C++ which aim at providing a language subset which guarantees a high code quality. As <em>MISRA</em> is mostly accepted as an industry standard, S-CORE will adhere to those rules.</p>
 <p><em>MISRA C++:2023</em> guidelines were released on November 2023. They are designed to be used with <em>C++17</em> and replace the <em>AUTOSAR guidelines for C++14</em> and the <em>MISRA C++:2008 guidelines</em>.</p>
 <p>However if the <em>MISRA C++:2023</em> guidelines were used in combination with other C++ versions like <em>C++14</em> or <em>C++11</em>, it would mean that additional or different guidelines would need to be applied. For example, from <em>MISRA C++:2008</em> and/or <em>AUTOSAR guidelines for C++14</em> some rules have been dropped because they address issues which are no longer relevant for <em>C++17</em>. The same would apply if the <em>MISRA C++:2023</em> guidelines were used with a newer C++ standard like <em>C++20</em> or <em>C++23</em>.</p>
 </section>
