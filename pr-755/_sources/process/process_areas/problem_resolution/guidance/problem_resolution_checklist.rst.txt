@@ -14,8 +14,8 @@
 
 .. _prm_checklist:
 
-Checklists
-##########
+Problem Checklist
+#################
 
 .. gd_chklst:: Problem Review Checklist
    :id: gd_chklst__problem__cr_review

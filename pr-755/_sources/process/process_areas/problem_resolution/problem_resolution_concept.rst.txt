@@ -26,7 +26,7 @@ including the requirements of the different stakeholders for the Problem Resolut
 
 Key concept
 ***********
-A Problem is the **ONLY** way to report (compare :need:`gd_guidl__contr_request_guideline`)
+A Problem Report is the **ONLY** way to report (compare :need:`gd_guidl__contr_request_guideline`)
 deviations of an expected result of existing features in the **S-CORE** project.
 Deviations include problems found by user, bugs found during verification activites by tester,
 quality issues found by quality checks, safety anomalies, vulnerabilites or any other malfunction.
@@ -35,7 +35,7 @@ Inputs
 ******
 
 #. Stakeholders for the Problem report?
-#. Which Change Requests types can we derive from that?
+#. Which categories are required?
 #. Which attributes are required?
 #. Which activities are required?
 
@@ -112,37 +112,26 @@ Authorized person includes
 
 Further prioritization must be done, e.g. based on release planning.
 
-.. _prm_implementation:
+.. _prm_implementation_monitoring:
 
-Implementation of the Problem resolution
-========================================
-If the Problem report is accepted, it implementation of the resolution must be initiated.
+Implementation and Monitoring of the Problem resolution
+=======================================================
+If the Problem report is accepted, the implementation of the resolution must be initiated and
+monitored.
 
-.. _prm_verification:
-
-Verification of the Change Request
-==================================
-
-Verification measures must be use to confirm the implementation.
-
-Especially the effectiveness of the solution measures must be shown, based on concincing
-arguments.
-
-.. _prm_reporting:
-
-Reporting of the Problem Resolution
-===================================
+The Problem Resolution im must be tracked until it is closed.
 
 The status of the Problem report must be communicated by the
 :need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead>` until
 the implementation is completed and confirmed.
 
-.. _prm_monitoring:
+.. _prm_closing:
 
-Monitoring and tracking to closure
-===================================
-
-The Problem report must be tracked until it is closed.
+Closing of the Problem Resolution
+=================================
 
 Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completeness of the closed
 Problem report.
+
+Especially the effectiveness of the solution measures must be shown, based on concincing
+arguments, e.g. verification measures must be use to confirm the implementation.

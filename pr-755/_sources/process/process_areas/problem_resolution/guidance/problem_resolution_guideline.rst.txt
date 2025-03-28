@@ -37,8 +37,8 @@ Attributes
 
 For all Problems following mandatory attributes need to be defined:
 
-.. needtable:: Overview of mandatory problem attributes
-   :tags: problem
+.. needtable:: Overview of mandatory problem resolution attributes
+   :tags: problem_resolution
    :filter: "mandatory" in tags and "attribute" in tags and type == "gd_req"
    :style: table
    :columns: title
@@ -58,7 +58,7 @@ Activities for Problem Resolution
 This section describes in detail which steps need to be performed for a Problem resolution.
 
 Refer to the :need:`Problem Resolution Plan <doc__platform_problem_resolution_plan>` for examples
-how to create problems.
+how to create problem reports.
 
 .. list-table:: Activities for Problem Resolution
    :header-rows: 1
@@ -67,21 +67,21 @@ how to create problems.
    * - Step
      - Description
      - Responsible
-   * - :ref:`1. <prm_create_problem>`
-     - Create problem
+   * - :ref:`1. <prm_create_problem_report>`
+     - Create Problem Report
      - :need:`[[title]] <rl__contributor>`
-   * - :ref:`2. <prm_analyze_problem>`
-     - Analyze problem
+   * - :ref:`2. <prm_analyze_problem_report>`
+     - Analyse Problem Report
      - :need:`[[title]] <rl__contributor>`
    * - :ref:`3. <prm_initiate_problem_resolution>`
-     - Initiate problem resolution
-     - :need:`[[title]] <rl__committer>`
-   * - :ref:`4. <prm_monitor_problem_resolution>`
-     - Monitor problem resolution
+     - Initiate and Monitor Problem Resolution
      - :need:`[[title]] <rl__contributor>`
+   * - :ref:`4. <prm_monitor_problem_resolution>`
+     - Close Problem Resolution
+     - :need:`[[title]] <rl__committer>`
 
 
-.. _prm_create_problem:
+.. _prm_create_problem_report:
 
 Create Problem Report
 ---------------------
@@ -90,18 +90,18 @@ Create Problem Report
 System based on the provided template.
 It is expected, that the UID will be provided by the Issue Tracking System.
 
-The title of the Problem reporte should reflect the topic accordingly.
+The title of the Problem report should reflect the topic accordingly.
 
 The description should reflect the detailed problem root causes and impact.
 
 Copy therefore the :need:`Problem Template <gd_temp__problem__template>` into the created Problem
-(Issue Tracking System).
+Report (Issue Tracking System).
 
-Set the status of the Problem to "open", when ready to analyze and review set to "in review".
+Set the status of the Problem to "open", when ready to analyse and review set to "in review".
 
-.. _prm_analyze_problem:
+.. _prm_analyze_problem_report:
 
-Analyze Problem Report
+Analyse Problem Report
 ----------------------
 
 The **S-CORE** :need:`[[title]] <rl__committer>` analyzes the problem together with the
@@ -121,7 +121,7 @@ Initiate and Monitor Problem Resolution
 
 :need:`[[title]] <rl__contributor>` initiates the resolution of the Problem.
 
-Therefore further activities needs to be planned and linked to the Problem.
+Therefore further activities needs to be planned and linked to the Problem Report.
 
 During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
 :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected **S-CORE** teams.
@@ -134,10 +134,12 @@ to "cancelled".
 Close Problem Resolution
 ------------------------
 
-During the resolution the :need:`[[title]] <rl__committer>` monitors all activities linked to
+During the resolution the :need:`[[title]] <rl__contributor>` monitors all activities linked to
 the problem, until they are closed.
 
-In that case the status is set to "closed".
+:need:`[[title]] <rl__committer>` checks finally if the problem resolution is sufficient before
+the status is finally closed.
+To check, if is is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".

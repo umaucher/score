@@ -26,7 +26,7 @@ Problem Attributes
    :id: gd_req__problem__attr_uid
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    Each Problem shall have a unique ID. It shall be in an integer number.
@@ -35,7 +35,7 @@ Problem Attributes
    :id: gd_req__problem__attr_status
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    Each Problem shall have a status:
@@ -51,7 +51,7 @@ Problem Attributes
    :id: gd_req__problem__attr_title
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    Reason for problem report
@@ -60,7 +60,7 @@ Problem Attributes
    :id: gd_req__problem__attr_impact_description
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    Exact description of the Problem, including potential cause and impact of the problem.
@@ -74,7 +74,7 @@ Problem Attributes
    :id: gd_req__problem__attr_category
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2
 
    Each Problem shall have a category identifier:
@@ -89,7 +89,7 @@ Problem Attributes
    :id: gd_req__problem__attr_classification
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    Each Problem shall have a classification identifier:
@@ -102,7 +102,7 @@ Problem Attributes
    :id: gd_req__problem__attr_milestone
    :status: valid
    :tags: attribute, mandatory
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP6
 
    Milestone until the Problem must be implemented (used for prioritization)
@@ -117,7 +117,7 @@ Problem Resolution Checks
    :id: gd_req__problem__attr_mandatory
    :status: valid
    :tags: attribute, check
-   :satisfies: wf__problem__cr_an_problem, wf__problem__ini_mon_problem
+   :satisfies: wf__problem__create_pr, wf__problem__analyse_pr, wf__problem__initiate_monitor_pr, wf__problem__close_pr
    :complies: std_req__aspice_40__SUP-9-BP1
 
    It shall be checked if all mandatory attributes for each Problem
