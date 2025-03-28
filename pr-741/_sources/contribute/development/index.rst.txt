@@ -20,4 +20,5 @@ Development
 
    development_environment
    cpp/index
+   rust/index
    python/index
