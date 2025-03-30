@@ -1,0 +1,67 @@
+..
+   # *******************************************************************************
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
+   #
+   # See the NOTICE file(s) distributed with this work for additional
+   # information regarding copyright ownership.
+   #
+   # This program and the accompanying materials are made available under the
+   # terms of the Apache License Version 2.0 which is available at
+   # https://www.apache.org/licenses/LICENSE-2.0
+   #
+   # SPDX-License-Identifier: Apache-2.0
+   # *******************************************************************************
+
+.. _platform_templates:
+
+Platform Management Template
+============================
+
+.. gd_temp:: Platform Management Plan Template
+   :id: gd_temp__platform__mgmt_plan
+   :status: valid
+   :complies:
+
+.. attention::
+    Remove everything above when copying and filling the template.
+
+[Your Project Name]
+-------------------
+
+.. note:: Document header
+
+' .. document:: [Your Project Name]
+     :id: doc__platform_mgt_plan
+     :status: draft
+     :safety: ASIL_B
+     :tags: platform_management
+
+.. attention::
+    The above directive must be updated according to your Feature.
+
+    - Modify ``name`` to be your Project Name
+    - Modify ``id`` to be your Project Name in upper snake case preceded by ``doc_``
+    - Adjust ``status`` to be ``valid``
+    - Adjust ``asil`` according to your needs
+
+Content
+-------
+
+This workproduct's scope is to cover the following aspects including purpose, Oojectives and scope,
+approaches
+
+* Project Management
+* Stakeholder Management
+* Safety Management
+* Security Management
+* Risk Management
+* Quality Management
+* Configuration Management
+* Tool Management
+* Release Management
+* Problem Resolution
+* Change management
+* Documnetation Management
+* Requirements engineering
+* Software Development
+* Software Verification
