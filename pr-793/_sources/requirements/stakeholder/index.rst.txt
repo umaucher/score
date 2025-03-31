@@ -323,7 +323,7 @@ interaction)** — each emphasize different operational priorities.
    :id: stkh_req__app_architectures__support_time
    :reqtype: Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :rationale: tbd - potentially above explanation
    :status: valid
 
@@ -335,7 +335,7 @@ interaction)** — each emphasize different operational priorities.
    :id: stkh_req__app_architectures__support_data
    :reqtype: Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :rationale: tbd - potentially above explanation
    :status: valid
 
@@ -345,7 +345,7 @@ interaction)** — each emphasize different operational priorities.
    :id: stkh_req__app_architectures__support_request
    :reqtype: Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :rationale: tbd - potentially above explanation
    :status: valid
 
@@ -429,7 +429,7 @@ Communication
    :id: stkh_req__communication__inter_process
    :reqtype: Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :rationale: Application software typically consists of multiple processes which need to interact.
    :status: valid
 
@@ -650,7 +650,7 @@ Developer experience
    :id: stkh_req__dev_experience__tracing_of_comm
    :reqtype: Non-Functional
    :security: NO
-   :safety: QM
+   :safety: ASIL_B
    :rationale: tbd
    :status: valid
 
@@ -776,7 +776,7 @@ Quality
    :rationale: This is a usability constraint needed for long term maintenance support
    :status: valid
 
-   All assumptions and design decisions made shall be specified as requirements and agreed within the SCORE community.
+   All assumptions and design decisions made shall be specified as requirements and agreed within the S-CORE community.
 
 
 Requirements Engineering

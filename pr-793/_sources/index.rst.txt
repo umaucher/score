@@ -39,10 +39,7 @@ Documentation
 Welcome & Overview
 ------------------
 
-**Welcome to the Software documentation of the SCORE project.**
-
-If this is the first time you get in touch with SCORE, the `SCORE main page <https://eclipse-score.github.io/>`__
-may be a good starting point to receive first insights of the project itself.
+**Welcome to the Software documentation of the S-CORE project.**
 
 Introduction
 ~~~~~~~~~~~~
@@ -56,22 +53,21 @@ Introduction
       ^^^
       The project develops an open source core stack for Software Defined Vehicles (SDVs),
       targeting embedded high-performance Electronic Control Units (ECUs).
-      Check our `Scope <https://eclipse-score.github.io/#scope>`_ for details.
+      Check our :ref:`Scope <introduction_scope>` for details.
 
    .. grid-item-card::
 
       Project Status
       ^^^
       Check out our roadmap to see the project's key milestones and features we have planned.
-      `Click here to explore! <https://eclipse-score.github.io/index.html#roadmap>`_
+      :ref:`Click here to explore! <introduction_roadmap>`
 
    .. grid-item-card::
 
       How to Contribute?
       ^^^
-      The only way to influence Eclipse SCORE is to contribute - SCORE is open! Please check our
-      `Get Involved <https://eclipse-score.github.io/get_involved.html>`_ guide for more
-      information.
+      The only way to influence Eclipse S-CORE is to contribute - S-CORE is open! Please check our
+      :ref:`Contribute <contribute>` guide for more information.
 
 
 Software artifacts
@@ -84,8 +80,8 @@ Software artifacts
 
       Requirements
       ^^^
-      Analyse :ref:`Stakeholder <stakeholder_requirements>` or :ref:`Tool <tool_requirements>` requirements for
-      the work with and implementation inside SCORE.
+      Analyze :ref:`Stakeholder <stakeholder_requirements>` requirements for
+      the work with and implementation inside S-CORE.
       Or get the complete picture on the :ref:`requirements` page.
 
 
@@ -94,7 +90,7 @@ Software artifacts
 
       Features
       ^^^
-      :ref:`Features <features>` are the heart of the SCORE software.
+      :ref:`Features <features>` are the heart of the S-CORE software.
       Understand the internal details of :ref:`Infrastructure <infrastructure_feature>`
       or :ref:`Integration <integration_features>` Features.
 
@@ -133,11 +129,11 @@ Project structure and processes
    .. toctree::
       :maxdepth: 1
 
+      introduction/index
       requirements/index
       features/index
       contribute/index
       Releases <score_releases/index.rst>
       process/index
       PMP <platform_management_plan/index.rst>
-      SCORE <https://eclipse-score.github.io>
       Eclipse <https://projects.eclipse.org/projects/automotive.score>

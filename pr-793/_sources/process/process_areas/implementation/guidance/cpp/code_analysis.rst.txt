@@ -18,13 +18,13 @@ Code Analysis C++
 .. gd_guidl:: Static Code Analysis
    :id: gd_guidl__cpp__code_analysis
    :status: valid
-   :complies: std_req__iso26262__software_1, std_req__iso26262__software_2, std_req__iso26262__software_3, std_req__iso26262__software_31
+   :complies: std_req__iso26262__software_541, std_req__iso26262__software_542, std_req__iso26262__software_543, std_req__iso26262__software_942
 
    Guideline for Static Code Analysis
 
 Static Code Analysis
 ====================
-In order to fulfil the SCORE related standard requirements a concept for *Static Code Analysis* needs to be established. Input for the analysis is based upon *MISRA* and *ISO26262* standards in accordance to the :need:`gd_guidl__cpp_coding_guidelines`.
+In order to fulfil the S-CORE related standard requirements a concept for *Static Code Analysis* needs to be established. Input for the analysis is based upon *MISRA* and *ISO26262* standards in accordance to the :need:`gd_guidl__cpp_coding_guidelines`.
 
 Checking those rules can partially be automated and implemented by a combination of different tools. Thus a mapping needs to be established which provides a linkage of all *MISRA* requirements to the respective tool requirements/rules. For *MISRA C++:2023* this mapping is established: :need:`here <gd_guidl__cpp__misra2023_rule_mapping>`
 
@@ -49,7 +49,7 @@ If for some technical reason any *MISRA* finding can not be addressed it needs t
 
 Dynamic Code Analysis
 =====================
-A dynamic code analysis is not explicitly required by any SCORE related standards. However to provide a sufficient good SW quality following tools should be used to catch most common errors:
+A dynamic code analysis is not explicitly required by any S-CORE related standards. However to provide a sufficient good SW quality following tools should be used to catch most common errors:
 
 .. needuml::
 
