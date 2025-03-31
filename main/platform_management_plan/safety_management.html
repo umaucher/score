@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-fa7693de">
+  <div class="need_container docutils container" id="SNCB-b6505536">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_safety_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -632,10 +632,13 @@ A template exists to guide this: <a class="reference internal" href="../process/
 <p>Note that stakeholder requirements (<a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_651" title="std_wp__iso26262__system_651"><em class="xref need">system_651 (std_wp__iso26262__system_651)</em></a>) are in scope of the project,
 to be able to cover System and HW related failures which are usually covered by SW (e.g. end to end protection for ECU external communication).
 But those are the “Assumed Technical Safety Requirements” of the SW platform SEooC and do not need to be tested by SEooC supplier.
-I.e. the system testing is out of scope.
-There will be HW/SW integration tests of feature requirements, as required by ISO 26262 part 6.
-These may be reused by the user on his HW platform also to cover his Technical Safety Requirements towards the SW platform.
-But this is the decision of the user.</p>
+I.e. the system testing is out of scope. Note that S-CORE will implement platform test of stakeholder requirements for demonstration,
+but these are not intended to be completely covering the stakeholder requirements.
+There will be SW integration tests of feature requirements, as required by ISO 26262 part 6-10.
+These may be reused by the users on their HW platform to cover Technical Safety Requirements towards the SW platform.
+But if these are sufficiently also covering the TSRs must be analyzed and decided by the user.</p>
+<p>Also tailored out is the SW testing on the target, as the S-CORE project can only test on reference HW
+(part of SW integration testing). So these are not relevant: <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_1151" title="std_wp__iso26262__software_1151"><em class="xref need">software_1151 (std_wp__iso26262__software_1151)</em></a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_1152" title="std_wp__iso26262__software_1152"><em class="xref need">software_1152 (std_wp__iso26262__software_1152)</em></a></p>
 <p>Because there is no calibration used for the S-CORE SW platform components, only configuration: <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_52" title="std_wp__iso26262__software_app_c_52"><em class="xref need">software_C52 (std_wp__iso26262__software_app_c_52)</em></a>,
 <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_54" title="std_wp__iso26262__software_app_c_54"><em class="xref need">software_C54 (std_wp__iso26262__software_app_c_54)</em></a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_57" title="std_wp__iso26262__software_app_c_57"><em class="xref need">software_C57 (std_wp__iso26262__software_app_c_57)</em></a></p>
 <p>Because distributed development is not how the project is organized. All contributors are seen as part of the project team.
@@ -646,6 +649,50 @@ When used, OSS components are qualified and external SEooCs are integrated in th
 <p>Because in the S-CORE SW platform interfacing of out of scope of ISO 26262 applications is not planned: <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1551" title="std_wp__iso26262__support_1551"><em class="xref need">support_1551 (std_wp__iso26262__support_1551)</em></a></p>
 <p>Because in the S-CORE SW platform integration of safety-related systems not developed according to ISO 26262 is not planned: <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1651" title="std_wp__iso26262__support_1651"><em class="xref need">support_1651 (std_wp__iso26262__support_1651)</em></a></p>
 <p>Because in the S-CORE SW platform no ASIL decomposition is planned: <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__analysis_551" title="std_wp__iso26262__analysis_551"><em class="xref need">analysis_551 (std_wp__iso26262__analysis_551)</em></a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__analysis_552" title="std_wp__iso26262__analysis_552"><em class="xref need">analysis_552 (std_wp__iso26262__analysis_552)</em></a></p>
+<div class="need_container docutils container" id="SNCB-67147d02">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workproduct table" id="wp__tailoring_platform">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Tailoring Document Platform</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__management_751" title="wp__tailoring_platform">std_wp__iso26262__management_751</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_652" title="wp__tailoring_platform">std_wp__iso26262__system_652</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_653" title="wp__tailoring_platform">std_wp__iso26262__system_653</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_654" title="wp__tailoring_platform">std_wp__iso26262__system_654</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_655" title="wp__tailoring_platform">std_wp__iso26262__system_655</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_656" title="wp__tailoring_platform">std_wp__iso26262__system_656</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_657" title="wp__tailoring_platform">std_wp__iso26262__system_657</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_751" title="wp__tailoring_platform">std_wp__iso26262__system_751</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_752" title="wp__tailoring_platform">std_wp__iso26262__system_752</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_851" title="wp__tailoring_platform">std_wp__iso26262__system_851</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__system_852" title="wp__tailoring_platform">std_wp__iso26262__system_852</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_1151" title="wp__tailoring_platform">std_wp__iso26262__software_1151</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_1152" title="wp__tailoring_platform">std_wp__iso26262__software_1152</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_52" title="wp__tailoring_platform">std_wp__iso26262__software_app_c_52</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_54" title="wp__tailoring_platform">std_wp__iso26262__software_app_c_54</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__software_app_c_57" title="wp__tailoring_platform">std_wp__iso26262__software_app_c_57</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_551" title="wp__tailoring_platform">std_wp__iso26262__support_551</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_552" title="wp__tailoring_platform">std_wp__iso26262__support_552</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_553" title="wp__tailoring_platform">std_wp__iso26262__support_553</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_554" title="wp__tailoring_platform">std_wp__iso26262__support_554</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_555" title="wp__tailoring_platform">std_wp__iso26262__support_555</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1351" title="wp__tailoring_platform">std_wp__iso26262__support_1351</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1352" title="wp__tailoring_platform">std_wp__iso26262__support_1352</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1353" title="wp__tailoring_platform">std_wp__iso26262__support_1353</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1451" title="wp__tailoring_platform">std_wp__iso26262__support_1451</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1452" title="wp__tailoring_platform">std_wp__iso26262__support_1452</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1551" title="wp__tailoring_platform">std_wp__iso26262__support_1551</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__support_1651" title="wp__tailoring_platform">std_wp__iso26262__support_1651</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__analysis_551" title="wp__tailoring_platform">std_wp__iso26262__analysis_551</a>, <a class="reference internal" href="../process/standards/iso26262/iso26262.html#std_wp__iso26262__analysis_552" title="wp__tailoring_platform">std_wp__iso26262__analysis_552</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p>This work product instantiation links to all the work products which are tailored out in the platform safety plan,
+to be able to demonstrate completeness in <a class="reference internal" href="../process/standards/index.html#external-standards"><span class="std std-ref">Standards</span></a></p></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wp__tailoring_platform" title="wp__tailoring_platform">wp__tailoring_platform</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Workproduct</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 </section>
 <section id="approach">
