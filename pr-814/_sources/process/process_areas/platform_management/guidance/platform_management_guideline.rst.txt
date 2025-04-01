@@ -18,7 +18,7 @@ Guideline
 .. gd_guidl:: Working model
    :id: gd_guidl__platform__mgmt_plan
    :status: valid
-   :complies:
+   :complies: std_req__aspice_40__MAN-3-BP1, std_req__aspice_40__MAN-3-BP2, std_req__aspice_40__MAN-3-BP3, std_req__aspice_40__MAN-3-BP4, std_req__aspice_40__MAN-3-BP5, std_req__aspice_40__MAN-3-BP6, std_req__aspice_40__MAN-3-BP7, std_req__aspice_40__MAN-3-BP8, std_req__aspice_40__MAN-3-BP9, std_req__aspice_40__MAN-3-BP10
 
 This document describes the general guidances for Platform Management based on the concept which is defined :need:`[[title]]<doc_concept__platform__process>`.
 
@@ -74,6 +74,8 @@ The scope of the work is defined. The scope may include:
 * Roadmap - Main features to be realized including
 * Schedule - target delivery date and major milestones
 * Release dates including major summary of deliverables
+* Operational environment, infrastructure
+* Reference Hardware, Project Samples
 
 The stakeholders/stakeholder groups and organisation are defined. These may include:
 
@@ -81,8 +83,9 @@ The stakeholders/stakeholder groups and organisation are defined. These may incl
 * Weight/importance of each stakeholder (group)
 * Representative(s) for each stakeholder (group)
 * Information needs of each stakeholder (group)
+* Required competences, skills, knowledge
 
-Communication pathes are described. These may include:
+Communication and reporting pathes are described. These may include:
 
 * E-mails
 * Collaboration tools, like Slace, Teams, etc.
@@ -95,6 +98,12 @@ Escalation pathes are described. These may include:
 * Defined mechanisms to report and confirm escalation relevant issues
 * Identifies stakeholders to be included in the escalation path
 * Identifies levels of escalation
+
+Training pathes are described. These may include:
+
+* Tutorials
+* Training materials
+* Online Trainings, Video material
 
 Especially for the Document Management Plan, the following topics may considered:
 
@@ -119,4 +128,7 @@ Monitor/Improve Platform Management Plan
 
 :need:`Technical Lead <rl__technical_lead>` is responsible for the monitoring of the
 work products and activities against the platform management plan. If deviations are detected,
-the plan must be adjusted.
+the plan must be adjusted. Deviations may include estimates, resources, schedules, plans,
+interfaces, etc. as defined in the scope of work.
+
+The status of the project is regularly reported.
