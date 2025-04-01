@@ -48,7 +48,7 @@ The component shall support reading from a .json file or a buffer and convert th
 
 Future Extensions
 ----------------------
-The component shall suppot a future extension for converting from user format into .json format and storing it into a file or buffer.
+The component shall support a future extension for converting from user format into .json format and storing it into a file or buffer.
 
 
 Motivation
