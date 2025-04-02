@@ -24,4 +24,4 @@ In case you want to manage contributions to **S-CORE** consider to:
 
 * Contact the :need:`Technical Lead <rl__technical_lead>` for your contribution to establish planning and reporting
 * Make familiar with the management, development and supporting process descriptions in :ref:`process_description`
-* Make familiar with the relevant sections of the :ref:`Platform Management Plan <pmp>`, especially :need:`doc__project_mgt_plan` and :need:`doc__documentation_mgt_plan`
+* Make familiar with the relevant sections of the :ref:`Platform Management Plan <pmp>`, especially :need:`doc__project_mgt_plan`

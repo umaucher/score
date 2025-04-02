@@ -105,23 +105,6 @@ Training pathes are described. These may include:
 * Training materials
 * Online Trainings, Video material
 
-Especially for the Document Management Plan, the following topics may considered:
-
-The planning for the documents is part of the Project Management Plan.
-
-The formal elements for documentations are described. These may include:
-
-* Document id
-* Document date
-* Document author information
-* Document reviewer, approver, if applicable
-* Document review and approval status with, where applicable
-* Document versioning, baselining
-* Document ownership
-* Document access rights
-* Document distribution
-* Document maintenance and disposal of the documents
-* Document storage location
 
 Monitor/Improve Platform Management Plan
 ----------------------------------------

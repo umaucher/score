@@ -49,17 +49,3 @@ Work Products Platform Management
 
 .. needextend:: "docs/process/platform_management" in docname
    :+tags: platform_management
-
-.. workproduct:: Documentation Management Plan
-   :id: wp__document_mgt
-   :status: valid
-   :complies: std_wp__iso26262__support_1051, std_wp__iso26262__support_1052
-
-   Document Management Plan (Part of the Platform Management Plan)
-
-   Documentation guideline requirements must be defined for each work product. Each work product or document
-   must include a title, author and approver, unique revision identification, change history, and
-   status.
-
-.. needextend:: "docs/process/platform_management" in docname
-   :+tags: platform_management
