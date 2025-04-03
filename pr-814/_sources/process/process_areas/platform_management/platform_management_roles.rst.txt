@@ -46,6 +46,30 @@ Roles
    * Approving the releases of the S-CORE SW platform and modules
 
 
+.. role:: Module Project Lead
+   :id: rl__module_lead
+   :status: valid
+   :tags: project_management
+   :contains: rl__committer
+
+   The Module Project Leads perform the project management on module level.
+   If a module is developed in a sub-project of S-CORE they have the eclipse project lead role for this.
+
+   For Module Project Leads the same required skills, experiences apply as for the Technical Leads.
+
+   Responsibility
+
+   * Review and approval of contributions, e.g. Feature Requests, which add or modify module features
+   * Project management of the module development - i.e. filling the project management role as defined by ISO26262
+   * High-level project control and coordination between multiple software components within the module
+   * Escalation instance for software module contributor, safety managers and committers within the module
+   * Planning the releases of the module
+
+   Authority
+
+   * Decisions in the technical lead circles of the module
+   * Approving the releases of module
+
 Contributing Roles:
 
    * :need:`Process Community <rl__process_community>`

@@ -63,14 +63,6 @@ S-CORE Management Roles
 
    The security managers shall be responsible for the planning and coordination of the security activities.
 
-.. role:: Module Project Lead
-   :id: rl__module_lead
-   :status: valid
-   :tags: project_management
-   :contains: rl__committer
-
-   The module Project Leads perform the project management on module level. If a module is developed in a sub-project of S-CORE they have the eclipse project lead role for this.
-
 S-CORE process roles
 --------------------
 

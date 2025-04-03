@@ -22,6 +22,27 @@ Work Products Documentation Management
 
    Document Management Plan (Part of the Platform Management Plan)
 
-   Documentation guideline requirements must be defined for each work product. Each work product or
-   document must include a title, author and approver, unique revision identification, change history,
-   and status.
+   Defines the documentation strategy which covers the following aspects:
+
+   * What is documented where and when?
+   * How to review, update, (re-)approve documentations?
+   * What is the status of a document and how are changes identified?
+   * How to ensure the avaibility of the documents over time?
+   * How to ensure the controlled distribution of documents?
+   * How to avoid distribution of obsolete documents?
+   * Which formal elements are used?
+
+   The formal elements may include:
+
+   * Document id
+   * Document date
+   * Document author information
+   * Document lifecycle
+   * Document reviewer, approver, if applicable
+   * Document review and approval status with, where applicable
+   * Document versioning, baselining
+   * Document ownership
+   * Document access rights
+   * Document distribution
+   * Document maintenance and disposal of the documents
+   * Document storage location

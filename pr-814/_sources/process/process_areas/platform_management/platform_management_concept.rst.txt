@@ -22,21 +22,17 @@ Concept Description
 
 In this section a concept for the Platform Management will be discussed. Inputs for this concepts
 are both the requirements of ISO26262 Part-2 and ASPICE Requirements from MAN.3 additionally
-including the requirements of the different stakeholders for the Platform Management process. In
-addition the concept for the Documentation Management is addressed, based on ISO26262 Part-8-10.
+including the requirements of the different stakeholders for the Platform Management process.
 
 Key concept
 ***********
 The Platform Management Plan is the container for all plan documents. As container it shall include
 the plans defined in the :ref:`Platform Management Plan Template <platform_templates>`.
-The concept of the plan documents, beside Project and Documentation Management is defined in the
+The concept of the plan documents, beside Project Management is defined in the
 corresponding process areas, which generate them.
 
 The Project Management Plan should identify and control the activities, and establish resources
 necessary to develop the project, in the context of the project’s requirements and constraints.
-
-The Documentation Management Plan should define the strategy to manage the identifed documentations
-in an effective and repeatable way for the project life cycle.
 
 Inputs
 ******

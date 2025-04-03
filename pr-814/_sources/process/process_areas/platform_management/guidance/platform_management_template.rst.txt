@@ -54,15 +54,13 @@ and approaches (compare content per plan document):
 * Stakeholder Management
 * Safety Management
 * Security Management
-* Risk Management
 * Quality Management
 * Configuration Management
 * Tool Management
 * Release Management
 * Problem Resolution
 * Change management
-* Documnetation Management
-* Requirements engineering
+* Documentation Management
 * Software Development
 * Software Verification
 

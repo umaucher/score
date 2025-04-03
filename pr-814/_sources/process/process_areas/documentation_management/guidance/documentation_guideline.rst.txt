@@ -22,20 +22,7 @@ Guideline
 
 The planning for the documents is part of the Platform Management Plan.
 
-The formal elements for documentations are described. These may include:
-
-* Document id
-* Document date
-* Document author information
-* Document lifecycle
-* Document reviewer, approver, if applicable
-* Document review and approval status with, where applicable
-* Document versioning, baselining
-* Document ownership
-* Document access rights
-* Document distribution
-* Document maintenance and disposal of the documents
-* Document storage location
+The formal elements for documentations in S-CORE are described here: :need:`doc__documentation_mgt_plan`.
 
 The review of each document is done as defined for this type of work product in the respective
 process description.
