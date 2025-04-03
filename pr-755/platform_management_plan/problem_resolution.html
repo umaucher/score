@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-cc886638">
+  <div class="need_container docutils container" id="SNCB-f380b247">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_problem_resolution_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -602,7 +602,7 @@ potential resolution. The tool is used to create, analyse, initiate and to monit
 problem reported within <strong>S-CORE</strong>.</p>
 <p>The next figure gives an overview, how problems are created in <strong>S-CORE</strong>. An ISSUE is
 used to create a problem report including required attributes as defined in
-<a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#prm-process-problem-attributes"><span class="std std-ref">Problem Attributes</span></a>. Therefore the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Template</span></a>
+<a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#prm-process-problem-attributes"><span class="std std-ref">Problem Attributes</span></a>. Therefore the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>
 shall be used.</p>
 <figure class="align-center">
 <a class="reference internal image-reference" href="../_images/score_problem_resolution_overview.drawio.svg"><img alt="Problem Resolution Overview" src="../_images/score_problem_resolution_overview.drawio.svg" style="width: 100%;" />
@@ -618,54 +618,88 @@ and the state in the Projects dashboard view.</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
 <caption><span class="caption-number">Table 38 </span><span class="caption-text">Problem Status</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <colgroup>
-<col style="width: 13.0%" />
-<col style="width: 73.9%" />
-<col style="width: 13.0%" />
+<col style="width: 11.5%" />
+<col style="width: 65.4%" />
+<col style="width: 11.5%" />
+<col style="width: 11.5%" />
 </colgroup>
 <thead>
 <tr class="row-odd"><th class="head"><p>Status</p></th>
 <th class="head"><p>Issue status</p></th>
 <th class="head"><p>Projects dashboard status</p></th>
+<th class="head"><p>Linked PR status</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>open</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Open</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">Status</span></code></p></td>
+<td><p>na</p></td>
 </tr>
 <tr class="row-odd"><td><p>in review</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Open</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Todo</span></code></p></td>
+<td><p>na</p></td>
 </tr>
 <tr class="row-even"><td><p>in implementation</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Open</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">In</span> <span class="pre">Progress</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Draft</span></code> or <code class="docutils literal notranslate"><span class="pre">Open</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p>closed</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Closed</span></code></p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Done</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">Merged</span></code></p></td>
 </tr>
 <tr class="row-even"><td><p>rejected</p></td>
 <td><p><code class="docutils literal notranslate"><span class="pre">Closed</span></code></p></td>
 <td><p>any beside <code class="docutils literal notranslate"><span class="pre">Done</span></code></p></td>
-</tr>
-<tr class="row-odd"><td><p>cancelled</p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">Closed</span> <span class="pre">as</span> <span class="pre">not</span> <span class="pre">planned</span></code></p></td>
-<td><p>any beside <code class="docutils literal notranslate"><span class="pre">Done</span></code></p></td>
+<td><p>na</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_title" title="gd_req__problem__attr_title"><em class="xref need">Problem attribute: title</em></a> is identical to the ISSUE title.</p>
 <p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_impact_description" title="gd_req__problem__attr_impact_description"><em class="xref need">Problem attribute: description</em></a> is defined in the description part of the
-ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Template</span></a>.</p>
-<p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_category" title="gd_req__problem__attr_category"><em class="xref need">Problem attribute: category</em></a> is defined in the description part of the
-ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Template</span></a>.</p>
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>.</p>
+<p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_anaylsis_results" title="gd_req__problem__attr_anaylsis_results"><em class="xref need">Problem attribute: analysis...</em></a> is defined in the description part of the
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>.</p>
+<p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_stakeholder" title="gd_req__problem__attr_stakeholder"><em class="xref need">Problem attribute: stakeholder</em></a> is defined in the description part of the
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>. For S-CORE stakeholder use pre-defined labels
+for Communities or Cross Functional Teams (Feature Owner).</p>
 <p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_classification" title="gd_req__problem__attr_classification"><em class="xref need">Problem attribute: classifi...</em></a> is defined in the description part of the
-ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Template</span></a>.</p>
-<p>Problems are clustered in the following categories:</p>
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>. For S-CORE labels are defined as:</p>
 <div class="pst-scrollable-table-container"><table class="table" id="id2">
-<caption><span class="caption-number">Table 39 </span><span class="caption-text">Problem Categories</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<caption><span class="caption-number">Table 39 </span><span class="caption-text">Problem Classification</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Classification identifier</p></th>
+<th class="head"><p>Label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>minor</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">minor</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>major</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">major</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>critical</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">critical</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>blocker</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">blocker</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_category" title="gd_req__problem__attr_category"><em class="xref need">Problem attribute: category</em></a> is defined in the description part of the
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>. For S-CORE labels are defined as:</p>
+<div class="pst-scrollable-table-container"><table class="table" id="id3">
+<caption><span class="caption-number">Table 40 </span><span class="caption-text">Problem Categories</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
 <colgroup>
 <col style="width: 13.0%" />
 <col style="width: 73.9%" />
@@ -693,6 +727,12 @@ ISSUE using the Problem Template <a class="reference internal" href="../process/
 </tbody>
 </table>
 </div>
+<p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_safety_affected" title="gd_req__problem__attr_safety_affected"><em class="xref need">Problem attribute:: safety ...</em></a>,
+<a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_security_affected" title="gd_req__problem__attr_security_affected"><em class="xref need">Problem attribute:: securit...</em></a>,
+<a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_quality_affected" title="gd_req__problem__attr_quality_affected"><em class="xref need">Problem attribute:: quality...</em></a> are defined in the description part of the
+ISSUE using the Problem Template <a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_template.html#prm-templates"><span class="std std-ref">Problem Report Template</span></a>. For S-CORE labels are defined to mark affected
+ISSUEs:
+<code class="docutils literal notranslate"><span class="pre">safetyy</span></code>, <code class="docutils literal notranslate"><span class="pre">security</span></code>, <code class="docutils literal notranslate"><span class="pre">quality</span></code></p>
 <p><a class="reference internal" href="../process/process_areas/problem_resolution/guidance/problem_resolution_reqs.html#gd_req__problem__attr_milestone" title="gd_req__problem__attr_milestone"><em class="xref need">Problem attribute: milestone</em></a> is defined by the Milestone of a ISSUE.</p>
 </section>
 <section id="problem-resolution-workflow">
@@ -728,13 +768,13 @@ The title of the ISSUE reflects the potential problem. Further add here the
 ISSUE status <code class="docutils literal notranslate"><span class="pre">Open</span></code> and Projects status <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">Status</span></code>.</p>
 <p>To trigger the next step: Problem status: <code class="docutils literal notranslate"><span class="pre">in</span> <span class="pre">review</span></code>
 keep the ISSUE status <code class="docutils literal notranslate"><span class="pre">Open</span></code> and set the Projects status <code class="docutils literal notranslate"><span class="pre">Todo</span></code>.</p>
-<p>To cancel the problem report: Problem status: <code class="docutils literal notranslate"><span class="pre">cancelled</span></code>
-set the ISSUE status <code class="docutils literal notranslate"><span class="pre">Closed</span> <span class="pre">as</span> <span class="pre">not</span> <span class="pre">planned</span></code>.</p>
-<figure class="align-center" id="id3">
+<p>To reject the problem report: Problem status: <code class="docutils literal notranslate"><span class="pre">rejected</span></code>
+set the ISSUE status <code class="docutils literal notranslate"><span class="pre">Closed</span></code>.</p>
+<figure class="align-center" id="id4">
 <a class="reference internal image-reference" href="../_images/score_problem_resolution_workflow_simple.drawio.svg"><img alt="Problem Resolution Simple Workflow Overview" src="../_images/score_problem_resolution_workflow_simple.drawio.svg" style="width: 100%;" />
 </a>
 <figcaption>
-<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Problem Resolution Simple Workflow Overview</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
+<p><span class="caption-number">Fig. 24 </span><span class="caption-text">Problem Resolution Simple Workflow Overview</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><strong>To 2. Analyse the Problem report:</strong></p>
@@ -760,7 +800,6 @@ monitoring of the activities.</p>
 merged, respectively.</p>
 <p>If all are closed or merged <a class="reference internal" href="../process/roles/index.html#rl__contributor" title="rl__contributor"><em class="xref need">Contributor (rl__contributor)</em></a> sets Projects status to <code class="docutils literal notranslate"><span class="pre">Done</span></code>
 to trigger the final review from the <a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> to close the problem resolution.</p>
-<p>In case it is cancelled, set the ISSUE status <code class="docutils literal notranslate"><span class="pre">Closed</span> <span class="pre">as</span> <span class="pre">not</span> <span class="pre">planned</span></code>.</p>
 <p>The problem resolution may also rejected in this phase, the ISSUE status is set to <code class="docutils literal notranslate"><span class="pre">Closed</span></code>.</p>
 <p><strong>To 4. Close the Problem resolution:</strong></p>
 <p><a class="reference internal" href="../process/roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> checks finally if the Problem is completely resolved. In this
@@ -773,42 +812,7 @@ back to <code class="docutils literal notranslate"><span class="pre">In</span> <
 </section>
 <section id="problem-resolution-sw-platform-work-products">
 <h3>Problem Resolution SW Platform Work Products<a class="headerlink" href="#problem-resolution-sw-platform-work-products" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table" id="id4">
-<caption><span class="caption-number">Table 40 </span><span class="caption-text">SW Platform work products</span><a class="headerlink" href="#id4" title="Link to this table">#</a></caption>
-<thead>
-<tr class="row-odd"><th class="head"><p>work product Id</p></th>
-<th class="head"><p>Link to process</p></th>
-<th class="head"><p>Process status</p></th>
-<th class="head"><p>Link to issue</p></th>
-<th class="head"><p>Link to WP</p></th>
-<th class="head"><p>WP status</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><a class="reference internal" href="../process/process_areas/change_management/change_management_workproducts.html#wp__issue_track_system" title="wp__issue_track_system"><em class="xref need">Issue tracking system (wp__issue_track_system)</em></a></p></td>
-<td><p><a class="reference internal" href="index.html"><span class="doc">Platform Management Plan</span></a></p></td>
-<td><p>draft</p></td>
-<td><p>n/a</p></td>
-<td><p><a class="reference external" href="https://github.com/eclipse-score/score/issues">Project issues</a></p></td>
-<td><p>established</p></td>
-</tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="../process/workproducts/index.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a></p></td>
-<td><p><a class="reference internal" href="../process/workflows/platform_management.html#wf__cr_mt_platform_mngmt_plan" title="wf__cr_mt_platform_mngmt_plan"><em class="xref need">Create/Maintain Platform Ma... (wf__cr_mt_platform_mngmt_plan)</em></a></p></td>
-<td><p>draft</p></td>
-<td><p>&lt;Link to issue&gt;</p></td>
-<td><p><a class="reference internal" href="index.html"><span class="doc">Platform Management Plan</span></a></p></td>
-<td><p>draft</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="../process/workproducts/index.html#wp__process_definition" title="wp__process_definition"><em class="xref need">Process Definition (wp__process_definition)</em></a></p></td>
-<td><p><a class="reference internal" href="../process/workflows/process_management.html#wf__def_app_process_definition" title="wf__def_app_process_definition"><em class="xref need">Define/Approve Process (wf__def_app_process_definition)</em></a></p></td>
-<td><p>draft</p></td>
-<td><p><a class="reference external" href="https://github.com/orgs/eclipse-score/projects/7">Process community issues</a></p></td>
-<td><p><a class="reference internal" href="../process/index.html#process-description"><span class="std std-ref">Process</span></a></p></td>
-<td><p>&lt;automated&gt;</p></td>
-</tr>
-</tbody>
-</table>
-</div>
+<p>not applicable</p>
 </section>
 </section>
 </section>

@@ -30,7 +30,7 @@ Workflow Problem Resolution
 
    The Problem Report is created.
 
-   For creating the Problem template must be used.
+   For creating the Problem Reporte template must be used.
 
    To start review and analyis the Problem status is changed to "in review"
 
@@ -49,12 +49,12 @@ Workflow Problem Resolution
    The Problem Report is analysed.
 
    Until the template is not filled out properly, the Problem may be set back to “open” from the
-   [Committer (rl__committer)].
+   :need:`Committer <rl__committer>`.
 
    If the problem shall be resolved, the Problem status is set to "in implementation", Otherwise
    to "rejected".
 
-   The [Contributor (rl__contributor)] may cancel it, thus the status is set to "cancelled".
+   The author of the Problem Report may cancel it, thus the status is set to "rejected".
 
 .. workflow:: Initiate and Monitor Problem Resolution
    :id: wf__problem__initiate_monitor_pr
@@ -74,11 +74,11 @@ Workflow Problem Resolution
    These are linked to the Problem and monitored until closure.
 
    The problem resolution is done, if all linked activities has been closed and confirmed.
-   Before closing the problem resoultion, [Comitter (rl__committer)] must check the correctness.
+   Before closing the problem resoultion, :need:`Committer <rl__committer>` must check the correctness.
 
-   The [Comitter (rl__committer)] may still reject it, thus the status is set to "rejected".
+   The :need:`Committer <rl__committer>` may still reject it, thus the status is set to "rejected".
 
-   The [Contributor (rl__contributor)] may cancel it, thus the status is set to "cancelled".
+   The author of the Problem Report may cancel it, thus the status is set to "rejected".
 
 .. workflow:: Close Problem Resolution
    :id: wf__problem__close_pr
@@ -95,9 +95,9 @@ Workflow Problem Resolution
    The Problem resolution is closed.
 
    The problem resolution is closed only, if the implementation is sufficient. That is verified
-   by the [Comitter (rl__committer)] finally.
+   by the :need:`Committer <rl__committer>` finally.
 
-   Otherwiser the [Comitter (rl__committer)] keeps the status "in implementation".
+   Otherwise the :need:`Committer <rl__committer>` keeps the status "in implementation".
 
 
 RAS(IC) for Problem Resolution:

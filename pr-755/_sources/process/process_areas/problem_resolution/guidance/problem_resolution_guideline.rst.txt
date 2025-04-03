@@ -39,16 +39,13 @@ For all Problems following mandatory attributes need to be defined:
 
 .. needtable:: Overview of mandatory problem resolution attributes
    :tags: problem_resolution
-   :filter: "mandatory" in tags and "attribute" in tags and type == "gd_req"
+   :filter: "mandatory" in tags and "attribute" and "problem_resolution" in tags
    :style: table
    :columns: title
    :colwidths: 30
 
 
-* ID: Unique integer number
-* For the remaining attributes only predefined values can be used. A more detailed description can
-  be found here: :ref:`prm_attributes`
-
+A more detailed description can be found here: :ref:`prm_process_requirements`
 
 .. _workflow_prm_requirements:
 
@@ -86,7 +83,7 @@ how to create problem reports.
 Create Problem Report
 ---------------------
 
-:need:`[[title]] <rl__contributor>` creates the problem report in the defined Issue Tracking
+:need:`[[title]] <rl__contributor>` (as author) creates the problem report in the defined Issue Tracking
 System based on the provided template.
 It is expected, that the UID will be provided by the Issue Tracking System.
 
@@ -111,23 +108,21 @@ rejecting it.
 If accepted, the status is set to "in implementation" and :need:`[[title]] <rl__contributor>`
 can start with the iniation of the problem resolution, otherwise the status is set to "rejected".
 
-:need:`[[title]] <rl__contributor>` has the freedom to cancel it at any time by setting the status
-to "cancelled".
+The author has the freedom to cancel it at any time by setting the status to "rejected".
 
 .. _prm_initiate_problem_resolution:
 
 Initiate and Monitor Problem Resolution
 ---------------------------------------
 
-:need:`[[title]] <rl__contributor>` initiates the resolution of the Problem.
+:need:`[[title]] <rl__committer>` initiates the resolution of the Problem.
 
 Therefore further activities needs to be planned and linked to the Problem Report.
 
 During the resolution the responsible lead :need:`[[title]] <rl__technical_lead>` or
 :need:`[[title]] <rl__module_lead>` reports regularly the status to the affected **S-CORE** teams.
 
-:need:`[[title]] <rl__contributor>` has the freedom to cancel it at any time by setting the status
-to "cancelled".
+The author has the freedom to cancel it at any time by setting the status to "rejected".
 
 .. _prm_monitor_problem_resolution:
 

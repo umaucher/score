@@ -60,26 +60,21 @@ Also requirements of standards need to be taken into consideration:
 * ASPICE
 * ISO SAE 21434
 
-Problem Categories
-******************
+Problem Report Categories
+*************************
 
-User: Problems relating to requirements, design, ore code found by user of the platform.
+User: Problems relating to requirements, design, or code found by user of the platform.
 
 Bug: Problems found by contributor based on component, feature or platform integration tests.
 
-Quality: Problems or gaps found by Quality Management activities as defined in the Quality
-
-Compare Problem template: :ref:`prm_templates`.
+Quality: Problems or gaps found by Quality Management activities as defined in the Quality Management Plan
 
 .. _prm_attributes:
 
-Attributes of Problem reports
-*****************************
+Problem Report Attributes
+*************************
 
-The required attributes for the Change Requests are defined here:
-
-Compare Process Problem attributes: :ref:`prm_process_problem_attributes`.
-
+The required attributes for the Problem Report are defined here: :ref:`prm_process_problem_attributes`.
 
 Activities for Problem Resolution
 *********************************
@@ -89,10 +84,11 @@ Activities for Problem Resolution
 Creation of the Problem Report
 ==============================
 
-Use therefore the :ref:`Problem Template <prm_templates>`.
+Use the :ref:`Problem Report Template <prm_templates>` to create the Problem Report.
 
 In case safety or security is affected, in addition the impact analysis template
-: :ref:`Impact Analysis Template <chm_impact_analysis_templates>`  can be used in addition.
+: :ref:`Impact Analysis Template <chm_impact_analysis_templates>`  can be used to detail out the
+impact on safety/security as part of the description.
 
 .. _prm_analysis:
 
@@ -133,5 +129,5 @@ Closing of the Problem Resolution
 Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completeness of the closed
 Problem report.
 
-Especially the effectiveness of the solution measures must be shown, based on concincing
+Especially the effectiveness of the solution measures must be shown, based on convincing
 arguments, e.g. verification measures must be use to confirm the implementation.
