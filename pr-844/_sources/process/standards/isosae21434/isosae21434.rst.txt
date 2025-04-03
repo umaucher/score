@@ -86,23 +86,23 @@ Clause 5: Organizational cybersecurity management
 
 * Work products
     .. std_wp:: org_management_551
-       :id: std_wp__isosae21434__org_management_1
+       :id: std_wp__isosae21434__org_management_551
        :status: valid
 
     .. std_wp:: org_management_552
-       :id: std_wp__isosae21434__org_management_2
+       :id: std_wp__isosae21434__org_management_552
        :status: valid
 
     .. std_wp:: org_management_553
-       :id: std_wp__isosae21434__org_management_3
+       :id: std_wp__isosae21434__org_management_553
        :status: valid
 
     .. std_wp:: org_management_554
-       :id: std_wp__isosae21434__org_management_4
+       :id: std_wp__isosae21434__org_management_554
        :status: valid
 
     .. std_wp:: org_management_555
-       :id: std_wp__isosae21434__org_management_5
+       :id: std_wp__isosae21434__org_management_555
        :status: valid
 
 
@@ -246,7 +246,7 @@ Clause 8: Continual cybersecurity activities
        :status: valid
 
    .. std_req:: continual_8421
-       :id: std_req__isosae21434__continual_4
+       :id: std_req__isosae21434__continual_8421
        :status: valid
 
    .. std_req:: continual_8521
