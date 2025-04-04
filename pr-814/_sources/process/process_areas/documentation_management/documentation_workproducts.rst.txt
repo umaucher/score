@@ -31,18 +31,3 @@ Work Products Documentation Management
    * How to ensure the controlled distribution of documents?
    * How to avoid distribution of obsolete documents?
    * Which formal elements are used?
-
-   The formal elements may include:
-
-   * Document id
-   * Document date
-   * Document author information
-   * Document lifecycle
-   * Document reviewer, approver, if applicable
-   * Document review and approval status with, where applicable
-   * Document versioning, baselining
-   * Document ownership
-   * Document access rights
-   * Document distribution
-   * Document maintenance and disposal of the documents
-   * Document storage location

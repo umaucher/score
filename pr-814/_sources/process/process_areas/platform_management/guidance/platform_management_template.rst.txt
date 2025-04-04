@@ -51,7 +51,6 @@ This work product's scope is to cover the following aspects including purpose, o
 and approaches (compare content per plan document):
 
 * Project Management
-* Stakeholder Management
 * Safety Management
 * Security Management
 * Quality Management

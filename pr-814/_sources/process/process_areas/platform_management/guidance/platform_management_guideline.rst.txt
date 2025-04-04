@@ -88,7 +88,7 @@ The stakeholders/stakeholder groups and organisation are defined. These may incl
 Communication and reporting pathes are described. These may include:
 
 * E-mails
-* Collaboration tools, like Slace, Teams, etc.
+* Collaboration tools, like Slack, Teams, etc.
 * Meetings and Meeting Notes
 * Blog
 * Webpages
