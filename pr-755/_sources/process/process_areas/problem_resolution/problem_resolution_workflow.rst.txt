@@ -30,9 +30,9 @@ Workflow Problem Resolution
 
    The Problem Report is created.
 
-   For creating the Problem Reporte template must be used.
+   For creating the Problem Report template must be used.
 
-   To start review and analyis the Problem status is changed to "in review"
+   To start the review and the analysis the Problem status is changed to "in review"
 
 .. workflow:: Analyse Problem Report
    :id: wf__problem__analyse_pr
@@ -51,7 +51,7 @@ Workflow Problem Resolution
    Until the template is not filled out properly, the Problem may be set back to “open” from the
    :need:`Committer <rl__committer>`.
 
-   If the problem shall be resolved, the Problem status is set to "in implementation", Otherwise
+   If the Problem shall be resolved, the Problem status is set to "in implementation", otherwise
    to "rejected".
 
    The author of the Problem Report may cancel it, thus the status is set to "rejected".
@@ -68,13 +68,14 @@ Workflow Problem Resolution
    :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
    :has: doc_concept__problem__process, doc_getstrt__problem__process
 
-   The Problem resolution is implemented and monitored.
+   The Problem Resolution is implemented and monitored.
 
    This may require Change Requests or other activities, inlcuding creating ISSUEs and PRs.
    These are linked to the Problem and monitored until closure.
 
-   The problem resolution is done, if all linked activities has been closed and confirmed.
-   Before closing the problem resoultion, :need:`Committer <rl__committer>` must check the correctness.
+   The Problem Resolution is done, if all linked activities has been closed and confirmed.
+   Before closing the Problem Resoultion, :need:`Committer <rl__committer>` must check the
+   correctness.
 
    The :need:`Committer <rl__committer>` may still reject it, thus the status is set to "rejected".
 
@@ -92,15 +93,16 @@ Workflow Problem Resolution
    :contains: gd_temp__problem__template, gd_chklst__problem__cr_review, gd_guidl__problem__problem
    :has: doc_concept__problem__process, doc_getstrt__problem__process
 
-   The Problem resolution is closed.
+   The Problem Resolution is closed.
 
-   The problem resolution is closed only, if the implementation is sufficient. That is verified
+   The Problem Resolution is closed only, if the implementation is sufficient. That is verified
    by the :need:`Committer <rl__committer>` finally.
 
    Otherwise the :need:`Committer <rl__committer>` keeps the status "in implementation".
 
 
 RAS(IC) for Problem Resolution:
+*******************************
 
 .. needtable:: RASIC Overview for Problem Resolution
    :tags: problem_resolution

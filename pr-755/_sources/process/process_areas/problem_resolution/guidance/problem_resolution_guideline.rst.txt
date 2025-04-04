@@ -83,18 +83,18 @@ how to create problem reports.
 Create Problem Report
 ---------------------
 
-:need:`[[title]] <rl__contributor>` (as author) creates the problem report in the defined Issue Tracking
-System based on the provided template.
+:need:`[[title]] <rl__contributor>` (as author) creates the Problem Report in the defined Issue
+Tracking System based on the provided template.
 It is expected, that the UID will be provided by the Issue Tracking System.
 
-The title of the Problem report should reflect the topic accordingly.
+The title of the Problem Report should reflect the topic accordingly.
 
-The description should reflect the detailed problem root causes and impact.
+The description should reflect the problem root cause and impact in detail.
 
 Copy therefore the :need:`Problem Template <gd_temp__problem__template>` into the created Problem
 Report (Issue Tracking System).
 
-Set the status of the Problem to "open", when ready to analyse and review set to "in review".
+Set the status of the Problem to "open", when ready to review and analyse set to "in review".
 
 .. _prm_analyze_problem_report:
 
@@ -102,11 +102,10 @@ Analyse Problem Report
 ----------------------
 
 The **S-CORE** :need:`[[title]] <rl__committer>` analyzes the problem together with the
-:need:`[[title]] <rl__contributor>` and takes a decision for accepting or to
-rejecting it.
+:need:`[[title]] <rl__contributor>` and takes a decision for accepting or rejecting it.
 
 If accepted, the status is set to "in implementation" and :need:`[[title]] <rl__contributor>`
-can start with the iniation of the problem resolution, otherwise the status is set to "rejected".
+can start with the iniation of the Problem Resolution, otherwise the status is set to "rejected".
 
 The author has the freedom to cancel it at any time by setting the status to "rejected".
 
@@ -132,9 +131,9 @@ Close Problem Resolution
 During the resolution the :need:`[[title]] <rl__contributor>` monitors all activities linked to
 the problem, until they are closed.
 
-:need:`[[title]] <rl__committer>` checks finally if the problem resolution is sufficient before
+:need:`[[title]] <rl__committer>` checks finally if the problem Resolution is sufficient before
 the status is finally closed.
-To check, if is is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
+To check, if it is sufficient, :need:`Problem Checklist <gd_chklst__problem__cr_review>` may used.
 
 :need:`[[title]] <rl__committer>` has the freedom to reject it at any time by setting the status
 to "reject".

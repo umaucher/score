@@ -113,7 +113,6 @@ Problem Attributes
 
       * User
       * Bug
-      * Quality
 
 .. gd_req:: Problem attribute:: safety affected
    :id: gd_req__problem__attr_safety_affected

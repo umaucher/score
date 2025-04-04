@@ -27,7 +27,7 @@ including the requirements of the different stakeholders for the Problem Resolut
 Key concept
 ***********
 A Problem Report is the **ONLY** way to report (compare :need:`gd_guidl__contr_request_guideline`)
-deviations of an expected result of existing features in the **S-CORE** project.
+deviations of an expected result for existing features in the **S-CORE** project.
 Deviations include problems found by user, bugs found during verification activites by tester,
 quality issues found by quality checks, safety anomalies, vulnerabilites or any other malfunction.
 
@@ -65,9 +65,8 @@ Problem Report Categories
 
 User: Problems relating to requirements, design, or code found by user of the platform.
 
-Bug: Problems found by contributor based on component, feature or platform integration tests.
+Bug: Problems found by contributor based on component, feature or platform integration tests including verification and quality assurance activities.
 
-Quality: Problems or gaps found by Quality Management activities as defined in the Quality Management Plan
 
 .. _prm_attributes:
 
@@ -110,14 +109,14 @@ Further prioritization must be done, e.g. based on release planning.
 
 .. _prm_implementation_monitoring:
 
-Implementation and Monitoring of the Problem resolution
+Implementation and Monitoring of the Problem Resolution
 =======================================================
-If the Problem report is accepted, the implementation of the resolution must be initiated and
+If the Problem Report is accepted, the implementation of the resolution must be initiated and
 monitored.
 
-The Problem Resolution im must be tracked until it is closed.
+The Problem Resolution implementation must be tracked until it is closed.
 
-The status of the Problem report must be communicated by the
+The status of the Problem Report must be communicated by the
 :need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead>` until
 the implementation is completed and confirmed.
 
@@ -126,8 +125,8 @@ the implementation is completed and confirmed.
 Closing of the Problem Resolution
 =================================
 
-Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completeness of the closed
-Problem report.
+Use the :ref:`Problem Report Checklist <prm_checklist>` to control the completeness of the
+Problem Report to be closed.
 
 Especially the effectiveness of the solution measures must be shown, based on convincing
-arguments, e.g. verification measures must be use to confirm the implementation.
+arguments, e.g. verification measures must be used to confirm the implementation.
