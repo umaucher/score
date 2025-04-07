@@ -68,16 +68,6 @@ General
    | * Identifies the associated quality criteria
    | * Identifies any associated measurements using the information
 
-.. workproduct:: Platform Management Plan
-   :id: wp__platform_mgmt
-   :status: valid
-   :complies: std_wp__iso26262__support_751, std_wp__iso26262__support_1051, std_wp__iso26262__support_1052
-
-   The Platform Management Plan shall include the Project Management Plan, Configuration Management Plan, Tool Management Plan, Documentation Management Plan and Problem Resolution Plan.
-
-   These shall contain the documentation and planning as required by the standards.
-
-
 Process
 ^^^^^^^
 
