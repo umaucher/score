@@ -31,6 +31,8 @@ Inputs
 
 #. Module safety package
 #. Platform safety package
+#. Module verification report
+#. Platform verification report
 #. Issue tracking system
 #. Platform Management Plan
 
@@ -64,7 +66,7 @@ its output.
 Platform Release
 ================
 
-The Platform Release contains the full *SCORE* scope which spans over many modules. The releases
+The Platform Release contains the full *S-CORE* scope which spans over many modules. The releases
 are proposed by the *Technical Leads* and approved by *Project Leads*. Every software module
 has its own repository which contains multiple components, their requirements, architecture,
 implementation and tests.

@@ -69,7 +69,6 @@ Generally release planning and execution is described in :ref:`release_managemen
 It is part of project planning and therefore also documented with the same means. Generally a Release
 is planned as an issue linked to a milestone in the `GitHub Milestone Planning <https://github.com/orgs/eclipse-score/projects/13>`_.
 And this issue is closed by merging a pull request which creates/updates a release note.
-Currently decided S-CORE releases are 0.5 and 1.0. The steps until 0.5 release are already planned.
 
 Before every release there will be a phase in which, for the features to be released, no functional
 updates will be allowed but only bug fixes, addition of tests and quality improvements.

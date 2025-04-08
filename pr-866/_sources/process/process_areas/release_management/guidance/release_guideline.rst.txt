@@ -43,7 +43,7 @@ Software Module Release
 
 4. **Release Preparation**:
 
-   * Update the version number according to the versioning policy.
+   * Update the version number according to the versioning policy (defined in :need:`doc__platform_release_management_plan`).
    * Prepare release notes documenting the changes, improvements, and bug fixes.
    * Ensure the relevant safety packages are available.
    * Tag the release in the GitHub repository.
