@@ -18,7 +18,7 @@ SecurityPackage Formal Review Checklist
 .. gd_chklst:: Security Package Formal Review Checklist
    :id: gd_chklst__security_package
    :status: valid
-   :complies:
+   :complies: std_req__isosae21434__prj_management_6471, std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
    **1. Purpose**
 
@@ -56,5 +56,10 @@ SecurityPackage Formal Review Checklist
 
         * - 5
           - If security related deviations from the process or security concept are documented, are these argued understandably?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 6
+          - Are the requirements for post-development available?
           - [YES | NO ]
           - <Rationale for result>
