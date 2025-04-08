@@ -107,7 +107,7 @@ and the state in the Projects dashboard view. The PR status is also used, if app
      - ``Merged``
    * - rejected
      - ``Closed as not planned``
-     - any beside ``Done``
+     - na
      - na
 
 :need:`[[title]] <gd_req__problem__attr_title>` is identical to the ISSUE title.
