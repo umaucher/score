@@ -19,7 +19,6 @@ Workflow Problem Resolution
 .. workflow:: Create Problem Report
    :id: wf__problem__create_pr
    :status: valid
-   :tags: problem_resolution, wf
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
@@ -37,7 +36,6 @@ Workflow Problem Resolution
 .. workflow:: Analyse Problem Report
    :id: wf__problem__analyse_pr
    :status: valid
-   :tags: problem_resolution, wf
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
@@ -59,7 +57,6 @@ Workflow Problem Resolution
 .. workflow:: Initiate and Monitor Problem Resolution
    :id: wf__problem__initiate_monitor_pr
    :status: valid
-   :tags: problem_resolution, wf
    :responsible: rl__contributor
    :approved_by: rl__committer
    :supported_by: rl__technical_lead, rl__module_lead, rl__safety_manager, rl__security_manager, rl__quality_manager
@@ -84,7 +81,6 @@ Workflow Problem Resolution
 .. workflow:: Close Problem Resolution
    :id: wf__problem__close_pr
    :status: valid
-   :tags: problem_resolution, wf
    :responsible: rl__committer
    :approved_by: rl__technical_lead, rl__module_lead
    :supported_by: rl__safety_manager, rl__security_manager, rl__quality_manager
@@ -100,13 +96,15 @@ Workflow Problem Resolution
 
    Otherwise the :need:`Committer <rl__committer>` keeps the status "in implementation".
 
+.. needextend:: "process_areas/problem_resolution" in docname
+   :+tags: problem_resolution
 
 RAS(IC) for Problem Resolution:
 *******************************
 
 .. needtable:: RASIC Overview for Problem Resolution
    :tags: problem_resolution
-   :filter: "problem_resolution" in tags and "wf" in tags
+   :filter: "problem_resolution" in tags and type == "workflow"
    :style: table
    :sort: status
    :columns: id as "Activity";responsible as "Responsible";approved_by as "Approver";supported_by as "Supporter"

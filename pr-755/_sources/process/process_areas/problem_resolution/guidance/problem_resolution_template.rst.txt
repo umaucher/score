@@ -22,6 +22,10 @@ Problem Report Template
    :status: valid
    :complies: std_req__aspice_40__SUP-9-BP1, std_req__aspice_40__SUP-9-BP2, std_req__aspice_40__SUP-9-BP3, std_req__aspice_40__SUP-9-BP4,
 
+
+Parts of the Problem Template shall be created automatically by the defined Issue Tracking System,
+this is currently planned here: https://github.com/eclipse-score/score/issues/869.
+
 Problem status
 --------------
 [“open”, “in review”, “in implementation”, “closed”, “rejected”]
