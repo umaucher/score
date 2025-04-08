@@ -560,7 +560,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-00665050">
+<div class="need_container docutils container" id="SNCB-0dd304ee">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -777,7 +777,29 @@ least once during the testing process.</p>
 <p>Condition coverage is also creating branch coverage, so a 100% <cite>structural-condition-coverage</cite> will not
 guarantee a 100% branch coverage. The actual branch coverage percentage depends on the actual code
 under test.</p>
-<p>Fro C++ based unit testing gTest is the “software tool” which supports conditional coverage, but
+<p>The key differences between branch coverage and condition coverage are:</p>
+<ul>
+<li><p><strong>Branch Coverage:</strong> Measures whether each possible branch (decision outcome) in the code has
+been executed. It focuses on the overall boolean result of a decision point (if, while, etc.).</p></li>
+<li><p><strong>Condition Coverage:</strong> Measures whether each boolean sub-expression in a decision has independently
+taken all possible outcomes (true/false). It evaluates individual conditions within complex boolean expressions.</p></li>
+<li><p><strong>Condition coverage is more granular</strong> than branch coverage. For example, in a statement like
+<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">&amp;&amp;</span> <span class="pre">B)</span></code>, branch coverage only requires the entire expression to evaluate to both true
+and false at least once. Condition coverage would require that A and B each independently
+evaluate to both true and false.</p>
+<p><strong>Example</strong></p>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Do something</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Branch coverage: Need test cases where the entire expression is true, and where it’s false</p></li>
+<li><p>Condition coverage: Need test cases where x &gt; 0 is true/false and y &gt; 0 is true/false independently</p></li>
+</ul>
+</li>
+</ul>
+<p>For C++ based unit testing gTest is the “software tool” which supports conditional coverage, but
 has no direct option to create branch coverage. This has be considered, while writing unit tests.</p>
 </section>
 </section>
