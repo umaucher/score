@@ -106,7 +106,7 @@ and the state in the Projects dashboard view. The PR status is also used, if app
      - ``Done``
      - ``Merged``
    * - rejected
-     - ``Closed``
+     - ``Closed as not planned``
      - any beside ``Done``
      - na
 
@@ -203,7 +203,7 @@ To trigger the next step: Problem status: ``in review``
 keep the ISSUE status ``Open`` and set the Projects status ``Todo``.
 
 To reject the problem report: Problem status: ``rejected``
-set the ISSUE status to ``Closed``.
+set the ISSUE status to ``Closed as not planned``.
 
 .. figure:: _assets/score_problem_resolution_workflow_simple.drawio.svg
   :width: 100%
@@ -230,7 +230,7 @@ In case affected parties need to be informed :need:`Technical Lead <rl__technica
 
 Otherwise, if no Problem Resolution is planned, the problem is rejected.
 To reject the Problem Report: Problem status: ``rejected``
-set the ISSUE status to ``Closed``.
+set the ISSUE status to ``Closed as not planned``.
 
 
 **To 3. Initiate and Monitor the Problem Resolution:**
@@ -249,7 +249,8 @@ If all are closed or merged :need:`Contributor <rl__contributor>` sets Projects 
 to trigger the final review from the :need:`Committer <rl__committer>` to close the Problem
 Resolution.
 
-The Problem Resolution may also rejected in this phase, then the ISSUE status is set to ``Closed``.
+The Problem Resolution may also rejected in this phase, then the ISSUE status is set to
+``Closed as not planned``.
 
 **To 4. Close the Problem Resolution:**
 

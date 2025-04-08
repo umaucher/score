@@ -456,6 +456,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Problem Resolution</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../problem_resolution_getstrt.html">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../problem_resolution_concept.html">Concept Description</a></li>
@@ -559,7 +560,7 @@
                   
   <section id="problem-report-template">
 <span id="prm-templates"></span><h1>Problem Report Template<a class="headerlink" href="#problem-report-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-af9b0fb4">
+<div class="need_container docutils container" id="SNCB-a34b89c9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__problem__template">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -617,6 +618,8 @@
 <section id="problem-submitter">
 <h2>Problem submitter<a class="headerlink" href="#problem-submitter" title="Link to this heading">#</a></h2>
 <p>[Who is the reporter of the problem?]</p>
+<p>If possible, use for problem submitter the properties of the selected Issue Tracking System
+(for implementation see here <a class="reference internal" href="../../../../platform_management_plan/problem_resolution.html#doc__platform_problem_resolution_plan" title="doc__platform_problem_resolution_plan"><em class="xref need">Problem Resolution Plan (doc__platform_problem_resolution_plan)</em></a>)</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
 <section id="problem-description">
@@ -637,8 +640,8 @@
 <p>[How to reproduce the problem?]</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
-<section id="problem-anaylsis-results">
-<h2>Problem anaylsis results<a class="headerlink" href="#problem-anaylsis-results" title="Link to this heading">#</a></h2>
+<section id="problem-analysis-results">
+<h2>Problem analysis results<a class="headerlink" href="#problem-analysis-results" title="Link to this heading">#</a></h2>
 <p>[What is the problem analysis result?]</p>
 <div class="line-block">
 <div class="line">Especially document rejection Reason</div>
@@ -649,8 +652,8 @@
 <section id="problem-stakeholder">
 <h2>Problem stakeholder<a class="headerlink" href="#problem-stakeholder" title="Link to this heading">#</a></h2>
 <p>[What are the potential stakeholder to resolve the problem?]</p>
-<p>Add affected feautre, if possible</p>
-<p>If possible, use for problem status the properties of the selected Issue Tracking System
+<p>Add affected feature, if possible</p>
+<p>If possible, use for problem stakeholder the properties of the selected Issue Tracking System
 (see implementation here <a class="reference internal" href="../../../../platform_management_plan/problem_resolution.html#doc__platform_problem_resolution_plan" title="doc__platform_problem_resolution_plan"><em class="xref need">Problem Resolution Plan (doc__platform_problem_resolution_plan)</em></a>)</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
@@ -658,13 +661,18 @@
 <h2>Problem category<a class="headerlink" href="#problem-category" title="Link to this heading">#</a></h2>
 <p>[User, Bug]</p>
 <p>[Safety affected, Security affected, Quality affected]</p>
-<p>User: Problems relating to requirements, design, ore code found by user of the platform.</p>
-<div class="line-block">
-<div class="line">Bug:</div>
-<div class="line">Problems found by contributor based on component, feature or platform integration tests.</div>
-<div class="line">Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.</div>
-</div>
+<p>User:</p>
+<ul class="simple">
+<li><p>Problems relating to requirements, design, ore code found by user of the platform.</p></li>
+</ul>
+<p>Bug:</p>
+<ul class="simple">
+<li><p>Problems found by contributor based on component, feature or platform integration tests.</p></li>
+<li><p>Problems or gaps found by Quality Management activities as defined in the Quality Management Plan.</p></li>
+</ul>
 <p>Safety, Security, Quality: Additional qualifier to highlight, if safety, security or quality is affected</p>
+<p>If possible, use for problem category the properties of the selected Issue Tracking System
+(for implementation see here <a class="reference internal" href="../../../../platform_management_plan/problem_resolution.html#doc__platform_problem_resolution_plan" title="doc__platform_problem_resolution_plan"><em class="xref need">Problem Resolution Plan (doc__platform_problem_resolution_plan)</em></a>)</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
 <section id="problem-classification">
@@ -701,7 +709,7 @@
 <section id="problem-expected-closure-date">
 <h2>Problem expected closure date<a class="headerlink" href="#problem-expected-closure-date" title="Link to this heading">#</a></h2>
 <p>[Milestone when the problem should be resolved]</p>
-<p>If possible, use for problem status the properties of the selected Issue Tracking System
+<p>If possible, use for problem closure date the properties of the selected Issue Tracking System
 (for implementation see here <a class="reference internal" href="../../../../platform_management_plan/problem_resolution.html#doc__platform_problem_resolution_plan" title="doc__platform_problem_resolution_plan"><em class="xref need">Problem Resolution Plan (doc__platform_problem_resolution_plan)</em></a>)</p>
 <p>(to be filled out during <a class="reference internal" href="../problem_resolution_workflow.html#wf__problem__create_pr" title="wf__problem__create_pr"><em class="xref need">Create Problem Report (wf__problem__create_pr)</em></a>)</p>
 </section>
@@ -778,7 +786,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-submitter">Problem submitter</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-description">Problem description</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-supporting-information">Problem supporting information</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-anaylsis-results">Problem anaylsis results</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-analysis-results">Problem analysis results</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-stakeholder">Problem stakeholder</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-category">Problem category</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#problem-classification">Problem classification</a></li>
