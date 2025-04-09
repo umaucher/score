@@ -62,7 +62,7 @@
     <script src="../../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'process/process_areas/verification/guidance/verification_guidance';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'process/process_areas/verification/guidance/verification_guideline';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
@@ -560,7 +560,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-af05d88d">
+<div class="need_container docutils container" id="SNCB-9bb7676c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -769,58 +769,19 @@ hard to have reasonable testing in the reference implementation</p>
 </ul>
 </div></blockquote>
 </section>
-<section id="condition-coverage">
-<h4>Condition Coverage<a class="headerlink" href="#condition-coverage" title="Link to this heading">#</a></h4>
-<p>Condition coverage is a white-box testing technique used to test each Boolean condition in a
-software component. The goal is to ensure that each condition evaluates to both true and false at
-least once during the testing process.</p>
-<p>Condition coverage is also creating branch coverage, but a 100% <cite>structural-condition-coverage</cite> will not
-guarantee a 100% branch coverage. The actual branch coverage percentage depends on the actual code
-under test.</p>
-<p><strong>Example:</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Block 1</span>
-<span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Block 2</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>With these test cases:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>a = true, b = true</p></li>
-<li><p>a = true, b = false</p></li>
-<li><p>a = false, b = true</p></li>
-</ul>
-</div></blockquote>
-<p>This achieves 100% condition coverage as both ‘a’ and ‘b’ have been tested as true and false.
-However, it only achieves 50% branch coverage because the “else” branch (Block 2) is never executed,
-since none of the test cases make the condition (a || b) evaluate to false. To achieve 100% branch
-coverage, a fourth test case has to be added where both a and b are false.</p>
-<p>The key differences between branch coverage and condition coverage are:</p>
-<ul>
+<section id="stuctural-coverage">
+<h4>Stuctural Coverage<a class="headerlink" href="#stuctural-coverage" title="Link to this heading">#</a></h4>
+<p>Structural coverage is a white-box testing technique used to check if the testing is sufficient by
+analyzing if code constructs were called during testing.</p>
+<p>In S-CORE we do both:</p>
+<ul class="simple">
+<li><p><strong>Statement Coverage:</strong> Measures whether each executable source code statement has been executed.</p></li>
 <li><p><strong>Branch Coverage:</strong> Measures whether each possible branch (decision outcome) in the code has
 been executed. It focuses on the overall boolean result of a decision point (if, while, etc.).</p></li>
-<li><p><strong>Condition Coverage:</strong> Measures whether each boolean sub-expression in a decision has independently
-taken all possible outcomes (true/false). It evaluates individual conditions within complex boolean expressions.</p></li>
-<li><p><strong>Condition coverage is more granular</strong> than branch coverage. For example, in a statement like
-<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">(A</span> <span class="pre">&amp;&amp;</span> <span class="pre">B)</span></code>, branch coverage only requires the entire expression to evaluate to both true
-and false at least once. Condition coverage would require that A and B each independently
-evaluate to both true and false.</p>
-<p><strong>Example</strong></p>
-<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="c1">// Do something</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Branch coverage: Need test cases where the entire expression is true, and where it’s false</p></li>
-<li><p>Condition coverage: Need test cases where x &gt; 0 is true/false and y &gt; 0 is true/false independently</p></li>
 </ul>
-</li>
-</ul>
-<p>For C++ based unit testing gTest is the “software tool” which supports conditional coverage, but
-has no direct option to create branch coverage. This has be considered, while writing unit tests.</p>
+<p>S-CORE evaluates this coverage using the compiler selected for the target reference platform.</p>
+<p>If a sufficient structural coverage is not reached then additional test cases are added.
+What is sufficient and how to determine the coverage is defined in the <a class="reference internal" href="../../../../platform_management_plan/software_verification.html#doc__verification_plan" title="doc__verification_plan"><em class="xref need">Software Verification Plan (doc__verification_plan)</em></a>.</p>
 </section>
 </section>
 <section id="derivation-techniques">
@@ -1072,7 +1033,7 @@ and fix the underlying issue in the code.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-injection">Fault Injection</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interface-test">Interface Test</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#condition-coverage">Condition Coverage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stuctural-coverage">Stuctural Coverage</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">
@@ -1090,7 +1051,7 @@ and fix the underlying issue in the code.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/process/process_areas/verification/guidance/verification_guidance.rst">
+    <a href="https://github.com/eclipse-score/score/edit/main/docs/process/process_areas/verification/guidance/verification_guideline.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -1106,7 +1067,7 @@ and fix the underlying issue in the code.</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../../_sources/process/process_areas/verification/guidance/verification_guidance.rst.txt"
+      <li><a href="../../../../_sources/process/process_areas/verification/guidance/verification_guideline.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
