@@ -118,7 +118,7 @@ Because in the S-CORE SW platform integration of safety-related systems not deve
 Because in the S-CORE SW platform no ASIL decomposition is planned: :need:`std_wp__iso26262__analysis_551`, :need:`std_wp__iso26262__analysis_552`
 
 
-Summary: :need:`wp__tailoring` links to all the work products which are tailored out in the platform security plan,
+Summary: :need:`wp__tailoring` links to all the work products which are tailored out in the platform safety plan,
 to be able to demonstrate completeness in :ref:`external_standards`
 
 Approach
