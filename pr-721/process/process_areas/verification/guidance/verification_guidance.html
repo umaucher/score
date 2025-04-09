@@ -560,7 +560,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ea161a8b">
+<div class="need_container docutils container" id="SNCB-af05d88d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -973,6 +973,41 @@ Test Values could be:</p>
 Aim to cover all classes in your test suite.</p>
 </div></blockquote>
 </section>
+<section id="fuzzy-testing">
+<h4>Fuzzy Testing<a class="headerlink" href="#fuzzy-testing" title="Link to this heading">#</a></h4>
+<p>Fuzzy Testing, often called Fuzz Testing, is a software testing technique that involves providing
+invalid, unexpected, or random data as inputs to a component or system to detect defects. The goal
+of fuzzy testing is to expose unhandled exceptions, memory leaks, assertion failures, and other
+critical issues by generating semi-random inputs and observing the system’s behavior.</p>
+<p>The following perspectives are included in <code class="docutils literal notranslate"><span class="pre">fuzz-testing</span></code>:</p>
+<blockquote>
+<div><p><strong>Detect Security Vulnerabilities</strong></p>
+<p>By feeding malformed or unexpected inputs, fuzzy testing can reveal security vulnerabilities
+like buffer overflows, SQL injections, and other input validation issues.</p>
+<p><strong>Uncover Edge Cases</strong></p>
+<p>Fuzzy testing can discover edge cases that might not be covered by traditional testing methods,
+as it generates inputs that developers might not have anticipated.</p>
+<p><strong>Automate Input Generation</strong></p>
+<p>Instead of manually creating test inputs, fuzzy testing automates the process, allowing for a
+much larger number of test cases to be executed.</p>
+<p><strong>Improve Robustness</strong></p>
+<p>By exposing the system to a wide variety of inputs, fuzzy testing helps ensure that the
+software can handle unexpected situations gracefully.</p>
+</div></blockquote>
+<p>How to perform fuzzy testing:</p>
+<blockquote>
+<div><p><strong>1. Identify Target Functions</strong> Determine which functions or interfaces are suitable for
+fuzzy testing, focusing on those that process external inputs.</p>
+<p><strong>2. Define Input Structure</strong> Understand the basic structure or format of valid inputs to
+create effective fuzzers that can produce semi-valid inputs.</p>
+<p><strong>3. Generate Fuzzy Inputs</strong> Create inputs that are slightly malformed or unexpected, either
+through complete randomization or by mutating valid inputs.</p>
+<p><strong>4. Monitor System Behavior</strong> Execute the system with fuzzy inputs and monitor for crashes,
+hangs, memory leaks, or other unexpected behaviors.</p>
+<p><strong>5. Analyze and Fix Issues</strong> When a problem is detected, analyze the input that caused it
+and fix the underlying issue in the code.</p>
+</div></blockquote>
+</section>
 </section>
 </section>
 </section>
@@ -1043,6 +1078,7 @@ Aim to cover all classes in your test suite.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-values">Boundary Values</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence-classes">Equivalence Classes</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-testing">Fuzzy Testing</a></li>
 </ul>
 </li>
 </ul>

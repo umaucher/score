@@ -141,50 +141,38 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - Identifier
      - Applicable on level
      - Applicable for QM / ASIL B
-   * - Control Flow Analysis
-     - control-flow-analysis
-     - 1, 2, -
-     - QM & ASIL B
-   * - Data Flow Analysis
-     - data-flow-analysis
-     - 1, 2, -
-     - QM & ASIL B
-   * - Fault Injection
-     - fault-injection
-     - 1, -, -
-     - ASIL B
-   * - Inspection
-     - inspection
-     - 1, -, -
-     - ASIL B
-   * - Interface Test
-     - interface-test
-     - -, 2, 3
-     - QM & ASIL B
-   * - Requirements-based Test
-     - requirements-based
-     - -,  2, 3
-     - QM & ASIL B
-   * - Resource Usage Evaluation (only on reference environment)
-     - resource-usage
-     - -, -, 3
-     - QM & ASIL B
    * - Static Code Analysis
      - static-code-analysis
-     - 1, 2, 3
+     - 1, -, -
      - QM & ASIL B
    * - Structural Statement Coverage (Code coverage)
      - structural-statement-coverage
      - 1, -, -
-     - ASIL B
+     - QM & ASIL B
    * - Structural Condition Coverage (Code coverage)
      - structural-condition-coverage
      - 1, -, -
-     - ASIL B
+     - QM & ASIL B
    * - Walkthrough
      - walkthrough
      - 1, 2, 3
      - QM
+   * - Inspection
+     - inspection
+     - 1, 2, 3
+     - ASIL B
+   * - Interface Test
+     - interface-test
+     - 1, 2, -
+     - QM & ASIL B
+   * - Requirements-based Test
+     - requirements-based
+     - 1,  2, -
+     - QM & ASIL B
+   * - Resource Usage Evaluation (only on reference environment)
+     - resource-usage
+     - -, 2, -
+     - QM & ASIL B
 
 For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
 These are data-flow-analysis as well as control-flow-analysis
@@ -202,30 +190,24 @@ Test Derivation Methods
      - Identifier
      - Applicable on level
      - Applicable for QM / ASIL B
-   * - Analysis of Boundary Values
-     - boundary-values
-     - 1, 2, 3
-     - QM, ASIL B
-   * - Analysis of Equivalence Classes
-     - equivalence-classes
-     - 2, 3
-     - QM, ASIL B
    * - Analysis of Requirements
      - requirements-analysis
-     - 2, 3
+     - 1, 2, 3
      - QM, ASIL B
-   * - Error Guessing based on Knowledge or Experience
-     - error-guessing
-     - 2, 3
+   * - Analysis of Boundary Values
+     - boundary-values
+     - 1, 2, -
+     - ASIL B
+   * - Analysis of Equivalence Classes
+     - equivalence-classes
+     - 1, 2, -
+     - ASIL B
+   * - Fuzzy Testing (focus security)
+     - fuzz-testing
+     - 1, 2, -
      - QM, ASIL B
-   * - Random Testing
-     - monkey-testing
-     - 3
-     - QM, ASIL B
-   * - Explorative Testing
-     - explorative-testing
-     - 2, 3
-     - QM, ASIL B
+
+The ``fuzz-testing`` should especially be taken into account to increase security of the software
 
 For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
 testing approaches, but cannot omit them completely. It may be possible to reduce the
