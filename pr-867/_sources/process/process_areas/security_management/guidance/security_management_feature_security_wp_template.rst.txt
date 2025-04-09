@@ -12,14 +12,13 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Security Work Products Template
-===============================
+Feature Security Work Products Template
+=======================================
 
 .. gd_temp:: Feature Security Work Products Template
    :id: gd_temp__feature_security_wp
    :status: valid
    :complies:
-
 
 .. list-table:: Feature <feature> Work Products
     :header-rows: 1
@@ -52,7 +51,7 @@ Security Work Products Template
       - <link to WP>
       - <automated>
 
-    * - :need:`wf__cr_mt_featarch`
+    * - :need:`wp__feature_arch`
       - <link to process>
       - <automated>
       - <link to issue>

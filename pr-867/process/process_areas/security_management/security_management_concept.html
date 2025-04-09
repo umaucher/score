@@ -552,7 +552,7 @@
                   
   <section id="concept-description">
 <span id="process-security-management"></span><h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-11b53681">
+<div class="need_container docutils container" id="SNCB-8fc02404">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__security_management_process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -574,7 +574,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">security_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_plan" title="doc_concept__security_management_process">wf__cr_mt_security_plan</a>, <a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_package" title="doc_concept__security_management_process">wf__cr_mt_security_package</a>, <a class="reference internal" href="security_management_workflow.html#wf__p_fs_audit_security" title="doc_concept__security_management_process">wf__p_fs_audit_security</a>, <a class="reference internal" href="security_management_workflow.html#wf__p_formal_security_rv" title="doc_concept__security_management_process">wf__p_formal_security_rv</a>, <a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_manual" title="doc_concept__security_management_process">wf__cr_mt_security_manual</a>, <a class="reference internal" href="security_management_workflow.html#wf__mr_vy_security" title="doc_concept__security_management_process">wf__mr_vy_security</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_plan" title="doc_concept__security_management_process">wf__cr_mt_security_plan</a>, <a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_package" title="doc_concept__security_management_process">wf__cr_mt_security_package</a>, <a class="reference internal" href="security_management_workflow.html#wf__p_fs_audit_security" title="doc_concept__security_management_process">wf__p_fs_audit_security</a>, <a class="reference internal" href="security_management_workflow.html#wf__p_formal_security_rv" title="doc_concept__security_management_process">wf__p_formal_security_rv</a>, <a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_manual" title="doc_concept__security_management_process">wf__cr_mt_security_manual</a>, <a class="reference internal" href="security_management_workflow.html#wf__cr_mt_security_sbom" title="doc_concept__security_management_process">wf__cr_mt_security_sbom</a>, <a class="reference internal" href="security_management_workflow.html#wf__mr_vy_security" title="doc_concept__security_management_process">wf__mr_vy_security</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -597,22 +597,14 @@
 </div>
 </div>
 <p>In this section a concept for the Security Management will be discussed. Inputs for this concepts
-are mianly the requirements of ISO SAE 21434 Clause 5 and 6.</p>
-<section id="key-concept">
-<h2>Key concept<a class="headerlink" href="#key-concept" title="Link to this heading">#</a></h2>
-<p>A Change Request is the <strong>ONLY</strong> way to contribute (compare <a class="reference internal" href="../../../contribute/contribution_request/index.html#gd_guidl__contr_request_guideline" title="gd_guidl__contr_request_guideline"><em class="xref need">Contribution Request Guideline (gd_guidl__contr_request_guideline)</em></a>)
-new features or to modify the scope of existing features in the <strong>S-CORE</strong> project.
-As features are built-up by Components a Change Request is also needed to add new Components or
-to modify the scope of existing Components.
-As a Software Module is defined as the top-level Component, all statements here for Components
-are also valid for Software Modules.</p>
-</section>
+are mainly the requirements of ISO SAE 21434 Clause 5, 6, 8 and 15.</p>
+<p>The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
 <ol class="arabic simple">
 <li><p>Stakeholders for the Security Management work products?</p></li>
 <li><p>Who needs which information?</p></li>
-<li><p>Which safety security do we have?</p></li>
+<li><p>Which security plans do we have?</p></li>
 <li><p>Which other work products of security management are important?</p></li>
 <li><p>What tooling do we need?</p></li>
 </ol>
@@ -634,7 +626,7 @@ See also his role definition in <a class="reference internal" href="security_man
 </li>
 <li><p><a class="reference internal" href="../safety_management/roles.html#rl__external_auditor" title="rl__external_auditor"><em class="xref need">External Auditor (rl__external_auditor)</em></a></p>
 <ul class="simple">
-<li><p>understand activities planning, processes definition and execution</p></li>
+<li><p>understand activities planning, processes definition and execution (needs review, if we consider that)</p></li>
 </ul>
 </li>
 <li><p>“Distributor” (external role)</p>
@@ -656,16 +648,14 @@ See also his role definition in <a class="reference internal" href="security_man
 </ul>
 </section>
 </section>
-<section id="change-request-types">
-<h2>Change Request Types<a class="headerlink" href="#change-request-types" title="Link to this heading">#</a></h2>
-<section id="security-plans">
-<h3>Security Plans<a class="headerlink" href="#security-plans" title="Link to this heading">#</a></h3>
+<section id="security-management-plans">
+<h2>Security Management Plans<a class="headerlink" href="#security-management-plans" title="Link to this heading">#</a></h2>
 <p>This SW platform project defines two levels of planning: platform and module. There will be one security plan on platform level and several security plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these security plan “creates” one EooC.
 The <a class="reference internal" href="../../../platform_management_plan/security_management.html#doc__platform_security_plan" title="doc__platform_security_plan"><em class="xref need">Platform Security Plan (doc__platform_security_plan)</em></a> exists only once and is part of the <a class="reference internal" href="../../../platform_management_plan/index.html#pmp"><span class="std std-ref">Platform Management Plan</span></a> of S-CORE.</p>
 </section>
 <section id="security-management-work-products">
-<h3>Security Management Work Products<a class="headerlink" href="#security-management-work-products" title="Link to this heading">#</a></h3>
+<h2>Security Management Work Products<a class="headerlink" href="#security-management-work-products" title="Link to this heading">#</a></h2>
 <p>Apart from the security plans the main work products of security management are (see also the link to workflows below):</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="security_management_workproducts.html#wp__platform_security_manual" title="wp__platform_security_manual"><em class="xref need">Security Manual (wp__platform_security_manual)</em></a> - the security manual defines the requirements for safe and secure usage or integration of the SW platform (or its individual modules)</p></li>
@@ -674,103 +664,10 @@ The <a class="reference internal" href="../../../platform_management_plan/securi
 </ul>
 </section>
 <section id="security-management-tooling">
-<h3>Security Management Tooling<a class="headerlink" href="#security-management-tooling" title="Link to this heading">#</a></h3>
+<h2>Security Management Tooling<a class="headerlink" href="#security-management-tooling" title="Link to this heading">#</a></h2>
 <p>For the security planning and security manual, sphinx-needs will be used for referencing.</p>
 <p>For the activities planning (who, when) we use github issues and monitor these in github projects.</p>
 <p>For the reporting (e.g. displaying the status of the work products) additional tooling is created (see <a class="reference internal" href="guidance/security_management_process_reqs.html"><span class="doc">Security Management Process Requirements</span></a>)</p>
-</section>
-</section>
-<section id="attributes-of-change-requests">
-<h2>Attributes of Change Requests<a class="headerlink" href="#attributes-of-change-requests" title="Link to this heading">#</a></h2>
-<p>The required attributes for the Change Requests are defined in this subchapter.</p>
-<p>Following attributes need to be filled manually for each Change Request:</p>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 39 </span><span class="caption-text">Manual Attributes</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
-<colgroup>
-<col style="width: 15.0%" />
-<col style="width: 85.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Attribute</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Unique ID</p></td>
-<td><p>The unique id</p></td>
-</tr>
-<tr class="row-odd"><td><p>Status</p></td>
-<td><p>The status of a Change Request can either be “draft”, “in review”, “accepted” or “rejected”.</p></td>
-</tr>
-<tr class="row-even"><td><p>Title</p></td>
-<td><p>Reason for the Change Request</p></td>
-</tr>
-<tr class="row-odd"><td><p>Description</p></td>
-<td><p>Exact description of the Change Request</p></td>
-</tr>
-<tr class="row-even"><td><p>Safety</p></td>
-<td><p>These attribute describes the impact on functional safety.</p></td>
-</tr>
-<tr class="row-odd"><td><p>Security</p></td>
-<td><p>This attribute describes the impact on security</p></td>
-</tr>
-<tr class="row-even"><td><p>Change Request Type</p></td>
-<td><p>Following types are defined: [Feature, Feature Modification, Component, Component Modification]</p></td>
-</tr>
-<tr class="row-odd"><td><p>Affected work products</p></td>
-<td><p>Links to the work products affected by the Change Request</p></td>
-</tr>
-<tr class="row-even"><td><p>Milestone</p></td>
-<td><p>Planned date (milestone) of deployment of the Change Request</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section id="activities-for-a-change-request">
-<h2>Activities for a Change Request<a class="headerlink" href="#activities-for-a-change-request" title="Link to this heading">#</a></h2>
-<section id="analysis-of-the-change-request">
-<h3>Analysis of the Change Request<a class="headerlink" href="#analysis-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>The affected work products must be identified.
-The potential impact on functional safety and security must be addressed.
-Schedule, risks, resources for the realization must be evaluated.
-Verification measures must be defined.
-Use therefore the : <a class="reference internal" href="../change_management/guidance/change_management_impact_analysis_template.html#chm-impact-analysis-templates"><span class="std std-ref">Impact Analysis Template</span></a>.</p>
-</section>
-<section id="evaluation-of-the-change-request">
-<h3>Evaluation of the Change Request<a class="headerlink" href="#evaluation-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>Based on the analysis results decision about the acceptance, rejection or delay must be taken
-by authorized persons.</p>
-<p>Authorized person includes</p>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a></p></li>
-<li><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Lead (rl__module_lead)</em></a></p></li>
-<li><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a></p></li>
-<li><p><a class="reference internal" href="security_management_roles.html#rl__security_manager" title="rl__security_manager"><em class="xref need">Security Manager (rl__security_manager)</em></a></p></li>
-<li><p><a class="reference internal" href="../../roles/index.html#rl__quality_manager" title="rl__quality_manager"><em class="xref need">Quality Manager (rl__quality_manager)</em></a></p></li>
-</ol>
-<p>Further prioritization must be done, e.g. based on release planning.</p>
-</section>
-<section id="implementation-of-the-change-request">
-<h3>Implementation of the Change Request<a class="headerlink" href="#implementation-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>If the Change Request is accepted, it must be implemented.</p>
-</section>
-<section id="verification-of-the-change-request">
-<h3>Verification of the Change Request<a class="headerlink" href="#verification-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>The defined verification measures must be use to confirm the implementation.</p>
-</section>
-<section id="reporting-of-the-change-request">
-<h3>Reporting of the Change Request<a class="headerlink" href="#reporting-of-the-change-request" title="Link to this heading">#</a></h3>
-<p>The status of the Change Request must be communicated by the
-<a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> or <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__module_lead" title="rl__module_lead"><em class="xref need">Module Lead (rl__module_lead)</em></a> until
-the implementation is completed and confirmed.</p>
-</section>
-<section id="traceability-concept-for-change-requests">
-<h3>Traceability Concept for Change Requests<a class="headerlink" href="#traceability-concept-for-change-requests" title="Link to this heading">#</a></h3>
-<p>The standards require that a Change Request can be traced throughout the complete hierarchy levels
-including all affected work products.</p>
-<p>In general the traceability is visualized in the general traceability concept (<a class="reference internal" href="../../general_concepts/score_traceability_concept.html#general-concepts-traceability"><span class="std std-ref">Traceability concept</span></a>).</p>
-</section>
 </section>
 </section>
 
@@ -821,28 +718,14 @@ including all affected work products.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-concept">Key concept</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs">Inputs</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stakeholders-for-the-security-management">Stakeholders for the Security Management</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard-requirements">Standard Requirements</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#change-request-types">Change Request Types</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-plans">Security Plans</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-management-work-products">Security Management Work Products</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security-management-tooling">Security Management Tooling</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#attributes-of-change-requests">Attributes of Change Requests</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#activities-for-a-change-request">Activities for a Change Request</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-of-the-change-request">Analysis of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation-of-the-change-request">Evaluation of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementation-of-the-change-request">Implementation of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-of-the-change-request">Verification of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-of-the-change-request">Reporting of the Change Request</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#traceability-concept-for-change-requests">Traceability Concept for Change Requests</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-management-plans">Security Management Plans</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-management-work-products">Security Management Work Products</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-management-tooling">Security Management Tooling</a></li>
 </ul>
   </nav></div>
 

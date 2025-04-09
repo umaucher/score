@@ -20,7 +20,7 @@ Security Management Guideline
 .. gd_guidl:: Security plan definitions
    :id: gd_guidl__security_plan_definitions
    :status: valid
-   :complies:
+   :complies: std_req__isosae21434__org_management_5421, std_req__isosae21434__org_management_5422, std_req__isosae21434__org_management_5423, std_req__isosae21434__org_management_5443, std_req__isosae21434__org_management_5451, std_req__isosae21434__org_management_5461, std_req__isosae21434__continual_8321, std_req__isosae21434__continual_8322
 
    | **Overall security management:**
    | Security culture:
@@ -42,12 +42,12 @@ Security Management Guideline
    | Development teams are interdisciplinary, so the regular (sprint) planning and review meetings enable communication (as defined in :need:`doc__project_mgt_plan`). Another main communication means are the Pull Request reviews.
    | Also the standard Eclipse Foundation communication strategies are used (e.g. mailing lists)
    |
-   | Security anomalies:
+   | Security Weaknessess, Vulnerabilities:
    | As the SW platform organization does not have own vehicles in the field, it relies on feedback from OEMs and Distributors on bugs discovered in the field. The need for this feedback is part of each security manual.
-   | But also during development of change requests to existing features, bug reporting by the Open Source community or integration of existing SW components into new features may lead to the discovery of new security anomalies.
-   | Security anomalies can also be deviations from the development process with impact on security.
+   | But also during development of change requests to existing features, bug reporting by the Open Source community or integration of existing SW components into new features may lead to the discovery of new security weaknessess and vulnerabilities.
+   | Security weaknessess and vulnerabilities can also be deviations from the development process with impact on security.
    | If these are known at the time of creation of a release they will be part of the :need:`wp__module_security_package` or :need:`wp__platform_security_package` for the EooC.
-   | Security anomalies relevant for already delivered releases will be identified as such and communicated (as defined in Problem Resolution part of :need:`wp__platform_mgmt`) via the :need:`wp__issue_track_system` (which is also Open Source).
+   | Security weaknessess and vulnerabilities relevant for already delivered releases will be identified as such and communicated (as defined in Problem Resolution part of :need:`wp__platform_mgmt`) via the :need:`wp__issue_track_system` (which is also Open Source).
    |
    | **Tailoring security activities:**
    | Main tailoring driver is that the SW platform is pure SW development and is provided as "EooC" - this explains mainly the generic, platform wide tailoring.
@@ -93,21 +93,30 @@ Security Management Guideline
    | Tool Management planning is part of the :need:`wp__platform_mgmt`. The respective work product to be planned as an issue  of the generic security plan is the :need:`wp__tool_verification`, which contains tool evaluation and if applicable qualification of the SW platform toolchain.
    | Components developed in C++ and Rust will have different toolchains. Both will be qualified once for the SW platform.
    |
+   | **Provision of a Software Bill of Materials (SBOM) and Vulnerability Management**
+   | SBOMs provide a comprehensive inventory of all components and dependencies within a software project, thus they can be interpreted as configuration information.
+   | `Eclipse Project Handbook: Software Bill of Material <https://www.eclipse.org/projects/handbook/#sbom>`_ recommends to generate SBOMs and
+   | contains also information how to generate SBOMs.
+   | SBOMs are used as sources for collection of information and as trigger for further investigations as identifying weaknesses and vulnerabilities.
+   |
+   | `Eclipse Foundation Security Team <https://www.eclipse.org/projects/handbook/#vulnerability-team>`_ provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities.
+   | Nevertheless the all :need:`rl__contributor` and :need:`rl__committer` are responsible for following the `Eclipse Foundation Security Policy <https://www.eclipse.org/security/policy/>`_.
+   | The :need:`Security Team <rl__security_team>` is responsible for coordinating the resolution of vulnerabilities within the Project.
 
 .. gd_guidl:: Security manual generation
    :id: gd_guidl__security_manual
    :status: valid
-   :complies:
+   :complies: std_req__isosae21434__prj_management_6491, std_req__isosae21434__prj_management_6492
 
    | The security manual collects several work products and adds some additional content mainly to instruct the user of
    | a EooC (in this project on platform and module level) to securely use it in the context of the user's own security
-   | element.
+   | element and requirements for post-development.
    | Its main content is described in :need:`wp__platform_security_manual` and :need:`wp__module_security_manual`
    | A template exists to guide the definition of the security manual on platform and module level (:need:`gd_temp__security_manual`).
 
 .. gd_guidl:: Security package automated generation
    :id: gd_guidl__security_package
    :status: valid
-   :complies:
+   :complies: std_req__isosae21434__prj_management_6471
 
    | The security package shall be generated progressively and automatically compiling the work products.

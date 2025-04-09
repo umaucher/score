@@ -72,7 +72,7 @@
         </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="SecurityPackage Formal Review Checklist" href="security_management_checklist_security_package.html" />
+    <link rel="next" title="Security Package Formal Review Checklist" href="security_management_checklist_security_package.html" />
     <link rel="prev" title="Module Security Plan Template" href="security_management_module_security_plan_template.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -465,10 +465,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../security_management_concept.html">Concept Description</a></li>
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="security_management_guideline.html">Security Management Guideline</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security_management_feature_security_wp_template.html">Security Work Products Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security_management_feature_security_wp_template.html">Feature Security Work Products Template</a></li>
 <li class="toctree-l4"><a class="reference internal" href="security_management_module_security_plan_template.html">Module Security Plan Template</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Security Manual Template</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security_management_checklist_security_package.html">SecurityPackage Formal Review Checklist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security_management_checklist_security_package.html">Security Package Formal Review Checklist</a></li>
 <li class="toctree-l4"><a class="reference internal" href="security_management_checklist_security_plan.html">Security Plan Review Checklist</a></li>
 <li class="toctree-l4"><a class="reference internal" href="security_management_process_reqs.html">Security Management Process Requirements</a></li>
 </ul>
@@ -564,7 +564,7 @@
                   
   <section id="security-manual-template">
 <h1>Security Manual Template<a class="headerlink" href="#security-manual-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-09d42d46">
+<div class="need_container docutils container" id="SNCB-6ef0b7ce">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__security_manual">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -584,6 +584,7 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">security_management</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../security_management_workflow.html#wf__cr_mt_security_manual" title="gd_temp__security_manual">wf__cr_mt_security_manual</a></span></span></div>
 </span></div>
@@ -635,9 +636,9 @@
 <section id="assumptions-on-the-user">
 <h3>Assumptions on the User<a class="headerlink" href="#assumptions-on-the-user" title="Link to this heading">#</a></h3>
 <div class="line-block">
-<div class="line">As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform EooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform EooC security pacakge.</div>
+<div class="line">As there is no assumption on which specific OS and HW is used, the integration testing of the stakeholder and feature requirements is expected to be performed by the user of the platform EooC. Tests covering all stakeholder and feature requirements performed on a reference platform (tbd link to reference platform specification), reviewed and passed are included in the platform EooC security package.</div>
 <div class="line">Additionally the components of the platform may have additional specific assumptions how they are used. These are part of every module documentation: &lt;link to add&gt;. Assumptions from components to their users can be fulfilled in two ways:</div>
-<div class="line">1. There are assumption which need to be fulfilled by all SW components, e.g. “every user of an IPC mechanism needs to make sure that he provides correct data (including appropriate ASIL level)” - in this case the AoU is marked as “platform”.</div>
+<div class="line">1. There are assumption which need to be fulfilled by all SW components, e.g. “every user of an IPC mechanism needs to make sure that he provides correct data (e.g. including appropriate security (access) control)” - in this case the AoU is marked as “platform”.</div>
 <div class="line">2. There are assumption which can be fulfilled by a security control realized by some other S-CORE platform component and are therefore not relevant for an user who uses the whole platform. But those are relevant if you chose to use the module EooC stand-alone - in this case the AoU is marked as “module”. An example would be the “JSON read” which requires “The user shall provide a string as input which is not corrupted due to HW or QM SW errors.” - which is covered when using together with safe S-CORE platform persistency feature.</div>
 </div>
 <p>List of AoUs on the user of the platform features or the module of this security manual:</p>
@@ -647,13 +648,13 @@
 <section id="security-concept-of-the-eooc">
 <h2>Security concept of the EooC<a class="headerlink" href="#security-concept-of-the-eooc" title="Link to this heading">#</a></h2>
 <div class="line-block">
-<div class="line">&lt;Describe here the security concept incl. which faults are taken care of, reactions of the implemented functions under anomalous operating conditions … if this is not already documented sufficiently in the feature documentation “security impact” section of all the features the module is used in.&gt;</div>
+<div class="line">&lt;Describe here the security concept incl. which attack paths are taken care of, reactions of the implemented functions under threatened operating conditions … if this is not already documented sufficiently in the feature documentation “security impact” section of all the features the module is used in.&gt;</div>
 </div>
 </section>
-<section id="security-anomalies">
-<h2>Security Anomalies<a class="headerlink" href="#security-anomalies" title="Link to this heading">#</a></h2>
+<section id="security-weaknesses-vulnerabilities">
+<h2>Security Weaknesses, Vulnerabilities<a class="headerlink" href="#security-weaknesses-vulnerabilities" title="Link to this heading">#</a></h2>
 <div class="line-block">
-<div class="line">Anomalies (bugs in ASIL SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes &lt;add link to release note&gt;.</div>
+<div class="line">Weaknesses, Vulnerabilities (bugs in security relevant SW, detected by testing or by users, which could not be fixed) known before release are documented in the platform/module release notes &lt;add link to release note&gt;.</div>
 </div>
 </section>
 <section id="references">
@@ -689,7 +690,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SecurityPackage Formal Review Checklist</p>
+        <p class="prev-next-title">Security Package Formal Review Checklist</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -720,7 +721,7 @@
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-concept-of-the-eooc">Security concept of the EooC</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-anomalies">Security Anomalies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-weaknesses-vulnerabilities">Security Weaknesses, Vulnerabilities</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
 </ul>
   </nav></div>

@@ -41,17 +41,17 @@ Roles
 
    * 2 years of experience in the management of security topics
    * Experience in managing projects
-   * Experience in managing security anomalies, vulnerabilities
+   * Experience in managing security weaknessess, vulnerabilities
 
    Responsibility
 
    * Creating the Security Plan
    * Security related project status reporting
    * Creation and Monitoring of completeness of the security package
-   * Reporting of security anomalies
+   * Reporting of security weaknesses, vulnerabilities
    * Verify, that the preconditions for the "release for production", which are  part of the release notes, are fulfilled, and the correctness, completeness and consistency of the release notes
    * Coaching the project team w.r.t all questions related to security
-   * Planning of security audit
+   * Planning of security audit (to be discussed, currently not in scope)
    * Approval of security analyses
    * Creating the security manuals on platform and module level
    * Checking that every person in his team has sufficient security skills for his role
@@ -59,7 +59,7 @@ Roles
    Authority
 
    * Escalation of planning topics to the project manager defined in the security plan
-   * Initiate the publication of a security anomaly
+   * Initiate the publication of a security weakness, vulnerability
    * Recommend the Release of a SW platform or a module
    * Refusing the approval of work products as defined in the workflows
    * Refusing the approval of his team's role nomination (i.e. requesting that the role will be withdrawn)

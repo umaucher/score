@@ -24,7 +24,7 @@ This document implements <add "need" link>
 
 
    | **1. Security Management Context**
-   | This Security Plan adds to the :ref:`process_security_management` all the module development relevant workproducts needed for ISO SAE 21434 conformity.
+   | This Security Plan adds to the :ref:`process_security_management` all the module development relevant work products needed for ISO SAE 21434 conformity.
    |
    | **2. Security Management Scope**
    | This Security Plan's scope is a SW module of the SW platform <link to module documentation in platform/modules/<modulename>/index.rst>.
@@ -127,6 +127,13 @@ This document implements <add "need" link>
           - <Link to WP>
           - <automated>
 
+        * - :need:`wp__sw_module_sbom`
+          - :ref:`tool_management`
+          - not started
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
 
 .. list-table:: Component <name> Work Products
         :header-rows: 1
@@ -166,7 +173,7 @@ This document implements <add "need" link>
           - Checklist used in Pull Request Review
           - n/a
 
-        * - :need:`wf__cr_mt_comparch`
+        * - :need:`wp__component_arch`
           - <Link to process>
           - <automated>
           - <Link to issue>

@@ -95,6 +95,11 @@ Security Plan Review Checklist
           - <Rationale for result>
 
         * - 13
-          - If reuse of a software components is intended, is it planned to be analysed?
+          - Does the security plan define all needed activities for SBOM generation?
+          - [YES | NO ]
+          - <Rationale for result>
+
+        * - 14
+          - Does the security plan define regular vulnerability scans for the generated SBOM?
           - [YES | NO ]
           - <Rationale for result>

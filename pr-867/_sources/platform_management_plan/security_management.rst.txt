@@ -39,6 +39,8 @@ And:
 * to plan to create a comprehensible security package (collection of the security related work products)
 * to judge whether the SW achieves security process conformance
 
+The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.
+
 Objectives and Scope
 ++++++++++++++++++++
 
@@ -117,7 +119,7 @@ The project will be under the Eclipse Foundation and so the `Eclipse Foundation 
 
 * `Contributors <https://www.eclipse.org/projects/handbook/#contributing-contributors>`_ can be everyone and we will not discourage the open source community from this. As the contributor cannot merge code (or any other work product) into the project's codebase, the security development competence of the contributor is irrelevant.
 * `Committers <https://www.eclipse.org/projects/handbook/#contributing-committers>`_ play the main development role in the project, as only these are allowed to merge, so they are the ultimate responsible for the project's repository content.
-* The Eclipse `Project Lead(s) <https://www.eclipse.org/projects/handbook/#roles-pl>`_ has the ISO 26262 project manager role.
+* `Eclipse Foundation Security Team <https://www.eclipse.org/projects/handbook/#vulnerability-team>`_ provides help and advice to Eclipse projects on security issues and is the first point of contact for handling security vulnerabilities.
 
 *Project Roles*
 
@@ -154,6 +156,10 @@ In case of security related "CODEOWNER" sections (e.g. a file containing feature
 The successful checking of committers and CODEOWNERS skills is ensured by the security manager and documented in the role assignment document.
 One important aspect to this is, that we ensure the identity of the committer by applying the GitHub digital signature mechanism.
 
+*Policies*
+The `Eclipse Foundation Security Policy <https://www.eclipse.org/security/policy/>`_ apply for S-CORE.
+
+
 Security Resources
 ^^^^^^^^^^^^^^^^^^
 
@@ -170,9 +176,11 @@ Resource and milestone planning is done as defined in the :doc:`project_manageme
 *Tools*
 
 The whole development and thus all work products are located in Github. The development is automated as much as possible and follows the defined processes.
-Github issues are used as planning tool.
+Github issues are used as planning tool as well as security information (weakness, vulnerability) reporting and managing tool.
 The issue types and issue types workflows are described in the platform management plan.
 For security relevant issues types a "security" label is used.
+
+Reporting of vulnerabilities is supported here: `Eclipse general vulnerability tracker <https://gitlab.eclipse.org/security>`_.
 
 Security Management Communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -413,6 +421,13 @@ Security Management SW Platform Work Products
       - `#TBD2 <https://github.com/eclipse-score/score/issues/307>`_
       - :ref:`standard_iso26262` & :need:`doc__platform_safety_plan`
       - valid
+
+    * - :need:`wp__sw_platform_sbom`
+      - :need:`wf__cr_mt_security_sbom`
+      - not started
+      - <Link to issue>
+      - <Link to WP>
+      - <automated>
 
 Security Management Feature Specific Work Products
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

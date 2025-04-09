@@ -23,24 +23,17 @@ Concept Description
    :tags: security_management
 
 In this section a concept for the Security Management will be discussed. Inputs for this concepts
-are mianly the requirements of ISO SAE 21434 Clause 5 and 6.
+are mainly the requirements of ISO SAE 21434 Clause 5, 6, 8 and 15.
 
+The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.
 
-Key concept
-***********
-A Change Request is the **ONLY** way to contribute (compare :need:`gd_guidl__contr_request_guideline`)
-new features or to modify the scope of existing features in the **S-CORE** project.
-As features are built-up by Components a Change Request is also needed to add new Components or
-to modify the scope of existing Components.
-As a Software Module is defined as the top-level Component, all statements here for Components
-are also valid for Software Modules.
 
 Inputs
 ******
 
 #. Stakeholders for the Security Management work products?
 #. Who needs which information?
-#. Which safety security do we have?
+#. Which security plans do we have?
 #. Which other work products of security management are important?
 #. What tooling do we need?
 
@@ -60,7 +53,7 @@ Stakeholders for the Security Management
 
 #. :need:`External Auditor <rl__external_auditor>`
 
-   * understand activities planning, processes definition and execution
+   * understand activities planning, processes definition and execution (needs review, if we consider that)
 
 #. "Distributor" (external role)
 
@@ -78,19 +71,15 @@ Also requirements of standards need to be taken into consideration:
 * ASPICE
 * ISO SAE 21434
 
-Change Request Types
-********************
-
-
-Security Plans
-==============
+Security Management Plans
+*************************
 
 This SW platform project defines two levels of planning: platform and module. There will be one security plan on platform level and several security plans on module level (one for each module).
 This is how we organize our development teams and repositories. Each of these security plan "creates" one EooC.
 The :need:`Platform Security Plan <doc__platform_security_plan>` exists only once and is part of the :ref:`Platform Management Plan <pmp>` of S-CORE.
 
 Security Management Work Products
-=================================
+*********************************
 
 Apart from the security plans the main work products of security management are (see also the link to workflows below):
 
@@ -99,108 +88,10 @@ Apart from the security plans the main work products of security management are 
 * :need:`Security Package <wp__platform_security_package>` - the security package does not contain the security argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their security package.
 
 Security Management Tooling
-===========================
+***************************
 
 For the security planning and security manual, sphinx-needs will be used for referencing.
 
 For the activities planning (who, when) we use github issues and monitor these in github projects.
 
 For the reporting (e.g. displaying the status of the work products) additional tooling is created (see :doc:`guidance/security_management_process_reqs`)
-
-
-
-
-Attributes of Change Requests
-*****************************
-
-The required attributes for the Change Requests are defined in this subchapter.
-
-Following attributes need to be filled manually for each Change Request:
-
-.. list-table:: Manual Attributes
-   :header-rows: 1
-   :widths: 15,85
-
-   * - Attribute
-     - Description
-   * - Unique ID
-     - The unique id
-   * - Status
-     - The status of a Change Request can either be "draft", "in review", "accepted" or "rejected".
-   * - Title
-     - Reason for the Change Request
-   * - Description
-     - Exact description of the Change Request
-   * - Safety
-     - These attribute describes the impact on functional safety.
-   * - Security
-     - This attribute describes the impact on security
-   * - Change Request Type
-     - Following types are defined: [Feature, Feature Modification, Component, Component Modification]
-   * - Affected work products
-     - Links to the work products affected by the Change Request
-   * - Milestone
-     - Planned date (milestone) of deployment of the Change Request
-
-
-Activities for a Change Request
-*******************************
-
-
-Analysis of the Change Request
-==============================
-
-The affected work products must be identified.
-The potential impact on functional safety and security must be addressed.
-Schedule, risks, resources for the realization must be evaluated.
-Verification measures must be defined.
-Use therefore the : :ref:`Impact Analysis Template <chm_impact_analysis_templates>`.
-
-
-Evaluation of the Change Request
-================================
-
-Based on the analysis results decision about the acceptance, rejection or delay must be taken
-by authorized persons.
-
-Authorized person includes
-
-#. :need:`Technical Lead <rl__technical_lead>`
-#. :need:`Module Lead <rl__module_lead>`
-#. :need:`Safety Manager <rl__safety_manager>`
-#. :need:`Security Manager <rl__security_manager>`
-#. :need:`Quality Manager <rl__quality_manager>`
-
-Further prioritization must be done, e.g. based on release planning.
-
-
-
-Implementation of the Change Request
-====================================
-If the Change Request is accepted, it must be implemented.
-
-
-
-Verification of the Change Request
-==================================
-
-The defined verification measures must be use to confirm the implementation.
-
-
-
-Reporting of the Change Request
-===============================
-
-The status of the Change Request must be communicated by the
-:need:`Technical Lead <rl__technical_lead>` or :need:`Module Lead <rl__module_lead>` until
-the implementation is completed and confirmed.
-
-
-
-Traceability Concept for Change Requests
-========================================
-
-The standards require that a Change Request can be traced throughout the complete hierarchy levels
-including all affected work products.
-
-In general the traceability is visualized in the general traceability concept (:ref:`general_concepts_traceability`).
