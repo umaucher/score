@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Verification Guideline &#8212; Score 0.1 documentation</title>
+    <title>Verification Guideline &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -456,6 +456,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Verification</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
@@ -560,7 +562,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9bb7676c">
+<div class="need_container docutils container" id="SNCB-55437c7b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -581,7 +583,8 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">is contained by: <span class="contains"><span><a class="reference internal" href="../workflows.html#wf__verification__plan" title="gd_guidl__verification_guide">wf__verification__plan</a>, <a class="reference internal" href="../workflows.html#wf__verification__plan_maintain" title="gd_guidl__verification_guide">wf__verification__plan_maintain</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../workflows.html#wf__verification__plan" title="gd_guidl__verification_guide">wf__verification__plan</a>, <a class="reference internal" href="../workflows.html#wf__verification__plan_maintain" title="gd_guidl__verification_guide">wf__verification__plan_maintain</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__445" title="gd_guidl__verification_guide">std_req__isopas8926__445</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -676,7 +679,7 @@ test cases and reports the result in the same logging format as automated tests 
 <h2>Reporting of failing test cases<a class="headerlink" href="#reporting-of-failing-test-cases" title="Link to this heading">#</a></h2>
 <p>Any failing test case requires an ISSUE.
 The passing rate of safety-critical test cases need to be 100% in order to release the affected component.
-In case of a lower pass rate than 100% for QM level tests, the <a class="reference internal" href="../../../roles/index.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> and
+In case of a lower pass rate than 100% for QM level tests, the <a class="reference internal" href="../../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> and
 <a class="reference internal" href="../../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a> can decide, if the platform is in a releasable state. The accepted minimal
 path rate is defined in the <a class="reference internal" href="../workproducts.html#wp__verification__plan" title="wp__verification__plan"><em class="xref need">Verification Plan (wp__verification__plan)</em></a>. Due to the high degree of automation, a
 it is recommended that a path rate lower 95% is not acceptable.</p>
@@ -769,8 +772,8 @@ hard to have reasonable testing in the reference implementation</p>
 </ul>
 </div></blockquote>
 </section>
-<section id="stuctural-coverage">
-<h4>Stuctural Coverage<a class="headerlink" href="#stuctural-coverage" title="Link to this heading">#</a></h4>
+<section id="structural-coverage">
+<h4>Structural Coverage<a class="headerlink" href="#structural-coverage" title="Link to this heading">#</a></h4>
 <p>Structural coverage is a white-box testing technique used to check if the testing is sufficient by
 analyzing if code constructs were called during testing.</p>
 <p>In S-CORE we do both:</p>
@@ -1033,7 +1036,7 @@ and fix the underlying issue in the code.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-injection">Fault Injection</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interface-test">Interface Test</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#stuctural-coverage">Stuctural Coverage</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-coverage">Structural Coverage</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">

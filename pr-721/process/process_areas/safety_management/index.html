@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Safety Management &#8212; Score 0.1 documentation</title>
+    <title>Safety Management &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -456,6 +456,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problem_resolution/index.html">Problem Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">Safety Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="roles.html">Roles</a></li>
@@ -546,7 +548,7 @@
 <span id="process-safety-management"></span><h1>Safety Management<a class="headerlink" href="#safety-management" title="Link to this heading">#</a></h1>
 <section id="concept">
 <h2>Concept<a class="headerlink" href="#concept" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-ff7d9535">
+<div class="need_container docutils container" id="SNCB-fd4ccc0d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__safety_management__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -567,7 +569,7 @@
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="workflows.html#wf__cr_mt_safety_plan" title="doc_concept__safety_management__process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="workflows.html#wf__cr_comp_class" title="doc_concept__safety_management__process">wf__cr_comp_class</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_case" title="doc_concept__safety_management__process">wf__cr_mt_safety_case</a>, <a class="reference internal" href="workflows.html#wf__p_fs_audit" title="doc_concept__safety_management__process">wf__p_fs_audit</a>, <a class="reference internal" href="workflows.html#wf__p_confirm_rv" title="doc_concept__safety_management__process">wf__p_confirm_rv</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_manual" title="doc_concept__safety_management__process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="workflows.html#wf__mr_vy_safety" title="doc_concept__safety_management__process">wf__mr_vy_safety</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="workflows.html#wf__cr_mt_safety_plan" title="doc_concept__safety_management__process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="workflows.html#wf__cr_comp_class" title="doc_concept__safety_management__process">wf__cr_comp_class</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_package" title="doc_concept__safety_management__process">wf__cr_mt_safety_package</a>, <a class="reference internal" href="workflows.html#wf__p_fs_audit" title="doc_concept__safety_management__process">wf__p_fs_audit</a>, <a class="reference internal" href="workflows.html#wf__p_formal_rv" title="doc_concept__safety_management__process">wf__p_formal_rv</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_manual" title="doc_concept__safety_management__process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="workflows.html#wf__mr_vy_safety" title="doc_concept__safety_management__process">wf__mr_vy_safety</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -603,7 +605,7 @@
 <section id="stakeholders">
 <h3>Stakeholders<a class="headerlink" href="#stakeholders" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
-<li><p><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a></p>
+<li><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a></p>
 <ul class="simple">
 <li><p>planning of development for module and for platform projects</p></li>
 <li><p>status reporting of safety activities</p></li>
@@ -641,8 +643,8 @@ The <a class="reference internal" href="../../../platform_management_plan/safety
 <p>Apart from the safety plans the main work products of safety management are (see also the link to workflows below):</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="workproducts.html#wp__platform_safety_manual" title="wp__platform_safety_manual"><em class="xref need">Safety Manual (wp__platform_safety_manual)</em></a> - the safety manual defines the requirements for safe usage or integration of the SW platform (or its individual modules)</p></li>
-<li><p><a class="reference internal" href="workproducts.html#wp__cmr_reports" title="wp__cmr_reports"><em class="xref need">Confirmation Reviews (wp__cmr_reports)</em></a> - on safety plan, safety case and safety analyses, according to ISO 26262 requirements</p></li>
-<li><p><a class="reference internal" href="workproducts.html#wp__platform_safety_case" title="wp__platform_safety_case"><em class="xref need">Draft Safety Case (wp__platform_safety_case)</em></a> - the safety case compiled is draft as it does not contain the safety argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributor to integrate the SW platform (or its individual modules) in his safety case.</p></li>
+<li><p><a class="reference internal" href="workproducts.html#wp__fdr_reports" title="wp__fdr_reports"><em class="xref need">Confirmation Reviews (wp__fdr_reports)</em></a> - on safety plan, safety package and safety analyses, according to ISO 26262 requirements</p></li>
+<li><p><a class="reference internal" href="workproducts.html#wp__platform_safety_package" title="wp__platform_safety_package"><em class="xref need">Safety Package (wp__platform_safety_package)</em></a> - the safety package does not contain the safety argumentation. By this the S-CORE project ensures it does not take over liability for the SW platform (or its individual modules). But it enables the distributors to integrate the SW platform (or its individual modules) in their safety package.</p></li>
 </ul>
 </section>
 <section id="safety-management-tooling">
@@ -654,7 +656,7 @@ The <a class="reference internal" href="../../../platform_management_plan/safety
 </section>
 <section id="getting-started">
 <h2>Getting started<a class="headerlink" href="#getting-started" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-6894d957">
+<div class="need_container docutils container" id="SNCB-8aaba26c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_getstrt table" id="doc_getstrt__safety_management__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -675,7 +677,7 @@ The <a class="reference internal" href="../../../platform_management_plan/safety
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="workflows.html#wf__cr_mt_safety_plan" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="workflows.html#wf__cr_comp_class" title="doc_getstrt__safety_management__process">wf__cr_comp_class</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_case" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_case</a>, <a class="reference internal" href="workflows.html#wf__p_fs_audit" title="doc_getstrt__safety_management__process">wf__p_fs_audit</a>, <a class="reference internal" href="workflows.html#wf__p_confirm_rv" title="doc_getstrt__safety_management__process">wf__p_confirm_rv</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_manual" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="workflows.html#wf__mr_vy_safety" title="doc_getstrt__safety_management__process">wf__mr_vy_safety</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="workflows.html#wf__cr_mt_safety_plan" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_plan</a>, <a class="reference internal" href="workflows.html#wf__cr_comp_class" title="doc_getstrt__safety_management__process">wf__cr_comp_class</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_package" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_package</a>, <a class="reference internal" href="workflows.html#wf__p_fs_audit" title="doc_getstrt__safety_management__process">wf__p_fs_audit</a>, <a class="reference internal" href="workflows.html#wf__p_formal_rv" title="doc_getstrt__safety_management__process">wf__p_formal_rv</a>, <a class="reference internal" href="workflows.html#wf__cr_mt_safety_manual" title="doc_getstrt__safety_management__process">wf__cr_mt_safety_manual</a>, <a class="reference internal" href="workflows.html#wf__mr_vy_safety" title="doc_getstrt__safety_management__process">wf__mr_vy_safety</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -699,7 +701,7 @@ The <a class="reference internal" href="../../../platform_management_plan/safety
 </div>
 <p>In case you are appointed as a <a class="reference internal" href="roles.html#rl__safety_manager" title="rl__safety_manager"><em class="xref need">Safety Manager (rl__safety_manager)</em></a> by the <a class="reference internal" href="../../roles/index.html#rl__project_lead" title="rl__project_lead"><em class="xref need">Project Lead (rl__project_lead)</em></a> in the S-CORE project:</p>
 <ul class="simple">
-<li><p>Contact the <a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)</p></li>
+<li><p>Contact the <a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a> for your SEooC to establish planning and reporting (the TL should already have established a Github project for planning)</p></li>
 <li><p>Create your safety plan according to <a class="reference internal" href="workflows.html#wf__cr_mt_safety_plan" title="wf__cr_mt_safety_plan"><em class="xref need">Create/Maintain Safety Plan (wf__cr_mt_safety_plan)</em></a></p></li>
 <li><p>Make familiar with your role description and the other workflows of safety management (see below)</p></li>
 <li><p>Make familiar with the development and supporting process descriptions in <a class="reference internal" href="../../index.html#process-description"><span class="std std-ref">Process</span></a> plus the relevant sections of the <a class="reference internal" href="../../../platform_management_plan/index.html#pmp"><span class="std std-ref">Platform Management Plan</span></a></p></li>
