@@ -470,6 +470,7 @@
 <li class="toctree-l4"><a class="reference internal" href="verification_templates.html">Verification Templates</a></li>
 <li class="toctree-l4"><a class="reference internal" href="verification_plan_template.html">Verification Plan Template</a></li>
 <li class="toctree-l4"><a class="reference internal" href="verification_report_template.html">Verification Report Templates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="verification_methods.html">Verification methods and derivation techniques</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="../verification_roles.html">Roles</a></li>
@@ -562,7 +563,7 @@
                   
   <section id="verification-guideline">
 <h1>Verification Guideline<a class="headerlink" href="#verification-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-55437c7b">
+<div class="need_container docutils container" id="SNCB-8ab0ee25">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__verification_guide">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -700,279 +701,10 @@ useful, this shall be planned and added to the project milestone plan.</p>
 </section>
 <section id="verification-types-and-methods">
 <h2>Verification types and methods<a class="headerlink" href="#verification-types-and-methods" title="Link to this heading">#</a></h2>
-<p>Verification types and methods are described in the <a class="reference internal" href="../verification_concept.html#doc_concept__verification__process" title="doc_concept__verification__process"><em class="xref need">Verification Concept (doc_concept__verification__process)</em></a> in
-section <a class="reference internal" href="../verification_concept.html#verification-concept-types-methods"><span class="std std-ref">Verification Methods</span></a>. This guide helps to get an understanding what
-the different methods and derivation techniques mean and how to create test cases using the same.</p>
-<section id="methods">
-<h3>Methods<a class="headerlink" href="#methods" title="Link to this heading">#</a></h3>
-<section id="fault-injection">
-<h4>Fault Injection<a class="headerlink" href="#fault-injection" title="Link to this heading">#</a></h4>
-<p>As part of <code class="docutils literal notranslate"><span class="pre">fault-injection</span></code> instrumentation of source code is the preferred method.
-While it is theoretically possible to modify binaries, this is not considered as it is hard to
-maintain and should only be done, when no source code access is possible. Therefore, this is not
-applicable to software provided as open source.</p>
-<p>Practical approaches are:</p>
-<blockquote>
-<div><ul>
-<li><p><strong>Conditional Fault Injection with Macros</strong></p>
-<p>Use preprocessor macros and conditional compilation to enable or disable fault injection code.
-This makes it easy to turn fault injection on during testing and off during normal operation.</p>
-</li>
-<li><p><strong>Function wrapping</strong></p>
-<p>Create wrapper functions around critical functions to inject faults before or after the original
-function call.</p>
-</li>
-<li><p><strong>Instrumentation with Error Code Injection</strong></p>
-<p>Modify the code to explicitly return error codes under certain conditions to simulate failures.
-This is especially useful if the components use a standardized error handling mechanism.</p>
-</li>
-<li><p><strong>Data Corruption</strong></p>
-<p>Introduce code to corrupt data structures or variables in memory.</p>
-</li>
-</ul>
-</div></blockquote>
-</section>
-<section id="interface-test">
-<h4>Interface Test<a class="headerlink" href="#interface-test" title="Link to this heading">#</a></h4>
-<p>Interface testing is a type of software testing that focuses on verifying the proper communication
-and data exchange between different software components or features. It’s about ensuring that the
-interfaces (the points where different parts of the system connect and interact) are working
-correctly and reliably. This includes validating data formats, protocols, error handling, and
-overall communication integrity.</p>
-<p>It can be distinguished between internal and external interfaces. Internal interfaces are best covered
-on unit level. External interfaces work best on component integration and feature level.</p>
-<p>Types of <code class="docutils literal notranslate"><span class="pre">interface-test</span></code> are:</p>
-<blockquote>
-<div><ul>
-<li><p><strong>Parameter Passing Tests</strong></p>
-<p>Verify that parameters are passed correctly between components (data types, ranges, units).</p>
-</li>
-<li><p><strong>Data Format Tests</strong></p>
-<p>Ensure that data is formatted correctly according to the interface specification
-(e.g., byte order, data alignment, encoding).</p>
-</li>
-<li><p><strong>Protocol Tests</strong></p>
-<p>Verify that the communication protocol is implemented correctly (e.g., message sequencing,
-checksums, error handling).</p>
-</li>
-<li><p><strong>Error Handling Tests</strong></p>
-<p>Test how the software handles communication errors (e.g., lost messages, corrupted data, timeouts).</p>
-</li>
-<li><p><strong>Stress Tests</strong></p>
-<p>Stress the interfaces to see how they behave under heavy load (e.g., sending a large number of
-messages simultaneously).</p>
-</li>
-<li><p><strong>Security Tests:</strong> (Relevant for code interacting with security critical parts)</p>
-<p>Verify that the interfaces are protected against unauthorized access and data breaches.</p>
-</li>
-<li><p><strong>Timing and Performance Tests</strong> (Relevant for realtime constraints)</p>
-<p>Measure the latency and throughput of the interfaces. This is mainly on integration level and is
-hard to have reasonable testing in the reference implementation</p>
-</li>
-</ul>
-</div></blockquote>
-</section>
-<section id="structural-coverage">
-<h4>Structural Coverage<a class="headerlink" href="#structural-coverage" title="Link to this heading">#</a></h4>
-<p>Structural coverage is a white-box testing technique used to check if the testing is sufficient by
-analyzing if code constructs were called during testing.</p>
-<p>In S-CORE we do both:</p>
-<ul class="simple">
-<li><p><strong>Statement Coverage:</strong> Measures whether each executable source code statement has been executed.</p></li>
-<li><p><strong>Branch Coverage:</strong> Measures whether each possible branch (decision outcome) in the code has
-been executed. It focuses on the overall boolean result of a decision point (if, while, etc.).</p></li>
-</ul>
-<p>S-CORE evaluates this coverage using the compiler selected for the target reference platform.</p>
-<p>If a sufficient structural coverage is not reached then additional test cases are added.
-What is sufficient and how to determine the coverage is defined in the <a class="reference internal" href="../../../../platform_management_plan/software_verification.html#doc__verification_plan" title="doc__verification_plan"><em class="xref need">Software Verification Plan (doc__verification_plan)</em></a>.</p>
-</section>
-</section>
-<section id="derivation-techniques">
-<h3>Derivation Techniques<a class="headerlink" href="#derivation-techniques" title="Link to this heading">#</a></h3>
-<section id="boundary-values">
-<h4>Boundary Values<a class="headerlink" href="#boundary-values" title="Link to this heading">#</a></h4>
-<p>Boundary Value Analysis (BVA) is a software testing technique where test cases are designed to
-focus on the boundaries of input domains. The underlying principle is that errors tend to cluster
-at or near the boundaries of input values. Instead of randomly selecting test values, BVA
-systematically targets these boundary conditions, increasing the likelihood of finding defects.
-BVA is often considered a type of black-box testing, meaning it doesn’t require knowledge of the
-internal code structure.</p>
-<p>Examples to derive the scope of middleware layers following <code class="docutils literal notranslate"><span class="pre">boundary-values</span></code></p>
-<blockquote>
-<div><ul>
-<li><p><strong>Sensor Ranges</strong></p>
-<p>For example temperature, pressure, and acceleration sensors have minimum and maximum values they can report.</p>
-</li>
-<li><p><strong>Control Signals</strong></p>
-<p>PWM duty cycles, motor speeds, valve positions have upper and lower limits.</p>
-</li>
-<li><p><strong>Communication Protocols</strong></p>
-<p>For example CAN message IDs, data lengths, signal values have boundaries defined by the protocol specification.</p>
-</li>
-<li><p><strong>Memory Allocation</strong></p>
-<p>Buffer sizes, data structures have defined limits.</p>
-</li>
-</ul>
-</div></blockquote>
-<p>How to perform the analysis:</p>
-<blockquote>
-<div><p><strong>1. Identify Input Variables</strong></p>
-<p>List all the input variables (parameters) of the component or function you want to test.</p>
-<p>This includes:</p>
-<ul class="simple">
-<li><p>Input parameters of functions</p></li>
-<li><p>Data received from sensors</p></li>
-<li><p>Data received from other ECUs (via CAN, Ethernet, etc.)</p></li>
-<li><p>Configuration parameters</p></li>
-</ul>
-<p><strong>2. Determine Boundaries</strong></p>
-<p>For each input variable, identify its boundaries:</p>
-<ul>
-<li><p><strong>Minimum Value</strong></p>
-<p>The smallest possible value.</p>
-</li>
-<li><p><strong>Maximum Value</strong></p>
-<p>The largest possible value.</p>
-</li>
-<li><p><strong>Nominal/Typical Value</strong></p>
-<p>A representative value within the normal operating range. This is <em>not</em> strictly required
-for BVA but can be helpful for context.</p>
-</li>
-<li><p><strong>Consider Data Types</strong></p>
-<p>Use appropriate data types to define the variables and boundaries.
-<code class="docutils literal notranslate"><span class="pre">int8_t</span></code> (signed 8-bit integer), <code class="docutils literal notranslate"><span class="pre">uint16_t</span></code> (unsigned 16-bit integer), <code class="docutils literal notranslate"><span class="pre">float</span></code>, <code class="docutils literal notranslate"><span class="pre">double</span></code>, etc.</p>
-</li>
-</ul>
-<p><strong>3. Define Test Values</strong></p>
-<p>For each input variable, create test values using the following:</p>
-<ul class="simple">
-<li><p><strong>Minimum Value</strong></p></li>
-<li><p><strong>Maximum Value</strong></p></li>
-<li><p><strong>Just Above the Minimum Value</strong> (Minimum + 1 or next representable value)</p></li>
-<li><p><strong>Just Below the Maximum Value</strong> (Maximum - 1 or previous representable value)</p></li>
-<li><p><strong>A Value Within the Nominal Range</strong> (Although not strictly <em>boundary</em> it provides a basis for comparison).</p></li>
-</ul>
-<p><strong>4. Design Test Cases</strong></p>
-<p>Create test cases that combine the test values for all input variables.</p>
-<p>Follow these guidelines:</p>
-<ul>
-<li><p><strong>Single Variable Variation:</strong></p>
-<p>Vary one input variable at a time, keeping other variables at their nominal values.
-This helps isolate the impact of each variable.</p>
-</li>
-<li><p><strong>Combination Tests</strong></p>
-<p>In some cases, you may want to create test cases that combine boundary values for multiple
-input variables simultaneously. This is especially important if there are dependencies
-between the variables.</p>
-</li>
-</ul>
-</div></blockquote>
-</section>
-<section id="equivalence-classes">
-<h4>Equivalence Classes<a class="headerlink" href="#equivalence-classes" title="Link to this heading">#</a></h4>
-<p>Equivalence Classes or also called Equivalence Partitioning (EP) is a software testing technique
-that divides the input domain of a program into equivalence classes or partitions. The principle
-is that all values within a single partition are treated equivalently by the software. Therefore,
-only one test case from each partition is needed to achieve adequate test coverage. This reduces
-the number of test cases significantly compared to testing all possible inputs.</p>
-<p>Equivalence Classes provide a different perspective compared to Boundary Value Analysis.</p>
-<p>The following perspectives are included in <code class="docutils literal notranslate"><span class="pre">equivalence-classes</span></code>:</p>
-<blockquote>
-<div><ul>
-<li><p><strong>Reduce Test Case Volume</strong></p>
-<p>Components may have complex input domains. EP allows you to focus testing efforts on
-representative values within each partition, drastically reducing the number of test cases needed.</p>
-</li>
-<li><p><strong>Improve Test Coverage</strong></p>
-<p>By testing at least one value from each partition, you ensure that you’ve covered all the
-different behaviors of the software.</p>
-</li>
-<li><p><strong>Address Different Input Types</strong></p>
-<p>EP is applicable to various input types, including numerical ranges, enumerated values,
-boolean flags, and more.</p>
-</li>
-<li><p><strong>Find Different Types of Errors</strong></p>
-<p>While BVA focuses on boundary-related errors, EP helps find errors related to how the software
-processes different categories of inputs.</p>
-</li>
-</ul>
-</div></blockquote>
-<p>How to perform the analysis:</p>
-<blockquote>
-<div><p><strong>1. Identify Input Variables</strong></p>
-<p>List all the input variables (parameters) of the component or function you want to test.</p>
-<p>This includes:</p>
-<ul class="simple">
-<li><p>Input parameters of functions</p></li>
-<li><p>Data received from sensors</p></li>
-<li><p>Data received from other system elements (via Ethernet, CAN, etc.)</p></li>
-<li><p>Configuration parameters</p></li>
-</ul>
-<p><strong>2. Divide into Equivalence Classes</strong></p>
-<p>For each input variable, divide the input domain into equivalence classes.</p>
-<p>Consider:</p>
-<ul>
-<li><p><strong>Valid Input Classes</strong></p>
-<p>Classes that contain valid input values according to the specifications.</p>
-</li>
-<li><p><strong>Invalid Input Classes</strong></p>
-<p>Classes that contain invalid input values (out of range, incorrect data type, etc.).</p>
-</li>
-<li><p><strong>Special Cases</strong></p>
-<p>Classes representing specific or unusual input values that might trigger special behavior
-in the software.</p>
-</li>
-</ul>
-<p><strong>3. Define Test Values</strong></p>
-<p>Choose one representative test value from each equivalence class. It doesn’t matter <em>which</em>
-value you choose, as long as it’s within the class. As an easy example consider the motor speed.
-Test Values could be:</p>
-<ul class="simple">
-<li><p>Class 1 (Valid): 50 (A value within the valid range)</p></li>
-<li><p>Class 2 (Below Minimum): -10</p></li>
-<li><p>Class 3 (Above Maximum): 150</p></li>
-</ul>
-<p><strong>4. Design Test Cases</strong></p>
-<p>Create test cases using the representative values from each equivalence class.
-Aim to cover all classes in your test suite.</p>
-</div></blockquote>
-</section>
-<section id="fuzzy-testing">
-<h4>Fuzzy Testing<a class="headerlink" href="#fuzzy-testing" title="Link to this heading">#</a></h4>
-<p>Fuzzy Testing, often called Fuzz Testing, is a software testing technique that involves providing
-invalid, unexpected, or random data as inputs to a component or system to detect defects. The goal
-of fuzzy testing is to expose unhandled exceptions, memory leaks, assertion failures, and other
-critical issues by generating semi-random inputs and observing the system’s behavior.</p>
-<p>The following perspectives are included in <code class="docutils literal notranslate"><span class="pre">fuzz-testing</span></code>:</p>
-<blockquote>
-<div><p><strong>Detect Security Vulnerabilities</strong></p>
-<p>By feeding malformed or unexpected inputs, fuzzy testing can reveal security vulnerabilities
-like buffer overflows, SQL injections, and other input validation issues.</p>
-<p><strong>Uncover Edge Cases</strong></p>
-<p>Fuzzy testing can discover edge cases that might not be covered by traditional testing methods,
-as it generates inputs that developers might not have anticipated.</p>
-<p><strong>Automate Input Generation</strong></p>
-<p>Instead of manually creating test inputs, fuzzy testing automates the process, allowing for a
-much larger number of test cases to be executed.</p>
-<p><strong>Improve Robustness</strong></p>
-<p>By exposing the system to a wide variety of inputs, fuzzy testing helps ensure that the
-software can handle unexpected situations gracefully.</p>
-</div></blockquote>
-<p>How to perform fuzzy testing:</p>
-<blockquote>
-<div><p><strong>1. Identify Target Functions</strong> Determine which functions or interfaces are suitable for
-fuzzy testing, focusing on those that process external inputs.</p>
-<p><strong>2. Define Input Structure</strong> Understand the basic structure or format of valid inputs to
-create effective fuzzers that can produce semi-valid inputs.</p>
-<p><strong>3. Generate Fuzzy Inputs</strong> Create inputs that are slightly malformed or unexpected, either
-through complete randomization or by mutating valid inputs.</p>
-<p><strong>4. Monitor System Behavior</strong> Execute the system with fuzzy inputs and monitor for crashes,
-hangs, memory leaks, or other unexpected behaviors.</p>
-<p><strong>5. Analyze and Fix Issues</strong> When a problem is detected, analyze the input that caused it
-and fix the underlying issue in the code.</p>
-</div></blockquote>
-</section>
-</section>
+<p>Verification types and methods are described in the <a class="reference internal" href="verification_methods.html#gd_meth__verification__methods" title="gd_meth__verification__methods"><em class="xref need">Verification Methods (gd_meth__verification__methods)</em></a> and the
+derivation techniques in <a class="reference internal" href="verification_methods.html#gd_meth__verification__derivation" title="gd_meth__verification__derivation"><em class="xref need">Verification Derivation Tec... (gd_meth__verification__derivation)</em></a>. The detailed method guideline
+helps to get an understanding what the different methods and derivation techniques mean and how to
+create test cases using the same.</p>
 </section>
 </section>
 
@@ -1032,21 +764,7 @@ and fix the underlying issue in the code.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#test-case-execution">Test case execution</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reporting-of-failing-test-cases">Reporting of failing test cases</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reuse-of-existing-test-cases">Reuse of existing test cases</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-types-and-methods">Verification types and methods</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fault-injection">Fault Injection</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#interface-test">Interface Test</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#structural-coverage">Structural Coverage</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#derivation-techniques">Derivation Techniques</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#boundary-values">Boundary Values</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#equivalence-classes">Equivalence Classes</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#fuzzy-testing">Fuzzy Testing</a></li>
-</ul>
-</li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#verification-types-and-methods">Verification types and methods</a></li>
 </ul>
   </nav></div>
 
