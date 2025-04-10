@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-14f85203">
+  <div class="need_container docutils container" id="SNCB-58b039a6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__verification_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -702,8 +702,8 @@ method is to be used as meta data (<em>TestType</em> and <em>DerivationTechnique
 <td><p>1, -, -</p></td>
 <td><p>QM &amp; ASIL B</p></td>
 </tr>
-<tr class="row-even"><td><p>Structural Condition Coverage (Code coverage)</p></td>
-<td><p>structural-condition-coverage</p></td>
+<tr class="row-even"><td><p>Structural Branch Coverage (Code coverage)</p></td>
+<td><p>structural-branch-coverage</p></td>
 <td><p>1, -, -</p></td>
 <td><p>QM &amp; ASIL B</p></td>
 </tr>
@@ -980,9 +980,22 @@ the software test strategy and corresponding processes.</p>
 <p class="rubric">Bazel</p>
 <p>The main build environment of the project is based on <a class="reference external" href="https://bazel.build">Bazel</a>. It it used to build software
 components, documentation, and automated tests.</p>
-<p class="rubric">GoogleTest</p>
-<p>The software components of the project written in C++ are tested with the help of
+<p class="rubric">GoogleTest (gtest)</p>
+<p>The software components of the project written in C++ are unit tested with the help of
 <a class="reference external" href="https://google.github.io/googletest/">GoogleTest</a>.</p>
+<p class="rubric">gcov/gcovr</p>
+<p>The structural coverage reached by unit testing in the project is evaluated by the gcov/gcovr tool chain
+<a class="reference external" href="https://github.com/gcovr/gcovr">gcovr</a> - gcov is part of the GNU compiler collection (gcc).</p>
+<p>Note that gcov/gcovr supports several coverage metrics:</p>
+<ul class="simple">
+<li><p>“statement” - used in S-CORE for the structural-statement-coverage method</p></li>
+<li><p>“decision” - used in S-CORE for the structural-branch-coverage method</p></li>
+<li><p>“branch” - used in S-CORE to support manual analysis of the code coverage if the “decision”
+coverage is reported as “cannot be determined” by the tooling. As the “branch” coverage on target
+is determined by the tool as object code coverage and as the compiler adds object branches for
+fast evaluation of complex conditions in decisions, this is more than required by the
+structural-branch-coverage method.</p></li>
+</ul>
 <p class="rubric">Integration Testing Framework (ITF)</p>
 <p>The integration of software components can be verified with the help of the ITF. It allows the definition and execution
 of test based on <a class="reference external" href="https://pytest.org">pytest</a>.</p>
