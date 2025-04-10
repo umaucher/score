@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Config management &#8212; S-CORE 0.1 documentation</title>
+    <title>Config management / Configuration Management Plan &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -451,7 +451,7 @@
 <li class="toctree-l1"><a class="reference internal" href="safety_management.html">Safety management / Platform Safety Plan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="risk_management.html">Risk management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quality_management.html">Quality management</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Config management</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Config management / Configuration Management Plan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tool_management.html">Tool Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release_management.html">Release management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="problem_resolution.html">Problem Resolution</a></li>
@@ -503,7 +503,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Platform Management Plan</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Config management</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Config management / Configuration Management Plan</span></li>
   </ul>
 </nav>
 </div>
@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-c2d20bb7">
+  <div class="need_container docutils container" id="SNCB-b0832a1c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__config_mgt_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -564,8 +564,8 @@
 </table>
 </div>
 </div>
-<section id="config-management">
-<h1>Config management<a class="headerlink" href="#config-management" title="Link to this heading">#</a></h1>
+<section id="config-management-configuration-management-plan">
+<h1>Config management / Configuration Management Plan<a class="headerlink" href="#config-management-configuration-management-plan" title="Link to this heading">#</a></h1>
 <section id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
 <p>The Configuration Management Plan defines how the integrity of all work products
@@ -590,7 +590,7 @@ and other project relevant artefacts can be reached and maintained.</p>
 </section>
 <section id="approach">
 <h2>Approach<a class="headerlink" href="#approach" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-b69bed7b">
+<div class="need_container docutils container" id="SNCB-4d98903d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__configuration">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -651,9 +651,9 @@ There is one <a class="reference external" href="https://GitHub.com/eclipse-scor
 <p>Work products and files can be retrieved from GitHub repositories by everybody according to the Eclipse Foundation guidelines.
 Their content is defined in the process/workproducts and process_area/&lt;area_name&gt;/workproducts files.
 To find the location of the work products, the <a class="reference internal" href="../contribute/general/folder.html#platform-folder-structure"><span class="std std-ref">Platform Folder Structure</span></a> can be used.
-To show the content of a certain version of a file the GitHub “History” function can be used which shows all committs
-into this file and these committs show the change history (which is also available via “Blame” function for every line of the files).
-Also baselines (which are sets of files) can be shown via GitHub by switching to a “tag” created to mark the baseline versons.
+To show the content of a certain version of a file the GitHub “History” function can be used which shows all commits
+into this file and these commits show the change history (which is also available via “Blame” function for every line of the files).
+Also baselines (which are sets of files) can be shown via GitHub by switching to a “tag” created to mark the baseline versions.
 These baselines are used to build the release, i.e. the documentation, code and verification reports for this tag.
 For release versioning rules check the respective section of release guideline.</p>
 <p>For other artefacts: these are pulled into S-CORE integration repository by forking to be handled as above.</p>
@@ -671,12 +671,12 @@ See also <a class="reference internal" href="change_management.html#doc__platfor
 <p>Git defines branches as a means of parallel development. In the S-CORE project the following types of branches will be used:</p>
 <ul class="simple">
 <li><p>local branches - created from “remote” branches, in these the development of the contributors takes place, no restriction on naming.</p></li>
-<li><p>main branch - a “remote” branch which contains all the latest file versions checked by CI, reviewed, accepted and merged.</p></li>
+<li><p>main branch - a “remote” branch (named “main”) which contains all the latest file versions checked by CI, reviewed, accepted and merged.</p></li>
 <li><p>release branch - a “remote” branch derived from main branch which is used to prepare a release,
 no functional code changes are allowed, only bug fixes and verification based improvements.
 Only the technical lead is allowed to approve a merge into a release branch. The branch name is “release-&lt;MAJOR_version&gt;.&lt;MINOR_version&gt;</p></li>
 </ul>
-<p>“remote” branch: is not “local” to the developer but resides on the “remote” GitHub server.</p>
+<p>The “remote” branch is not “local” to the developer but resides on the “remote” GitHub server.</p>
 <p>Baselines are created by using the GitHub “tag” function. The tag name shall correspond to
 the release branch name the tag is created, adding patch version and pre-release tag.
 See also release management (Todo: add link when <a class="reference external" href="https://github.com/eclipse-score/score/pull/578">PR-578</a> is merged).</p>
