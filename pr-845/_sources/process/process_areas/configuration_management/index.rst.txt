@@ -24,12 +24,14 @@ Concept
    :id: doc_concept__configuration__process
    :status: valid
 
-In this section a concept for the configuration management will be discussed. Inputs for this concepts are mainly the requirements of ISO26262 "Part 8: Supporting Processes"
+In this section a concept for the configuration management will be discussed.
+Inputs for this concepts are mainly the requirements of ISO26262 "Part 8: Supporting Processes"
+and ASPICE Requirements from PAM4.0, SUP.8
 
 Inputs
 ^^^^^^
 
-#. Stakeholders for the configuration work products?
+#. Stakeholders for the configuration process work products?
 #. Who needs which information?
 #. Which work products do we have?
 #. What tooling do we need?
@@ -39,13 +41,16 @@ Stakeholders
 
 #. :need:`Technical Lead <rl__technical_lead>`
 
-   * for creating a module or a platform release a baseline of artefacts is needed
+   * for creating a module or a platform release a baseline of all configuration items is needed
 
 #. :need:`Contributor <rl__contributor>` and :need:`Committer <rl__committer>`
 
-   * wants know which artefact version has to be used as input for his work
+   * wants know which configuration items version has to be used as input for his work
    * wants to share their created work product with others for example to get those reviewed
    * wants to integrate share their created work product with other work products
+
+note: configuration items are all defined S-CORE work products plus additional arefacts not produced by S-CORE
+needed for the building of the documentation and verification reports (e.g. tools, external SW libraries)
 
 
 Work Products
