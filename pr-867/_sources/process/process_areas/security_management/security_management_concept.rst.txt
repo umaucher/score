@@ -23,7 +23,7 @@ Concept Description
    :tags: security_management
 
 In this section a concept for the Security Management will be discussed. Inputs for this concepts
-are mainly the requirements of ISO SAE 21434 Clause 5, 6, 8 and 15.
+are mainly the requirements of ISO SAE 21434 Clause 5, 6 and 8.
 
 The term security is used here synonymously for the term cybersecurity as defined in ISO SAE 21434.
 

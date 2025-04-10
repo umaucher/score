@@ -143,6 +143,8 @@ Security Management Guideline
    * feature level: :need:`wp__feature_security_analysis`
    * component level: :need:`wp__sw_component_security_analysis`
 
+   Analyses shall be based on `STRIDE <https://en.wikipedia.org/wiki/STRIDE_model>`_ model.
+
    **Provision of the confidence in the use of software tools:**
 
    Tool Management planning is part of the :need:`wp__platform_mgmt`. The respective work product
