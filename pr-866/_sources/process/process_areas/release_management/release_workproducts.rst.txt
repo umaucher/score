@@ -18,7 +18,6 @@ Workproducts
 .. workproduct:: Platform Release Notes
    :id: wp__platform_sw_release_note
    :status: valid
-   :tags: release_management
    :complies: std_wp__iso26262__management_656
 
    The platform release note provides clarity what is included in the current version of the platform
@@ -31,7 +30,6 @@ Workproducts
 .. workproduct:: Module Release Notes
    :id: wp__module_sw_release_note
    :status: valid
-   :tags: release_management
    :complies: std_wp__iso26262__management_656
 
    The module release note provides clarity what is included in the current version of the software
@@ -43,7 +41,6 @@ Workproducts
 .. workproduct:: Platform Release Plan
    :id: wp__platform_sw_release_plan
    :status: valid
-   :tags: release_management
 
    The platform release plan is a high-level document that outlines which software modules
    will be included in the overall platform and what features can be expected within the platform.
@@ -54,7 +51,6 @@ Workproducts
 .. workproduct:: Module Release Plan
    :id: wp__module_sw_release_plan
    :status: valid
-   :tags: release_management
 
    The module release plan is a strategic document that outlines the features planned for upcoming
    module releases along with their estimated release dates. It provides a roadmap for the
