@@ -125,6 +125,16 @@ py_library(
     ],
 )
 
+filegroup(
+    name = "test_rst_files",
+    srcs = glob([
+        "_tooling/extensions/score_metamodel/tests/rst/**/*.rst",
+        "_tooling/extensions/**/*.py",
+        "conf.py",
+    ]),
+    visibility = ["//visibility:public"],
+)
+
 # Dedicated metamodel target only for pytest.
 # It's required to define the imports for bazel pytest, so that python/pytest can
 # import "from score_metamodel" without issues.
@@ -139,8 +149,13 @@ score_py_pytest(
     name = "score_metamodel_test",
     size = "small",
     srcs = glob(["_tooling/extensions/score_metamodel/tests/**/*.py"]),
+    data = [
+        ":test_rst_files",
+    ],
     visibility = ["//visibility:public"],
-    deps = [":score_metamodel"],
+    deps = [
+        ":score_metamodel",
+    ],
 )
 
 # ───────────────────────── Source code linker ────────────────────────
