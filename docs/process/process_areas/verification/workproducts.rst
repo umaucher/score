@@ -138,6 +138,6 @@ Tool Verification
 
 As part of tool management as supporting function it is handled as follows
 
-     * :ref:`general_concepts_tool_verification` describes implementation of :need:`wp__tool_verification`
+     * :ref:`general_concepts_tool_verification` describes implementation of :need:`wp__tool_verification_report`
 
 It is planned in the :need:`wp__platform_mgmt`
