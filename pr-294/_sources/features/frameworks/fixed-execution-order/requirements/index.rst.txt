@@ -31,7 +31,7 @@ Definitions
 
     An application consists of one or more operating system processes.
     In particular it consists of the primary process which handles the lifecycle, configuration and execution management.
-    It may optionally consist of one or more Secondary processes.
+    It may optionally consist of one or more secondary processes.
     The purpose of secondary processes is to run code in separate address spaces (Freedom From Interference) for safety reasons.
     Each process (primary and secondary) belongs to exactly one application.
     Each process contains one ore more operating system threads.
@@ -67,10 +67,10 @@ Definitions
     The task chain configuration defines the execution order of the activities.
     In particular it defines when the task chain is activated (typically in a cyclic manner) and in which order the activities will run.
 
-    Every task chain has exactly one `receiver` activity which will run in the beginning.
-    The purpose of the receiver activity is to collect external input signals and provide them to the other activities during task chain execution.
-    Every task chain has exactly one `sender` activity which will run in the end.
-    The purpose of the sender activity is to collect signals produced by activities within the task chain and send them to external entities.
+    Every task chain may have one or multiple input service activities which will run in the beginning.
+    The purpose of an input service activity is to collect external input signals and provide them to the other activities during task chain execution.
+    Every task may have one or more output service activities which will run in the end.
+    The purpose of an output service activity is to collect signals produced by activities within the task chain and send them to external entities.
 
 .. feat_req:: Definition: Service Activity
     :id: FEAT_REQ__feo__service_activity
@@ -94,7 +94,7 @@ Definitions
     :status: valid
 
     In order to execute activities in secondary processes, the executor makes 
-    use of an `Agent` for each secondary process.
+    use of an `Agent` for each secondary process and possibly also the primary process.
     The agent receives commands from the executor, invokes actions on 
     activities within its process and reports back to the executor.
 
@@ -102,7 +102,7 @@ Definitions
     Agent, which takes over the task to wait for a trigger from its 
     corresponding Executor. When the Agent gets a step request from the 
     Executor, it calls the Step function of the Activity There is exactly 
-    one agent for each secondary process.The primary can but doesn't have to be 
+    one agent for each secondary process. The primary can but doesn't have to be
     associated with an agent.
 
 Dynamic Architecture
