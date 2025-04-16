@@ -27,11 +27,11 @@ This document implements parts of the :need:`wp__platform_mgmt`.
 
 Purpose
 +++++++
-The purpose of the Tool Management is to guide the identification, evaluation and qualification of
+The purpose of the Tool Management Plan is to guide the identification, evaluation and qualification of
 project tools.
 
-S-CORE objective is to use OSS tools for the generation of all required work products. Thus all
-tools which will be used part of the tool chain for the work product generation must be identified,
+S-CORE objectives is to use OSS tools for the generation of all required work products. Thus all
+tools which will be used as part of the tool chain for the work product generation must be identified,
 documented and evaluated and if applicable, qualified.
 
 
@@ -47,6 +47,7 @@ Tool Management Goals
 
 Approach
 ++++++++
+
 
 Identification
 ^^^^^^^^^^^^^^
@@ -83,9 +84,9 @@ If tool impact is "NO", continue with 3, otherwise 2.
 
 **To Step 2**
 
-Based on the found malfunctions or threats judge, these can be all detected or prevented?
+Based on the found malfunctions or threats judge, if these can be all detected or prevented?
 Consider also potential safety measures and security controls to increase the detection and
-preventions of these, if applicable.
+prevention of these, if applicable.
 If there is no guarantee to either detect or prevent these, judge tool error detection to "NO",
 otherwise to "YES".
 
@@ -100,15 +101,29 @@ In case the tool confidence level is "LOW", tool qualification is required,
 Qualification
 ^^^^^^^^^^^^^
 
+As method validation of software tool is applied.
+
 Specify requirements for the tools purpose and usage in the S-CORE context.
 Analyze the malfunctions and threats and specify safety measures and security controls to increase
 the prevention and detection of them.
 Specify test cases and tests to verify the requirements and generate a test report.
 Update the Tool Verification Report accordingly to document the outcomes.
 
-For the generation of requirements, verification and analyze the processes defined in the
+For the generation of requirements, verification and analyses the processes defined in the
 :need:`wp__platform_mgmt` shall be used (Requirements Engineering, Verification,
 Safety/Security Analyzes).
+
+Tailoring
+^^^^^^^^^
+Tailoring of safety activities for confidence in the use of software tools:
+
+The following ISO 26262 defined safety requirements are not relevant for the S-CORE SW platform
+development, as they are not used:
+
+:need:`std_req__iso26262__support_11471`, :need:`std_req__iso26262__support_11472`,
+:need:`std_req__iso26262__support_11473`, :need:`std_req__iso26262__support_11474`,
+:need:`std_req__iso26262__support_11481`, :need:`std_req__iso26262__support_11482`,
+:need:`std_req__iso26262__support_11483`
 
 
 Tool List

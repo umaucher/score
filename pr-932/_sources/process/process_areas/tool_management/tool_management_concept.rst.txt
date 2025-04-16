@@ -21,14 +21,14 @@ Concept Description
    :tags: tool_management
 
 In this section a concept for the Tool Management will be discussed. Inputs for this concepts
-are both the requirements of ISO2 6262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
+are the requirements of ISO2 6262 Part-8, Clause 11, ASPICE PAM 4.0, SUP.8 and
 ISO SAE 21434 Clause 5, 5.4.5 additionally including the requirements of the different stakeholders
 for the Tool Management process.
 
 Key concept
 ***********
 S-CORE objective is to use OSS Tools only. The selection criteria for OSS Tool therefore must
-include the determination of the Tool Confidence Level `TCL <https://www.validas.de/publications/automotive2012.pdf>`
+include the determination of the Tool Confidence Level `(TCL) <https://www.validas.de/publications/automotive2012.pdf>`_
 for the tool under consideration.
 Based on the resulting TCL additional Tool Qualification activities may required.
 
@@ -45,11 +45,11 @@ Stakeholders for the Tool Management
 
 #. :need:`Infrastructure, Tooling Community <rl__infrastructure_tooling_community>`
 
-   * Contributes tooling, infrastructure elements to grow and mature  the **S-CORE** development environment
+   * Contributes tooling, infrastructure elements to grow and mature the **S-CORE** development environment
 
-#. :need:`Committer <rl__safety_manager>`, :need:`Committer <rl__security_manager>`
+#. :need:`Safety Manager<rl__safety_manager>`, :need:`Security Manager <rl__security_manager>`
 
-   * Verifies  and approves the the tool verification reports
+   * Verifies and approves the the tool verification report
 
 Standard Requirements
 =====================

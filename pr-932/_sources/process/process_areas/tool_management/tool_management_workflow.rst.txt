@@ -12,6 +12,7 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
+.. _workflow_tlm_requirements:
 
 Workflow Tool Management
 ########################
@@ -29,7 +30,10 @@ Workflow Tool Management
 
    The Tool Verification Report is created during identification of a tool.
 
-   Each identified is
+   Each identified tool to is evaluated and if applicable, qualified. During evaluation and
+   qualification the Tool Verification Report is updated.
+
+   Finally the Tool Verification Report is verified and approved, and thus in Released state.
 
    For creating the Tool Verification Report template must be used.
 

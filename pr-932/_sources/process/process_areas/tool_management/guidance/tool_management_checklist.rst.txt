@@ -21,7 +21,7 @@ Tool Management Checklist
    :id: gd_chklst__tool__cr_review
    :status: valid
    :tags: tool_management
-   :complies:
+   :complies: std_req__iso26262__support_1141, std_req__iso26262__support_1142, std_req__iso26262__support_1143, std_req__iso26262__support_11441, std_req__iso26262__support_11442, std_req__iso26262__support_11451, std_req__iso26262__support_11452, std_req__iso26262__support_11453, std_req__iso26262__support_11454, std_req__iso26262__support_11461, std_req__iso26262__support_11462
 
    | **1. Purpose**
    | The purpose of this checklist is to collect the topics to be checked during a tool verification..
@@ -58,7 +58,7 @@ Tool Management Checklist
         -
 
       * - 6
-        - Are the output of the tool defined?
+        - Are the outputs of the tool defined?
         -
 
       * - 7
@@ -102,17 +102,17 @@ Tool Management Checklist
         -
 
       * - 17
-        - Are the requirements for software tool qualification defined?
+        - If applicable, are the requirements for software tool qualification defined?
         -
 
       * - 18
-        - Are the test cases and tests for software tool qualification defined?
+        - If applicable, are the test cases and tests for software tool qualification defined?
         -
 
       * - 19
-        - Are the test reports for software tool qualification defined?
+        - If applicable, are the test reports for software tool qualification defined?
         -
 
       * - 20
-        - Are the analyses for software tool qualification defined?
+        - If applicable, are the analyses for software tool qualification defined?
         -

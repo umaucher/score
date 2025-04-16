@@ -20,18 +20,22 @@ Tool Verification Report Template
 .. gd_temp:: Tool Verification Report Template
    :id: gd_temp__tool_management__verif_rpt_template
    :status: valid
-   :complies:
+   :complies: std_req__iso26262__support_1141, std_req__iso26262__support_1142, std_req__iso26262__support_1143, std_req__iso26262__support_11441, std_req__iso26262__support_11442, std_req__iso26262__support_11451, std_req__iso26262__support_11452, std_req__iso26262__support_11453, std_req__iso26262__support_11454, std_req__iso26262__support_11461, std_req__iso26262__support_11462, std_req__isosae21434__org_management_5451, std_req__aspice_40__SUP-8-BP1, std_req__aspice_40__SUP-8-BP2
 
-Introduction
-------------
-[Describe the scope and purpose of the tool]
 
-May also add some general information about the tool
+[Your Tool Name]
+----------------
 
-May add some comments to get started
+.. note:: Document header
 
-May add links to the public available information, if applicable.
+.. document:: [Your Tool Name]
+   :id: doc__tool__tool_name
+   :status: draft
+   :safety: ASIL_B
+   :tags: tool_management
 
+.. attention::
+    The above directive must be updated according to your tool.
 
 Identification
 --------------
@@ -42,6 +46,17 @@ E.g. by unique name or UID?
 Add the tool version
 
 Add tool verification status (draft, evaluated, qualified) defined?
+
+
+Introduction
+------------
+[Describe the scope and purpose of the tool]
+
+May also add some general information about the tool
+
+May add some comments to get started
+
+May add links to the public available information, if applicable.
 
 
 Use cases
@@ -80,13 +95,13 @@ How works the tool together ?
 
 Where is the tool located?
 
-How are bug of the tool tracked?
+How are bugs of the tool tracked?
 
 May add links to the public available information, if applicable.
 
 Add malfunctions which the tool could introduce.
 
-Add threats which the tool could introduce.
+Add threats which the tool could introduce, e.g. unintended, non-authorized use.
 
 
 Documentation
@@ -114,11 +129,13 @@ Determine if  tool qualification is required
 
 
 **Optional Section for Tool Qualification**
+-------------------------------------------
+based on method: validation of the software tool
 
 
 Requirements and testing aspects
 --------------------------------
-[Describe here requirements from user point of view]
+[Describe here requirements and their tests from user point of view]
 
 Where are tool requirements defined?
 
@@ -139,6 +156,6 @@ Where are the use cases of the tool defined?
 
 Where are workflows for the tool defined?
 
-Where is the safety analysis (FMEA) for the tool defined?
+Where is the safety analysis for the tool defined?
 
 Where is the security analysis for the tool defined?
