@@ -88,10 +88,6 @@
     "url": "https://eclipse-score.github.io/score/pr-874/"
   },
   {
-    "version": "pr-900",
-    "url": "https://eclipse-score.github.io/score/pr-900/"
-  },
-  {
     "version": "pr-902",
     "url": "https://eclipse-score.github.io/score/pr-902/"
   },
@@ -104,6 +100,10 @@
     "url": "https://eclipse-score.github.io/score/pr-934/"
   },
   {
+    "version": "pr-949",
+    "url": "https://eclipse-score.github.io/score/pr-949/"
+  },
+  {
     "version": "ulhu_persistency_file_access",
     "url": "https://eclipse-score.github.io/score/ulhu_persistency_file_access/"
   },
@@ -114,13 +114,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-946",
-    "url": "https://eclipse-score.github.io/score/pr-946/"
-  },
-  {
-    "version": "pr-949",
-    "url": "https://eclipse-score.github.io/score/pr-949/"
   }
 ]
