@@ -12,10 +12,6 @@
     "url": "https://eclipse-score.github.io/score/disable_tests/"
   },
   {
-    "version": "mb_fr_feo",
-    "url": "https://eclipse-score.github.io/score/mb_fr_feo/"
-  },
-  {
     "version": "pr-192",
     "url": "https://eclipse-score.github.io/score/pr-192/"
   },
@@ -34,10 +30,6 @@
   {
     "version": "pr-263",
     "url": "https://eclipse-score.github.io/score/pr-263/"
-  },
-  {
-    "version": "pr-294",
-    "url": "https://eclipse-score.github.io/score/pr-294/"
   },
   {
     "version": "pr-530",
