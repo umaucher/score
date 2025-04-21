@@ -96,6 +96,10 @@
     "url": "https://eclipse-score.github.io/score/pr-949/"
   },
   {
+    "version": "pr-954",
+    "url": "https://eclipse-score.github.io/score/pr-954/"
+  },
+  {
     "version": "ulhu_persistency_file_access",
     "url": "https://eclipse-score.github.io/score/ulhu_persistency_file_access/"
   },
@@ -106,9 +110,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-954",
-    "url": "https://eclipse-score.github.io/score/pr-954/"
   }
 ]
