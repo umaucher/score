@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,5 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Fixed execution order framework
-###############################
+#EXPECT: std_wp__testabcdefghijklmnopqrstuvwxyz123__abcd.id (std_wp__testabcdefghijklmnopqrstuvwxyz123__abcd): exceeds the maximum allowed length of 45 characters (current length: 47).
+
+.. std_wp:: This is a test
+   :id: std_wp__testabcdefghijklmnopqrstuvwxyz123__abcd
+
+#EXPECT-NOT: std_wp__test__abce.id (std_wp__test__abce): exceeds the maximum allowed length of 45 characters
+
+.. std_wp:: This is a test
+   :id: std_wp__test__abce

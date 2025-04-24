@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,28 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workflows
-=========
+#EXPECT: feat_req__test__abcd.title (This must work): contains a stop word: `must`.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+.. feat_req:: This must work
+   :id: feat_req__test__abcd
 
-   process_management
-   quality_management
-   safety_analysis
+#EXPECT-NOT: feat_req__test__abce.title (This is a test): contains a stop word
 
-
-S-CORE Workflow list
---------------------
-
-.. needtable::
-   :style: table
-   :columns: title;id;tags
-   :colwidths: 25,25,25
-   :sort: title
-
-   results = []
-
-   for need in needs.filter_types(["workflow"]):
-                results.append(need)
+.. feat_req:: This is a test
+   :id: feat_req__test__abce

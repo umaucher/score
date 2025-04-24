@@ -49,7 +49,7 @@ APPROVER_TEAMS = ["automotive-score-committers"]
 #     }
 
 
-def register(app: Sphinx, env: BuildEnvironment, _: str) -> None:
+def register(app: Sphinx, env: BuildEnvironment, _: str | None) -> None:
     """Register the HeaderService with the Sphinx application environment.
 
     :param app: The Sphinx application instance.
@@ -72,13 +72,13 @@ def generate_hash() -> str:
 
 
 class HeaderService(BaseService):
-    options: dict[str, str, str | int | float | bool] = {}
+    options = []
 
     def __init__(
         self,
         app: Sphinx,
         name: str,
-        config: dict[str, str | int | float | bool],
+        config: dict[str, Any] | None,
         **kwargs: dict[str, Any],
     ) -> None:
         """Initialize the HeaderService.
@@ -141,7 +141,10 @@ def _extract_merge_commit_data(location: str) -> dict[str, str | list[str]]:
         "hash": "N/A",
     }
 
-    git_cmd = f'git log --pretty="format:%H%n%an, %ae%n%b" --max-count=1 --merges --first-parent -p "{location}'
+    git_cmd = (
+        f'git log --pretty="format:%H%n%an, %ae%n%b" --max-count=1 --merges '
+        f'--first-parent -p "{location}"'
+    )
 
     result = subprocess.run([git_cmd], shell=True, capture_output=True)
 
@@ -162,7 +165,7 @@ def _extract_merge_commit_data(location: str) -> dict[str, str | list[str]]:
     for m in re.finditer(pattern, out, re.MULTILINE):
         data[m.group(1)].append(", ".join(m.group(2, 3)))
 
-    commit_data = {
+    commit_data: dict[str, str | list[str]] = {
         "author": author,
         "approver": data.get("Approved", "N/A"),
         "reviewer": data.get("Reviewed", "N/A"),
@@ -182,8 +185,10 @@ def _extract_github_data() -> dict[str, str | list[str]]:
         "reviewers": "N/A",
         "hash": "N/A",
     }
+
+    github: Github | None = None
+
     try:
-        github: Github | None = None
         auth = Auth.Token(_extract_github_token())
         github = Github(auth=auth)
         org: Organization.Organization = github.get_organization(_extract_org())
@@ -261,7 +266,7 @@ def _extract_team_info(org: Organization.Organization) -> dict[str, list[str]]:
     :param org: The GitHub organization instance.
     :return: A dictionary containing the team information.
     """
-    team_info = {
+    team_info: dict[str, list[str]] = {
         t.name: [m.login for m in org.get_team(t.id).get_members()]
         for t in org.get_teams()
         if t.name in APPROVER_TEAMS
@@ -278,7 +283,7 @@ def _append_approver_teams(
     :param team_info: The team information dictionary.
     :return: A list of approvers with their teams.
     """
-    approvers_with_teams = []
+    approvers_with_teams: list[str] = []
 
     for approver in approvers:
         teams = [name for name, members in team_info.items() if approver in members]

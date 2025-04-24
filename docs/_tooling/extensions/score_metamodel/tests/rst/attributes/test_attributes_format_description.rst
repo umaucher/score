@@ -1,6 +1,6 @@
 ..
    # *******************************************************************************
-   # Copyright (c) 2024 Contributors to the Eclipse Foundation
+   # Copyright (c) 2025 Contributors to the Eclipse Foundation
    #
    # See the NOTICE file(s) distributed with this work for additional
    # information regarding copyright ownership.
@@ -12,28 +12,17 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Workflows
-=========
+.. Test xy
+#EXPECT: stkh_req__test__abcd.content (This should really work): contains a weak word: `really`.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Contents:
+.. stkh_req:: This is a test
+   :id: stkh_req__test__abcd
 
-   process_management
-   quality_management
-   safety_analysis
+   This should really work
 
+#EXPECT-NOT: stkh_req__test__abce.title (This should work): contains a weak word
 
-S-CORE Workflow list
---------------------
+.. stkh_req:: This is a test
+   :id: stkh_req__test__abce
 
-.. needtable::
-   :style: table
-   :columns: title;id;tags
-   :colwidths: 25,25,25
-   :sort: title
-
-   results = []
-
-   for need in needs.filter_types(["workflow"]):
-                results.append(need)
+   This should work
