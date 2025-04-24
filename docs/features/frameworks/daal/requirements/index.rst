@@ -11,52 +11,6 @@
    #
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
-
-
-Deterministic App Abstraction Layer
---------------------------------------
-.. document:: Deterministic App Abstraction Layer
-   :id: doc__daal
-   :status: valid
-   :safety: ASIL_B
-   :tags: contribution_request, feature_request
-
-Feature flag
-------------
-
-To activate this feature, use the following feature flag:
-
-``experimental_daal``
-
-Abstract
---------
-
-Provides an application abstraction layer and APIs for testing.
-Implements common code and several safety requirements.
-
-
-Motivation
-----------
-Currently there is no abstraction layer to make component tests independent from application frameworks like 'Fixed Execution Order Framework'.
-With the abstraction layer you can test against different execution frameworks and in different environments (linux & qnx).
-
-Rationale
----------
-
-The lifecycle states are designed like in usual execution frameworks to emulate the same behavior also in testing.
-Also error handling and health monitoring is part of the framework for emulation of all aspects.
-Different communication frameworks can be plugged in to use in testing.
-The idea is also to use the framework as a testing area for our future Autosar process.
-
-
-Backwards Compatibility
------------------------
-
-It can have impact in the Feo Framework because we need only one Lifecycle interface.
-
-
-Requirements
-------------
 Requirements
 ############
 
@@ -120,7 +74,7 @@ General
    :reqtype: Functional
    :security: NO
    :safety: QM
-   :satisfies: feat_req__ipc__time_based_arch
+   :satisfies: stkh_req__execution_model__processes
    :status: valid
 
    Singe Shot and Cyclic execution should be possible
