@@ -123,9 +123,9 @@ Define safety measures/security controls against the tool malfunctions/threats
 
 Determine the  tool error detection based on confidence on the defined safety measures/security controls
 
-Determine the tool confidence level based on tool impact and tool error detection defined?
+Determine the tool confidence level based on tool impact and tool error detection
 
-Determine if  tool qualification is required
+Determine if tool qualification is required
 
 
 **Optional Section for Tool Qualification**
@@ -148,13 +148,15 @@ Usage and analysis perspective
 ------------------------------
 [Describe here usage and analysis perspective]
 
-Where is the architectural design of the tool defined?
-
 Where is the tool input and output described?
 
 Where are the use cases of the tool defined?
 
 Where are workflows for the tool defined?
+
+Optional:
+
+Where is the architectural design of the tool defined?
 
 Where is the safety analysis for the tool defined?
 

@@ -14,8 +14,8 @@
 
 .. _tlm_checklist:
 
-Tool Management Checklist
-#########################
+Tool Verification Report Review Checklist
+#########################################
 
 .. gd_chklst:: Tool Verification Report Review Checklist
    :id: gd_chklst__tool__cr_review

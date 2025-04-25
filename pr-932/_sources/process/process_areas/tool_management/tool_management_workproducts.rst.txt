@@ -32,7 +32,7 @@ Work Products Tool Management
    proper tool documentation, guidelines, protection against malware introduction, etc.
 
    Based on TCL the appropriate qualification methods shall be applied. For S-CORE per default
-   the method validation of software tool must be used.
+   the method **validation of software tool** must be used.
 
 
 .. needextend:: "docs/process/tool_management" in docname

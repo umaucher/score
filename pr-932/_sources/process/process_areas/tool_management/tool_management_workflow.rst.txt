@@ -30,12 +30,12 @@ Workflow Tool Management
 
    The Tool Verification Report is created during identification of a tool.
 
-   Each identified tool to is evaluated and if applicable, qualified. During evaluation and
+   Each identified tool is evaluated and if applicable, qualified. During evaluation and
    qualification the Tool Verification Report is updated.
 
    Finally the Tool Verification Report is verified and approved, and thus in Released state.
 
-   For creating the Tool Verification Report template must be used.
+   For creating the Tool Verification Report a template must be used.
 
 
 .. needextend:: "process_areas/tool_management" in docname

@@ -58,7 +58,7 @@ The tools are stored in one GitHub repository, `tooling repository <https://GitH
 For each tool the :need:`gd_temp__tool_management__verif_rpt_template` shall be used to document
 the relevant information.
 
-:need:`gd_chklst__tool__cr_review` may used to check that all relevant information is considered.
+:need:`gd_chklst__tool__cr_review` shall be used to check that all relevant information is considered.
 
 The configuration of tools is part of the :need:`doc__config_mgt_plan`.
 
@@ -92,10 +92,10 @@ otherwise to "YES".
 
 **To Step 3**
 
-If tool impact is judged to "YES" and tool error detection judged to "YES", the tool confidence
+If tool impact is judged to "YES" and tool error detection judged to "NO", the tool confidence
 level is determined to "LOW", otherwise "HIGH".
 
-In case the tool confidence level is "LOW", tool qualification is required,
+In case the tool confidence level is "LOW", tool qualification is required.
 
 
 Qualification
@@ -129,6 +129,8 @@ development, as they are not used:
 Tool List
 ^^^^^^^^^
 
+.. _platform_tool_list:
+
 .. list-table:: SW Platform tool overview
     :header-rows: 1
 
@@ -138,7 +140,7 @@ Tool List
       - tool TCL
       - Link to evaluation issue
       - Link to qualification issue
-      - Link to verification report
+      - Link to verification report (contains version, use cases, link to manuals, etc.)
 
     * - #
       - sphinx-needs

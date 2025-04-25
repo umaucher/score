@@ -41,8 +41,8 @@
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-0c6c0064">
+  <div class="need_container docutils container" id="SNCB-741d0364">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_tool_management_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -595,7 +595,7 @@ documented and evaluated and if applicable, qualified.</p>
 The tools are stored in one GitHub repository, <a class="reference external" href="https://GitHub.com/eclipse-score/tooling/">tooling repository</a>.</p>
 <p>For each tool the <a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="gd_temp__tool_management__verif_rpt_template"><em class="xref need">Tool Verification Report Te... (gd_temp__tool_management__verif_rpt_template)</em></a> shall be used to document
 the relevant information.</p>
-<p><a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="gd_chklst__tool__cr_review"><em class="xref need">Tool Verification Report Re... (gd_chklst__tool__cr_review)</em></a> may used to check that all relevant information is considered.</p>
+<p><a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="gd_chklst__tool__cr_review"><em class="xref need">Tool Verification Report Re... (gd_chklst__tool__cr_review)</em></a> shall be used to check that all relevant information is considered.</p>
 <p>The configuration of tools is part of the <a class="reference internal" href="config_management.html#doc__config_mgt_plan" title="doc__config_mgt_plan"><em class="xref need">Configuration Management Plan (doc__config_mgt_plan)</em></a>.</p>
 </section>
 <section id="evaluation">
@@ -619,9 +619,9 @@ prevention of these, if applicable.
 If there is no guarantee to either detect or prevent these, judge tool error detection to “NO”,
 otherwise to “YES”.</p>
 <p><strong>To Step 3</strong></p>
-<p>If tool impact is judged to “YES” and tool error detection judged to “YES”, the tool confidence
+<p>If tool impact is judged to “YES” and tool error detection judged to “NO”, the tool confidence
 level is determined to “LOW”, otherwise “HIGH”.</p>
-<p>In case the tool confidence level is “LOW”, tool qualification is required,</p>
+<p>In case the tool confidence level is “LOW”, tool qualification is required.</p>
 </section>
 <section id="qualification">
 <h3>Qualification<a class="headerlink" href="#qualification" title="Link to this heading">#</a></h3>
@@ -647,7 +647,7 @@ development, as they are not used:</p>
 </section>
 <section id="tool-list">
 <h3>Tool List<a class="headerlink" href="#tool-list" title="Link to this heading">#</a></h3>
-<div class="pst-scrollable-table-container"><table class="table" id="id1">
+<div class="pst-scrollable-table-container"><span id="platform-tool-list"></span><table class="table" id="id1">
 <caption><span class="caption-number">Table 42 </span><span class="caption-text">SW Platform tool overview</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>tool Id</p></th>
@@ -656,7 +656,7 @@ development, as they are not used:</p>
 <th class="head"><p>tool TCL</p></th>
 <th class="head"><p>Link to evaluation issue</p></th>
 <th class="head"><p>Link to qualification issue</p></th>
-<th class="head"><p>Link to verification report</p></th>
+<th class="head"><p>Link to verification report (contains version, use cases, link to manuals, etc.)</p></th>
 </tr>
 </thead>
 <tbody>
