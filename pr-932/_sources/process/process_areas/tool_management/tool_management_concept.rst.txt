@@ -27,9 +27,11 @@ for the Tool Management process.
 
 Key concept
 ***********
-S-CORE objective is to use OSS Tools only. The selection criteria for OSS Tool therefore must
-include the determination of the Tool Confidence Level `(TCL) <https://www.validas.de/publications/automotive2012.pdf>`_
-for the tool under consideration.
+In general all Tools to generate the S-CORE product must be identified. As it is a S-CORE objective
+to use OSS Tools wherever applicable the selection criteria for any Tool including OSS Tools
+must include therefore the determination of the Tool Confidence Level
+`(TCL) <https://www.validas.de/publications/automotive2012.pdf>`_ for the tool under consideration.
+
 Based on the resulting TCL additional Tool Qualification activities may required.
 
 
@@ -69,10 +71,5 @@ the relevant information.
 Activities for Tool Management
 ******************************
 
-.. _tlm_creation:
-
-Creation of the Tool Verification Report
-========================================
-
-Use the :need:`Tool Verification Report Review Checklist Template <gd_chklst__tool__cr_review>` to
-check the completeness of the Tool Verification Report.
+The main work product is the Tool Verification Report. Thus the workflow
+:need:`Tool Verification Report Review Checklist Template <gd_chklst__tool__cr_review>` applies.

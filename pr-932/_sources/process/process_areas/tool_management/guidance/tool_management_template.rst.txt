@@ -130,7 +130,7 @@ Determine if tool qualification is required
 
 **Optional Section for Tool Qualification**
 -------------------------------------------
-based on method: validation of the software tool
+Based on method: validation of the software tool
 
 
 Requirements and testing aspects
