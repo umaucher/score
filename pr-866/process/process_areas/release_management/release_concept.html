@@ -41,8 +41,8 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -552,7 +552,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-0cb73ec5">
+<div class="need_container docutils container" id="SNCB-cf69ea3a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__rel__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -705,10 +705,10 @@ Only released software modules can be included into a platform release.</p>
 <section id="branching-strategy">
 <h3>Branching Strategy<a class="headerlink" href="#branching-strategy" title="Link to this heading">#</a></h3>
 <p>Branches:
-* main: Stable, production-ready code.
-* release/*: Branches for distinct releases, named release/&lt;version-number&gt;.</p>
+* master: for implementation and documentation in development phase.
+* release/*: Branches for distinct releases, named release/&lt;version-number&gt;, no functional changes, only bugfixes, quality and documentation improvements.</p>
 <p>Workflow:</p>
-<p>When ready for a new release, create a branch release/&lt;version-number&gt; from main.
+<p>When ready for a new release, create a branch release/&lt;version-number&gt; from master.
 Perform final testing and adjustments on the release branch.
 Tag the release in the release branch.</p>
 </section>
