@@ -35,7 +35,7 @@ The S-CORE process model is described by workflows, executed by roles and is cre
 Workflow activities are supported by guidances.
 
 .. figure:: _assets/score_process_area_overview.drawio.svg
-  :width: 90%
+  :width: 100%
   :align: center
   :alt: Process area overview for **S-CORE** platform
 
