@@ -36,10 +36,6 @@
     "url": "https://eclipse-score.github.io/score/pr-530/"
   },
   {
-    "version": "pr-578",
-    "url": "https://eclipse-score.github.io/score/pr-578/"
-  },
-  {
     "version": "pr-734",
     "url": "https://eclipse-score.github.io/score/pr-734/"
   },
@@ -102,13 +98,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-1007",
-    "url": "https://eclipse-score.github.io/score/pr-1007/"
-  },
-  {
-    "version": "pr-1012",
-    "url": "https://eclipse-score.github.io/score/pr-1012/"
   }
 ]
