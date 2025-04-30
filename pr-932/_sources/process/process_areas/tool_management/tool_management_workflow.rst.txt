@@ -20,22 +20,23 @@ Workflow Tool Management
 .. workflow:: Create Tool Verification Report
    :id: wf__tool__create_tool_verification_report
    :status: valid
-   :responsible: rl__infrastructure_tooling_community
-   :approved_by: rl__safety_manager
-   :supported_by: rl__technical_lead, rl__module_lead, rl__security_manager
+   :responsible: rl__contributor
+   :approved_by: rl__committer, rl__safety_manager, rl__security_manager,
+   :supported_by: rl__technical_lead, rl__module_lead, rl__infrastructure_tooling_community
    :input: wp__issue_track_system, wp__tlm_plan
-   :output: wp__tool_verification
+   :output: wp__tool_verification_report
    :contains: gd_temp__tool_management__verif_rpt_template, gd_chklst__tool__cr_review
    :has: doc_concept__tool__process, doc_getstrt__tool__process
 
-   The Tool Verification Report is created during identification of a tool.
+   The Tool Verification Report is created during identification of a tool in status draft.
 
    Each identified tool is evaluated and if applicable, qualified. During evaluation and
-   qualification the Tool Verification Report is updated.
+   qualification the Tool Verification Report is updated and the status is set accordingly to
+   evaluated or qualified.
 
-   Finally the Tool Verification Report is verified and approved, and thus in Released state.
+   Finally the Tool Verification Report is verified and approved, and thus set to status released.
 
-   For creating the Tool Verification Report a template must be used.
+   For creating the Tool Verification Report the content of the linked template be used.
 
 
 .. needextend:: "process_areas/tool_management" in docname

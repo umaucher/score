@@ -23,7 +23,7 @@ Work Products Tool Management
    Tool Management Plan (Part of the Platform Management Plan)
 
 .. workproduct:: Tool Verification Report
-   :id: wp__tool_verification
+   :id: wp__tool_verification_report
    :status: valid
    :complies: std_wp__iso26262__support_1151, std_wp__iso26262__support_1152, std_wp__isosae21434__org_management_554
 
@@ -31,7 +31,7 @@ Work Products Tool Management
    In addition security topics must be considered, as tool user manuals, access control for tools,
    proper tool documentation, guidelines, protection against malware introduction, etc.
 
-   Based on TCL the appropriate qualification methods shall be applied. For S-CORE per default
+   Based on TCL the appropriate qualification methods shall be applied. For S-CORE
    the method **validation of software tool** must be used.
 
 

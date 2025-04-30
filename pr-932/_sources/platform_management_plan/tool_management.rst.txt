@@ -14,7 +14,7 @@
 
 .. document:: Tool Management Plan
    :id: doc__platform_tool_management_plan
-   :status: draft
+   :status: valid
    :safety: ASIL_B
    :tags: platform_management
    :realizes: wp__tlm_plan
@@ -27,12 +27,12 @@ This document implements parts of the :need:`wp__platform_mgmt`.
 
 Purpose
 +++++++
-The purpose of the Tool Management Plan is to guide the identification, evaluation and qualification of
-project tools.
+The purpose of the Tool Management Plan is to guide the identification, evaluation and, if
+applicable, the qualification (safe and secure use) of Tools for the S-CORE project.
 
-S-CORE objectives is to use OSS tools for the generation of all required work products. Thus all
-tools which will be used as part of the tool chain for the work product generation must be identified,
-documented and evaluated and if applicable, qualified.
+S-CORE guideline is to use as much as possible Tools for the generation of all required work
+products. Thus all Tools which will be used as part of the tool chain for the work product
+generation must be identified, documented and evaluated and if applicable, qualified.
 
 
 Objectives and Scope
@@ -44,23 +44,39 @@ Tool Management Goals
 * Tools are identified and documented
 * Tools are evaluated
 * Tools are qualified, if applicable
+* Tool Verification Reports are released
 
 Approach
 ++++++++
+
+.. figure:: _assets/score_tool_management_overview.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Tool Management Overview
+
+Tool Management Attributes
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+:ref:`tlm_process_attributes` are implemented as follows:
 
 
 Identification
 ^^^^^^^^^^^^^^
 
-Each tool is identified by its name or UID and version.
-The tools are stored in one GitHub repository, `tooling repository <https://GitHub.com/eclipse-score/tooling/>`_.
+Each tool is identified by its name or UID and its version, independent where it is located.
 
-For each tool the :need:`gd_temp__tool_management__verif_rpt_template` shall be used to document
+The most important tools are stored in one GitHub repository,
+`tooling repository <https://GitHub.com/eclipse-score/tooling/>`_.
+
+But in general Tool can be stored all over the place.
+
+For each Tool the :need:`gd_temp__tool_management__verif_rpt_template` shall be used to document
 the relevant information.
 
 :need:`gd_chklst__tool__cr_review` shall be used to check that all relevant information is considered.
 
 The configuration of tools is part of the :need:`doc__config_mgt_plan`.
+
+The output after this stage is the :need:`wp__tool_verification_report` in status: `identified`.
 
 
 Evaluation
@@ -74,6 +90,11 @@ Step-by-Step guide:
 1. Determine the tool impact
 2. Determine the tool error detection
 3. Determine the tool confidence level
+
+.. figure:: _assets/score_tool_management_evaluation.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: Tool Evaluation
 
 **To Step 1**
 
@@ -97,6 +118,7 @@ level is determined to "LOW", otherwise "HIGH".
 
 In case the tool confidence level is "LOW", tool qualification is required.
 
+The output after this stage is the :need:`wp__tool_verification_report` in status: `evaluated`.
 
 Qualification
 ^^^^^^^^^^^^^
@@ -104,8 +126,8 @@ Qualification
 As method "validation of software tool" is applied.
 
 Specify requirements for the tools purpose and usage in the S-CORE context.
-Analyze the malfunctions and threats and specify safety measures and security controls to increase
-the prevention and detection of them.
+Analyze the malfunctions and threats and specify additional safety measures and security controls
+to increase the prevention and detection of them.
 Specify test cases and tests to verify the requirements and generate a test report.
 Update the Tool Verification Report accordingly to document the outcomes.
 
@@ -120,6 +142,16 @@ In detail:
 
 * If applicable, use for the Analyses: (to be added, after Safety/Security Analyses have been merged)
 
+The output after this stage is the :need:`wp__tool_verification_report` in status: `qualified`.
+
+Approval
+^^^^^^^^
+
+Finally the tool may accepted for the S-CORE project. Thus the Tool Verification Report after this
+stage is the :need:`wp__tool_verification_report` in status: `released`.
+
+If not, the tool is rejected, thus Tool Verification Report after this
+stage is the :need:`wp__tool_verification_report` in status: `rejected`.
 
 Tailoring
 ^^^^^^^^^
@@ -146,8 +178,8 @@ Tool List
       - tool name
       - tool status
       - tool TCL
-      - Link to evaluation issue
-      - Link to qualification issue
+      - Link to tool evaluation issue (GitHub Issue)
+      - Link to tool qualification issue (GitHub Issue)
       - Link to verification report (contains version, use cases, link to manuals, etc.)
 
     * - #

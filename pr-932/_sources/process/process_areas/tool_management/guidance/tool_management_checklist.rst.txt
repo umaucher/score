@@ -45,7 +45,7 @@ Tool Verification Report Review Checklist
         -
 
       * - 3
-        - Is the tool verification status (draft, evaluated, qualified) defined?
+        - Is the tool verification status (draft, evaluated, qualified, released, rejected) defined?
         -
 
       * - 4
@@ -98,20 +98,4 @@ Tool Verification Report Review Checklist
 
       * - 16
         - Is the tool confidence level based on tool impact and tool error detection defined?
-        -
-
-      * - 17
-        - If applicable, are the requirements for software tool qualification defined?
-        -
-
-      * - 18
-        - If applicable, are the test cases and tests for software tool qualification defined?
-        -
-
-      * - 19
-        - If applicable, are the test reports for software tool qualification defined?
-        -
-
-      * - 20
-        - If applicable, are the analyses for software tool qualification defined?
         -

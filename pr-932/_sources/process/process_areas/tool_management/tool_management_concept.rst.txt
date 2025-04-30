@@ -28,8 +28,8 @@ for the Tool Management process.
 Key concept
 ***********
 In general all Tools to generate the S-CORE product must be identified. As it is a S-CORE objective
-to use OSS Tools wherever applicable the selection criteria for any Tool including OSS Tools
-must include therefore the determination of the Tool Confidence Level
+to use Tools wherever applicable to generate any kind of work products, the selection criteria for
+any Tool including OSS Tools must include therefore the determination of the Tool Confidence Level
 `(TCL) <https://www.validas.de/publications/automotive2012.pdf>`_ for the tool under consideration.
 
 Based on the resulting TCL additional Tool Qualification activities may required.
@@ -45,11 +45,13 @@ Inputs
 Stakeholders for the Tool Management
 ************************************
 
-#. :need:`Infrastructure, Tooling Community <rl__infrastructure_tooling_community>`
+#. :need:`Contributor <rl__contributor>`
+   :need:`Infrastructure, Tooling Community <rl__infrastructure_tooling_community>`
 
    * Contributes tooling, infrastructure elements to grow and mature the **S-CORE** development environment
 
-#. :need:`Safety Manager<rl__safety_manager>`, :need:`Security Manager <rl__security_manager>`
+#. :need:`Safety Manager<rl__safety_manager>`, :need:`Security Manager <rl__security_manager>`,
+   :need:`Committer <rl__committer>`
 
    * Verifies and approves the the tool verification report
 
@@ -71,5 +73,13 @@ the relevant information.
 Activities for Tool Management
 ******************************
 
-The main work product is the Tool Verification Report. Thus the workflow
-:need:`Tool Verification Report Review Checklist Template <gd_chklst__tool__cr_review>` applies.
+The main work product is the :need:`Tool Verification Report <wp__tool_verification_report>`.
+Thus the workflow :need:`Create Tool Verification Report <wf__tool__create_tool_verification_report>`
+applies.
+
+
+Attributes for Tool Management
+******************************
+
+The required attributes for the Tool Verification Report are defined here:
+:ref:`tlm_process_attributes`.

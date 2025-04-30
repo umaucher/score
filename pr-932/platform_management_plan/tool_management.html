@@ -520,7 +520,7 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="need_container docutils container" id="SNCB-701029fb">
+  <div class="need_container docutils container" id="SNCB-05275802">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__platform_tool_management_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -528,7 +528,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
@@ -539,7 +539,7 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">platform_management</span></span></span></div>
 <div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__tlm_plan</span></span></div>
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
@@ -570,11 +570,11 @@
 <p>This document implements parts of the <a class="reference internal" href="../process/process_areas/platform_management/platform_management_workproducts.html#wp__platform_mgmt" title="wp__platform_mgmt"><em class="xref need">Platform Management Plan (wp__platform_mgmt)</em></a>.</p>
 <section id="purpose">
 <h2>Purpose<a class="headerlink" href="#purpose" title="Link to this heading">#</a></h2>
-<p>The purpose of the Tool Management Plan is to guide the identification, evaluation and qualification of
-project tools.</p>
-<p>S-CORE objectives is to use OSS tools for the generation of all required work products. Thus all
-tools which will be used as part of the tool chain for the work product generation must be identified,
-documented and evaluated and if applicable, qualified.</p>
+<p>The purpose of the Tool Management Plan is to guide the identification, evaluation and, if
+applicable, the qualification (safe and secure use) of Tools for the S-CORE project.</p>
+<p>S-CORE guideline is to use as much as possible Tools for the generation of all required work
+products. Thus all Tools which will be used as part of the tool chain for the work product
+generation must be identified, documented and evaluated and if applicable, qualified.</p>
 </section>
 <section id="objectives-and-scope">
 <h2>Objectives and Scope<a class="headerlink" href="#objectives-and-scope" title="Link to this heading">#</a></h2>
@@ -584,19 +584,31 @@ documented and evaluated and if applicable, qualified.</p>
 <li><p>Tools are identified and documented</p></li>
 <li><p>Tools are evaluated</p></li>
 <li><p>Tools are qualified, if applicable</p></li>
+<li><p>Tool Verification Reports are released</p></li>
 </ul>
 </section>
 </section>
 <section id="approach">
 <h2>Approach<a class="headerlink" href="#approach" title="Link to this heading">#</a></h2>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/score_tool_management_overview.drawio.svg"><img alt="Tool Management Overview" src="../_images/score_tool_management_overview.drawio.svg" style="width: 100%;" />
+</a>
+</figure>
+<section id="tool-management-attributes">
+<h3>Tool Management Attributes<a class="headerlink" href="#tool-management-attributes" title="Link to this heading">#</a></h3>
+<p><a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_reqs.html#tlm-process-attributes"><span class="std std-ref">Tool Verification Report Attributes</span></a> are implemented as follows:</p>
+</section>
 <section id="identification">
 <h3>Identification<a class="headerlink" href="#identification" title="Link to this heading">#</a></h3>
-<p>Each tool is identified by its name or UID and version.
-The tools are stored in one GitHub repository, <a class="reference external" href="https://GitHub.com/eclipse-score/tooling/">tooling repository</a>.</p>
-<p>For each tool the <a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="gd_temp__tool_management__verif_rpt_template"><em class="xref need">Tool Verification Report Te... (gd_temp__tool_management__verif_rpt_template)</em></a> shall be used to document
+<p>Each tool is identified by its name or UID and its version, independent where it is located.</p>
+<p>The most important tools are stored in one GitHub repository,
+<a class="reference external" href="https://GitHub.com/eclipse-score/tooling/">tooling repository</a>.</p>
+<p>But in general Tool can be stored all over the place.</p>
+<p>For each Tool the <a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_template.html#gd_temp__tool_management__verif_rpt_template" title="gd_temp__tool_management__verif_rpt_template"><em class="xref need">Tool Verification Report Te... (gd_temp__tool_management__verif_rpt_template)</em></a> shall be used to document
 the relevant information.</p>
 <p><a class="reference internal" href="../process/process_areas/tool_management/guidance/tool_management_checklist.html#gd_chklst__tool__cr_review" title="gd_chklst__tool__cr_review"><em class="xref need">Tool Verification Report Re... (gd_chklst__tool__cr_review)</em></a> shall be used to check that all relevant information is considered.</p>
 <p>The configuration of tools is part of the <a class="reference internal" href="config_management.html#doc__config_mgt_plan" title="doc__config_mgt_plan"><em class="xref need">Configuration Management Plan (doc__config_mgt_plan)</em></a>.</p>
+<p>The output after this stage is the <a class="reference internal" href="../process/process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a> in status: <cite>identified</cite>.</p>
 </section>
 <section id="evaluation">
 <h3>Evaluation<a class="headerlink" href="#evaluation" title="Link to this heading">#</a></h3>
@@ -608,6 +620,10 @@ the relevant information.</p>
 <li><p>Determine the tool error detection</p></li>
 <li><p>Determine the tool confidence level</p></li>
 </ol>
+<figure class="align-center">
+<a class="reference internal image-reference" href="../_images/score_tool_management_evaluation.drawio.svg"><img alt="Tool Evaluation" src="../_images/score_tool_management_evaluation.drawio.svg" style="width: 100%;" />
+</a>
+</figure>
 <p><strong>To Step 1</strong></p>
 <p>Based on the found malfunctions or threats judge, if any safety or security requirements may violated.
 If this is the case, determine tool impact to “YES” otherwise to “NO”.</p>
@@ -622,13 +638,14 @@ otherwise to “YES”.</p>
 <p>If tool impact is judged to “YES” and tool error detection judged to “NO”, the tool confidence
 level is determined to “LOW”, otherwise “HIGH”.</p>
 <p>In case the tool confidence level is “LOW”, tool qualification is required.</p>
+<p>The output after this stage is the <a class="reference internal" href="../process/process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a> in status: <cite>evaluated</cite>.</p>
 </section>
 <section id="qualification">
 <h3>Qualification<a class="headerlink" href="#qualification" title="Link to this heading">#</a></h3>
 <p>As method “validation of software tool” is applied.</p>
 <p>Specify requirements for the tools purpose and usage in the S-CORE context.
-Analyze the malfunctions and threats and specify safety measures and security controls to increase
-the prevention and detection of them.
+Analyze the malfunctions and threats and specify additional safety measures and security controls
+to increase the prevention and detection of them.
 Specify test cases and tests to verify the requirements and generate a test report.
 Update the Tool Verification Report accordingly to document the outcomes.</p>
 <p>For the generation of requirements, verification and analyses the existing processes as defined
@@ -639,6 +656,14 @@ in the <a class="reference internal" href="../process/process_areas/platform_man
 <li><p>Use <a class="reference internal" href="../process/process_areas/verification/workflows.html#wf__verification__comp_test" title="wf__verification__comp_test"><em class="xref need">Create/Maintain Component Test (wf__verification__comp_test)</em></a> to test the requirements for the software tool and <a class="reference internal" href="../process/process_areas/verification/workflows.html#wf__verification__mod_ver_report" title="wf__verification__mod_ver_report"><em class="xref need">Create Module Verification ... (wf__verification__mod_ver_report)</em></a> to report</p></li>
 <li><p>If applicable, use for the Analyses: (to be added, after Safety/Security Analyses have been merged)</p></li>
 </ul>
+<p>The output after this stage is the <a class="reference internal" href="../process/process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a> in status: <cite>qualified</cite>.</p>
+</section>
+<section id="approval">
+<h3>Approval<a class="headerlink" href="#approval" title="Link to this heading">#</a></h3>
+<p>Finally the tool may accepted for the S-CORE project. Thus the Tool Verification Report after this
+stage is the <a class="reference internal" href="../process/process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a> in status: <cite>released</cite>.</p>
+<p>If not, the tool is rejected, thus Tool Verification Report after this
+stage is the <a class="reference internal" href="../process/process_areas/tool_management/tool_management_workproducts.html#wp__tool_verification_report" title="wp__tool_verification_report"><em class="xref need">Tool Verification Report (wp__tool_verification_report)</em></a> in status: <cite>rejected</cite>.</p>
 </section>
 <section id="tailoring">
 <h3>Tailoring<a class="headerlink" href="#tailoring" title="Link to this heading">#</a></h3>
@@ -659,8 +684,8 @@ development, as they are not used:</p>
 <th class="head"><p>tool name</p></th>
 <th class="head"><p>tool status</p></th>
 <th class="head"><p>tool TCL</p></th>
-<th class="head"><p>Link to evaluation issue</p></th>
-<th class="head"><p>Link to qualification issue</p></th>
+<th class="head"><p>Link to tool evaluation issue (GitHub Issue)</p></th>
+<th class="head"><p>Link to tool qualification issue (GitHub Issue)</p></th>
 <th class="head"><p>Link to verification report (contains version, use cases, link to manuals, etc.)</p></th>
 </tr>
 </thead>
@@ -733,9 +758,11 @@ development, as they are not used:</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#approach">Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-management-attributes">Tool Management Attributes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identification">Identification</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#evaluation">Evaluation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#qualification">Qualification</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#approval">Approval</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tailoring">Tailoring</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tool-list">Tool List</a></li>
 </ul>
