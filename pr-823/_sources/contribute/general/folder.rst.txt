@@ -86,7 +86,6 @@ can be in a different order.
                     tests/                          -> Component tests, consisting of ...
                         unit/                       -> ... unit tests [wp__sw_unit_test] (for lowest level of components).
                         integration/                -> ... integration tests [wp__sw_component_integration_test].
-                        verification/               -> ... verification tests [wp__sw_component_test].
                     <sub_component_name>/           -> Sub-Component of the Component.
                          copy the relevant folders below <component-name> if applicable (example: no code inspection needed for sub-components from the Open Source)
 
