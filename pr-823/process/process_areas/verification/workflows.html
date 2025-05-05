@@ -41,8 +41,8 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -549,7 +549,7 @@
                   
   <section id="workflow-verification">
 <span id="verification-workflows"></span><h1>Workflow Verification<a class="headerlink" href="#workflow-verification" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6fcdf57a">
+<div class="need_container docutils container" id="SNCB-42ad6590">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__unit_test">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -589,7 +589,16 @@ Any contributor can create a component test and create a PR for it.
 During the review process the test cases will be approved by a committer.
 Committer and contributor need to differ.
 The actual <a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a> of the implementation can also be the creator of the unit tests.
-Independence is achieved by different approver at PRs and by the <a class="reference internal" href="workproducts.html#wp__verification__module_ver_report" title="wp__verification__module_ver_report"><em class="xref need">Module Verification Report (wp__verification__module_ver_report)</em></a>.</p></td>
+Independence is achieved by different approver at PRs and by the <a class="reference internal" href="workproducts.html#wp__verification__module_ver_report" title="wp__verification__module_ver_report"><em class="xref need">Module Verification Report (wp__verification__module_ver_report)</em></a>.</p>
+<p>The typical steps when creating a unit tests are:</p>
+<ol class="arabic simple">
+<li><p>Check the detailed design of the component. Create a test for every interface of the unit
+showing at least every flow in dynamic diagrams.</p></li>
+<li><p>Follow the detailed design to the component requirements and test these requirements.</p></li>
+<li><p>Fill in the test attributes based on the previous steps and provide a description.</p></li>
+<li><p>Link the test against detailed design or component requirement.</p></li>
+</ol>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__verification__unit_test" title="wf__verification__unit_test">wf__verification__unit_test</a></span></span></div>
@@ -605,7 +614,7 @@ Independence is achieved by different approver at PRs and by the <a class="refer
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8e2b9c09">
+<div class="need_container docutils container" id="SNCB-55ee3577">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__comp_int_test">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -640,7 +649,9 @@ Independence is achieved by different approver at PRs and by the <a class="refer
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p>Component Integration test cases are based on component architecture and component requirements.
-They may optionally cover the detailed design of implementation as an optional element where units are seen complex.
+They also cover the detailed design and integration of units forming a component.
+The integration testing of component architecture is optional in case a component is standalone
+and has no (sub-)components.
 Any contributor can create a component integration test and create a PR for it.
 During the review process the test cases will be approved by a committer.
 Committer and contributor need to differ.
@@ -661,7 +672,7 @@ In case of changes at inputs, the workflow need to be executed again as part of 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ff925952">
+<div class="need_container docutils container" id="SNCB-c219575b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__feat_int_test">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -716,7 +727,7 @@ In case of changes at inputs, the workflow need to be executed again as part of 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ead41520">
+<div class="need_container docutils container" id="SNCB-dcb195f4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__platform_test">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -771,7 +782,7 @@ In case of changes at inputs, the workflow need to be executed again as part of 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-cd6685fc">
+<div class="need_container docutils container" id="SNCB-0b8945ed">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -824,7 +835,7 @@ as needed throughout the project lifecycle by <a class="reference internal" href
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-329ef639">
+<div class="need_container docutils container" id="SNCB-218b6ad6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__plan_maintain">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -879,7 +890,7 @@ not every input down to component level may be available.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-46aa5ba3">
+<div class="need_container docutils container" id="SNCB-3c48632d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__mod_ver_report">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -935,7 +946,7 @@ defined in the <a class="reference internal" href="workproducts.html#wp__verific
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-73352661">
+<div class="need_container docutils container" id="SNCB-846f0403">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__verification__platform_ver_report">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">

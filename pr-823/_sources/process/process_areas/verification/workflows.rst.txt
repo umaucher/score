@@ -38,6 +38,14 @@ Workflow Verification
    The actual :need:`rl__committer` of the implementation can also be the creator of the unit tests.
    Independence is achieved by different approver at PRs and by the :need:`wp__verification__module_ver_report`.
 
+   The typical steps when creating a unit tests are:
+
+   #. Check the detailed design of the component. Create a test for every interface of the unit
+      showing at least every flow in dynamic diagrams.
+   #. Follow the detailed design to the component requirements and test these requirements.
+   #. Fill in the test attributes based on the previous steps and provide a description.
+   #. Link the test against detailed design or component requirement.
+
 .. workflow:: Create/Maintain Component Integration Test
    :id: wf__verification__comp_int_test
    :status: valid
@@ -51,7 +59,9 @@ Workflow Verification
    :has: doc_concept__verification__process, doc_getstrt__verification__process
 
    Component Integration test cases are based on component architecture and component requirements.
-   They may optionally cover the detailed design of implementation as an optional element where units are seen complex.
+   They also cover the detailed design and integration of units forming a component.
+   The integration testing of component architecture is optional in case a component is standalone
+   and has no (sub-)components.
    Any contributor can create a component integration test and create a PR for it.
    During the review process the test cases will be approved by a committer.
    Committer and contributor need to differ.
