@@ -555,7 +555,7 @@
                   
   <section id="concept-description">
 <h1>Concept Description<a class="headerlink" href="#concept-description" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7bd03634">
+<div class="need_container docutils container" id="SNCB-c44e05c6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__arch__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -712,7 +712,7 @@
 <section id="static-view">
 <h4>Static View<a class="headerlink" href="#static-view" title="Link to this heading">#</a></h4>
 <p>The first viewpoint is named as <em>feature architecture</em>. It displays the SW modules (= top level SW components) which are required to realize the feature including their interactions. Also the <em>logical interfaces</em> and the interaction between the feature and the user are included in this view. On this architectural level the feature requirements shall be allocated. An example for the static architecture is shown here:</p>
-<div class="need_container docutils container" id="SNCB-0b5f7507">
+<div class="need_container docutils container" id="SNCB-2528249e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__feature_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -744,66 +744,8 @@
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/architecture_concept-0">
-<object data="../../../_images/plantuml-e50b59af2629bcf9cf79519a397bbdd5b155bd92.svg" type="image/svg+xml" style="width:405px;height:726px;background:#FFFFFF;"></object></p>
-<pre>@startuml
-
-allow_mixing
-top to bottom direction
-hide stereotype
-hide empty attributes
-&lt;style&gt;
-.asilb {
-LineColor blue
-LineThickness 2.0
-}
-&lt;/style&gt;
-
-actor &quot;Feature User&quot; as Feature_User 
-interface &quot;Logical Interface 2&quot; as logic_arc_int__archdes_logical_interface_2  [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int__archdes_logical_interface_2]] {
-
-+ Logical Operation 3 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_3]]]
-+ Logical Operation 4 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_4]]]
-
-} /&#x27; Logical Interface 2 &#x27;/ 
-
-interface &quot;Logical Interface 3&quot; as logic_arc_int__archdes_logical_interface_3  [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int__archdes_logical_interface_3]] {
-
-+ Logical Operation 5 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_5]]]
-+ Logical Operation 6 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_6]]]
-+ Logical Operation 7 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_7]]]
-+ Logical Operation 8 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_8]]]
-
-} /&#x27; Logical Interface 3 &#x27;/ 
-
-interface &quot;Logical Interface 1&quot; as logic_arc_int__archdes_logical_interface_1  [[../process/process_areas/architecture_design/architecture_concept.html#logic_arc_int__archdes_logical_interface_1]] {
-
-+ Logical Operation 1 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_1]]]
-+ Logical Operation 2 () [[[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#logic_arc_int_op__archdes_logical_operation_2]]]
-
-} /&#x27; Logical Interface 1 &#x27;/ 
-
-package &quot;Module 1&quot; as mod_view_sta__archdes_1  [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#mod_view_sta__archdes_1]]  {
-component &quot;Component 1&quot; as comp_arc_sta__archdes_component_1 &lt;&lt;asilb&gt;&gt; [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#comp_arc_sta__archdes_component_1]]  {
-} /&#x27; Component 1 &#x27;/ 
-
-} /&#x27; Module 1 &#x27;/ 
-
-package &quot;Module 2&quot; as mod_view_sta__archdes_2  [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#mod_view_sta__archdes_2]]  {
-component &quot;Component 3&quot; as comp_arc_sta__archdes_component_3 &lt;&lt;asilb&gt;&gt; [[../process/process_areas/architecture_design/_assets/architecture_modeling_example.html#comp_arc_sta__archdes_component_3]]  {
-} /&#x27; Component 3 &#x27;/ 
-
-} /&#x27; Module 2 &#x27;/ 
-
-
-comp_arc_sta__archdes_component_1 -d[#green]-&gt; logic_arc_int__archdes_logical_interface_3: uses 
-comp_arc_sta__archdes_component_1 -u-&gt; logic_arc_int__archdes_logical_interface_1: implements 
-Feature_User -d-&gt; logic_arc_int__archdes_logical_interface_2: use 
-comp_arc_sta__archdes_component_1 -u-&gt; logic_arc_int__archdes_logical_interface_2: implements 
-Feature_User -d-&gt; logic_arc_int__archdes_logical_interface_1: use 
-comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interface_3: implements 
-
-@enduml
-</pre></td>
+<object data="../../../_images/plantuml-182bb35f6bfd5cc88ea324587eb60dbc6a85e621.svg" type="image/svg+xml" style="width:405px;height:726px;background:#FFFFFF;"></object></p>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_sta__feature_1" title="feat_arc_sta__feature_1">feat_arc_sta__feature_1</a></span></span></div>
@@ -842,7 +784,7 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <section id="interface-view">
 <h4>Interface View<a class="headerlink" href="#interface-view" title="Link to this heading">#</a></h4>
 <p>On the feature level only <em>logical interfaces</em> shall be displayed. This means that only logical names shall be provided for both the interface and the operations within. Those <em>logical interfaces</em> shall be connected to component interfaces on the module view.</p>
-<div class="need_container docutils container" id="SNCB-b72cf420">
+<div class="need_container docutils container" id="SNCB-bee8325d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__archdes_logical_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -899,7 +841,7 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <h3>SW Module View<a class="headerlink" href="#sw-module-view" title="Link to this heading">#</a></h3>
 <p>A SW Module in S-CORE represents a <a class="reference external" href="https://bazel.build/external/module">Bazel Module</a>. It serves only as a container (or package) which can include components. It is not meant to be an architectural element which includes that no requirements can be allocated to it.</p>
 <p>On this level also a view shall be defined which is called <em>Module View</em>. It represents the allocation of components into modules and displays the dependencies between the single modules. In this view also cyclic dependencies between modules can be identified.</p>
-<div class="need_container docutils container" id="SNCB-2e28be90">
+<div class="need_container docutils container" id="SNCB-0053f27b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__archdes_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -927,7 +869,7 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/architecture_concept-2">
-<object data="../../../_images/plantuml-170c2aba44d0b896c9efcfd3d582ba23bb501257.svg" type="image/svg+xml" style="width:405px;height:575px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-7c373516efa7652957c6a0c12ceeacc836ebddc2.svg" type="image/svg+xml" style="width:405px;height:575px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -950,7 +892,7 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <section id="id2">
 <h4>Static View<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
 <p>The second viewpoint is named as <em>component architecture</em> and describes the implementation of the functionalities in a white-box view of the platform. It describes the structural decomposition of the <em>SW components</em> into <em>lower level</em> SW components. In the S-CORE project this viewpoint provides more detailed information concerning the respective interfaces of a component. If a SW component interacts with a different component it is also included via a <em>use</em> relationship in the diagram. An example of the <em>component architecture</em> is displayed here:</p>
-<div class="need_container docutils container" id="SNCB-f0520158">
+<div class="need_container docutils container" id="SNCB-c5cbb45f">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_component_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1015,8 +957,8 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <section id="id4">
 <h4>Interface View<a class="headerlink" href="#id4" title="Link to this heading">#</a></h4>
 <p>The component interface view shows the actual interfaces of the component. Also links to their corresponding logical interfaces are displayed in this view:</p>
-<div class="need_container docutils container" id="SNCB-ac305297">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int table" id="comp_arc_int__archdes_component_interface_1">
+<div class="need_container docutils container" id="SNCB-a9c6af75">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_real_arc_int table" id="real_arc_int__archdes_component_interface_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Component Interface 1</span></span></span></div>
@@ -1040,18 +982,18 @@ comp_arc_sta__archdes_component_3 -u-&gt; logic_arc_int__archdes_logical_interfa
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="_assets/architecture_modeling_example.html#comp_req__archdes_example_req" title="comp_arc_int__archdes_component_interface_1">comp_req__archdes_example_req</a></span></span></div>
+<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="_assets/architecture_modeling_example.html#comp_req__archdes_example_req" title="real_arc_int__archdes_component_interface_1">comp_req__archdes_example_req</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/architecture_concept-4">
-<object data="../../../_images/plantuml-7c224e8b943338954d609abf5e1fbfd77325089c.svg" type="image/svg+xml" style="width:247px;height:69px;background:#FFFFFF;"></object></p>
+<object data="../../../_images/plantuml-da1de80f0855dca2f1cc90f448d7f661f5330d0c.svg" type="image/svg+xml" style="width:247px;height:69px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int__archdes_component_interface_1" title="comp_arc_int__archdes_component_interface_1">comp_arc_int__archdes_component_interface_1</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#real_arc_int__archdes_component_interface_1" title="real_arc_int__archdes_component_interface_1">real_arc_int__archdes_component_interface_1</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -1183,12 +1125,12 @@ For the description a natural language, diagrams or a semi-formal language <em>(
 <td><p>logic_arc_int_op_t</p></td>
 </tr>
 <tr class="row-odd"><td><p>(Real) Interface</p></td>
-<td><p>comp_arc_int</p></td>
-<td><p>comp_arc_int_t</p></td>
+<td><p>real_arc_int</p></td>
+<td><p>real_arc_int_t</p></td>
 </tr>
 <tr class="row-even"><td><p>(Real) Interface Operation</p></td>
-<td><p>comp_arc_int_op</p></td>
-<td><p>comp_arc_int_op_t</p></td>
+<td><p>real_arc_int_op</p></td>
+<td><p>real_arc_int_op_t</p></td>
 </tr>
 </tbody>
 </table>
