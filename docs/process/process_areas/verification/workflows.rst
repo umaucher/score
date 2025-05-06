@@ -115,7 +115,7 @@ Workflow Verification
    :responsible: rl__committer, rl__testing_community
    :approved_by: rl__technical_lead
    :supported_by: rl__safety_manager, rl__infrastructure_tooling_community
-   :input: wp__requirements__stkh, wp__platform_mgmt, wp__tool_verification
+   :input: wp__requirements__stkh, wp__platform_mgmt, wp__tool_verification_report
    :output: wp__verification__plan
    :contains: gd_guidl__verification_guide, gd_temp__verification__plan
    :has: doc_concept__verification__process, doc_getstrt__verification__process
@@ -135,7 +135,7 @@ Workflow Verification
    :input: wp__verification__plan, wp__requirements__stkh, wp__platform_mgmt,
            wp__feature_arch, wp__requirements__feat, wp__requirements__feat_aou,
            wp__component_arch, wp__requirements__comp, wp__requirements__comp_aou,
-           wp__tool_verification
+           wp__tool_verification_report
    :output: wp__verification__plan
    :contains: gd_guidl__verification_guide, gd_temp__verification__plan
    :has: doc_concept__verification__process, doc_getstrt__verification__process
