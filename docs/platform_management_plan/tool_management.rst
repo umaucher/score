@@ -138,7 +138,7 @@ In detail:
 
 * Use :need:`wf__req__comp_req` to create requirements for the software tool and :need:`wf__monitor_verify_requirements` for the verification
 
-* Use :need:`wf__verification__comp_test` to test the requirements for the software tool and :need:`wf__verification__mod_ver_report` to report
+* Use :need:`wf__verification__comp_int_test` to test the requirements for the software tool and :need:`wf__verification__mod_ver_report` to report
 
 * If applicable, use for the Analyses: (to be added, after Safety/Security Analyses have been merged)
 
