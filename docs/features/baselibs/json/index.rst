@@ -76,6 +76,7 @@ General considerations
 
 The JSON parser should provide read and data conversion capabilities:
 
+:need:`feat_req__json__validation`
 :need:`feat_req__json__deserialization`
 
 The component should be extensible in the future in order to support conversion of user format to JSON data.

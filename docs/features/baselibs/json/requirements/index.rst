@@ -23,7 +23,7 @@ General Requirements
    :reqtype: Functional
    :security: NO
    :safety: ASIL_B
-   :satisfies: stkh_req__communication__json_parser,stkh_req__functional_req__file_based
+   :satisfies: stkh_req__communication__json_parser
    :status: valid
 
    The JSON-Library shall provide a service to check the well-formedness of JSON data.
@@ -33,7 +33,7 @@ General Requirements
    :reqtype: Functional
    :security: NO
    :safety: ASIL_B
-   :satisfies: stkh_req__communication__json_parser,stkh_req__functional_req__file_based
+   :satisfies: stkh_req__communication__json_parser
    :status: valid
 
    The JSON-Library shall provide a service to parse JSON data according to RFC8259.
