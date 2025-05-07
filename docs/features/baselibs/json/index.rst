@@ -43,12 +43,12 @@ This feature request proposes the integration of a safe JSON parser.
 
 Basic Functionality
 ----------------------
-The component shall support reading from a .json file or a buffer and convert that information to a compatible user format.
+The component shall support parsing JSON data and convert that information to a compatible user format.
 
 
 Future Extensions
 ----------------------
-The component shall support a future extension for converting from user format into .json format and storing it into a file or buffer.
+The component shall support a future extension for serializing from user format into JSON data.
 
 
 Motivation
@@ -76,11 +76,9 @@ General considerations
 
 The JSON parser should provide read and data conversion capabilities:
 
-:need:`feat_req__json__buffer_reading`
-:need:`feat_req__json__file_reading`
 :need:`feat_req__json__deserialization`
 
-The component should be extensible in the future in order to support conversion of user data to JSON format, and write capabilities to files and buffers.
+The component should be extensible in the future in order to support conversion of user format to JSON data.
 
 User friendly API
 -----------------
