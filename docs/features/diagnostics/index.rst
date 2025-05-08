@@ -17,8 +17,6 @@
 Diagnostics
 ############
 
-.. note:: Diagnostics
-
 .. document:: Diagnostics
    :id: doc__diagnostics
    :status: draft
@@ -60,11 +58,9 @@ such as field troubleshooting, quality assurance, after sales, production, devel
 Rationale
 =========
 
-[Describe why particular design decisions were made.]
-
-
-   .. note::
-      The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.
+SOVD was chosen as the foundation for the diagnostic architecture because it offers a modern,
+service-oriented approach that aligns with the industry's shift toward Ethernet-based communication and scalable software-defined vehicle platforms.
+It provides a standardized and extensible interface that enables better interoperability across ECUs, testers, and external tools.
 
 
 Specification
@@ -246,35 +242,33 @@ ODX as a standardized exchange format further ensure compatibility with propriet
 Security Impact
 ===============
 
-[How could a malicious user take advantage of this new/modified feature?]
-
-   .. note::
-      If there are security concerns in relation to the CR, those concerns should be explicitly written out to make sure reviewers of the CR are aware of them.
-
-Which security requirements are affected or has to be changed?
-Could the new/modified feature enable new threat scenarios?
-Could the new/modified feature enable new attack paths?
-Could the new/modified feature impact functional safety?
-If applicable, which additional security measures must be implemented to mitigate the risk?
-
-    .. note::
-     Use Trust Boundary, Defense in Depth Analysis and/or Security Software Critically Analysis,
-     Vulnerability Analysis.
-     [Methods will be defined later in Process area Security Analysis]
+The introduction of a SOVD based diagnostic stack has significant security implications due to its capabilities and network-based communication model.
+Diagnostics inherently allow access to system information, state manipulation, coding, and software updates—all of which pose risks if accessed by unauthorized actors.
+SOVD, based on REST, includes modern security features such as HTTPS and token-based authentication,
+but also introduces a broader attack surface compared to traditional UDS, which relies on more isolated, session-based access.
+If improperly secured, diagnostic interfaces could be exploited to trigger unauthorized routines or inject malicious software.
+This may enable new threat scenarios and attack paths, particularly over external or less trusted networks.
+To mitigate these risks, the diagnostic stack shall enforce secure communication via HTTPS,
+authenticate endpoints using certificates (see architecture diagram), and implement strict access control mechanisms.
+While diagnostics do not directly impact functional safety, a successful attack could indirectly influence safety-relevant functions
+- for example by setting the system into a different state.
+Therefore, the overall security architecture must be revisited in detail to assess and mitigate potential risks introduced by the SOVD integration.
 
 
 Safety Impact
 =============
 
-At this point in time no safety impact is foreseen. The expected ASIL level is QM.
+At this point in time no direct safety impact is foreseen. The expected ASIL level is QM.
 Configuration Management could have a safety impact but is handled in another feature request and out of scope of this document.
+As pointed out in "Security Impact", a breach in the diagnostic system could theoretically effect safety-relevant functions
+- for example by setting the system into a different state.
 
 
 License Impact
 ==============
 
 There are no license restrictions preventing the implementation of an open-source SOVD stack at this time.
-While SOVD is currently in the ISO standardization process (ISO/DIS 17978), the relevant parts—especially Part 3,
+While SOVD is currently in the ISO standardization process (ISO/DIS 17978) [#s1]_, the relevant parts—especially Part 3,
 which defines the API—are already publicly available for purchase as Draft Interna-tional Standards (DIS).
 These drafts are considered stable and are typically subject only to minor edito-rial changes before final publication.
 As such, referencing the current DIS versions is sufficient for im-plementation purposes, and does not pose any legal or license-related risk.
@@ -286,10 +280,7 @@ The license impact regarding publication of XML schemata to handle/convert ODX f
 How to Teach This
 =================
 
-[How to teach users, new and experienced, how to apply the CR to their work.]
-
-   .. note::
-      For a CR that adds new functionality or changes behavior, it is helpful to include a section on how to teach users, new and experienced, how to apply the CR to their work.
+A good starting point to get an overview of SOVD is the overview pages provided by ISO [#s1]_ and ASAM [#s2]_.
 
 
 Rejected Ideas
@@ -312,4 +303,5 @@ Open Issues
 Footnotes
 =========
 
-[A collection of footnotes cited in the CR, and a place to list non-inline hyperlink targets.]
+.. [#s1] "SOVD Standard ISO/DIS 17978", ISO, https://www.iso.org/standard/85133.html.
+.. [#s2] "ASAM SOVD Overview", ASAM, https://www.asam.net/standards/detail/sovd.
