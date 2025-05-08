@@ -38,13 +38,13 @@ Abstract
 We propose adding support for Vehicle Diagnostics via Service-Oriented Vehicle Diagnostics (SOVD) within S-CORE.
 SOVD offers a service-oriented, self-descriptive interface based on standardized RESTful APIs,
 eliminating the need for manually modeling diagnostic interfaces as required in UDS.
-This signifi-cantly reduces integration overhead and simplifies the onboarding of new ECUs.
-Additionally, SOVD ena-bles scalable, secure, and cloud-ready diagnostics with real-time fault access and
-advanced data han-dling across platforms. Integrating SOVD into S-CORE will enhance developer efficiency,
+This significantly reduces integration overhead and simplifies the onboarding of new ECUs.
+Additionally, SOVD enables scalable, secure, and cloud-ready diagnostics with real-time fault access and
+advanced data handling across platforms. Integrating SOVD into S-CORE will enhance developer efficiency,
 improve system maintainability, and support future-proof diagnostic workflows.
 
 The intent of this feature request is to define a high-level architecture for the diagnostic system.
-The com-ponents listed throughout this document require detailed feature requests in the future respectively.
+The components listed throughout this document require detailed feature requests in the future respectively.
 
 
 Motivation
@@ -91,7 +91,7 @@ F lib (Fault Library)
 
 - Provides an interface for FEO activities to report faults.
 - Relays faults via IPC to central Diagnostic Fault Manager.
-- Enables domain-specific error logic (e.g. debouncing) by exposing a configuration inter-face
+- Enables domain-specific error logic (e.g. debouncing) by exposing a configuration interface
 - Reporting of faults additionally results in a log entry.
 - The interface needs to be specified further but will likely include: Fault ID (FID), time, ENUM fault type (like DLT ENUMs), optional meta data.
 - F lib is the base for activity specific, custom fault handling.
@@ -121,19 +121,19 @@ SOVD Server
 
 Service App
 
-- Is a base concept to extend the system with system-specific diagnostic ser-vices/routines (e.g., DTC clear, ECU reset, Flash Master).
+- Is a base concept to extend the system with system-specific diagnostic services/routines (e.g., DTC clear, ECU reset, Flash Master).
 - Interfaces with the SOVD Server via IPC.
 
 SOVD Gateway
 
-- Forwards SOVD requests to appropriate backend targets (e.g., adapters, proxies, cli-ents).
+- Forwards SOVD requests to appropriate backend targets (e.g., adapters, proxies, clients).
 - Acts as a router between clients and distributed SOVD components.
 - Supports multi-ECU SOVD communication.
 
 SOVD Client
 
 - Off-board, on-board or cloud client that initiates diagnostics via SOVD protocol.
-- Can be used by developers, testers, ECUs or cloud services- should be deployment ag-nostic.
+- Can be used by developers, testers, ECUs or cloud services- should be deployment agnostic.
 - Handles access control on the client side – e.g. by providing relevant certificates.
 
 Classic Diagnostic Adapter
@@ -168,7 +168,7 @@ Authentication Manager
 
 Crypto
 
-- Provides cryptographic services – e.g. securely store and retrieve diagnostic certifi-cates.
+- Provides cryptographic services – e.g. securely store and retrieve diagnostic certificates.
 - Used by Authentication Manager.
 
 Persistency
@@ -236,7 +236,7 @@ Backwards Compatibility
 =======================
 
 UDS2SOVD Proxy and Classic Diagnostic Adapter (SOVD2UDS) ensure compatibility with legacy UDS systems.
-ODX as a standardized exchange format further ensure compatibility with proprietary diagnos-tic data models.
+ODX as a standardized exchange format further ensure compatibility with proprietary diagnostic data models.
 
 
 Security Impact
@@ -269,9 +269,9 @@ License Impact
 
 There are no license restrictions preventing the implementation of an open-source SOVD stack at this time.
 While SOVD is currently in the ISO standardization process (ISO/DIS 17978) [#s1]_, the relevant parts—especially Part 3,
-which defines the API—are already publicly available for purchase as Draft Interna-tional Standards (DIS).
-These drafts are considered stable and are typically subject only to minor edito-rial changes before final publication.
-As such, referencing the current DIS versions is sufficient for im-plementation purposes, and does not pose any legal or license-related risk.
+which defines the API—are already publicly available for purchase as Draft International Standards (DIS).
+These drafts are considered stable and are typically subject only to minor editorial changes before final publication.
+As such, referencing the current DIS versions is sufficient for implementation purposes, and does not pose any legal or license-related risk.
 Once the final ISO standard is published, the delta to the current drafts is expected to be minimal and can be easily addressed.
 
 The license impact regarding publication of XML schemata to handle/convert ODX files as per ISO 22901 needs to be evaluated.
@@ -295,7 +295,7 @@ Because no FOSS SOVD stack exists currently, it presents an opportunity for S-CO
 Open Issues
 ===========
 
--	Interfacing concept with Autosar Adaptive Diagnostic Stack for mixed-stacks and/or a transition-al phase
+-	Interfacing concept with Autosar Adaptive Diagnostic Stack for mixed stacks and/or a transitional phase
 -	Investigate synergies between Configuration Manager and central diagnostic configuration file in Diagnostic Fault Manager
 -	Evaluate publication of XML schemata to handle/convert ODX files as per ISO 22901
 
