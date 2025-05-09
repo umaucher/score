@@ -12,10 +12,10 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-JSON Parser
+JSON-Library
 ===========================
 
-.. document:: JSON Parser
+.. document:: JSON-Library
    :id: doc__json
    :status: valid
    :safety: ASIL_B
@@ -38,7 +38,7 @@ To activate this feature, use the following feature flag:
 Abstract
 ========
 
-This feature request proposes the integration of a safe JSON parser.
+This feature request proposes the integration of a safe JSON-Library with parsing functionality.
 
 
 Basic Functionality
@@ -55,13 +55,13 @@ Motivation
 ==========
 
 S-CORE is targeting high-performance automotive systems with safety impact.
-Some applications, like the IPC communication solution, require a safe JSON parser to enable loading of configuration information at runtime.
+Some applications, like the IPC communication solution, require a safe JSON-Library with parsing functionality to enable loading of configuration information at runtime.
 There is currently no solution for this inside S-CORE.
 
 Rationale
 =========
 
-A JSON parser needs to be introduced in S-CORE software platform due to specific functional dependencies of different features (ex: IPC).
+A JSON-Library with parsing functionality needs to be introduced in S-CORE software platform due to specific functional dependencies of different features (ex: IPC).
 
 Further details are available in the following section:
 .. _Specification:
@@ -74,7 +74,7 @@ The following details and requirements describe the aspects of current feature i
 General considerations
 ----------------------
 
-The JSON parser should provide read and data conversion capabilities:
+The JSON-Library should provide parsing and data conversion capabilities:
 
 :need:`feat_req__json__validation`
 :need:`feat_req__json__deserialization`
@@ -99,8 +99,7 @@ Full testability for the public API
 ----------------------------------------
 
 Our users will be required to proof certain coverage metrics, like line coverage or branch coverage.
-For them to reach full coverage, they need to be easily able to mock or fake parts of the JSON functionality in their
-unit tests.
+For them to reach full coverage, they need to be easily able to mock or fake the public API of the JSON-Library in their unit tests.
 
 :need:`feat_req__json__testability_mock_api`
 

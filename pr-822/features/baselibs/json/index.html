@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>JSON Parser &#8212; S-CORE 0.1 documentation</title>
+    <title>JSON-Library &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -447,7 +447,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../analysis-infra/index.html">Analysis Infrastructure</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Baselibs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">JSON Parser</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">JSON-Library</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
 </ul>
 </details></li>
@@ -514,7 +514,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Baselibs</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">JSON Parser</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">JSON-Library</span></li>
   </ul>
 </nav>
 </div>
@@ -531,13 +531,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="json-parser">
-<h1>JSON Parser<a class="headerlink" href="#json-parser" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-02f6ef74">
+  <section id="json-library">
+<h1>JSON-Library<a class="headerlink" href="#json-library" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-c786d82c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__json">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">JSON Parser</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">JSON-Library</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -587,7 +587,7 @@
 </section>
 <section id="abstract">
 <h1>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h1>
-<p>This feature request proposes the integration of a safe JSON parser.</p>
+<p>This feature request proposes the integration of a safe JSON-Library with parsing functionality.</p>
 <section id="basic-functionality">
 <h2>Basic Functionality<a class="headerlink" href="#basic-functionality" title="Link to this heading">#</a></h2>
 <p>The component shall support parsing JSON data and convert that information to a compatible user format.</p>
@@ -600,12 +600,12 @@
 <section id="motivation">
 <h1>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h1>
 <p>S-CORE is targeting high-performance automotive systems with safety impact.
-Some applications, like the IPC communication solution, require a safe JSON parser to enable loading of configuration information at runtime.
+Some applications, like the IPC communication solution, require a safe JSON-Library with parsing functionality to enable loading of configuration information at runtime.
 There is currently no solution for this inside S-CORE.</p>
 </section>
 <section id="rationale">
 <h1>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h1>
-<p>A JSON parser needs to be introduced in S-CORE software platform due to specific functional dependencies of different features (ex: IPC).</p>
+<p>A JSON-Library with parsing functionality needs to be introduced in S-CORE software platform due to specific functional dependencies of different features (ex: IPC).</p>
 <p>Further details are available in the following section:
 .. _Specification:</p>
 </section>
@@ -614,7 +614,7 @@ There is currently no solution for this inside S-CORE.</p>
 <p>The following details and requirements describe the aspects of current feature in the context of S-CORE.</p>
 <section id="general-considerations">
 <h2>General considerations<a class="headerlink" href="#general-considerations" title="Link to this heading">#</a></h2>
-<p>The JSON parser should provide read and data conversion capabilities:</p>
+<p>The JSON-Library should provide parsing and data conversion capabilities:</p>
 <p><a class="reference internal" href="requirements/index.html#feat_req__json__validation" title="feat_req__json__validation"><em class="xref need">JSON Validation (feat_req__json__validation)</em></a>
 <a class="reference internal" href="requirements/index.html#feat_req__json__deserialization" title="feat_req__json__deserialization"><em class="xref need">JSON Deserialization (feat_req__json__deserialization)</em></a></p>
 <p>The component should be extensible in the future in order to support conversion of user format to JSON data.</p>
@@ -636,8 +636,7 @@ This includes error handling, which shall follow one of the error handling conce
 <section id="full-testability-for-the-public-api">
 <h2>Full testability for the public API<a class="headerlink" href="#full-testability-for-the-public-api" title="Link to this heading">#</a></h2>
 <p>Our users will be required to proof certain coverage metrics, like line coverage or branch coverage.
-For them to reach full coverage, they need to be easily able to mock or fake parts of the JSON functionality in their
-unit tests.</p>
+For them to reach full coverage, they need to be easily able to mock or fake the public API of the JSON-Library in their unit tests.</p>
 <p><a class="reference internal" href="requirements/index.html#feat_req__json__testability_mock_api" title="feat_req__json__testability_mock_api"><em class="xref need">Fully mockable public API (feat_req__json__testability_mock_api)</em></a></p>
 </section>
 </section>
@@ -709,7 +708,7 @@ unit tests.</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">JSON Parser</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">JSON-Library</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-flag">Feature flag</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#basic-functionality">Basic Functionality</a></li>
