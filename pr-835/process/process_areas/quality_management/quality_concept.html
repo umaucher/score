@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -454,11 +454,12 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../architecture_design/index.html">Architecture Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../implementation/index.html">Implementation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problem_resolution/index.html">Problem Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_management/index.html">Release Management</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Quality Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="quality_getstrt.html">Getting started</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Concept</a></li>
@@ -468,6 +469,10 @@
 <li class="toctree-l3"><a class="reference internal" href="quality_workproducts.html">Workproducts</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tool_management/index.html">Tool Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
 </ul>
 </details></li>
 </ul>
@@ -550,7 +555,7 @@
                   
   <section id="concept">
 <h1>Concept<a class="headerlink" href="#concept" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-292e2ba2">
+<div class="need_container docutils container" id="SNCB-ea2bcfd4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_doc_concept table" id="doc_concept__quality__process">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -572,7 +577,7 @@
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
 <div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="quality_workflow.html#wf__cr_mt_qlm_plan" title="doc_concept__quality__process">wf__cr_mt_qlm_plan</a></span></span></div>
+<div class="line"><span><div class="line">relates to: <span class="has"><span><a class="reference internal" href="quality_workflow.html#wf__cr_mt_qlm_plan" title="doc_concept__quality__process">wf__cr_mt_qlm_plan</a>, <a class="reference internal" href="quality_workflow.html#wf__vy_ap_pltrelease" title="doc_concept__quality__process">wf__vy_ap_pltrelease</a>, <a class="reference internal" href="quality_workflow.html#wf__exe_pltprocess_audit" title="doc_concept__quality__process">wf__exe_pltprocess_audit</a>, <a class="reference internal" href="quality_workflow.html#wf__exe_featprocess_conformance_checks" title="doc_concept__quality__process">wf__exe_featprocess_conformance_checks</a>, <a class="reference internal" href="quality_workflow.html#wf__exe_featwp_review" title="doc_concept__quality__process">wf__exe_featwp_review</a>, <a class="reference internal" href="quality_workflow.html#wf__consult_exe_qly_training" title="doc_concept__quality__process">wf__consult_exe_qly_training</a>, <a class="reference internal" href="quality_workflow.html#wf__mr_imp_qlm_plan_processes" title="doc_concept__quality__process">wf__mr_imp_qlm_plan_processes</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -594,8 +599,8 @@
 </table>
 </div>
 </div>
-<p>In this section a concept for the Quality Management will be discussed. Inputs for this concepts is ASPICE
-as quality standard. And also in aspect to the development the adressed requirements from ISO 26262, ISO 21434
+<p>In this section a concept for the Quality Management will be discussed. Inputs for this concepts is ASPICE SUP.1
+as quality standard. And also in aspect to the development the addressed requirements from ISO 26262, ISO/SAE 21434
 and ISO PAS 8926.</p>
 <section id="inputs">
 <h2>Inputs<a class="headerlink" href="#inputs" title="Link to this heading">#</a></h2>
@@ -609,16 +614,16 @@ and ISO PAS 8926.</p>
 <ol class="arabic simple">
 <li><dl class="simple">
 <dt><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="rl__quality_manager"><em class="xref need">Quality Manager (rl__quality_manager)</em></a></dt><dd><ul class="simple">
-<li><p>Responsible for the quality compliance in the platform and the project</p></li>
-<li><p>Monitoring and improving of quality acitivities</p></li>
+<li><p>Responsible for the quality conformance in the platform and the project</p></li>
+<li><p>Monitoring and improving of quality activities</p></li>
 <li><p>Execution of Audit’s, Quality Checks and Work Product Reviews</p></li>
-<li><p>Aproval of work products</p></li>
+<li><p>Approval of work products</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
-<dt><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a></dt><dd><ul class="simple">
+<dt><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="rl__technical_lead"><em class="xref need">Technical Lead (rl__technical_lead)</em></a></dt><dd><ul class="simple">
 <li><p>Support the work products</p></li>
 <li><p>Approval of Process Audits</p></li>
 </ul>
@@ -652,7 +657,7 @@ and ISO PAS 8926.</p>
 <h3>Standard Requirements<a class="headerlink" href="#standard-requirements" title="Link to this heading">#</a></h3>
 <p>Also requirements of standards need to be taken into consideration:</p>
 <ul class="simple">
-<li><p>ASPICE</p></li>
+<li><p>ASPICE PAM 4.0</p></li>
 <li><p>ISO 26262:2018</p></li>
 <li><p>ISO 21434:2021</p></li>
 <li><p>ISO PAS 8926:2024</p></li>
@@ -661,13 +666,14 @@ and ISO PAS 8926.</p>
 <section id="general-quality-concept">
 <h3>General Quality Concept<a class="headerlink" href="#general-quality-concept" title="Link to this heading">#</a></h3>
 <p>The Quality Concept is based on the requirements of the standards and were derived into the Quality Performance
-Opbjectives that are listed in the Quality Plan <a class="reference internal" href="../../../platform_management_plan/quality_management.html#doc__project_quality_plan" title="doc__project_quality_plan"><em class="xref need">Project Quality Plan (doc__project_quality_plan)</em></a>. The Quality shall be continous
-checked and improved during the development. All tasks are planed within the Quality Plan.</p>
-<p>For every release a platform process audit shall be performed. Also a compliance check for every feature release.
-Only 100% compliante work products / releases will be delivered to the community.</p>
-<p>Every person who contributes shall be trained according Quality aspects. The commitors will ensure the Quality
-by following the workflows. The Quality Manager / Technical Lead for Platform Process Audit approve it.
-Thus the independency between the Project and the Quality is ensured.</p>
+Objectives that are listed in the Quality Management Plan <a class="reference internal" href="../../../platform_management_plan/quality_management.html#doc__platform_quality_plan" title="doc__platform_quality_plan"><em class="xref need">Platform Quality Management... (doc__platform_quality_plan)</em></a>. The Quality shall be continuous
+checked and improved during the development. All tasks are planned within the Quality Management Plan.</p>
+<p>For every release a platform process audit shall be performed. Also a conformance check for every feature release.
+Only 100% compliant work products / releases will be delivered to the community.</p>
+<p>Every person who contributes shall be trained according to Quality aspects. The committers will ensure the Quality
+by following the workflows defined in the process areas and by producing the required work products. The Quality
+Manager / Technical Lead for Platform Process Audit approves it. Thus the independence between the Project and
+the Quality is ensured.</p>
 </section>
 </section>
 </section>

@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -454,11 +454,12 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../architecture_design/index.html">Architecture Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../implementation/index.html">Implementation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../problem_resolution/index.html">Problem Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../release_management/index.html">Release Management</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">Quality Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="quality_getstrt.html">Getting started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="quality_concept.html">Concept</a></li>
@@ -468,6 +469,10 @@
 <li class="toctree-l3"><a class="reference internal" href="quality_workproducts.html">Workproducts</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements_engineering/index.html">Requirements Engineering</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tool_management/index.html">Tool Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../verification/index.html">Verification</a></li>
 </ul>
 </details></li>
 </ul>
@@ -551,15 +556,15 @@
   <section id="workflows">
 <span id="quality-workflows"></span><h1>Workflows<a class="headerlink" href="#workflows" title="Link to this heading">#</a></h1>
 <p>todo: need to add guidance and standard links</p>
-<div class="need_container docutils container" id="SNCB-02d4836e">
+<div class="need_container docutils container" id="SNCB-87d42c4e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__cr_mt_qlm_plan">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Create/Maintain Quality Plan</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Create/Maintain Quality Management Plan</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -570,22 +575,22 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__cr_mt_qlm_plan">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_plan_template.html#gd_temp__qlm_plan" title="wf__cr_mt_qlm_plan">gd_temp__qlm_plan</a></span></span></div>
 <div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__cr_mt_qlm_plan">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__cr_mt_qlm_plan">doc_getstrt__quality__process</a></span></span></div>
 <div class="line">needs input: <span class="input"><span><a class="reference internal" href="../../workproducts/index.html#wp__policies" title="wf__cr_mt_qlm_plan">wp__policies</a>, <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wf__cr_mt_qlm_plan">wp__issue_track_system</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__cr_mt_qlm_plan">wp__qms_plan</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__cr_mt_qlm_plan">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__cr_mt_qlm_plan">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__cr_mt_qlm_plan">rl__technical_lead</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__cr_mt_qlm_plan">rl__quality_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__cr_mt_qlm_plan">rl__technical_lead</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The quality plan is created and maintained by a <a class="reference internal" href="../../roles/index.html#rl__committer" title="rl__committer"><em class="xref need">Committer (rl__committer)</em></a>.</div>
+<div class="line">The Quality Management Plan is created and maintained by the <a class="reference internal" href="quality_roles.html#rl__quality_manager" title="rl__quality_manager"><em class="xref need">Quality Manager (rl__quality_manager)</em></a>.</div>
 </div>
 </td>
 </tr>
@@ -603,7 +608,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b5c1489c">
+<div class="need_container docutils container" id="SNCB-0250cec4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__vy_ap_pltrelease">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -611,7 +616,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -622,13 +627,16 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__vy_ap_pltrelease">wp__qms_plan</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../../workproducts/index.html#wp__platform_sw_release_note" title="wf__vy_ap_pltrelease">wp__platform_sw_release_note</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__vy_ap_pltrelease">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__vy_ap_pltrelease">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__vy_ap_pltrelease">rl__technical_lead</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__vy_ap_pltrelease">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_review_checklist.html#gd_chklst__review_checklist_template" title="wf__vy_ap_pltrelease">gd_chklst__review_checklist_template</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__vy_ap_pltrelease">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__vy_ap_pltrelease">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__vy_ap_pltrelease">wp__qms_plan</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="../release_management/release_workproducts.html#wp__platform_sw_release_note" title="wf__vy_ap_pltrelease">wp__platform_sw_release_note</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__vy_ap_pltrelease">rl__technical_lead</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__project_lead" title="wf__vy_ap_pltrelease">rl__project_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__vy_ap_pltrelease">rl__quality_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -653,7 +661,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3cda22fb">
+<div class="need_container docutils container" id="SNCB-a82edd37">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__exe_pltprocess_audit">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -661,7 +669,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -672,12 +680,15 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_pltprocess_audit">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_pltprocess_audit">wp__process_definition</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__exe_pltprocess_audit">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_review_checklist.html#gd_chklst__review_checklist_template" title="wf__exe_pltprocess_audit">gd_chklst__review_checklist_template</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__exe_pltprocess_audit">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__exe_pltprocess_audit">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_pltprocess_audit">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_pltprocess_audit">wp__process_definition</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="quality_workproducts.html#wp__process_impr_report" title="wf__exe_pltprocess_audit">wp__process_impr_report</a></span></span></div>
 <div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__exe_pltprocess_audit">rl__quality_manager</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__exe_pltprocess_audit">rl__technical_lead</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__exe_pltprocess_audit">rl__technical_lead</a></span></span></div>
 <div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__exe_pltprocess_audit">rl__safety_manager</a>, <a class="reference internal" href="../../roles/index.html#rl__security_manager" title="wf__exe_pltprocess_audit">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
@@ -703,15 +714,15 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-6ce9fb60">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__exe_featprocess_compliance_checks">
+<div class="need_container docutils container" id="SNCB-9059ad1a">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__exe_featprocess_conformance_checks">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Execute Feature Process Compliance Checks</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Execute Feature Process conformance Checks</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -722,25 +733,28 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_featprocess_compliance_checks">wp__qms_plan</a>, <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__feat_request" title="wf__exe_featprocess_compliance_checks">wp__feat_request</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_featprocess_compliance_checks">wp__process_definition</a></span></span></div>
-<div class="line">outputs: <span class="output"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_report" title="wf__exe_featprocess_compliance_checks">wp__qms_report</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__exe_featprocess_compliance_checks">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__exe_featprocess_compliance_checks">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__exe_featprocess_compliance_checks">rl__technical_lead</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__exe_featprocess_conformance_checks">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_review_checklist.html#gd_chklst__review_checklist_template" title="wf__exe_featprocess_conformance_checks">gd_chklst__review_checklist_template</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__exe_featprocess_conformance_checks">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__exe_featprocess_conformance_checks">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_featprocess_conformance_checks">wp__qms_plan</a>, <a class="reference internal" href="../change_management/change_management_workproducts.html#wp__feat_request" title="wf__exe_featprocess_conformance_checks">wp__feat_request</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_featprocess_conformance_checks">wp__process_definition</a></span></span></div>
+<div class="line">outputs: <span class="output"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_report" title="wf__exe_featprocess_conformance_checks">wp__qms_report</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__exe_featprocess_conformance_checks">rl__quality_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__exe_featprocess_conformance_checks">rl__technical_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__exe_featprocess_conformance_checks">rl__safety_manager</a>, <a class="reference internal" href="../../roles/index.html#rl__security_manager" title="wf__exe_featprocess_conformance_checks">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The compliance of the feature contribution is checked.</div>
+<div class="line">The conformance of the feature contribution is checked.</div>
 </div>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__exe_featprocess_compliance_checks" title="wf__exe_featprocess_compliance_checks">wf__exe_featprocess_compliance_checks</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#wf__exe_featprocess_conformance_checks" title="wf__exe_featprocess_conformance_checks">wf__exe_featprocess_conformance_checks</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -753,7 +767,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c06764ad">
+<div class="need_container docutils container" id="SNCB-1e3929c5">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__exe_featwp_review">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -761,7 +775,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -772,13 +786,16 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_featwp_review">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_featwp_review">wp__process_definition</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__exe_featwp_review">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_review_checklist.html#gd_chklst__review_checklist_template" title="wf__exe_featwp_review">gd_chklst__review_checklist_template</a>, <a class="reference internal" href="guidance/quality_work_product_review_guideline.html#gd_guidl__wp_review" title="wf__exe_featwp_review">gd_guidl__wp_review</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__exe_featwp_review">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__exe_featwp_review">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__exe_featwp_review">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__exe_featwp_review">wp__process_definition</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="../verification/workproducts.html#wp__verification__platform_ver_report" title="wf__exe_featwp_review">wp__verification__platform_ver_report</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__exe_featwp_review">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__exe_featwp_review">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__exe_featwp_review">rl__technical_lead</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__exe_featwp_review">rl__quality_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__exe_featwp_review">rl__technical_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__exe_featwp_review">rl__committer</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -803,7 +820,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-8ff341f5">
+<div class="need_container docutils container" id="SNCB-32a8d624">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__consult_exe_qly_training">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -811,7 +828,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -822,20 +839,23 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__consult_exe_qly_training">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__policies" title="wf__consult_exe_qly_training">wp__policies</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__consult_exe_qly_training">wp__process_definition</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__consult_exe_qly_training">gd_guidl__qlm_plan_definitions</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__consult_exe_qly_training">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__consult_exe_qly_training">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__consult_exe_qly_training">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__policies" title="wf__consult_exe_qly_training">wp__policies</a>, <a class="reference internal" href="../../workproducts/index.html#wp__process_definition" title="wf__consult_exe_qly_training">wp__process_definition</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="../../workproducts/index.html#wp__training_path" title="wf__consult_exe_qly_training">wp__training_path</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__consult_exe_qly_training">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__consult_exe_qly_training">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__consult_exe_qly_training">rl__technical_lead</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__consult_exe_qly_training">rl__quality_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__consult_exe_qly_training">rl__technical_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__consult_exe_qly_training">rl__safety_manager</a>, <a class="reference internal" href="../../roles/index.html#rl__security_manager" title="wf__consult_exe_qly_training">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
-<div class="line">The quality manager consults all project/platform stakeholder for quality topics and executes regulary quality trainings.</div>
+<div class="line">The quality manager consults all project/platform stakeholder for quality topics and executes regularly quality trainings.</div>
 </div>
 </td>
 </tr>
@@ -853,7 +873,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-361bf22a">
+<div class="need_container docutils container" id="SNCB-7968024d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_workflow table" id="wf__mr_imp_qlm_plan_processes">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -861,7 +881,7 @@
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
 <div class="line"><span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -872,13 +892,16 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">quality_management</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__mr_imp_qlm_plan_processes">wp__qms_plan</a>, <a class="reference internal" href="../../workproducts/index.html#wp__platform_sw_release_note" title="wf__mr_imp_qlm_plan_processes">wp__platform_sw_release_note</a>, <a class="reference internal" href="../../workproducts/index.html#wp__module_sw_release_note" title="wf__mr_imp_qlm_plan_processes">wp__module_sw_release_note</a>, <a class="reference internal" href="quality_workproducts.html#wp__process_impr_report" title="wf__mr_imp_qlm_plan_processes">wp__process_impr_report</a>, <a class="reference internal" href="quality_workproducts.html#wp__qms_report" title="wf__mr_imp_qlm_plan_processes">wp__qms_report</a>, <a class="reference internal" href="../verification/workproducts.html#wp__verification__platform_ver_report" title="wf__mr_imp_qlm_plan_processes">wp__verification__platform_ver_report</a>, <a class="reference internal" href="../verification/workproducts.html#wp__verification__module_ver_report" title="wf__mr_imp_qlm_plan_processes">wp__verification__module_ver_report</a>, <a class="reference internal" href="../../workproducts/index.html#wp__training_path" title="wf__mr_imp_qlm_plan_processes">wp__training_path</a></span></span></div>
+<div class="line"><span><div class="line">contains: <span class="contains"><span><a class="reference internal" href="guidance/quality_plan_guideline.html#gd_guidl__qlm_plan_definitions" title="wf__mr_imp_qlm_plan_processes">gd_guidl__qlm_plan_definitions</a>, <a class="reference internal" href="guidance/quality_review_checklist.html#gd_chklst__review_checklist_template" title="wf__mr_imp_qlm_plan_processes">gd_chklst__review_checklist_template</a>, <a class="reference internal" href="guidance/quality_process_reqs.html#gd_req__qlm_report" title="wf__mr_imp_qlm_plan_processes">gd_req__qlm_report</a></span></span></div>
+<div class="line">has: <span class="has"><span><a class="reference internal" href="quality_concept.html#doc_concept__quality__process" title="wf__mr_imp_qlm_plan_processes">doc_concept__quality__process</a>, <a class="reference internal" href="quality_getstrt.html#doc_getstrt__quality__process" title="wf__mr_imp_qlm_plan_processes">doc_getstrt__quality__process</a></span></span></div>
+<div class="line">needs input: <span class="input"><span><a class="reference internal" href="quality_workproducts.html#wp__qms_plan" title="wf__mr_imp_qlm_plan_processes">wp__qms_plan</a>, <a class="reference internal" href="../release_management/release_workproducts.html#wp__platform_sw_release_note" title="wf__mr_imp_qlm_plan_processes">wp__platform_sw_release_note</a>, <a class="reference internal" href="../release_management/release_workproducts.html#wp__module_sw_release_note" title="wf__mr_imp_qlm_plan_processes">wp__module_sw_release_note</a>, <a class="reference internal" href="quality_workproducts.html#wp__process_impr_report" title="wf__mr_imp_qlm_plan_processes">wp__process_impr_report</a>, <a class="reference internal" href="quality_workproducts.html#wp__qms_report" title="wf__mr_imp_qlm_plan_processes">wp__qms_report</a>, <a class="reference internal" href="../verification/workproducts.html#wp__verification__platform_ver_report" title="wf__mr_imp_qlm_plan_processes">wp__verification__platform_ver_report</a>, <a class="reference internal" href="../verification/workproducts.html#wp__verification__module_ver_report" title="wf__mr_imp_qlm_plan_processes">wp__verification__module_ver_report</a>, <a class="reference internal" href="../../workproducts/index.html#wp__training_path" title="wf__mr_imp_qlm_plan_processes">wp__training_path</a></span></span></div>
 <div class="line">outputs: <span class="output"><span><a class="reference internal" href="../change_management/change_management_workproducts.html#wp__issue_track_system" title="wf__mr_imp_qlm_plan_processes">wp__issue_track_system</a></span></span></div>
-<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="../../roles/index.html#rl__committer" title="wf__mr_imp_qlm_plan_processes">rl__committer</a></span></span></div>
-<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__mr_imp_qlm_plan_processes">rl__quality_manager</a></span></span></div>
-<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../../roles/index.html#rl__technical_lead" title="wf__mr_imp_qlm_plan_processes">rl__technical_lead</a></span></span></div>
+<div class="line">responsible: <span class="responsible"><span><a class="reference internal" href="quality_roles.html#rl__quality_manager" title="wf__mr_imp_qlm_plan_processes">rl__quality_manager</a></span></span></div>
+<div class="line">approved by: <span class="approved_by"><span><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead" title="wf__mr_imp_qlm_plan_processes">rl__technical_lead</a></span></span></div>
+<div class="line">supported by: <span class="supported_by"><span><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager" title="wf__mr_imp_qlm_plan_processes">rl__safety_manager</a>, <a class="reference internal" href="../../roles/index.html#rl__security_manager" title="wf__mr_imp_qlm_plan_processes">rl__security_manager</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -904,6 +927,65 @@
 </table>
 </div>
 </div>
+<section id="ras-ic-for-safety-analysis">
+<h2>RAS(IC) for Safety Analysis<a class="headerlink" href="#ras-ic-for-safety-analysis" title="Link to this heading">#</a></h2>
+<div class="needstable_wrapper docutils container" id="needtable-process/process_areas/quality_management/quality_workflow-0">
+<div class="pst-scrollable-table-container"><table class="NEEDS_TABLE table" id="needtable-process/process_areas/quality_management/quality_workflow-0-table_node">
+<caption><span class="caption-text">RASIC Overview for Quality Management</span><a class="headerlink" href="#needtable-process/process_areas/quality_management/quality_workflow-0-table_node" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+<col style="width: 25.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Activity</p></th>
+<th class="head"><p>Responsible</p></th>
+<th class="head"><p>Approver</p></th>
+<th class="head"><p>Supporter</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__cr_mt_qlm_plan">wf__cr_mt_qlm_plan</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#wf__vy_ap_pltrelease">wf__vy_ap_pltrelease</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../../roles/index.html#rl__project_lead">rl__project_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__exe_pltprocess_audit">wf__exe_pltprocess_audit</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__security_manager">rl__security_manager</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#wf__exe_featprocess_conformance_checks">wf__exe_featprocess_conformance_checks</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__security_manager">rl__security_manager</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__exe_featwp_review">wf__exe_featwp_review</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../../roles/index.html#rl__committer">rl__committer</a></p></td>
+</tr>
+<tr class="need row-odd"><td class="needs_id"><p><a class="reference internal" href="#wf__consult_exe_qly_training">wf__consult_exe_qly_training</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__security_manager">rl__security_manager</a></p></td>
+</tr>
+<tr class="need row-even"><td class="needs_id"><p><a class="reference internal" href="#wf__mr_imp_qlm_plan_processes">wf__mr_imp_qlm_plan_processes</a></p></td>
+<td class="needs_responsible"><p><a class="reference internal" href="quality_roles.html#rl__quality_manager">rl__quality_manager</a></p></td>
+<td class="needs_approved_by"><p><a class="reference internal" href="../platform_management/platform_management_roles.html#rl__technical_lead">rl__technical_lead</a></p></td>
+<td class="needs_supported_by"><p><a class="reference internal" href="../safety_management/roles.html#rl__safety_manager">rl__safety_manager</a><em>; </em><a class="reference internal" href="../../roles/index.html#rl__security_manager">rl__security_manager</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
 </section>
 
 
@@ -944,6 +1026,18 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ras-ic-for-safety-analysis">RAS(IC) for Safety Analysis</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

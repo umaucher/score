@@ -17,14 +17,14 @@
 Templates
 =========
 
-.. gd_temp:: Quality Plan Template
+.. gd_temp:: Quality Management Plan Template
    :id: gd_temp__qlm_plan
    :status: valid
    :complies: std_wp__iso26262__management_553, std_req__iso26262__management_5423, std_req__aspice_40__SUP-1-BP1, std_req__aspice_40__SUP-1-BP2, std_req__aspice_40__SUP-1-BP3, std_req__aspice_40__SUP-1-BP4, std_req__aspice_40__SUP-1-BP7, std_req__aspice_40__PIM-3-BP1, std_req__aspice_40__PIM-3-BP2, std_req__aspice_40__PIM-3-BP3, std_req__aspice_40__PIM-3-BP4, std_req__aspice_40__PIM-3-BP5, std_req__aspice_40__PIM-3-BP6, std_req__aspice_40__PIM-3-BP7
 
 Purpose
 -------
-Description of the purpose of the Quality Plan.
+Description of the purpose of the Quality Management Plan.
 
 Statement of Independence
 -------------------------
@@ -37,16 +37,13 @@ Objectives and scope
 ^^^^^^^^^^^^^^^^^^^^^^
 Description of the Quality Objectives.
 
-
 3.2 Quality Performance Objectives
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description of the Quality Performance Objectives.
 
-
 3.3 Quantitative Quality Goals
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Description of the Quantitiative Quality Goals.
-
+Description of the Quantitative Quality Goals.
 
 3.4 Work Product Quality Goals
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -76,17 +73,14 @@ Description of critical dependencies.
 Description of used risk management.
 
 **Skills**
-Description of the used skill aprovals.
+Description of the used skill approvals.
 
 4. Quality Management Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-4.1 Quality Ressources
+4.1 Quality Resources
 """"""""""""""""""""""
 Description of the used resources and milestones.
-Despription of the planing of rescources and milestones.
-
-**Tools**
-Description of used Tools.
+Description of the planning of resources and milestones.
 
 4.2 Quality Management Communication
 """"""""""""""""""""""""""""""""""""
@@ -98,10 +92,10 @@ Description of used reporting.
 **Escalation**
 Description of used Escalation path.
 
-5. Quality Management Specifics
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.3 Quality Management Specifics
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description of Quality Management Specifics.
 
-6. Quality Management Generic workproducts
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+4.4 Quality Management Generic workproducts
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Description of used Generic Workproducts for Quality Management.

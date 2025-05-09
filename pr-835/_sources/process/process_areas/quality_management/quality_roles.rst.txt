@@ -24,16 +24,18 @@ Roles
 
    Required skills
 
-   * Degree: Bachelor degree in quality management, or similar technical/economical degree, or comparable work experience
+   * Degree: Master degree in quality management, or similar technical/economical degree, or comparable work experience
    * Solid understanding of quality management
    * Knowledge in project management
    * Deep understanding of quality criteria and the correlating methods and procedures to achieve and verify them
    * Technical know-how of embedded systems
+   * Preferred Training: ASPICE 4.0 (see training path, https://intacs.info/index.php/certification-center) at least Expert or Professional Assessor
 
    Knowledge of standards
 
-   * ISO 9001
-   * ASPICE
+   * Deep knowledge of ASPICE PAM 4.0
+   * Basic knowledge of ISO 26262
+   * Basic knowledge of ISOSAE 21434
 
    Experience
 
@@ -42,13 +44,13 @@ Roles
 
    Responsibility
 
-   * Creating/maintain the Quality Management Plan
-   * Quality related project status reporting
-   * Monitoring/improve of Quality activities
-   * Coaching the project team w.r.t all questions related to quality
+   * Creating/maintain Quality Management Plan
+   * Verify/approve Platform release
    * Execute Platform Process Audit
-   * Execute Feature Process Compliance checks
-   * Exceute Feature Work Product Reviews
+   * Execute Feature Process conformance checks
+   * Execute Feature Work Product Reviews
+   * Consult and execute Quality Trainings
+   * Monitoring/improving of Quality activities
 
    Authority
 
