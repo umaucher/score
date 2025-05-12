@@ -18,7 +18,7 @@ Module Safety Plan Template
 .. gd_temp:: Module Safety Plan Template
    :id: gd_temp__module_safety_plan
    :status: valid
-   :complies: std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469
+   :complies: std_req__iso26262__management_6465, std_req__iso26262__management_6466, std_req__iso26262__management_6467, std_req__iso26262__management_6468, std_req__iso26262__management_6469, std_req__isopas8926__44341, std_req__isopas8926__44342, std_req__isopas8926__44611, std_req__isopas8926__4463
 
 This document implements <add "need" link>
 
@@ -222,7 +222,7 @@ This document implements <add "need" link>
           - <Link to WP>
           - <automated>
 
-        * - :need:`wp__verification__component_test`
+        * - :need:`wp__verification__comp_int_test`
           - <Link to process>
           - <automated>
           - <Link to issue>
@@ -291,10 +291,6 @@ This document implements <add "need" link>
           - <Reasoning for tailoring, can improve deficits in process Id 6 and complexity Id 2>
 
         * - :need:`wp__verification__comp_int_test`
-          - <Link to issue>
-          - <Reasoning for tailoring, can improve deficits in process Id 6 and complexity Id 3&5>
-
-        * - :need:`wp__verification__component_test`
           - <Link to issue>
           - Always needed (for Q and QR classification)
 

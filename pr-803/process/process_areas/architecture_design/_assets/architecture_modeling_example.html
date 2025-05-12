@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Example model of architectural design &#8212; Score 0.1 documentation</title>
+    <title>Example model of architectural design &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -463,10 +463,15 @@
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../release_management/index.html">Release Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../safety_management/index.html">Safety Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tool_management/index.html">Tool Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../verification/index.html">Verification</a></li>
 </ul>
 </details></li>
@@ -553,7 +558,7 @@
 <p>This chapter only serves as an example how an architecture could be modeled in <em>Sphinx Needs</em>. All the needs are required to print the views which are displayed in the Static- and Interface Views. In the actual process this files would be split into multiple different files:</p>
 <section id="feature-architecture-file">
 <h2>Feature Architecture File<a class="headerlink" href="#feature-architecture-file" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-fc27a9e6">
+<div class="need_container docutils container" id="SNCB-30064151">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__archdes_static">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -578,14 +583,14 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="feat_arc_sta__archdes_static">feat_req__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_int__archdes_logical_interface_1" title="feat_arc_sta__archdes_static">feat_arc_int__archdes_logical_interface_1</a>, <a class="reference internal" href="#feat_arc_int__archdes_logical_interface_2" title="feat_arc_sta__archdes_static">feat_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line">includes: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#logic_arc_int__archdes_logical_interface_1" title="feat_arc_sta__archdes_static">logic_arc_int__archdes_logical_interface_1</a>, <a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="feat_arc_sta__archdes_static">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-0">
-<object data="../../../../_images/plantuml-10e1d47333b7f6f5ca38e9c23d45d14b689f7607.svg" type="image/svg+xml" style="width:482px;height:353px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-c1d4ec7b36fae8d51aaceb36b2911a1e2597e275.svg" type="image/svg+xml" style="width:405px;height:726px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -602,8 +607,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-83ff1342">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int table" id="feat_arc_int__archdes_logical_interface_2">
+<div class="need_container docutils container" id="SNCB-e13d3806">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__archdes_logical_interface_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Interface 2</span></span></span></div>
@@ -626,24 +631,25 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="feat_arc_int__archdes_logical_interface_2">feat_req__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_3" title="feat_arc_int__archdes_logical_interface_2">feat_arc_int_op__archdes_logical_operation_3</a>, <a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_4" title="feat_arc_int__archdes_logical_interface_2">feat_arc_int_op__archdes_logical_operation_4</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_sta__archdes_static" title="feat_arc_int__archdes_logical_interface_2">feat_arc_sta__archdes_static</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__feature_1" title="feat_arc_int__archdes_logical_interface_2">feat_arc_sta__feature_1</a>, <a class="reference internal" href="../architecture_getstrt.html#feat_arc_sta__archdes_getstrt" title="feat_arc_int__archdes_logical_interface_2">feat_arc_sta__archdes_getstrt</a></span></span></div>
+<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="logic_arc_int__archdes_logical_interface_2">feat_req__archdes_example_req</a></span></span></div>
+<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="logic_arc_int__archdes_logical_interface_2">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="logic_arc_int__archdes_logical_interface_2">comp_arc_sta__archdes_sub_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="logic_arc_int__archdes_logical_interface_2">comp_arc_sta__archdes_sub_component_2</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#feat_arc_sta__archdes_static" title="logic_arc_int__archdes_logical_interface_2">feat_arc_sta__archdes_static</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__feature_1" title="logic_arc_int__archdes_logical_interface_2">feat_arc_sta__feature_1</a>, <a class="reference internal" href="../architecture_getstrt.html#feat_arc_sta__archdes_getstrt" title="logic_arc_int__archdes_logical_interface_2">feat_arc_sta__archdes_getstrt</a></span></span></div>
+<div class="line">includes: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_3" title="logic_arc_int__archdes_logical_interface_2">logic_arc_int_op__archdes_logical_operation_3</a>, <a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_4" title="logic_arc_int__archdes_logical_interface_2">logic_arc_int_op__archdes_logical_operation_4</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-1">
-<object data="../../../../_images/plantuml-26002045f61784b8da3b74bb7a4e11a593030514.svg" type="image/svg+xml" style="width:185px;height:101px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-18961003c6ffb3c109eb865e16429fbfa9866c31.svg" type="image/svg+xml" style="width:199px;height:101px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_2" title="feat_arc_int__archdes_logical_interface_2">feat_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="logic_arc_int__archdes_logical_interface_2">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interfaces</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interfaces</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -652,8 +658,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fc7171a1">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int table" id="feat_arc_int__archdes_logical_interface_3">
+<div class="need_container docutils container" id="SNCB-77466c61">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__archdes_logical_interface_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Interface 3</span></span></span></div>
@@ -676,8 +682,10 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="feat_arc_int__archdes_logical_interface_3">feat_req__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_7" title="feat_arc_int__archdes_logical_interface_3">feat_arc_int_op__archdes_logical_operation_7</a>, <a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_8" title="feat_arc_int__archdes_logical_interface_3">feat_arc_int_op__archdes_logical_operation_8</a></span></span></div>
+<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="logic_arc_int__archdes_logical_interface_3">feat_req__archdes_example_req</a></span></span></div>
+<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_3" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__archdes_component_3</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__archdes_sub_component_3</a></span></span></div>
+<div class="line">used by: <span class="uses"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__archdes_sub_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__archdes_sub_component_2</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_getstrt" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__component_getstrt</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_manual_getstrt" title="logic_arc_int__archdes_logical_interface_3">comp_arc_sta__component_manual_getstrt</a></span></span></div>
+<div class="line">includes: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_5" title="logic_arc_int__archdes_logical_interface_3">logic_arc_int_op__archdes_logical_operation_5</a>, <a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_6" title="logic_arc_int__archdes_logical_interface_3">logic_arc_int_op__archdes_logical_operation_6</a>, <a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_7" title="logic_arc_int__archdes_logical_interface_3">logic_arc_int_op__archdes_logical_operation_7</a>, <a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_8" title="logic_arc_int__archdes_logical_interface_3">logic_arc_int_op__archdes_logical_operation_8</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -686,11 +694,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_3" title="feat_arc_int__archdes_logical_interface_3">feat_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="logic_arc_int__archdes_logical_interface_3">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interfaces</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interfaces</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -699,8 +707,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-869a9c1d">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_1">
+<div class="need_container docutils container" id="SNCB-33a4a2bb">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 1</span></span></span></div>
@@ -723,8 +731,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_1" title="feat_arc_int_op__archdes_logical_operation_1">comp_arc_int_op__archdes_real_operation_1</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_int__archdes_logical_interface_1" title="feat_arc_int_op__archdes_logical_operation_1">feat_arc_int__archdes_logical_interface_1</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="../architecture_concept.html#logic_arc_int__archdes_logical_interface_1" title="logic_arc_int_op__archdes_logical_operation_1">logic_arc_int__archdes_logical_interface_1</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -733,11 +740,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_1" title="feat_arc_int_op__archdes_logical_operation_1">feat_arc_int_op__archdes_logical_operation_1</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_1" title="logic_arc_int_op__archdes_logical_operation_1">logic_arc_int_op__archdes_logical_operation_1</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -746,8 +753,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-eb17b4ca">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_2">
+<div class="need_container docutils container" id="SNCB-ae9d7b05">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 2</span></span></span></div>
@@ -770,8 +777,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_2" title="feat_arc_int_op__archdes_logical_operation_2">comp_arc_int_op__archdes_real_operation_2</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#feat_arc_int__archdes_logical_interface_1" title="feat_arc_int_op__archdes_logical_operation_2">feat_arc_int__archdes_logical_interface_1</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="../architecture_concept.html#logic_arc_int__archdes_logical_interface_1" title="logic_arc_int_op__archdes_logical_operation_2">logic_arc_int__archdes_logical_interface_1</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -780,11 +786,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_2" title="feat_arc_int_op__archdes_logical_operation_2">feat_arc_int_op__archdes_logical_operation_2</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_2" title="logic_arc_int_op__archdes_logical_operation_2">logic_arc_int_op__archdes_logical_operation_2</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -793,8 +799,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f80dc21b">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_3">
+<div class="need_container docutils container" id="SNCB-623888a8">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 3</span></span></span></div>
@@ -817,8 +823,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_3" title="feat_arc_int_op__archdes_logical_operation_3">comp_arc_int_op__archdes_real_operation_3</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_2" title="feat_arc_int_op__archdes_logical_operation_3">feat_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="logic_arc_int_op__archdes_logical_operation_3">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -827,11 +832,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_3" title="feat_arc_int_op__archdes_logical_operation_3">feat_arc_int_op__archdes_logical_operation_3</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_3" title="logic_arc_int_op__archdes_logical_operation_3">logic_arc_int_op__archdes_logical_operation_3</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -840,8 +845,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a981b250">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_4">
+<div class="need_container docutils container" id="SNCB-54da8ea3">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_4">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 4</span></span></span></div>
@@ -864,8 +869,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_4" title="feat_arc_int_op__archdes_logical_operation_4">comp_arc_int_op__archdes_real_operation_4</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_2" title="feat_arc_int_op__archdes_logical_operation_4">feat_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="logic_arc_int_op__archdes_logical_operation_4">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -874,11 +878,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_4" title="feat_arc_int_op__archdes_logical_operation_4">feat_arc_int_op__archdes_logical_operation_4</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_4" title="logic_arc_int_op__archdes_logical_operation_4">logic_arc_int_op__archdes_logical_operation_4</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -887,8 +891,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-57106087">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_5">
+<div class="need_container docutils container" id="SNCB-e274062b">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_5">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 5</span></span></span></div>
@@ -911,7 +915,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_5" title="feat_arc_int_op__archdes_logical_operation_5">comp_arc_int_op__archdes_real_operation_5</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="logic_arc_int_op__archdes_logical_operation_5">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -920,11 +924,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_5" title="feat_arc_int_op__archdes_logical_operation_5">feat_arc_int_op__archdes_logical_operation_5</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_5" title="logic_arc_int_op__archdes_logical_operation_5">logic_arc_int_op__archdes_logical_operation_5</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -933,8 +937,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3ae248a9">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_6">
+<div class="need_container docutils container" id="SNCB-5e1673c0">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_6">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 6</span></span></span></div>
@@ -957,7 +961,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_6" title="feat_arc_int_op__archdes_logical_operation_6">comp_arc_int_op__archdes_real_operation_6</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="logic_arc_int_op__archdes_logical_operation_6">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -966,11 +970,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_6" title="feat_arc_int_op__archdes_logical_operation_6">feat_arc_int_op__archdes_logical_operation_6</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_6" title="logic_arc_int_op__archdes_logical_operation_6">logic_arc_int_op__archdes_logical_operation_6</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -979,8 +983,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c1156113">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_7">
+<div class="need_container docutils container" id="SNCB-35c6c1a4">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_7">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 7</span></span></span></div>
@@ -1003,8 +1007,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_7" title="feat_arc_int_op__archdes_logical_operation_7">comp_arc_int_op__archdes_real_operation_7</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_3" title="feat_arc_int_op__archdes_logical_operation_7">feat_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="logic_arc_int_op__archdes_logical_operation_7">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1013,11 +1016,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_7" title="feat_arc_int_op__archdes_logical_operation_7">feat_arc_int_op__archdes_logical_operation_7</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_7" title="logic_arc_int_op__archdes_logical_operation_7">logic_arc_int_op__archdes_logical_operation_7</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -1026,8 +1029,8 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-dc11bf37">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_int_op table" id="feat_arc_int_op__archdes_logical_operation_8">
+<div class="need_container docutils container" id="SNCB-9c75d925">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int_op table" id="logic_arc_int_op__archdes_logical_operation_8">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Logical Operation 8</span></span></span></div>
@@ -1050,8 +1053,7 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_8" title="feat_arc_int_op__archdes_logical_operation_8">comp_arc_int_op__archdes_real_operation_8</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#feat_arc_int__archdes_logical_interface_3" title="feat_arc_int_op__archdes_logical_operation_8">feat_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line"><span><div class="line">included by: <span class="included_by"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="logic_arc_int_op__archdes_logical_operation_8">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1060,11 +1062,104 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_8" title="feat_arc_int_op__archdes_logical_operation_8">feat_arc_int_op__archdes_logical_operation_8</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int_op__archdes_logical_operation_8" title="logic_arc_int_op__archdes_logical_operation_8">logic_arc_int_op__archdes_logical_operation_8</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature Architecture Interface Operation</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Architecture Interface Operation</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="module-viewpoint">
+<h2>Module Viewpoint<a class="headerlink" href="#module-viewpoint" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-ebb912cd">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__archdes_1">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Module 1</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="mod_view_sta__archdes_1">comp_arc_sta__archdes_component_1</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-2">
+<object data="../../../../_images/plantuml-fe31eb54974b44f4114a13b0e620e940dbfe867e.svg" type="image/svg+xml" style="width:405px;height:575px;background:#FFFFFF;"></object></p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#mod_view_sta__archdes_1" title="mod_view_sta__archdes_1">mod_view_sta__archdes_1</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Module Architecture Static View</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-97d7b575">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_mod_view_sta table" id="mod_view_sta__archdes_2">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Module 2</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_3" title="mod_view_sta__archdes_2">comp_arc_sta__archdes_component_3</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-3">
+<object data="../../../../_images/plantuml-2586afa09462706cf1ba466ac278ae1b115fb0ab.svg" type="image/svg+xml" style="width:192px;height:279px;background:#FFFFFF;"></object></p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#mod_view_sta__archdes_2" title="mod_view_sta__archdes_2">mod_view_sta__archdes_2</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Module Architecture Static View</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -1076,7 +1171,7 @@
 </section>
 <section id="component-architecure-file-s">
 <h2>Component Architecure File(s)<a class="headerlink" href="#component-architecure-file-s" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-5cd818be">
+<div class="need_container docutils container" id="SNCB-3f887b79">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_component_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1101,16 +1196,17 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_sta__archdes_component_1">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_int__archdes_component_interface_1" title="comp_arc_sta__archdes_component_1">comp_arc_int__archdes_component_interface_1</a>, <a class="reference internal" href="#comp_arc_int__archdes_component_interface_2" title="comp_arc_sta__archdes_component_1">comp_arc_int__archdes_component_interface_2</a></span></span></div>
-<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_3" title="comp_arc_sta__archdes_component_1">comp_arc_int__archdes_component_interface_3</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="../architecture_concept.html#logic_arc_int__archdes_logical_interface_1" title="comp_arc_sta__archdes_component_1">logic_arc_int__archdes_logical_interface_1</a>, <a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="comp_arc_sta__archdes_component_1">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="comp_arc_sta__archdes_component_1">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
 <div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="comp_arc_sta__archdes_component_1">comp_arc_sta__archdes_sub_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="comp_arc_sta__archdes_component_1">comp_arc_sta__archdes_sub_component_2</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="comp_arc_sta__archdes_component_1">comp_arc_sta__archdes_sub_component_3</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#mod_view_sta__archdes_1" title="comp_arc_sta__archdes_component_1">mod_view_sta__archdes_1</a>, <a class="reference internal" href="../architecture_concept.html#mod_view_sta__archdes_3" title="comp_arc_sta__archdes_component_1">mod_view_sta__archdes_3</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-2">
-<object data="../../../../_images/plantuml-8fb2e3776f3f79123cd33b9404d6620fad8c7e2b.svg" type="image/svg+xml" style="width:913px;height:623px;background:#FFFFFF;"></object></p>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-4">
+<object data="../../../../_images/plantuml-36eba845fad849a5577bb4db9f913ada56c0cfe7.svg" type="image/svg+xml" style="width:933px;height:302px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -1127,11 +1223,11 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-0b7b51c0">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int table" id="comp_arc_int__archdes_component_interface_2">
+<div class="need_container docutils container" id="SNCB-5d922e44">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_component_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Interface 2</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component 3</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -1151,22 +1247,24 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_int__archdes_component_interface_2">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_int__archdes_component_interface_2">comp_arc_sta__archdes_component_1</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_3" title="comp_arc_int__archdes_component_interface_2">comp_arc_int_op__archdes_real_operation_3</a>, <a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_4" title="comp_arc_int__archdes_component_interface_2">comp_arc_int_op__archdes_real_operation_4</a></span></span></div>
+<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_sta__archdes_component_3">comp_req__archdes_example_req</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="comp_arc_sta__archdes_component_3">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#mod_view_sta__archdes_2" title="comp_arc_sta__archdes_component_3">mod_view_sta__archdes_2</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml" id="needarch-process/process_areas/architecture_design/_assets/architecture_modeling_example-5">
+<object data="../../../../_images/plantuml-3525479dd7b46288419869e31427e19b051ac763.svg" type="image/svg+xml" style="width:192px;height:241px;background:#FFFFFF;"></object></p>
+</td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int__archdes_component_interface_2" title="comp_arc_int__archdes_component_interface_2">comp_arc_int__archdes_component_interface_2</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_sta__archdes_component_3" title="comp_arc_sta__archdes_component_3">comp_arc_sta__archdes_component_3</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interfaces</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Static View</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -1175,102 +1273,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ed95c1eb">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int table" id="comp_arc_int__archdes_component_interface_3">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Interface 3</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_int__archdes_component_interface_3">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">used by: <span class="uses"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_int__archdes_component_interface_3">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_getstrt" title="comp_arc_int__archdes_component_interface_3">comp_arc_sta__component_getstrt</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_manual_getstrt" title="comp_arc_int__archdes_component_interface_3">comp_arc_sta__component_manual_getstrt</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_5" title="comp_arc_int__archdes_component_interface_3">comp_arc_int_op__archdes_real_operation_5</a>, <a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_6" title="comp_arc_int__archdes_component_interface_3">comp_arc_int_op__archdes_real_operation_6</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int__archdes_component_interface_3" title="comp_arc_int__archdes_component_interface_3">comp_arc_int__archdes_component_interface_3</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interfaces</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-48e172b9">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int table" id="comp_arc_int__archdes_component_interface_4">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">Component Interface 4</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_int__archdes_component_interface_4">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">includes: <span class="includes"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_7" title="comp_arc_int__archdes_component_interface_4">comp_arc_int_op__archdes_real_operation_7</a>, <a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_8" title="comp_arc_int__archdes_component_interface_4">comp_arc_int_op__archdes_real_operation_8</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int__archdes_component_interface_4" title="comp_arc_int__archdes_component_interface_4">comp_arc_int__archdes_component_interface_4</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interfaces</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-ede8eac7">
+<div class="need_container docutils container" id="SNCB-a5f33175">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_sub_component_1">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1294,11 +1297,11 @@
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">is satisfied by: <span class="satisfies"><span><a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_sta__dd_example_static" title="comp_arc_sta__archdes_sub_component_1">dd_sta__dd_example_static</a>, <a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_dyn__dd_example_dynamic" title="comp_arc_sta__archdes_sub_component_1">dd_dyn__dd_example_dynamic</a></span></span></div>
+<div class="line"><span><div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_sta__dd_example_static" title="comp_arc_sta__archdes_sub_component_1">dd_sta__dd_example_static</a>, <a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_dyn__dd_example_dynamic" title="comp_arc_sta__archdes_sub_component_1">dd_dyn__dd_example_dynamic</a></span></span></div>
 <div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_sta__archdes_sub_component_1">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_3" title="comp_arc_sta__archdes_sub_component_1">comp_arc_int_op__archdes_real_operation_3</a></span></span></div>
-<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_7" title="comp_arc_sta__archdes_sub_component_1">comp_arc_int_op__archdes_real_operation_7</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_1">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_1">comp_arc_sta__archdes_component_2</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="comp_arc_sta__archdes_sub_component_1">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="comp_arc_sta__archdes_sub_component_1">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_1">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_1">comp_arc_sta__archdes_component_2</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1320,7 +1323,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a1c53a3a">
+<div class="need_container docutils container" id="SNCB-0b7d6fa9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_sub_component_2">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1345,9 +1348,9 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_sta__archdes_sub_component_2">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_4" title="comp_arc_sta__archdes_sub_component_2">comp_arc_int_op__archdes_real_operation_4</a></span></span></div>
-<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_8" title="comp_arc_sta__archdes_sub_component_2">comp_arc_int_op__archdes_real_operation_8</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_2">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_2">comp_arc_sta__archdes_component_2</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="comp_arc_sta__archdes_sub_component_2">logic_arc_int__archdes_logical_interface_2</a></span></span></div>
+<div class="line">uses: <span class="uses"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="comp_arc_sta__archdes_sub_component_2">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_2">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_2">comp_arc_sta__archdes_component_2</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1369,7 +1372,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5e14383d">
+<div class="need_container docutils container" id="SNCB-322da7f4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_sta table" id="comp_arc_sta__archdes_sub_component_3">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1394,8 +1397,8 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="comp_arc_sta__archdes_sub_component_3">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_7" title="comp_arc_sta__archdes_sub_component_3">comp_arc_int_op__archdes_real_operation_7</a>, <a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_8" title="comp_arc_sta__archdes_sub_component_3">comp_arc_int_op__archdes_real_operation_8</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_3">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_3">comp_arc_sta__archdes_component_2</a></span></span></div>
+<div class="line">implements: <span class="implements"><span><a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="comp_arc_sta__archdes_sub_component_3">logic_arc_int__archdes_logical_interface_3</a></span></span></div>
+<div class="line">included by: <span class="includes"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_arc_sta__archdes_sub_component_3">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_arc_sta__archdes_sub_component_3">comp_arc_sta__archdes_component_2</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1417,389 +1420,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fb2848cd">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_1">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 1</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_1" title="comp_arc_int_op__archdes_real_operation_1">feat_arc_int_op__archdes_logical_operation_1</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_int__archdes_component_interface_1" title="comp_arc_int_op__archdes_real_operation_1">comp_arc_int__archdes_component_interface_1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_1" title="comp_arc_int_op__archdes_real_operation_1">comp_arc_int_op__archdes_real_operation_1</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-99781e30">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_2">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 2</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_2" title="comp_arc_int_op__archdes_real_operation_2">feat_arc_int_op__archdes_logical_operation_2</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="../architecture_concept.html#comp_arc_int__archdes_component_interface_1" title="comp_arc_int_op__archdes_real_operation_2">comp_arc_int__archdes_component_interface_1</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_2" title="comp_arc_int_op__archdes_real_operation_2">comp_arc_int_op__archdes_real_operation_2</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-1f42a651">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_3">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 3</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_3" title="comp_arc_int_op__archdes_real_operation_3">feat_arc_int_op__archdes_logical_operation_3</a></span></span></div>
-<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="comp_arc_int_op__archdes_real_operation_3">comp_arc_sta__archdes_sub_component_1</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_2" title="comp_arc_int_op__archdes_real_operation_3">comp_arc_int__archdes_component_interface_2</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_3" title="comp_arc_int_op__archdes_real_operation_3">comp_arc_int_op__archdes_real_operation_3</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-3a3e3071">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_4">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 4</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_4" title="comp_arc_int_op__archdes_real_operation_4">feat_arc_int_op__archdes_logical_operation_4</a></span></span></div>
-<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="comp_arc_int_op__archdes_real_operation_4">comp_arc_sta__archdes_sub_component_2</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_2" title="comp_arc_int_op__archdes_real_operation_4">comp_arc_int__archdes_component_interface_2</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_4" title="comp_arc_int_op__archdes_real_operation_4">comp_arc_int_op__archdes_real_operation_4</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-1ce5e5f8">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_5">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 5</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_5" title="comp_arc_int_op__archdes_real_operation_5">feat_arc_int_op__archdes_logical_operation_5</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_3" title="comp_arc_int_op__archdes_real_operation_5">comp_arc_int__archdes_component_interface_3</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_5" title="comp_arc_int_op__archdes_real_operation_5">comp_arc_int_op__archdes_real_operation_5</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-617a8815">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_6">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 6</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_6" title="comp_arc_int_op__archdes_real_operation_6">feat_arc_int_op__archdes_logical_operation_6</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_3" title="comp_arc_int_op__archdes_real_operation_6">comp_arc_int__archdes_component_interface_3</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_6" title="comp_arc_int_op__archdes_real_operation_6">comp_arc_int_op__archdes_real_operation_6</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-fd0721db">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_7">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 7</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_7" title="comp_arc_int_op__archdes_real_operation_7">feat_arc_int_op__archdes_logical_operation_7</a></span></span></div>
-<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="comp_arc_int_op__archdes_real_operation_7">comp_arc_sta__archdes_sub_component_3</a></span></span></div>
-<div class="line">used by: <span class="uses"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="comp_arc_int_op__archdes_real_operation_7">comp_arc_sta__archdes_sub_component_1</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_4" title="comp_arc_int_op__archdes_real_operation_7">comp_arc_int__archdes_component_interface_4</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_7" title="comp_arc_int_op__archdes_real_operation_7">comp_arc_int_op__archdes_real_operation_7</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-3ce579a7">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_arc_int_op table" id="comp_arc_int_op__archdes_real_operation_8">
-<tbody>
-<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">real operation 8</span></span></span></div>
-</div>
-</td>
-<td class="head_center" colspan="2"><div class="needs_head line-block">
-<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
-<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
-</div>
-</td>
-<td class="head_right" colspan="2"><div class="needs_head_right line-block">
-<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
-</div>
-</td>
-</tr>
-<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">architecture_design</span></span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
-<div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></div>
-</span></span></div>
-<div class="line"><span><div class="line">implements: <span class="implements"><span><a class="reference internal" href="#feat_arc_int_op__archdes_logical_operation_8" title="comp_arc_int_op__archdes_real_operation_8">feat_arc_int_op__archdes_logical_operation_8</a></span></span></div>
-<div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="comp_arc_int_op__archdes_real_operation_8">comp_arc_sta__archdes_sub_component_3</a></span></span></div>
-<div class="line">used by: <span class="uses"><span><a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="comp_arc_int_op__archdes_real_operation_8">comp_arc_sta__archdes_sub_component_2</a></span></span></div>
-<div class="line">is included in: <span class="includes"><span><a class="reference internal" href="#comp_arc_int__archdes_component_interface_4" title="comp_arc_int_op__archdes_real_operation_8">comp_arc_int__archdes_component_interface_4</a></span></span></div>
-</span></div>
-</div>
-</td>
-<td class="meta" colspan="3"></td>
-</tr>
-<tr class="content row-odd"><td class="content" colspan="6"></td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_arc_int_op__archdes_real_operation_8" title="comp_arc_int_op__archdes_real_operation_8">comp_arc_int_op__archdes_real_operation_8</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Component Architecture Interface Operation</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="need_container docutils container" id="SNCB-6f17a8c3">
+<div class="need_container docutils container" id="SNCB-44fc1309">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_stkh_req table" id="stkh_req__archdes_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1824,7 +1445,7 @@
 <div class="line"><span class="needs_reqtype"><span class="needs_label">reqtype: </span><span class="needs_data">Functional</span></span></div>
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">is satisfied by: <span class="satisfies"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="stkh_req__archdes_example_req">feat_req__archdes_example_req</a></span></span></div>
+<div class="line"><span><div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="stkh_req__archdes_example_req">feat_req__archdes_example_req</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1846,7 +1467,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a14d573d">
+<div class="need_container docutils container" id="SNCB-6febccaf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__archdes_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1872,8 +1493,8 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="#stkh_req__archdes_example_req" title="feat_req__archdes_example_req">stkh_req__archdes_example_req</a></span></span></div>
-<div class="line">is satisfied by: <span class="satisfies"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="feat_req__archdes_example_req">comp_req__archdes_example_req</a></span></span></div>
-<div class="line">is fulfilled by: <span class="fulfils"><span><a class="reference internal" href="#feat_arc_sta__archdes_static" title="feat_req__archdes_example_req">feat_arc_sta__archdes_static</a>, <a class="reference internal" href="#feat_arc_int__archdes_logical_interface_2" title="feat_req__archdes_example_req">feat_arc_int__archdes_logical_interface_2</a>, <a class="reference internal" href="#feat_arc_int__archdes_logical_interface_3" title="feat_req__archdes_example_req">feat_arc_int__archdes_logical_interface_3</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__feature_1" title="feat_req__archdes_example_req">feat_arc_sta__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_int__archdes_logical_interface_1" title="feat_req__archdes_example_req">feat_arc_int__archdes_logical_interface_1</a>, <a class="reference internal" href="../architecture_getstrt.html#feat_arc_sta__archdes_getstrt" title="feat_req__archdes_example_req">feat_arc_sta__archdes_getstrt</a></span></span></div>
+<div class="line">satisfied by: <span class="satisfies"><span><a class="reference internal" href="#comp_req__archdes_example_req" title="feat_req__archdes_example_req">comp_req__archdes_example_req</a></span></span></div>
+<div class="line">fulfilled by: <span class="fulfils"><span><a class="reference internal" href="#feat_arc_sta__archdes_static" title="feat_req__archdes_example_req">feat_arc_sta__archdes_static</a>, <a class="reference internal" href="#logic_arc_int__archdes_logical_interface_2" title="feat_req__archdes_example_req">logic_arc_int__archdes_logical_interface_2</a>, <a class="reference internal" href="#logic_arc_int__archdes_logical_interface_3" title="feat_req__archdes_example_req">logic_arc_int__archdes_logical_interface_3</a>, <a class="reference internal" href="../architecture_concept.html#feat_arc_sta__feature_1" title="feat_req__archdes_example_req">feat_arc_sta__feature_1</a>, <a class="reference internal" href="../architecture_concept.html#logic_arc_int__archdes_logical_interface_1" title="feat_req__archdes_example_req">logic_arc_int__archdes_logical_interface_1</a>, <a class="reference internal" href="../architecture_getstrt.html#feat_arc_sta__archdes_getstrt" title="feat_req__archdes_example_req">feat_arc_sta__archdes_getstrt</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -1895,7 +1516,7 @@
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-296578cb">
+<div class="need_container docutils container" id="SNCB-54910b17">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__archdes_example_req">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1921,7 +1542,7 @@
 <div class="line"><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></div>
 </span></span></div>
 <div class="line"><span><div class="line">satisfies: <span class="satisfies"><span><a class="reference internal" href="#feat_req__archdes_example_req" title="comp_req__archdes_example_req">feat_req__archdes_example_req</a></span></span></div>
-<div class="line">is fulfilled by: <span class="fulfils"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_req__archdes_example_req">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="#comp_arc_int__archdes_component_interface_2" title="comp_req__archdes_example_req">comp_arc_int__archdes_component_interface_2</a>, <a class="reference internal" href="#comp_arc_int__archdes_component_interface_3" title="comp_req__archdes_example_req">comp_arc_int__archdes_component_interface_3</a>, <a class="reference internal" href="#comp_arc_int__archdes_component_interface_4" title="comp_req__archdes_example_req">comp_arc_int__archdes_component_interface_4</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_2</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_3</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_req__archdes_example_req">comp_arc_sta__archdes_component_2</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_int__archdes_component_interface_1" title="comp_req__archdes_example_req">comp_arc_int__archdes_component_interface_1</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_getstrt" title="comp_req__archdes_example_req">comp_arc_sta__component_getstrt</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_manual_getstrt" title="comp_req__archdes_example_req">comp_arc_sta__component_manual_getstrt</a></span></span></div>
+<div class="line">fulfilled by: <span class="fulfils"><span><a class="reference internal" href="#comp_arc_sta__archdes_component_1" title="comp_req__archdes_example_req">comp_arc_sta__archdes_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_component_3" title="comp_req__archdes_example_req">comp_arc_sta__archdes_component_3</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_1" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_1</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_2" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_2</a>, <a class="reference internal" href="#comp_arc_sta__archdes_sub_component_3" title="comp_req__archdes_example_req">comp_arc_sta__archdes_sub_component_3</a>, <a class="reference internal" href="../architecture_concept.html#comp_arc_sta__archdes_component_2" title="comp_req__archdes_example_req">comp_arc_sta__archdes_component_2</a>, <a class="reference internal" href="../architecture_concept.html#real_arc_int__archdes_component_interface_1" title="comp_req__archdes_example_req">real_arc_int__archdes_component_interface_1</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_getstrt" title="comp_req__archdes_example_req">comp_arc_sta__component_getstrt</a>, <a class="reference internal" href="../architecture_getstrt.html#comp_arc_sta__component_manual_getstrt" title="comp_req__archdes_example_req">comp_arc_sta__component_manual_getstrt</a></span></span></div>
 <div class="line">implemented by: <span class="implements"><span><a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_sta__dd_example_static" title="comp_req__archdes_example_req">dd_sta__dd_example_static</a>, <a class="reference internal" href="../../implementation/_assets/detailed_design_example.html#dd_dyn__dd_example_dynamic" title="comp_req__archdes_example_req">dd_dyn__dd_example_dynamic</a></span></span></div>
 </span></div>
 </div>
@@ -1995,6 +1616,7 @@
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-architecture-file">Feature Architecture File</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-viewpoint">Module Viewpoint</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#component-architecure-file-s">Component Architecure File(s)</a></li>
 </ul>
   </nav></div>
@@ -2048,7 +1670,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
