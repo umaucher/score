@@ -22,10 +22,9 @@ Feature Request Guideline
 
 This Feature Request Guideline is a "How-To for Dummies" for proposing/contributing a new feature or changes to an existing feature.
 This Guideline is based on or references following documents:
-
-* `Change Management Plan <https://eclipse-score.github.io/score/main/platform_management_plan/change_management.html>`_
-* `Contribution Guideline <https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#doc__contr_guideline>`_
-* `Feature Template <https://eclipse-score.github.io/score/main/process/process_areas/change_management/guidance/change_management_feature_template.html>`_
+* :ref:`Contribution Guideline <contribute_contribution_guideline>`
+* :ref:`Change Management Plan <change_mgmt_plan>`
+* :ref:`Feature Template <chm_feature_templates>`
 
 Creation of Feature Request
 ================================
@@ -49,7 +48,7 @@ Creation of Feature Request
     feature architecture diagramms  or source code, then you could put the description of you *feature request* directly to the description of the *GitHub Issue*.
     A good exhaustive description is a prerequisite for feature request to be accepted.
   * If you already have some requirements, feature architecture description or code, then you could create a PR in the `score repository <https://github.com/eclipse-score/score/tree/main/docs/features>`_
-    with your proposal. The PR should follow following template: `Feature Template <https://eclipse-score.github.io/score/main/process/process_areas/change_management/guidance/change_management_feature_template.html>`_.
+    with your proposal. The PR should follow following template: :ref:`Feature Template <chm_feature_templates>`.
 
 Review of Feature Request
 ================================
