@@ -518,8 +518,8 @@
                   
   <section id="feature-request-guideline">
 <h1>Feature Request Guideline<a class="headerlink" href="#feature-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ed27bc53">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__featr_request_guideline">
+<div class="need_container docutils container" id="SNCB-76757193">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_request_guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
 <div class="line"><span><span class="needs_title"><span class="needs_data">Feature Request Guideline</span></span></span></div>
@@ -538,7 +538,6 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">contribution_management</span></span></span></div>
 </span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -548,11 +547,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__featr_request_guideline" title="gd_guidl__featr_request_guideline">gd_guidl__featr_request_guideline</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__feature_request_guideline" title="doc__feature_request_guideline">doc__feature_request_guideline</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -561,24 +560,34 @@
 </table>
 </div>
 </div>
-<p>In case you want to propose or to request a new feature or major changes in an existing feature, you will need to follow Feature Request Guideline.</p>
+<p>This Feature Request Guideline is a “How-To for Dummies” for proposing/contributing a new feature or changes to an existing feature.
+This Guideline is based on following documents:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://eclipse-score.github.io/score/main/platform_management_plan/change_management.html">Change Management Plan</a></p></li>
+<li><p><a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#doc__contr_guideline">Contribution Guideline</a></p></li>
+<li><p><a class="reference external" href="https://eclipse-score.github.io/score/main/process/process_areas/change_management/guidance/change_management_feature_template.html">Feature Template</a></p></li>
+</ul>
 <section id="creation-of-feature-request">
 <h2>Creation of Feature Request<a class="headerlink" href="#creation-of-feature-request" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>As the very first step, you will need to become of an official contributor, as described in
 <a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution">Actions to Ensure Proper Contribution</a></p></li>
-<li><p>Afterwards you will be able to create a GitHub issue and mark it with following label <em>feature_request</em>.</p></li>
-<li><p>Technical Leads review regulary all new incoming feature requests, this happens normally on Monday in the Technical Lead cirle. As soon as you’ve labeled your issue with
-<em>feature request</em> label, TLs will see the issue and will add the issue to the special GitHub project, <a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>.
-The initial status of the issue will be set to “Draft”.</p></li>
-<li><p>Next step would be to start working on the <em>feature request</em>. First of all, set the corresponding GitHub issue into “in Progress” status.
-Issues, that stay in the status “Draft” for a longer period of time, will be deleted. Depending on the maturity of the <em>feature request</em>, following two options are possible:</p>
+<li><p>Afterwards you will be able to create a GitHub Issue and mark it
+* with label <em>feature_request</em> if you want to propose a new feature, or
+* with label <em>feature_modification</em> if you want to propose changes to an existing feature.
+as described in <em>Change Management Plan</em>.</p></li>
+<li><p>Technical Leads review regulary all new incoming feature requests (GitHub Issues labeled as <em>feature_request</em> or <em>feature_modification</em>). This happens normally on Monday in the Technical Lead cirle.
+As soon as you’ve labeled your GitHub Issue with <em>feature request</em>/<em>feature_modification</em> label, TLs will see the <em>feature request</em> and will add it to the special GitHub project,
+<a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>. Inside of <em>Feature Request GitHub Project</em> we use additional states for a better tracking of the ‘feature request’.
+These states symbolizes the status of feature request and not the “GitHub” states of the issue. The initial status of every <em>feature request</em> will be set to “Draft”.</p></li>
+<li><p>Next step would be to start working on the <em>feature request</em>. First of all, change the status of <em>Feature Request</em> into “in Progress” state.
+<em>Feature Requests</em>, that stay in the status “Draft” for a longer period of time, will be deleted. Depending on the maturity of the <em>feature request</em>, following two options are possible:</p>
 <ul>
 <li><p>If the Feature Request is “just an idea” and you do not have any concrete requirements,
 feature architecture diagramms  or source code, then you could put the description of you <em>feature request</em> directly to the description of the <em>GitHub Issue</em>.
 A good exhaustive description is a prerequisite for feature request to be accepted.</p></li>
 <li><p>If you already have some requirements, feature architecture description or code, then you could create a PR in the <a class="reference external" href="https://github.com/eclipse-score/score/tree/main/docs/features">score repository</a>
-with your proposal.</p></li>
+with your proposal. The PR should follow following template: <a class="reference external" href="https://eclipse-score.github.io/score/main/process/process_areas/change_management/guidance/change_management_feature_template.html">Feature Template</a>.</p></li>
 </ul>
 </li>
 </ul>
@@ -603,9 +612,9 @@ reviewing your <em>feature request</em>.</p>
 </li>
 <li><p>The outcome of the review could be like following:</p>
 <ul class="simple">
-<li><p><strong>Accepted</strong> - You feature request is accepted. The technical leads will create a GitHub issue of type ‘Epic’, where detailed information regarding your feature will be documented.
-Afterwards the epic will be assigned to the corresponding team (CFT/Community). If none of the CFTs/Communities match the new <em>feature request</em>, then a new CFT/Community will be founden. You will be invited to
-the CFT/Community for break down of the <em>feature request</em> and planning.</p></li>
+<li><p><strong>Accepted</strong> - You <em>feature request</em> is accepted. Your PR will be merged and the Issue will be close. The technical leads will create a new GitHub issue of type ‘Epic’,
+where detailed information regarding your feature will be documented. Afterwards the epic will be assigned to the corresponding team (CFT/Community).
+If none of the CFTs/Communities match the new <em>feature request</em>, then a new CFT/Community will be founded. You will be invited to the CFT/Community for break down of the <em>feature request</em> and planning.</p></li>
 <li><p><strong>Rejected</strong> - You <em>feature request</em> was rejected. It could be either because you description was not mature enough or because the proposal technically doesn’t fit into S-CORE roadmap or architecture.
 You will be able to find the result of the review in the corresponding GitHub issue comments.</p></li>
 <li><p><strong>Changes Requested</strong> - We like your idea, but we would like to request some modifications. This could be rather technical topics or also syntax issues in the description.
