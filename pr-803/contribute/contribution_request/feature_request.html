@@ -518,7 +518,7 @@
                   
   <section id="feature-request-guideline">
 <h1>Feature Request Guideline<a class="headerlink" href="#feature-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-76757193">
+<div class="need_container docutils container" id="SNCB-a90e11e6">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_request_guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -561,7 +561,7 @@
 </div>
 </div>
 <p>This Feature Request Guideline is a “How-To for Dummies” for proposing/contributing a new feature or changes to an existing feature.
-This Guideline is based on following documents:</p>
+This Guideline is based on or references following documents:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://eclipse-score.github.io/score/main/platform_management_plan/change_management.html">Change Management Plan</a></p></li>
 <li><p><a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#doc__contr_guideline">Contribution Guideline</a></p></li>
@@ -569,21 +569,24 @@ This Guideline is based on following documents:</p>
 </ul>
 <section id="creation-of-feature-request">
 <h2>Creation of Feature Request<a class="headerlink" href="#creation-of-feature-request" title="Link to this heading">#</a></h2>
-<ul class="simple">
+<ul>
 <li><p>As the very first step, you will need to become of an official contributor, as described in
 <a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution">Actions to Ensure Proper Contribution</a></p></li>
-<li><p>Afterwards you will be able to create a GitHub Issue and mark it
-* with label <em>feature_request</em> if you want to propose a new feature, or
-* with label <em>feature_modification</em> if you want to propose changes to an existing feature.
-as described in <em>Change Management Plan</em>.</p></li>
+<li><p>Afterwards you will be able to create a GitHub Issue and mark it</p>
+<ul class="simple">
+<li><p>with label <em>feature_request</em> if you want to propose a new feature, or</p></li>
+<li><p>with label <em>feature_modification</em> if you want to propose changes to an existing feature.</p></li>
+</ul>
+<p>as described in <em>Change Management Plan</em>.</p>
+</li>
 <li><p>Technical Leads review regulary all new incoming feature requests (GitHub Issues labeled as <em>feature_request</em> or <em>feature_modification</em>). This happens normally on Monday in the Technical Lead cirle.
 As soon as you’ve labeled your GitHub Issue with <em>feature request</em>/<em>feature_modification</em> label, TLs will see the <em>feature request</em> and will add it to the special GitHub project,
-<a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>. Inside of <em>Feature Request GitHub Project</em> we use additional states for a better tracking of the ‘feature request’.
-These states symbolizes the status of feature request and not the “GitHub” states of the issue. The initial status of every <em>feature request</em> will be set to “Draft”.</p></li>
+<a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>. Inside of <em>Feature Request GitHub Project</em> we use additional states for a better tracking of the <em>feature request</em>.
+These states symbolizes the status of the <em>feature request</em> and not the “GitHub” states of the issue. The initial status of every <em>feature request</em> will be set to “Draft”.</p></li>
 <li><p>Next step would be to start working on the <em>feature request</em>. First of all, change the status of <em>Feature Request</em> into “in Progress” state.
 <em>Feature Requests</em>, that stay in the status “Draft” for a longer period of time, will be deleted. Depending on the maturity of the <em>feature request</em>, following two options are possible:</p>
-<ul>
-<li><p>If the Feature Request is “just an idea” and you do not have any concrete requirements,
+<ul class="simple">
+<li><p>If the <em>feature request</em> is “just an idea” and you do not have any concrete requirements,
 feature architecture diagramms  or source code, then you could put the description of you <em>feature request</em> directly to the description of the <em>GitHub Issue</em>.
 A good exhaustive description is a prerequisite for feature request to be accepted.</p></li>
 <li><p>If you already have some requirements, feature architecture description or code, then you could create a PR in the <a class="reference external" href="https://github.com/eclipse-score/score/tree/main/docs/features">score repository</a>
@@ -612,7 +615,7 @@ reviewing your <em>feature request</em>.</p>
 </li>
 <li><p>The outcome of the review could be like following:</p>
 <ul class="simple">
-<li><p><strong>Accepted</strong> - You <em>feature request</em> is accepted. Your PR will be merged and the Issue will be close. The technical leads will create a new GitHub issue of type ‘Epic’,
+<li><p><strong>Accepted</strong> - You <em>feature request</em> is accepted. Your PR will be merged and the Issue will be closed. The technical leads will create a new GitHub issue of type ‘Epic’,
 where detailed information regarding your feature will be documented. Afterwards the epic will be assigned to the corresponding team (CFT/Community).
 If none of the CFTs/Communities match the new <em>feature request</em>, then a new CFT/Community will be founded. You will be invited to the CFT/Community for break down of the <em>feature request</em> and planning.</p></li>
 <li><p><strong>Rejected</strong> - You <em>feature request</em> was rejected. It could be either because you description was not mature enough or because the proposal technically doesn’t fit into S-CORE roadmap or architecture.

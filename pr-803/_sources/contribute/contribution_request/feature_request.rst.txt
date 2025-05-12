@@ -21,7 +21,7 @@ Feature Request Guideline
   :status: valid
 
 This Feature Request Guideline is a "How-To for Dummies" for proposing/contributing a new feature or changes to an existing feature.
-This Guideline is based on following documents:
+This Guideline is based on or references following documents:
 
 * `Change Management Plan <https://eclipse-score.github.io/score/main/platform_management_plan/change_management.html>`_
 * `Contribution Guideline <https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#doc__contr_guideline>`_
@@ -32,17 +32,20 @@ Creation of Feature Request
 * As the very first step, you will need to become of an official contributor, as described in
   `Actions to Ensure Proper Contribution  <https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution>`_
 * Afterwards you will be able to create a GitHub Issue and mark it
+
   * with label *feature_request* if you want to propose a new feature, or
   * with label *feature_modification* if you want to propose changes to an existing feature.
+
   as described in *Change Management Plan*.
+
 * Technical Leads review regulary all new incoming feature requests (GitHub Issues labeled as *feature_request* or *feature_modification*). This happens normally on Monday in the Technical Lead cirle.
   As soon as you've labeled your GitHub Issue with *feature request*/*feature_modification* label, TLs will see the *feature request* and will add it to the special GitHub project,
-  `Feature Request GitHub Project <https://github.com/orgs/eclipse-score/projects/4>`_. Inside of *Feature Request GitHub Project* we use additional states for a better tracking of the 'feature request'.
-  These states symbolizes the status of feature request and not the "GitHub" states of the issue. The initial status of every *feature request* will be set to "Draft".
+  `Feature Request GitHub Project <https://github.com/orgs/eclipse-score/projects/4>`_. Inside of *Feature Request GitHub Project* we use additional states for a better tracking of the *feature request*.
+  These states symbolizes the status of the *feature request* and not the "GitHub" states of the issue. The initial status of every *feature request* will be set to "Draft".
 * Next step would be to start working on the *feature request*. First of all, change the status of *Feature Request* into "in Progress" state.
   *Feature Requests*, that stay in the status "Draft" for a longer period of time, will be deleted. Depending on the maturity of the *feature request*, following two options are possible:
 
-  * If the Feature Request is "just an idea" and you do not have any concrete requirements,
+  * If the *feature request* is "just an idea" and you do not have any concrete requirements,
     feature architecture diagramms  or source code, then you could put the description of you *feature request* directly to the description of the *GitHub Issue*.
     A good exhaustive description is a prerequisite for feature request to be accepted.
   * If you already have some requirements, feature architecture description or code, then you could create a PR in the `score repository <https://github.com/eclipse-score/score/tree/main/docs/features>`_
@@ -63,7 +66,7 @@ Review of Feature Request
 
 * The outcome of the review could be like following:
 
-  * **Accepted** - You *feature request* is accepted. Your PR will be merged and the Issue will be close. The technical leads will create a new GitHub issue of type 'Epic',
+  * **Accepted** - You *feature request* is accepted. Your PR will be merged and the Issue will be closed. The technical leads will create a new GitHub issue of type 'Epic',
     where detailed information regarding your feature will be documented. Afterwards the epic will be assigned to the corresponding team (CFT/Community).
     If none of the CFTs/Communities match the new *feature request*, then a new CFT/Community will be founded. You will be invited to the CFT/Community for break down of the *feature request* and planning.
   * **Rejected** - You *feature request* was rejected. It could be either because you description was not mature enough or because the proposal technically doesn't fit into S-CORE roadmap or architecture.
