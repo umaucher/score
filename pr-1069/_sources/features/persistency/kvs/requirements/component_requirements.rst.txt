@@ -188,14 +188,3 @@ Component Requirements
 
    The key-value-storage must provide an API to register callbacks for
    data-change events.
-
-.. comp_req:: Logging & Tracing
-   :id: comp_req__kvs__log_trace
-   :reqtype: Functional
-   :security: NO
-   :safety: QM
-   :satisfies: feat_req__kvs__log_trace
-   :status: valid
-
-   The key-value-storage must use the S-CORE provided logging and tracing
-   framework.
