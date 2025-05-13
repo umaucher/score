@@ -86,13 +86,11 @@ Technical committees
 
 * **Feature Teams**
 
-  *Feature Teams* are responsible for some piece
-  of work from the beginning (e.g. definition of the architecture) till the end
-  (e.g. integration tests) and are usually assigned to the *S-CORE* main integration project or to one particular software module. *Feature Teams* work independently from each other on *GitHub Issues* in the assigned software module. *Feature Teams* consist of the contributors, who can specify requirements, define architecture, develop source code and implement tests afterwards. *Project Leads* and *Committers* are also *Contributors* and effectively work on processing of *GitHub Issues*.
+  *Feature Teams* have end-to-end responsibility for specific functionalities. This includes all aspects beginning with the architecture definition to the integration test. They are usually assigned to the *S-CORE* main integration project or to one particular software module. *Feature Teams* work independently of each other on *GitHub Issues* in the assigned software module. *Feature Teams* consist of the contributors, who can specify requirements, define architecture, develop source code and implement tests afterwards. *Project Leads* and *Committers* are also *Contributors* and effectively work on processing of *GitHub Issues*.
 
   *Feature Team* usually consists of the following roles: Project Lead, Safety Manager, Quality Manager, Security Manager, Committers and Contributors. Every *Feature Team* has at least one committer who can approve and merge the Pull Requests of the Contributors.
 
-  In case *Feature Team* needs to request a new repository, this can be done be extending the `otterdog configuration file <https://github.com/eclipse-score/.eclipsefdn/blob/main/otterdog/eclipse-score.jsonnet>`_ and creating a new PR, that should be approved by the *Eclipse Project Security Team*.
+  In case a *Feature Team* needs to request a new repository, this can be done be extending the `otterdog configuration file <https://github.com/eclipse-score/.eclipsefdn/blob/main/otterdog/eclipse-score.jsonnet>`_ and creating a new PR, that has to be approved by the *Eclipse Project Security Team*.
 
   The *GitHub Discussions* for feature teams can be found in the `Feature Teams section <https://github.com/orgs/eclipse-score/discussions>`_ of the main *S-CORE* project.
 
