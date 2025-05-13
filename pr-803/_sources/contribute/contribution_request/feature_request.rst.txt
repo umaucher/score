@@ -42,25 +42,26 @@ Creation of Feature Request
   Please put a short description of your *feature request* into the GitHub Issue description, so that
   everyone can immediately understand, what the *feature request* is about.
 
-  Technical Leads review regulary all new incoming *feature requests* (GitHub Issues labeled as *feature_request* or *feature_modification*).
-  This happens normally on Monday in the `Technical Lead cirle <https://github.com/orgs/eclipse-score/discussions/104>`_.
+  Technical Leads review regularly all new incoming *feature requests* (GitHub Issues labeled as *feature_request* or *feature_modification*).
+  This happens normally on Monday in the `Technical Lead circle <https://github.com/orgs/eclipse-score/discussions/104>`_.
   As soon as you've labeled your GitHub Issue with *feature request*/*feature_modification* label,
   TLs will see the *feature request* and will add it to the special GitHub project,
   `Feature Request GitHub Project <https://github.com/orgs/eclipse-score/projects/4>`_.
   Inside of this *Feature Request GitHub Project* additional states are used for a better tracking of the *feature requests*.
   These states symbolize the status of the *feature request* and not the "GitHub" states of the issue, therefore we will further speak about
-  *feauture request status*. The initial status of every *feature request* is set to "Draft".
+  *feature request status*. The initial status of every *feature request* is set to "Draft".
 
 * After you have created a GitHub Issue, next step would be to start working on the *feature request*.
   First of all, change the status of *Feature Request* to "in Progress" state.
   *Feature Requests*, that stay in the status "Draft" for a longer period of time, will be deleted.
-  Afterwards create a PR in the `score repository <https://github.com/eclipse-score/score/tree/main/docs/features>`_ with your proposal.
-  The PR should follow the :ref:`Feature Template <chm_feature_templates>`.
+  Afterwards create a PR with your proposal in the `/docs/features <https://github.com/eclipse-score/score/tree/main/docs/features>`_ score repository.
+  There you will find currently existing features as subfolders. Please choose the one that fits your *feature request* the most or
+  create a new subfolder, if none of existing feature match your *feature request*. Please take care, that the PR follows the :ref:`Feature Template <chm_feature_templates>`.
   You should try to put as much information as possible, as a good exhaustive description is a prerequisite for *feature request* to be accepted.
 
 It is important to understand, that *feature request* consists of an GitHub Issue, that is used to track organizational information and
 PR, that contains the technical content. GitHub Issue always stays assigned to the owner of the *feature request*.
-*Feature Request* PR will be always assigned to the owner of the *feature request* as well, but will additionally get the list of reviewers, that
+*Feature Request* PR will always be assigned to the owner of the *feature request* as well, but will additionally get the list of reviewers, that
 should review this *feature request* PR.
 
 
@@ -74,20 +75,20 @@ Review of Feature Request
     The CTF/Community lead will change the status of the *feature request* issue to "in Review" as soon as they will start reviewing your *feature request*.
     The review can be delegated to any other participants of the CFT or Community.
 
-      * In case *feature request* can not be clearely assigned to any already existing team, Technical Lead circle will pick at least two suitable candidates
-        from the project to review the *feature request* PR. In that case, *feature request* should be reviewed by all reviewers.
+    * In case *feature request* can not be clearly assigned to any already existing team, Technical Lead circle will pick at least two suitable candidates
+      from the project to review the *feature request* PR. In that case, *feature request* should be reviewed by all reviewers.
 
-  * In case of big architectural impact, Technical Lead cirlce can additionally decide to request a review for *feature request* PR from software architecture community.
+  * In case of big architectural impact, Technical Lead circle can additionally decide to request a review for *feature request* PR from software architecture community.
 
 * The outcome of the review could be like following:
 
   * **Accepted** - You *feature request* is accepted. The *feature request* GitHub Issue should contain now a link to a new GitHub issue of type 'Epic',
-    that was created by Technical Leads, where detailed information regarding your feature  is documented.
+    that was created by Technical Leads, where detailed information regarding your feature is documented.
     The epic should be also already assigned to the corresponding team (CFT/Community).
     If none of the CFTs/Communities match the new *feature request*, then a new CFT/Community will be founded.
     You will be invited to the CFT/Community for break down of the *feature request* and planning.
-    Your can now merge the *feature request* PR and close the *feature request* Issue.
-  * **Rejected** - You *feature request* was rejected. It could be either because you description was
+    You can now merge the *feature request* PR and close the *feature request* issue.
+  * **Rejected** - You *feature request* was rejected. It could be either because your description was
     not mature enough or because the proposal technically doesn't fit into S-CORE roadmap or architecture.
     You will be able to find the summary of the review in the corresponding *feature request* issue comments.
     The review comments will be done directly in the *feature request* PR.
@@ -95,8 +96,8 @@ Review of Feature Request
     This could be rather technical topics or also syntax issues in the description.
     You will be able to find the summary of the review in the corresponding *feature request* issue comments.
     The review comments will be done directly in the *feature request* PR.
-  * **POC needed** - We generally like your idea but we don't have enough technical understanding of the *feature request*,
+  * **POC needed** - We generally like your idea, but we don't have enough technical understanding of the *feature request*,
     e.g. technical scope is too big, and we need a POC to be able to understand better,
     how the proposed *feature request* fits into the overall solution. You will find in the GitHub issue comments the information what your POC should focus on.
-    Also a so called *incubation repository* will be created by the reviewers of the *feature request*, where you should implement your POC.
+    Also, a so called *incubation repository* will be created by the reviewers of the *feature request*, where you should implement your POC.
     Please be aware, that POC is not a guarantee, that you *feature request* will be accepted.

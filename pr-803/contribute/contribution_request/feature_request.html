@@ -518,7 +518,7 @@
                   
   <section id="feature-request-guideline">
 <h1>Feature Request Guideline<a class="headerlink" href="#feature-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9ffc8b7e">
+<div class="need_container docutils container" id="SNCB-ce6a7680">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_request_guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -580,30 +580,31 @@ This Guideline is based on or references following documents:</p>
 <p>as described in the <a class="reference internal" href="../../platform_management_plan/change_management.html#change-mgmt-plan"><span class="std std-ref">Change Management Plan</span></a>.</p>
 <p>Please put a short description of your <em>feature request</em> into the GitHub Issue description, so that
 everyone can immediately understand, what the <em>feature request</em> is about.</p>
-<p>Technical Leads review regulary all new incoming <em>feature requests</em> (GitHub Issues labeled as <em>feature_request</em> or <em>feature_modification</em>).
-This happens normally on Monday in the <a class="reference external" href="https://github.com/orgs/eclipse-score/discussions/104">Technical Lead cirle</a>.
+<p>Technical Leads review regularly all new incoming <em>feature requests</em> (GitHub Issues labeled as <em>feature_request</em> or <em>feature_modification</em>).
+This happens normally on Monday in the <a class="reference external" href="https://github.com/orgs/eclipse-score/discussions/104">Technical Lead circle</a>.
 As soon as you’ve labeled your GitHub Issue with <em>feature request</em>/<em>feature_modification</em> label,
 TLs will see the <em>feature request</em> and will add it to the special GitHub project,
 <a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>.
 Inside of this <em>Feature Request GitHub Project</em> additional states are used for a better tracking of the <em>feature requests</em>.
 These states symbolize the status of the <em>feature request</em> and not the “GitHub” states of the issue, therefore we will further speak about
-<em>feauture request status</em>. The initial status of every <em>feature request</em> is set to “Draft”.</p>
+<em>feature request status</em>. The initial status of every <em>feature request</em> is set to “Draft”.</p>
 </li>
 <li><p>After you have created a GitHub Issue, next step would be to start working on the <em>feature request</em>.
 First of all, change the status of <em>Feature Request</em> to “in Progress” state.
 <em>Feature Requests</em>, that stay in the status “Draft” for a longer period of time, will be deleted.
-Afterwards create a PR in the <a class="reference external" href="https://github.com/eclipse-score/score/tree/main/docs/features">score repository</a> with your proposal.
-The PR should follow the <a class="reference internal" href="../../process/process_areas/change_management/guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Template</span></a>.
+Afterwards create a PR with your proposal in the <a class="reference external" href="https://github.com/eclipse-score/score/tree/main/docs/features">/docs/features</a> score repository.
+There you will find currently existing features as subfolders. Please choose the one that fits your <em>feature request</em> the most or
+create a new subfolder, if none of existing feature match your <em>feature request</em>. Please take care, that the PR follows the <a class="reference internal" href="../../process/process_areas/change_management/guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Template</span></a>.
 You should try to put as much information as possible, as a good exhaustive description is a prerequisite for <em>feature request</em> to be accepted.</p></li>
 </ul>
 <p>It is important to understand, that <em>feature request</em> consists of an GitHub Issue, that is used to track organizational information and
 PR, that contains the technical content. GitHub Issue always stays assigned to the owner of the <em>feature request</em>.
-<em>Feature Request</em> PR will be always assigned to the owner of the <em>feature request</em> as well, but will additionally get the list of reviewers, that
+<em>Feature Request</em> PR will always be assigned to the owner of the <em>feature request</em> as well, but will additionally get the list of reviewers, that
 should review this <em>feature request</em> PR.</p>
 </section>
 <section id="review-of-feature-request">
 <h2>Review of Feature Request<a class="headerlink" href="#review-of-feature-request" title="Link to this heading">#</a></h2>
-<ul>
+<ul class="simple">
 <li><p>As soon as you’re done with description of your <em>feature request</em>, please put the status into “Ready for Review” so that Technical Leads know,
 that they can start with the process of reviewing the <em>feature request</em>. Technical Leads will first do a short review of your <em>feature request</em>:</p>
 <ul>
@@ -611,25 +612,23 @@ that they can start with the process of reviewing the <em>feature request</em>. 
 <li><p>Normally, TL circle will put the lead of the appropriate <em>CFT</em> or <em>Community</em> as reviewer to the corresponding PR of the <em>feature request</em> for better analysis.
 The CTF/Community lead will change the status of the <em>feature request</em> issue to “in Review” as soon as they will start reviewing your <em>feature request</em>.
 The review can be delegated to any other participants of the CFT or Community.</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>In case <em>feature request</em> can not be clearely assigned to any already existing team, Technical Lead circle will pick at least two suitable candidates
+<ul>
+<li><p>In case <em>feature request</em> can not be clearly assigned to any already existing team, Technical Lead circle will pick at least two suitable candidates
 from the project to review the <em>feature request</em> PR. In that case, <em>feature request</em> should be reviewed by all reviewers.</p></li>
 </ul>
-</div></blockquote>
 </li>
-<li><p>In case of big architectural impact, Technical Lead cirlce can additionally decide to request a review for <em>feature request</em> PR from software architecture community.</p></li>
+<li><p>In case of big architectural impact, Technical Lead circle can additionally decide to request a review for <em>feature request</em> PR from software architecture community.</p></li>
 </ul>
 </li>
 <li><p>The outcome of the review could be like following:</p>
-<ul class="simple">
+<ul>
 <li><p><strong>Accepted</strong> - You <em>feature request</em> is accepted. The <em>feature request</em> GitHub Issue should contain now a link to a new GitHub issue of type ‘Epic’,
-that was created by Technical Leads, where detailed information regarding your feature  is documented.
+that was created by Technical Leads, where detailed information regarding your feature is documented.
 The epic should be also already assigned to the corresponding team (CFT/Community).
 If none of the CFTs/Communities match the new <em>feature request</em>, then a new CFT/Community will be founded.
 You will be invited to the CFT/Community for break down of the <em>feature request</em> and planning.
-Your can now merge the <em>feature request</em> PR and close the <em>feature request</em> Issue.</p></li>
-<li><p><strong>Rejected</strong> - You <em>feature request</em> was rejected. It could be either because you description was
+You can now merge the <em>feature request</em> PR and close the <em>feature request</em> issue.</p></li>
+<li><p><strong>Rejected</strong> - You <em>feature request</em> was rejected. It could be either because your description was
 not mature enough or because the proposal technically doesn’t fit into S-CORE roadmap or architecture.
 You will be able to find the summary of the review in the corresponding <em>feature request</em> issue comments.
 The review comments will be done directly in the <em>feature request</em> PR.</p></li>
@@ -637,10 +636,10 @@ The review comments will be done directly in the <em>feature request</em> PR.</p
 This could be rather technical topics or also syntax issues in the description.
 You will be able to find the summary of the review in the corresponding <em>feature request</em> issue comments.
 The review comments will be done directly in the <em>feature request</em> PR.</p></li>
-<li><p><strong>POC needed</strong> - We generally like your idea but we don’t have enough technical understanding of the <em>feature request</em>,
+<li><p><strong>POC needed</strong> - We generally like your idea, but we don’t have enough technical understanding of the <em>feature request</em>,
 e.g. technical scope is too big, and we need a POC to be able to understand better,
 how the proposed <em>feature request</em> fits into the overall solution. You will find in the GitHub issue comments the information what your POC should focus on.
-Also a so called <em>incubation repository</em> will be created by the reviewers of the <em>feature request</em>, where you should implement your POC.
+Also, a so called <em>incubation repository</em> will be created by the reviewers of the <em>feature request</em>, where you should implement your POC.
 Please be aware, that POC is not a guarantee, that you <em>feature request</em> will be accepted.</p></li>
 </ul>
 </li>
