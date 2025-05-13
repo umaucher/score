@@ -14,8 +14,8 @@
 
 .. _diagnostics_feature:
 
-Diagnostics
-############
+Diagnostic and Fault Management
+###############################
 
 .. document:: Diagnostics
    :id: doc__diagnostics
@@ -72,7 +72,7 @@ Architecture
 
 The proposed concept consists of three main parts:
 
-1.	A library to aggregate faults and integrate the diagnostic system into S-CORE
+1.	A framework agnostic library to aggregate faults and integrate the diagnostic system into S-CORE
 2.	A SOVD based diagnostic system
 3.	Components to interface the diagnostic system with the outside – e.g. Tester or UDS based ECUs
 
@@ -89,7 +89,7 @@ The following components are considered in scope of this feature request.
 
 F lib (Fault Library)
 
-- Provides an interface for FEO activities to report faults.
+- Provides a framework agnostic interface for apps or FEO activities to report faults - called "Fault API" in the S-CORE architecture.
 - Relays faults via IPC to central Diagnostic Fault Manager.
 - Enables domain-specific error logic (e.g. debouncing) by exposing a configuration interface
 - Reporting of faults additionally results in a log entry.
@@ -155,6 +155,10 @@ Out of scope components
 The following components are out of scope for this feature request but are included for context.
 Each is briefly described to illustrate its role within the overall system architecture and
 to highlight any resulting requirements or constraints imposed by the diagnostic system design.
+
+Logging
+
+- Enables the Fault Library to log fault events.
 
 Configuration Manager
 
