@@ -71,9 +71,9 @@ Review of Feature Request
   that they can start with the process of reviewing the *feature request*. Technical Leads will first do a short review of your *feature request*:
 
   * In case the impact of your *feature request* is trivial, then TLs can process your *feature request* immediately.
-  * Normally, TL circle will put the lead of the appropriate *CFT* or *Community* as reviewer to the corresponding PR of the *feature request* for better analysis.
+  * Normally, TL circle will put the lead of the appropriate *FT* or *Community* as reviewer to the corresponding PR of the *feature request* for better analysis.
     The CTF/Community lead will change the status of the *feature request* issue to "in Review" as soon as they will start reviewing your *feature request*.
-    The review can be delegated to any other participants of the CFT or Community.
+    The review can be delegated to any other participants of the FT or Community.
 
     * In case *feature request* can not be clearly assigned to any already existing team, Technical Lead circle will pick at least two suitable candidates
       from the project to review the *feature request* PR. In that case, *feature request* should be reviewed by all reviewers.
@@ -84,9 +84,9 @@ Review of Feature Request
 
   * **Accepted** - You *feature request* is accepted. The *feature request* GitHub Issue should contain now a link to a new GitHub issue of type 'Epic',
     that was created by Technical Leads, where detailed information regarding your feature is documented.
-    The epic should be also already assigned to the corresponding team (CFT/Community).
-    If none of the CFTs/Communities match the new *feature request*, then a new CFT/Community will be founded.
-    You will be invited to the CFT/Community for break down of the *feature request* and planning.
+    The epic should be also already assigned to the corresponding team (FT/Community).
+    If none of the FTs/Communities match the new *feature request*, then a new CFT/Community will be founded.
+    You will be invited to the FT/Community for break down of the *feature request* and planning.
     You can now merge the *feature request* PR and close the *feature request* issue.
   * **Rejected** - You *feature request* was rejected. It could be either because your description was
     not mature enough or because the proposal technically doesn't fit into S-CORE roadmap or architecture.
