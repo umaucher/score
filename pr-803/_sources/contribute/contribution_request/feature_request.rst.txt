@@ -85,7 +85,7 @@ Review of Feature Request
   * **Accepted** - You *feature request* is accepted. The *feature request* GitHub Issue should contain now a link to a new GitHub issue of type 'Epic',
     that was created by Technical Leads, where detailed information regarding your feature is documented.
     The epic should be also already assigned to the corresponding team (FT/Community).
-    If none of the FTs/Communities match the new *feature request*, then a new CFT/Community will be founded.
+    If none of the FTs/Communities match the new *feature request*, then a new FT/Community will be founded.
     You will be invited to the FT/Community for break down of the *feature request* and planning.
     You can now merge the *feature request* PR and close the *feature request* issue.
   * **Rejected** - You *feature request* was rejected. It could be either because your description was
