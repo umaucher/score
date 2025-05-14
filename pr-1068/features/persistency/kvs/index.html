@@ -76,7 +76,7 @@
     <link rel="prev" title="File Access" href="../file-access/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
+  <meta name="docsearch:version" content="0.1" />
   </head>
   
   
@@ -524,7 +524,7 @@
                   
   <section id="key-value-storage">
 <h1>Key-Value-Storage<a class="headerlink" href="#key-value-storage" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1c9c2608">
+<div class="need_container docutils container" id="SNCB-bf970db8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_kvs">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -585,7 +585,7 @@ language through language specific interfaces.</p>
 </section>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>The current solutions availabkle mostly don’t meet the specific needs of the
+<p>The current solutions available mostly don’t meet the specific needs of the
 S-CORE project like storing specific datatypes without a BASE64 conversation or
 having no rollback/replay feature. Also the integration into analysis tools is
 simpler when the solution grows with the needs instead having to adapt existing
@@ -611,7 +611,7 @@ is allowed to have multiple KVS.</p>
 <p>Staying compatible through updates and rollbacks is a main requirement for the
 project.</p>
 <ol class="arabic simple" start="3">
-<li><p>The same KVS should be read/writeable from C++ &amp; Rust and any other language.</p></li>
+<li><p>The same KVS should be read/writable from C++ &amp; Rust and any other language.</p></li>
 </ol>
 <p>Having a flexible interface allows to focus on solutions where the language
 fits the needs.</p>
@@ -624,7 +624,7 @@ should return an error if the key needs to be written first.</p>
 <li><p>KVS should use a simple data representation.</p></li>
 </ol>
 <p>The KVS should use a data representation that supports versioned up- and
-downgrading like JSON or Cap’n Proto and is easily debugable by the developer.</p>
+downgrading like JSON or Cap’n Proto and is easily debuggable by the developer.</p>
 <ol class="arabic simple" start="6">
 <li><p>Integrity of the KVS should be checked.</p></li>
 </ol>
@@ -666,7 +666,7 @@ ToDo - Link to the Safety Impact Method</p>
 <blockquote>
 <div><div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Use the component classification method here to classfiy your component, if it shall to be used in a safety context: (TODO: add link to component classification).</p>
+<p>Use the component classification method here to classify your component, if it shall to be used in a safety context: (TODO: add link to component classification).</p>
 </div>
 </div></blockquote>
 </section>
