@@ -66,18 +66,18 @@ platform.
 Rationale
 =========
 
-  * Requirement 1: Multiple key-value storages per application
-    * Solution: Allow each application to have multiple key-value storages (KVS) to enable data separation and different levels of security.
-  * Requirement 2: Update mechanism for KVS versions
-    * Solution: Implement an update mechanism to ensure compatibility through updates and rollbacks of different KVS versions.
-  * Requirement 3: Language-agnostic KVS interface
-    * Solution: Design a flexible interface that allows the KVS to be read and written from multiple programming languages, including C++, Rust, and others.
-  * Requirement 4: Default values for KVS
-    * Solution: Configure the KVS to store default values for all keys, returning either the default value or an error if the key needs to be written first.
-  * Requirement 5: Simple data representation for KVS
-    * Solution: Utilize a simple data representation, such as JSON or Cap'n Proto, that supports versioned up- and downgrading and is easily debuggable by developers.
-  * Requirement 6: KVS integrity checking
-    * Solution: Ensure the KVS maintains a consistent state, providing either the currently stored data or the previous snapshot if data retrieval is not possible.
+1. | Requirement 1: Multiple key-value storages per application
+   | Solution: Allow each application to have multiple key-value storages (KVS) to enable data separation and different levels of security.
+2. | Requirement 2: Update mechanism for KVS versions
+   | Solution: Implement an update mechanism to ensure compatibility through updates and rollbacks of different KVS versions.
+3. | Requirement 3: Language-agnostic KVS interface
+   | Solution: Design a flexible interface that allows the KVS to be read and written from multiple programming languages, including C++, Rust, and others.
+4. | Requirement 4: Default values for KVS
+   | Solution: Configure the KVS to store default values for all keys, returning either the default value or an error if the key needs to be written first.
+5. | Requirement 5: Simple data representation for KVS
+   | Solution: Utilize a simple data representation, such as JSON or Cap'n Proto, that supports versioned up- and downgrading and is easily debuggable by developers.
+6. | Requirement 6: KVS integrity checking
+   | Solution: Ensure the KVS maintains a consistent state, providing either the currently stored data or the previous snapshot if data retrieval is not possible.
 
 Backwards Compatibility	
 =======================

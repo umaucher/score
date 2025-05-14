@@ -524,7 +524,7 @@
                   
   <section id="key-value-storage">
 <h1>Key-Value-Storage<a class="headerlink" href="#key-value-storage" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-08c04aa1">
+<div class="need_container docutils container" id="SNCB-c8830fd9">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_kvs">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -617,22 +617,38 @@ platform.</p>
 </section>
 <section id="rationale">
 <h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>Requirement 1: Multiple key-value storages per application
-* Solution: Allow each application to have multiple key-value storages (KVS) to enable data separation and different levels of security.</p></li>
-<li><p>Requirement 2: Update mechanism for KVS versions
-* Solution: Implement an update mechanism to ensure compatibility through updates and rollbacks of different KVS versions.</p></li>
-<li><p>Requirement 3: Language-agnostic KVS interface
-* Solution: Design a flexible interface that allows the KVS to be read and written from multiple programming languages, including C++, Rust, and others.</p></li>
-<li><p>Requirement 4: Default values for KVS
-* Solution: Configure the KVS to store default values for all keys, returning either the default value or an error if the key needs to be written first.</p></li>
-<li><p>Requirement 5: Simple data representation for KVS
-* Solution: Utilize a simple data representation, such as JSON or Cap’n Proto, that supports versioned up- and downgrading and is easily debuggable by developers.</p></li>
-<li><p>Requirement 6: KVS integrity checking
-* Solution: Ensure the KVS maintains a consistent state, providing either the currently stored data or the previous snapshot if data retrieval is not possible.</p></li>
-</ul>
-</div></blockquote>
+<ol class="arabic">
+<li><div class="line-block">
+<div class="line">Requirement 1: Multiple key-value storages per application</div>
+<div class="line">Solution: Allow each application to have multiple key-value storages (KVS) to enable data separation and different levels of security.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Requirement 2: Update mechanism for KVS versions</div>
+<div class="line">Solution: Implement an update mechanism to ensure compatibility through updates and rollbacks of different KVS versions.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Requirement 3: Language-agnostic KVS interface</div>
+<div class="line">Solution: Design a flexible interface that allows the KVS to be read and written from multiple programming languages, including C++, Rust, and others.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Requirement 4: Default values for KVS</div>
+<div class="line">Solution: Configure the KVS to store default values for all keys, returning either the default value or an error if the key needs to be written first.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Requirement 5: Simple data representation for KVS</div>
+<div class="line">Solution: Utilize a simple data representation, such as JSON or Cap’n Proto, that supports versioned up- and downgrading and is easily debuggable by developers.</div>
+</div>
+</li>
+<li><div class="line-block">
+<div class="line">Requirement 6: KVS integrity checking</div>
+<div class="line">Solution: Ensure the KVS maintains a consistent state, providing either the currently stored data or the previous snapshot if data retrieval is not possible.</div>
+</div>
+</li>
+</ol>
 </section>
 <section id="backwards-compatibility">
 <h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
