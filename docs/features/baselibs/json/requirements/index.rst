@@ -23,7 +23,7 @@ General Requirements
    :reqtype: Functional
    :security: NO
    :safety: ASIL_B
-   :satisfies: stkh_req__communication__json_parser
+   :satisfies: stkh_req__communication__json_library
    :status: valid
 
    The JSON-Library shall provide a service to check the well-formedness of JSON data.
@@ -33,7 +33,7 @@ General Requirements
    :reqtype: Functional
    :security: NO
    :safety: ASIL_B
-   :satisfies: stkh_req__communication__json_parser
+   :satisfies: stkh_req__communication__json_library
    :status: valid
 
    The JSON-Library shall provide a service to parse JSON data according to RFC8259.
@@ -72,7 +72,7 @@ Full testability for the user facing API
    :reqtype: Non-Functional
    :security: NO
    :safety: QM
-   :satisfies: stkh_req__communication__json_parser
+   :satisfies: stkh_req__communication__json_library
    :status: valid
 
    The public API shall be fully mockable.
@@ -80,12 +80,12 @@ Full testability for the user facing API
 Safety Impact
 =============
 
-.. feat_req:: JSON parser ASIL level
+.. feat_req:: JSON library ASIL level
    :id: feat_req__json__asil
    :reqtype: Functional
    :security: YES
    :safety: ASIL_B
-   :satisfies: stkh_req__communication__json_parser
+   :satisfies: stkh_req__communication__json_library
    :status: valid
 
-   The JSON parser shall support safe communication up to ASIL-B.
+   The JSON library shall support safe communication up to ASIL-B.
