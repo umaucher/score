@@ -540,7 +540,7 @@ Communication
 
 
 .. stkh_req:: JSON-Library
-   :id: stkh_req__communication__json_parser
+   :id: stkh_req__communication__json_library
    :reqtype: Functional
    :security: NO
    :safety: ASIL_B
