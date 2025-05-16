@@ -12,13 +12,12 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Safety Planning
-###############
+.. _feature_safety_wp_template:
 
-Inter-process Communication Safety Work Products
-================================================
+Feature Safety Planning
+=======================
 
-.. list-table:: Feature Inter-process Communication Workproducts
+.. list-table:: Feature <feature> Workproducts
     :header-rows: 1
 
     * - Workproduct Id
@@ -31,14 +30,14 @@ Inter-process Communication Safety Work Products
     * - :need:`wp__feat_request`
       - :need:`gd_temp__change__feature_request`
       - :ndf:`copy('status', need_id='gd_temp__change__feature_request')`
-      - `#69 <https://github.com/eclipse-score/score/issues/69>`_
-      - :need:`doc__ipc`
-      - :ndf:`copy('status', need_id='doc__ipc')`
+      - <link to issue>
+      - :need:`doc__feature_name`
+      - :ndf:`copy('status', need_id='doc__feature_name')`
 
     * - :need:`wp__requirements__feat`
       - :need:`gd_temp__req__feat_req`
       - :ndf:`copy('status', need_id='gd_temp__req__feat_req')`
-      - `#69 <https://github.com/eclipse-score/score/issues/69>`_
+      - <link to issue>
       - :doc:`../requirements/index`
       - see below
 
@@ -52,7 +51,7 @@ Inter-process Communication Safety Work Products
     * - :need:`wp__feature_arch`
       - :need:`gd_temp__arch__feature`
       - :ndf:`copy('status', need_id='gd_temp__arch__feature')`
-      - `#388 <https://github.com/eclipse-score/score/issues/388>`_
+      - <link to issue>
       - :doc:`../architecture/index`
       - see below
 
@@ -60,22 +59,29 @@ Inter-process Communication Safety Work Products
       - <link to process>
       - <automated>
       - <link to issue>
-      - <Link to WP>
+      - :doc:`../safety_analysis/fmea`
+      - <automated>
+
+    * - :need:`wp__feature_dfa`
+      - <Link to process>
+      - <Process status>
+      - <Link to issue>
+      - :doc:`../safety_analysis/dfa`
       - <automated>
 
     * - :need:`wp__requirements__inspect`
       - :need:`gd_chklst__req__inspection`
       - :ndf:`copy('status', need_id='gd_chklst__req__inspection')`
-      - <link to issue>
-      - <Link to WP>
-      - <automated>
+      - n/a
+      - Checklist used in Pull Request Review
+      - n/a
 
     * - :need:`wp__sw_arch_verification`
       - :need:`gd_chklst__arch__inspection_checklist`
       - :ndf:`copy('status', need_id='gd_chklst__arch__inspection_checklist')`
-      - <link to issue>
-      - <Link to WP>
-      - <automated>
+      - n/a
+      - Checklist used in Pull Request Review
+      - n/a
 
     * - :need:`wp__verification__feat_int_test`
       - :need:`gd_guidl__verification_guide`
@@ -90,7 +96,7 @@ Feature Requirements Status
 .. needtable::
    :style: table
    :types: feat_req
-   :tags: ipc
+   :tags: feature_name
    :columns: id;status
    :colwidths: 25,25
    :sort: title
@@ -101,7 +107,7 @@ Feature AoU Status
 .. needtable::
    :style: table
    :types: aou_req
-   :tags: ipc
+   :tags: feature_name
    :columns: id;status
    :colwidths: 25,25
    :sort: title
@@ -112,7 +118,7 @@ Feature Architecture Status
 .. needtable::
    :style: table
    :types: feat_arc_sta; feat_arc_dyn
-   :tags: ipc
+   :tags: feature_name
    :columns: id;status
    :colwidths: 25,25
    :sort: title
