@@ -19,7 +19,7 @@ JSON-Library
    :id: doc__json
    :status: valid
    :safety: ASIL_B
-   :tags: contribution_request, feature_request
+   :tags: component_request, feature_request
 
 
 .. toctree::
@@ -27,13 +27,6 @@ JSON-Library
 
    requirements/index.rst
 
-
-Feature flag
-============
-
-To activate this feature, use the following feature flag:
-
-``experimental_json``
 
 Abstract
 ========
@@ -127,4 +120,3 @@ How to Teach This
 =================
 
 [How to teach users, new and experienced, how to apply the CR to their work.]
-
