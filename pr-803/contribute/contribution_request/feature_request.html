@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -518,7 +518,7 @@
                   
   <section id="feature-request-guideline">
 <h1>Feature Request Guideline<a class="headerlink" href="#feature-request-guideline" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-45f3b1c9">
+<div class="need_container docutils container" id="SNCB-a2a79e71">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__feature_request_guideline">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -569,10 +569,10 @@ This Guideline is based on or references following documents:</p>
 </ul>
 <section id="creation-of-feature-request">
 <h2>Creation of Feature Request<a class="headerlink" href="#creation-of-feature-request" title="Link to this heading">#</a></h2>
-<ul>
-<li><p>As the very first step, you will need to become of an official contributor, as described in
-<a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution">Actions to Ensure Proper Contribution</a></p></li>
-<li><p>Afterwards you will be able to create a GitHub Issue and mark it</p>
+<p>1. As the very first step, you will need to become an official contributor, as described in
+<a class="reference external" href="https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution">Actions to Ensure Proper Contribution</a></p>
+<p>2. Afterwards you will be able to create a GitHub Issue in the main <a class="reference external" href="https://github.com/eclipse-score">score repository</a>
+and mark it</p>
 <ul class="simple">
 <li><p>with label <em>feature_request</em> if you want to propose a new feature, or</p></li>
 <li><p>with label <em>feature_modification</em> if you want to propose changes to an existing feature,</p></li>
@@ -585,20 +585,51 @@ This happens normally on Monday in the <a class="reference external" href="https
 As soon as you’ve labeled your GitHub Issue with <em>feature request</em>/<em>feature_modification</em> label,
 TLs will see the <em>feature request</em> and will add it to the special GitHub project,
 <a class="reference external" href="https://github.com/orgs/eclipse-score/projects/4">Feature Request GitHub Project</a>.
-Inside of this <em>Feature Request GitHub Project</em> additional states are used for a better tracking of the <em>feature requests</em>.
+Inside of this <em>Feature Request GitHub Project</em> additional states, as shown in the table below,
+are used for a better tracking of the <em>feature requests</em>.
 These states symbolize the status of the <em>feature request</em> and not the “GitHub” states of the issue, therefore we will further speak about
 <em>feature request status</em>. The initial status of every <em>feature request</em> is set to “Draft”.</p>
-</li>
-<li><p>After you have created a GitHub Issue, next step would be to start working on the <em>feature request</em>.
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>FR status</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Draft</strong></p></td>
+<td><p>Feature Request is in the initial state</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>In Progress</strong></p></td>
+<td><p>This is actively being worked on</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>In Review</strong></p></td>
+<td><p>Feature Request should be reviewed by the technical leads</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Accepted</strong></p></td>
+<td><p>Feature Request was accepted</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Rejected</strong></p></td>
+<td><p>Feature request was rejected</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Changes Requested</strong></p></td>
+<td><p>Changes requested</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>POC Needed</strong></p></td>
+<td><p>“Proof of concept” in incubation repository is needed</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>3. After you have created a GitHub Issue, next step would be to start working on the <em>feature request</em>.
 First of all, change the status of <em>Feature Request</em> to “in Progress” state.
-<em>Feature Requests</em>, that stay in the status “Draft” for a longer period of time, will be deleted.
+<em>Feature Requests</em>, that stay in the status “Draft” longer as 4 weeks, will be deleted.
 Afterwards create a PR with your proposal in the <a class="reference external" href="https://github.com/eclipse-score/score/tree/main/docs/features">/docs/features</a> score repository.
 There you will find currently existing features as subfolders. Please choose the one that fits your <em>feature request</em> the most or
 create a new subfolder, if none of existing feature match your <em>feature request</em>. Please take care, that the PR follows the <a class="reference internal" href="../../process/process_areas/change_management/guidance/change_management_feature_template.html#chm-feature-templates"><span class="std std-ref">Feature Template</span></a>.
-You should try to put as much information as possible, as a good exhaustive description is a prerequisite for <em>feature request</em> to be accepted.</p></li>
-</ul>
+You should try to put as much information as possible, as a good exhaustive description is a prerequisite for <em>feature request</em> to be accepted.</p>
 <p>It is important to understand, that <em>feature request</em> consists of an GitHub Issue, that is used to track organizational information and
-PR, that contains the technical content. GitHub Issue always stays assigned to the owner of the <em>feature request</em>.
+PR, that contains the technical content. This is explained once again in detailed in the <a class="reference internal" href="../../platform_management_plan/change_management.html#change-mgmt-workflow"><span class="std std-ref">Change Management Worlflow</span></a>
+chapter of <a class="reference internal" href="../../platform_management_plan/change_management.html#change-mgmt-plan"><span class="std std-ref">Change Management Plan</span></a> document. GitHub Issue always stays assigned to the owner of the <em>feature request</em>.
 <em>Feature Request</em> PR will always be assigned to the owner of the <em>feature request</em> as well, but will additionally get the list of reviewers, that
 should review this <em>feature request</em> PR.</p>
 </section>
@@ -620,7 +651,8 @@ from the project to review the <em>feature request</em> PR. In that case, <em>fe
 <li><p>In case of big architectural impact, Technical Lead circle can additionally decide to request a review for <em>feature request</em> PR from software architecture community.</p></li>
 </ul>
 </li>
-<li><p>The outcome of the review could be like following:</p>
+<li><p>After the review is done, the TL circle will set the status of the <em>feature request</em> accordingly and will
+also put all further necessary information as GitHub Issue comments. The outcome of the review could be like following:</p>
 <ul>
 <li><p><strong>Accepted</strong> - You <em>feature request</em> is accepted. The <em>feature request</em> GitHub Issue should contain now a link to a new GitHub issue of type ‘Epic’,
 that was created by Technical Leads, where detailed information regarding your feature is documented.
@@ -638,7 +670,8 @@ You will be able to find the summary of the review in the corresponding <em>feat
 The review comments will be done directly in the <em>feature request</em> PR.</p></li>
 <li><p><strong>POC needed</strong> - We generally like your idea, but we don’t have enough technical understanding of the <em>feature request</em>,
 e.g. technical scope is too big, and we need a POC to be able to understand better,
-how the proposed <em>feature request</em> fits into the overall solution. You will find in the GitHub issue comments the information what your POC should focus on.
+how the proposed <em>feature request</em> fits into the overall solution. You will find in the GitHub issue comments
+the decsription for both the scope of the PoC and the requirements and the acceptance criteria for the requested PoC.
 Also, a so called <em>incubation repository</em> will be created by the reviewers of the <em>feature request</em>, where you should implement your POC.
 Please be aware, that POC is not a guarantee, that you <em>feature request</em> will be accepted.</p></li>
 </ul>
