@@ -43,6 +43,15 @@ as described in the :ref:`Change Management Plan <change_mgmt_plan>`.
 Please put a short description of your *feature request* into the GitHub Issue description, so that
 everyone can immediately understand, what the *feature request* is about.
 
+The acceptance criteria for a feature request to be accepted are:
+
+.. code-block:: markdown
+
+  - Feature Request is written according to the [Change Management](https://eclipse-score.github.io/score/main/process/process_areas/change_management/change_management_concept.html) & [Feature Request Template](https://eclipse-score.github.io/score/main/process/process_areas/change_management/guidance/change_management_feature_template.html)
+  - Feature requirements written according to the [Requirements Engineering](https://eclipse-score.github.io/score/main/process/process_areas/requirements_engineering/requirements_concept.html)
+  - If necessary: extend the stakeholder requirements written according to the [Requirements Engineering](https://eclipse-score.github.io/score/main/process/process_areas/requirements_engineering/requirements_concept.html)
+
+
 Technical Leads review regularly all new incoming *feature requests* (GitHub Issues labeled as *feature_request* or *feature_modification*).
 This happens normally on Monday in the `Technical Lead circle <https://github.com/orgs/eclipse-score/discussions/104>`_.
 As soon as you've labeled your GitHub Issue with *feature request*/*feature_modification* label,
