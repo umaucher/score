@@ -43,7 +43,7 @@ as described in the :ref:`Change Management Plan <change_mgmt_plan>`.
 Please put a short description of your *feature request* into the GitHub Issue description, so that
 everyone can immediately understand, what the *feature request* is about.
 
-The acceptance criteria for as feature request to be accepted are:
+The acceptance criteria for a feature request to be accepted are:
 
 .. code-block:: markdown
 
