@@ -97,6 +97,7 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
+    "python.analysis.typeCheckingMode": "off",
 
     // GraphQL (e.g. GitHub API)
 

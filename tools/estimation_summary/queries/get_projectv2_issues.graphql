@@ -27,7 +27,7 @@ query get_projectv2_issues($org: String!, $projectNumber: Int!, $cursor: String)
 
                             }
                         }
-                        ... on DraftIssue  {... TODO!!}
+                        # ... on DraftIssue  {... TODO!!}
                         # Info: Other types are DraftIssue and PullRequest
                     }
                     fieldValues(first: 99) {
