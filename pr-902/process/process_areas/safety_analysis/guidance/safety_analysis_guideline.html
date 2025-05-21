@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Process Safety Analysis" href="safety_analysis_process_reqs.html" />
-    <link rel="prev" title="Fault Models" href="fault_models_guideline.html" />
+    <link rel="next" title="Safety Analysis Process Requirements" href="safety_analysis_process_reqs.html" />
+    <link rel="prev" title="Checklist for Safety Analysis" href="safety_analysis_checklist.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -454,17 +454,21 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Safety Analysis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="dfa_checklist_template.html">DFA Checklist</a></li>
-<li class="toctree-l4"><a class="reference internal" href="dfa_template.html">DFA Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dfa_template.html">DFA Templates</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fault_models_guideline.html">Fault Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Guidelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Process Safety Analysis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
@@ -561,7 +565,7 @@
                   
   <section id="guidelines">
 <h1>Guidelines<a class="headerlink" href="#guidelines" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-af36a413">
+<div class="need_container docutils container" id="SNCB-91c72290">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -581,8 +585,9 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_841" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_841</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_842" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_842</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_843" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_843</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_844" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_844</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_847" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_847</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_848" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_848</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_849" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_849</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_8410" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_8410</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__analysis_851" title="gd_guidl__safety_analysis">std_wp__iso26262__analysis_851</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_841" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_841</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_842" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_842</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_843" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_843</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_844" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_844</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_847" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_847</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_848" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_848</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_849" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_849</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_8410" title="gd_guidl__safety_analysis">std_req__iso26262__analysis_8410</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44431" title="gd_guidl__safety_analysis">std_req__isopas8926__44431</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44432" title="gd_guidl__safety_analysis">std_req__isopas8926__44432</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -607,67 +612,48 @@
 <p>This document describes the general guidances for Safety Analysis based on the concept which is defined <a class="reference internal" href="../safety_analysis_concept.html#doc_concept__safety__analysis" title="doc_concept__safety__analysis"><em class="xref need">Safety Analysis Concept</em></a>.</p>
 <section id="workflow-for-safety-analysis">
 <h2>Workflow for Safety Analysis<a class="headerlink" href="#workflow-for-safety-analysis" title="Link to this heading">#</a></h2>
-<p>Detailed description which steps are need for implementation.</p>
+<p>Detailed description which steps are need for a safety analysis. In general the workflow is shown in <a class="reference internal" href="../safety_analysis_getstrt.html#safety-analysis-workflow-fig"><span class="std std-ref">Safety Analysis Workflow</span></a></p>
 <ol class="arabic simple">
 <li><p>To analyse the Feature Architecture a Safety Analysis and a DFA shall be executed.</p></li>
-<li><p>Perform Safety Analysis on the feature.</p></li>
-<li><p>Perform DFA on the feature.</p></li>
-<li><p>To analyse the Architecture a Safety Analysis and a DFA shall be executed.</p></li>
-<li><p>Perform Safety Analysis on the component.</p></li>
-<li><p>Perform DFA on the component.</p></li>
-<li><p>The performance of the Safety Analysis and DFA shall be monitored and verified.</p></li>
-<li><p>Open issues like from the Safety Analysis and DFA shall be monitored by the Issue Tracking system.</p></li>
-<li><p>The verification of the Architecture is completed when Safety Analysis and DFA are completed by using the checklist and all open issues are closed.</p></li>
+<li><p>Perform DFA on the Platform Architecture.</p></li>
+<li><p>Perform Safety Analysis on the Feature Architecture.</p></li>
+<li><p>Perform DFA on the Feature Architecture.</p></li>
+<li><p>To analyse the Component Architecture a Safety Analysis and a DFA shall be executed. This only applies if the component architecture is not already covered by the feature architecture.</p></li>
+<li><p>Perform Safety Analysis on the Component Architecture.</p></li>
+<li><p>Perform DFA on the Component Architecture.</p></li>
+<li><p>The performance of the Safety Analysis and DFA (Feature and Component) shall be monitored.</p></li>
+<li><p>Open issues like from the Safety Analysis and DFA shall be monitored by the Issue Tracking system. For safety relevant issues types a <code class="docutils literal notranslate"><span class="pre">safety</span></code> label is used. Until there are open issues the safety analysis is “valid” and “not sufficient”.</p></li>
+<li><p>If the analysis is completed, a verification of the analysis shall be done and a report therfore shall be created.</p></li>
 </ol>
-<section id="step-by-step-approach-dfa">
-<h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
-<p>The analysis is done by using the template &lt;<a class="reference internal" href="dfa_template.html#gd_temp__dfa" title="gd_temp__dfa"><em class="xref need">DFA Templates (gd_temp__dfa)</em></a>&gt; on the feature or component architectural diagrams using a checklist &lt;<a class="reference internal" href="dfa_checklist_template.html#gd_chklst__dfa" title="gd_chklst__dfa"><em class="xref need">DFA Checklist (gd_chklst__dfa)</em></a>&gt;.</p>
-<p><strong>Step 1:</strong>
-For each identified violation assign the violation by ID from the DFA checklist and document it as a sphinx-needs directive.
-Document the resulting violation causes and effect and the violated safety requirement.
-Document safety measure/mechanism to avoid or control the violation.</p>
-<p><strong>Step 2:</strong>
-Judge if this is sufficient. If not, request to update the requirements with additional safety measure/mechanism to come to a sufficient outcome.
-The analysis is finished, if for each identified violation a mechanism/measure exists.
-Unless the attribute sufficient is yes, measure and argument attribute can be still empty.</p>
-<p>Alternatively the checklist template can be used. It can be filled out and is then the DFA report.</p>
-<p><strong>Example:</strong></p>
-<div class="line-block">
-<div class="line">.. feat_saf_dfa:: &lt;Element descriptor&gt;</div>
-<div class="line-block">
-<div class="line">:id: feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
-<div class="line">:violation_id: “SR_01_05”</div>
-<div class="line">:violation_cause: “Operating system including scheduler”</div>
-<div class="line">:violates: FEAT_REQ__persistency_key_val_storage__creation</div>
-<div class="line">:measure:</div>
-<div class="line">:sufficient: no</div>
-<div class="line">:argument:</div>
-<div class="line">:status: valid</div>
-</div>
-</div>
-</section>
 <section id="step-by-step-approach-safety-analysis">
 <h3>Step-by-Step-approach Safety Analysis:<a class="headerlink" href="#step-by-step-approach-safety-analysis" title="Link to this heading">#</a></h3>
-<p>The analysis is done by using the template &lt;<a class="reference internal" href="safety_analysis_templates.html#gd_temp__safety_analysis" title="gd_temp__safety_analysis"><em class="xref need">Safety Analysis Templates (gd_temp__safety_analysis)</em></a>&gt; on the feature or component architectural diagrams
-(activity and/or sequence diagrams) using a diagram specific applied fault model &lt;<a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;.
-The analysis considers single faults that can violate a safety requirement.</p>
-<p><strong>Step 1:</strong>
-For each affected design element in scope of each diagram, assign the faults by ID from the fault model applicable and document it as a sphinx-needs directive.
-Document the resulting failure mode and effect and the violated safety requirement.
-Document safety measure/mechanism to avoid or control the failure.</p>
-<p><strong>Step 2:</strong>
-Judge if this is sufficient. If not, request to update the diagram and the requirements with additional safety measure/mechanism to come to a sufficient outcome.
-The analysis is finished, if for each identified faults a mechanism/measure exists.
-Unless the attribute sufficient is yes, measure and argument attribute can be still empty.</p>
+<p>The analysis is done by using the template <a class="reference internal" href="safety_analysis_templates.html#safety-analysis-templates"><span class="std std-ref">Safety Analysis Templates</span></a> on the feature or component architectural diagrams
+(activity and/or sequence diagrams) using a diagram specific applied fault model &lt;<a class="reference internal" href="fault_models_guideline.html#gd_guidl__fault_models" title="gd_guidl__fault_models"><em class="xref need">Fault Models (gd_guidl__fault_models)</em></a>&gt;. Apply the fault
+model to the diagram and document the results in the template. If a fault model is not applicable, fill in a short remark in the
+vialoation cause that it’s not apllicable. So it could be shown that the analysis was done and no fault model is applicable.
+The analysis considers single faults that can mitigate a safety requirement.</p>
+<p><strong>Step 1:</strong></p>
+<div class="line-block">
+<div class="line">For each affected design element in scope of each diagram, assign the faults by ID from the fault model applicable and document it as a sphinx-needs directive.</div>
+<div class="line">Document the resulting failure mode and effect and the mitigated safety requirement. Document safety mitigation to avoid or control the failure.</div>
+<div class="line">The mitigation coverage shall be estimated in percent. The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a></div>
+</div>
+<p><strong>Step 2:</strong></p>
+<p>Judge if this is sufficient. If not, request to update the diagram and the requirements with additional safety mitigation to come to a sufficient outcome by creating an issue.
+The analysis is finished, if for each identified faults a mitigation exists.
+Unless the attribute sufficient is yes, mitigation and argument attribute can be still empty.
+The verification is done by appling the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p>
 <p><strong>Examples:</strong></p>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: OpenKVS</div>
 <div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
 <div class="line">:id: FEAT_SAF_FMEA__KVS__OpenKVS</div>
-<div class="line">:failure_node: “MF_01_05”</div>
+<div class="line">:failure_mode: “MF_01_05”</div>
 <div class="line">:failure_effect: “message from calling app is corrupted”</div>
-<div class="line">:violates: FEAT_REQ_persistency_key_val_storage__interface</div>
-<div class="line">:measure:</div>
+<div class="line">:mitigation:</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: no</div>
 <div class="line">:argument:</div>
 <div class="line">:status: valid</div>
@@ -676,16 +662,52 @@ Unless the attribute sufficient is yes, measure and argument attribute can be st
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: GetKeyValue</div>
 <div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
 <div class="line">:id: FEAT_SAF_FMEA__KVS__GetKeyValue</div>
-<div class="line">:failure_node: “MF_01_05”</div>
+<div class="line">:failure_mode: “MF_01_05”</div>
 <div class="line">:failure_effect: “message is corrupted due to corrupted call open to OSAL”</div>
-<div class="line">:violates: FEAT_REQ_persistency_key_val_storage__interface</div>
-<div class="line">:measure: FEAT_REQ_persistency_key_val_storage__error</div>
+<div class="line">:mitigation: FEAT_REQ_persistency_key_val_storage__error</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: yes</div>
 <div class="line">:argument: “Calling app gets error information”</div>
 <div class="line">:status: valid</div>
 </div>
 </div>
+<p>The example is also used in the building blocks &lt;<a class="reference internal" href="../../../general_concepts/score_building_blocks_concept.html#building-block-example"><span class="std std-ref">Building blocks example</span></a>&gt;.</p>
+</section>
+<section id="step-by-step-approach-dfa">
+<h3>Step-by-Step-approach DFA:<a class="headerlink" href="#step-by-step-approach-dfa" title="Link to this heading">#</a></h3>
+<p>The analysis is done by using the template <a class="reference internal" href="dfa_template.html#dfa-templates"><span class="std std-ref">DFA Templates</span></a> on the feature or component architectural diagrams using a list of DFA failure initiators &lt;<a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;.
+If a element of the failure initiators is not applicable, fill in a short remark in the vialoation cause that it’s not apllicable.
+So it could be shown that the analysis was done and no fault model is applicable.</p>
+<p><strong>Step 1:</strong></p>
+<p>For each identified violation assign the violation by ID from the DFA failure initiators and document it as a sphinx-needs directive.
+Document the resulting violation causes and effect and the mitigated safety requirement.
+Document safety mitigation to avoid or control the violation. The mitigation coverage shall be estimated in percent.
+The attributes of the template are described in <a class="reference internal" href="safety_analysis_process_reqs.html#process-requirements-safety-analysis-attributes"><span class="std std-ref">Process Safety Analysis Attributes</span></a>.</p>
+<p><strong>Step 2:</strong></p>
+<p>Judge if this is sufficient. If not, request to update the requirements with additional safety mitigation to come to a sufficient outcome.
+The analysis is finished, if for each identified violation a mitigation exists.
+Unless the attribute “sufficient” is “yes”, mitigation and argument attribute can be still empty.
+The verification is done by appling the safety analysis checklist <a class="reference internal" href="safety_analysis_checklist.html#gd_chklst__safety_analysis" title="gd_chklst__safety_analysis"><em class="xref need">Safety Analysis Checklist T... (gd_chklst__safety_analysis)</em></a>.</p>
+<p><strong>Examples:</strong></p>
+<div class="line-block">
+<div class="line">.. feat_saf_dfa:: &lt;Element descriptor&gt;</div>
+<div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
+<div class="line">:id: feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
+<div class="line">:violation_id: “SR_01_05”</div>
+<div class="line">:violation_cause: “Operating system including scheduler”</div>
+<div class="line">:mitigation:</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
+<div class="line">:sufficient: no</div>
+<div class="line">:argument:</div>
+<div class="line">:status: valid</div>
+</div>
+</div>
+<p>The example is also used in the building blocks &lt;<a class="reference internal" href="../../../general_concepts/score_building_blocks_concept.html#building-block-example"><span class="std std-ref">Building blocks example</span></a>&gt;.</p>
 </section>
 </section>
 </section>
@@ -701,12 +723,12 @@ Unless the attribute sufficient is yes, measure and argument attribute can be st
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="fault_models_guideline.html"
+       href="safety_analysis_checklist.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Fault Models</p>
+        <p class="prev-next-title">Checklist for Safety Analysis</p>
       </div>
     </a>
     <a class="right-next"
@@ -714,7 +736,7 @@ Unless the attribute sufficient is yes, measure and argument attribute can be st
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Process Safety Analysis</p>
+        <p class="prev-next-title">Safety Analysis Process Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -738,8 +760,8 @@ Unless the attribute sufficient is yes, measure and argument attribute can be st
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-for-safety-analysis">Workflow for Safety Analysis</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-approach-dfa">Step-by-Step-approach DFA:</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-approach-safety-analysis">Step-by-Step-approach Safety Analysis:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step-approach-dfa">Step-by-Step-approach DFA:</a></li>
 </ul>
 </li>
 </ul>

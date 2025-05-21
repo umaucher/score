@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Guidelines" href="safety_analysis_guideline.html" />
-    <link rel="prev" title="DFA Template" href="dfa_template.html" />
+    <link rel="next" title="Checklist for Safety Analysis" href="safety_analysis_checklist.html" />
+    <link rel="prev" title="DFA Templates" href="dfa_template.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -454,17 +454,21 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Safety Analysis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="dfa_checklist_template.html">DFA Checklist</a></li>
-<li class="toctree-l4"><a class="reference internal" href="dfa_template.html">DFA Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dfa_template.html">DFA Templates</a></li>
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">Fault Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l4"><a class="reference internal" href="safety_analysis_guideline.html">Guidelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Process Safety Analysis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
@@ -561,7 +565,7 @@
                   
   <section id="fault-models">
 <h1>Fault Models<a class="headerlink" href="#fault-models" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8d845e4f">
+<div class="need_container docutils container" id="SNCB-74dc39bc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_guidl table" id="gd_guidl__fault_models">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -581,17 +585,43 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_752" title="gd_guidl__fault_models">std_wp__iso26262__software_752</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_846" title="gd_guidl__fault_models">std_req__iso26262__analysis_846</a></span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../safety_analysis_workflow.html#wf__analyse_featarch" title="gd_guidl__fault_models">wf__analyse_featarch</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__analyse_comparch" title="gd_guidl__fault_models">wf__analyse_comparch</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__mr_saf_analyses_dfa" title="gd_guidl__fault_models">wf__mr_saf_analyses_dfa</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__vy_saf_analyses_dfa" title="gd_guidl__fault_models">wf__vy_saf_analyses_dfa</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_752" title="gd_guidl__fault_models">std_wp__iso26262__software_752</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_846" title="gd_guidl__fault_models">std_req__iso26262__analysis_846</a></span></span></div>
 </span></div>
 </div>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><blockquote>
-<div><p>Fault Models for activity diagrams</p>
+<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
+<div class="line">Fault Model for sequence diagrams</div>
+</div>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__fault_models" title="gd_guidl__fault_models">gd_guidl__fault_models</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<dl class="field-list">
+<dt class="field-odd">note<span class="colon">:</span></dt>
+<dd class="field-odd"><dl class="simple">
+<dt>Use the fault models to ensure a structed analysis. If a fault model doesn’t apply, please fill in a short desciption in the</dt><dd><p>violation cause so it could be recognized that the analysis is done. If there are additional fault models needed, please
+enlage the list of fault models.</p>
+</dd>
+</dl>
 <div class="pst-scrollable-table-container"><table class="table" id="id1">
-<caption><span class="caption-number">Table 30 </span><span class="caption-text">Fault Models for activity diagrams
+<caption><span class="caption-number">Table 34 </span><span class="caption-text">Fault Models for sequence diagrams
  :header-rows: 1
  :widths: 15,6,30,30,15</span><a class="headerlink" href="#id1" title="Link to this table">#</a></caption>
 <tbody>
@@ -599,124 +629,7 @@
 <td><p>ID</p></td>
 <td><p>Failure Mode</p></td>
 <td><p>Simplification</p></td>
-<td><p>Importance</p></td>
-</tr>
-<tr class="row-even"><td><p>data storage</p></td>
-<td><p>DS_01_01</p></td>
-<td><p>stored data changed
-(before read operation)</p></td>
-<td></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-odd"><td><p>data storage</p></td>
-<td><p>DS_01_02</p></td>
-<td><p>new data not stored (keeps old data)
-/ stuck-at (specific value)</p></td>
-<td></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-even"><td><p>data flow</p></td>
-<td><p>DF_01_01</p></td>
-<td><p>transferred data changed</p></td>
-<td><p>DS_01_01 if there is one data flow to the data store</p></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-odd"><td><p>data flow</p></td>
-<td><p>DF_01_02</p></td>
-<td><p>transferred data lost</p></td>
-<td><p>DS_01_02 if there is one data flow to the data store</p></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-even"><td><p>data flow</p></td>
-<td><p>DF_01_03</p></td>
-<td><p>transferred to wrong data store</p></td>
-<td><p>DS_01_01 unless point in time of change is important</p></td>
-<td><p>Low</p></td>
-</tr>
-<tr class="row-odd"><td><p>data flow</p></td>
-<td><p>DF_01_04</p></td>
-<td><p>data stored at wrong location in data store</p></td>
-<td><p>relevant only for arrays/complex types</p></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-even"><td><p>processing</p></td>
-<td><p>PS_01_01</p></td>
-<td><p>process calculates wrong result(s)</p></td>
-<td><p>DS_01_01 unless process affects multiple data stores</p></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-odd"><td><p>processing</p></td>
-<td><p>PS_01_02</p></td>
-<td><p>processing too slow/fast</p></td>
-<td><p>relevant only if timing is considered, infinite loop-&gt;CF01_01</p></td>
-<td><p>Low</p></td>
-</tr>
-<tr class="row-even"><td><p>control flow</p></td>
-<td><p>CF_01_01</p></td>
-<td><p>control flow stops</p></td>
-<td></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-odd"><td><p>control flow</p></td>
-<td><p>CF_01_02</p></td>
-<td><p>control flow skips process</p></td>
-<td><p>PS_01_01 and PS_01_02</p></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-even"><td><p>control flow</p></td>
-<td><p>CF_01_03</p></td>
-<td><p>control flow proceeds to wrong process</p></td>
-<td><p>CF_01_02 or limited to specific process</p></td>
-<td><p>Low</p></td>
-</tr>
-<tr class="row-odd"><td><p>fork</p></td>
-<td><p>FK_01_01</p></td>
-<td><p>some but not all outgoing concurrent processes are triggered</p></td>
-<td></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-even"><td><p>fork</p></td>
-<td><p>FK_01_02</p></td>
-<td><p>concurrent processes are triggered despite incoming process has not yet been completed</p></td>
-<td><p>similar to CF_01_02</p></td>
-<td><p>Low</p></td>
-</tr>
-<tr class="row-odd"><td><p>fork</p></td>
-<td><p>FK_01_03</p></td>
-<td><p>none of the outgoing concurrent processes is triggered</p></td>
-<td><p>similar to CF_01_01</p></td>
-<td><p>Low</p></td>
-</tr>
-<tr class="row-even"><td><p>join</p></td>
-<td><p>JF_01_01</p></td>
-<td><p>execution proceeds before all joining processes have been completed</p></td>
-<td><p>similar to CF_01_02</p></td>
-<td><p>High</p></td>
-</tr>
-<tr class="row-odd"><td><p>join</p></td>
-<td><p>JF_01_02</p></td>
-<td><p>execution does not proceed despite all joining processes have been completed</p></td>
-<td><p>similar to CF_01_01</p></td>
-<td><p>Medium</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div></blockquote>
-<div class="line-block">
-<div class="line">Fault Model for sequence diagrams</div>
-</div>
-<blockquote>
-<div><div class="pst-scrollable-table-container"><table class="table" id="id2">
-<caption><span class="caption-number">Table 31 </span><span class="caption-text">Fault Models for sequence diagrams
- :header-rows: 1
- :widths: 15,6,30,30,15</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
-<tbody>
-<tr class="row-odd"><td><p>Element</p></td>
-<td><p>ID</p></td>
-<td><p>Failure Mode</p></td>
-<td><p>Simplification</p></td>
-<td><p>Importance</p></td>
+<td><p>Importance (can be used for priorisation)</p></td>
 </tr>
 <tr class="row-even"><td><p>message</p></td>
 <td><p>MF_01_01</p></td>
@@ -784,53 +697,11 @@
 <td></td>
 <td><p>Low</p></td>
 </tr>
-<tr class="row-odd"><td><p>frame (*)</p></td>
-<td><p>FE_01_01</p></td>
-<td><p>frame not entered as specified</p></td>
-<td></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-even"><td><p>frame (*)</p></td>
-<td><p>FE_01_02</p></td>
-<td><p>frame not exited as specified</p></td>
-<td></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-odd"><td><p>frame (*)</p></td>
-<td><p>FE_01_03</p></td>
-<td><p>frame entered differently than specified</p></td>
-<td></td>
-<td><p>Medium</p></td>
-</tr>
-<tr class="row-even"><td><p>frame (*)</p></td>
-<td><p>FE_01_04</p></td>
-<td><p>frame exited differently than specified</p></td>
-<td></td>
-<td><p>Medium</p></td>
-</tr>
 </tbody>
 </table>
 </div>
-</div></blockquote>
-<div class="line-block">
-<div class="line">(*) frame is a reference to another diagram, which describes more detailed aspects. Entry- and Exit points define the order of transitions.</div>
-</div>
-</td>
-</tr>
-<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_guidl__fault_models" title="gd_guidl__fault_models">gd_guidl__fault_models</a></span></span></div>
-</div>
-</td>
-<td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Guideline</span></span></span></div>
-</div>
-</td>
-<td class="footer_right" colspan="2"></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+</dd>
+</dl>
 </section>
 
 
@@ -849,15 +720,15 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">DFA Template</p>
+        <p class="prev-next-title">DFA Templates</p>
       </div>
     </a>
     <a class="right-next"
-       href="safety_analysis_guideline.html"
+       href="safety_analysis_checklist.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guidelines</p>
+        <p class="prev-next-title">Checklist for Safety Analysis</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

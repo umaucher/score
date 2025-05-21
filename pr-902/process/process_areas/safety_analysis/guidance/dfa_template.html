@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DFA Template &#8212; S-CORE 0.1 documentation</title>
+    <title>DFA Templates &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -73,7 +73,7 @@
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Fault Models" href="fault_models_guideline.html" />
-    <link rel="prev" title="DFA Checklist" href="dfa_checklist_template.html" />
+    <link rel="prev" title="DFA failure initiators" href="dfa_failure_initiators.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -454,17 +454,21 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Process Areas</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../architecture_design/index.html">Architecture Design</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../change_management/index.html">Change Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../configuration_management/index.html">Configuration Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../documentation_management/index.html">Documentation Management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../implementation/index.html">Implementation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../platform_management/index.html">Platform Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../problem_resolution/index.html">Problem Resolution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../requirements_engineering/index.html">Requirements Engineering</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Safety Analysis</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3 current active has-children"><a class="reference internal" href="index.html">Guidance</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="dfa_checklist_template.html">DFA Checklist</a></li>
-<li class="toctree-l4 current active"><a class="current reference internal" href="#">DFA Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="dfa_failure_initiators.html">DFA failure initiators</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">DFA Templates</a></li>
 <li class="toctree-l4"><a class="reference internal" href="fault_models_guideline.html">Fault Models</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_checklist.html">Checklist for Safety Analysis</a></li>
 <li class="toctree-l4"><a class="reference internal" href="safety_analysis_guideline.html">Guidelines</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Process Safety Analysis</a></li>
-<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_process_reqs.html">Safety Analysis Process Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="safety_analysis_templates.html">Safety Analysis Templates</a></li>
 </ul>
 </details></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis_concept.html">Concept Description</a></li>
@@ -542,7 +546,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Guidance</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">DFA Template</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">DFA Templates</span></li>
   </ul>
 </nav>
 </div>
@@ -559,13 +563,13 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="dfa-template">
-<h1>DFA Template<a class="headerlink" href="#dfa-template" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-e019e3f3">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__dfa">
+  <section id="dfa-templates">
+<span id="id1"></span><h1>DFA Templates<a class="headerlink" href="#dfa-templates" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-5ce113a4">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__plat_saf_dfa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">DFA Templates</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Platform DFA Templates</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -581,8 +585,69 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
 </span></span></div>
-<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__analysis_751" title="gd_temp__dfa">std_wp__iso26262__analysis_751</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_753" title="gd_temp__dfa">std_wp__iso26262__software_753</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_7411" title="gd_temp__dfa">std_req__iso26262__software_7411</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_741" title="gd_temp__dfa">std_req__iso26262__analysis_741</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_742" title="gd_temp__dfa">std_req__iso26262__analysis_742</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_743" title="gd_temp__dfa">std_req__iso26262__analysis_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_745" title="gd_temp__dfa">std_req__iso26262__analysis_745</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_746" title="gd_temp__dfa">std_req__iso26262__analysis_746</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_747" title="gd_temp__dfa">std_req__iso26262__analysis_747</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_748" title="gd_temp__dfa">std_req__iso26262__analysis_748</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_749" title="gd_temp__dfa">std_req__iso26262__analysis_749</a></span></span></div>
+<div class="line"><span><div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__analysis_751" title="gd_temp__plat_saf_dfa">std_wp__iso26262__analysis_751</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_753" title="gd_temp__plat_saf_dfa">std_wp__iso26262__software_753</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_wp__isopas8926__4524" title="gd_temp__plat_saf_dfa">std_wp__isopas8926__4524</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_7411" title="gd_temp__plat_saf_dfa">std_req__iso26262__software_7411</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_741" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_741</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_742" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_742</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_743" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_745" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_745</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_746" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_746</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_747" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_747</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_748" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_748</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_749" title="gd_temp__plat_saf_dfa">std_req__iso26262__analysis_749</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44432" title="gd_temp__plat_saf_dfa">std_req__isopas8926__44432</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
+<div class="line">.. plat_saf_dfa:: &lt;Element descriptor&gt;</div>
+<div class="line-block">
+<div class="line">:verifies: &lt;Platform architecture&gt;</div>
+<div class="line">:id: plat_saf_DFA__&lt;Platform&gt;__&lt;Element descriptor&gt;</div>
+<div class="line">:violation_id: &lt;ID from DFA failure initiators <a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the failure initiator on the element”</div>
+<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
+<div class="line">:sufficient: &lt;yes|no&gt;</div>
+<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
+<div class="line">:status: &lt;valid|invalid&gt;</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__plat_saf_dfa" title="gd_temp__plat_saf_dfa">gd_temp__plat_saf_dfa</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Template</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-e985c217">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__feat_saf_dfa">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Feature DFA Templates</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../safety_analysis_workflow.html#wf__analyse_platarch" title="gd_temp__feat_saf_dfa">wf__analyse_platarch</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__analyse_featarch" title="gd_temp__feat_saf_dfa">wf__analyse_featarch</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__mr_saf_analyses_dfa" title="gd_temp__feat_saf_dfa">wf__mr_saf_analyses_dfa</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__vy_saf_analyses_dfa" title="gd_temp__feat_saf_dfa">wf__vy_saf_analyses_dfa</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__analysis_751" title="gd_temp__feat_saf_dfa">std_wp__iso26262__analysis_751</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_753" title="gd_temp__feat_saf_dfa">std_wp__iso26262__software_753</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_wp__isopas8926__4524" title="gd_temp__feat_saf_dfa">std_wp__isopas8926__4524</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_7411" title="gd_temp__feat_saf_dfa">std_req__iso26262__software_7411</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_741" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_741</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_742" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_742</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_743" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_745" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_745</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_746" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_746</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_747" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_747</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_748" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_748</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_749" title="gd_temp__feat_saf_dfa">std_req__iso26262__analysis_749</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44432" title="gd_temp__feat_saf_dfa">std_req__isopas8926__44432</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -591,20 +656,82 @@
 <tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
 <div class="line">.. feat_saf_dfa:: &lt;Element descriptor&gt;</div>
 <div class="line-block">
+<div class="line">:verifies: &lt;Feature architecture&gt;</div>
 <div class="line">:id: feat_saf_DFA__&lt;Feature&gt;__&lt;Element descriptor&gt;</div>
-<div class="line">:violation_id: &lt;ID from dfa checklist <a class="reference internal" href="dfa_checklist_template.html#gd_chklst__dfa" title="gd_chklst__dfa"><em class="xref need">DFA Checklist (gd_chklst__dfa)</em></a>&gt;</div>
-<div class="line">:violation_cause: “Failure mode similar to <a class="reference internal" href="dfa_checklist_template.html#gd_chklst__dfa" title="gd_chklst__dfa"><em class="xref need">DFA Checklist (gd_chklst__dfa)</em></a>”</div>
-<div class="line">:violates: &lt;ID from Feature Requirement&gt;</div>
-<div class="line">:measure: &lt; NONE|ID from Feature Requirement&gt;</div>
+<div class="line">:violation_id: &lt;ID from DFA failure initiators <a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the failure initiator on the element”</div>
+<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;
+| :mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
 <div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why measure is sufficient&gt;</div>
+<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
 <div class="line">:status: &lt;valid|invalid&gt;</div>
 </div>
 </div>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__dfa" title="gd_temp__dfa">gd_temp__dfa</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__feat_saf_dfa" title="gd_temp__feat_saf_dfa">gd_temp__feat_saf_dfa</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Process Template</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-ad768efd">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_gd_temp table" id="gd_temp__comp_saf_dfa">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Component DFA Templates</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">safety_analysis</span></span></span></div>
+</span></span></div>
+<div class="line"><span><div class="line">contained by: <span class="contains"><span><a class="reference internal" href="../safety_analysis_workflow.html#wf__analyse_comparch" title="gd_temp__comp_saf_dfa">wf__analyse_comparch</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__mr_saf_analyses_dfa" title="gd_temp__comp_saf_dfa">wf__mr_saf_analyses_dfa</a>, <a class="reference internal" href="../safety_analysis_workflow.html#wf__vy_saf_analyses_dfa" title="gd_temp__comp_saf_dfa">wf__vy_saf_analyses_dfa</a></span></span></div>
+<div class="line">complies: <span class="complies"><span><a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__analysis_751" title="gd_temp__comp_saf_dfa">std_wp__iso26262__analysis_751</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_wp__iso26262__software_753" title="gd_temp__comp_saf_dfa">std_wp__iso26262__software_753</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_wp__isopas8926__4524" title="gd_temp__comp_saf_dfa">std_wp__isopas8926__4524</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__software_7411" title="gd_temp__comp_saf_dfa">std_req__iso26262__software_7411</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_741" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_741</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_742" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_742</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_743" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_743</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_745" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_745</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_746" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_746</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_747" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_747</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_748" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_748</a>, <a class="reference internal" href="../../../standards/iso26262/iso26262.html#std_req__iso26262__analysis_749" title="gd_temp__comp_saf_dfa">std_req__iso26262__analysis_749</a>, <a class="reference internal" href="../../../standards/isopas8926/isopas8926.html#std_req__isopas8926__44432" title="gd_temp__comp_saf_dfa">std_req__isopas8926__44432</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
+<div class="line">.. comp_saf_dfa:: &lt;Element descriptor&gt;</div>
+<div class="line-block">
+<div class="line">:verifies: &lt;Component architecture&gt;</div>
+<div class="line">:id: comp_saf_DFA__&lt;Component&gt;__&lt;Element descriptor&gt;</div>
+<div class="line">:violation_id: &lt;ID from DFA failure initiators <a class="reference internal" href="dfa_failure_initiators.html#gd_guidl__dfa_failure_initiators" title="gd_guidl__dfa_failure_initiators"><em class="xref need">DFA failure initiators (gd_guidl__dfa_failure_initiators)</em></a>&gt;</div>
+<div class="line">:violation_cause: “description of failure effect of the failure initiator on the element”</div>
+<div class="line">:mitigation: &lt; NONE|ID from Component Requirement&gt;</div>
+<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
+<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
+<div class="line">:sufficient: &lt;yes|no&gt;</div>
+<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
+<div class="line">:status: &lt;valid|invalid&gt;</div>
+</div>
+</div>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#gd_temp__comp_saf_dfa" title="gd_temp__comp_saf_dfa">gd_temp__comp_saf_dfa</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -630,12 +757,12 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="dfa_checklist_template.html"
+       href="dfa_failure_initiators.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">DFA Checklist</p>
+        <p class="prev-next-title">DFA failure initiators</p>
       </div>
     </a>
     <a class="right-next"
