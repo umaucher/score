@@ -37,7 +37,7 @@ Component Requirements
    :status: valid
 
    The value must have one of these datatypes: Number, String, Null, Array[Value], Dictionary{Key:Value}.
-   The value must be serializeable and deserializeable to JSON.
+   The value must be serializable and deserializable to JSON.
    The value must have a maximum length of 1024 bytes.
    The value can be no-set and provide a default value for this case.
    If the value has a default value assigned it must be resetable to the default value.
@@ -61,10 +61,10 @@ Component Requirements
    :reqtype: Functional
    :security: NO
    :safety: QM
-   :satisfies: feat_req__kvs__maximum_size,feat_req__kvs__config_file
+   :satisfies: feat_req__kvs__config_file
    :status: valid
 
-   The key-value-storage constraints must be configurable at compile-time
+   The KVS constraints must be configurable at compile-time
    through source code constants or dynamically at runtime with a config file.
 
 .. comp_req:: Language Agnostic
@@ -75,7 +75,7 @@ Component Requirements
    :satisfies: feat_req__kvs__cpp_rust_interoperability
    :status: valid
 
-   The key-value-storage must either provide an API that can be bind to other
+   The KVS must either provide an API that can be bind to other
    languages or use a storage and memory exchange-format that can be adapted to
    other languages.
 
@@ -84,10 +84,10 @@ Component Requirements
    :reqtype: Functional
    :security: NO
    :safety: QM
-   :satisfies: feat_req__kvs__thread_safety,feat_req__kvs__intra_process_comm
+   :satisfies: feat_req__kvs__intra_process_comm
    :status: valid
 
-   The key-value-storage must implement thread-safe mechanisms to allow
+   The KVS must implement thread-safe mechanisms to allow
    concurrent access to the data without data races.
 
 .. comp_req:: Multi-Instance
@@ -98,8 +98,8 @@ Component Requirements
    :satisfies: feat_req__kvs__multiple_kvs
    :status: valid
 
-   The key-value-storage must manage all runtime variables in an instance so
-   that multiple instances with different key-value-stores can be spawned and
+   The KVS must manage all runtime variables in an instance so
+   that multiple instances with different KVS can be spawned and
    used at the same time per software architecture element.
 
 .. comp_req:: Persistent Data Storage
@@ -110,7 +110,7 @@ Component Requirements
    :satisfies: feat_req__kvs__persistency,feat_req__kvs__integrity_check,feat_req__kvs__persist_data
    :status: valid
 
-   The key-value-storage must use the file API and the JSON data format for
+   The KVS must use the file API and the JSON data format for
    persistent data storage.
    A checksum must be build over the data file and stored next to the data.
    On data load the checksum must be verified.
@@ -123,7 +123,7 @@ Component Requirements
    :satisfies: feat_req__kvs__versioning,feat_req__kvs__update_mechanism
    :status: valid
 
-   The key-value-storage doesn't support versioning directly.
+   The KVS doesn't support versioning directly.
    The used JSON file storage format allows the application to implement
    versioning, including up- and down-paths, by itself.
 
@@ -135,7 +135,7 @@ Component Requirements
    :satisfies: feat_req__kvs__snapshots
    :status: valid
 
-   The key-value-storage must write a snapshot whenever the data is stored.
+   The KVS must write a snapshot whenever the data is stored.
    It must maintain a configurable maximum number of snapshots.
    Each new snapshot has id 1 and all older snapshots get their id increased..
    After the maximum snapshot number is reached the snapshots are rotated and the oldest snapshot is dropped.
@@ -150,7 +150,7 @@ Component Requirements
    :satisfies: feat_req__kvs__dev_mode
    :status: valid
 
-   The key-value-storage must provide a developer mode which can be enabled
+   The KVS must provide a developer mode which can be enabled
    during build time. This mode can be used to show debug and other internal
    information.
 
@@ -162,7 +162,7 @@ Component Requirements
    :satisfies: feat_req__kvs__async_api
    :status: valid
 
-   Additional to the normal API the key-value-storage must provide an Async
+   Additional to the normal API the KVS must provide an Async
    API.
 
 .. comp_req:: Permission Handling
@@ -173,9 +173,9 @@ Component Requirements
    :satisfies: feat_req__kvs__access_control
    :status: valid
 
-   The key-value-storage must not implement access and permission handling.
+   The KVS must not implement access and permission handling.
    This is left to the underlying filesystem implementation.
-   The key-value-storage must report access and permission errors that are
+   The KVS must report access and permission errors that are
    thrown by the filesystem to the application.
 
 .. comp_req:: Callback Support
@@ -186,5 +186,5 @@ Component Requirements
    :satisfies: feat_req__kvs__events
    :status: valid
 
-   The key-value-storage must provide an API to register callbacks for
+   The KVS must provide an API to register callbacks for
    data-change events.
