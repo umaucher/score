@@ -16,10 +16,6 @@
     "url": "https://eclipse-score.github.io/score/pr-1056/"
   },
   {
-    "version": "pr-1067",
-    "url": "https://eclipse-score.github.io/score/pr-1067/"
-  },
-  {
     "version": "pr-1068",
     "url": "https://eclipse-score.github.io/score/pr-1068/"
   },
@@ -110,9 +106,5 @@
   {
     "version": "update_directory_layout",
     "url": "https://eclipse-score.github.io/score/update_directory_layout/"
-  },
-  {
-    "version": "pr-1100",
-    "url": "https://eclipse-score.github.io/score/pr-1100/"
   }
 ]
