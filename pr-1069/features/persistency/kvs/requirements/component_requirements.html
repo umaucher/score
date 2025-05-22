@@ -534,7 +534,7 @@
                   
   <section id="component-requirements">
 <h1>Component Requirements<a class="headerlink" href="#component-requirements" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-ffc68640">
+<div class="need_container docutils container" id="SNCB-0ffce896">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__key_handling">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -564,10 +564,10 @@
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The key must contain only alphanumerical characters, underscores and dashes.
-The key must be valid UTF-8.
-The key must be unique.
-The key must have a maximum length of 32 bytes.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall ensure that each key consists solely of alphanumeric characters, underscores, or dashes.
+The system shall ensure that each key is encoded as valid UTF-8.
+The system shall guarantee the uniqueness of each key.
+The system shall limit the maximum length of a key to 32 bytes.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__key_handling" title="comp_req__kvs__key_handling">comp_req__kvs__key_handling</a></span></span></div>
@@ -583,7 +583,7 @@ The key must have a maximum length of 32 bytes.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f6b87620">
+<div class="need_container docutils container" id="SNCB-e86c56b7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__value_handling">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -613,11 +613,11 @@ The key must have a maximum length of 32 bytes.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The value must have one of these datatypes: Number, String, Null, Array[Value], Dictionary{Key:Value}.
-The value must be serializable and deserializable to JSON.
-The value must have a maximum length of 1024 bytes.
-The value can be no-set and provide a default value for this case.
-If the value has a default value assigned it must be resetable to the default value.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall only accept values of the following data types: Number, String, Null, Array[Value], or Dictionary{Key:Value}.
+The system shall ensure that all values can be serialized to and deserialized from JSON.
+The system shall restrict the maximum length of a value to 1024 bytes.
+The system shall support unset values and provide a default value in such cases.
+The system shall ensure that, if a value has a default, it is possible to reset the value to its default.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__value_handling" title="comp_req__kvs__value_handling">comp_req__kvs__value_handling</a></span></span></div>
@@ -633,7 +633,7 @@ If the value has a default value assigned it must be resetable to the default va
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-bb20ef31">
+<div class="need_container docutils container" id="SNCB-560439cc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__default_value_handling">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -663,11 +663,11 @@ If the value has a default value assigned it must be resetable to the default va
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The default value can be available.
-The default value must contain any of the valid value datatypes.
-The default value must be retrieval through an extra API.
-The default value must be configurable either in code or in a separate file.
-If the default value is stored in a file the file must be secured by a checksum file.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system may provide default values.
+The system shall ensure that each default value is of a permitted value data type.
+The system shall provide an additional API to retrieve default values.
+The system shall allow configuration of default values either in code or in a separate configuration file.
+The system shall, if default values are stored in a file, secure this file with an associated checksum file.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__default_value_handling" title="comp_req__kvs__default_value_handling">comp_req__kvs__default_value_handling</a></span></span></div>
@@ -683,7 +683,7 @@ If the default value is stored in a file the file must be secured by a checksum 
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-67564762">
+<div class="need_container docutils container" id="SNCB-146e0fcf">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__constraints">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -713,8 +713,7 @@ If the default value is stored in a file the file must be secured by a checksum 
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS constraints must be configurable at compile-time
-through source code constants or dynamically at runtime with a config file.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall allow configuration of KVS constraints at compile-time using source code constants or at runtime using a configuration file.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__constraints" title="comp_req__kvs__constraints">comp_req__kvs__constraints</a></span></span></div>
@@ -730,7 +729,7 @@ through source code constants or dynamically at runtime with a config file.</p><
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e13fe76f">
+<div class="need_container docutils container" id="SNCB-7e3fe1f1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__language_agnostic">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -760,9 +759,7 @@ through source code constants or dynamically at runtime with a config file.</p><
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must either provide an API that can be bind to other
-languages or use a storage and memory exchange-format that can be adapted to
-other languages.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall either provide an API that supports bindings to other languages or use a storage and memory exchange format that is adaptable to other languages.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__language_agnostic" title="comp_req__kvs__language_agnostic">comp_req__kvs__language_agnostic</a></span></span></div>
@@ -778,7 +775,7 @@ other languages.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-57735ed0">
+<div class="need_container docutils container" id="SNCB-f0f298ee">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__concurrency">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -808,8 +805,7 @@ other languages.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must implement thread-safe mechanisms to allow
-concurrent access to the data without data races.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall implement thread-safe mechanisms to enable concurrent access to data without data races.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__concurrency" title="comp_req__kvs__concurrency">comp_req__kvs__concurrency</a></span></span></div>
@@ -825,7 +821,7 @@ concurrent access to the data without data races.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-70547bb5">
+<div class="need_container docutils container" id="SNCB-9a9dfbee">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__multi_instance">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -855,9 +851,7 @@ concurrent access to the data without data races.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must manage all runtime variables in an instance so
-that multiple instances with different KVS can be spawned and
-used at the same time per software architecture element.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall manage all runtime variables within an instance, such that multiple KVS instances can be created and used concurrently within a single software architecture element.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__multi_instance" title="comp_req__kvs__multi_instance">comp_req__kvs__multi_instance</a></span></span></div>
@@ -873,7 +867,7 @@ used at the same time per software architecture element.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-55afb600">
+<div class="need_container docutils container" id="SNCB-d1e8bca3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__persistent_data_storage">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -903,10 +897,9 @@ used at the same time per software architecture element.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must use the file API and the JSON data format for
-persistent data storage.
-A checksum must be build over the data file and stored next to the data.
-On data load the checksum must be verified.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall use the file API and the JSON data format to persist data.
+The system shall generate a checksum for each data file and store it alongside the data.
+The system shall verify the checksum upon loading data.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__persistent_data_storage" title="comp_req__kvs__persistent_data_storage">comp_req__kvs__persistent_data_storage</a></span></span></div>
@@ -922,7 +915,7 @@ On data load the checksum must be verified.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-62bed401">
+<div class="need_container docutils container" id="SNCB-68824da3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__persistent_data_schema">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -952,9 +945,8 @@ On data load the checksum must be verified.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS doesn’t support versioning directly.
-The used JSON file storage format allows the application to implement
-versioning, including up- and down-paths, by itself.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall not provide built-in versioning.
+The chosen JSON file storage format shall enable the application to implement versioning, including upgrade and downgrade paths, as needed.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__persistent_data_schema" title="comp_req__kvs__persistent_data_schema">comp_req__kvs__persistent_data_schema</a></span></span></div>
@@ -970,7 +962,7 @@ versioning, including up- and down-paths, by itself.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-667551cf">
+<div class="need_container docutils container" id="SNCB-8b213c3d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__snapshots">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1000,12 +992,12 @@ versioning, including up- and down-paths, by itself.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must write a snapshot whenever the data is stored.
-It must maintain a configurable maximum number of snapshots.
-Each new snapshot has id 1 and all older snapshots get their id increased..
-After the maximum snapshot number is reached the snapshots are rotated and the oldest snapshot is dropped.
-Each snapshot can be restored by it’s id.
-Snapshots must be deletable.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall create a snapshot each time data is stored.
+The system shall maintain a configurable maximum number of snapshots.
+The system shall assign the ID 1 to the newest snapshot and increment the IDs of older snapshots accordingly.
+The system shall rotate and delete the oldest snapshot when the maximum number is reached.
+The system shall allow restoration of a snapshot by its ID.
+The system shall allow deletion of individual snapshots.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__snapshots" title="comp_req__kvs__snapshots">comp_req__kvs__snapshots</a></span></span></div>
@@ -1021,7 +1013,7 @@ Snapshots must be deletable.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-07ae12d0">
+<div class="need_container docutils container" id="SNCB-dcacd005">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__dev_mode">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1051,9 +1043,7 @@ Snapshots must be deletable.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must provide a developer mode which can be enabled
-during build time. This mode can be used to show debug and other internal
-information.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall provide a developer mode that can be enabled during build time to display debugging and internal information.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__dev_mode" title="comp_req__kvs__dev_mode">comp_req__kvs__dev_mode</a></span></span></div>
@@ -1069,7 +1059,7 @@ information.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-437ef176">
+<div class="need_container docutils container" id="SNCB-53f0fc84">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__async_api">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1099,8 +1089,7 @@ information.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>Additional to the normal API the KVS must provide an Async
-API.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall provide, in addition to the standard API, an asynchronous API.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__async_api" title="comp_req__kvs__async_api">comp_req__kvs__async_api</a></span></span></div>
@@ -1116,7 +1105,7 @@ API.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3f2e98f3">
+<div class="need_container docutils container" id="SNCB-a5bc0316">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__permission_handling">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1146,10 +1135,8 @@ API.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must not implement access and permission handling.
-This is left to the underlying filesystem implementation.
-The KVS must report access and permission errors that are
-thrown by the filesystem to the application.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall not implement its own access or permission controls but shall rely on the underlying filesystem for permission management.
+The system shall report any access or permission errors encountered at the filesystem level to the application.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__permission_handling" title="comp_req__kvs__permission_handling">comp_req__kvs__permission_handling</a></span></span></div>
@@ -1165,7 +1152,7 @@ thrown by the filesystem to the application.</p></td>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ea5d50ff">
+<div class="need_container docutils container" id="SNCB-9f41fe0a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_comp_req table" id="comp_req__kvs__callback_support">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1195,8 +1182,7 @@ thrown by the filesystem to the application.</p></td>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The KVS must provide an API to register callbacks for
-data-change events.</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The system shall provide an API for registering callbacks that are triggered by data change events.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#comp_req__kvs__callback_support" title="comp_req__kvs__callback_support">comp_req__kvs__callback_support</a></span></span></div>
