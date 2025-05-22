@@ -172,7 +172,7 @@ Supervision
 
     The framework shall provide the functionality to enable the reporting of 
     alive supervision checkpoint to an external health management system 
-    (e.g. watchdog) 
+    (e.g. health management API) 
 
 .. feat_req:: Support of deadline supervision checkpoints
     :id: feat_req__feo__deadline_supervision
