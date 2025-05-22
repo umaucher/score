@@ -74,7 +74,7 @@ FR status                    Description
 **POC Needed**               "Proof of concept" in incubation repository is needed
 ======================       ====================
 
-1. After you have created a GitHub Issue, next step would be to start working on the *feature request*.
+3. After you have created a GitHub Issue, next step would be to start working on the *feature request*.
 First of all, change the status of *Feature Request* to "in Progress" state.
 *Feature Requests*, that stay in the status "Draft" longer as 4 weeks, will be deleted.
 Afterwards create a PR with your proposal in the `/docs/features <https://github.com/eclipse-score/score/tree/main/docs/features>`_ score repository.
