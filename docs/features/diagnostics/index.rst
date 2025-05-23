@@ -121,19 +121,19 @@ SOVD Server
 
 Service App
 
-- Is a base concept to extend the system with system-specific diagnostic services/routines (e.g., DTC clear, ECU reset, Flash Master).
+- Is a base concept to extend the system with system-specific diagnostic services/routines (e.g. DTC clear, ECU reset, Flash Master).
 - Interfaces with the SOVD Server via IPC.
 
 SOVD Gateway
 
-- Forwards SOVD requests to appropriate backend targets (e.g., adapters, proxies, clients).
+- Forwards SOVD requests to appropriate backend targets (e.g. adapters, proxies, clients).
 - Acts as a router between clients and distributed SOVD components.
 - Supports multi-ECU SOVD communication.
 
 SOVD Client
 
 - Off-board, on-board or cloud client that initiates diagnostics via SOVD protocol.
-- Can be used by developers, testers, ECUs or cloud services- should be deployment agnostic.
+- Can be used by developers, testers, ECUs or cloud services; should be deployment agnostic.
 - Handles access control on the client side – e.g. by providing relevant certificates.
 
 Classic Diagnostic Adapter
@@ -153,7 +153,7 @@ Out of scope components
 -----------------------
 
 The following components are out of scope for this feature request but are included for context.
-Each is briefly described to illustrate its role within the overall system architecture and
+Each one is briefly described to illustrate its role within the overall system architecture and
 to highlight any resulting requirements or constraints imposed by the diagnostic system design.
 
 Logging
@@ -162,7 +162,7 @@ Logging
 
 Configuration Manager
 
-- Provides configuration data to the SOVD Server (e.g., ECU layout, variant, parameters).
+- Provides configuration data to the SOVD Server (e.g. ECU layout, variant, parameters).
 - Enables parametrization of applications.
 
 Authentication Manager
@@ -240,14 +240,14 @@ Backwards Compatibility
 =======================
 
 UDS2SOVD Proxy and Classic Diagnostic Adapter (SOVD2UDS) ensure compatibility with legacy UDS systems.
-ODX as a standardized exchange format further ensure compatibility with proprietary diagnostic data models.
+ODX as a standardized exchange format further ensures compatibility with proprietary diagnostic data models.
 
 
 Security Impact
 ===============
 
 The introduction of a SOVD based diagnostic stack has significant security implications due to its capabilities and network-based communication model.
-Diagnostics inherently allow access to system information, state manipulation, coding, and software updates—all of which pose risks if accessed by unauthorized actors.
+Diagnostics inherently allow access to system information, state manipulation, coding, and software updates - all of which pose risks if accessed by unauthorized actors.
 SOVD, based on REST, includes modern security features such as HTTPS and token-based authentication,
 but also introduces a broader attack surface compared to traditional UDS, which relies on more isolated, session-based access.
 If improperly secured, diagnostic interfaces could be exploited to trigger unauthorized routines or inject malicious software.
@@ -272,8 +272,8 @@ License Impact
 ==============
 
 There are no license restrictions preventing the implementation of an open-source SOVD stack at this time.
-While SOVD is currently in the ISO standardization process (ISO/DIS 17978) [#s1]_, the relevant parts—especially Part 3,
-which defines the API—are already publicly available for purchase as Draft International Standards (DIS).
+While SOVD is currently in the ISO standardization process (ISO/DIS 17978) [#s1]_, the relevant parts - especially Part 3,
+which defines the API - are already publicly available for purchase as Draft International Standards (DIS).
 These drafts are considered stable and are typically subject only to minor editorial changes before final publication.
 As such, referencing the current DIS versions is sufficient for implementation purposes, and does not pose any legal or license-related risk.
 Once the final ISO standard is published, the delta to the current drafts is expected to be minimal and can be easily addressed.
