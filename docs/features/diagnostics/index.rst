@@ -146,7 +146,7 @@ UDS2SOVD Proxy
 
 - Exposes selected SOVD functionality via UDS for backward-compatible testers.
 - Acts as a local translation layer between UDS clients and SOVD stack.
-- Configured using a ODX to define what is exposed.
+- Configured via ODX files to define what is exposed.
 
 
 Out of scope components
