@@ -87,21 +87,21 @@ In scope components
 
 The following components are considered in scope of this feature request.
 
-F lib (Fault Library)
+Fault Library
 
 - Provides a framework agnostic interface for apps or FEO activities to report faults - called "Fault API" in the S-CORE architecture.
 - Relays faults via IPC to central Diagnostic Fault Manager.
 - Enables domain-specific error logic (e.g. debouncing) by exposing a configuration interface
 - Reporting of faults additionally results in a log entry.
 - The interface needs to be specified further but will likely include: Fault ID (FID), time, ENUM fault type (like DLT ENUMs), optional meta data.
-- F lib is the base for activity specific, custom fault handling.
+- Fault lib is the base for activity specific, custom fault handling.
 
 Diagnostic Fault Manager
 
-- Aggregates and manages diagnostic fault data from F libs across the system.
+- Aggregates and manages diagnostic fault data from Fault libs across the system.
 - Provides centralized fault status to the SOVD Server.
 - Interfaces with the Diagnostic DB (persistency) to store and retrieve data.
-- Stores (persistently) central configuration (e.g. for debouncing thresholds) which can be loaded during startup by F libs.
+- Stores (persistently) central configuration (e.g. for debouncing thresholds) which can be loaded during startup by Fault libs.
 
 Diagnostic DB
 
