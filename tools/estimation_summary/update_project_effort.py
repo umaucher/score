@@ -34,11 +34,15 @@ class SizeGroup:
 def aggregate_issue_sizes(issues: list[gt.Issue]) -> list[SizeGroup]:
     size_groups: dict[str, SizeGroup] = dict()
     for issue in issues:
+        cat = issue.custom_fields.get("category")
+        if cat and (cat.endswith("C++") or cat.endswith("Rust")):
+            continue
+
         size_str = issue.custom_fields.get("size", "not estimated")
         short_name = size_to_short[size_str]
 
         size = size_to_days[size_str]
-        if issue.custom_fields["Status"] == "In Progress":
+        if issue.custom_fields.get("Status") == "In Progress":
             suffix = " (in progress)"
             size = size / 2
         else:
