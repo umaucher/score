@@ -22,7 +22,8 @@
 .. document:: [Your Feature Name]
    :id: doc__feature_name
    :status: draft
-   :safety: ASIL_B
+   :safety: ASIL_D
+   :realizes: wp__feat_request
    :tags: template
 
 .. attention::
@@ -109,6 +110,7 @@ If applicable, which additional security measures must be implemented to mitigat
      Use Trust Boundary, Defense in Depth Analysis and/or Security Software Critically Analysis,
      Vulnerability Analysis.
      [Methods will be defined later in Process area Security Analysis]
+     These analyses may not be available at the time of creation of the feature (request) but content will be improved iteratively.
 
 Safety Impact
 =============
@@ -126,6 +128,7 @@ If applicable, which additional safety measures must be implemented to mitigate 
     .. note::
      Use Dependency Failure Analysis and/or Safety Software Critically Analysis.
      [Methods will be defined later in Process area Safety Analysis]
+     These analyses may not be available at the time of creation of the feature (request) but content will be improved iteratively.
 
 For new feature contributions:
 

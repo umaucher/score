@@ -20,7 +20,8 @@ Component Classification
 .. document:: [Your Component Name] Component Classification
    :id: doc__component_name_comp_class
    :status: draft
-   :safety: ASIL_B
+   :safety: ASIL_D
+   :realizes: wp__sw_component_class
    :tags: template
 
 .. attention::

@@ -90,6 +90,12 @@ Feature Safety Planning
       - <Link to WP>
       - <automated>
 
+.. attention::
+    The above table must be updated according to your feature safety planning.
+
+    - Create and link the issues to plan the work products (according to :need:`gd_guidl__saf_plan_definitions`)
+    - Fill the work producs links and add their status (also possible below) to create the safety package (according to :need:`gd_guidl__saf_package`)
+
 Feature Requirements Status
 ---------------------------
 

@@ -20,7 +20,7 @@ Safety Package Formal Review Report
 .. document:: [Your Module Name] Safety Package Formal Review
    :id: doc__module_name_safety_package_fdr
    :status: draft
-   :safety: ASIL_B
+   :safety: ASIL_D
    :realizes: wp__fdr_reports
    :tags: template
 

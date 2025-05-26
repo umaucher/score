@@ -42,7 +42,7 @@ Requirements
 .. attention::
     The above directives must be updated according to your feature requirements.
 
-    - Replace the example content by the real content for your first requirement
+    - Replace the example content by the real content for your first requirement (according to :need:`gd_guidl__req__engineering`)
     - Set the status to valid and start the review/merge process
     - Add other needed requirements for your feature
 

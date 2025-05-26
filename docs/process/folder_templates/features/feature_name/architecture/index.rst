@@ -133,5 +133,11 @@ They will be replaced by linking the proper SW component definitions in the used
    which can be shown without actual c++/rust interfaces and data types
    and there will be link to lower level architecture till code to get actual api descriptions.
 
+.. attention::
+    The above directives must be updated according to your feature architecture.
+
+    - Replace the example content by the real content (according to :need:`gd_guidl__arch__design`)
+    - Set the status to valid and start the review/merge process
+
 .. needextend:: "feature_name/architecture" in docname
    :+tags: feature_name
