@@ -552,14 +552,14 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <section id="rationale-behind-architecture-decomposition">
 <h3>Rationale Behind Architecture Decomposition<a class="headerlink" href="#rationale-behind-architecture-decomposition" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>The architecture is decomposed to include a dedicated JSON parser component (TinyJSON) to facilitate the persistent storage of data in JSON format.</p></li>
+<li><p>The architecture is decomposed to include a dedicated JSON parser component (json) to facilitate the persistent storage of data in JSON format.</p></li>
 <li><p>The architecture is decomposed to include a FileStorage component (fs) to read and write to the file system.</p></li>
 </ul>
 </section>
 </section>
 <section id="static-architecture">
 <h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-dd3aabab">
+<div class="need_container docutils container" id="SNCB-d58212fc">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__kvs__static">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -590,7 +590,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
-<object data="../../../../_images/plantuml-63d834f384d36e6eac9821bb4c616519190c5fbb.svg" type="image/svg+xml" style="width:534px;height:566px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-a906647a0e23d543ed6b8b13df85a7f0ab0ab1e3.svg" type="image/svg+xml" style="width:534px;height:533px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -610,7 +610,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-4c8c9e5a">
+<div class="need_container docutils container" id="SNCB-e4020502">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__check_key_default">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -640,7 +640,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
-<object data="../../../../_images/plantuml-15156bd1f26eb8080f33db5faf6009c9904bf94a.svg" type="image/svg+xml" style="width:468px;height:412px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-0432583c72769677e3cad3bd1ad83892fb0062cd.svg" type="image/svg+xml" style="width:468px;height:412px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -657,7 +657,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c257a9b9">
+<div class="need_container docutils container" id="SNCB-6939ec95">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__delete_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -704,7 +704,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f3c4837d">
+<div class="need_container docutils container" id="SNCB-6fceaed4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__flush">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -734,7 +734,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
-<object data="../../../../_images/plantuml-877d5125747a8f9b9ac12058af1f5d63df0bb456.svg" type="image/svg+xml" style="width:758px;height:993px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-ec4334f00a4e83494dbbceefab4336d725b05082.svg" type="image/svg+xml" style="width:740px;height:993px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -751,7 +751,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5a96df3a">
+<div class="need_container docutils container" id="SNCB-ac927465">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__read_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -798,7 +798,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c683168f">
+<div class="need_container docutils container" id="SNCB-1c3afaa7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__read_data_from_storage">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -828,7 +828,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
-<object data="../../../../_images/plantuml-30a0da31012049d033842704bd73e09e9694eea3.svg" type="image/svg+xml" style="width:606px;height:791px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-237408fcaf14cd6f6c5919622bf5ed8bafb8c1a9.svg" type="image/svg+xml" style="width:576px;height:791px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -845,7 +845,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-19a91448">
+<div class="need_container docutils container" id="SNCB-b1ea73c1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__write_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -892,7 +892,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-dddcda30">
+<div class="need_container docutils container" id="SNCB-a2d917d4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__kvs__snapshot_restore">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -942,7 +942,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </section>
 <section id="logical-interfaces">
 <h2>Logical Interfaces<a class="headerlink" href="#logical-interfaces" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-a5dbd8e9">
+<div class="need_container docutils container" id="SNCB-81241cf2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__kvs__interface">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -973,7 +973,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 <td class="meta" colspan="3"></td>
 </tr>
 <tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
-<object data="../../../../_images/plantuml-73a6562d05ac3feeea86490c18cfeb7448b68610.svg" type="image/svg+xml" style="width:180px;height:346px;background:#FFFFFF;"></object></p>
+<object data="../../../../_images/plantuml-aa1c8d72af265258939111c8f1fe2cee4d87f28f.svg" type="image/svg+xml" style="width:180px;height:313px;background:#FFFFFF;"></object></p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
