@@ -21,7 +21,6 @@ How to Contribute?
    :id: doc__contr_guideline
    :status: valid
    :safety: QM
-   :tags: platform_management
 
 How we Work
 ===========
@@ -78,7 +77,7 @@ Join Us in Building S-CORE
   Submit a contribution pitch for a specific feature request if you have a solution you'd like to share.
 
 - **Looking to Improve What's Already There?**
-  Contribute enhancements to existing implementations or get involved with one of our cross-functional teams (CFTs).
+  Contribute enhancements to existing implementations or get involved with one of our Feature Teams (FTs).
 
 We're excited to have you on board. Together, we can shape S-CORE into a platform that's not only innovative but also a joy to be a part of.
 
@@ -91,7 +90,6 @@ What is a Pull Request (PR)?
    :id: doc__pull_request_guideline
    :status: valid
    :safety: QM
-   :tags: platform_management
 
 A Pull Request (**PR**) is the **ONLY** way to contribute **CODE** to the *S-CORE* project.
 
@@ -161,7 +159,6 @@ What is a GitHub Issue?
    :id: doc__issue_guideline
    :status: valid
    :safety: QM
-   :tags: platform_management
 
 A *GitHub Issue* is the way to report bugs or propose improvements without knowing the solution and to request features (incl. scope changes).
 
@@ -179,3 +176,9 @@ The figure below shows options to report something.
   :alt: Reporting options overview
 
   Reporting options overview
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   feature_request

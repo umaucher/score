@@ -87,11 +87,11 @@ Component Requirements: feo
     :satisfies: feat_req__feo__service_activity
     :status: valid
 
-    The component shall enable the implementation and execution of Service Activities, which are ameans to interact
+    The component shall enable the implementation and execution of Service Activities, which are a means to interact
     with the outside world, e.g. via network communication, direct sensor input or direct actuator output.
 
-    A Service shall be enabled to use APIs external to the framework (e.g. networking APIs, reading from external
-    sensor devices, writing HW I/O, etc.)
+    A Service Activity shall be enabled to use APIs external to the framework (e.g. networking APIs, reading from
+    external sensor devices, writing HW I/O, etc.)
 
 
 .. comp_req:: Agent

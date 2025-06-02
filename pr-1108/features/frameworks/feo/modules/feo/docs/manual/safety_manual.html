@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -554,7 +554,7 @@ For now it only contains Assumptions of Use related to the use of Rust libraries
 <div class="line-block">
 <div class="line">Generally the assumption of the S-CORE platform SEooC is that it is integrated in a safe system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s safety concept.</div>
 </div>
-<div class="need_container docutils container" id="SNCB-b49167b5">
+<div class="need_container docutils container" id="SNCB-8638f3b1">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__on_target_crates">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -583,8 +583,7 @@ For now it only contains Assumptions of Use related to the use of Rust libraries
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The following list is <em>not yet complete</em>. It needs to be refined based on a final implementation.
-Only the following crates of the FEO module shall be used to build code that runs on
+<tr class="content row-odd"><td class="content" colspan="6"><p>Only the following crates of the FEO module shall be used to build code that runs on
 targets in release builds.</p>
 <ul class="simple">
 <li><p>feo</p></li>
@@ -608,7 +607,7 @@ targets in release builds.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-339b3d62">
+<div class="need_container docutils container" id="SNCB-8eebe718">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__rust_core_lib">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -637,7 +636,7 @@ targets in release builds.</p>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The Rust core lib shall be safety qualified</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The Rust core lib used to build FEO shall be qualified according to the same ASIL level as the FEO framework.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#aou_req__feo__rust_core_lib" title="aou_req__feo__rust_core_lib">aou_req__feo__rust_core_lib</a></span></span></div>
@@ -653,7 +652,7 @@ targets in release builds.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2c035eeb">
+<div class="need_container docutils container" id="SNCB-9feb034d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__rust_std_lib_modules">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -682,11 +681,7 @@ targets in release builds.</p>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The following list is <em>not yet complete</em>. It needs to be refined based on a final implementation.
-At the moment, it covers probably about 95% of std library usages.
-An accurate list could be determined by switching feo to #![no_std] and looking at the compilation errors,
-but it gets quickly out of date with a changing codebase.
-The following items from the Rust std library shall be safety qualified:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The following items from the Rust std library shall be safety qualified:</p>
 <ul class="simple">
 <li><p>std::collections::HashMap</p></li>
 <li><p>std::collections::HashSet</p></li>
@@ -713,6 +708,10 @@ The following items from the Rust std library shall be safety qualified:</p>
 <li><p>std::time::UNIX_EPOCH</p></li>
 <li><p>std::vec::Vec</p></li>
 </ul>
+<p><strong>Note:</strong> The above list is not yet complete. It needs to be refined based on a final implementation.
+At the moment, it covers probably about 95% of std library usages.
+An accurate list could be determined by switching feo to #![no_std] and looking at the compilation errors,
+but it gets quickly out of date with a changing codebase.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
