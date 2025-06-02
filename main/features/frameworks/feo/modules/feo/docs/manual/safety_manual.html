@@ -72,8 +72,8 @@
         </script>
     <link rel="index" title="Index" href="../../../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../../../search.html" />
-    <link rel="next" title="Infrastructure" href="../../../../../../infrastructure/index.html" />
-    <link rel="prev" title="FEO Module Documentation" href="../index.html" />
+    <link rel="next" title="Component Documentation: feo" href="../../feo/docs/index.html" />
+    <link rel="prev" title="Module Documentation: feo" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -450,8 +450,13 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../../../index.html">Frameworks</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../../../../index.html">Fixed execution order framework (FEO)</a></li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../../../index.html">Modules Documentation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="../index.html">FEO Module Documentation</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../index.html">Module Documentation: feo</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l4 current active"><a class="current reference internal" href="#">FEO Module Safety Manual Draft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../feo/docs/index.html">Component Documentation: feo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../feo_com/docs/index.html">Component Documentation: feo_com</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../feo_log/docs/index.html">Component Documentation: feo_log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../feo_time/docs/index.html">Component Documentation: feo_time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../feo_tracing/docs/index.html">Component Documentation: feo_tracing</a></li>
 </ul>
 </details></li>
 </ul>
@@ -511,7 +516,7 @@
     <li class="breadcrumb-item"><a href="../../../index.html" class="nav-link">Modules Documentation</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">FEO Module Documentation</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Module Documentation: feo</a></li>
     
     <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">FEO Module Safety Manual Draft</span></li>
   </ul>
@@ -549,7 +554,7 @@ For now it only contains Assumptions of Use related to the use of Rust libraries
 <div class="line-block">
 <div class="line">Generally the assumption of the S-CORE platform SEooC is that it is integrated in a safe system, i.e. the POSIX OS it runs on is qualified and also the HW related failures are taken into account by the system integrator, if not otherwise stated in the module’s safety concept.</div>
 </div>
-<div class="need_container docutils container" id="SNCB-06d41b39">
+<div class="need_container docutils container" id="SNCB-e9ad11d8">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__on_target_crates">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -578,8 +583,7 @@ For now it only contains Assumptions of Use related to the use of Rust libraries
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The following list is <em>not yet complete</em>. It needs to be refined based on a final implementation.
-Only the following crates of the FEO module shall be used to build code that runs on
+<tr class="content row-odd"><td class="content" colspan="6"><p>Only the following crates of the FEO module shall be used to build code that runs on
 targets in release builds.</p>
 <ul class="simple">
 <li><p>feo</p></li>
@@ -603,7 +607,7 @@ targets in release builds.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-ca96ce92">
+<div class="need_container docutils container" id="SNCB-e8170155">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__rust_core_lib">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -632,7 +636,7 @@ targets in release builds.</p>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The Rust core lib shall be safety qualified</p></td>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The Rust core lib used to build FEO shall be qualified according to the same ASIL level as the FEO framework.</p></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
 <div class="line"><span><span class="needs-id"><a class="reference internal" href="#aou_req__feo__rust_core_lib" title="aou_req__feo__rust_core_lib">aou_req__feo__rust_core_lib</a></span></span></div>
@@ -648,7 +652,7 @@ targets in release builds.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-f4424c9b">
+<div class="need_container docutils container" id="SNCB-aa19a85b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_aou_req table" id="aou_req__feo__rust_std_lib_modules">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -677,11 +681,7 @@ targets in release builds.</p>
 </td>
 <td class="meta" colspan="3"></td>
 </tr>
-<tr class="content row-odd"><td class="content" colspan="6"><p>The following list is <em>not yet complete</em>. It needs to be refined based on a final implementation.
-At the moment, it covers probably about 95% of std library usages.
-An accurate list could be determined by switching feo to #![no_std] and looking at the compilation errors,
-but it gets quickly out of date with a changing codebase.
-The following items from the Rust std library shall be safety qualified:</p>
+<tr class="content row-odd"><td class="content" colspan="6"><p>The following items from the Rust std library shall be safety qualified:</p>
 <ul class="simple">
 <li><p>std::collections::HashMap</p></li>
 <li><p>std::collections::HashSet</p></li>
@@ -708,6 +708,10 @@ The following items from the Rust std library shall be safety qualified:</p>
 <li><p>std::time::UNIX_EPOCH</p></li>
 <li><p>std::vec::Vec</p></li>
 </ul>
+<p><strong>Note:</strong> The above list is not yet complete. It needs to be refined based on a final implementation.
+At the moment, it covers probably about 95% of std library usages.
+An accurate list could be determined by switching feo to #![no_std] and looking at the compilation errors,
+but it gets quickly out of date with a changing codebase.</p>
 </td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
@@ -805,15 +809,15 @@ The following items from the Rust std library shall be safety qualified:</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">FEO Module Documentation</p>
+        <p class="prev-next-title">Module Documentation: feo</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../../../../../infrastructure/index.html"
+       href="../../feo/docs/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Infrastructure</p>
+        <p class="prev-next-title">Component Documentation: feo</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
