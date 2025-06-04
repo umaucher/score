@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -174,15 +174,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../contribute/index.html">
-    Contribute
+  <a class="nav-link nav-internal" href="../../../../modules/index.html">
+    Module
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../../../score_releases/index.html">
-    Releases
+  <a class="nav-link nav-internal" href="../../../../contribute/index.html">
+    Contribute
   </a>
 </li>
 
@@ -194,6 +194,13 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
+<li class=" ">
+  <a class="nav-link dropdown-item nav-internal" href="../../../../score_releases/index.html">
+    Releases
+  </a>
+</li>
+
+
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../../../process/index.html">
     Process
@@ -348,6 +355,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../../modules/index.html">
+    Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../../../contribute/index.html">
     Contribute
   </a>
@@ -456,7 +470,7 @@
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../infrastructure/index.html">Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../integration/index.html">Integration</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../../persistency/index.html">Persistency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../persistency/index.html">Key-Value-Storage</a></li>
 </ul>
 </div>
 </nav></div>
@@ -527,7 +541,7 @@
 <h1>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h1>
 <section id="definitions">
 <h2>Definitions<a class="headerlink" href="#definitions" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-10bab378">
+<div class="need_container docutils container" id="SNCB-6026c96c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__application">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -580,7 +594,7 @@ Each process contains one ore more operating system threads.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-7abbe021">
+<div class="need_container docutils container" id="SNCB-9ea15bc4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__activity">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -634,7 +648,7 @@ Each activity is mapped to exactly one thread and provides the following functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-76b78478">
+<div class="need_container docutils container" id="SNCB-511cdf93">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__task_chain">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -688,7 +702,7 @@ The purpose of an output service activity is to collect signals produced by acti
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-59133c8c">
+<div class="need_container docutils container" id="SNCB-208c3c5e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__service_activity">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -740,7 +754,7 @@ network communication, direct sensor input or direct actuator output</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-af905909">
+<div class="need_container docutils container" id="SNCB-cb381704">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__agent">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -799,7 +813,7 @@ associated with an agent.</p>
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-62ef66df">
+<div class="need_container docutils container" id="SNCB-d4d8bfde">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__application_lifecycle">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -845,7 +859,7 @@ associated with an agent.</p>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-d9f6a554">
+<div class="need_container docutils container" id="SNCB-5d36a448">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__activity_init">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -895,7 +909,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-e1a608d9">
+<div class="need_container docutils container" id="SNCB-502f7dd2">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__activitiy_step">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -943,7 +957,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-fa7e8685">
+<div class="need_container docutils container" id="SNCB-3dd23e80">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__activity_shutdown">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -995,7 +1009,7 @@ Note that <cite>init</cite>, <cite>step</cite> and <cite>shutdown</cite> functio
 </section>
 <section id="supervision">
 <h2>Supervision<a class="headerlink" href="#supervision" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-30af97a7">
+<div class="need_container docutils container" id="SNCB-30421adb">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__alive_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1043,7 +1057,7 @@ alive supervision checkpoint to an external health management system
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-3459eb10">
+<div class="need_container docutils container" id="SNCB-44d2a08a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__deadline_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1091,7 +1105,7 @@ deadline supervision checkpoints to an external health management system
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-5baa4472">
+<div class="need_container docutils container" id="SNCB-e65aaf56">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__logical_supervision">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -1139,7 +1153,7 @@ logical supervision checkpoints to an external health management system
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-95bcee22">
+<div class="need_container docutils container" id="SNCB-a7d2248d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__feo__trustable_computation">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
