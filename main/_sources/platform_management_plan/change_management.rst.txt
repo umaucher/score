@@ -288,5 +288,5 @@ Change Management SW Platform Work Products
       - :need:`PROCESS_wf__def_app_process_definition`
       - :ndf:`copy('status', need_id='PROCESS_wf__def_app_process_definition')`
       - `Process community issues <https://github.com/orgs/eclipse-score/projects/7>`_
-      - `REPLACE_process_description`
+      - `Process description <https://eclipse-score.github.io/process_description/main/index.html>`_
       - <automated>
