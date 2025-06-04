@@ -112,7 +112,7 @@ Project structure and processes
 
       Process
       ^^^
-      Understand how we work, by reading our `Process description <REPLACE_process_description>`.
+      Understand how we work, by reading our `Process description <https://eclipse-score.github.io/process_description/main/index.html>`_.
       And receive tips & tricks for our used tool stack by reading the
       :ref:`contribute`.
 
