@@ -507,3 +507,6 @@ Safety Impact
    :status: valid
 
    The communication framework shall support safe communication up to ASIL-B.
+
+.. needextend:: docname is not None and "communication/ipc/requirements" in docname
+   :+tags: ipc

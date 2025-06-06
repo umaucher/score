@@ -38,11 +38,11 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -76,7 +76,7 @@
     <link rel="prev" title="Roadmap" href="../communication/ipc/roadmap.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
+  <meta name="docsearch:version" content="0.1" />
   </head>
   
   
@@ -194,13 +194,6 @@
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
-<li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../process/index.html">
-    Process
-  </a>
-</li>
-
-
 <li class=" ">
   <a class="nav-link dropdown-item nav-internal" href="../../platform_management_plan/index.html">
     PMP
@@ -362,13 +355,6 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../process/index.html">
-    Process
-  </a>
-</li>
-
-
-<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../platform_management_plan/index.html">
     PMP
   </a>
@@ -514,7 +500,7 @@
                   
   <section id="diagnostic-and-fault-management">
 <span id="diagnostics-feature"></span><h1>Diagnostic and Fault Management<a class="headerlink" href="#diagnostic-and-fault-management" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-8c44bab8">
+<div class="need_container docutils container" id="SNCB-7bec731a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__diagnostics">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -603,21 +589,21 @@ It provides a standardized and extensible interface that enables better interope
 <section id="in-scope-components">
 <h3>In scope components<a class="headerlink" href="#in-scope-components" title="Link to this heading">#</a></h3>
 <p>The following components are considered in scope of this feature request.</p>
-<p>F lib (Fault Library)</p>
+<p>Fault Library</p>
 <ul class="simple">
 <li><p>Provides a framework agnostic interface for apps or FEO activities to report faults - called “Fault API” in the S-CORE architecture.</p></li>
 <li><p>Relays faults via IPC to central Diagnostic Fault Manager.</p></li>
 <li><p>Enables domain-specific error logic (e.g. debouncing) by exposing a configuration interface</p></li>
 <li><p>Reporting of faults additionally results in a log entry.</p></li>
 <li><p>The interface needs to be specified further but will likely include: Fault ID (FID), time, ENUM fault type (like DLT ENUMs), optional meta data.</p></li>
-<li><p>F lib is the base for activity specific, custom fault handling.</p></li>
+<li><p>Fault lib is the base for activity specific, custom fault handling.</p></li>
 </ul>
 <p>Diagnostic Fault Manager</p>
 <ul class="simple">
-<li><p>Aggregates and manages diagnostic fault data from F libs across the system.</p></li>
+<li><p>Aggregates and manages diagnostic fault data from Fault libs across the system.</p></li>
 <li><p>Provides centralized fault status to the SOVD Server.</p></li>
 <li><p>Interfaces with the Diagnostic DB (persistency) to store and retrieve data.</p></li>
-<li><p>Stores (persistently) central configuration (e.g. for debouncing thresholds) which can be loaded during startup by F libs.</p></li>
+<li><p>Stores (persistently) central configuration (e.g. for debouncing thresholds) which can be loaded during startup by Fault libs.</p></li>
 </ul>
 <p>Diagnostic DB</p>
 <ul class="simple">
@@ -637,19 +623,19 @@ It provides a standardized and extensible interface that enables better interope
 </ul>
 <p>Service App</p>
 <ul class="simple">
-<li><p>Is a base concept to extend the system with system-specific diagnostic services/routines (e.g., DTC clear, ECU reset, Flash Master).</p></li>
+<li><p>Is a base concept to extend the system with system-specific diagnostic services/routines (e.g. DTC clear, ECU reset, Flash Master).</p></li>
 <li><p>Interfaces with the SOVD Server via IPC.</p></li>
 </ul>
 <p>SOVD Gateway</p>
 <ul class="simple">
-<li><p>Forwards SOVD requests to appropriate backend targets (e.g., adapters, proxies, clients).</p></li>
+<li><p>Forwards SOVD requests to appropriate backend targets (e.g. adapters, proxies, clients).</p></li>
 <li><p>Acts as a router between clients and distributed SOVD components.</p></li>
 <li><p>Supports multi-ECU SOVD communication.</p></li>
 </ul>
 <p>SOVD Client</p>
 <ul class="simple">
 <li><p>Off-board, on-board or cloud client that initiates diagnostics via SOVD protocol.</p></li>
-<li><p>Can be used by developers, testers, ECUs or cloud services- should be deployment agnostic.</p></li>
+<li><p>Can be used by developers, testers, ECUs or cloud services; should be deployment agnostic.</p></li>
 <li><p>Handles access control on the client side – e.g. by providing relevant certificates.</p></li>
 </ul>
 <p>Classic Diagnostic Adapter</p>
@@ -662,13 +648,13 @@ It provides a standardized and extensible interface that enables better interope
 <ul class="simple">
 <li><p>Exposes selected SOVD functionality via UDS for backward-compatible testers.</p></li>
 <li><p>Acts as a local translation layer between UDS clients and SOVD stack.</p></li>
-<li><p>Configured using a ODX to define what is exposed.</p></li>
+<li><p>Configured via ODX files to define what is exposed.</p></li>
 </ul>
 </section>
 <section id="out-of-scope-components">
 <h3>Out of scope components<a class="headerlink" href="#out-of-scope-components" title="Link to this heading">#</a></h3>
 <p>The following components are out of scope for this feature request but are included for context.
-Each is briefly described to illustrate its role within the overall system architecture and
+Each one is briefly described to illustrate its role within the overall system architecture and
 to highlight any resulting requirements or constraints imposed by the diagnostic system design.</p>
 <p>Logging</p>
 <ul class="simple">
@@ -676,7 +662,7 @@ to highlight any resulting requirements or constraints imposed by the diagnostic
 </ul>
 <p>Configuration Manager</p>
 <ul class="simple">
-<li><p>Provides configuration data to the SOVD Server (e.g., ECU layout, variant, parameters).</p></li>
+<li><p>Provides configuration data to the SOVD Server (e.g. ECU layout, variant, parameters).</p></li>
 <li><p>Enables parametrization of applications.</p></li>
 </ul>
 <p>Authentication Manager</p>
@@ -717,7 +703,7 @@ to highlight any resulting requirements or constraints imposed by the diagnostic
 <section id="requirements">
 <h3>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h3>
 <p>The following section includes unordered and incomplete feature requirements.</p>
-<div class="need_container docutils container" id="SNCB-59fdd34e">
+<div class="need_container docutils container" id="SNCB-910af38b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__diagnostics__sovd_std">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -763,7 +749,7 @@ to highlight any resulting requirements or constraints imposed by the diagnostic
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-41b96e22">
+<div class="need_container docutils container" id="SNCB-57b7a5b3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__diagnostics__oem_plugin">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -809,7 +795,7 @@ to highlight any resulting requirements or constraints imposed by the diagnostic
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-290c0688">
+<div class="need_container docutils container" id="SNCB-a7905b44">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_req table" id="feat_req__diagnostics__internal_com">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -860,12 +846,12 @@ to highlight any resulting requirements or constraints imposed by the diagnostic
 <section id="backwards-compatibility">
 <h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
 <p>UDS2SOVD Proxy and Classic Diagnostic Adapter (SOVD2UDS) ensure compatibility with legacy UDS systems.
-ODX as a standardized exchange format further ensure compatibility with proprietary diagnostic data models.</p>
+ODX as a standardized exchange format further ensures compatibility with proprietary diagnostic data models.</p>
 </section>
 <section id="security-impact">
 <h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
 <p>The introduction of a SOVD based diagnostic stack has significant security implications due to its capabilities and network-based communication model.
-Diagnostics inherently allow access to system information, state manipulation, coding, and software updates—all of which pose risks if accessed by unauthorized actors.
+Diagnostics inherently allow access to system information, state manipulation, coding, and software updates - all of which pose risks if accessed by unauthorized actors.
 SOVD, based on REST, includes modern security features such as HTTPS and token-based authentication,
 but also introduces a broader attack surface compared to traditional UDS, which relies on more isolated, session-based access.
 If improperly secured, diagnostic interfaces could be exploited to trigger unauthorized routines or inject malicious software.
@@ -886,8 +872,8 @@ As pointed out in “Security Impact”, a breach in the diagnostic system could
 <section id="license-impact">
 <h2>License Impact<a class="headerlink" href="#license-impact" title="Link to this heading">#</a></h2>
 <p>There are no license restrictions preventing the implementation of an open-source SOVD stack at this time.
-While SOVD is currently in the ISO standardization process (ISO/DIS 17978) <a class="footnote-reference brackets" href="#s1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, the relevant parts—especially Part 3,
-which defines the API—are already publicly available for purchase as Draft International Standards (DIS).
+While SOVD is currently in the ISO standardization process (ISO/DIS 17978) <a class="footnote-reference brackets" href="#s1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, the relevant parts - especially Part 3,
+which defines the API - are already publicly available for purchase as Draft International Standards (DIS).
 These drafts are considered stable and are typically subject only to minor editorial changes before final publication.
 As such, referencing the current DIS versions is sufficient for implementation purposes, and does not pose any legal or license-related risk.
 Once the final ISO standard is published, the delta to the current drafts is expected to be minimal and can be easily addressed.</p>
@@ -1046,7 +1032,7 @@ Because no FOSS SOVD stack exists currently, it presents an opportunity for S-CO
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

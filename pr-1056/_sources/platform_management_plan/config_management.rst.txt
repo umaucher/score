@@ -44,7 +44,7 @@ Goal of this plan is to describe
 * how to backup and recover (including long term storage)
 * how to report the configuration status
 
-note: for definition of "configuration items" check :ref:`process_configuration_management`
+note: for definition of "configuration items" check :need:`PROCESS_doc_concept__configuration__process`
 
 
 Approach
@@ -53,13 +53,13 @@ Approach
 .. gd_guidl:: Configuration
    :id: gd_guidl__configuration
    :status: valid
-   :complies: std_req__iso26262__support_741, std_req__iso26262__support_743, std_req__iso26262__support_744, std_req__iso26262__support_745
+   :complies: PROCESS_std_req__iso26262__support_741, PROCESS_std_req__iso26262__support_742, PROCESS_std_req__iso26262__support_743, PROCESS_std_req__iso26262__support_744, PROCESS_std_req__iso26262__support_745, PROCESS_std_req__aspice_40__SUP-8-BP1, PROCESS_std_req__aspice_40__SUP-8-BP3, PROCESS_std_req__aspice_40__SUP-8-BP4, PROCESS_std_req__aspice_40__SUP-8-BP5, PROCESS_std_req__aspice_40__SUP-8-BP8
 
 
 Identification
 ^^^^^^^^^^^^^^
 
-Each work product is identified by its sphinx-needs Id, this includes documents identified as such (see :project documents list in :need:`doc__documentation_mgt_plan`).
+Each work product is identified by its sphinx-needs Id, this includes documents identified as such (see project documents list in :need:`doc__documentation_mgt_plan`).
 Spinx-needs checks for Id duplicates.
 The work products are stored in text or code files (these are identified by their filenames) within GitHub repositories.
 There is one `platform repository <https://GitHub.com/eclipse-score/score/>`_ and one repository for each module.
@@ -67,7 +67,7 @@ There is one `platform repository <https://GitHub.com/eclipse-score/score/>`_ an
 For other artefacts these are either
 
 - files - are identified by their path/filename (and configured also in GitHub)
-- precompiled tools/binaries - bazel build configuration identifies those by their hash.
+- precompiled tools/binaries - bazel build configuration identifies those by their hash (see MODULE.bazel).
 - (external) tools/binaries to be built in S-CORE CI - bazel build configuration identifies those by their version.
 
 
@@ -89,9 +89,9 @@ For other artefacts: these are pulled into S-CORE integration repository by fork
 Modification
 ^^^^^^^^^^^^
 
-Files or new work products contained in them are created in local branches by the :need:`Contributor <rl__contributor>`
+Files or new work products contained in them are created in local branches by the :need:`Contributor <PROCESS_rl__contributor>`
 and shared for review and incorporation into the main branch via GitHub pull-requests,
-which are after their acceptance merged by the :need:`Committer <rl__committer>`. The same applies for changes in existing configuration items.
+which are after their acceptance merged by the :need:`Committer <PROCESS_rl__committer>`. The same applies for changes in existing configuration items.
 See also :need:`doc__platform_change_management_plan`.
 
 For other artefacts modifications are controlled by the bazel build files which are also under configuration control.
@@ -112,7 +112,7 @@ The "remote" branch is not "local" to the developer but resides on the "remote" 
 
 Baselines are created by using the GitHub "tag" function. The tag name shall correspond to
 the release branch name the tag is created, adding patch version and pre-release tag.
-See also release management (Todo: add link when `PR-578 <https://github.com/eclipse-score/score/pull/578>`_ is merged).
+See also :need:`doc__platform_release_management_plan`.
 
 Every change in the release repository is also taken over into the main branch. The module development team
 can decide how to ensure this (e.g. by development in main and cherrypick to release branch).
@@ -122,4 +122,4 @@ Backup and Recovery
 ^^^^^^^^^^^^^^^^^^^
 
 Backup and recovery are covered by the Eclipse Foundation hosting the GitHub service for S-CORE.
-For the long term storage, additional measures are taken, see :need:`gd_req__workproducts_storage`
+For the long term storage, additional measures are taken, see :need:`PROCESS_gd_req__workproducts_storage`
