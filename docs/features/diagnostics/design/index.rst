@@ -76,11 +76,16 @@ The proposed concept consists of three main parts:
 2.	A SOVD based diagnostic system
 3.	Components to interface the diagnostic system with the outside – e.g. Tester or UDS based ECUs
 
-The diagram below shows the entire concept with the three subgroups connected.
+The diagram below shows the concept with the three subgroups connected.
 
-.. image:: _assets/score-diagnostics-draft.drawio.svg
+.. image:: _assets/score-diagnostics.drawio.svg
    :alt: Diagnostic stack component architecture
 
+
+The next diagram shows the concept in a distributed view to highlight components that are unique per system or per device.
+
+.. image:: _assets/score-diagnostics.drawio.svg
+   :alt: Diagnostic stack component architecture
 
 In scope components
 -------------------
@@ -135,7 +140,7 @@ SOVD Gateway
 - Forwards SOVD requests to appropriate backend targets (e.g. adapters, proxies, clients).
 - Acts as a router between clients and distributed SOVD components.
 - Supports multi-ECU SOVD communication.
-- Central component.
+- Central component and unique per system.
 
 SOVD Client
 
@@ -149,14 +154,14 @@ Classic Diagnostic Adapter
 - Translates SOVD service calls to UDS commands.
 - Enables backward compatibility with legacy ECUs that only support UDS.
 - Configured via ODX files describing ECU-specific UDS expectations.
-- Central component.
+- Central component and unique per system.
 
 UDS2SOVD Proxy
 
 - Exposes selected SOVD functionality via UDS for backward-compatible testers.
 - Acts as a local translation layer between UDS clients and SOVD stack.
 - Configured via ODX files to define what is exposed.
-- Central component.
+- Central component and unique per system.
 
 
 Out of scope components
