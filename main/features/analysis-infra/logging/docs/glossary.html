@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Console Output &#8212; S-CORE 0.1 documentation</title>
+    <title>Glossary &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -62,11 +62,11 @@
     <script src="../../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/analysis-infra/logging/console-output/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features/analysis-infra/logging/docs/glossary';</script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
-    <link rel="next" title="Logging API" href="../mw-log-api/index.html" />
-    <link rel="prev" title="Logging" href="../index.html" />
+    <link rel="next" title="Tracing" href="../../tracing/index.html" />
+    <link rel="prev" title="Requirements" href="requirements/mw-fr_logging_req.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -386,10 +386,12 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Analysis Infrastructure</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Logging</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Console Output</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../mw-log-api/index.html">Logging API</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../mw-fr_logging.html">Feature Request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="requirements/mw-fr_logging_req.html">Requirements</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Glossary</a></li>
 </ul>
 </details></li>
+<li class="toctree-l2"><a class="reference internal" href="../../tracing/index.html">Tracing</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../communication/index.html">Communication</a></li>
@@ -446,7 +448,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Logging</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Console Output</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Glossary</span></li>
   </ul>
 </nav>
 </div>
@@ -463,8 +465,30 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="console-output">
-<h1>Console Output<a class="headerlink" href="#console-output" title="Link to this heading">#</a></h1>
+  <section id="glossary">
+<h1>Glossary<a class="headerlink" href="#glossary" title="Link to this heading">#</a></h1>
+<dl class="simple glossary">
+<dt id="term-logging-node">logging node<a class="headerlink" href="#term-logging-node" title="Link to this term">#</a></dt><dd><p>ECU or Partition (real or virtual) which generates log messages</p>
+</dd>
+<dt id="term-DLT">DLT<a class="headerlink" href="#term-DLT" title="Link to this term">#</a></dt><dd><p>Diagnostic Log and Trace</p>
+</dd>
+<dt id="term-framework">framework<a class="headerlink" href="#term-framework" title="Link to this term">#</a></dt><dd><p>Framework is a structured and extensible foundation for developing specific types of functionality in this case, logging. It supplies a set of default behaviors and configurable options, allowing developers to tailor and extend its capabilities to meet their application and system need.</p>
+</dd>
+<dt id="term-platform">platform<a class="headerlink" href="#term-platform" title="Link to this term">#</a></dt><dd><p>Platform is the execution environment on which S-Core runs. It includes, for example, hardware (HW), operating system (OS), …</p>
+</dd>
+<dt id="term-component">component<a class="headerlink" href="#term-component" title="Link to this term">#</a></dt><dd><p>Component is a S-Core component</p>
+</dd>
+<dt id="term-log-level">log level<a class="headerlink" href="#term-log-level" title="Link to this term">#</a></dt><dd><p>Log Level is the severity of a log message, necessary to categorize logs based on their importance e.g., FATAL, ERROR, WARN, INFO, DEBUG, VERBOSE such as in DLT</p>
+</dd>
+<dt id="term-logging-entity">logging entity<a class="headerlink" href="#term-logging-entity" title="Link to this term">#</a></dt><dd><p>SW entity which generates log messages</p>
+</dd>
+<dt id="term-logging-entity-identifier">logging entity identifier<a class="headerlink" href="#term-logging-entity-identifier" title="Link to this term">#</a></dt><dd><p>unique identifier for the logging entity, e.g., ECU ID / application ID / context ID, similar to DLT.</p>
+</dd>
+<dt id="term-log-storage-strategy">log storage strategy<a class="headerlink" href="#term-log-storage-strategy" title="Link to this term">#</a></dt><dd><p>strategy to write/sync the cached log messages in the log storage location e.g., on system shutdown, on each message, on demand, on file size, on cache size, with circular or linear buffer</p>
+</dd>
+<dt id="term-QoS">QoS<a class="headerlink" href="#term-QoS" title="Link to this term">#</a></dt><dd><p>Quality of Service</p>
+</dd>
+</dl>
 </section>
 
 
@@ -478,20 +502,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../index.html"
+       href="requirements/mw-fr_logging_req.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Logging</p>
+        <p class="prev-next-title">Requirements</p>
       </div>
     </a>
     <a class="right-next"
-       href="../mw-log-api/index.html"
+       href="../../tracing/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logging API</p>
+        <p class="prev-next-title">Tracing</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -510,7 +534,7 @@
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/dummy/dummy/edit/main/docs/features/analysis-infra/logging/console-output/index.rst">
+    <a href="https://github.com/dummy/dummy/edit/main/docs/features/analysis-infra/logging/docs/glossary.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -526,7 +550,7 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../../../../_sources/features/analysis-infra/logging/console-output/index.rst.txt"
+      <li><a href="../../../../_sources/features/analysis-infra/logging/docs/glossary.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
