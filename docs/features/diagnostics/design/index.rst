@@ -84,7 +84,7 @@ The diagram below shows the concept with the three subgroups connected.
 
 The next diagram shows the concept in a distributed view to highlight components that are unique per system or per device.
 
-.. image:: _assets/score-diagnostics.drawio.svg
+.. image:: _assets/score-diagnostics-distributed.drawio.svg
    :alt: Diagnostic stack component architecture
 
 In scope components
@@ -290,7 +290,6 @@ Open Issues
 -	Evaluate publication of XML schemata to handle/convert ODX files as per ISO 22901
 -  Check if Diagnostic Fault Manager component is required at all and could be removed (how would this impact dependency of Flib to persistency and access management?)
 -  Provide sequence diagram for a use case
--  Provide requirements
 
 
 Footnotes
