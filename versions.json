@@ -24,10 +24,6 @@
     "url": "https://eclipse-score.github.io/score/pr-1125/"
   },
   {
-    "version": "pr-1133",
-    "url": "https://eclipse-score.github.io/score/pr-1133/"
-  },
-  {
     "version": "pr-1170",
     "url": "https://eclipse-score.github.io/score/pr-1170/"
   },
@@ -36,16 +32,12 @@
     "url": "https://eclipse-score.github.io/score/pr-1186/"
   },
   {
-    "version": "pr-1201",
-    "url": "https://eclipse-score.github.io/score/pr-1201/"
+    "version": "pr-1209",
+    "url": "https://eclipse-score.github.io/score/pr-1209/"
   },
   {
     "version": "pr-192",
     "url": "https://eclipse-score.github.io/score/pr-192/"
-  },
-  {
-    "version": "pr-206",
-    "url": "https://eclipse-score.github.io/score/pr-206/"
   },
   {
     "version": "pr-220",
@@ -82,9 +74,5 @@
   {
     "version": "pr-902",
     "url": "https://eclipse-score.github.io/score/pr-902/"
-  },
-  {
-    "version": "pr-1209",
-    "url": "https://eclipse-score.github.io/score/pr-1209/"
   }
 ]
