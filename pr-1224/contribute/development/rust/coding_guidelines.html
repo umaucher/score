@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
@@ -471,7 +471,7 @@
                   
   <section id="writing-rust-code">
 <h1>Writing Rust Code<a class="headerlink" href="#writing-rust-code" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-7b53af73">
+<div class="need_container docutils container" id="SNCB-e7777661">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__rust_coding_guidelines">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -515,10 +515,11 @@
 </div>
 <section id="coding-guidelines">
 <h2>Coding Guidelines<a class="headerlink" href="#coding-guidelines" title="Link to this heading">#</a></h2>
-<p>The Rust consortium has decided that there will be no official coding guidelines provided by the Rust consortium.
-However, the Rust community has a set of guidelines that are widely accepted and used.
-These guidelines can be found in the official Rust documentation and are recommended for all Rust projects.</p>
-<p><a class="reference external" href="https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines/">Safety Critical Rust Consortium</a></p>
+<p>The Safety-Critical Rust Consortium plans to develop guidelines, linters,
+libraries, static analysis tools, formal methods and language subsets to meet
+industrial and legal requirements.</p>
+<p><a class="reference external" href="https://rustfoundation.org/safety-critical-rust-consortium">Safety-Critical Rust Consortium</a></p>
+<p><a class="reference external" href="https://github.com/rustfoundation/safety-critical-rust-consortium/tree/main/subcommittee/coding-guidelines/">Safety-Critical Rust Consortium Guidelines</a></p>
 <p><a class="reference external" href="https://google.github.io/learn_unsafe_rust/">Learn unsafe Rust</a></p>
 <p><a class="reference external" href="https://doc.rust-lang.org/book/ch20-01-unsafe-rust.html">Rust language</a></p>
 </section>
@@ -543,10 +544,14 @@ These guidelines can be found in the official Rust documentation and are recomme
 </section>
 <section id="conclusions-for-s-core">
 <h1>Conclusions for S-CORE<a class="headerlink" href="#conclusions-for-s-core" title="Link to this heading">#</a></h1>
-<p>During the S-CORE project, we will not enforce any coding guidelines for Rust.
-However, we will follow the guidelines provided by the Rust community and the Rust consortium.
-We will also follow the guidelines provided by the Rust Foundation and the Safety Critical Rust Consortium.
-The adaption of these guidelines will be documented in the S-CORE project documentation.</p>
+<p>During the S-CORE project only formatting and clippy checks are enforced. Also
+the code should compile with zero warnings. Additional guidelines by the Rust
+Community, the Rust Foundation and the Safety-Critical Rust Consortium are
+applied where applicable but not enforced. If possible the usage of <cite>unsafe</cite> is
+avoided. To keep the code <cite>panic</cite>-free only APIs with a proper return value
+should be used.</p>
+<p>The adaption of these guidelines will be documented in the S-CORE project
+documentation.</p>
 </section>
 
 
