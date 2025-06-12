@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/sphinx-needs/modern.css?v=803738c0" />
@@ -453,6 +453,7 @@
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../../index.html">Persistency</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Key-Value-Storage</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
+
 <li class="toctree-l3"><a class="reference internal" href="../architecture/index.html">Feature Architecture : persistency/kvs</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">Persistency Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dfa.html">Persistency DFA</a></li>
@@ -529,7 +530,7 @@
                   
   <section id="persistency-safety-analysis">
 <h1>Persistency Safety Analysis<a class="headerlink" href="#persistency-safety-analysis" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-485708b0">
+<div class="need_container docutils container" id="SNCB-d2b0c318">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_safety_analysis">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -560,451 +561,211 @@
 <tr class="content row-odd"><td class="content" colspan="6"><div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_01</div>
 <div class="line">:failure_mode: MF_01_01</div>
-<div class="line">:failure_effect: Message is not received. User is not able to use the feature. Middleware cant be used.A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt; AoU: Detetion and error handling shall be done outside of the middleware.</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: Message is not received.</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_02</div>
 <div class="line">:failure_mode: MF_01_02</div>
-<div class="line">:failure_effect: message received too late. User might not able to use the feature. Middleware cant be used.</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt; AoU: Detetion and error handling shall be done outside of the middleware.</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message received too late.</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_03</div>
 <div class="line">:failure_mode: MF_01_03</div>
-<div class="line">:failure_effect: message received too early. No impact / feature reacts only if triggered on the trigger.</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message received too early.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: No impact / feature reacts only if triggered on the trigger.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_04</div>
 <div class="line">:failure_mode: MF_01_04</div>
-<div class="line">:failure_effect: message not received correctly by all recipients (different messages or messages partly lost). N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message not received correctly by all recipients (different messages or messages partly lost).</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Failure mode not applicable at persistency, so no mitigation is needed.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_05</div>
 <div class="line">:failure_mode: MF_01_05</div>
-<div class="line">:failure_effect: message is corrupted. Covered by MF_01_01</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message is corrupted.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Covered by MF_01_01</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_06</div>
 <div class="line">:failure_mode: MF_01_06</div>
-<div class="line">:failure_effect: message is not sent. Covered by MF_01_01</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message is not sent.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Covered by MF_01_01</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_MF_01_07</div>
 <div class="line">:failure_mode: MF_01_07</div>
-<div class="line">:failure_effect: message is unintended sent. Covered by MF_01_01</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: message is unintended sent.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Covered by MF_01_01</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_CO_01_01</div>
 <div class="line">:failure_mode: CO_01_01</div>
-<div class="line">:failure_effect: minimum constraint boundary is violated. N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: minimum constraint boundary is violated.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Failure mode not applicable at persistency, so no mitigation is needed.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_CO_01_02</div>
 <div class="line">:failure_mode: CO_01_02</div>
-<div class="line">:failure_effect: maximum constraint boundary is violated. N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: maximum constraint boundary is violated.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Failure mode not applicable at persistency, so no mitigation is needed.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_01</div>
 <div class="line">:failure_mode: EX_01_01</div>
-<div class="line">:failure_effect: Process calculates wrong result(s). Feature is not usable.</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: Process calculates wrong result(s).</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_02</div>
 <div class="line">:failure_mode: EX_01_02</div>
-<div class="line">:failure_effect: processing too slow. N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: processing too slow.</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_03</div>
 <div class="line">:failure_mode: EX_01_03</div>
-<div class="line">:failure_effect: processing too fast. N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: processing too fast.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Failure mode not applicable at persistency, so no mitigation is needed.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_04</div>
 <div class="line">:failure_mode: EX_01_04</div>
-<div class="line">:failure_effect: loss of execution.  User is not able to use the feature. Middleware cant be used.</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: loss of execution.</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_05</div>
 <div class="line">:failure_mode: EX_01_05</div>
-<div class="line">:failure_effect: processing changes to arbitrary process. N/A</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: processing changes to arbitrary process.</div>
+<div class="line">:mitigation: NONE</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: Failure mode not applicable at persistency, so no mitigation is needed.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 <div class="line-block">
 <div class="line">.. feat_saf_fmea:: Persistency</div>
 <div class="line-block">
-<div class="line">:verifies: feat_arc_sta__persistency__static</div>
-<div class="line">:id: feat_saf_FMEA__persistency__open_KVS</div>
+<div class="line">:verifies: feat_arc_dyn__persistency__check_key_default, feat_arc_dyn__persistency__delete_key, feat_arc_dyn__persistency__flush, feat_arc_dyn__persistency__read_key, feat_arc_dyn__persistency__read_from_storage, feat_arc_dyn__persistency__write_key, feat_arc_dyn__persistency__snapshot_restore</div>
+<div class="line">:id: feat_saf_FMEA__persistency_EX_01_06</div>
 <div class="line">:failure_mode: EX_01_06</div>
-<div class="line">:failure_effect: processing is not complete (infinite loop).  User is not able to use the feature. Middleware cant be used.</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_01</div>
-<div class="line">:failure_effect: message is not received</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_02</div>
-<div class="line">:failure_effect: message received too late</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_03</div>
-<div class="line">:failure_effect: message received too early</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_04</div>
-<div class="line">:failure_effect: message not received correctly by all recipients (different messages or messages partly lost)</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_05</div>
-<div class="line">:failure_effect: message is corrupted</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_06</div>
-<div class="line">:failure_effect: message is not sent</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: MF_01_07</div>
-<div class="line">:failure_effect: message is unintended sent</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: CO_01_01</div>
-<div class="line">:failure_effect: minimum constraint boundary is violated</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: CO_01_02</div>
-<div class="line">:failure_effect: maximum constraint boundary is violated</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_01</div>
-<div class="line">:failure_effect: Process calculates wrong result(s)</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_02</div>
-<div class="line">:failure_effect: processing too slow</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_03</div>
-<div class="line">:failure_effect: processing too fast</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_04</div>
-<div class="line">:failure_effect: loss of execution</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_05</div>
-<div class="line">:failure_effect: processing changes to arbitrary process</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
-</div>
-</div>
-<div class="line-block">
-<div class="line">.. feat_saf_fmea:: Persistency</div>
-<div class="line-block">
-<div class="line">:verifies: &lt;Feature architecture&gt;</div>
-<div class="line">:id: feat_saf_FMEA__persistency__&lt;Element descriptor&gt;</div>
-<div class="line">:failure_mode: EX_01_06</div>
-<div class="line">:failure_effect: processing is not complete (infinite loop)</div>
-<div class="line">:mitigation: &lt; NONE|ID from Feature Requirement&gt;</div>
-<div class="line">:mitigation_issue: &lt;ID from Issue Tracker| None if no issue needed&gt;</div>
-<div class="line">:mitigation_coverage: &lt;0..100%&gt;</div>
-<div class="line">:sufficient: &lt;yes|no&gt;</div>
-<div class="line">:argument: &lt;text to argument why mitigation is sufficient&gt;</div>
-<div class="line">:status: &lt;valid|invalid&gt;</div>
+<div class="line">:failure_effect: processing is not complete (infinite loop).</div>
+<div class="line">:mitigation: aou_req__persistency__error_handling</div>
+<div class="line">:mitigation_issue: None</div>
+<div class="line">:sufficient: yes</div>
+<div class="line">:argument: User is not able to use the feature. Middleware cant be used.</div>
+<div class="line">:status: valid</div>
 </div>
 </div>
 </td>
