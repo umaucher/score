@@ -12,20 +12,20 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-.. _contribute_contribution_request:
+.. _contribute_contribution_guideline:
 
 How to Contribute?
 ##################
 
-.. gd_guidl:: Contribution Request Guideline
-  :id: gd_guidl__contr_request_guideline
-  :status: valid
-  :tags: contribution_management
+.. document:: Contribution Guideline
+   :id: doc__contr_guideline
+   :status: valid
+   :safety: QM
 
 How we Work
 ===========
 
-At S-CORE, we believe that every contribution makes our platform stronger. Whether you're a seasoned developer or just starting out in open source, your ideas and work are warmly welcomed. We follow a structured yet flexible process rooted in our change management principles and overall lifecycle concept. For more details on our processes, feel free to explore our :ref:`general_concepts_lifecycle` and the :ref:`change_management`. And if you want to dive right into contributing, check out :ref:`what_is_a_pr` and :ref:`what_is_a_github_issue`.
+At S-CORE, we believe that every contribution makes our platform stronger. Whether you're a seasoned developer or just starting out in open source, your ideas and work are warmly welcomed. We follow a structured yet flexible process rooted in our change management principles and overall lifecycle concept. For more details on our processes, feel free to explore our `Life Cycle Concept <https://eclipse-score.github.io/process_description/main/general_concepts/score_lifecycle_concept.html>`_ and the :need:`doc__platform_change_management_plan`. And if you want to dive right into contributing, check out :ref:`what_is_a_pr` and :ref:`what_is_a_github_issue`.
 
 Feature Requests: Our Shared Roadmap
 ------------------------------------
@@ -77,7 +77,7 @@ Join Us in Building S-CORE
   Submit a contribution pitch for a specific feature request if you have a solution you'd like to share.
 
 - **Looking to Improve What's Already There?**
-  Contribute enhancements to existing implementations or get involved with one of our cross-functional teams (CFTs).
+  Contribute enhancements to existing implementations or get involved with one of our Feature Teams (FTs).
 
 We're excited to have you on board. Together, we can shape S-CORE into a platform that's not only innovative but also a joy to be a part of.
 
@@ -86,29 +86,29 @@ We're excited to have you on board. Together, we can shape S-CORE into a platfor
 What is a Pull Request (PR)?
 ============================
 
-.. gd_guidl:: Pull Request Guideline
-  :id: gd_guidl__pull_request_guideline
-  :status: valid
-  :tags: contribution_management
+.. document:: Pull Request Guideline
+   :id: doc__pull_request_guideline
+   :status: valid
+   :safety: QM
 
 A Pull Request (**PR**) is the **ONLY** way to contribute **CODE** to the *S-CORE* project.
 
 The figure below shows a simplified workflow for a PR.
 
-* The contributor (:need:`Contributor <rl__contributor>`) starts by creating a PR:  `Creating a Pull Request (Github Docs) <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_.
+* The contributor (:need:`Contributor <PROCESS_rl__contributor>`) starts by creating a PR:  `Creating a Pull Request (Github Docs) <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request>`_.
 * Required reviewers will be automatically assigned based on the contributed content (via CODEOWNERS).
-* If the content fullfils the review and acceptance criteria, a committer (:need:`Committer <rl__committer>`) will approve the *PR* and thus it can be merged.
+* If the content fullfils the review and acceptance criteria, a committer (:need:`Committer <PROCESS_rl__committer>`) will approve the *PR* and thus it can be merged.
 
 .. figure:: _assets/score_contribution_request_simple.drawio.svg
   :width: 600
   :align: center
-  :alt: Simple *PR* based contribution request workflow overview
+  :alt: Simple *PR* based contribution workflow overview
 
-  Simple *PR* based contribution request workflow overview
+  Simple *PR* based contribution workflow overview
 
-Content in general may contain features, requirements, architectural designs, modules, components, detailed designs, implementations and source code, tests, process descriptions, any documentations, guidelines, tutorials, tools, or infrastructure topics and more of the *S-CORE* project. In case of doubt or for any other input we strongly encourage to open a *GitHub Issue* (:need:`gd_guidl__issue_guideline`) first.
+Content in general may contain features, requirements, architectural designs, modules, components, detailed designs, implementations and source code, tests, process descriptions, any documentations, guidelines, tutorials, tools, or infrastructure topics and more of the *S-CORE* project. In case of doubt or for any other input we strongly encourage to open a *GitHub Issue* (:need:`doc__issue_guideline`) first.
 
-The *PR* should provide all required information of the new or changed content. Therefore the *S-CORE* project provides content specific templates, which the contributor (:need:`Contributor <rl__contributor>`) must use for his *PR* (ToDo link here to the templates overview). Templates may be *PR* templates, *GitHub Issue* templates and also additional document or work product templates.
+The *PR* should provide all required information of the new or changed content. Therefore the *S-CORE* project provides content specific templates, which the contributor (:need:`Contributor <PROCESS_rl__contributor>`) must use for his *PR* (ToDo link here to the templates overview). Templates may be *PR* templates, *GitHub Issue* templates and also additional document or work product templates.
 
 The content of any *PR* is the commit content and the description as well as the comments given in GitHub and is kept in a versioned repository, their revision history is the historical record of the PR.
 
@@ -132,33 +132,33 @@ The figure below gives an overview about all the possible steps for a *PR* until
 Create a PR
 -----------
 
-The contributor (:need:`Contributor <rl__contributor>`) creates a PR.
+The contributor (:need:`Contributor <PROCESS_rl__contributor>`) creates a PR.
 
-Reviewers will be automatically assigned (:need:`Committer <rl__committer>`) based on the contributed content (ruleset as defined by the committers). In addition several checks for the contributed content (ToDo: Link to the description of the checks) will be started.
+Reviewers will be automatically assigned (:need:`Committer <PROCESS_rl__committer>`) based on the contributed content (ruleset as defined by the committers). In addition several checks for the contributed content (ToDo: Link to the description of the checks) will be started.
 
 Review and merge a PR
 ---------------------
 
-A *PR* is reviewed with all content that adds/modifies it. As long as a *PR* requires further work by the contributor (:need:`Contributor <rl__contributor>`), the *PR* is not approved and thus not merged and further changes are requested. Once the contributor (:need:`Contributor <rl__contributor>`) considers all review comments as resolved, :need:`Contributor <rl__contributor>` can re-request a review. The committer (:need:`Committer <rl__committer>`) reviews the *PR* content according the *S-CORE* review and acceptance criteria (ToDo link here to the criteria).
-Further the contributor (:need:`Contributor <rl__contributor>`) must resolve found issues from the automated checks, if they do not pass.
+A *PR* is reviewed with all content that adds/modifies it. As long as a *PR* requires further work by the contributor (:need:`Contributor <PROCESS_rl__contributor>`), the *PR* is not approved and thus not merged and further changes are requested. Once the contributor (:need:`Contributor <PROCESS_rl__contributor>`) considers all review comments as resolved, :need:`Contributor <PROCESS_rl__contributor>` can re-request a review. The committer (:need:`Committer <PROCESS_rl__committer>`) reviews the *PR* content according the *S-CORE* review and acceptance criteria (ToDo link here to the criteria).
+Further the contributor (:need:`Contributor <PROCESS_rl__contributor>`) must resolve found issues from the automated checks, if they do not pass.
 
-As long as the *PR* does not meet the defined criteria and the checks does not pass, it will not be approved. If it does not follow the required templates, based on the provided content or the templates are not filled out properly, the committer as reviewer (:need:`Committer <rl__committer>`) will place the *PR* to the "Draft" state.
+As long as the *PR* does not meet the defined criteria and the checks does not pass, it will not be approved. If it does not follow the required templates, based on the provided content or the templates are not filled out properly, the committer as reviewer (:need:`Committer <PROCESS_rl__committer>`) will place the *PR* to the "Draft" state.
 
-It is then the responsibility of the contributor (:need:`Contributor <rl__contributor>`) to add the missing information and to re-start the contribution by placing the *PR* back for review.
+It is then the responsibility of the contributor (:need:`Contributor <PROCESS_rl__contributor>`) to add the missing information and to re-start the contribution by placing the *PR* back for review.
 
 To change from "Draft" to "Open" see `Changing the stage of a pull request (Github Docs) <https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request>`_.
 
-At any point the contributor (:need:`Contributor <rl__contributor>`) may decide not to continue with the PR, then the contributor (:need:`Contributor <rl__contributor>`) just closes the PR.
+At any point the contributor (:need:`Contributor <PROCESS_rl__contributor>`) may decide not to continue with the PR, then the contributor (:need:`Contributor <PROCESS_rl__contributor>`) just closes the PR.
 
 .. _what_is_a_github_issue:
 
 What is a GitHub Issue?
 =======================
 
-.. gd_guidl:: Issue Guideline
-  :id: gd_guidl__issue_guideline
-  :status: valid
-  :tags: contribution_management
+.. document:: Issue Guideline
+   :id: doc__issue_guideline
+   :status: valid
+   :safety: QM
 
 A *GitHub Issue* is the way to report bugs or propose improvements without knowing the solution and to request features (incl. scope changes).
 
@@ -176,3 +176,9 @@ The figure below shows options to report something.
   :alt: Reporting options overview
 
   Reporting options overview
+
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   feature_request

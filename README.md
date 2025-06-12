@@ -106,6 +106,29 @@ You can add as many tags as you like, as long as a test has at least one of the 
 *Note: In order for a test to be picked up by this it has to be marked with the tag. Read more [here](/tools/testing/pytest/README.md)
 
 
+### Test coverage for Python
+
+To generate coverage data for Python test targets, run the following command:
+```sh
+bazel coverage --combined_report=lcov //docs:score_metamodel_test
+```
+This generates a coverage file `_coverage_report.dat` in the folder `bazel-out/_coverage` for the Python test target `//docs:score_metamodel_test`.
+Replace the target to execute coverage for a different test target.
+
+You can use the tool `genhtml` to generate an HTML report as follows:
+```sh
+genhtml --ignore-errors mismatch --branch-coverage --output genhtml "$(bazel info output_path)/_coverage/_coverage_report.dat"
+```
+This generates an HTML report in the folder `genhtml` which shows both line and branch coverage. Open file `genhtml/index.html` in a browser to show the report.
+
+The tool `genhtml` is part of the `lcov` toolchain (https://github.com/linux-test-project/lcov).
+You can install it on Debian/Ubuntu system as follows:
+```sh
+sudo apt update
+sudo apt install lcov
+```
+
+
 ### Notes
 #### Output Locations
 * Bazel builds output to bazel-bin/docs/docs/_build/html.

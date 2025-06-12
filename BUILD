@@ -12,7 +12,7 @@
 # *******************************************************************************
 
 load("@score_cr_checker//:cr_checker.bzl", "copyright_checker")
-load("@score_dash_license_checker//:dash.bzl", "dash_license_checker")
+load("@score_starpls_lsp//:starpls.bzl", "setup_starpls")
 
 test_suite(
     name = "format.check",
@@ -43,8 +43,7 @@ exports_files([
     "BUILD",
 ])
 
-dash_license_checker(
-    src = "//docs:requirements_lock",
-    file_type = "requirements",
+setup_starpls(
+    name = "starpls_server",
     visibility = ["//visibility:public"],
 )
