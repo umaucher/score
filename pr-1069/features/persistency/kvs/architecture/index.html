@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Feature Architecture : persistency/kvs &#8212; S-CORE 0.1 documentation</title>
+    <title>Architecture &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -407,7 +407,7 @@
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="../index.html">Key-Value-Storage</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
 
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Feature Architecture : persistency/kvs</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Architecture</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis/fmea.html">Persistency Safety Analysis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_analysis/dfa.html">Persistency DFA</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../safety_planning/index.html">Feature Safety Planning</a></li>
@@ -464,7 +464,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Key-Value-Storage</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Feature Architecture : persistency/kvs</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Architecture</span></li>
   </ul>
 </nav>
 </div>
@@ -481,8 +481,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="feature-architecture-persistency-kvs">
-<h1>Feature Architecture : persistency/kvs<a class="headerlink" href="#feature-architecture-persistency-kvs" title="Link to this heading">#</a></h1>
+  <section id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Link to this heading">#</a></h1>
 <section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
 <ul class="simple">
@@ -509,7 +509,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </section>
 <section id="static-architecture">
 <h2>Static Architecture<a class="headerlink" href="#static-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-c6e363c4">
+<div class="need_container docutils container" id="SNCB-42238118">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_sta table" id="feat_arc_sta__persistency__static">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -560,7 +560,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </section>
 <section id="dynamic-architecture">
 <h2>Dynamic Architecture<a class="headerlink" href="#dynamic-architecture" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-01ed48d7">
+<div class="need_container docutils container" id="SNCB-4200de6a">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__check_key_default">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -607,7 +607,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-c1e906aa">
+<div class="need_container docutils container" id="SNCB-a8989119">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__delete_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -654,7 +654,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-a87ce3bd">
+<div class="need_container docutils container" id="SNCB-328544d3">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__flush">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -701,7 +701,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-b05caf38">
+<div class="need_container docutils container" id="SNCB-441aacb4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__read_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -748,7 +748,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2ef86cf2">
+<div class="need_container docutils container" id="SNCB-08202f6d">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__read_from_storage">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -795,7 +795,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2d9bdd05">
+<div class="need_container docutils container" id="SNCB-2cf823b7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__write_key">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -842,7 +842,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </table>
 </div>
 </div>
-<div class="need_container docutils container" id="SNCB-2e7d28d1">
+<div class="need_container docutils container" id="SNCB-11217c9e">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat_arc_dyn table" id="feat_arc_dyn__persistency__snapshot_restore">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -892,7 +892,7 @@ and widely supported way to store and manage key-value pairs.</p></li>
 </section>
 <section id="logical-interfaces">
 <h2>Logical Interfaces<a class="headerlink" href="#logical-interfaces" title="Link to this heading">#</a></h2>
-<div class="need_container docutils container" id="SNCB-20010906">
+<div class="need_container docutils container" id="SNCB-f59660a4">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__persistency__interface">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
