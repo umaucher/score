@@ -480,7 +480,7 @@
                   
   <section id="key-value-storage">
 <h1>Key-Value-Storage<a class="headerlink" href="#key-value-storage" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-9a3b722c">
+<div class="need_container docutils container" id="SNCB-8d25f81b">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_kvs">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -561,6 +561,13 @@ applications to store either temporary or permanent data in an easy way that
 conforms to most programming languages that provide a hash, hashmap, dictionary
 or similar data structure. Access to the KVS is possible from any support
 language through language specific interfaces.</p>
+<p>In the scope of S-CORE, an application can range from a system service to an
+end-user visible UI. The application uses the KVS as an external memory store
+to read and persist data as needed. For example, an application that controls
+the air conditioning system in a car could use the KVS to store the current
+temperature setting. When the car is started again, the application can
+retrieve the temperature setting from the persistent KVS storage, providing a
+seamless user experience by restoring the previous state.</p>
 </section>
 <section id="motivation">
 <h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
