@@ -25,29 +25,20 @@ Quality Management / Platform Quality Management Plan
 Purpose
 -------
 
-The purpose of this document is to is to define a quality strategy and an approach for the platform.
+The purpose of this document is to define a quality strategy and an approach for the platform.
 This includes an approach to providing an independent and objective assurance that work products and processes
 comply with predefined provisions and plans and that non-conformances are resolved and further prevented.
 This document includes quality assurance activities, roles and responsibilities, goals, schedule, etc. and a
-general strategy to implement a quality assurance process in this platform. The quality assurance is
+general strategy to implement quality assurance process in this platform. The quality assurance is
 ensured by automated checks and restrictions, manual checks which inculdes to proof that there is no manipulation
 of the workflows.
 
 Statement of Independence
 -------------------------
 
-There could be a conflict of interest between the project lead :need:`PROCESS_rl__project_lead` and the quality manager
-:need:`PROCESS_rl__quality_manager`, as both roles are responsible for the project. The project lead :need:`PROCESS_rl__project_lead` is responsible for
-the project and the quality manager :need:`PROCESS_rl__quality_manager` is responsible for the quality of the project.
-
-Therefore we define that the quality manager :need:`PROCESS_rl__quality_manager` only support the project with consulting. So the project itself
-shall improve the quality of the project/platform product. The combination of both shall found the best solution
-for the project. The quality report is sent to the :need:`PROCESS_rl__technical_lead` so that conflicts can be solved
-in the steering committees :need:`doc__project_mgt_plan`.
-
-The objectives and scope of the quality management, also the measures and checklists are transparent for everyone.
-So the project itself can improve the quality of the project/platform product with the support of the knowledge of
-the quality manager :need:`PROCESS_rl__quality_manager`.
+The :need:`PROCESS_rl__quality_manager` provides only support to the project with consulting them to improve the
+quality of the project/platform product. Although the quality report is also sent to the :need:`PROCESS_rl__technical_lead`,
+the :need:`PROCESS_rl__quality_manager` is independent of the delivery of the product.
 
 Objectives and scope
 --------------------
@@ -89,7 +80,7 @@ Objectives and scope
       - Platform Process audit
       - Once for every platform release or on demand
     * - 2
-      - Feature Process compliance checks
+      - Feature Process conformance checks
       - Once for every feature release
     * - 3
       - Feature Work product review
@@ -130,21 +121,21 @@ Objectives and scope
       - Feature is released as experimental
       - Ensured by the process quality and tool management, :need:`PROCESS_wp__qms_report` - Process conformance is available
     * - 3
-      - Only quality-assured project/platform work products are formaly delivered to the community
+      - Only quality-assured project/platform work products are delivered to the community
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
       - 100% of project/platform work products are quality-assured
       - Feature is released as experimental
       - Ensured by the process quality and tool management, :need:`PROCESS_wp__verification__platform_ver_report` - Work products contain the verification of the quality assurance
     * - 4
-      - Only quality-assured project/platform releases are dformaly elivered to the community
+      - Only quality-assured project/platform releases are delivered to the community
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
-      - 100% of project/platform releases formaly delivered to the community are quality-assured
+      - 100% of project/platform releases delivered to the community are quality-assured
       - Feature is released as experimental
       - Ensured by the process release management, :need:`PROCESS_wp__platform_sw_release_note` contain the verification and approval of the quality-assurance
     * - 5
       - Only quality-trained personnel are part of the :need:`PROCESS_rl__committer`
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
-      - 100% of personnel are trained
+      - 100% of personnel are trained as per committer role description in :need:`PROCESS_rl__committer`
       - None
       - Ensured by the process platform management, :need:`PROCESS_wp__training_path` contain the training material and evidences for conducted trainings
     * - 6
@@ -172,7 +163,7 @@ Objectives and scope
       - | Feature request is reviewed and accepted
       - 100%
       - None
-      - Ensured by process livecycle concept, evidences for participants available, feedback of participants documented
+      - Ensured by the process quality management, :need:`PROCESS_wp__issue_track_system` contain improvements and non-coformances with a set due date
     * - 2
       - :doc:`../requirements/stakeholder/index`
       - | All stakeholder requirements are reviewed and valid
@@ -181,12 +172,12 @@ Objectives and scope
       - None
       - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
     * - 3
-      - <wp__tool_verification_report>
+      - :need:`PROCESS_wp__tool_verification_report`
       - | All tool requirements are reviewed and valid
         | All tool requirements have bidirectional traceability to and from process requirements or guidance
       - 100%
       - None
-      - Ensured by process configuration and tool management, only verified and valid documents can be merged, review required
+      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
     * - 4
       - :need:`PROCESS_wp__requirements__feat`
       - | All feature requirements are reviewed and valid
@@ -228,7 +219,7 @@ Objectives and scope
       - | All requirements were inspected by review with inspection checklist.
       - 100%
       - None
-      - Ensured by process configuration and tool management, only verified and valid documents can be merged, review required
+      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
     * - 10
       - :need:`PROCESS_wp__feature_arch`
       - | All feature architectures are reviewed and valid
@@ -311,7 +302,7 @@ Objectives and scope
     * - 22
       - :need:`PROCESS_wp__training_path`
       - | All training material is available and valid, training planned and executed
-        | All training paths has been scheduled and executed
+        | All training paths have been scheduled and executed
       - 100%
       - None
       - Ensured by process platform management, evidences for participants available, feedback of participants documented
@@ -358,87 +349,106 @@ Objectives and scope
       - None
       - Ensured by safety management, only verified and valid documents can be merged, review required
     * - 30
-      - :need:`PROCESS_wp__platform_safety_plan`
+      - :need:`PROCESS_wp__module_safety_package`
       - All findings from work product review are resolved and reviewed. Document is valid.
       - 100%
       - None
       - Ensured by safety management, only verified and valid documents can be merged, review required
     * - 31
-      - :need:`PROCESS_wp__platform_safety_package`
+      - :need:`PROCESS_wp__platform_safety_plan`
       - All findings from work product review are resolved and reviewed. Document is valid.
       - 100%
       - None
       - Ensured by safety management, only verified and valid documents can be merged, review required
     * - 32
+      - :need:`PROCESS_wp__platform_safety_package`
+      - All findings from work product review are resolved and reviewed. Document is valid.
+      - 100%
+      - None
+      - Ensured by safety management, only verified and valid documents can be merged, review required
+    * - 33
       - :need:`PROCESS_wp__fdr_reports`
       - CMR reports (Safety Plan, Safety Case, Safety Analyses and DFA) are available and valid for every platform release.
       - 100%
       - None
       - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 33
+    * - 34
       - :need:`PROCESS_wp__audit_report`
       - Process Safety Audit report is available and valid for every platform release.
       - 100%
       - None
       - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 34
-      - :need:`PROCESS_wp__feature_dfa`
-      - | DFA on platform/feature level is available and valid.
+    * - 35
+      - :need:`PROCESS_wp__platform_feature_dfa`
+      - | DFA on platform feature level is available and valid.
         | All detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 35
+    * - 36
+      - :need:`PROCESS_wp__feature_dfa`
+      - | DFA on feature level is available and valid.
+        | All detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use.
+      - 100%
+      - None
+      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
+    * - 37
       - :need:`PROCESS_wp__sw_component_dfa`
       - | DFA on component/module level is available and valid.
         | All detection and prevention mitigations linded to Software Component Requirements or Assumptions of Use.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 36
+    * - 38
       - :need:`PROCESS_wp__module_sw_build_config`
       - | Build configuration is capable to create the SEooC Library on the reference HW, module level.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 37
+    * - 39
       - :need:`PROCESS_wp__module_safety_manual`
       - | Safety Manual for every module is available, up to date and valid.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 38
+    * - 40
       - :need:`PROCESS_wp__module_sw_release_note`
       - | All known bugs are described with a clear statement that these bugs do not lead to violation of any safety requirements or corresponding workaround measures.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 39
+    * - 41
       - :need:`PROCESS_wp__sw_development_plan`
       - | SW Development Plan is available, up to date and valid.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 40
+    * - 42
       - :need:`PROCESS_wp__verification__plan`
       - | Verification Plan is available, up to date and valid.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 41
+    * - 43
+      - :need:`PROCESS_wp__tlm_plan`
+      - | Tool Management Plan is available, up to date and valid.
+      - 100%
+      - None
+      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
+    * - 44
       - :need:`PROCESS_wp__tool_verification_report`
       - | All tool conficence levels (TCL) are determined. Appropriate qualification methods are applied.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 42
+    * - 45
       - :need:`PROCESS_wp__tailoring`
       - | Argumentation for all tailored (not needed) work products in the project is available and valid.
       - 100%
       - None
       - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 43
-      - :need: wp__qms_plan
+    * - 46
+      - :need:`PROCESS_wp__qms_plan`
       - | Quality Management Plan is available, up to date and valid
       - 100%
       - None
@@ -451,29 +461,41 @@ components are developed, and integrated for an assumed technical system, for fu
 Safety Element out of Context (SEooC).
 
 The development of the platform and its components follows the defined processes. Responsibilities for management,
-development, implementation, integration and verification are also defined in the processes.
+development, implementation, integration, and verification are also defined in the processes.
 
 The SW platform consists of features, which are based on a set of requirements and are developed in parallel.
 
 **Tailoring of quality assurance activities**
 
 * The tailoring is divided into project wide and feature specific rules.
-* Project wide tailoring is documented in <link to aspice> - this is based on the development of a SW element
+* Project wide tailoring is documented in `ASPICE 4.0 <https://eclipse-score.github.io/process_description/main/standards/aspice_40/aspice.html>`_ - this is based on the development of a SW element.
 
 3.6 Quality Management Organization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 It is the project strategy to qualify the platform or components of the platform to the appropriate international
 standards and directives. Therefore the project approach to facilitate a common culture regarding quality, safety
-and security is part of our documentation. The project will be under the Eclipse Foundation and so the
+and security is part of the documentation. The project is stewarded by the Eclipse Foundation and so the
 `Eclipse Foundation Project Handbook <https://www.eclipse.org/projects/handbook/>`_ applies.
 
 **Project Roles**
 
-The role of the :need:`PROCESS_rl__quality_manager` is defined.
+The project roles are defined in the processes and are aligned to Eclipse roles.
 
-**Critical dependencies**
+.. needtable::
+   :style: table
+   :columns: title;id;tags
+   :colwidths: 25,25,25
+   :sort: title
 
-The project has not implemented a quality management system yet. But it aims to be conformant to ASPICE 4.0,
+   results = []
+
+   for need in needs.filter_types(["role"]):
+                results.append(need)
+
+
+| **Critical dependencies**
+
+The project has not implemented a quality management system yet, but aims to be conformant to ASPICE 4.0,
 as defined in the management system. Continuous improvement is part of all processes. Improvements are handled
 in the scope of Quality Management.
 
@@ -483,35 +505,35 @@ Organization and management system is currently not mature.
 
 **Skills**
 
-The main quality related project roles are the project lead :need:`PROCESS_rl__project_lead` and the quality manager :need:`PROCESS_rl__quality_manager` and these also have to have
+The main quality related project roles are the Project Lead :need:`PROCESS_rl__project_lead` and the Quality Manager :need:`PROCESS_rl__quality_manager` and these also have to have
 the (Eclipse) committer role. As defined in `Committer Training <https://www.eclipse.org/projects/training/>`_ the
 committers are elected in a meritrocratic manner, meaning those have to show their skills and understanding of the
 project processes in several previous pull requests.
 
-As each project can adopt additional criteria for the committers election, we define that each committer has to prove
+As each project can adopt additional criteria for the committers election, S-Core defines that each committer has to prove
 his knowledge in quality SW development by:
 
-- by attending the project's ASPICE 4.0 SW management and development training
+- by attending the project's ASPICE 4.0 SW management and development training.
 
-Additionally the project repository is organized in "CODEOWNER" sections. These "CODEOWNERS" need to approve any pull
-request modifying a file in their area before it is merged. In case of quality related "CODEOWNER" sections (e.g.
+Additionally, the project repository is organized in "CODEOWNER" sections. These "CODEOWNERS" need to approve any pull
+request modifying a file in their area of responsibility before it gets merged. In case of quality related "CODEOWNER" sections (e.g.
 any documentation artefacts) the persons having "CODEOWNER" rights need to have:
 
 - At least one year of professional practice of quality related SW development (or management) relevant for the section content with demonstrable and verifiable results.
 
-The successful checking of committers and CODEOWNERS skills is ensured by the project lead :need:`PROCESS_rl__project_lead` and quality manager :need:`PROCESS_rl__quality_manager` and documented
+The successful checking of committers and CODEOWNERS skills is ensured by the project and Quality Manager :need:`PROCESS_rl__quality_manager` and documented
 in the role assignment document.
 
-.. note:: The identity of the committer by applying the GitHub digital signature mechanism will be used to confirm the authenticity of the quality manager :need:`PROCESS_rl__quality_manager` role for the approvals
+.. note:: The identity of the committer by applying the GitHub digital signature mechanism will be used to confirm the authenticity of the Quality Manager :need:`PROCESS_rl__quality_manager` role for the approvals
 
 4 Quality Management Planning
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 4.1 Quality Resources
 """"""""""""""""""""""
-A dedicated Quality Manager :need:`PROCESS_rl__quality_manager` is defined as part of the cross functional feature teams as defined in :doc:`project_management`. The Quality Manager :need:`PROCESS_rl__quality_manager`, supported by the
+A dedicated Quality Manager is defined as part of the cross functional feature teams as defined in :doc:`project_management`. The Quality Manager :need:`PROCESS_rl__quality_manager`, supported by the
 Project Lead :need:`PROCESS_rl__project_lead`, and all other stakeholders, will ensure that quality activities are actively planned, developed,
-analyzed, verified and tested and managed throughout the life cycle of the project. As all the implementation
-takes place within feature development, there is a quality manager :need:`PROCESS_rl__quality_manager` appointed in the feature development plan.
+analyzed, verified, tested, and managed throughout the life cycle of the project. As all the implementation
+takes place within feature development, there is a Quality Manager :need:`PROCESS_rl__quality_manager` appointed in the feature development plan.
 
 Resources and milestones are planned in Github Issues for all activities. There are issue templates for sagas
 (covering one feature development) and for epics (covering one development workproduct each). Resource and
@@ -523,8 +545,8 @@ The whole development and thus all work products are located in Github. The deve
 possible and follows the defined processes.
 
 - Github issues are used for planning.
-- The issue types and issue types workflows are described in the platform management plan.
-- For quality relevant issue types a ``quality`` label is used.
+- The issue types and their workflows are described in the platform management plan.
+- For quality relevant issue types the ``quality`` label is used.
 
 4.2 Quality Management Communication
 """"""""""""""""""""""""""""""""""""
@@ -538,16 +560,16 @@ Ad-hoc quality related meetings are set up for clarification topics.
 **Reporting**
 
 The quality management status is reported as defined in the platform management plan. The status report includes
-at least the defined Quality Criteria defined in this document :need:`PROCESS_wp__qms_report`.
+at least the defined Quality Criteria defined in this document.
 
 **Escalation**
 
-- Quality Manager :need:`PROCESS_rl__quality_manager` to steering committees :need:`doc__project_mgt_plan`.
+- Quality Manager :need:`PROCESS_rl__quality_manager` to steering committee documented in :need:`doc__project_mgt_plan`.
 
 **Examples for valid escalation causes are:**
 
 - Quality issues cannot be resolved on feature level or with the available resources.
-- There are conflicting points of view between the Project Lead :need:`PROCESS_rl__project_lead`, Safety Manager :need:`PROCESS_rl__safety_manager` and the Quality Manager :need:`PROCESS_rl__quality_manager`
+- There are conflicting points of view between the Project Lead :need:`PROCESS_rl__project_lead`, Safety Manager :need:`PROCESS_rl__safety_manager`, Security Manager :need:`PROCESS_rl__security_manager` and the Quality Manager :need:`PROCESS_rl__quality_manager`
 
 4.3 Quality Management Specifics
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -555,7 +577,6 @@ None
 
 4.4 Quality Management Generic workproducts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 .. list-table:: Quality related work products
         :header-rows: 1
 
@@ -566,345 +587,395 @@ None
           - Link to WP
           - WP status
 
-        * - wp__audit_report
+        * - :need:`PROCESS_wp__audit_report`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          -
-          - :need:`PROCESS_wp__audit_report`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - `#470 <https://github.com/eclipse-score/score/issues/470>`_
+          - <Link to WP>
+          - <automated>
 
-        * - wp__chm_plan
+        * - :need:`PROCESS_wp__chm_plan`
           - :need:`PROCESS_gd_guidl__change__change_request`
-          - valid
-          -
-          - :need:`PROCESS_wp__chm_plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__change__change_request')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__cmpt_request
+        * - :need:`PROCESS_wp__cmpt_request`
           - :need:`PROCESS_gd_guidl__change__change_request`
-          - valid
-          -
-          - :need:`PROCESS_wp__cmpt_request`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__change__change_request')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__component_arch
+        * - :need:`PROCESS_wp__component_arch`
           - :need:`PROCESS_gd_guidl__arch__design`
-          - valid
-          -
-          - :need:`PROCESS_wp__component_arch`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__arch__design')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__document_mgt_plan
+        * - :need:`PROCESS_wp__document_mgt_plan`
           - :need:`PROCESS_gd_guidl__documentation`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__document_mgt_plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__documentation')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__fdr_reports
+        * - :need:`PROCESS_wp__fdr_reports`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__fdr_reports`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__feat_request
+        * - :need:`PROCESS_wp__feat_request`
           - :need:`PROCESS_gd_guidl__change__change_request`
-          - valid
-          -
-          - :need:`PROCESS_wp__feat_request`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__change__change_request')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__feature_arch
+        * - :need:`PROCESS_wp__feature_arch`
           - :need:`PROCESS_gd_guidl__arch__design`
-          - valid
-          -
-          - :need:`PROCESS_wp__feature_arch`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__arch__design')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__feature_dfa
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__feature_dfa`
-          - valid
+        * - :need:`PROCESS_wp__feature_dfa`
+          - :need:`PROCESS_gd_guidl__safety_analysis`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__safety_analysis')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__feature_safety_analysis
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__feature_safety_analysis`
-          - valid
+        * - :need:`PROCESS_wp__feature_safety_analysis`
+          - :need:`PROCESS_gd_guidl__safety_analysis`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__safety_analysis')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__hsi
+        * - :need:`PROCESS_wp__hsi`
           - n/a
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__hsi`
-          - valid
+          - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__issue_track_system
+        * - :need:`PROCESS_wp__issue_track_system`
           - :need:`PROCESS_gd_guidl__change__change_request`
-          - valid
-          -
-          - :need:`PROCESS_wp__issue_track_system`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__change__change_request')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__module_safety_manual
+        * - :need:`PROCESS_wp__module_safety_manual`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__module_safety_manual`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__module_safety_package
+        * - :need:`PROCESS_wp__module_safety_package`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__module_safety_package`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__module_safety_plan
+        * - :need:`PROCESS_wp__module_safety_plan`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__module_safety_plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__platform_sw_build_config
-          -
-          -
+        * - :need:`PROCESS_wp__module_sw_release_note`
+          - :need:`PROCESS_gd_guidl__rel_management`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__rel_management')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__module_sw_release_plan`
+          - :need:`PROCESS_gd_guidl__rel_management`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__rel_management')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__platform_feature_dfa`
+          - :need:`PROCESS_gd_guidl__safety_analysis`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__safety_analysis')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__platform_safety_manual`
+          - :need:`PROCESS_gd_guidl__saf_plan_definitions`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__platform_safety_plan`
+          - :need:`PROCESS_gd_guidl__saf_plan_definitions`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__platform_safety_package`
+          - :need:`PROCESS_gd_guidl__saf_plan_definitions`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__platform_sw_build_config`
           - n/a
-          - :need:`PROCESS_wp__platform_sw_build_config`
           - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__platform_sw_release_note
-          -
-          -
-          - n/a
-          - :need:`PROCESS_wp__platform_sw_release_note`
-          - valid
+        * - :need:`PROCESS_wp__platform_sw_release_note`
+          - :need:`PROCESS_gd_guidl__rel_management`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__rel_management')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__policies
-          -
-          -
+        * - :need:`PROCESS_wp__platform_sw_release_plan`
+          - :need:`PROCESS_gd_guidl__rel_management`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__rel_management')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__policies`
           - n/a
-          - :need:`PROCESS_wp__policies`
           - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__prm_plan
+        * - :need:`PROCESS_wp__prm_plan`
           - :need:`PROCESS_gd_guidl__problem__problem`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__prm_plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__problem__problem')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - valid
-          -
-          -
+        * - :need:`PROCESS_wp__process_definition`
           - n/a
-          - :need:`PROCESS_wp__process_definition`
           - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__process_impr_report
-          - :need: gd_guidl__qlm_plan_definitions
-          - valid
+        * - :need:`PROCESS_wp__process_impr_report`
+          - :need:`PROCESS_gd_guidl__platform__mgmt_plan`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__platform__mgmt_plan')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__process_plan`
           - n/a
-          - :need: wp__process_impr_report
-          - valid
+          - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__process_plan
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__process_plan`
-          - valid
+        * - :need:`PROCESS_wp__project_mgt`
+          - :need:`PROCESS_gd_guidl__platform__mgmt_plan`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__platform__mgmt_plan')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__project_mgt
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__project_mgt`
-          - valid
+        * - :need:`PROCESS_wp__qms_plan`
+          - :need:`PROCESS_gd_guidl__qlm_plan_definitions`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__qlm_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__qms_plan
-          - :need: gd_guidl__qlm_plan_definitions
-          - valid
-          - n/a
-          - :need: wp__qms_plan
-          - valid
+        * - :need:`PROCESS_wp__qms_report`
+          - :need:`PROCESS_gd_guidl__qlm_plan_definitions`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__qlm_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__qms_report
-          - :need: gd_guidl__qlm_plan_definitions
-          - valid
-          - n/a
-          - :need: wp__qms_report
-          - valid
-
-        * - wp__requirements__comp
+        * - :need:`PROCESS_wp__requirements__comp`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__comp`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__requirements__comp_aou
+        * - :need:`PROCESS_wp__requirements__comp_aou`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__comp_aou`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__requirements__feat
+        * - :need:`PROCESS_wp__requirements__feat`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__feat`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__requirements__feat_aou
+        * - :need:`PROCESS_wp__requirements__feat_aou`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__feat_aou`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__requirements__inspect
+        * - :need:`PROCESS_wp__requirements__inspect`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__inspect`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__requirements__stkh
+        * - :need:`PROCESS_wp__requirements__stkh`
           - :need:`PROCESS_gd_guidl__req__engineering`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__requirements__stkh`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__req__engineering')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_arch_verification
+        * - :need:`PROCESS_wp__sw_arch_verification`
           - :need:`PROCESS_gd_guidl__arch__design`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_arch_verification`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__arch__design')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_component_class
+        * - :need:`PROCESS_wp__sw_component_class`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_component_class`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_component_dfa
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_component_dfa`
-          - valid
+        * - :need:`PROCESS_wp__sw_component_dfa`
+          - :need:`PROCESS_gd_guidl__safety_analysis`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__safety_analysis')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_component_safety_analysis
-          -
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_component_safety_analysis`
-          - valid
+        * - :need:`PROCESS_wp__sw_component_safety_analysis`
+          - :need:`PROCESS_gd_guidl__safety_analysis`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__safety_analysis')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_development_plan
+        * - :need:`PROCESS_wp__sw_development_plan`
           - :need:`PROCESS_gd_guidl__implementation`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_development_plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__implementation')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_implementation
+        * - :need:`PROCESS_wp__sw_implementation`
           - :need:`PROCESS_gd_guidl__implementation`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_implementation`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__implementation')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__sw_implementation_inspection
+        * - :need:`PROCESS_wp__sw_implementation_inspection`
           - :need:`PROCESS_gd_guidl__implementation`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__sw_implementation_inspection`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__implementation')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__tailoring
+        * - :need:`PROCESS_wp__tailoring`
           - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__tailoring`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__saf_plan_definitions')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__tailoring_platform
-          - :need:`PROCESS_gd_guidl__saf_plan_definitions`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__tailoring`
-          - valid
+        * - :need:`PROCESS_wp__tlm_plan`
+          - :need:`PROCESS_need_concept__tool__process`
+          - :ndf:`copy('status', need_id='PROCESS_doc_concept__tool__process')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__tool_verification
-          -
-          -
-          - n/a
-          - :need:`PROCESS_wp__tool_verification_report`
-          - valid
+        * - :need:`PROCESS_wp__tool_verification_report`
+          - :need:`PROCESS_doc_concept__tool__process`
+          - :ndf:`copy('status', need_id='PROCESS_doc_concept__tool__process')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__training_path
-          -
-          -
+        * - :need:`PROCESS_wp__training_path`
           - n/a
-          - :need:`PROCESS_wp__training_path`
           - draft
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__comp_int_test
-          - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__comp_int_test`
-          - valid
 
-        * - wp__verification__feat_int_test
+        * - :need:`PROCESS_wp__verification__comp_int_test`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__feat_int_test`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__module_ver_report
+        * - :need:`PROCESS_wp__verification__feat_int_test`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__module_ver_report`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__plan
+        * - :need:`PROCESS_wp__verification__module_ver_report`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__plan`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__platform_test
+        * - :need:`PROCESS_wp__verification__plan`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__platform_test`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__platform_ver_report
+        * - :need:`PROCESS_wp__verification__platform_test`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__platform_ver_report`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
 
-        * - wp__verification__sw_unit_test
+        * - :need:`PROCESS_wp__verification__platform_ver_report`
           - :need:`PROCESS_gd_guidl__verification_guide`
-          - valid
-          - n/a
-          - :need:`PROCESS_wp__verification__sw_unit_test`
-          - valid
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
+
+        * - :need:`PROCESS_wp__verification__sw_unit_test`
+          - :need:`PROCESS_gd_guidl__verification_guide`
+          - :ndf:`copy('status', need_id='PROCESS_gd_guidl__verification_guide')`
+          - <Link to issue>
+          - <Link to WP>
+          - <automated>
