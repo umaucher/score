@@ -30,7 +30,7 @@ This includes an approach to providing an independent and objective assurance th
 comply with predefined provisions and plans and that non-conformances are resolved and further prevented.
 This document includes quality assurance activities, roles and responsibilities, goals, schedule, etc. and a
 general strategy to implement quality assurance process in this platform. The quality assurance is
-ensured by automated checks and restrictions, manual checks which inculdes to proof that there is no manipulation
+ensured by automated checks and restrictions, manual checks which includes to proof that there is no manipulation
 of the workflows.
 
 Statement of Independence
@@ -63,7 +63,7 @@ Objectives and scope
       - ISO/SAE 21434:2021
       - 2021
     * - 4
-      - ISO PAS 8926:2024
+      - ISO PAS 8926:2024 (will be integrated into ISO 26262 3rd edition as updated part 8 clause 12)
       - 2024
 
 
@@ -143,316 +143,33 @@ Objectives and scope
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
       - 100% of the quality improvement, non-conformance issues are closed
       - None
-      - Ensured by the process quality management, :need:`PROCESS_wp__issue_track_system` contain improvments and non-coformancees
+      - Ensured by the process quality management, :need:`PROCESS_wp__issue_track_system` contain improvements and non-conformances
 
 
 3.4 Work Product Quality Goals
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. list-table:: Work Product Quality Goals
-    :header-rows: 1
+For all generated work products, the following quality goals are defined:
 
-    * - #
-      - **Work Product**
-      - **Quality Criteria**
-      - **Target value**
-      - **Allowed variation**
-      - **Metric**
-    * - 1
-      - :need:`PROCESS_wp__feat_request`
-      - | Feature request is reviewed and accepted
-      - 100%
-      - None
-      - Ensured by the process quality management, :need:`PROCESS_wp__issue_track_system` contain improvements and non-coformances with a set due date
-    * - 2
-      - :doc:`../requirements/stakeholder/index`
-      - | All stakeholder requirements are reviewed and valid
-        | All stakeholder requirements are at least satisfied by one feature requirement
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 3
-      - :need:`PROCESS_wp__tool_verification_report`
-      - | All tool requirements are reviewed and valid
-        | All tool requirements have bidirectional traceability to and from process requirements or guidance
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 4
-      - :need:`PROCESS_wp__requirements__feat`
-      - | All feature requirements are reviewed and valid
-        | All feature requirements have bidirectional traceability to and from stakeholder requirements
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 5
-      - :need:`PROCESS_wp__requirements__comp`
-      - | All component requirements are reviewed and valid
-        | All component requirements have bidirectional traceability to and from feature requirements
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 6
-      - :need:`PROCESS_wp__requirements__feat_aou`
-      - | All feature aou are reviewed and valid
-        | All feature aou have bidirectional traceability to and from feature requirements
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 7
-      - :need:`PROCESS_wp__requirements__comp_aou`
-      - | All component aou are reviewed and valid
-        | All component aou have bidirectional traceability to and from feature requirements
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 8
-      - :need:`PROCESS_wp__hsi`
-      - | Hardware and Software interaction is specified and consistent with the technical safety concept
-        | All component HW parts that are controlled by the software are included
-        | All HW resources that support the SW execution are included
-      - 100%
-      - None
-      - Ensured by quality management, only verified and valid documents can be merged, review required
-    * - 9
-      - :need:`PROCESS_wp__requirements__inspect`
-      - | All requirements were inspected by review with inspection checklist.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 10
-      - :need:`PROCESS_wp__feature_arch`
-      - | All feature architectures are reviewed and valid
-        | All feature architectures have bidirectional traceability to and from feature requirements
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid requirements can be merged, review required, script based check
-    * - 11
-      - :need:`PROCESS_wp__feature_safety_analysis`
-      - | Inductive (bottom-up) safety analysis e.g. FMEA is completed. Analysis verifies the feature architecture.
-        | All detection and prevention mitigations are linked to Software Feature Requirements or Assumptions of use.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 12
-      - :need:`PROCESS_wp__component_arch`
-      - | All component architectures are reviewed and valid
-        | All component architectures have bidirectional traceability to and from components requirements or feature architectures
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid architecture can be merged, review required, script based check
-    * - 13
-      - :need:`PROCESS_wp__sw_component_safety_analysis`
-      - | Inductive (bottom-up) safety analysis e.g. FMEA is completed. Analysis verifies the component architecture.
-        | All detection and prevention mitigations are linked to Software Component Requirements or Assumptions of use.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 14
-      - :need:`PROCESS_wp__sw_arch_verification`
-      - | Architecture verification is available and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid architecture can be merged, review required, script based check
-    * - 15
-      - :need:`PROCESS_wp__sw_implementation`
-      - | Implementation of source code has been done after creation of detailed design.
-        | SW configuration is described.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid Detailed Design and Code can be merged, verification required, script based check
-    * - 16
-      - :need:`PROCESS_wp__verification__sw_unit_test`
-      - | Detailed design is verified by unit testing.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid Detailed Design and Code can be merged, verification required, script based check
-    * - 17
-      - :need:`PROCESS_wp__sw_implementation_inspection`
-      - | Inspection is done by inspection checklist.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid Detailed Design and Code can be merged, verification required, script based check
-    * - 18
-      - :need:`PROCESS_wp__verification__feat_int_test`
-      - | All interfaces from static view and all flows from dynamic view are valid and reviewed.
-        | Performance expectations (RAM, processor usage, ..) on reference hardware are described.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid features can be merged, verification required, script based check
-    * - 19
-      - :need:`PROCESS_wp__verification__comp_int_test`
-      - | All interfaces from static view and all flows from dynamic view are valid and reviewed.
-        | Integration of units into components is based on the detailed design.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid components can be merged, verification required, script based check
-    * - 20
-      - :need:`PROCESS_wp__verification__module_ver_report`
-      - | Module verification report is available and valid for every module.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid components can be merged, verification required, script based check
-    * - 21
-      - :need:`PROCESS_wp__sw_component_class`
-      - | Software component classification is available and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid components can be merged, verification required, script based check
-    * - 22
-      - :need:`PROCESS_wp__training_path`
-      - | All training material is available and valid, training planned and executed
-        | All training paths have been scheduled and executed
-      - 100%
-      - None
-      - Ensured by process platform management, evidences for participants available, feedback of participants documented
-    * - 23
-      - :need:`PROCESS_wp__issue_track_system`
-      - All issues follow the planning strategy defined in the project/platform management plan
-      - 100%
-      - None
-      - Ensured by project management and tool management, only issues following the strategy can be part of any PR
-    * - 24
-      - :need:`PROCESS_wp__platform_mgmt`
-      - All findings from work product review are resolved anf reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by project management, only verified and valid documents can be merged, review required
-    * - 25
-      - :need:`PROCESS_wp__process_definition`
-      - All findings from platform audit are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by process management and tool management, only verified and valid documents can be merged, review required
-    * - 26
-      - :need:`PROCESS_wp__process_impr_report`
-      - Process improvement report is available and valid for every platform release.
-      - 100%
-      - None
-      - Ensured by quality management and tool management, only verified and valid documents can be merged, review required
-    * - 27
-      - :need:`PROCESS_wp__process_plan`
-      - The process strategy is defined, available and valid.
-      - 100%
-      - None
-      - Ensured by process management and tool management, only verified and valid documents can be merged, review required
-    * - 28
-      - :need:`PROCESS_wp__module_safety_plan`
-      - All findings from work product review are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 29
-      - :need:`PROCESS_wp__module_safety_package`
-      - All findings from work product review are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 30
-      - :need:`PROCESS_wp__module_safety_package`
-      - All findings from work product review are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 31
-      - :need:`PROCESS_wp__platform_safety_plan`
-      - All findings from work product review are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 32
-      - :need:`PROCESS_wp__platform_safety_package`
-      - All findings from work product review are resolved and reviewed. Document is valid.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 33
-      - :need:`PROCESS_wp__fdr_reports`
-      - CMR reports (Safety Plan, Safety Case, Safety Analyses and DFA) are available and valid for every platform release.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 34
-      - :need:`PROCESS_wp__audit_report`
-      - Process Safety Audit report is available and valid for every platform release.
-      - 100%
-      - None
-      - Ensured by safety management, only verified and valid documents can be merged, review required
-    * - 35
-      - :need:`PROCESS_wp__platform_feature_dfa`
-      - | DFA on platform feature level is available and valid.
-        | All detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 36
-      - :need:`PROCESS_wp__feature_dfa`
-      - | DFA on feature level is available and valid.
-        | All detection and prevention mitigations linked to Software Feature Requirements or Assumptions of Use.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 37
-      - :need:`PROCESS_wp__sw_component_dfa`
-      - | DFA on component/module level is available and valid.
-        | All detection and prevention mitigations linded to Software Component Requirements or Assumptions of Use.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid safety analysis can be merged, review required, script based check
-    * - 38
-      - :need:`PROCESS_wp__module_sw_build_config`
-      - | Build configuration is capable to create the SEooC Library on the reference HW, module level.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 39
-      - :need:`PROCESS_wp__module_safety_manual`
-      - | Safety Manual for every module is available, up to date and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 40
-      - :need:`PROCESS_wp__module_sw_release_note`
-      - | All known bugs are described with a clear statement that these bugs do not lead to violation of any safety requirements or corresponding workaround measures.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 41
-      - :need:`PROCESS_wp__sw_development_plan`
-      - | SW Development Plan is available, up to date and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 42
-      - :need:`PROCESS_wp__verification__plan`
-      - | Verification Plan is available, up to date and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 43
-      - :need:`PROCESS_wp__tlm_plan`
-      - | Tool Management Plan is available, up to date and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 44
-      - :need:`PROCESS_wp__tool_verification_report`
-      - | All tool conficence levels (TCL) are determined. Appropriate qualification methods are applied.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 45
-      - :need:`PROCESS_wp__tailoring`
-      - | Argumentation for all tailored (not needed) work products in the project is available and valid.
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
-    * - 46
-      - :need:`PROCESS_wp__qms_plan`
-      - | Quality Management Plan is available, up to date and valid
-      - 100%
-      - None
-      - Ensured by process configuration and tool management, only valid documents can be merged, review required, script based check
+**Quality Criteria**
+
+All work products have to be available and valid. Templates, checklists, and guidelines shall be used.
+Plans have to be up to date.
+
+The training material shall be available in the training path.
+The issues in the issue tracking system following the planning strategy.
+
+**Target value**
+
+The target value for all work products is 100%.
+
+**Allowed variation**
+
+There is no allowed variation for the work products.
+
+**Metric**
+
+The metric for the work products is ensured by the process that contains the work product. Only valid work products can be merged. Reviews are required and therefore checklists are prepared. If applicable, script based checks are implemented.
 
 3.5 Quality Management Scope
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -559,8 +276,7 @@ Ad-hoc quality related meetings are set up for clarification topics.
 
 **Reporting**
 
-The quality management status is reported as defined in the platform management plan. The status report includes
-at least the defined Quality Criteria defined in this document.
+The quality management status :need:`PROCESS_wp__qms_report` is reported as defined in the platform management plan.
 
 **Escalation**
 
