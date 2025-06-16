@@ -130,15 +130,15 @@ Objectives and scope
       - Feature is released as experimental
       - Ensured by the process quality and tool management, :need:`PROCESS_wp__qms_report` - Process conformance is available
     * - 3
-      - Only quality-assured project/platform work products are delivered to the community
+      - Only quality-assured project/platform work products are formaly delivered to the community
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
       - 100% of project/platform work products are quality-assured
       - Feature is released as experimental
       - Ensured by the process quality and tool management, :need:`PROCESS_wp__verification__platform_ver_report` - Work products contain the verification of the quality assurance
     * - 4
-      - Only quality-assured project/platform releases are delivered to the community
+      - Only quality-assured project/platform releases are dformaly elivered to the community
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
-      - 100% of project/platform releases delivered to the community are quality-assured
+      - 100% of project/platform releases formaly delivered to the community are quality-assured
       - Feature is released as experimental
       - Ensured by the process release management, :need:`PROCESS_wp__platform_sw_release_note` contain the verification and approval of the quality-assurance
     * - 5
