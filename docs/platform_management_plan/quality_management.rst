@@ -40,6 +40,11 @@ The :need:`PROCESS_rl__quality_manager` provides only support to the project wit
 quality of the project/platform product. Although the quality report is also sent to the :need:`PROCESS_rl__technical_lead`,
 the :need:`PROCESS_rl__quality_manager` is independent of the delivery of the product.
 
+  .. image:: _assets/score_project_organisation.drawio.svg
+     :width: 900
+     :alt: Project Organization
+     :align: center
+
 Objectives and scope
 --------------------
 
@@ -222,7 +227,7 @@ Organization and management system is currently not mature.
 
 **Skills**
 
-The main quality related project roles are the Project Lead :need:`PROCESS_rl__project_lead` and the Quality Manager :need:`PROCESS_rl__quality_manager` and these also have to have
+The main quality related project roles are are the Quality Manager :need:`PROCESS_rl__quality_manager` and and the Technical Lead :need:`PROCESS_rl__technical_lead`. These also have to have
 the (Eclipse) committer role. As defined in `Committer Training <https://www.eclipse.org/projects/training/>`_ the
 committers are elected in a meritrocratic manner, meaning those have to show their skills and understanding of the
 project processes in several previous pull requests.
@@ -270,7 +275,7 @@ possible and follows the defined processes.
 To exchange general information and to clarify general topics, the following communication channels are used:
 - Regular (online) meetings
 - E-Mails
-- Messager Services e.g., Slack, Microsoft Teams, Github Notifications
+- Messenger Services e.g., Slack, Microsoft Teams, Github Notifications
 
 Ad-hoc quality related meetings are set up for clarification topics.
 
