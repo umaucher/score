@@ -45,6 +45,9 @@ the :need:`PROCESS_rl__quality_manager` is independent of the delivery of the pr
      :alt: Project Organization
      :align: center
 
+In SCORE we have different Tier and OEM stakeholder involved: Every solution will be checked by the other stakeholders.
+This is another strong independent mechanism to ensure Quality.
+
 Objectives and scope
 --------------------
 
@@ -82,22 +85,22 @@ Objectives and scope
       - **Activities**
       - **Cadence**
     * - 1
-      - Platform Process audit
+      - Platform process audit
       - Once for every platform release or on demand
     * - 2
-      - Feature Process conformance checks
+      - Feature process conformance checks
       - Once for every feature release
     * - 3
-      - Feature Work product review
+      - Feature work product review
       - Once for every feature release
     * - 4
-      - Platform Release verification and approval
+      - Platform release verification and approval
       - Once for every release
     * - 5
-      - Process consulting / Quality Trainings
+      - Process consulting / Quality trainings
       - Continuously
     * - 6
-      - Process monitoring / Process Improvement
+      - Process monitoring / Process improvement
       - Continuously
 
 
@@ -114,9 +117,9 @@ Objectives and scope
       - **Allowed variation**
       - **Metric**
     * - 1
-      - One platform process audit per release
+      - One Platform process audit per release
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
-      - 100% of the platform process audit has be done for every release
+      - 100% of the Platform process audit has be done for every release
       - Delta audit allowed to achieve 100%
       - Ensured by the process process management, :need:`PROCESS_wp__process_impr_report` - Platform process audit is available
     * - 2
@@ -227,7 +230,7 @@ Organization and management system is currently not mature.
 
 **Skills**
 
-The main quality related project roles are are the Quality Manager :need:`PROCESS_rl__quality_manager` and and the Technical Lead :need:`PROCESS_rl__technical_lead`. These also have to have
+The main quality related project roles are the Quality Manager :need:`PROCESS_rl__quality_manager` and the Technical Lead :need:`PROCESS_rl__technical_lead`. These also have to have
 the (Eclipse) committer role. As defined in `Committer Training <https://www.eclipse.org/projects/training/>`_ the
 committers are elected in a meritrocratic manner, meaning those have to show their skills and understanding of the
 project processes in several previous pull requests.
@@ -239,11 +242,10 @@ his knowledge in quality SW development by:
 
 Additionally, the project repository is organized in "CODEOWNER" sections. These "CODEOWNERS" need to approve any pull
 request modifying a file in their area of responsibility before it gets merged. In case of quality related "CODEOWNER" sections (e.g.
-any documentation artefacts) the persons having "CODEOWNER" rights need to have:
+any documentation artefacts) the persons having "CODEOWNER" rights need to be qualified according to the roles description
+Quality Manager :need:`PROCESS_rl__quality_manager`.
 
-- At least one year of professional practice of quality related SW development (or management) relevant for the section content with demonstrable and verifiable results.
-
-The successful checking of committers and CODEOWNERS skills is ensured by the project and Quality Manager :need:`PROCESS_rl__quality_manager` and documented
+The successful checking of committers and CODEOWNERS skills is ensured by the Project and Quality Manager :need:`PROCESS_rl__quality_manager` and documented
 in the role assignment document.
 
 .. note:: The identity of the committer by applying the GitHub digital signature mechanism will be used to confirm the authenticity of the Quality Manager :need:`PROCESS_rl__quality_manager` role for the approvals
@@ -257,8 +259,7 @@ Project Lead :need:`PROCESS_rl__project_lead`, and all other stakeholders, will 
 analyzed, verified, tested, and managed throughout the life cycle of the project. As all the implementation
 takes place within feature development, there is a Quality Manager :need:`PROCESS_rl__quality_manager` appointed in the feature development plan.
 
-Resources and milestones are planned in Github Issues for all activities. There are issue templates for sagas
-(covering one feature development) and for epics (covering one development workproduct each). Resource and
+Resources and milestones are planned in Github Issues for all activities. Resource and
 milestone planning is done as defined in the :doc:`project_management`.
 
 **Tools**
@@ -631,7 +632,7 @@ None
           - <automated>
 
         * - :need:`PROCESS_wp__tlm_plan`
-          - :need:`PROCESS_need_concept__tool__process`
+          - :need:`PROCESS_doc_concept__tool__process`
           - :ndf:`copy('status', need_id='PROCESS_doc_concept__tool__process')`
           - <Link to issue>
           - <Link to WP>
