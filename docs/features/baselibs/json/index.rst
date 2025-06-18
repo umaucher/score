@@ -19,7 +19,7 @@ JSON-Library
    :id: doc__json
    :status: valid
    :safety: ASIL_B
-   :tags: component_request, feature_request
+   :tags: component_request
 
 
 .. toctree::
@@ -69,8 +69,8 @@ General considerations
 
 The JSON-Library should provide parsing and data conversion capabilities:
 
-:need:`feat_req__json__validation`
-:need:`feat_req__json__deserialization`
+:need:`comp_req__json__validation`
+:need:`comp_req__json__deserialization`
 
 The component should be extensible in the future in order to support conversion of user format to JSON data.
 
@@ -85,8 +85,8 @@ Further, a developer used to the programming language shall have no problems und
 It should feel natural to use.
 This includes error handling, which shall follow one of the error handling concepts of the programming language.
 
-1. :need:`feat_req__json__lang_idioms`
-2. :need:`feat_req__json__lang_infra`
+1. :need:`comp_req__json__lang_idioms`
+2. :need:`comp_req__json__lang_infra`
 
 Full testability for the public API
 ----------------------------------------
@@ -94,7 +94,7 @@ Full testability for the public API
 Our users will be required to proof certain coverage metrics, like line coverage or branch coverage.
 For them to reach full coverage, they need to be easily able to mock or fake the public API of the JSON-Library in their unit tests.
 
-:need:`feat_req__json__testability_mock_api`
+:need:`comp_req__json__testability_mock_api`
 
 Backwards Compatibility
 =======================
