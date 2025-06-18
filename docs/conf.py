@@ -16,12 +16,7 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-import os
-import sys
-
-# sys.path extension for local files is needed, because the conf.py file is not
-# executed, but imported by Sphinx
-sys.path.insert(0, ".")
+from typing import Any
 
 
 # -- Project information -----------------------------------------------------
@@ -31,10 +26,10 @@ project = "S-CORE"
 author = "S-CORE"
 release = "0.1"
 
+version = release
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-sys.path.insert(0, os.path.abspath("_tooling/extensions"))
 extensions = [
     "sphinx_design",
     "sphinx_needs",
@@ -44,6 +39,7 @@ extensions = [
     "score_draw_uml_funcs",
     "score_source_code_linker",
     "score_layout",
+    "score_header_service",
 ]
 
 exclude_patterns = [
@@ -51,8 +47,6 @@ exclude_patterns = [
     # via 'bazel build //docs:docs', as that command runs in a sandboxed environment.
     # However, when building the documentation via 'sphinx-build' or esbonio,
     # these entries are required to prevent the build from failing.
-    "bazel-*",
-    ".venv_docs",
 ]
 
 templates_path = ["_templates"]
@@ -63,9 +57,10 @@ numfig = True
 
 # -- sphinx-needs configuration --------------------------------------------
 # Setting the needs layouts
+needs_template_folder = "_templates"
+html_static_path = ["_assets"]
 needs_global_options = {"collapse": True}
-html_static_path = ["_tooling/assets", "_assets"]
-needs_string_links = {
+needs_string_links: dict[str, dict[str, Any]] = {
     "source_code_linker": {
         "regex": r"(?P<value>[^,]+)",
         "link_url": "{{value}}",
@@ -73,3 +68,5 @@ needs_string_links = {
         "options": ["source_code_link"],
     },
 }
+# This ensures all needs that are imported show up in the build 'needs.json'
+needs_builder_filter = ""

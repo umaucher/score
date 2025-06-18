@@ -11,7 +11,8 @@
 # SPDX-License-Identifier: Apache-2.0
 # *******************************************************************************
 
-load("//tools/cr_checker:cr_checker.bzl", "copyright_checker")
+load("@score_cr_checker//:cr_checker.bzl", "copyright_checker")
+load("@score_starpls_lsp//:starpls.bzl", "setup_starpls")
 
 test_suite(
     name = "format.check",
@@ -32,6 +33,8 @@ copyright_checker(
         "//:BUILD",
         "//:MODULE.bazel",
     ],
+    config = "@score_cr_checker//resources:config",
+    template = "@score_cr_checker//resources:templates",
     visibility = ["//visibility:public"],
 )
 
@@ -39,3 +42,8 @@ exports_files([
     "MODULE.bazel",
     "BUILD",
 ])
+
+setup_starpls(
+    name = "starpls_server",
+    visibility = ["//visibility:public"],
+)
