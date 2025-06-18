@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Baselibs &#8212; S-CORE 0.1 documentation</title>
+    <title>Base Libraries &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -34,15 +34,15 @@
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css?v=4ae1632d" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score.css?v=940e959b" />
     <link rel="stylesheet" type="text/css" href="../../_static/css/score_needs.css?v=e97392eb" />
-    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=7199c97b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/css/score_design.css?v=d9fd870c" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=678fb11e" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
   
   <!-- So that users can add custom icons -->
@@ -63,20 +63,13 @@
     <script src="../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'features/baselibs/index';</script>
-    <script>
-        DOCUMENTATION_OPTIONS.theme_version = '0.16.1';
-        DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://eclipse-score.github.io/score/versions.json';
-        DOCUMENTATION_OPTIONS.theme_switcher_version_match = '0.1';
-        DOCUMENTATION_OPTIONS.show_version_warning_banner =
-            false;
-        </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="JSON-Library" href="json/index.html" />
-    <link rel="prev" title="Logging API" href="../analysis-infra/logging/mw-log-api/index.html" />
+    <link rel="next" title="Requirements" href="docs/requirements/index.html" />
+    <link rel="prev" title="Tracing" href="../analysis-infra/tracing/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-  <meta name="docsearch:version" content="" />
+  <meta name="docsearch:version" content="0.1" />
   </head>
   
   
@@ -174,15 +167,15 @@
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../contribute/index.html">
-    Contribute
+  <a class="nav-link nav-internal" href="../../modules/index.html">
+    Module
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../score_releases/index.html">
-    Releases
+  <a class="nav-link nav-internal" href="../../contribute/index.html">
+    Contribute
   </a>
 </li>
 
@@ -195,8 +188,8 @@
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
 <li class=" ">
-  <a class="nav-link dropdown-item nav-internal" href="../../process/index.html">
-    Process
+  <a class="nav-link dropdown-item nav-internal" href="../../score_releases/index.html">
+    Releases
   </a>
 </li>
 
@@ -259,26 +252,6 @@
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
-      
-        <div class="navbar-item">
-<div class="version-switcher__container dropdown pst-js-only">
-  <button id="pst-version-switcher-button-2"
-    type="button"
-    class="version-switcher__button btn btn-sm dropdown-toggle"
-    data-bs-toggle="dropdown"
-    aria-haspopup="listbox"
-    aria-controls="pst-version-switcher-list-2"
-    aria-label="Version switcher list"
-  >
-    Choose version  <!-- this text may get changed later by javascript -->
-    <span class="caret"></span>
-  </button>
-  <div id="pst-version-switcher-list-2"
-    class="version-switcher__menu dropdown-menu list-group-flush py-0"
-    role="listbox" aria-labelledby="pst-version-switcher-button-2">
-    <!-- dropdown will be populated by javascript on page load -->
-  </div>
-</div></div>
       
     </div>
     
@@ -348,6 +321,13 @@
 
 
 <li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../modules/index.html">
+    Module
+  </a>
+</li>
+
+
+<li class="nav-item ">
   <a class="nav-link nav-internal" href="../../contribute/index.html">
     Contribute
   </a>
@@ -357,13 +337,6 @@
 <li class="nav-item ">
   <a class="nav-link nav-internal" href="../../score_releases/index.html">
     Releases
-  </a>
-</li>
-
-
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../../process/index.html">
-    Process
   </a>
 </li>
 
@@ -415,26 +388,6 @@
         </li>
 </ul></div>
         
-          <div class="navbar-item">
-<div class="version-switcher__container dropdown pst-js-only">
-  <button id="pst-version-switcher-button-3"
-    type="button"
-    class="version-switcher__button btn btn-sm dropdown-toggle"
-    data-bs-toggle="dropdown"
-    aria-haspopup="listbox"
-    aria-controls="pst-version-switcher-list-3"
-    aria-label="Version switcher list"
-  >
-    Choose version  <!-- this text may get changed later by javascript -->
-    <span class="caret"></span>
-  </button>
-  <div id="pst-version-switcher-list-3"
-    class="version-switcher__menu dropdown-menu list-group-flush py-0"
-    role="listbox" aria-labelledby="pst-version-switcher-button-3">
-    <!-- dropdown will be populated by javascript on page load -->
-  </div>
-</div></div>
-        
       </div>
     
   </div>
@@ -446,7 +399,8 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis-infra/index.html">Analysis Infrastructure</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Baselibs</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Base Libraries</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/requirements/index.html">Requirements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="json/index.html">JSON-Library</a></li>
 
 
@@ -507,7 +461,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Features</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Baselibs</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Base Libraries</span></li>
   </ul>
 </nav>
 </div>
@@ -524,22 +478,158 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="baselibs">
-<h1>Baselibs<a class="headerlink" href="#baselibs" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html">JSON-Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#abstract">Abstract</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#motivation">Motivation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#rationale">Rationale</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#specification">Specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#backwards-compatibility">Backwards Compatibility</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#security-impact">Security Impact</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#safety-impact">Safety Impact</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#license-impact">License Impact</a></li>
-<li class="toctree-l1"><a class="reference internal" href="json/index.html#how-to-teach-this">How to Teach This</a></li>
-</ul>
+  <section id="base-libraries">
+<span id="baselibs-feature"></span><h1>Base Libraries<a class="headerlink" href="#base-libraries" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-8d2c1f29">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__baselibs">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Base Libraries</span></span></span></div>
 </div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">feature_request</span></span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__baselibs" title="doc__baselibs">doc__baselibs</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<section id="feature-flag">
+<h2>Feature flag<a class="headerlink" href="#feature-flag" title="Link to this heading">#</a></h2>
+<p>To activate this feature, use the following feature flag:</p>
+<p><code class="docutils literal notranslate"><span class="pre">experimental_baselibs</span></code></p>
+</section>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h2>
+<p>This feature provides a set of base libraries for both C++ and Rust that can be used by S-CORE
+components.
+These libraries offer common functionality, ensuring consistent implementations, reducing code
+duplication, and promoting interoperability between components.</p>
+<p>The base libraries include utilities for bit manipulation, concurrency management, containers,
+JSON processing, filesystem operations, memory handling, OS abstraction, error handling,
+serialization, logging, and various other common utilities needed across the S-CORE system.</p>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>Base libraries are essential to ensure consistency, reduce code duplication, and improve quality
+across S-CORE components.</p>
+</section>
+<section id="rationale">
+<h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
+<p>A base library is developed only if it is required by at least two S-CORE components.
+This ensures that the effort to create and maintain a base library is justified by real,
+shared needs across the platform.</p>
+<p>Each base library may provide an API for Rust, C++, or both, depending on the requirements of
+the consuming components. When possible, a library should be implemented once in either Rust
+or C++ and provide bindings to the other language to maximize maintainability and consistency.
+However, if there are strong technical reasons (such as language-specific performance or safety
+requirements), a library may be implemented separately in both Rust and C++.</p>
+</section>
+<section id="specification">
+<h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
+<p>The base libraries feature consists of the following libraries, all of which are currently implemented in C++:</p>
+<ul class="simple">
+<li><p><strong>bitmanipulation</strong>: Utilities for bit manipulation.</p></li>
+<li><p><strong>concurrency</strong>: Provides a generic interface to execute any C++ callable in a parallel context,
+supporting various execution strategies (e.g., thread pool, timed execution), thread safety,
+interruption handling, and periodic/delayed task execution.</p></li>
+<li><p><strong>containers</strong>: Offers a <code class="docutils literal notranslate"><span class="pre">DynamicArray</span></code> (fixed-size array with dynamic construction-time size)
+and an intrusive linked list implementation conforming to the
+<a class="reference external" href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/p0406r1.html">P0406R1 proposal</a>.</p></li>
+<li><p><strong>json</strong>: JSON abstraction layer that can switch between different parsers/serializers under the hood.</p></li>
+<li><p><strong>filesystem</strong>: Filesystem manipulation library similar to <code class="docutils literal notranslate"><span class="pre">std::filesystem</span></code>.</p></li>
+<li><p><strong>futurecpp</strong>: Extends the C++14 Standard Library with features from newer C++ standards up to C++26,
+as well as selected proposals for the C++ Standard Library.</p></li>
+<li><p><strong>safecpp/aborts_upon_exception</strong>: Globally prevents creation of exception objects by calling <code class="docutils literal notranslate"><span class="pre">std::abort()</span></code>
+immediately.</p></li>
+<li><p><strong>safecpp/coverage_termination_handler</strong>: Helper library to enable collective code coverage information in
+GTest death tests.</p></li>
+<li><p><strong>safecpp/safe_math</strong>: Provides safe implementations for arithmetic and related operations for
+signed/unsigned integral types and floating point types.</p></li>
+<li><p><strong>safecpp/scoped_function</strong>: Allows developers to consciously limit when an enclosed callable
+(function) can be invoked.</p></li>
+<li><p><strong>memory</strong>: Utility library for memory handling, including an abstraction layer for shared memory.</p></li>
+<li><p><strong>os</strong>: OS Abstraction Layer (OSAL) to interface with different POSIX-like operating systems such
+as Linux and QNX.</p></li>
+<li><p><strong>result</strong>: Provides a unified approach to error handling without exceptions, conforming to C++23
+<code class="docutils literal notranslate"><span class="pre">std::expected</span></code>.</p></li>
+<li><p><strong>static_reflection_with_serialization</strong>: A header-only library for binary serialization,
+deserialization, and compile-time type reflection of heterogenuous C++ data structures with focus
+on compile-time safety and efficiency of serialization, as well as efficiency of filtering by
+content during deserialization.</p></li>
+<li><p><strong>mw::log</strong>: Logging library.</p></li>
+<li><p><strong>utils</strong>: Provides a collection of small, reusable utilities that do not fit into the other
+base libraries.</p></li>
+</ul>
+</section>
+<section id="backwards-compatibility">
+<h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
+<p>As this is a new feature, there are no backwards compatibility concerns.</p>
+</section>
+<section id="security-impact">
+<h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
+<p>Base libraries present varying security risks as vulnerabilities could affect multiple components
+simultaneously.
+Each library requires individual security impact analysis based on its functionality and usage patterns.</p>
+</section>
+<section id="safety-impact">
+<h2>Safety Impact<a class="headerlink" href="#safety-impact" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Due to wide usage of the base libraries throughout the platform, extra care is needed in design,
+implementation, and testing to minimize safety impact.</p></li>
+<li><p>Libraries are developed at various integrity levels from QM (non-safety) up to ASIL-B,
+depending on their intended use cases.</p></li>
+</ul>
+</section>
+<section id="license-impact">
+<h2>License Impact<a class="headerlink" href="#license-impact" title="Link to this heading">#</a></h2>
+<p>The base libraries are licensed under Apache License 2.0.</p>
+</section>
+<section id="how-to-teach-this">
+<h2>How to Teach This<a class="headerlink" href="#how-to-teach-this" title="Link to this heading">#</a></h2>
+<p>Each library is expected to have a user manual that includes an API reference and usage examples
+where necessary.</p>
+</section>
+<section id="rejected-ideas">
+<h2>Rejected Ideas<a class="headerlink" href="#rejected-ideas" title="Link to this heading">#</a></h2>
+<p>There are no rejected ideas related to the base libraries feature at this time.</p>
+</section>
+<section id="open-issues">
+<h2>Open Issues<a class="headerlink" href="#open-issues" title="Link to this heading">#</a></h2>
+<p>There are currently no open issues related to the base libraries feature.</p>
+</section>
 </section>
 
 
@@ -553,20 +643,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../analysis-infra/logging/mw-log-api/index.html"
+       href="../analysis-infra/tracing/index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Logging API</p>
+        <p class="prev-next-title">Tracing</p>
       </div>
     </a>
     <a class="right-next"
-       href="json/index.html"
+       href="docs/requirements/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">JSON-Library</p>
+        <p class="prev-next-title">Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -582,10 +672,33 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-flag">Feature flag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale">Rationale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backwards-compatibility">Backwards Compatibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-impact">Security Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-impact">Safety Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license-impact">License Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-teach-this">How to Teach This</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rejected-ideas">Rejected Ideas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-issues">Open Issues</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/eclipse-score/score/edit/main/docs/features/baselibs/index.rst">
+    <a href="https://github.com/dummy/dummy/edit/main/docs/features/baselibs/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -630,7 +743,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>

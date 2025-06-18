@@ -17,7 +17,7 @@
    :status: draft
    :safety: ASIL_B
    :tags: platform_management
-   :realizes: wp__verification__plan
+   :realizes: PROCESS_wp__verification__plan
 
 Software verification
 *********************
@@ -30,8 +30,8 @@ an overview by linking to other relevant sources and provide further information
 activities.
 
 Main purpose of this document is to show the objectives, approaches, and strategies that are defined to contribute to
-the overall quality of the software project. The target groups of this document are mainly :need:`rl__contributor`
-and :need:`rl__committer`.
+the overall quality of the software project. The target groups of this document are mainly :need:`PROCESS_rl__contributor`
+and :need:`PROCESS_rl__committer`.
 
 Objectives and scope
 ====================
@@ -65,13 +65,13 @@ Risks and mitigation
 --------------------
 
 Potential risks that derived from the verification activities and their respective mitigation measures are handled by
-the :doc:`risk_management`.
+the :doc:`project_management`.
 
 Schedules
 ---------
 
-The integration of software elements is driven by contribution requests and their respective
-:ref:`general_concepts_lifecycle` model. The contribution of a feature itself implies that it gets fully
+The integration of software elements is driven by change requests and their respective
+:need:`PROCESS_doc_getstrt__change__process` model. The contribution of a feature itself implies that it gets fully
 verified.
 
 Approach
@@ -96,29 +96,41 @@ automated software build at any time.
 
 The following types of integrations are applicable:
 
-#. **New software elements** get integrated according to the :need:`gd_guidl__contr_request_guideline`
+#. **New software elements** get integrated according to the :need:`doc__contr_guideline`
 #. **Fixes of defects** get integrated based on their prioritization described by the
    :doc:`problem_resolution`.
-#. **Changes** get integrated based on the :need:`wf__cr_dc_changerequest` and will follow
-   the :need:`gd_guidl__pull_request_guideline` as any other artifact.
+#. **Changes** get integrated based on the :need:`PROCESS_wf__change__cr_an_change_request` and will follow
+   the :need:`doc__pull_request_guideline` as any other artifact.
 
 Levels of integration and verification
 --------------------------------------
 
-There are the following different levels of integration (2, 3) and verification (1, 2, 3) defined:
+There are the following different levels of integration and verification defined:
 
-1. Software unit verification to verify software detailed design
-2. Software component verification to verify the integration of units to a component and also
-   the integration of smaller component(s) to a component based on
+1. Software unit (incl. detailed design) and component verification to verify the integration of
+   units to a component and also the integration of smaller component(s) to a complex component based on
 
+   #. detailed design and
    #. component architecture and
    #. component requirements
 
-3. Software feature verification to verify the integration of components to a feature based on
+2. Software feature verification to verify the integration of components to a feature based on
 
    #. feature architecture and
    #. feature requirements
 
+3. Platform testing (on reference hardware)
+
+   #. Stakeholder requirements
+
+
+  **Note:** These three levels translate to the levels of ISO 26262 part 6 clauses 9 to 11. The platform
+  testing will be executed by the integrator. S-Core project only executes tests on reference hardware.
+  These tests serve as an optional base for the integrator and will also be part of the
+  :need:`PROCESS_wp__verification__platform_ver_report`, but more on an informative character. The full scope
+  of clause 11 is tailored out accordingly for S-Core. Practically, this means S-CORE will implement
+  platform test of stakeholder requirements for demonstration, but these are not intended to completely
+  covering all stakeholder requirements.
 
 Verification Methods
 --------------------
@@ -130,7 +142,7 @@ applicable level. Another column defines if a respective method is supposed to b
 QM or ASIL B relevant.
 
 Automated test cases should contain further information about which methods have been applied. The corresponding
-guidance is given here: :need:`gd_guidl__verification_guide`. The identifier of the respective
+guidance is given here: :need:`PROCESS_gd_guidl__verification_guide`. The identifier of the respective
 method is to be used as meta data (*TestType* and *DerivationTechnique*).
 
 .. list-table:: Software verification methods (TestType)
@@ -141,55 +153,71 @@ method is to be used as meta data (*TestType* and *DerivationTechnique*).
      - Identifier
      - Applicable on level
      - Applicable for QM / ASIL B
-   * - Control Flow Analysis
-     - control-flow-analysis
-     - 1, 2, -
-     - QM & ASIL B
-   * - Data Flow Analysis
-     - data-flow-analysis
-     - 1, 2, -
-     - QM & ASIL B
-   * - Fault Injection
-     - fault-injection
-     - 1, -, -
-     - ASIL B
-   * - Inspection
-     - inspection
-     - 1, -, -
-     - ASIL B
-   * - Interface Test
-     - interface-test
-     - -, 2, 3
-     - QM & ASIL B
-   * - Requirements-based Test
-     - requirements-based
-     - -,  2, 3
-     - QM & ASIL B
-   * - Resource Usage Evaluation (only on reference environment)
-     - resource-usage
-     - -, -, 3
-     - QM & ASIL B
    * - Static Code Analysis
      - static-code-analysis
-     - 1, 2, 3
+     - 1, -, -
      - QM & ASIL B
    * - Structural Statement Coverage (Code coverage)
      - structural-statement-coverage
      - 1, -, -
-     - ASIL B
+     - QM & ASIL B
    * - Structural Branch Coverage (Code coverage)
      - structural-branch-coverage
      - 1, -, -
-     - ASIL B
+     - QM & ASIL B
    * - Walkthrough
      - walkthrough
      - 1, 2, 3
      - QM
+   * - Inspection
+     - inspection
+     - 1, 2, 3
+     - ASIL B
+   * - Interface Test
+     - interface-test
+     - 1, 2, -
+     - QM & ASIL B
+   * - Requirements-based Test
+     - requirements-based
+     - 1,  2, -
+     - QM & ASIL B
+   * - Resource Usage Evaluation (only on reference environment)
+     - resource-usage
+     - -, 2, -
+     - QM & ASIL B
+
 
 For QM software some of the methods may be executed with less rigor compared to safety-critical elements.
-These are data-flow-analysis as well as control-flow-analysis
+These may be interface testing or resource usage evaluation, in case there is an argument for
+sufficient freedom from interference with safety critical software parts.
 
-Static code analysis is part of the :need:`wp__sw_implementation`.
+Static code analysis is part of the :need:`PROCESS_wp__sw_implementation`.
+
+As an additional measure the resource usage evaluation ``resource-usage`` should also be considered
+for level 3 testing as this is the level executed also on reference hardware with the integrated
+platform. This can help to identify resource constraints on "system" level from a security and safety
+perspective.
+
+Additionally, while ``requirements-based`` testing is not mandatory to cover 100% of the stakeholder
+requirements, where demos or test cases suffice to verify stakeholder requirements the traceability
+should be established. The tailoring is also explained in the :need:`doc__platform_safety_plan`.
+
+The following test methods are optional for lower safety integrity levels, but may become required
+at higher levels:
+
+   #. Control Flow Analysis (``control-flow-analysis``):
+
+      Most beneficial for testing level 1 and 2.
+   #. Data Flow Analysis (``data-flow-analysis``):
+
+      Most beneficial for testing level 1 and 2.
+   #. Fault Injection (``fault-injection``):
+
+      Most beneficial for testing level 2.
+   #. Structural Function/Call Coverage (``struct-func-cov`` & ``struct-call-cov``)
+
+      Most beneficial for testing level 2.
+
 
 Test Derivation Methods
 ^^^^^^^^^^^^^^^^^^^^^^^
@@ -202,30 +230,24 @@ Test Derivation Methods
      - Identifier
      - Applicable on level
      - Applicable for QM / ASIL B
-   * - Analysis of Boundary Values
-     - boundary-values
-     - 1, 2, 3
-     - QM, ASIL B
-   * - Analysis of Equivalence Classes
-     - equivalence-classes
-     - 2, 3
-     - QM, ASIL B
    * - Analysis of Requirements
      - requirements-analysis
-     - 2, 3
+     - 1, 2, 3
      - QM, ASIL B
-   * - Error Guessing based on Knowledge or Experience
-     - error-guessing
-     - 2, 3
+   * - Analysis of Boundary Values
+     - boundary-values
+     - 1, 2, -
+     - ASIL B
+   * - Analysis of Equivalence Classes
+     - equivalence-classes
+     - 1, 2, -
+     - ASIL B
+   * - Fuzzy Testing (focus security)
+     - fuzz-testing
+     - 1, 2, -
      - QM, ASIL B
-   * - Random Testing
-     - monkey-testing
-     - 3
-     - QM, ASIL B
-   * - Exlporative Testing
-     - explorative-testing
-     - 2, 3
-     - QM, ASIL B
+
+The ``fuzz-testing`` should especially be taken into account to increase security of the software.
 
 For non-safety-critical(QM) software parts, you can generally reduce the rigor of the
 testing approaches, but cannot omit them completely. It may be possible to reduce the
@@ -234,6 +256,12 @@ Similar for the equivalence-classes the focus can be put on more likely classes 
 invalid classes, empty/null/zero values, system limits. Equivalence Classes should be
 supplemented by Boundary Value Analysis.
 
+The following test derivation methods are optional, but may become required at higher safety levels:
+
+   * Error Guessing derived from knowledge or experience of the contributor valid for all test levels
+     indicated by ``error-guessing`` as derivation technique.
+   * Explorative Testing (based on platform integration use cases) for feature and platform testing level
+     indicated by ``explorative-testing`` as derivation technique.
 
 Quality criteria
 ----------------
@@ -254,7 +282,7 @@ to be reached with every contribution.
      - 85%
      - 100%
    * - 2
-     - Structural Branch Coverage
+     - Structural Condition Coverage
      - 85%
      - 100%
    * - 3
@@ -283,22 +311,22 @@ Further quality goals are defined in section :doc:`quality_management`.
 Coverage of detailed design
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Beside :need:`wp__verification__comp_int_test` and :need:`wp__verification__sw_unit_test` the
+Beside :need:`PROCESS_wp__verification__comp_int_test` and :need:`PROCESS_wp__verification__sw_unit_test` the
 following aspects define the coverage of detailed design.
 
 - Statement/Branch/Path coverage as defined by their specific thresholds
 - Static analysis and Linting
-- :need:`wp__sw_implementation_inspection` for safety-critical implementation
+- :need:`PROCESS_wp__sw_implementation_inspection` for safety-critical implementation
 
 Coverage of architectural design
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Beside :need:`wp__verification__comp_int_test` and :need:`wp__verification__feat_int_test` the
+Beside :need:`PROCESS_wp__verification__comp_int_test` and :need:`PROCESS_wp__verification__feat_int_test` the
 following aspects define the coverage of the architectural design.
 
-- :need:`wp__sw_arch_verification`
-- :need:`wp__sw_component_safety_analysis` for safety-critical parts
-- :need:`wp__feature_safety_analysis` for safety-critical parts
+- :need:`PROCESS_wp__sw_arch_verification` - done by walkthrough (QM) or inspection (safety-critical parts)
+- :need:`PROCESS_wp__sw_component_safety_analysis` for safety-critical parts
+- :need:`PROCESS_wp__feature_safety_analysis` for safety-critical parts
 
 Each architectural element has at least one test case linked with attribute "fully verified" or
 multiple test cases with attribute "partially verified".
@@ -314,7 +342,7 @@ Test development
 
 The verification steps as well as the development of test cases is done along with the implementation
 of code. A full automation of tests should be achieved and the derived test cases should contain meta
-data that gives further information as defined in :ref:`verification_process_reqs`. The list of
+data that gives further information as defined in :need:`PROCESS_gd_req__link_tests`. The list of
 relevant work products is shown above (as part of the development of the product).
 
 The different environments that can be used for the test development are defined below.
@@ -322,9 +350,9 @@ The different environments that can be used for the test development are defined
 Pre-existing test cases
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-The recommendations according to the :need:`gd_guidl__verification_guide` for pre-existing test
+The recommendations according to the :need:`PROCESS_gd_guidl__verification_guide` for pre-existing test
 cases is followed. Any pre-existing test case (e.g. from OSS components) is reviewed and adopted
-to follow the :need:`gd_guidl__verification_specification` and :need:`gd_req__link_tests`.
+to follow the :need:`PROCESS_gd_guidl__verification_specification` and :need:`PROCESS_gd_req__link_tests`.
 
 Test execution and result analysis
 ----------------------------------
@@ -344,9 +372,9 @@ Work products and traceability
 
 The traceability between verification relevant work products is one of the defined objectives.
 An overall overview of the different work products and their relationship is given in project
-context - see :doc:`/process/workproducts/index`.
+context - see :need:`PROCESS_wp__verification__plan`.
 
-The work products are related to verification can be found in :ref:`verification_work_products`.
+The work products are related to verification can be found in :need:`PROCESS_wp__verification__plan`.
 
 The link between a test specification and the respective requirement or design specification is given by the
 identifier of the reference annotated to the verification specification.
@@ -358,14 +386,43 @@ Roles
 -----
 
 In general, the different roles of this project are defined within the Process documentation:
-:doc:`/process/roles/index`. The following roles are crucial to comply with the aspects defined in this
+:need:`PROCESS_rl__project_lead`. The following roles are crucial to comply with the aspects defined in this
 document:
 
-#. The :need:`rl__contributor` needs to make sure that the objectives of the software integration and verification are
+#. The :need:`PROCESS_rl__contributor` needs to make sure that the objectives of the software integration and verification are
    fulfilled when contributing to the project.
-#. The :need:`rl__committer` needs to verify that the contributor has fulfilled the expected objectives.
+#. The :need:`PROCESS_rl__committer` needs to verify that the contributor has fulfilled the expected objectives.
 
-In this way roles are followed as defined in :ref:`verification_roles`.
+In this way roles are followed as defined in :need:`PROCESS_doc_concept__verification__process`.
+
+Independence of verification
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+As there are no separated roles for a software developer and test developer with :need:`PROCESS_rl__contributor` and
+:need:`PROCESS_rl__committer` it is important to achieve independence. This is done by having different
+people responsible for the test implementation and the actual code which gets tested.
+
+The following test level fall in the responsibility of the :need:`PROCESS_rl__testing_community`:
+
+* :need:`PROCESS_wp__verification__comp_int_test`
+* :need:`PROCESS_wp__verification__feat_int_test`
+* :need:`PROCESS_wp__verification__platform_test`
+
+Still a :need:`PROCESS_rl__contributor` of one function in a component doesn't prevent them from writing tests
+for other functions they do not own.
+Independence is achieved by the establishment of :need:`PROCESS_rl__testing_community` performing reviews.
+
+The following test level fall in the responsibility of the :need:`PROCESS_rl__contributor`:
+
+* :need:`PROCESS_wp__verification__sw_unit_test`
+
+Unit tests can be the developed by the same :need:`PROCESS_rl__contributor` who also contributed the unit code.
+A level of independence is achieved as the review process demands to have a review by a :need:`PROCESS_rl__committer`
+different to the author of a Pull Request. This is also described in process requirement :need:`PROCESS_gd_req__verification_independence`.
+
+Note that, each :need:`PROCESS_rl__contributor` of the project acts in a publicly visible space where also
+others see the contribution and have the possibility to perform additional reviews independent from
+the :need:`PROCESS_rl__committer` and :need:`PROCESS_rl__testing_community`.
 
 Tools
 -----
@@ -380,10 +437,25 @@ the software test strategy and corresponding processes.
 The main build environment of the project is based on `Bazel <https://bazel.build>`__. It it used to build software
 components, documentation, and automated tests.
 
-.. rubric:: GoogleTest
+.. rubric:: GoogleTest (gtest)
 
-The software components of the project written in C++ are tested with the help of
+The software components of the project written in C++ are unit tested with the help of
 `GoogleTest <https://google.github.io/googletest/>`__.
+
+.. rubric:: gcov/gcovr
+
+The structural coverage reached by unit testing in the project is evaluated by the gcov/gcovr tool chain
+`gcovr <https://github.com/gcovr/gcovr>`__ - gcov is part of the GNU compiler collection (gcc).
+
+Note that gcov/gcovr supports several coverage metrics:
+
+- "statement" - used in S-CORE for the structural-statement-coverage method
+- "decision" - used in S-CORE for the structural-branch-coverage method
+- "branch" - used in S-CORE to support manual analysis of the code coverage if the "decision"
+  coverage is reported as "cannot be determined" by the tooling. As the "branch" coverage on target
+  is determined by the tool as object code coverage and as the compiler adds object branches for
+  fast evaluation of complex conditions in decisions, this is more than required by the
+  structural-branch-coverage method.
 
 .. rubric:: Integration Testing Framework (ITF)
 
