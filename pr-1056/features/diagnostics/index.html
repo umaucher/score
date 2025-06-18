@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Diagnostics &#8212; S-CORE 0.1 documentation</title>
+    <title>Diagnostic and Fault Management &#8212; S-CORE 0.1 documentation</title>
   
   
   
@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-needs/modern.css?v=803738c0" />
@@ -72,7 +72,7 @@
         </script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Diagnostic and Fault Management" href="design/index.html" />
+    <link rel="next" title="Requirements" href="requirements/index.html" />
     <link rel="prev" title="Roadmap" href="../communication/ipc/roadmap.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -433,8 +433,7 @@
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../analysis-infra/index.html">Analysis Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../communication/index.html">Communication</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Diagnostics</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="design/index.html">Diagnostic and Fault Management</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Diagnostic and Fault Management</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
 </ul>
 </details></li>
@@ -485,7 +484,7 @@
     
     <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Features</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Diagnostics</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Diagnostic and Fault Management</span></li>
   </ul>
 </nav>
 </div>
@@ -502,14 +501,299 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="diagnostics">
-<h1>Diagnostics<a class="headerlink" href="#diagnostics" title="Link to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="design/index.html">Diagnostic and Fault Management</a></li>
-<li class="toctree-l1"><a class="reference internal" href="requirements/index.html">Requirements</a></li>
-</ul>
+  <section id="diagnostic-and-fault-management">
+<span id="diagnostics-feature"></span><h1>Diagnostic and Fault Management<a class="headerlink" href="#diagnostic-and-fault-management" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-8528c802">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__diagnostics">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Diagnostics</span></span></span></div>
 </div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
+<div class="line"><span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">feature_request</span></span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">QM</span></span></div>
+</span></span></div>
+<div class="line"><span></span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__diagnostics" title="doc__diagnostics">doc__diagnostics</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<section id="feature-flag">
+<h2>Feature flag<a class="headerlink" href="#feature-flag" title="Link to this heading">#</a></h2>
+<p>To activate this feature, use the following feature flag:</p>
+<p><code class="docutils literal notranslate"><span class="pre">experimental_diagnostics</span></code></p>
+</section>
+<section id="abstract">
+<h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h2>
+<p>We propose adding support for Vehicle Diagnostics via Service-Oriented Vehicle Diagnostics (SOVD) within S-CORE.
+SOVD offers a service-oriented, self-descriptive interface based on standardized RESTful APIs,
+eliminating the need for manually modeling diagnostic interfaces as required in UDS.
+This significantly reduces integration overhead and simplifies the onboarding of new ECUs.
+Additionally, SOVD enables scalable, secure, and cloud-ready diagnostics with real-time fault access and
+advanced data handling across platforms. Integrating SOVD into S-CORE will enhance developer efficiency,
+improve system maintainability, and support future-proof diagnostic workflows.</p>
+<p>The intent of this feature request is to define a high-level architecture for the diagnostic system.
+The components listed throughout this document require detailed feature requests in the future respectively.</p>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
+<p>Currently there is no solution for vehicle diagnostics in S-CORE.
+Diagnostic is a core capability of automotive platform stacks and is required for various use-cases
+such as field troubleshooting, quality assurance, after sales, production, development and more.</p>
+</section>
+<section id="rationale">
+<h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
+<p>SOVD was chosen as the foundation for the diagnostic architecture because it offers a modern,
+service-oriented approach that aligns with the industry’s shift toward Ethernet-based communication and scalable software-defined vehicle platforms.
+It provides a standardized and extensible interface that enables better interoperability across ECUs, testers, and external tools.</p>
+</section>
+<section id="specification">
+<h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
+<section id="architecture">
+<h3>Architecture<a class="headerlink" href="#architecture" title="Link to this heading">#</a></h3>
+<p>The proposed concept consists of three main parts:</p>
+<ol class="arabic simple">
+<li><p>A framework agnostic library to aggregate faults and integrate the diagnostic system into S-CORE</p></li>
+<li><p>A SOVD based diagnostic system</p></li>
+<li><p>Components to interface the diagnostic system with the outside – e.g. Tester or UDS based ECUs</p></li>
+</ol>
+<p>The diagram below shows the concept with the three subgroups connected.</p>
+<img alt="Diagnostic stack component architecture" src="../../_images/score-diagnostics.drawio.svg" />
+<p>The next diagram shows the concept in a distributed view to highlight components that are unique per system or per device.</p>
+<img alt="Diagnostic stack component architecture" src="../../_images/score-diagnostics-distributed.drawio.svg" />
+</section>
+<section id="in-scope-components">
+<h3>In scope components<a class="headerlink" href="#in-scope-components" title="Link to this heading">#</a></h3>
+<p>The following components are considered in scope of this feature request.</p>
+<p>Fault Library</p>
+<ul class="simple">
+<li><p>Provides a framework agnostic interface for apps or FEO activities to report faults - called “Fault API” in the S-CORE architecture.</p></li>
+<li><p>Relays faults via IPC to central Diagnostic Fault Manager.</p></li>
+<li><p>Enables domain-specific error logic (e.g. debouncing) by exposing a configuration interface</p></li>
+<li><p>Reporting of faults additionally results in a log entry.</p></li>
+<li><p>The interface needs to be specified further but will likely include: Fault ID (FID), time, ENUM fault type (like DLT ENUMs), optional meta data.</p></li>
+<li><p>Fault lib is the base for activity specific, custom fault handling.</p></li>
+<li><p>Can and should also be used by platform components to report faults.</p></li>
+<li><p>Decentral component.</p></li>
+</ul>
+<p>Diagnostic Fault Manager</p>
+<ul class="simple">
+<li><p>Aggregates and manages diagnostic fault data from Fault libs across the system.</p></li>
+<li><p>Provides centralized fault status to the SOVD Server.</p></li>
+<li><p>Interfaces with the Diagnostic DB (persistency) to store and retrieve data.</p></li>
+<li><p>Stores (persistently) central configuration (e.g. for debouncing thresholds) which can be loaded during startup by Fault libs.</p></li>
+<li><p>Central component.</p></li>
+</ul>
+<p>Diagnostic DB</p>
+<ul class="simple">
+<li><p>Stores static and runtime diagnostic data</p></li>
+<li><p>Is considered in scope due to the domain specific data format but internally uses S-CORE::Persistency.</p></li>
+<li><p>The data format needs to be specified further but will likely include:</p></li>
+<li><p>Diagnostic Trouble Code (DTC): OEM specific code, relevant for end-user.</p></li>
+<li><p>Fault ID (FID): ECU specific ID to uniquely identify every fault.</p></li>
+<li><p>Count: occurrence count of DTC/fault.</p></li>
+<li><p>Meta data: meta data related to fault occurrence.</p></li>
+<li><p>Central component.</p></li>
+</ul>
+<p>SOVD Server</p>
+<ul class="simple">
+<li><p>Central entry point for all diagnostic requests via SOVD.</p></li>
+<li><p>Implements the SOVD API and dispatches requests to services, DB, and fault manager.</p></li>
+<li><p>Manages authentication, configuration, and data access via IPC.</p></li>
+<li><p>Central component.</p></li>
+</ul>
+<p>Service App</p>
+<ul class="simple">
+<li><p>Is a base concept to extend the system with system-specific diagnostic services/routines (e.g. DTC clear, ECU reset, Flash Master).</p></li>
+<li><p>Interfaces with the SOVD Server via IPC.</p></li>
+<li><p>Central component derived from base service app.</p></li>
+</ul>
+<p>SOVD Gateway</p>
+<ul class="simple">
+<li><p>Forwards SOVD requests to appropriate backend targets (e.g. adapters, proxies, clients).</p></li>
+<li><p>Acts as a router between clients and distributed SOVD components.</p></li>
+<li><p>Supports multi-ECU SOVD communication.</p></li>
+<li><p>Central component and unique per system.</p></li>
+</ul>
+<p>SOVD Client</p>
+<ul class="simple">
+<li><p>Off-board, on-board or cloud client that initiates diagnostics via SOVD protocol.</p></li>
+<li><p>Can be used by developers, testers, ECUs or cloud services; should be deployment agnostic.</p></li>
+<li><p>Handles access control on the client side – e.g. by providing relevant certificates.</p></li>
+<li><p>Central component - but could be deployed mutliple times (e.g. one on-baord and one off-baord).</p></li>
+</ul>
+<p>Classic Diagnostic Adapter</p>
+<ul class="simple">
+<li><p>Translates SOVD service calls to UDS commands.</p></li>
+<li><p>Enables backward compatibility with legacy ECUs that only support UDS.</p></li>
+<li><p>Configured via ODX files describing ECU-specific UDS expectations.</p></li>
+<li><p>Central component and unique per system.</p></li>
+</ul>
+<p>UDS2SOVD Proxy</p>
+<ul class="simple">
+<li><p>Exposes selected SOVD functionality via UDS for backward-compatible testers.</p></li>
+<li><p>Acts as a local translation layer between UDS clients and SOVD stack.</p></li>
+<li><p>Configured via ODX files to define what is exposed.</p></li>
+<li><p>Central component and unique per system.</p></li>
+</ul>
+</section>
+<section id="out-of-scope-components">
+<h3>Out of scope components<a class="headerlink" href="#out-of-scope-components" title="Link to this heading">#</a></h3>
+<p>The following components are out of scope for this feature request but are included for context.
+Each one is briefly described to illustrate its role within the overall system architecture and
+to highlight any resulting requirements or constraints imposed by the diagnostic system design.</p>
+<p>Logging</p>
+<ul class="simple">
+<li><p>Enables the Fault Library to log fault events.</p></li>
+<li><p>All SOVD components can interact with logging.</p></li>
+</ul>
+<p>Configuration Manager</p>
+<ul class="simple">
+<li><p>Provides configuration data to the SOVD Server (e.g. ECU layout, variant, parameters).</p></li>
+<li><p>Enables parametrization of applications.</p></li>
+</ul>
+<p>Authentication Manager</p>
+<ul class="simple">
+<li><p>Manages authentication and authorization for incoming SOVD requests.</p></li>
+<li><p>Ensures only valid users or clients can access services.</p></li>
+</ul>
+<p>Crypto</p>
+<ul class="simple">
+<li><p>Provides cryptographic services – e.g. securely store and retrieve diagnostic certificates.</p></li>
+<li><p>Used by Authentication Manager.</p></li>
+</ul>
+<p>Persistency</p>
+<ul class="simple">
+<li><p>Provides persistent data storage.</p></li>
+</ul>
+<p>Flash Service App</p>
+<ul class="simple">
+<li><p>Specialized extension of the Service App to handle ECU flashing.</p></li>
+<li><p>Provides routines for software update/bootloader access via diagnostics.</p></li>
+</ul>
+<p>Rest of Vehicle UDS</p>
+<ul class="simple">
+<li><p>Represents legacy ECUs in the vehicle that only speak UDS.</p></li>
+<li><p>Interact via the Classic Diagnostic Adapter (SOVD2UDS).</p></li>
+</ul>
+<p>Rest of Vehicle SOVD</p>
+<ul class="simple">
+<li><p>Other ECUs in the vehicle that already support SOVD natively.</p></li>
+<li><p>Can communicate directly with the SOVD Gateway.</p></li>
+</ul>
+<p>UDS Tester</p>
+<ul class="simple">
+<li><p>Traditional diagnostics tester that uses UDS protocol.</p></li>
+<li><p>Communicates with the UDS2SOVD Proxy for limited diagnostics access.</p></li>
+</ul>
+</section>
+<section id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Link to this heading">#</a></h3>
+<p>The related requirements can be found in <a class="reference internal" href="requirements/index.html"><span class="doc">Requirements</span></a>.</p>
+</section>
+</section>
+<section id="backwards-compatibility">
+<h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
+<p>UDS2SOVD Proxy and Classic Diagnostic Adapter (SOVD2UDS) ensure compatibility with legacy UDS systems.
+ODX as a standardized exchange format further ensures compatibility with proprietary diagnostic data models.</p>
+</section>
+<section id="security-impact">
+<h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
+<p>The introduction of a SOVD based diagnostic stack has significant security implications due to its capabilities and network-based communication model.
+Diagnostics inherently allow access to system information, state manipulation, coding, and software updates - all of which pose risks if accessed by unauthorized actors.
+SOVD, based on REST, includes modern security features such as HTTPS and token-based authentication,
+but also introduces a broader attack surface compared to traditional UDS, which relies on more isolated, session-based access.
+If improperly secured, diagnostic interfaces could be exploited to trigger unauthorized routines or inject malicious software.
+This may enable new threat scenarios and attack paths, particularly over external or less trusted networks.
+To mitigate these risks, the diagnostic stack shall enforce secure communication via HTTPS,
+authenticate endpoints using certificates (see architecture diagram), and implement strict access control mechanisms.
+While diagnostics do not directly impact functional safety, a successful attack could indirectly influence safety-relevant functions
+- for example by setting the system into a different state.
+Therefore, the overall security architecture must be revisited in detail to assess and mitigate potential risks introduced by the SOVD integration.</p>
+</section>
+<section id="safety-impact">
+<h2>Safety Impact<a class="headerlink" href="#safety-impact" title="Link to this heading">#</a></h2>
+<p>At this point in time no direct safety impact is foreseen. The expected ASIL level is QM.
+Configuration Management could have a safety impact but is handled in another feature request and out of scope of this document.
+As pointed out in “Security Impact”, a breach in the diagnostic system could theoretically effect safety-relevant functions
+- for example by setting the system into a different state.</p>
+</section>
+<section id="license-impact">
+<h2>License Impact<a class="headerlink" href="#license-impact" title="Link to this heading">#</a></h2>
+<p>There are no license restrictions preventing the implementation of an open-source SOVD stack at this time.
+While SOVD is currently in the ISO standardization process (ISO/DIS 17978) <a class="footnote-reference brackets" href="#s1" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>, the relevant parts - especially Part 3,
+which defines the API - are already publicly available for purchase as Draft International Standards (DIS).
+These drafts are considered stable and are typically subject only to minor editorial changes before final publication.
+As such, referencing the current DIS versions is sufficient for implementation purposes, and does not pose any legal or license-related risk.
+Once the final ISO standard is published, the delta to the current drafts is expected to be minimal and can be easily addressed.</p>
+<p>The license impact regarding publication of XML schemata to handle/convert ODX files as per ISO 22901 needs to be evaluated.</p>
+</section>
+<section id="how-to-teach-this">
+<h2>How to Teach This<a class="headerlink" href="#how-to-teach-this" title="Link to this heading">#</a></h2>
+<p>A good starting point to get an overview of SOVD is the overview pages provided by ISO <a class="footnote-reference brackets" href="#s1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and ASAM <a class="footnote-reference brackets" href="#s2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.</p>
+</section>
+<section id="rejected-ideas">
+<h2>Rejected Ideas<a class="headerlink" href="#rejected-ideas" title="Link to this heading">#</a></h2>
+<p>An UDS first based diagnostic system was considered but rejected.
+The current market trend clearly indicates the move towards SOVD.
+Additionally, there a multiple well established proprietary UDS stacks and tools available.
+Because no FOSS SOVD stack exists currently, it presents an opportunity for S-CORE to provide value and increase adoption.</p>
+</section>
+<section id="open-issues">
+<h2>Open Issues<a class="headerlink" href="#open-issues" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Interfacing concept with Autosar Adaptive Diagnostic Stack for mixed stacks and/or a transitional phase</p></li>
+<li><p>Investigate synergies between Configuration Manager and Diagnostic Fault Manager</p></li>
+<li><p>Evaluate publication of XML schemata to handle/convert ODX files as per ISO 22901</p></li>
+<li><p>Check if Diagnostic Fault Manager component is required at all and could be removed (how would this impact dependency of Flib to persistency and access management?)</p></li>
+<li><p>Provide sequence diagram for a use case</p></li>
+</ul>
+</section>
+<section id="footnotes">
+<h2>Footnotes<a class="headerlink" href="#footnotes" title="Link to this heading">#</a></h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="s1" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>)</span>
+<p>“SOVD Standard ISO/DIS 17978”, ISO, <a class="reference external" href="https://www.iso.org/standard/85133.html">https://www.iso.org/standard/85133.html</a>.</p>
+</aside>
+<aside class="footnote brackets" id="s2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>“ASAM SOVD Overview”, ASAM, <a class="reference external" href="https://www.asam.net/standards/detail/sovd">https://www.asam.net/standards/detail/sovd</a>.</p>
+</aside>
+</aside>
+</section>
 </section>
 
 
@@ -532,11 +816,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="design/index.html"
+       href="requirements/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Diagnostic and Fault Management</p>
+        <p class="prev-next-title">Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -550,6 +834,36 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#feature-flag">Feature flag</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale">Rationale</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture">Architecture</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#in-scope-components">In scope components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#out-of-scope-components">Out of scope components</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backwards-compatibility">Backwards Compatibility</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-impact">Security Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-impact">Safety Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license-impact">License Impact</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-teach-this">How to Teach This</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rejected-ideas">Rejected Ideas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-issues">Open Issues</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 
