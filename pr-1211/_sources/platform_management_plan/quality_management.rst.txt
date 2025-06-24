@@ -92,7 +92,7 @@ Objectives and scope
       - Feature process conformance checks
       - Once for every feature release
     * - 3
-      - Feature work product review
+      - Work product review
       - Once for every feature release
     * - 4
       - Platform release verification and approval
@@ -122,7 +122,7 @@ Objectives and scope
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
       - 100% of the Platform process audit has be done for every release
       - Delta audit allowed to achieve 100%
-      - Ensured by the process process management, :need:`PROCESS_wp__process_impr_report` - Platform process audit is available
+      - Ensured by the process quality management, :need:`PROCESS_wf__exe_pltprocess_audit` - Platform process audit is available
     * - 2
       - One process conformance check for every feature release
       - :need:`stkh_req__dependability__automotive_safety`, :doc:`../requirements/stakeholder/index`
