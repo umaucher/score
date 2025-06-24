@@ -88,7 +88,7 @@ async def main():
 
             summary.append(f"{month} 📅: {month_total} days - {', '.join(month_info)}")
 
-        summary_str = "\n".join(summary)
+        summary_str = "Without C++ and Rust:\n" + "\n".join(summary)
         print(f"Setting summary:\n{summary_str}")
         await client.set_project_description(6, summary_str)
 
