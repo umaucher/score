@@ -399,6 +399,7 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../../docs/index.html">Module Documents Persistency</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../json/docs/component_classification.html">Component Classification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../json/docs/index.html">Tiny JSON</a></li>
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">KVS (Key Value Store)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
@@ -472,7 +473,7 @@
                   
   <section id="dependent-failure-analysis">
 <h1>Dependent Failure Analysis<a class="headerlink" href="#dependent-failure-analysis" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-6939359e">
+<div class="need_container docutils container" id="SNCB-0dacbf1c">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__kvs_dfa">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -492,7 +493,7 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">Persistency KVS</span><span class="needs_spacer">, </span><span class="needs_data">persistencykvs</span><span class="needs_spacer">, </span><span class="needs_data">persistency</span></span></span></div>
 <div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__sw_component_dfa</span></span></div>
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
@@ -517,38 +518,7 @@
 </table>
 </div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your Component.</p>
-<ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Component</span> <span class="pre">Name</span></code> to be your Component Name</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Component Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc__</span></code> and succeeded by <code class="docutils literal notranslate"><span class="pre">_dfa</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
-</ul>
-</div>
-<section id="dependent-failure-intitiators">
-<h2>Dependent Failure Intitiators<a class="headerlink" href="#dependent-failure-intitiators" title="Link to this heading">#</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">comp_saf_dfa</span><span class="p">::</span> <span class="nt">&lt;Element descriptor&gt;</span>
-   <span class="nc">:id:</span> comp_saf_DFA__&lt;Component&gt;__&lt;Element descriptor&gt;
-   <span class="nc">:violation_id:</span> <span class="nt">&lt;ID from Dependent Failure Initiators list :need:`gd_guidl__dfi`&gt;</span>
-   <span class="nc">:violation_effect:</span> <span class="nt">&lt;Effect caused by the initiator (leading to a violation of a safety goal)&gt;</span>
-   <span class="nc">:verifies:</span> <span class="nt">&lt;ID from Component Architecture&gt;</span>
-   <span class="nc">:mitigated_by:</span> <span class="nt">&lt; NONE|ID from Component Requirement&gt;</span>
-   <span class="nc">:sufficient:</span> <span class="nt">&lt;yes|no&gt;</span>
-   <span class="nc">:argument:</span> <span class="nt">&lt;text to argument why measure is sufficient&gt;</span>
-   <span class="nc">:status:</span> <span class="nt">&lt;valid|invalid&gt;</span>
-</pre></div>
-</div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your component DFA.</p>
-<ul class="simple">
-<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">code-block</span></code></p></li>
-<li><p>Fill in all the needed information in the &lt;brackets&gt;</p></li>
-</ul>
-</div>
-</section>
+<p>Because there is no sub-components in KVS, the results of the FMEA are the same as on feature level <a class="reference internal" href="../../../../../features/persistency/kvs/safety_analysis/dfa.html#doc__persistency_dfa" title="doc__persistency_dfa"><em class="xref need">DFA (doc__persistency_dfa)</em></a>.</p>
 </section>
 
 
@@ -589,18 +559,6 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
-
-  <div class="sidebar-secondary-item">
-<div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dependent-failure-intitiators">Dependent Failure Intitiators</a></li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
 

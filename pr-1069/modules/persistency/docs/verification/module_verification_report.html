@@ -66,7 +66,7 @@
     <link rel="index" title="Index" href="../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../search.html" />
     <link rel="next" title="Release Note" href="../release/release_note.html" />
-    <link rel="prev" title="Safety Management" href="../safety_mgt/index.html" />
+    <link rel="prev" title="Safety Package Formal Review Report" href="../safety_mgt/module_safety_package_fdr.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -405,6 +405,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../release/release_note.html">Release Note</a></li>
 </ul>
 </details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../json/docs/component_classification.html">Component Classification</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../json/docs/index.html">Tiny JSON</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../kvs/docs/index.html">KVS (Key Value Store)</a></li>
 </ul>
@@ -472,21 +473,17 @@
                   
   <section id="verification-report">
 <h1>Verification Report<a class="headerlink" href="#verification-report" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Document header</p>
-</div>
-<div class="need_container docutils container" id="SNCB-abd94f47">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__module_name_verification_report">
+<div class="need_container docutils container" id="SNCB-30dd8eaa">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_verification_report">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">[Your Module Name] Verification Report</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Persistency Verification Report</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
 <div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></span></div>
 <div class="line"><span></span></div>
-<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
 </div>
 </td>
 <td class="head_right" colspan="2"><div class="needs_head_right line-block">
@@ -496,9 +493,9 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">persistency</span><span class="needs_spacer">, </span><span class="needs_data">persistencykvs</span></span></span></div>
 <div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__verification__module_ver_report</span></span></div>
-<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_D</span></span></div>
+<div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
 <div class="line"><span></span></div>
 </div>
@@ -508,7 +505,7 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__module_name_verification_report" title="doc__module_name_verification_report">doc__module_name_verification_report</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__persistency_verification_report" title="doc__persistency_verification_report">doc__persistency_verification_report</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
@@ -521,17 +518,7 @@
 </table>
 </div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your Module.</p>
-<ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">Module</span> <span class="pre">Name</span></code> to be your Module Name</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Module Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc_</span></code> and succeeded by <code class="docutils literal notranslate"><span class="pre">verification_report</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
-</ul>
-</div>
-<p>This verification report is based on the verfication plan.
+<p>This verification report is based on the verification plan.
 It covers all the components of the above stated module.</p>
 <p>Verification Report contains:</p>
 <p><strong>1. Verification Coverage</strong></p>
@@ -606,12 +593,12 @@ It covers all the components of the above stated module.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../safety_mgt/index.html"
+       href="../safety_mgt/module_safety_package_fdr.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Safety Management</p>
+        <p class="prev-next-title">Safety Package Formal Review Report</p>
       </div>
     </a>
     <a class="right-next"

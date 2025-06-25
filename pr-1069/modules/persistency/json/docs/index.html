@@ -399,10 +399,8 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../../docs/index.html">Module Documents Persistency</a></li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Tiny JSON</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="component_classification.html">Component Classification</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="component_classification.html">Component Classification</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Tiny JSON</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../kvs/docs/index.html">KVS (Key Value Store)</a></li>
 </ul>
 </div>
@@ -464,13 +462,14 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="tiny-json">
-<span id="component-persistencyjson"></span><h1>Tiny JSON<a class="headerlink" href="#tiny-json" title="Link to this heading">#</a></h1>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Document header</p>
+  <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="component_classification.html">Component Classification</a></li>
+</ul>
 </div>
-<div class="need_container docutils container" id="SNCB-ee4449fb">
+<section id="tiny-json">
+<span id="component-persistencyjson"></span><h1>Tiny JSON<a class="headerlink" href="#tiny-json" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-c9b42ac7">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistencyjson">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -490,7 +489,7 @@
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
 <div class="line"><span><span><div class="line"><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">draft</span></span></div>
-<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span></span></span></div>
+<div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">template</span><span class="needs_spacer">, </span><span class="needs_data">persistencykvs</span><span class="needs_spacer">, </span><span class="needs_data">persistency</span></span></span></div>
 <div class="line"><span class="needs_realizes"><span class="needs_label">realizes: </span><span class="needs_data">wp__cmpt_request</span></span></div>
 <div class="line"><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></div>
 </span></span></div>
@@ -515,153 +514,14 @@
 </table>
 </div>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
-<p>The above directive must be updated according to your Component.</p>
-<ul class="simple">
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">document</span></code> to be your Component Name</p></li>
-<li><p>Modify <code class="docutils literal notranslate"><span class="pre">id</span></code> to be your Component Name in upper snake case preceded by <code class="docutils literal notranslate"><span class="pre">doc__</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">status</span></code> to be <code class="docutils literal notranslate"><span class="pre">valid</span></code></p></li>
-<li><p>Adjust <code class="docutils literal notranslate"><span class="pre">safety</span></code> and <code class="docutils literal notranslate"><span class="pre">tags</span></code> according to your needs</p></li>
-</ul>
-</div>
 <section id="abstract">
 <h2>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">#</a></h2>
-<p>[A short (~200 word) description of the contribution being addressed.]</p>
-</section>
-<section id="motivation">
-<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>[Clearly explain why the existing platform/project solution is inadequate to address the topic that the CR solves.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The motivation is critical for CRs that want to change the existing components.
-It should clearly explain why the existing solution is inadequate to address the topic that the CR solves.
-Motivation may based on criteria as resource requirements, scheduling issues, risks, benefits, etc.
-CRs submissions without sufficient motivation may be rejected.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="rationale">
-<h2>Rationale<a class="headerlink" href="#rationale" title="Link to this heading">#</a></h2>
-<p>[Describe why particular design decisions were made.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The rationale should provide evidence of consensus within the community and discuss important objections or concerns raised during discussion.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="specification">
-<h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
-<p>[Describe the requirements, architecture of any new component.] or
-[Describe the change to requirements, architecture, implementation, documentation of any change request.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>A CR shall specify the component requirements as part of our platform/project.
-Thereby the <a class="external_link reference external" href="https://eclipse-score.github.io/process_description/main/process_areas/platform_management/platform_management_roles.html#rl__module_lead">PROCESS_rl__module_lead</a> will approve these requirements as part of accepting the CR (e.g. merging the PR with the CR).</p>
-</div>
-</div></blockquote>
-</section>
-<section id="backwards-compatibility">
-<h2>Backwards Compatibility<a class="headerlink" href="#backwards-compatibility" title="Link to this heading">#</a></h2>
-<p>[Describe potential impact (especially including safety and security impacts) and severity on pre-existing platform/project elements.]</p>
-</section>
-<section id="security-impact">
-<h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
-<p>[How could a malicious user take advantage of this new/modified component?]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If there are security concerns in relation to the CR, those concerns should be explicitly written out to make sure reviewers of the CR are aware of them.</p>
-</div>
-</div></blockquote>
-<p>Which security requirements are affected or has to be changed?
-Could the new/modified component enable new threat scenarios?
-Could the new/modified component enable new attack paths?
-Could the new/modified component impact functional safety?
-If applicable, which additional security measures must be implemented to mitigate the risk?</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use Security Software Critically Analysis, Vulnerability Analysis.
-[Methods will be defined later in Process area Security Analysis]</p>
-</div>
-</div></blockquote>
-</section>
-<section id="safety-impact">
-<h2>Safety Impact<a class="headerlink" href="#safety-impact" title="Link to this heading">#</a></h2>
-<p>[How could the safety be impacted by the new/modified component?]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If there are safety concerns in relation to the CR, those concerns should be explicitly written out to make sure reviewers of the CR are aware of them.</p>
-</div>
-</div></blockquote>
-<p>Which safety requirements are affected or has to be changed?
-Could the new/modified component be a potential common cause or cascading failure initiator?
-If applicable, which additional safety measures must be implemented to mitigate the risk?</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use Dependency Failure Analysis and/or Safety Software Critically Analysis.
-[Methods will be defined later in Process area Safety Analysis]</p>
-</div>
-</div></blockquote>
-<p>For new feature/component contributions:</p>
-<p>[What is the expected ASIL level?]
-[What is the expected classification of the contribution?]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use the component classification method here to classify your component, if it shall to be used in a safety context: <a class="external_link reference external" href="https://eclipse-score.github.io/process_description/main/process_areas/safety_management/guidance/template_component_classification.html#gd_temp__component_classification">PROCESS_gd_temp__component_classification</a>.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="license-impact">
-<h2>License Impact<a class="headerlink" href="#license-impact" title="Link to this heading">#</a></h2>
-<p>[How could the copyright impacted by the license of the new contribution?]</p>
-</section>
-<section id="how-to-teach-this">
-<h2>How to Teach This<a class="headerlink" href="#how-to-teach-this" title="Link to this heading">#</a></h2>
-<p>[How to teach users, new and experienced, how to apply the CR to their work.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For a CR that adds new functionality or changes behavior, it is helpful to include a section on how to teach users, new and experienced, how to apply the CR to their work.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="rejected-ideas">
-<h2>Rejected Ideas<a class="headerlink" href="#rejected-ideas" title="Link to this heading">#</a></h2>
-<p>[Why certain ideas that were brought while discussing this CR were not ultimately pursued.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Throughout the discussion of a CR, various ideas will be proposed which are not accepted.
-Those rejected ideas should be recorded along with the reasoning as to why they were rejected.
-This both helps record the thought process behind the final version of the CR as well as preventing people from bringing up the same rejected idea again in subsequent discussions.
-In a way this section can be thought of as a breakout section of the Rationale section that is focused specifically on why certain ideas were not ultimately pursued.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="open-issues">
-<h2>Open Issues<a class="headerlink" href="#open-issues" title="Link to this heading">#</a></h2>
-<p>[Any points that are still being decided/discussed.]</p>
-<blockquote>
-<div><div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>While a CR is in draft, ideas can come up which warrant further discussion.
-Those ideas should be recorded so people know that they are being thought about but do not have a concrete resolution.
-This helps make sure all issues required for the CR to be ready for consideration are complete and reduces people duplicating prior discussion.</p>
-</div>
-</div></blockquote>
-</section>
-<section id="footnotes">
-<h2>Footnotes<a class="headerlink" href="#footnotes" title="Link to this heading">#</a></h2>
-<p>[A collection of footnotes cited in the CR, and a place to list non-inline hyperlink targets.]</p>
-<div class="toctree-wrapper compound">
+<div class="line-block">
+<div class="line">The component is implemented in the module:</div>
+<div class="line"><a class="reference external" href="https://github.com/rhysd/tinyjson">Tiny JSON</a> V.2.5.1</div>
+<div class="line"><br /></div>
+<div class="line">Additional documentation considered:</div>
+<div class="line"><a class="reference external" href="https://docs.rs/tinyjson/latest/tinyjson/">Documentation for Tiny JSON</a></div>
 </div>
 </section>
 </section>
@@ -714,17 +574,6 @@ This helps make sure all issues required for the CR to be ready for consideratio
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#abstract">Abstract</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rationale">Rationale</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specification">Specification</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#backwards-compatibility">Backwards Compatibility</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#security-impact">Security Impact</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#safety-impact">Safety Impact</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#license-impact">License Impact</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-teach-this">How to Teach This</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rejected-ideas">Rejected Ideas</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-issues">Open Issues</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#footnotes">Footnotes</a></li>
 </ul>
   </nav></div>
 
