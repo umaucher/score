@@ -29,11 +29,15 @@ mock struct (often created using crates like ``mockall``) can simulate the behav
 you to test your code in isolation. The mock struct may also be provided by the provider of the API so that users do not
 need to reinvent the wheel by providing yet another mock implementation.
 
-Below you will find an example of naive coding that is difficult to test because it directly depends on a concrete
+Negative Example Of Badly Testable Code
+---------------------------------------
+
+Below you will find an example of naive coding that is difficiult to test because it directly depends on a concrete
 implementation:
 
 .. code-block:: rust
 
+    /// This struct represents the API we want to provide
     pub struct RealDataFetcher;
 
     impl RealDataFetcher {
@@ -42,6 +46,7 @@ implementation:
         }
     }
 
+    /// This struct represents the code the user writes, using the API of `RealDataFetcher`
     pub struct DataProcessor {
         fetcher: RealDataFetcher,
     }
@@ -80,8 +85,9 @@ The solution to these issues is a refactoring that extracts the API from teh imp
 a system part by means of that trait instead of a direct dependency, as above.
 
 Providing the implementation for this trait can be done in two different ways in Rust: Static dispatch by means of generic
-parameters or dynamic dispatch by handing over references to trait objects. The following paragraphs will give examples
-for both methods.
+parameters or dynamic dispatch by handing over references to trait objects. These references can either be Rust
+references that introduce lifetimes, or smart pointers like ``Box`` or ``Rc``. The following paragraphs will give
+examples for both methods.
 
 Positive Example: Mockable Code with Static Dispatch
 ----------------------------------------------------
@@ -153,7 +159,7 @@ Here’s an example using dynamic dispatch with a ``&mut dyn`` reference:
 
 .. code-block:: rust
 
-   #[cfg_attr(test, mockall::automock)]
+    #[cfg_attr(test, mockall::automock)]
     pub trait DataFetcher {
         fn fetch_data(&self, key: &str) -> String;
     }
@@ -209,35 +215,29 @@ Here’s an example using dynamic dispatch with a ``&mut dyn`` reference:
 Pros and Cons of Static vs Dynamic Dispatch
 -------------------------------------------
 
-**Static Dispatch:**
+On API user side, one needs to decide whether to use generics or trait objects to enable dependency injection to make
+the code testable. Dependecy injection via trait objects is only possible if the methods and traits that the code wants
+to use are
+`dyn compatible <https://doc.rust-lang.org/reference/items/traits.html#r-items.traits.dyn-compatible.intro>`__. Here
+are the pros of each method to help you decide what to choose:
 
-* **Pros:**
+**Static Dispatch pros:**
 
-  * Compile-time type checking ensures safety and performance.
-  * No runtime overhead for method calls.
-  * Easier to optimize by the compiler.
+* No runtime overhead for method calls.
+* Easier to optimize by the compiler.
+* Ownership can be moved without the need for dynamic allocation. This will lead to less lifetime issues.
 
-* **Cons:**
+**Dynamic dispatch pros:**
 
-  * Requires generics, which can increase code complexity and binary size.
-  * May lead to code duplication if many types implement the same trait.
-
-**Dynamic Dispatch:**
-
-* **Pros:**
-
-  * Allows runtime polymorphism, making the code more flexible.
-  * Avoids generics, reducing code complexity and binary size.
-
-* **Cons:**
-
-  * Slight runtime overhead due to vtable lookups.
-  * Less compile-time type safety compared to static dispatch.
+* Dynamic dispatch doesn't need generics, which tend to make the code more complex and have a "viral" effect,
+  propagating the generic bounds to code using the API.
+* Shorter compile times.
+* Smaller binary size.
 
 Conclusion
 ----------
 
 By designing APIs around traits, you can create mockable Rust code that is easier to test and maintain. Both static and
-dynamic dispatch have their use cases, and the choice depends on the specific requirements of your project. Static
-dispatch is ideal for performance-critical applications, while dynamic dispatch offers flexibility and simplicity. Avoid
+dynamic dispatch have their use cases, and the choice depends on the specific situations where the API gets used. Static
+dispatch is ideal for performance-critical parts, while dynamic dispatch offers flexibility and simplicity. Avoid
 direct dependencies on concrete implementations to prevent testing difficulties and tightly coupled code.
