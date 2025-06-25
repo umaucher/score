@@ -38,9 +38,9 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-data-viewer/jsonview.bundle.css?v=f6ef2277" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/libs/html/datatables.min.css?v=4b4fd840" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_links.css?v=2150a916" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/needstable.css?v=5e1b6797" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_style.css?v=92936fa5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
@@ -397,6 +397,7 @@
 
 
 
+
 </ul>
 </details></li>
 <li class="toctree-l2"><a class="reference internal" href="../python/index.html">Python</a></li>
@@ -471,7 +472,7 @@
                   
   <section id="writing-rust-code">
 <h1>Writing Rust Code<a class="headerlink" href="#writing-rust-code" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-1e9c09cc">
+<div class="need_container docutils container" id="SNCB-afa2ea43">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__rust_coding_guidelines">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -550,7 +551,7 @@ developed, others remain under evaluation or are not yet accessible.</p>
 </section>
 <section id="explanation-of-ara-applications-in-rust">
 <h1>Explanation of ARA Applications in Rust<a class="headerlink" href="#explanation-of-ara-applications-in-rust" title="Link to this heading">#</a></h1>
-<p>AUTOSAR also shares a public availabe document that explains how to use Rust in
+<p>AUTOSAR also shares a public available document that explains how to use Rust in
 ARA applications as Rust is offering safety and performance advantages. While
 ecosystem support is still maturing, Rust-based ARA applications can lead to
 safer, more reliable automotive software, especially in safety-critical and
@@ -582,13 +583,20 @@ to catch issues that the standard compiler might miss, making it an essential
 tool for writing clean, idiomatic, and efficient Rust code.</p>
 <p><a class="reference external" href="https://github.com/rustfoundation/safety-critical-rust-coding-guidelines/issues/78/">Link to Clippy</a></p>
 </section>
+<section id="link-to-miri">
+<h1>Link to Miri<a class="headerlink" href="#link-to-miri" title="Link to this heading">#</a></h1>
+<p>Miri is an Undefined Behavior detection tool for Rust. It can run binaries
+and test suites of cargo projects and detect unsafe code that fails to
+uphold its safety requirements.</p>
+<p><a class="reference external" href="https://github.com/rust-lang/miri">Link to Miri</a></p>
+</section>
 <section id="conclusions-for-s-core">
 <h1>Conclusions for S-CORE<a class="headerlink" href="#conclusions-for-s-core" title="Link to this heading">#</a></h1>
-<p>During the S-CORE project only formatting and clippy checks are enforced. Also
-the code should compile with zero warnings. Additional guidelines by the Rust
-Community, the Rust Foundation and the Safety-Critical Rust Consortium are
-applied where applicable but not enforced. If possible the usage of <cite>unsafe</cite> is
-avoided. To keep the code <cite>panic</cite>-free only APIs with a proper return value
+<p>During the S-CORE project formatting and clippy checks are enforced. Miri can
+be used to detect undefined behaviors. Also the code should compile with zero warnings.
+Additional guidelines by the Rust Community, the Rust Foundation and the Safety-Critical
+Rust Consortium are applied where applicable but not enforced. If possible the usage
+of <cite>unsafe</cite> is avoided. To keep the code <cite>panic</cite>-free only APIs with a proper return value
 should be used.</p>
 <p>The adaption of these guidelines will be documented in the S-CORE project
 documentation.</p>
@@ -649,6 +657,7 @@ documentation.</p>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#explanation-of-ara-applications-in-rust">Explanation of ARA Applications in Rust</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#misra-vs-cert">MISRA vs Cert</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#link-to-clippy">Link to Clippy</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#link-to-miri">Link to Miri</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions-for-s-core">Conclusions for S-CORE</a></li>
 </ul>
 
