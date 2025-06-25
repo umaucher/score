@@ -35,7 +35,7 @@ Creation of Feature Request
 1. As the very first step, you will need to become an official contributor, as described in
 `Actions to Ensure Proper Contribution  <https://eclipse-score.github.io/score/main/contribute/general/contribution_attribution.html#contribution-attribution>`_
 
-1. Afterwards you will be able to create a GitHub Issue in the main `score repository <https://github.com/eclipse-score>`_
+2. Afterwards you will be able to create a GitHub Issue in the main `score repository <https://github.com/eclipse-score>`_
 and mark it
 
 * with label *feature_request* if you want to propose a new feature, or
