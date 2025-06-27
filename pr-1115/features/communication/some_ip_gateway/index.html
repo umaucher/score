@@ -481,7 +481,7 @@
                   
   <section id="some-ip-gateway">
 <span id="some-ip-gateway-feature"></span><h1>SOME/IP-Gateway<a class="headerlink" href="#some-ip-gateway" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-71aeb9b9">
+<div class="need_container docutils container" id="SNCB-dd747bde">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__some_ip_gateway">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -561,12 +561,21 @@ to adapt the communication, but also to translate data between the two communica
 acting as a SOME/IP service fulfilling all SOME/IP requirements and defined communication. Between these two contexts developers shall be able to create signal or data mappings and
 translate the different data-types and representations of the two contexts.</p>
 <p>The SOME/IP side shall, where possible, use an existing SOME/IP stack that is fully compatible and complying with the SOME/IP specification from AUTOSAR Adaptive.</p>
+<dl class="simple">
+<dt>This module shall fulfill the following requirements:</dt><dd><ul class="simple">
+<li><p>Multi-Binding support - <a class="reference internal" href="../docs/requirements/index.html#feat_req__com__multi_binding_support" title="feat_req__com__multi_binding_support"><em class="xref need">Multi-binding support (feat_req__com__multi_binding_support)</em></a></p></li>
+<li><p>agnostic binding - <a class="reference internal" href="../docs/requirements/index.html#feat_req__com__binding_agnostic_api" title="feat_req__com__binding_agnostic_api"><em class="xref need">Binding-agnostic public API (feat_req__com__binding_agnostic_api)</em></a></p></li>
+<li><p>deployment configuration - <a class="reference internal" href="../docs/requirements/index.html#feat_req__com__multi_binding_depl" title="feat_req__com__multi_binding_depl"><em class="xref need">Multi-binding deployment co... (feat_req__com__multi_binding_depl)</em></a></p></li>
+</ul>
+</dd>
+</dl>
 </section>
 <section id="specification">
 <span id="id3"></span><h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
 <section id="some-ip-gateway-protocol-implementation">
 <h3>SOME/IP Gateway protocol implementation<a class="headerlink" href="#some-ip-gateway-protocol-implementation" title="Link to this heading">#</a></h3>
 <p>The protocol implementation shall be fully compatible and complying with the SOME/IP specification from AUTOSAR Adaptive.
+Specifically the SOME/IP specification from AUTOSAR release 24-11 shall be supported by the SOME/IP Gateway. This shall guarantee that systems integrated with the SOME/IP gateway can be used in
 Protocol implementations shall be wrapped in an abstraction API, that stays stable and allows implementations may be exchanged, potentially even by binary only libraries.</p>
 </section>
 <section id="some-ip-gateway-security-goals">
