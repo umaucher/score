@@ -514,7 +514,7 @@
                   
   <section id="time">
 <span id="time-feature"></span><h1>Time<a class="headerlink" href="#time" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-5baf7c7f">
+<div class="need_container docutils container" id="SNCB-f0931087">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__time">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -589,16 +589,35 @@
 </section>
 <section id="clocks-accuracy-and-reading-current-time">
 <h3>Clocks, Accuracy, and Reading Current Time<a class="headerlink" href="#clocks-accuracy-and-reading-current-time" title="Link to this heading">#</a></h3>
+<p>The basic concept of Time is represented by two initial and one derived element:</p>
+<p><em>Clocks</em> are the sources of time. A clock produced a sequence on <em>Timepoints</em>, each representing a specific point in time.
+Timepoints have an Order, i.e. the relations “equal” and “less than” are defined. Because of this, TimePoints can be substracted, creating a <em>TimeSpan</em>.</p>
+<p>The following operations are valid between TimePoints and TimeSpans:</p>
+<ul class="simple">
+<li><p>Substraction: TimeSpan := TimePoint - TimePoint; TimeSpan := [TimeSpan - TimeSpan] | Negative TimeSpans shall not be allowed, the substraction saturates to zero.</p></li>
+<li><p>Addition: TimePoint := TimePoint + TimeSpan; TimeSpan := TimeSpan + TimeSpan</p></li>
+<li><p>Multiplication: TimeSpan := Factor * TimeSpan</p></li>
+<li><p>Equality: bool := TimePoint == TimePoint; bool := TimeSpan == TimeSpan</p></li>
+<li><p>Comparison: bool := TimePoint &lt; TimePoint; bool := TimeSpan &lt; TimeSpan (this includes with equality the less-than-or-equal relation)</p></li>
+</ul>
+<p>The clock is characterized by main attributes:</p>
+<ul class="simple">
+<li><p>Frequency: The frequency with which the clock updates the TimePoints it issues.</p></li>
+<li><p>Resolution: The accuracy of an individual timepoint. While an ideal clock would have a resolution that is the reciproke of the frequency in reality this may not be the case.</p></li>
+<li><p>Monotony: A clock can be monotonous (TP[n+1] &gt;= TP[n] is always maintained), strictly monotonous or not monotonous</p></li>
+<li><p>Steady: A steady clock will update in fixed intervals, i.e. each increment is exactly 1/Frequency. For example system clock is neither monotonous nor steady because of summer/winter time and leap seconds.</p></li>
+<li><p>Epoch: The TimePoint the clock started ticking. The semantic of the epoch is a documentation property of the clock. Example: Unix system clock has an Epoch value of 0 on 01.01.1970, 00:00:00 UTC.</p></li>
+</ul>
 <p>Modern software environments contain several types of clocks (or time bases), including:</p>
 <ul class="simple">
 <li><p>Local clocks, such as monotonic or steady clocks</p></li>
 <li><p>Synchronized clocks, aligned with a vehicle-wide or external time base</p></li>
 <li><p>Secure or authentic clocks, protected against tampering</p></li>
 </ul>
-<p>Mixing clock types unintentionally can lead to non-deterministic behaviors, negatively affecting system stability and correctness. Therefore, explicit selection of the time base by the application is mandatory.</p>
+<p>Mixing clock types unintentionally can lead to non-deterministic behaviors, negatively affecting system stability and correctness. Therefore, explicit selection of the time base by the application is mandatory. TimePoints of different clocks shall be incompatible types.</p>
 <p>Applications must be able to detect when a chosen time base is invalid or unsynchronized, enabling them to define appropriate fallback or error-handling strategies. Error states or drift conditions must be detectable by the application.</p>
 <p>Clock introspection capabilities are required, allowing applications to determine synchronization status and time elapsed since the last successful synchronization. This information is vital during error handling or fallback situations.</p>
-<p>Access to timestamps should be as performant as technically feasible due to their frequent use in control loops and high-frequency applications. Although specific latency targets are not defined here, low latency is a fundamental design consideration.</p>
+<p>Access to TimePoints should be as performant as technically feasible due to their frequent use in control loops and high-frequency applications. Although specific latency targets are not defined here, low latency is a fundamental design consideration.</p>
 <p>For cryptographic scenarios the feature also targets secure or authentic clocks. In such cases, a tamper-resistant time source is needed to ensure that time cannot be rolled back to re-enable expired certificates or bypass security controls. Authentic clocks might be signed or verified using hardware security modules.</p>
 <p>To integrate cleanly with modern programming languages, the time access API should align with idiomatic constructs (e.g., <code class="docutils literal notranslate"><span class="pre">std::chrono</span></code> in C++, <code class="docutils literal notranslate"><span class="pre">time</span></code> in Rust), while making clear that the source of time is provided by the S-CORE platform. A dedicated namespace such as <code class="docutils literal notranslate"><span class="pre">score::chrono</span></code> may wrap native types to make the time source explicit.</p>
 </section>
