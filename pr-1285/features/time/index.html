@@ -514,7 +514,7 @@
                   
   <section id="time">
 <span id="time-feature"></span><h1>Time<a class="headerlink" href="#time" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-f0931087">
+<div class="need_container docutils container" id="SNCB-0aca1448">
 <div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__time">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
@@ -589,25 +589,6 @@
 </section>
 <section id="clocks-accuracy-and-reading-current-time">
 <h3>Clocks, Accuracy, and Reading Current Time<a class="headerlink" href="#clocks-accuracy-and-reading-current-time" title="Link to this heading">#</a></h3>
-<p>The basic concept of Time is represented by two initial and one derived element:</p>
-<p><em>Clocks</em> are the sources of time. A clock produced a sequence on <em>Timepoints</em>, each representing a specific point in time.
-Timepoints have an Order, i.e. the relations “equal” and “less than” are defined. Because of this, TimePoints can be substracted, creating a <em>TimeSpan</em>.</p>
-<p>The following operations are valid between TimePoints and TimeSpans:</p>
-<ul class="simple">
-<li><p>Substraction: TimeSpan := TimePoint - TimePoint; TimeSpan := [TimeSpan - TimeSpan] | Negative TimeSpans shall not be allowed, the substraction saturates to zero.</p></li>
-<li><p>Addition: TimePoint := TimePoint + TimeSpan; TimeSpan := TimeSpan + TimeSpan</p></li>
-<li><p>Multiplication: TimeSpan := Factor * TimeSpan</p></li>
-<li><p>Equality: bool := TimePoint == TimePoint; bool := TimeSpan == TimeSpan</p></li>
-<li><p>Comparison: bool := TimePoint &lt; TimePoint; bool := TimeSpan &lt; TimeSpan (this includes with equality the less-than-or-equal relation)</p></li>
-</ul>
-<p>The clock is characterized by main attributes:</p>
-<ul class="simple">
-<li><p>Frequency: The frequency with which the clock updates the TimePoints it issues.</p></li>
-<li><p>Resolution: The accuracy of an individual timepoint. While an ideal clock would have a resolution that is the reciproke of the frequency in reality this may not be the case.</p></li>
-<li><p>Monotony: A clock can be monotonous (TP[n+1] &gt;= TP[n] is always maintained), strictly monotonous or not monotonous</p></li>
-<li><p>Steady: A steady clock will update in fixed intervals, i.e. each increment is exactly 1/Frequency. For example system clock is neither monotonous nor steady because of summer/winter time and leap seconds.</p></li>
-<li><p>Epoch: The TimePoint the clock started ticking. The semantic of the epoch is a documentation property of the clock. Example: Unix system clock has an Epoch value of 0 on 01.01.1970, 00:00:00 UTC.</p></li>
-</ul>
 <p>Modern software environments contain several types of clocks (or time bases), including:</p>
 <ul class="simple">
 <li><p>Local clocks, such as monotonic or steady clocks</p></li>
@@ -633,6 +614,29 @@ Timepoints have an Order, i.e. the relations “equal” and “less than” are
 </section>
 <section id="specification">
 <h2>Specification<a class="headerlink" href="#specification" title="Link to this heading">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From S-CORE workshop regarding Clocks, Accuracy, and Reading Current Time:</p>
+<p>The basic concept of Time is represented by two initial and one derived element:</p>
+<p><em>Clocks</em> are the sources of time. A clock produced a sequence on <em>Timepoints</em>, each representing a specific point in time.
+Timepoints have an Order, i.e. the relations “equal” and “less than” are defined. Because of this, TimePoints can be substracted, creating a <em>TimeSpan</em>.</p>
+<p>The following operations are valid between TimePoints and TimeSpans:</p>
+<ul class="simple">
+<li><p>Substraction: TimeSpan := TimePoint - TimePoint; TimeSpan := [TimeSpan - TimeSpan] | Negative TimeSpans shall not be allowed, the substraction saturates to zero.</p></li>
+<li><p>Addition: TimePoint := TimePoint + TimeSpan; TimeSpan := TimeSpan + TimeSpan</p></li>
+<li><p>Multiplication: TimeSpan := Factor * TimeSpan</p></li>
+<li><p>Equality: bool := TimePoint == TimePoint; bool := TimeSpan == TimeSpan</p></li>
+<li><p>Comparison: bool := TimePoint &lt; TimePoint; bool := TimeSpan &lt; TimeSpan (this includes with equality the less-than-or-equal relation)</p></li>
+</ul>
+<p>The clock is characterized by main attributes:</p>
+<ul class="simple">
+<li><p>Frequency: The frequency with which the clock updates the TimePoints it issues.</p></li>
+<li><p>Resolution: The accuracy of an individual timepoint. While an ideal clock would have a resolution that is the reciproke of the frequency in reality this may not be the case.</p></li>
+<li><p>Monotony: A clock can be monotonous (TP[n+1] &gt;= TP[n] is always maintained), strictly monotonous or not monotonous</p></li>
+<li><p>Steady: A steady clock will update in fixed intervals, i.e. each increment is exactly 1/Frequency. For example system clock is neither monotonous nor steady because of summer/winter time and leap seconds.</p></li>
+<li><p>Epoch: The TimePoint the clock started ticking. The semantic of the epoch is a documentation property of the clock. Example: Unix system clock has an Epoch value of 0 on 01.01.1970, 00:00:00 UTC.</p></li>
+</ul>
+</div>
 </section>
 <section id="security-impact">
 <h2>Security Impact<a class="headerlink" href="#security-impact" title="Link to this heading">#</a></h2>
