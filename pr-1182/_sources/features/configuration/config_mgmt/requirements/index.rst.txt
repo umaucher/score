@@ -26,7 +26,7 @@ Terms and definitions
    :satisfies: stkh_req__functional_req__file_based
    :status: valid
 
-   Individual vehicle configuration properties used for vehicle specific adaptations are called ``Parameters``.
+   An individual vehicle configuration property used for vehicle specific adaptations is called ``Parameter``.
 
 .. feat_req:: Term definition of Parameter Set
    :id: feat_req__config_mgmt__term_parameter_set
@@ -36,7 +36,7 @@ Terms and definitions
    :satisfies: stkh_req__functional_req__file_based
    :status: valid
 
-   Group of parameters which belong to the same functionality and share an integrity protection is called ``Parameter Set``.
+   Group of Parameters which belong to the same functionality and share an integrity protection is called ``Parameter Set``.
 
 Data Housekeeping
 =================
@@ -89,7 +89,7 @@ Data Housekeeping
    :satisfies: stkh_req__functional_req__file_based
    :status: valid
 
-   Parameter Set configuration shall contain a mapping of Parameters to Parameter Sets, Parameter names, types and default values.
+   Parameter Set configuration shall contain a mapping of Parameters to Parameter Sets, Parameter names and default values.
 
 .. feat_req:: Parameter Set configuration source
    :id: feat_req__config_mgmt__prm_set_cfg_source

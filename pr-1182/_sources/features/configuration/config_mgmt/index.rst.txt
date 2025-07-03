@@ -17,8 +17,6 @@
 Configuration Management
 ========================
 
-.. note:: Document header
-
 .. document:: Configuration Management
    :id: doc__config_mgmt
    :status: draft
