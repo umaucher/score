@@ -134,6 +134,7 @@ Definitions:
 
 **Time Slave**
 An actor that runs on the system and is responsible for
+
 * synchronizing the local clock with an external Time Master using the PTP protocol (IEEE 802.1AS).
 * providing the synchronization meta information to the clients, including score::time feature. Where meta information includes, but not limited to synchronization status (synchronized, not synchronized, unstable), time difference to the external time source, last synchronization time, current time point of the local clock and so on.
 
@@ -141,11 +142,12 @@ An actor that runs on the system and is responsible for
 Data which is provided by the **Time Slave** and includes the current synchronized time, synchronization status, rate correction, and so on, which are the output or intermediate artifacts of the synchronization process.
 
 Requirements:
+
 * REQ_0001: the **Time Slave**, as part of score::time feature, shall synchronize the local clock with an external **Time Master** using the PTP protocol (IEEE 802.1AS).
 * REQ_0002: the score::time feature shall get the current synchronized time and its metadata from the **Time Slave**.
 * REQ_0003: the score::time shall maintain the current synchronized time, its synchronization status and **Synchronization process metadata**, to be able to provide the latest values by clients request.
 * REQ_0004: the score::time shall validate the current synchronized time, which was received from the **Time Slave** and reflect the validation results in the time point status accordingly.
-Validation of the current synchronized time includes:
+  Validation of the current synchronized time includes:
 
   * checking the time point for loss of synchronization
   * checking the time point for monotonicity
@@ -164,11 +166,12 @@ The diagram above illustrates the data flow and interactions between the Time Sl
    :caption: Data flow between Time Slave, score::time, and clients
 
 Where
+
 * The **Time Slave** (gPTP stack) communicates with an external Time Master to maintain accurate time synchronization using the PTP protocol.
 * The **Time base provider** periodically reads the synchronized time from the Time Slave, validates it, and writes the results (including status flags and timestamps) into some shared resource towards **score::time** middleware. Different IPC mechanisms can be used for to provide actual synchronized time and its metadata to **Time base provider**, like:
 
   * shared memory, then the **Time Slave** writes the synchronized time and its metadata into the shared memory, which is then read by the **Time base provider** middleware.
-  * **ime base provider** polls for current EMAC value with ``devctl`` calls.
+  * **Time base provider** polls for current EMAC value with ``devctl`` calls.
   * other IPC methods.
 
 * The **score::time** middleware accesses this shared resource to obtain the latest synchronized time and its metadata, adjusting the time as needed based on the local clock by requests from client applications.
@@ -191,7 +194,7 @@ High precision Clock
 Monotonic Clock
 ---------------
 
-* REQ_0015: the score::time feature shall provide a mechanism to access (read only) to monotonic, not adjustable clock value, which is mapped from the known **OS** or HW clock.
+* REQ_0015: the score::time feature shall provide a mechanism to access (read only) to monotonic, not adjustable clock value, which is mapped from the known OS or HW clock.
 
 
 .. Backwards Compatibility
