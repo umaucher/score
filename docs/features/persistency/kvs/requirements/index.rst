@@ -22,7 +22,7 @@ Requirements
    :id: doc__persistency_kvs_feat_reqs
    :status: valid
    :safety: ASIL_B
-   :realizes: wp__feature_reqs
+   :realizes: PROCESS_wp__requirements__feat
 
 .. feat_req:: C++ & Rust Interoperability
    :id: feat_req__persistency__cpp_rust_interop
