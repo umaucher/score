@@ -85,7 +85,7 @@ User friendly API for information exchange
    :status: valid
 
    The public API shall enforce strict type compatibility. When a user requests a value, the API shall 
-   validate that the requested return type is compatible with the type of the stored JSON data.
+   validate that the requested return type is compatible with the type and value of the stored JSON data.
 
    Note: This includes checking if the stored value exceeds the range of the expected type.
 
