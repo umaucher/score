@@ -30,22 +30,29 @@ Introduction
 Scope and purpose
 ~~~~~~~~~~~~~~~~~
 GoogleTest (gtest) is a C++ testing framework developed by Google to support the creation
-of robust, maintainable, and portable tests. It is designed to help developers write
-better tests by offering a rich set of assertions, test fixtures, and test discovery
-mechanisms. gtest supports unit, integration, and system-level testing and is compatible
-with various platforms.
+of robust, maintainable, and portable tests. It is designed to help developers write tests
+by offering a rich set of assertions, test fixtures, and test discovery
+mechanisms. gtest supports compatible with various platforms.
 
 Inputs and outputs
 ~~~~~~~~~~~~~~~~~~
-Inputs: Software sources (C++), Test sources (C++)
-Outputs: Test binary, Test execution logs, test report (txt, json, xml).
+Inputs: Software sources (C++), Gtest-based test files (C++)
+Outputs: Test binary, Test report (txt, json, xml).
+
+.. figure:: _assets/gtest.drawio.svg
+  :width: 100%
+  :align: center
+  :alt: gtest overview
+
+  Gtest overview
 
 Available information
 ~~~~~~~~~~~~~~~~~~~~~
+- S-CORE baselibs: https://github.com/eclipse-score/baselibs/blob/main/MODULE.bazel
+- Version: 1.15.0
 - Official repository: https://github.com/google/googletest
 - Official documentation: https://google.github.io/googletest
 - API Reference: https://google.github.io/googletest/reference/testing.html
-- Version: 1.15.0
 
 
 Installation and integration
@@ -65,12 +72,12 @@ Requires C++ compiler (gcc, qcc?) and bazel build environment.
 
 Evaluation
 ----------
-This section evaluates gtest for use in safety-related projects.
+This section evaluates gtest for use in S-CORE project.
 
 
 .. list-table:: gtest safety evaluation
    :header-rows: 1
-   :widths: 5 10 40 10 30 20 10 10
+   :widths: 1 2 8 2 6 4 2 2
 
    * - Use case Identification
      - Use case Description
@@ -81,66 +88,66 @@ This section evaluates gtest for use in safety-related projects.
      - Further additional safety measure required?
      - Confidence (automatic calculation)
    * - 1
-     - Execute unit tests
+     - Run tests and generated test report
      - Fails to load input files
         gtest fails to load provided file even if file is present and accessible.
      - yes
-     - Check the log information of gtest
-     - HIGH
+     - (implicit) Check test run status
+     - yes
      - no
      - high
    * - 2
-     - Execute unit tests
+     - Run tests and generated test report
      - Fails to write result to file
         gtest was not able to save results in file(s).
      - yes
-     - Check the log information of gtest
-     - HIGH
+     - (implicit) Check test run status
+     - yes
      - no
      - high
    * - 3
-     - Execute unit tests
+     - Run tests and generated test report
      - Fails to collect results of the test(s)
         gtest was not able to collect results of executed test.
      - yes
      - Verify the test plan and test report
-     - HIGH
+     - yes
      - no
      - high
    * - 4
-     - Execute unit tests
+     - Run tests and generated test report
      - Fails to detect an existing error
          gtest fails to detect the presence of existing errors.
      - yes
-     - gtest qualification, Review the unit test implementations
-     - LOW
-     - yes
+     - /
+     - no
+     - yes (qualification)
      - low
    * - 5
-     - Execute unit tests
+     - Run tests and generated test report
      - Fails to execute the test
          gtest fails to execute specific test from the test plan
      - yes
      - Verify the test plan and test report
-     - HIGH
+     - yes
      - no
      - high
    * - 6
-     - Execute unit tests
+     - Run tests and generated test report
      - Indicates presence of a non-existing error
          gtest indicates the presence of errors that do not exist.
      - no
      - /
-     - HIGH
+     - n/a
      - no
      - high
    * - 7
-     - Execute unit tests
+     - Run tests and generated test report
      - Produces wrong test report
          gtest fails to save correct test result in test report.
      - yes
-     - Check unit test results and test report correctness
-     - HIGH
+     - Review test report
+     - yes
      - no
      - high
 
@@ -158,7 +165,7 @@ This section evaluates gtest for use in safety-related projects.
      - TBD
      - TBD
      - TBD
-     - HIGH
+     - TBD
 
 Result
 ~~~~~~
@@ -171,10 +178,4 @@ Based on method: validation of the software tool
 
 Requirements and testing aspects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Requirements defined in project documentation.
-Test cases defined in test plans.
-Coverage documented via gcov.
-
-Analysis perspective
-~~~~~~~~~~~~~~~~~~~~
-Architecture and safety/security analysis documented in qualification strategy:
+Tool requirements are defined derived from official documentation.
