@@ -19,7 +19,7 @@ S-Core v0.5-alpha release notes
    :id: doc__score_v05_alpha_release_note
    :status: draft
    :safety: ASIL_B
-   :realizes: PROCESS_wp__platform_sw_release_note
+   :realizes: wp__platform_sw_release_note
 
 | **Platform Name**: S-CORE
 | **Release Tag**: v0.5.0-alpha
@@ -165,8 +165,14 @@ Associated Infrastructure Modules
 
     - Check the full `process_description release notes <https://github.com/eclipse-score/process_description/releases/tag/v1.3.0>`_ for more information
 
-- **docs-as-code**: Tooling for linking and generation of documentation. `docs-as-code v2.0.1` <https://github.com/eclipse-score/docs-as-code/releases/tag/v2.0.1>_.
-- **tooling**: Tooling for S-CORE development. `tooling v1.0.2` <https://github.com/eclipse-score/tooling/releases/tag/v1.0.2>`_
+- **docs-as-code**: tooling for linking and generation of documentation
+  
+  - **Link to release**: `docs-as-code v2.0.1 <https://github.com/eclipse-score/docs-as-code/releases/tag/v2.0.1>`_
+
+- **tooling**: tooling for S-CORE development
+
+  - **Link to release**: `tooling v1.0.2 <https://github.com/eclipse-score/tooling/releases/tag/v1.0.2>`_
+
 - **ITF**: integration Testing Framework for execution of feature integration tests on the reference image
 
   - **Link to release**: `itf v0.1.0  <https://github.com/eclipse-score/itf/releases/tag/0.1.0>`_

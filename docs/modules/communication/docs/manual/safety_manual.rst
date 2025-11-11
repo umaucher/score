@@ -19,7 +19,7 @@ Safety Manual
    :id: doc__communication_safety_manual
    :status: valid
    :safety: ASIL_B
-   :realizes: PROCESS_wp__module_safety_manual
+   :realizes: wp__module_safety_manual
 
 Introduction/Scope
 ------------------

@@ -19,7 +19,7 @@ Release Note
    :id: doc__communication_release_note
    :status: valid
    :safety: ASIL_B
-   :realizes: PROCESS_wp__module_sw_release_note
+   :realizes: wp__module_sw_release_note
    :tags: communication
 
 

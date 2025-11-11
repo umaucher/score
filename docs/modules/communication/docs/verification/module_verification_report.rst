@@ -19,10 +19,10 @@ Verification Report
    :id: doc__communication_verification_report
    :status: valid
    :safety: ASIL_B
-   :realizes: PROCESS_wp__verification_module_ver_report
+   :realizes: wp__verification_module_ver_report
 
 
-This verification report is based on the :need:`PROCESS_gd_temp__verification_plan`.
+This verification report is based on the :need:`gd_temp__verification_plan`.
 It covers all the components of the above stated module.
 
 .. attention::
