@@ -17,6 +17,8 @@
 Modules
 =======
 
+A **Module** is a major architectural building block that realizes a part of a Feature's logic. For further explanation see the `Building blocks concept <https://eclipse-score.github.io/process_description/main/general_concepts/score_building_blocks_concept.html>`_.
+
 .. image:: _assets/module_architecture.drawio.svg
    :alt: Module Architecture
 
@@ -24,8 +26,6 @@ Modules
 .. note::
    For now, we store the modules documentation in the modules tree, because multi-repo docs are not yet supported.
    Once this support becomes available it will be moved to the right repo.
-
-
 
 .. toctree::
    :maxdepth: 1

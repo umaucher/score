@@ -17,6 +17,10 @@
 Requirements
 ============
 
+Requirements are the formal descriptions of the requested capabilities or characteristics that the system or one of its components must fulfill.
+
+The following stakeholder functional and non-functional requirements and platform assumptions describe that for S-Core.
+
 .. toctree::
 
    stakeholder/index

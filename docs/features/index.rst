@@ -17,6 +17,10 @@
 Features
 ========
 
+A **Feature** is the highest-level logical entity, representing a complete, end-user or system-relevant functionality of the middleware or the vehicle. It is the primary unit of deployment, management, and business value. For further explanation see the `Building blocks concept <https://eclipse-score.github.io/process_description/main/general_concepts/score_building_blocks_concept.html>`_.
+
+The following features are defined:
+
 .. toctree::
    :maxdepth: 1
    :glob:
