@@ -65,7 +65,7 @@ The current timeline for Eclipse S-CORE releases is shown below.
 For a detailed and always up-to-date planning view, see the `GitHub project <https://github.com/orgs/eclipse-score/projects/17/views/26>`_.
 
 Eclipse S-CORE book
-------------
+-------------------
 The first version of the `Eclipse S-CORE book <https://eclipse-score.github.io/score/main/handbook/index.html>`_
 is a “how-to” guide for users getting started with the project.
 It introduces the core concepts of Eclipse S-CORE and walks through building
