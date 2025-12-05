@@ -20,6 +20,7 @@ Platform Safety Manager Election
    :status: valid
    :safety: ASIL_B
    :security: YES
+   :realizes: wp__platform_safety_plan
 
 Elected Committer(s)
 ====================
