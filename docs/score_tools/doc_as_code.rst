@@ -15,11 +15,7 @@
 .. doc_tool:: Doc-as-Code
    :id: doc_tool__doc_as_code
    :status: evaluated
-<<<<<<< HEAD
-   :version: v2.0.0
-=======
    :version: v2.2.0
->>>>>>> etas-contrib/HEAD
    :tcl: LOW
    :safety_affected: YES
    :security_affected: YES
