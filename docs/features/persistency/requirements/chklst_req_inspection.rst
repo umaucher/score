@@ -12,11 +12,11 @@
    # SPDX-License-Identifier: Apache-2.0
    # *******************************************************************************
 
-Requirement Inspection Checklist Persistency KVS
-================================================
+Persistency Requirements Inspection Checklist
+#############################################
 
-.. document:: Requirements Inspection Checklist Persistency KVS
-  :id: doc__req_inspection_persistency
+.. document:: Persistency Requirements Inspection Checklist
+  :id: doc__feature_persistency_requirements_chklst
   :status: valid
   :safety: ASIL_B
   :security: NO
@@ -24,11 +24,12 @@ Requirement Inspection Checklist Persistency KVS
   :realizes: wp__requirements_inspect
 
 **Purpose**
+
 The purpose of this requirement inspection checklist is to collect the topics to be checked during requirements inspection.
 
 **Checklist**
 
-.. list-table:: Requirement Inspection Checklist Persistency KVS
+.. list-table:: Persistency Requirements Inspection Checklist
   :header-rows: 1
   :widths: 10,30,50,6,6,8
 

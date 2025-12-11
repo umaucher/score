@@ -15,7 +15,7 @@
 Feature Safety Work Products List
 =================================
 
-.. document:: Persistency KVS Safety WPs
+.. document:: Persistency Safety WPs
    :id: doc__persistency_safety_wp
    :status: valid
    :safety: ASIL_B
@@ -24,7 +24,7 @@ Feature Safety Work Products List
    :tags: persistency
 
 
-.. list-table:: Feature persistency Workproducts
+.. list-table:: Feature persistency workproducts
     :header-rows: 1
 
     * - Workproduct Id
@@ -35,17 +35,17 @@ Feature Safety Work Products List
     * - :need:`wp__feat_request`
       - :need:`gd_temp__change_feature_request`
       - :ndf:`copy('status', need_id='gd_temp__change_feature_request')`
-      - :need:`doc__persistency_kvs`
+      - :need:`doc__persistency`
 
     * - :need:`wp__requirements_feat`
       - :need:`gd_temp__req_feat_req`
       - :ndf:`copy('status', need_id='gd_temp__req_feat_req')`
-      - :need:`doc__persistency_requirements`
+      - :need:`doc__feature_persistency_requirements`
 
     * - :need:`wp__requirements_feat_aou`
       - :need:`gd_temp__req_aou_req`
       - :ndf:`copy('status', need_id='gd_temp__req_aou_req')`
-      - :need:`doc__persistency_requirements`
+      - :need:`doc__feature_persistency_requirements`
 
     * - :need:`wp__feature_arch`
       - :need:`gd_temp__arch_feature`
@@ -65,7 +65,7 @@ Feature Safety Work Products List
     * - :need:`wp__requirements_inspect`
       - :need:`gd_chklst__req_inspection`
       - :ndf:`copy('status', need_id='gd_chklst__req_inspection')`
-      - :need:`doc__req_inspection_persistency`
+      - :need:`doc__feature_persistency_requirements_chklst`
 
     * - :need:`wp__sw_arch_verification`
       - :need:`gd_chklst__arch_inspection_checklist`
