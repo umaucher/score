@@ -19,7 +19,7 @@ SPDX-License-Identifier: Apache-2.0
 :id: dec_rec__arch__library_delivery_model
 :status: proposed
 :context: Architecture
-:decision: TBD
+:decision: Proposal: Opt-in per module — static by default, dynamic where justified
 ```
 
 ---
@@ -715,10 +715,67 @@ This is the most hardware-dependent factor:
 
 **Recommendation:** The performance difference between static and dynamic linking is **not the dominant decision criterion** for a middleware platform. In most deployment scenarios, the per-call overhead is negligible for middleware APIs, and the startup difference depends on hardware that varies across targets. Code size, RAM sharing, update granularity, safety, and security should weigh more heavily in this decision. Projects with hard real-time requirements on specific hot paths can address those through targeted design (e.g., header-only interfaces, inlined critical paths) regardless of the general linking strategy.
 
-## Decision
+## Decision Proposal
 
-TBD — pending discussion in Technical Lead Circle.
+**Option 4: Opt-In Per Module** — Static libraries as the default delivery model, with individual modules opting in to additionally provide shared library variants where justified.
+
+### Rationale
+
+The analysis of all relevant criteria — performance, code size, RAM consumption, update granularity, safety, security, licensing, debugging, cross-language interoperability, OS support, multi-repository integration, ABI management, and build system complexity — consistently points to Option 4 as the best balance for S-CORE's middleware role:
+
+1. **Static by default** provides the strongest guarantees for safety (tested binary = deployed binary), security (no dynamic attack surface), and build simplicity (Bazel's natural model). For modules that are stable, rarely patched, and used by few consumers, static linking is optimal.
+
+2. **Dynamic opt-in** addresses the real-world needs of a middleware platform serving multiple applications on the same hardware:
+   - **Update granularity:** Security patches and bug fixes in frequently-updated modules can be deployed without rebuilding all consumer applications.
+   - **Memory efficiency:** Large modules shared by many applications benefit from kernel-level page sharing (RAM) and single-copy storage (flash).
+   - **Cross-language delivery:** Modules consumed across language boundaries (C++ ↔ Rust) benefit from the clean encapsulation of a shared library.
+   - **License compliance:** Modules with LGPL transitive dependencies can satisfy license requirements through shared library delivery.
+
+3. **Mode A (build from source)** should be the standard for shared libraries in the integration repo, preserving compile-time safety. **Mode B (pre-built `.so`)** should be used only where true release independence is required, accompanied by strict ABI versioning and CI-integrated compatibility checks.
+
+### Criteria for Opting In to Dynamic Delivery
+
+A module should opt in to additionally provide a shared library if **at least one** of the following applies:
+
+- The module is used by 3+ application binaries on the same target and is large enough that RAM/flash duplication is significant.
+- The module requires independent updateability (e.g., frequent security patches, regulatory-driven updates).
+- The module is consumed cross-language (Rust ↔ C++) and benefits from runtime encapsulation of its language runtime.
+- The module has LGPL-licensed transitive dependencies.
+- The module implements a plugin or extension interface that requires runtime loading.
+
+The decision to opt in must be documented in the module's architecture documentation and approved as part of the module's design review.
+
+### Mandatory Requirements for Opted-In Modules
+
+- Expose a **C ABI surface** with `-fvisibility=hidden` and explicit exports.
+- Maintain **Soname versioning** aligned with semantic versioning.
+- Use **`-Wl,-z,now` (eager binding)** as mandatory linker flag.
+- Provide **explicit initialization functions** (`score_<module>_init()`) rather than relying on `__attribute__((constructor))`.
+- Include **ABI compliance checks** (`abidiff` or equivalent) in the module's CI pipeline.
+- Statically link all **internal dependencies** into the `.so` — do not expose internal sub-libraries as separate shared objects.
+- Generate a **deployment manifest** with `.so` versions, checksums, and build-IDs as part of the release.
 
 ## Consequences
 
-TBD — to be filled after decision is taken.
+### Positive
+
+- The default case (static) remains simple for safety argumentation, build system, debugging, and multi-repo integration.
+- Modules that benefit from dynamic delivery can opt in without forcing complexity on the rest of the platform.
+- OEMs gain targeted update granularity for the most critical middleware components while maintaining deterministic behavior for the rest.
+- Cross-language module delivery is cleanly supported where needed.
+- LGPL compliance is addressed structurally rather than through workarounds.
+
+### Negative / Costs
+
+- Opted-in modules carry additional overhead: dual build targets, ABI management, Soname versioning, ABI compliance CI checks, and deployment manifest generation.
+- Downstream integrators must understand which modules offer which variants and choose accordingly.
+- A governance process for opt-in decisions must be established and maintained.
+- Debug symbol archives must be maintained per `.so` version for opted-in modules.
+
+### Follow-Up Actions
+
+- Define the initial set of modules that should opt in (candidates: communication stack, logging, diagnostics, crypto/security).
+- Establish Bazel toolchain defaults for shared libraries (`-Wl,-z,now`, `-fvisibility=hidden`).
+- Integrate `abidiff` or equivalent into the CI pipeline for opted-in module repos.
+- Define the deployment manifest format and tooling.
+- Document the opt-in process in the S-CORE contribution guidelines.
