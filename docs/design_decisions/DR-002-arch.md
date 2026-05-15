@@ -34,7 +34,7 @@ This decision affects code size, runtime performance, memory usage, updateabilit
 
 S-CORE is a middleware platform. In a typical deployment, S-CORE serves as the shared foundation layer upon which **multiple customer applications** run on the same target hardware (ECU / high-performance compute unit). This has critical implications for the library delivery model:
 
-- **Multiple consumers per target:** A single ECU may host 5–20+ application binaries that all depend on S-CORE modules (e.g., communication, diagnostics, logging, execution management). The linking model determines whether each application carries its own copy of S-CORE code or shares a single instance.
+- **Multiple consumers per target:** A single ECU may host 5–20+ application binaries that all depend on S-CORE modules (e.g., communication, diagnostics, logging, execution management). The exact number is a downstream deployment decision outside S-CORE's control, but the linking model determines whether each application carries its own copy of S-CORE code or shares a single instance.
 - **Independent lifecycles:** The middleware and the applications above it typically follow different release cadences. A security patch in S-CORE's communication stack should ideally not require rebuilding and re-deploying all customer applications.
 - **OTA update cost:** In automotive deployments, OTA update bandwidth is constrained and update windows are limited. The ability to update the middleware layer independently of applications — or vice versa — directly affects update size, duration, and rollback complexity.
 - **Variant management:** Different vehicle lines or ECU configurations may use different subsets of S-CORE modules. The linking model affects how efficiently variants can be managed and updated.
@@ -735,15 +735,78 @@ The analysis of all relevant criteria — performance, code size, RAM consumptio
 
 ### Criteria for Opting In to Dynamic Delivery
 
-A module should opt in to additionally provide a shared library if **at least one** of the following applies:
+The opt-in decision involves two distinct perspectives:
 
-- The module is used by 3+ application binaries on the same target and is large enough that RAM/flash duplication is significant.
-- The module requires independent updateability (e.g., frequent security patches, regulatory-driven updates).
-- The module is consumed cross-language (Rust ↔ C++) and benefits from runtime encapsulation of its language runtime.
-- The module has LGPL-licensed transitive dependencies.
-- The module implements a plugin or extension interface that requires runtime loading.
+#### Platform Perspective (S-CORE decides)
+
+As a platform provider, S-CORE does **not** know how many applications will consume a given module in any specific downstream deployment. The number of consumers (5, 10, 20+) is a deployment decision made by the OEM/integrator. Therefore, S-CORE's opt-in criteria must be based on properties **intrinsic to the module**, not on assumed deployment topology:
+
+A module should opt in to **additionally provide** a shared library variant if **at least one** of the following applies:
+
+- The module is **large in code size** (e.g., communication stacks, serialization frameworks, crypto libraries) and is architecturally expected to be shared across applications — making RAM/flash duplication costly in typical middleware deployments.
+- The module requires **independent updateability** (e.g., frequent security patches, regulatory-driven updates, rapid CVE response).
+- The module is consumed **cross-language** (Rust ↔ C++) and benefits from runtime encapsulation of its language runtime.
+- The module has **LGPL-licensed transitive dependencies**.
+- The module implements a **plugin or extension interface** that requires runtime loading.
 
 The decision to opt in must be documented in the module's architecture documentation and approved as part of the module's design review.
+
+#### Integrator Perspective (OEM/customer decides)
+
+The downstream integrator knows their actual deployment topology — how many applications run on the target, which modules they consume, and what their update and certification strategy is. For opted-in modules that provide both variants, the **integrator decides which variant to use** based on their specific deployment:
+
+| Integrator scenario | Recommended variant |
+|---------------------|:-------------------:|
+| Single application on ECU | Static — no sharing benefit, simpler safety case |
+| 2–5 applications sharing the module | Dynamic may be beneficial — evaluate RAM/flash savings vs. ABI management cost |
+| 5–20+ applications sharing the module | Dynamic strongly recommended — significant memory/flash/update benefits |
+| Hard real-time single-purpose controller | Static — maximum determinism, no dynamic linking overhead |
+| High-performance compute with OTA requirements | Dynamic — update granularity and memory sharing outweigh the overhead |
+
+S-CORE provides both variants for opted-in modules. The integrator's deployment configuration (which variant to link) is outside S-CORE's scope but should be documented in S-CORE's integration guide with guidance for typical scenarios.
+
+### Special Case: Infrastructure Libraries (baselibs)
+
+The S-CORE [baselibs](https://github.com/eclipse-score/baselibs) module deserves special consideration. It provides foundational utilities (concurrency, containers, filesystem, serialization, OS abstraction, memory handling, error handling, etc.) that are consumed by **virtually every other S-CORE module** as well as by downstream applications. This creates a unique situation:
+
+```
+Application A ─┬─→ score_comm ──────→ baselibs (containers, serialization, os)
+               ├─→ score_logging ───→ baselibs (json, filesystem)
+               └─→ score_diag ─────→ baselibs (result, utils)
+
+Application B ─┬─→ score_comm ──────→ baselibs (containers, serialization, os)
+               └─→ score_lifecycle ─→ baselibs (json)
+```
+
+#### The Decision: Should baselibs Be Delivered as a Shared Library?
+
+This is **not** a straightforward opt-in case. The arguments differ from typical application-facing modules:
+
+**Arguments for delivering baselibs as shared library:**
+
+- **Maximum deduplication:** baselibs code appears in every module and every application. If all modules are static, baselibs code is duplicated N×M times (N applications × M modules). As a single `.so`, it exists once in RAM and flash.
+- **Single point of update:** A bug fix in `baselibs::containers` or a security patch in `baselibs::os` would be deployed once, effective for all modules and applications immediately.
+
+**Arguments against delivering baselibs as a shared library:**
+
+- **Massive ABI surface:** baselibs exposes many fine-grained utilities (containers, result types, language extensions). Stabilizing the ABI across all of these is extremely difficult — much harder than for a focused API like a communication stack.
+- **Template-heavy / header-only code:** Many baselibs components (containers, result types, `safecpp` language extensions) are likely template-heavy or header-only. These are compiled **into the consumer** at build time and cannot be shared via `.so` — they will be duplicated regardless of the linking model.
+- **Tight coupling:** Modules use baselibs types in their own APIs (e.g., returning `score::Result<T>`, accepting `score::DynamicArray<T>`). If baselibs were a separate `.so`, its types would cross library boundaries — requiring ABI stability for every type, not just for function signatures.
+- **Fragile base class / type problem:** A layout change in `score::DynamicArray` would break the ABI of **every module** that uses it in its interface. This makes the ABI contract transitively fragile.
+
+#### Recommended Approach for baselibs
+
+Given the above analysis, baselibs should follow a **differentiated strategy:**
+
+| baselibs component type | Delivery model | Rationale |
+|------------------------|:--------------:|-----------|
+| **Template / header-only** (containers, result, language extensions, safecpp) | **Static only** | Cannot be shared via `.so` — templates are instantiated in the consumer. No benefit from dynamic linking. |
+| **Compiled utilities with stable C ABI** (OS abstraction, filesystem, shared memory) | **Opt-in for `.so`** | These have well-defined function-call APIs that can be stabilized. OS-level abstractions are natural candidates for shared delivery. |
+| **Serialization (flatbuffers, JSON)** | **Case-by-case** | If the API is C-ABI-friendly (opaque handles, C function calls), it can be shared. If the API exposes C++ templates or types, it must remain static. |
+
+**Key insight:** For a utility library like baselibs, the decision is not "the whole module is static or dynamic" but rather **which sub-components can technically and practically be delivered as shared libraries.** The architectural note on internal composition (see above) applies here: even if some baselibs components are delivered as `.so`, others will necessarily remain header-only/static and be compiled into each consumer.
+
+**Implication for other modules:** When a module like `score_comm` is delivered as a `.so`, it **statically links** the baselibs components it uses internally. The baselibs types that appear in `score_comm`'s **public API** must be part of the ABI contract. This is another reason to minimize the use of complex baselibs types (templates, containers) in public module APIs and prefer simple C-ABI-compatible types at the shared library boundary.
 
 ### Mandatory Requirements for Opted-In Modules
 
