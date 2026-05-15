@@ -41,7 +41,7 @@ S-CORE is a middleware platform. In a typical deployment, S-CORE serves as the s
 
 The update granularity question is therefore not merely a convenience concern but a **deployment architecture decision** that affects field serviceability, security response time, and total cost of ownership for OEMs.
 
-## Options Considered
+## Considerations
 
 ### Architectural Note: Internal Composition of Shared Libraries
 
@@ -511,6 +511,9 @@ cc_binary(
 - The **opt-in model (Option 4)** is the best fit for multi-repo: static by default (simple cross-repo integration), with `.so` delivery (preferably Mode A, Mode B only where justified) for modules where independent updateability is worth the additional ABI management overhead. Internal dependencies are statically linked into the `.so`, isolating the ABI surface to the module's public API.
 
 ---
+
+## Options Considered
+
 
 ### Option 1: Static Libraries Only
 
