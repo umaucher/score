@@ -180,7 +180,7 @@ The library delivery model has practical implications for debugging during devel
 | **Source-level stepping** | Seamless if debug info (`-g`) is included | Seamless if debug info is available per `.so` — identical experience once symbols are loaded |
 | **Core dump analysis** | Self-contained — the single binary plus the core file is sufficient to reconstruct the full state | Requires the **exact matching `.so` versions** alongside the core file. If `.so` files have been updated since the crash, stack traces may be incorrect |
 | **Stripped production binaries** | External debug info (`.debug` file) must match the deployed binary | External debug info must match **per `.so`** — requires tracking debug symbols for each library version independently |
-| **Hot code reload during development** | Not possible — must relink and restart the entire binary | Possible in principle (`dlclose` / `dlopen`) — useful for rapid iteration on a single module without full restart |
+| **Hot code reload during development** | Not possible — must relink and restart the entire binary | Possible in principle (`dlclose` / `dlopen`) — useful for rapid iteration on a single module without full restart. **Warning:** `dlclose()` must never be used when objects from the `.so` are still alive — for C++ shared libraries with virtual interfaces, `dlclose` unmaps code pages and any live objects with vtable pointers into that `.so` become use-after-free; subsequent virtual calls jump to unmapped memory. |
 | **Address Space Layout Randomization (ASLR)** | Single base address randomized; relative offsets stable | Each `.so` is independently randomized — debugger handles this transparently, but manual address calculations are more complex |
 | **Debug build size** | One large binary with all debug info embedded | Smaller per-library debug files; total may be similar but more manageable for partial debugging |
 
@@ -286,6 +286,7 @@ Shared libraries introduce an explicit **ABI contract** between the library prov
 2. **How are breaking changes communicated?** Soname bumps signal ABI breaks. Consumers linking against `libscore_comm.so.1` will not accidentally load `libscore_comm.so.2` — the dynamic linker rejects the mismatch.
 3. **Tooling:** ABI compliance checking tools (`abidiff`, `abi-compliance-checker`) can be integrated into CI to detect unintentional ABI breaks before release. Bazel can be configured to run these checks as part of the build.
 4. **Semantic versioning:** S-CORE should align Soname major versions with semantic versioning major versions. Minor/patch updates preserve ABI.
+5. **C++ interfaces:** ABI compliance is only ensured for C interfaces. If a library exposes a C++ interface, the C++ ABI is not standardized across compilers (GCC, Clang) or compiler versions. Therefore, either the library must provide a pure C interface at the `.so` boundary, or the build infrastructure must guarantee that the entire product (all `.so` files and their consumers) is built with the identical toolchain (same compiler, same version, same standard library).
 
 **For static-only delivery**, this entire concern disappears — the consumer always builds against the exact source/headers they received. But the tradeoff is the loss of independent updateability.
 
@@ -338,6 +339,7 @@ Shared libraries may contain initialization code (`__attribute__((constructor))`
 
 **Recommendation for S-CORE:**
 - Avoid reliance on `__attribute__((constructor))` for critical initialization.
+- `.so` constructors must not call into the host module, must not modify global process state, and must not spawn threads.
 - Provide explicit `score_<module>_init()` functions that applications call in a defined order.
 - Document initialization dependencies between modules.
 
@@ -350,6 +352,8 @@ The default ELF dynamic linker behavior uses **lazy binding**: symbols are resol
 | Single-threaded first call | Lazy resolution triggers linker code → safe |
 | Multi-threaded first call to same symbol | Multiple threads may trigger resolution simultaneously → implementation-dependent |
 | `LD_BIND_NOW` / `-Wl,-z,now` (eager binding) | All symbols resolved at load time before any application thread runs → fully deterministic |
+
+To open a shared library at runtime, `dlopen()` can be used instead of `LD_BIND_NOW` (which resolves all symbols at program start). This is useful for plugin systems where libraries are loaded on demand. In such cases, the combination `RTLD_NOW | RTLD_LOCAL` shall be used — `RTLD_NOW` ensures all symbols are resolved immediately (no deferred failures), and `RTLD_LOCAL` prevents the loaded library's symbols from polluting the global namespace. However, `dlopen()` with these flags is not 100% thread-safe in all scenarios: if `dlopen()` is called from library constructors executing in parallel, or if combined with `fork()`, deadlocks or undefined behavior can occur.
 
 **Linux:** glibc's dynamic linker is thread-safe for lazy binding (uses internal locks). The concern is largely historical but adds latency jitter — the first call to a symbol has unpredictable latency.
 
@@ -818,6 +822,15 @@ Given the above analysis, baselibs should follow a **differentiated strategy:**
 - Use **`-Wl,-z,now` (eager binding)** as mandatory linker flag.
 - Provide **explicit initialization functions** (`score_<module>_init()`) rather than relying on `__attribute__((constructor))`.
 - Include **ABI compliance checks** (`abidiff` or equivalent) in the module's CI pipeline.
+- Enforce a **toolchain identity CI gate**: verify that all shared libraries and their consumers are built with the same compiler and compiler version. For C++ types crossing the `.so` boundary, ABI compatibility is only guaranteed within the same toolchain (GCC/Clang version, libstdc++/libc++ version). The CI gate must reject combinations built with mismatched toolchains.
+- Use **`RPATH`** (not `RUNPATH`) for library search paths. `RUNPATH` can be overridden by `LD_LIBRARY_PATH`, which allows an attacker or misconfiguration to substitute libraries at runtime. `RPATH` takes precedence over `LD_LIBRARY_PATH` and provides a hardened, deterministic library resolution order. Set via `-Wl,--disable-new-dtags` to ensure the linker emits `DT_RPATH` rather than `DT_RUNPATH`.
+- Apply **security hardening flags** for all shared library builds:
+  - Full RELRO: `-Wl,-z,relro,-z,now` (makes GOT read-only after relocation)
+  - Stack protection: `-fstack-protector-strong`
+  - Position-Independent Code: `-fPIC` (mandatory for `.so`, also enables full ASLR)
+  - Fortify source: `-D_FORTIFY_SOURCE=2`
+  - No executable stack: `-Wl,-z,noexecstack`
+  - Restrict library search paths to platform-controlled directories only
 - Statically link all **internal dependencies** into the `.so` — do not expose internal sub-libraries as separate shared objects.
 - Generate a **deployment manifest** with `.so` versions, checksums, and build-IDs as part of the release.
 
@@ -833,7 +846,7 @@ Given the above analysis, baselibs should follow a **differentiated strategy:**
 
 ### Negative / Costs
 
-- Opted-in modules carry additional overhead: dual build targets, ABI management, Soname versioning, ABI compliance CI checks, and deployment manifest generation.
+- Opted-in modules carry additional overhead: dual build targets, ABI management, Soname versioning, ABI compliance CI checks, toolchain identity verification, CI/CD toolchain workflow for ABI diff check, and deployment manifest generation.
 - Downstream integrators must understand which modules offer which variants and choose accordingly.
 - A governance process for opt-in decisions must be established and maintained.
 - Debug symbol archives must be maintained per `.so` version for opted-in modules.
