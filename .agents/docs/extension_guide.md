@@ -11,40 +11,17 @@ repositories. Read this before adding any agent customization file.
    from reading the repo. Everything else is on-demand.
 3. **Portability** — prefer `.agents/` for cross-tool assets (Copilot, Claude Code,
    Codex, ...). Use `.github/` only for Copilot-specific primitives.
-4. **Personal extensions belong in `~/.agents/`** — never commit personal workflows or
-   knowledge-base skills to a repo.
 
-## Folder Layout & Tool Support
-
-```
-<repo>/
-├── AGENTS.md                        # Cross-tool entry point (root preferred)
-│                                    # Recognized by: Copilot, Claude Code, Codex
-├── CLAUDE.md                        # Claude Code specific overrides (if needed)
-│
-├── .agents/                         # Cross-tool, portable layer
-│   ├── skills/<name>/SKILL.md       # On-demand skills (Copilot + Claude Code)
-│   └── docs/                        # Reference docs loaded on demand by agents
-│
-└── .github/                         # Copilot-specific primitives
-    ├── instructions/*.instructions.md   # applyTo-scoped or on-demand instructions
-    ├── agents/*.agent.md                # Custom agent personas with tool restrictions
-    ├── prompts/*.prompt.md              # Slash-command prompts
-    └── docs/                            # On-demand reference docs (API notes, etc.)
-```
-
-### What goes where
+## What goes where
 
 | Asset | Location | Auto-loaded? | Cross-tool? |
 |-------|----------|-------------|-------------|
 | Repo overview, key facts | `AGENTS.md` (root) | ✅ always | ✅ |
-| Generic shared skills | `score/.agents/skills/<name>/` | on-demand | ✅ |
-| Feature-specific skills | `<feature>/.agents/skills/<name>/` | on-demand | ✅ |
+| Module-specific skills | `<module>/.agents/skills/<name>/` | on-demand | ✅ |
 | File-scoped coding rules | `.github/instructions/<name>.instructions.md` | via `applyTo` | Copilot only |
 | Custom agent personas | `.github/agents/<name>.agent.md` | user-invoked | Copilot only |
 | Slash-command prompts | `.github/prompts/<name>.prompt.md` | user-invoked | Copilot only |
 | Reference data (IDs, snippets) | `.github/docs/` or `.agents/docs/` | on-demand | depends |
-| Personal workflows | `~/.agents/skills/` | on-demand | ✅ |
 
 ## Hierarchy Between Repos
 
@@ -57,6 +34,29 @@ When multiple repos are open in the same workspace (e.g. `score` + `persistency`
   > When working in this repo alongside score, score/AGENTS.md is also active.
   > For standalone use, see: https://github.com/eclipse-score/score/blob/main/AGENTS.md
   ```
+
+## Recommended AGENTS.md Structure
+
+```markdown
+# <org>/<repo> — Agent Context
+
+> <standalone note referencing score/AGENTS.md>
+
+<one-line description of the repo's role>
+
+## Key Facts
+
+## Conventions
+
+## On-Demand References
+| Topic | File |
+|-------|------|
+| ...   | ...  |
+```
+
+Use `## Conventions` for any rule that changes how an agent should behave — preferred
+tools, things to never do, required checks before certain actions. Do not put behavioral
+rules in `## Key Facts`.
 
 ## Adding a New Skill
 

@@ -20,6 +20,10 @@ process definitions, and contribution guidelines.
 - **Single point of truth rule**: never duplicate information that already exists in
   docs or code. AGENTS.md files point to sources; they do not repeat them.
 
+## Conventions
+
+- **GitHub queries**: always use `gh` CLI with GraphQL, never fetch discussion pages via browser/HTTP
+
 ## On-Demand References
 
 | Topic | File |
@@ -29,6 +33,6 @@ process definitions, and contribution guidelines.
 
 ## Agent Extension (this repo)
 
-Generic skills shared across all feature repos live in `.agents/skills/`.
-Feature-repo-specific skills live in the respective repo's `.agents/skills/`.
+Generic skills shared across all module repos live in `.agents/skills/`.
+Module-specific skills live in the respective repo's `.agents/skills/`.
 See `.agents/docs/extension_guide.md` for the full rules.
