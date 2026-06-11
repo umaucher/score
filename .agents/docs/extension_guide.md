@@ -25,11 +25,11 @@ repositories. Read this before adding any agent customization file.
 
 ## Hierarchy Between Repos
 
-When multiple repos are open in the same workspace (e.g. `score` + `persistency`):
+When working across multiple repos (e.g. `score` + `persistency`):
 
-- **`score/AGENTS.md`** provides org-wide context (always active for all repos in workspace)
-- **`<feature>/AGENTS.md`** provides feature-specific context, references score for the rest
-- Feature `AGENTS.md` must include:
+- **`score/AGENTS.md`** provides org-wide context
+- **`<module>/AGENTS.md`** provides module-specific context, references score for the rest
+- Module `AGENTS.md` must include:
   ```
   > When working in this repo alongside score, score/AGENTS.md is also active.
   > For standalone use, see: https://github.com/eclipse-score/score/blob/main/AGENTS.md
@@ -60,17 +60,16 @@ rules in `## Key Facts`.
 
 ## Adding a New Skill
 
-1. Decide scope: generic (all teams) → `score/.agents/skills/`, feature-specific → `<feature>/.agents/skills/`
-2. Create folder: `.agents/skills/<skill-name>/SKILL.md`
-3. Required frontmatter:
+1. Create folder: `.agents/skills/<skill-name>/SKILL.md` in the module repo
+2. Required frontmatter:
    ```yaml
    ---
    name: skill-name          # must match folder name, lowercase-hyphenated
    description: 'What it does. Use when: ... triggers ...'
    ---
    ```
-4. Keep `SKILL.md` under 500 lines; put detail in `./references/` subfolder
-5. Do not vendor a skill that already exists in `score/.agents/skills/`
+3. Keep `SKILL.md` under 500 lines; put detail in `./references/` subfolder
+4. Do not vendor a skill that already exists in `score/.agents/skills/`
 
 ## Adding a New Instruction (Copilot only)
 
@@ -86,25 +85,25 @@ rules in `## Key Facts`.
 - Link from `AGENTS.md` — do not repeat content inline
 
 The same rules apply to any domain: git conventions, CI/CD runbooks, release procedures, etc.
-If a topic is **org-wide**, the reference doc lives in `score/` and feature repos link to it.
-If a topic is **feature-specific**, the doc lives in the feature repo and may reference the score doc for shared context.
+If a topic is **org-wide**, the reference doc lives in `score/` and module repos link to it.
+If a topic is **module-specific**, the doc lives in the module repo and may reference the score doc for shared context.
 
 When adding a new reference doc:
 
-1. Decide scope: org-wide → `score/`, feature-specific → `<feature>/`
+1. Decide scope: org-wide → `score/`, module-specific → `<module>/`
 2. Decide type: static IDs / external data → `.github/docs/`, agent procedures / runbooks → `.agents/docs/`
 3. Link to it from `AGENTS.md` under an **On-Demand References** table
-4. If a feature doc extends an org-wide one, reference the score doc rather than duplicating content
+4. If a module doc extends an org-wide one, reference the score doc rather than duplicating content
 
-## Feature Repo Checklist
+## Module Repo Checklist
 
-When setting up a new feature repo for agent use:
+When setting up a new module repo for agent use:
 
 - [ ] `AGENTS.md` at repo root with: FT discussion number → score, ASIL level →
       `project_config.bzl`, `reference_integration` relationship
-- [ ] `.agents/skills/` — only feature-specific skills (created when needed)
-- [ ] `.agents/docs/` — feature-specific runbooks/procedures (created when needed)
-- [ ] `.github/docs/` — feature-specific reference data, e.g. `score_github_api.md` (created when needed)
+- [ ] `.agents/skills/` — only module-specific skills (created when needed)
+- [ ] `.agents/docs/` — module-specific runbooks/procedures (created when needed)
+- [ ] `.github/docs/` — module-specific reference data, e.g. `score_github_api.md` (created when needed)
 - [ ] `.github/instructions/` — Copilot-only scoped rules (created when needed)
 - [ ] `.github/agents/` — Copilot-only custom agents (created when needed)
 - [ ] `.github/prompts/` — Copilot-only prompts (created when needed)
