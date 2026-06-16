@@ -42,7 +42,8 @@ The following shows the folder structure of the platform repository (ordered alp
     ├── handbook/                      -> Background, scope, high-level architecture of the platform features
     │                                     and handbook for the platform [:need:`wp__platform_handbook`],
     │                                     (e.g., onboarding, development guidelines, etc.)
-    ├── manuals/                       -> User and integration manual(s)
+    ├── manuals/                       -> User and integration manual(s) of the platform,
+    │                                     may refer in the reference integration repository to the manuals for the modules.
     ├── modules/                       -> Modules of the SW platform. [:need:`wp__platform_arch`]
     ├── platform_management_plan/      -> Overall Platform Management Plan [:need:`wp__platform_mgmt`]
     │                                     containing: [:need:`wp__project_mgt`], [:need:`wp__platform_safety_plan`],
@@ -142,10 +143,16 @@ See also `module template repository <https://github.com/eclipse-score/module_te
    │   │       └── security_planning/   -> Feature specific security workproducts planning
    │   │                                   [:need:`wp__platform_security_plan`]
    │   ├── manuals/                     -> Module manual, e.g. integration manual, assumptions of use,
-   │   │                                   safety manual [:need:`wp__requirements_comp_aou`],
-   │   │                                   [:need:`wp__requirements_feat_aou`],
-   │   │                                   [:need:`wp__module_safety_manual`],
-   │   │                                   security_manual [:need:`wp__module_security_manual`].
+   │   │   │                               safety manual [:need:`wp__requirements_comp_aou`],
+   │   │   │                               [:need:`wp__requirements_feat_aou`],
+   │   │   │                               [:need:`wp__module_safety_manual`],
+   │   │   │                               security_manual [:need:`wp__module_security_manual`].
+   │   │   │                            -> Additional optional user centric documentation (e.g. configuration guide,
+   │   │   │                               examples user guide, APIs & usage, performance analysis)
+   │   │   ├── config/                  -> Configuration guide (optional)
+   │   │   ├── examples/                -> Examples user guide (optional)
+   │   │   ├── usage/                   -> APIs & Usage (optional)
+   │   │   └── performance/             -> Performance analysis (optional)
    │   ├── release/                     -> Module release note [:need:`wp__module_sw_release_note`],
    │   │                                   module release plan [:need:`wp__module_sw_release_plan`],
    │   ├── safety_mgt/                  -> Module safety plan [:need:`wp__module_safety_plan`],
@@ -170,6 +177,8 @@ See also `module template repository <https://github.com/eclipse-score/module_te
        │   │   │                           Detail design + code inspection [:need:`wp__sw_implementation_inspection`],
        │   │   ├── manuals/             -> User documentation of a single component
        │   │   │                           (e.g., user manual of a library, optional)
+       │   │   │                           (could contain optional subfolders for configuration guide,
+       │   │   │                           examples user guide, APIs & usage, performance analysis, see module manual folder)
        │   │   ├── requirements/        -> Component requirements [:need:`wp__requirements_comp`],
        │   │   │                           requirements inspection [:need:`wp__requirements_inspect`]
        │   │   ├── safety_analysis/     -> Safety analysis on component level (only if component architecture exists)
@@ -213,10 +222,15 @@ For identification of the single feature, the repository name or module name sho
     │   ├── security_planning/           -> Feature specific security workproducts planning
     │   │                                   [:need:`wp__platform_security_plan`]
     │   ├── manuals/                     -> Module manual, e.g. integration manual, assumptions of use,
-    │   │                                   safety manual [:need:`wp__requirements_comp_aou`],
-    │   │                                   [:need:`wp__requirements_feat_aou`],
-    │   │                                   [:need:`wp__module_safety_manual`],
-    │   │                                   security_manual [:need:`wp__module_security_manual`].
+    │   │   │                               safety manual [:need:`wp__requirements_comp_aou`],
+    │   │   │                               [:need:`wp__requirements_feat_aou`],
+    │   │   │                               [:need:`wp__module_safety_manual`],
+    │   │   │                               security_manual [:need:`wp__module_security_manual`].
+    │   │   │                            -> Additional optional user centric documentation (e.g. configuration guide, examples user guide, APIs & usage, performance analysis)
+    │   │   ├── config/                  -> Configuration guide (optional)
+    │   │   ├── examples/                -> Examples user guide (optional)
+    │   │   ├── usage/                   -> APIs & Usage (optional)
+    │   │   └── performance/             -> Performance analysis (optional)
     │   ├── release/                     -> Module release note [:need:`wp__module_sw_release_note`],
     │   │                                   module release plan [:need:`wp__module_sw_release_plan`],
     │   ├── safety_mgt/                  -> Module safety plan [:need:`wp__module_safety_plan`],
@@ -241,6 +255,8 @@ For identification of the single feature, the repository name or module name sho
         │   │   │                           Detail design + code inspection [:need:`wp__sw_implementation_inspection`],
         │   │   ├── manuals/             -> User documentation of a single component
         │   │   │                           (e.g., user manual of a library, optional)
+        │   │   │                           (could contain optional subfolders for configuration guide,
+        │   │   │                           examples user guide, APIs & usage, performance analysis, see module manual folder)
         │   │   ├── requirements/        -> Component requirements [:need:`wp__requirements_comp`],
         │   │   │                           requirements inspection [:need:`wp__requirements_inspect`]
         │   │   ├── safety_analysis/     -> Safety analysis on component level (only if component architecture exists)
