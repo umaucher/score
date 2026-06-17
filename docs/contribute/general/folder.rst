@@ -151,7 +151,7 @@ See also `module template repository <https://github.com/eclipse-score/module_te
    │   │   │                               examples user guide, APIs & usage, performance analysis)
    │   │   ├── config/                  -> Configuration guide (optional)
    │   │   ├── examples/                -> Examples user guide (optional)
-   │   │   ├── api_usage/               -> APIs & Usage (optional)
+   │   │   ├── api_description/         -> API detail description (optional)
    │   │   └── performance/             -> Performance analysis (optional)
    │   ├── release/                     -> Module release note [:need:`wp__module_sw_release_note`],
    │   │                                   module release plan [:need:`wp__module_sw_release_plan`],
@@ -229,7 +229,7 @@ For identification of the single feature, the repository name or module name sho
     │   │   │                            -> Additional optional user centric documentation (e.g. configuration guide, examples user guide, APIs & usage, performance analysis)
     │   │   ├── config/                  -> Configuration guide (optional)
     │   │   ├── examples/                -> Examples user guide (optional)
-    │   │   ├── api_usage/               -> APIs & Usage (optional)
+    │   │   ├── api_description/         -> APIs detail description (optional)
     │   │   └── performance/             -> Performance analysis (optional)
     │   ├── release/                     -> Module release note [:need:`wp__module_sw_release_note`],
     │   │                                   module release plan [:need:`wp__module_sw_release_plan`],
