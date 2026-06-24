@@ -59,9 +59,9 @@ Introduction
       Rather than each company independently developing and maintaining a software platform — at high cost
       and without direct customer value — S-CORE provides a common foundation with:
 
-      - **A reference implementation** that catches integration issues early and prevents known bugs from reappearing across projects.
-      - **A Functional-Safety-compliant process** (ISO 26262) applied to all modules, making S-CORE unique among open-source automotive projects.
-      - **Full transparency**: process, tooling, and CI checks are open source — any stakeholder can verify the results.
+      - **A reference implementation** that catches integration issues early and prevents known bugs from reappearing across projects
+      - **A Functional-Safety-compliant process** (ISO 26262) applied to all modules, making S-CORE unique among open-source automotive projects
+      - **Full transparency**: process, tooling, and CI checks are open source — any stakeholder can verify the results
 
       **Note:** S-CORE is not a ready-to-integrate series product. It is a generic foundation for commercial distributions.
       Responsibility for ASPICE, ISO 21434 (cybersecurity), and ISO 26262 (functional safety) compliance of the final system always remains with the series project.
@@ -197,7 +197,6 @@ Reference Integration
       ^^^
       Discover how all platform modules are continuously built and tested together
       to form the authoritative `S-CORE integration baseline <https://github.com/eclipse-score/reference_integration>`_.
-      Check the `integration status <https://eclipse-score.github.io/reference_integration/main/status_dashboard.html>`_ of every module.
 
    .. grid-item-card::
       :link: https://eclipse-score.github.io/reference_integration/main/s_core_v_1/releases/releases.html
@@ -211,8 +210,6 @@ Reference Integration
       and see the current state of the platform.
 
    .. grid-item-card::
-      :link: https://eclipse-score.github.io/reference_integration/main/integration_process/integration_process.html
-      :link-type: url
 
       :octicon:`iterations;1.5em`
 
@@ -220,6 +217,9 @@ Reference Integration
       ^^^
       Follow the `integration process <https://eclipse-score.github.io/reference_integration/main/integration_process/integration_process.html>`_
       to understand how platform modules are integrated together.
+      Consult the `cross-repo metrics report <https://eclipse-score.github.io/.github/>`_
+      and the `integration status <https://eclipse-score.github.io/reference_integration/main/status_dashboard.html>`_
+      for details.
 
 Infrastructure and Tooling
 --------------------------
