@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>DDS Gateway &#8212; S-CORE  documentation</title>
+    <title>Architecture &#8212; S-CORE  documentation</title>
   
   
   
@@ -44,6 +44,7 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_core.css?v=f5b60a78" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/common_css/need_toggle.css?v=5c6620df" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-needs/modern.css?v=803738c0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/css/custom.css?v=2e2696d1" />
   
   <!-- So that users can add custom icons -->
   <script defer src="../../../_static/scripts/fontawesome.js?digest=7f76b32a3354e82990f2"></script>
@@ -62,7 +63,7 @@
     <script src="../../../_static/sphinx-needs/libs/html/datatables.min.js?v=8a4aee21"></script>
     <script src="../../../_static/sphinx-needs/libs/html/datatables_loader.js?v=a2cae175"></script>
     <script src="../../../_static/sphinx-needs/libs/html/sphinx_needs_collapse.js?v=dca66431"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'features/communication/dds_gateway/index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'features/persistency/architecture/index';</script>
     <script>
         DOCUMENTATION_OPTIONS.theme_version = '0.17.0';
         DOCUMENTATION_OPTIONS.theme_switcher_json_url = 'https://umaucher.github.io/score/versions.json';
@@ -73,8 +74,8 @@
     <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="Configuration" href="../../configuration/index.html" />
-    <link rel="prev" title="SOME/IP Gateway Service Discovery" href="../some_ip_gateway/service_discovery/index.html" />
+    <link rel="next" title="Requirements" href="../requirements/index.html" />
+    <link rel="prev" title="Persistency (v0.5 beta)" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="0.1" />
@@ -531,20 +532,18 @@
 <li class="toctree-l1"><a class="reference internal" href="../../analysis-infra/index.html">Analysis Infrastructure</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../baselibs/index.html">Base Libraries (v0.5 beta)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../code_generation/index.html">Code Generation</a></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Communication (v0.5 beta)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="../docs/architecture/index.html">Architecture</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../docs/requirements/index.html">Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../ipc/index.html">Inter-process Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../some_ip_gateway/index.html">SOME/IP-Gateway</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">DDS Gateway</a></li>
-</ul>
-</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../communication/index.html">Communication (v0.5 beta)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../configuration/index.html">Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../diagnostics/index.html">Diagnostic and Fault Management</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../frameworks/index.html">Frameworks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../lifecycle/index.html">Lifecycle</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../orchestration/index.html">Orchestration (v0.5 beta)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../persistency/index.html">Persistency</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../index.html">Persistency (v0.5 beta)</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements/index.html">Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../requirements/chklst_req_inspection.html">Persistency Requirements Inspection Checklist</a></li>
+</ul>
+</details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../security_crypto/index.html">Security &amp; Cryptography</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../time/index.html">Time</a></li>
 </ul>
@@ -591,9 +590,9 @@
     <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Features</a></li>
     
     
-    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Communication (v0.5 beta)</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Persistency (v0.5 beta)</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">DDS Gateway</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Architecture</span></li>
   </ul>
 </nav>
 </div>
@@ -610,13 +609,57 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="dds-gateway">
-<h1>DDS Gateway<a class="headerlink" href="#dds-gateway" title="Link to this heading">#</a></h1>
-<div class="need_container docutils container" id="SNCB-b605791a">
-<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__dds_gateway">
+  <section id="architecture">
+<span id="feature-architecture-persistency"></span><h1>Architecture<a class="headerlink" href="#architecture" title="Link to this heading">#</a></h1>
+<div class="need_container docutils container" id="SNCB-b0964df5">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_document table" id="doc__persistency_architecture">
 <tbody>
 <tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
-<div class="line"><span><span class="needs_title"><span class="needs_data">DDS-Gateway</span></span></span></div>
+<div class="line"><span><span class="needs_title"><span class="needs_data">Persistency KVS Feature Architecture</span></span></span></div>
+</div>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">NO</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">persistency</span></span></span></div>
+<div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
+</span></span></div>
+<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="external_link reference external" href="https://eclipse-score.github.io/process_description//main/process_areas/architecture_design/architecture_workproducts.html#wp__feature_arch">wp__feature_arch</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"></td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__persistency_architecture" title="doc__persistency_architecture">doc__persistency_architecture</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="need_container docutils container" id="SNCB-59a96360">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_feat table" id="feat__persistency">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Persistency</span></span></span></div>
 </div>
 </td>
 <td class="head_center" colspan="2"><div class="needs_head line-block">
@@ -631,9 +674,10 @@
 </td>
 </tr>
 <tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
-<div class="line"><span><span><div class="line"><span class="needs_tags"><span class="needs_label">tags: </span><span class="needs_data_container"><span class="needs_data">contribution_request</span><span class="needs_spacer">, </span><span class="needs_data">feature_request</span></span></span></div>
+<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
 </span></span></div>
-<div class="line"><span><div class="line">realizes: <span class="realizes"><span><a class="external_link reference external" href="https://eclipse-score.github.io/process_description//main/process_areas/change_management/change_management_workproducts.html#wp__feat_request">wp__feat_request</a></span></span></div>
+<div class="line"><span><div class="line">satisfies: <span class="satisfied_by"><span><a class="reference internal" href="../requirements/index.html#feat_req__persistency__cpp_rust" title="feat__persistency">feat_req__persistency__cpp_rust</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__os_agnostic" title="feat__persistency">feat_req__persistency__os_agnostic</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__variant_management" title="feat__persistency">feat_req__persistency__variant_management</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__dynamic_memory_alloc" title="feat__persistency">feat_req__persistency__dynamic_memory_alloc</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__multiple_kvs" title="feat__persistency">feat_req__persistency__multiple_kvs</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__multiple_app" title="feat__persistency">feat_req__persistency__multiple_app</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__access_control" title="feat__persistency">feat_req__persistency__access_control</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__cfg" title="feat__persistency">feat_req__persistency__cfg</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__support_datatype_keys" title="feat__persistency">feat_req__persistency__support_datatype_keys</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__support_datatype_value" title="feat__persistency">feat_req__persistency__support_datatype_value</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__default_values" title="feat__persistency">feat_req__persistency__default_values</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__default_value_file" title="feat__persistency">feat_req__persistency__default_value_file</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__default_value_get" title="feat__persistency">feat_req__persistency__default_value_get</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__reset_to_default" title="feat__persistency">feat_req__persistency__reset_to_default</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__store_data" title="feat__persistency">feat_req__persistency__store_data</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__reset_resistant" title="feat__persistency">feat_req__persistency__reset_resistant</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__recovery_from_reset" title="feat__persistency">feat_req__persistency__recovery_from_reset</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__atomic_store" title="feat__persistency">feat_req__persistency__atomic_store</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__write_amplification" title="feat__persistency">feat_req__persistency__write_amplification</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__load_data" title="feat__persistency">feat_req__persistency__load_data</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__cached_access" title="feat__persistency">feat_req__persistency__cached_access</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__direct_access" title="feat__persistency">feat_req__persistency__direct_access</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__integrity_check" title="feat__persistency">feat_req__persistency__integrity_check</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__confidential_storage" title="feat__persistency">feat_req__persistency__confidential_storage</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__storage_backends" title="feat__persistency">feat_req__persistency__storage_backends</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__async_api" title="feat__persistency">feat_req__persistency__async_api</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__async_completion" title="feat__persistency">feat_req__persistency__async_completion</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__snapshot_create" title="feat__persistency">feat_req__persistency__snapshot_create</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__snapshot_restore" title="feat__persistency">feat_req__persistency__snapshot_restore</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__snapshot_remove" title="feat__persistency">feat_req__persistency__snapshot_remove</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__concurrency" title="feat__persistency">feat_req__persistency__concurrency</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__versioning" title="feat__persistency">feat_req__persistency__versioning</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__update_mechanism" title="feat__persistency">feat_req__persistency__update_mechanism</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__fast_access" title="feat__persistency">feat_req__persistency__fast_access</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__tooling" title="feat__persistency">feat_req__persistency__tooling</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__dev_mode" title="feat__persistency">feat_req__persistency__dev_mode</a>, <a class="reference internal" href="../requirements/index.html#feat_req__persistency__prod_mode" title="feat__persistency">feat_req__persistency__prod_mode</a></span></span></div>
+<div class="line">provides: <span class="provides"><span><a class="reference internal" href="#logic_arc_int__persistency__interface" title="feat__persistency">logic_arc_int__persistency__interface</a></span></span></div>
 </span></div>
 </div>
 </td>
@@ -642,11 +686,11 @@
 <tr class="content row-odd"><td class="content" colspan="6"></td>
 </tr>
 <tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
-<div class="line"><span><span class="needs-id"><a class="reference internal" href="#doc__dds_gateway" title="doc__dds_gateway">doc__dds_gateway</a></span></span></div>
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#feat__persistency" title="feat__persistency">feat__persistency</a></span></span></div>
 </div>
 </td>
 <td class="footer" colspan="2"><div class="needs_footer line-block">
-<div class="line"><span><span class="needs_type_name"><span class="needs_data">Generic Document</span></span></span></div>
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Feature</span></span></span></div>
 </div>
 </td>
 <td class="footer_right" colspan="2"></td>
@@ -655,165 +699,54 @@
 </table>
 </div>
 </div>
-<section id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Link to this heading">#</a></h2>
-<p>The DDS Gateway introduces a communication bridge within the S-CORE communication stack.
-It enables controlled and configurable data exchange between <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> (intra-ECU
-communication via IPC binding) and DDS-based systems (inter-ECU
-communication), allowing integration with distributed DDS environments
-while preserving existing application implementations.</p>
-</section>
-<section id="architecture-concept">
-<h2>Architecture Concept<a class="headerlink" href="#architecture-concept" title="Link to this heading">#</a></h2>
-<p>The DDS Gateway acts as a centralized communication bridge between local
-<code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> communication and DDS domains, enabling inter-ECU
-communication between <code class="docutils literal notranslate"><span class="pre">mw::com</span></code> participants via DDS transport.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">==============================</span>        <span class="o">==============================</span>
-           <span class="n">ECU</span> <span class="mi">1</span>                              <span class="n">ECU</span> <span class="mi">2</span>
-<span class="o">==============================</span>        <span class="o">==============================</span>
-
-<span class="o">+-------------------------+</span>           <span class="o">+-------------------------+</span>
-<span class="o">|</span>     <span class="n">Application</span> <span class="n">A</span>       <span class="o">|</span>           <span class="o">|</span>     <span class="n">Application</span> <span class="n">B</span>       <span class="o">|</span>
-<span class="o">|</span>   <span class="p">(</span><span class="n">mw</span><span class="p">::</span><span class="n">com</span> <span class="n">LoLa</span><span class="p">)</span>        <span class="o">|</span>           <span class="o">|</span>   <span class="p">(</span><span class="n">mw</span><span class="p">::</span><span class="n">com</span> <span class="n">LoLa</span><span class="p">)</span>        <span class="o">|</span>
-<span class="o">+-----------+-------------+</span>           <span class="o">+-----------+-------------+</span>
-            <span class="o">|</span>                                     <span class="o">^</span>
-            <span class="o">|</span>  <span class="n">mw</span><span class="p">::</span><span class="n">com</span> <span class="p">(</span><span class="n">LoLa</span> <span class="o">-</span> <span class="n">IPC</span><span class="p">)</span>               <span class="o">|</span> <span class="n">mw</span><span class="p">::</span><span class="n">com</span> <span class="p">(</span><span class="n">LoLa</span> <span class="o">-</span> <span class="n">IPC</span><span class="p">)</span>
-            <span class="n">v</span>                                     <span class="o">|</span>
-    <span class="o">+---------------------+</span>               <span class="o">+---------------------+</span>
-    <span class="o">|</span>     <span class="n">DDS</span> <span class="n">Gateway</span>     <span class="o">|</span>               <span class="o">|</span>     <span class="n">DDS</span> <span class="n">Gateway</span>     <span class="o">|</span>
-    <span class="o">|</span>       <span class="p">(</span><span class="n">ECU</span> <span class="mi">1</span><span class="p">)</span>       <span class="o">|</span>               <span class="o">|</span>       <span class="p">(</span><span class="n">ECU</span> <span class="mi">2</span><span class="p">)</span>       <span class="o">|</span>
-    <span class="o">+----------+----------+</span>               <span class="o">+----------+----------+</span>
-               <span class="o">|</span>                                     <span class="o">^</span>
-               <span class="o">|</span>                                     <span class="o">|</span>
-               <span class="n">v</span>                                     <span class="o">|</span>
-      <span class="o">===================</span>   <span class="n">DDS</span> <span class="n">NETWORK</span>   <span class="o">===================</span>
-               <span class="o">|</span>                                     <span class="o">^</span>
-   <span class="o">==============================</span>                    <span class="o">|</span>
-            <span class="n">ECU</span> <span class="mi">3</span>                                    <span class="o">|</span>
-   <span class="o">==============================</span>                    <span class="o">|</span>
-               <span class="o">|</span>                                     <span class="o">|</span>
-               <span class="n">v</span>                                     <span class="o">|</span>
-    <span class="o">+---------------------+</span>                          <span class="o">|</span>
-    <span class="o">|</span>   <span class="n">DDS</span> <span class="n">Application</span>   <span class="o">|--------------------------+</span>
-    <span class="o">|</span>     <span class="p">(</span><span class="n">optional</span><span class="p">)</span>      <span class="o">|</span>
-    <span class="o">+---------------------+</span>
-</pre></div>
+<section id="logical-interfaces">
+<h2>Logical Interfaces<a class="headerlink" href="#logical-interfaces" title="Link to this heading">#</a></h2>
+<div class="need_container docutils container" id="SNCB-8e7f7bc8">
+<div class="pst-scrollable-table-container"><table class="need needs_grid_complex needs_layout_score needs_style_none needs_type_logic_arc_int table" id="logic_arc_int__persistency__interface">
+<tbody>
+<tr class="head row-odd"><td class="head_left" colspan="2"><div class="needs_head_left line-block">
+<div class="line"><span><span class="needs_title"><span class="needs_data">Ikvs</span></span></span></div>
 </div>
-<p>Each DDS Gateway instance connects to:
-- Local <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> participants (IPC binding)
-- A DDS domain for inter-ECU communication</p>
-<p>The gateway is responsible for:</p>
-<ul class="simple">
-<li><p>Translating data in both directions between <code class="docutils literal notranslate"><span class="pre">mw::com</span></code> and DDS representations</p></li>
-<li><p>Routing data across DDS domains</p></li>
-<li><p>configure QOS on DDS for each route</p></li>
-<li><p>Applying  E2E protection</p></li>
-</ul>
-</section>
-<section id="scope">
-<h2>Scope<a class="headerlink" href="#scope" title="Link to this heading">#</a></h2>
-<p>The DDS Gateway provides:</p>
-<ul class="simple">
-<li><dl class="simple">
-<dt>Bridging between <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> and DDS via the gateway:</dt><dd><ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> → DDS GW → <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> (inter-ECU communication via DDS)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> → DDS GW → DDS applications</p></li>
-<li><p>DDS applications → DDS GW → <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code></p></li>
-</ul>
-</dd>
-</dl>
-</li>
-<li><p>Configurable routing:</p>
-<ul>
-<li><p>Mapping between <code class="docutils literal notranslate"><span class="pre">mw::com</span></code> events(TBD for fields and methods) and DDS topics</p></li>
-<li><p>Support for DDS domain-based routing</p></li>
-</ul>
-</li>
-<li><p>Dynamic Type handling:</p>
-<ul>
-<li><p>Runtime type definition via configuration or via dynamic library</p></li>
-<li><p>No dependency on DDS IDL generation</p></li>
-<li><p>Enables data translation and consistent serialization across middleware boundaries</p></li>
-<li><p>Supports DDS standard encodings (e.g., XCDR1 and XCDR2) for interoperability</p></li>
-</ul>
-</li>
-<li><p>End-to-End (E2E) protection:</p>
-<ul>
-<li><p>Centralized handling of Counter, CRC, and DataID</p></li>
-<li><p>Validation and protection configurable per route</p></li>
-</ul>
-</li>
-<li><p>DDS stack abstraction:</p>
-<ul>
-<li><p>Pluggable DDS implementations via defined interfaces</p></li>
-</ul>
-</li>
-<li><p>Execution and performance model:</p>
-<ul>
-<li><p>Asynchronous processing using internal worker queues</p></li>
-<li><p>Support for configurable priority-based routing</p></li>
-<li><p>High-priority routes can be processed with dedicated queues and worker pools to achieve low-latency data delivery</p></li>
-<li><p>Normal-priority routes are handled via standard processing queues</p></li>
-<li><p>Priority configuration is defined per route</p></li>
-</ul>
-</li>
-<li><p>DDS QoS configurability:</p>
-<ul>
-<li><p>Ability to configure DDS Quality of Service (QoS) policies per route</p></li>
-<li><p>Enables tuning of reliability, durability, and latency behavior based on use case</p></li>
-</ul>
-</li>
-</ul>
-</section>
-<section id="motivation">
-<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading">#</a></h2>
-<p>S-CORE currently focuses on local communication via <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> but does
-not provide a standardized mechanism for inter-ECU communication using DDS-based
-systems.</p>
-<p>In mixed middleware environments:</p>
-<ul class="simple">
-<li><p>Integration with DDS requires custom adapters</p></li>
-<li><p>Applications may need to embed DDS logic, reducing abstraction</p></li>
-<li><p>Communication with native DDS applications is not standardized</p></li>
-<li><p>Inter-ECU communication between <code class="docutils literal notranslate"><span class="pre">mw::com</span></code> participants via DDS is not standardized</p></li>
-<li><p>Multi-domain DDS setups are difficult to manage consistently</p></li>
-</ul>
-<p>The DDS Gateway addresses these challenges by introducing a centralized,
-configurable component responsible for bridging and routing communication
-across middleware boundaries.</p>
-</section>
-<section id="key-value">
-<h2>Key Value<a class="headerlink" href="#key-value" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>Standardized integration with DDS systems</p></li>
-<li><p>Direct interoperability with native DDS applications via the gateway</p></li>
-<li><p>Standardized inter-ECU communication between <code class="docutils literal notranslate"><span class="pre">mw::com</span></code> participants via DDS</p></li>
-<li><p>Clean separation between <code class="docutils literal notranslate"><span class="pre">mw::com</span> <span class="pre">(LoLa)</span></code> and DDS</p></li>
-<li><p>Reduced integration effort</p></li>
-<li><p>Support for distributed and multi-domain systems</p></li>
-<li><p>Performance and determinism:</p>
-<ul>
-<li><p>Low-latency processing for high-priority data flows</p></li>
-<li><p>Controlled execution via configurable worker queues</p></li>
-<li><p>Predictable behavior for mixed criticality communication</p></li>
-</ul>
-</li>
-<li><p>Interoperability across heterogeneous systems:</p>
-<ul>
-<li><p>Enables communication between systems with different architectures
-(e.g., 32-bit / 64-bit, different endianness)</p></li>
-<li><p>Ensures consistent data representation via Dynamic Type handling</p></li>
-</ul>
-</li>
-<li><p>Centralized handling of safety (E2E) and type management</p></li>
-</ul>
-</section>
-<section id="reference">
-<h2>Reference<a class="headerlink" href="#reference" title="Link to this heading">#</a></h2>
-<p>The detailed Feature Request is available here:</p>
-<ul class="simple">
-<li><p>DDS Gateway Feature Request:https://github.com/eclipse-score/score/issues/2726</p></li>
-</ul>
+</td>
+<td class="head_center" colspan="2"><div class="needs_head line-block">
+<div class="line"><span><span class="needs_status"><span class="needs_label">status: </span><span class="needs_data">valid</span></span></span></div>
+<div class="line"><span><span class="needs_security"><span class="needs_label">security: </span><span class="needs_data">YES</span></span></span></div>
+<div class="line"><span><span class="needs_safety"><span class="needs_label">safety: </span><span class="needs_data">ASIL_B</span></span></span></div>
+</div>
+</td>
+<td class="head_right" colspan="2"><div class="needs_head_right line-block">
+<div class="line"><span><span class="needs needs_collapse" id="target__show__meta"><span class="needs collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 16 16 12"></polyline><line x1="12" y1="8" x2="12" y2="16"></line></svg></span><span class="needs visible collapse_is_hidden"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg></span></span></span></div>
+</div>
+</td>
+</tr>
+<tr class="meta row-even"><td class="meta" colspan="3"><div class="needs_meta_left line-block">
+<div class="line"><span><span><div class="line"><span class="needs_version"><span class="needs_label">version: </span>1</span></div>
+</span></span></div>
+<div class="line"><span><div class="line">fulfils: <span class="fulfils"><span><a class="reference internal" href="../requirements/index.html#feat_req__persistency__async_api" title="logic_arc_int__persistency__interface">feat_req__persistency__async_api</a></span></span></div>
+<div class="line">provided by: <span class="provides"><span><a class="reference internal" href="#feat__persistency" title="logic_arc_int__persistency__interface">feat__persistency</a></span></span></div>
+</span></div>
+</div>
+</td>
+<td class="meta" colspan="3"></td>
+</tr>
+<tr class="content row-odd"><td class="content" colspan="6"><p class="plantuml">
+<object data="../../../_images/plantuml-bb3dec11edefefa90f7cf780d9a076900b255943.svg" type="image/svg+xml" style="width:180px;height:313px;background:#FFFFFF;"></object></p>
+</td>
+</tr>
+<tr class="footer row-even"><td class="footer_left" colspan="2"><div class="needs_footer_left line-block">
+<div class="line"><span><span class="needs-id"><a class="reference internal" href="#logic_arc_int__persistency__interface" title="logic_arc_int__persistency__interface">logic_arc_int__persistency__interface</a></span></span></div>
+</div>
+</td>
+<td class="footer" colspan="2"><div class="needs_footer line-block">
+<div class="line"><span><span class="needs_type_name"><span class="needs_data">Logical Interface &amp; Feature Interface View</span></span></span></div>
+</div>
+</td>
+<td class="footer_right" colspan="2"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </section>
 </section>
 
@@ -828,20 +761,20 @@ across middleware boundaries.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../some_ip_gateway/service_discovery/index.html"
+       href="../index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">SOME/IP Gateway Service Discovery</p>
+        <p class="prev-next-title">Persistency (v0.5 beta)</p>
       </div>
     </a>
     <a class="right-next"
-       href="../../configuration/index.html"
+       href="../requirements/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Configuration</p>
+        <p class="prev-next-title">Requirements</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -864,12 +797,7 @@ across middleware boundaries.</p>
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="pst-show_toc_level nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#overview">Overview</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#architecture-concept">Architecture Concept</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#scope">Scope</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#motivation">Motivation</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-value">Key Value</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#reference">Reference</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#logical-interfaces">Logical Interfaces</a></li>
 </ul>
   </nav></div>
 
@@ -877,7 +805,7 @@ across middleware boundaries.</p>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/umaucher/score/edit/main/docs/features/communication/dds_gateway/index.rst">
+    <a href="https://github.com/umaucher/score/edit/main/docs/features/persistency/architecture/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
