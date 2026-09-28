@@ -366,7 +366,7 @@ Monitoring, Notification and Recovery
     :reqtype: Functional
     :security: NO
     :safety: ASIL_B
-    :derived_from: stkh_req__execution_model__processes[version==1], stkh_req__dependability__safety_features_1[version==1]
+    :derived_from: stkh_req__execution_model__processes[version==1], stkh_req__dependability__health_management[version==1]
     :satisfied_by: feat__lifecycle[version==1]
     :status: valid
     :version: 1
@@ -379,7 +379,7 @@ Monitoring, Notification and Recovery
     :reqtype: Functional
     :security: NO
     :safety: ASIL_B
-    :derived_from: stkh_req__dependability__safety_features_1[version==1]
+    :derived_from: stkh_req__dependability__health_management[version==1]
     :satisfied_by: feat__lifecycle[version==1]
     :status: valid
     :version: 1
@@ -392,7 +392,7 @@ Monitoring, Notification and Recovery
     :reqtype: Functional
     :security: NO
     :safety: ASIL_B
-    :derived_from: stkh_req__dependability__safety_features_1[version==1]
+    :derived_from: stkh_req__dependability__health_management[version==1]
     :satisfied_by: feat__lifecycle[version==1]
     :status: valid
     :version: 1
@@ -406,7 +406,7 @@ Monitoring, Notification and Recovery
     :reqtype: Functional
     :security: NO
     :safety: ASIL_B
-    :derived_from: stkh_req__dependability__safety_features_1[version==1]
+    :derived_from: stkh_req__dependability__health_management[version==1]
     :satisfied_by: feat__lifecycle[version==1]
     :status: valid
     :version: 1
@@ -420,7 +420,7 @@ Monitoring, Notification and Recovery
     :reqtype: Functional
     :security: NO
     :safety: ASIL_B
-    :derived_from: stkh_req__dependability__safety_features_1[version==1]
+    :derived_from: stkh_req__dependability__health_management[version==1]
     :satisfied_by: feat__lifecycle[version==1]
     :status: valid
     :version: 1

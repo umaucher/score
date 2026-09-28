@@ -565,7 +565,7 @@ Persistency Requirements
    :reqtype: Functional
    :security: YES
    :safety: ASIL_B
-   :derived_from: stkh_req__dependability__safety_features_11[version==1]
+   :derived_from: stkh_req__dependability__safe_mode_switch[version==1]
    :satisfied_by: feat__persistency[version==1]
    :status: valid
    :version: 1
@@ -579,7 +579,7 @@ Persistency Requirements
    :reqtype: Functional
    :security: YES
    :safety: ASIL_B
-   :derived_from: stkh_req__dependability__safety_features_11[version==1]
+   :derived_from: stkh_req__dependability__safe_mode_switch[version==1]
    :satisfied_by: feat__persistency[version==1]
    :status: valid
    :version: 1
